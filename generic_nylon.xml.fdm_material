@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Generic Nylon profile. Serves as an example file, data in this file is not correct.
+-->
+<fdmmaterial xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Generic</brand>
+            <material>Nylon</material>
+            <color>Generic</color>
+        </name>
+        <GUID>28fb4162-db74-49e1-9008-d05f1e8bef5c</GUID>
+        <version>1</version>
+        <color_code>#aaaaaa</color_code>
+    </metadata>
+    <properties>
+        <density>1.14</density>
+        <diameter>2.85</diameter>
+    </properties>
+    <settings>
+        <setting key="print temperature">250</setting>
+        <setting key="heated bed temperature">60</setting>
+        <setting key="standby temperature">100</setting>
+    </settings>
+</fdmmaterial>
