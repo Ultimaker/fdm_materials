@@ -6,4 +6,4 @@ set(INSTALL_PATH "share/cura/resources/materials" CACHE PATH "The path to instal
 
 file(GLOB _files *.fdm_material)
 
-install(FILES ${_files} DESTINATION ${RELATIVE_INSTALL_PATH})
+install(FILES ${_files} DESTINATION ${INSTALL_PATH})
