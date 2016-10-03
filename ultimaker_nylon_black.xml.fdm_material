@@ -11,7 +11,7 @@ Generic Nylon profile. Serves as an example file, data in this file is not corre
         </name>
         <GUID>c64c2dbe-5691-4363-a7d9-66b2dc12837f</GUID>
         <version>1</version>
-        <color_code>#202020</color_code>
+        <color_code>#000000</color_code>
     </metadata>
     <properties>
         <density>1.14</density>
