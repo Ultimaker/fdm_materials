@@ -18,14 +18,23 @@ Generic Nylon profile. Serves as an example file, data in this file is not corre
         <diameter>2.85</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">250</setting>
+        <setting key="print temperature">245</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">175</setting>
+        <setting key="print cooling">40</setting>
+        <setting key="retraction amount">8</setting>
+        <setting key="retraction speed">25</setting>
 
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
+            <hotend id="BB 0.4" />
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
         <machine>
             <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
             <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
-            <setting key="hardware compatible">yes</setting>
 
             <hotend id="0.25 mm" />
             <hotend id="0.4 mm" />
