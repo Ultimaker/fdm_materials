@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Ultimaker PVA profile. Initial version, actual printing information in this file is not correct.
+-->
+<fdmmaterial xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Ultimaker</brand>
+            <material>PVA</material>
+            <color>Natural</color>
+        </name>
+        <GUID>fe15ed8a-33c3-4f57-a2a7-b4b78a38c3cb</GUID>
+        <version>1</version>
+        <color_code>#f5f2d1</color_code>
+        <instructions>http://ultimaker.com/we/have/no/instruction/link/yet</instructions>
+        <author>
+            <organization>Ultimaker B.V.</organization>
+            <contact>Ultimaker Support</contact>
+            <email>support@ultimaker.com</email>
+            <phone>+31 345 712001</phone>
+            <address>
+                <street>Watermolenweg 2</street>
+                <city>Geldermalsen</city>
+                <region>Gelderland</region>
+                <zip>4191 PN</zip>
+                <country>The Netherlands</country>
+            </address>
+        </author>
+        <supplier>
+            <organization>Ultimaker B.V.</organization>
+            <contact>Support</contact>
+            <email>support@ultimaker.com</email>
+            <phone>+31 345 712001</phone>
+            <address>
+                <street>Watermolenweg 2</street>
+                <city>Geldermalsen</city>
+                <region>Gelderland</region>
+                <zip>4191 PN</zip>
+                <country>The Netherlands</country>
+            </address>
+        </supplier>
+        <EAN>87 10400 31118 0</EAN>
+        <MSDS>http://...</MSDS>
+        <TDS>http://...</TDS>
+    </metadata>
+    <properties>
+        <density>1.23</density><!-- Unknown if this is correct -->
+        <diameter>2.85</diameter>
+    </properties>
+    <settings>
+        <setting key="hardware compatible">no</setting>
+        <setting key="print temperature">215</setting>
+        <setting key="standby temperature">175</setting>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
+    </settings>
+</fdmmaterial>
