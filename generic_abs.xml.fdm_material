@@ -21,6 +21,7 @@ Generic ABS profile. Serves as an example file, data in this file is not correct
         <setting key="print temperature">225</setting>
         <setting key="heated bed temperature">80</setting>
         <setting key="standby temperature">200</setting>
+        <setting key="print cooling">5</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
