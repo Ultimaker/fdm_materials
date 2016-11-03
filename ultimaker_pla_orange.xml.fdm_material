@@ -21,7 +21,6 @@ Automatically generated PLA profile. Data in this file may not be not correct.
         <setting key="print temperature">200</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">175</setting>
-        <setting key="print cooling">100</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
@@ -50,6 +49,7 @@ Automatically generated PLA profile. Data in this file may not be not correct.
         </machine>
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
+            <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
