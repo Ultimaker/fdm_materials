@@ -18,7 +18,7 @@ Generic ABS profile. Serves as an example file, data in this file is not correct
         <diameter>2.85</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">225</setting>
+        <setting key="print temperature">230</setting>
         <setting key="heated bed temperature">80</setting>
         <setting key="standby temperature">200</setting>
 
