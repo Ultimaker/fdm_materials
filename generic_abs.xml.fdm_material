@@ -34,6 +34,7 @@ Generic ABS profile. Serves as an example file, data in this file is not correct
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print cooling">5</setting>
             <hotend id="BB 0.4" />
             <hotend id="AA 0.4">
