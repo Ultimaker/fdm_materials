@@ -33,5 +33,18 @@ Generic PC profile. Serves as an example file, data in this file is not correct.
             <hotend id="0.6 mm" />
             <hotend id="0.8 mm" />
         </machine>
+                
+        <machine>
+           <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
+           <setting key="print temperature">245</setting>
+           <setting key="heated bed temperature">110</setting>
+           <setting key="standby temperature">160</setting>
+           <setting key="print cooling">0.0</setting>
+           <hotend id="0.25 mm" />
+           <hotend id="0.4 mm" />
+           <hotend id="0.6 mm" />
+           <hotend id="0.8 mm" />
+       </machine>
+        
     </settings>
 </fdmmaterial>
