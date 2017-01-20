@@ -63,7 +63,7 @@ Generic PLA profile. Serves as an example file, data in this file is not correct
            <setting key="print temperature">190</setting>
            <setting key="heated bed temperature">50</setting>
            <setting key="standby temperature">160</setting>
-           <setting key="print cooling">40.0</setting>
+           <setting key="print cooling">50.0</setting>
            <hotend id="0.25 mm" />
            <hotend id="0.4 mm" />
            <hotend id="0.6 mm" />
