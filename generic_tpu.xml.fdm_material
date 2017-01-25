@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Generic TPU 95A profile. Serves as an example file, data in this file is not correct.
+Generic TPU 95A profile. The data in this file may not be correct for your specific machine.
 -->
 <fdmmaterial xmlns="http://www.ultimaker.com/material">
     <metadata>
