@@ -4,9 +4,9 @@ cmake_minimum_required(VERSION 2.8.12)
 
 include(CMakePackageConfigHelpers)
 
-option(Embedded "Build for Ultimaker Embedded software" OFF)
+option(EMBEDDED "Build for Ultimaker Embedded software" OFF)
 
-if(NOT Embedded)
+if(NOT EMBEDDED)
 	set(INSTALL_PATH "share/cura/resources/materials"
 	    CACHE PATH 
 	    "The path to install the materials to. Should ideally be relative to CMAKE_INSTALL_PREFIX"
