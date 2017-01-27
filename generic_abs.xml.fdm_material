@@ -44,7 +44,7 @@ Generic ABS profile. The data in this file may not be correct for your specific 
                 
         <machine>
            <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
-           <setting key="print temperature">220</setting>
+           <setting key="print temperature">230</setting>
            <setting key="heated bed temperature">90</setting>
            <setting key="standby temperature">160</setting>
            <setting key="print cooling">0.0</setting>
