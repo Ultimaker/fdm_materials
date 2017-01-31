@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Generic ABS profile. Serves as an example file, data in this file is not correct.
+Generic ABS profile. The data in this file may not be correct for your specific machine.
 -->
 <fdmmaterial xmlns="http://www.ultimaker.com/material">
     <metadata>
@@ -41,5 +41,18 @@ Generic ABS profile. Serves as an example file, data in this file is not correct
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
+                
+        <machine>
+           <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
+           <setting key="print temperature">230</setting>
+           <setting key="heated bed temperature">90</setting>
+           <setting key="standby temperature">160</setting>
+           <setting key="print cooling">0.0</setting>
+           <hotend id="0.25 mm" />
+           <hotend id="0.4 mm" />
+           <hotend id="0.6 mm" />
+           <hotend id="0.8 mm" />
+       </machine>
+        
     </settings>
 </fdmmaterial>
