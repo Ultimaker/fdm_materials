@@ -42,7 +42,6 @@ Generic PC profile. The data in this file may not be correct for your specific m
            <setting key="print cooling">0.0</setting>
            <hotend id="0.25 mm" />
            <hotend id="0.4 mm" />
-           <hotend id="0.6 mm" />
            <hotend id="0.8 mm" />
        </machine>
         
