@@ -36,8 +36,8 @@ Generic PC profile. The data in this file may not be correct for your specific m
         <machine>
            <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
            <setting key="hardware compatible">yes</setting>
-           <setting key="print temperature">240</setting>
-           <setting key="heated bed temperature">35</setting>
+           <setting key="print temperature">245</setting>
+           <setting key="heated bed temperature">135</setting>
            <setting key="standby temperature">160</setting>
            <setting key="print cooling">0.0</setting>
            <hotend id="0.25 mm" />
