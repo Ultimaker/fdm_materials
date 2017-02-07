@@ -13,7 +13,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
         <version>1</version>
         <color_code>#F29030</color_code>
         <description>Generic PC profile. The data in this file may not be correct for your specific machine.</description>
-        <adhesion_info>Set your print speed to a low value (10mm/sec) to get good layer bonding</adhesion_info>
+        <adhesion_info>Set your print speed to a low value (10mm/sec) to get better layer bonding</adhesion_info>
     </metadata>
     <properties>
         <density>1.19</density>
