@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Generic PC profile. The data in this file may not be correct for your specific machine.
+When printing PolyCarbonate, make sure your speed is set to slow, like 10mm/sec
 -->
 <fdmmaterial xmlns="http://www.ultimaker.com/material">
     <metadata>
