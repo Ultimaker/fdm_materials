@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Generic PC profile. The data in this file may not be correct for your specific machine.
-When printing PolyCarbonate, make sure your speed is set to slow, like 10mm/sec
 -->
 <fdmmaterial xmlns="http://www.ultimaker.com/material">
     <metadata>
@@ -13,8 +12,8 @@ When printing PolyCarbonate, make sure your speed is set to slow, like 10mm/sec
         <GUID>98c05714-bf4e-4455-ba27-57d74fe331e4</GUID>
         <version>1</version>
         <color_code>#F29030</color_code>
-        <description>Set your print speed to a low value (10mm/sec) to get good layer bonding</description>
-        <adhesion_info></adhesion_info>
+        <description>Generic PC profile. The data in this file may not be correct for your specific machine.</description>
+        <adhesion_info>Set your print speed to a low value (10mm/sec) to get good layer bonding</adhesion_info>
     </metadata>
     <properties>
         <density>1.19</density>
