@@ -24,8 +24,8 @@ Generic PETG profile. The data in this file may not be correct for your specific
         
         <machine>
            <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
-           <setting key="print temperature">215</setting>
-           <setting key="heated bed temperature">70</setting>
+           <setting key="print temperature">220</setting>
+           <setting key="heated bed temperature">85</setting>
            <setting key="standby temperature">120</setting>
            <setting key="print cooling">40.0</setting>
            <hotend id="0.25 mm" />
