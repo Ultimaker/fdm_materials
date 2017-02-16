@@ -38,7 +38,14 @@ Generic Nylon profile. Serves as an example file, data in this file is not corre
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print cooling">40</setting>
             <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
             <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
