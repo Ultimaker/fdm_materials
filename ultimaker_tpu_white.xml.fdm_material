@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Generic CPE+ profile. Serves as an example file, data in this file is not correct.
+Generic TPU 95A profile. The data in this file may not be correct for your specific machine.
 -->
 <fdmmaterial xmlns="http://www.ultimaker.com/material">
     <metadata>
         <name>
             <brand>Ultimaker</brand>
-            <material>CPE+</material>
-            <color>Black</color>
+            <material>TPU 95A</material>
+            <color>White</color>
         </name>
-        <GUID>1aca047a-42df-497c-abfb-0e9cb85ead52</GUID>
+        <GUID>6a2573e6-c8ee-4c66-8029-3ebb3d5adc5b</GUID>
         <version>1</version>
-        <color_code>#0e0e10</color_code>
+        <color_code>#f1ece1</color_code>
     </metadata>
     <properties>
-        <density>1.18</density>
+        <density>1.22</density>
         <diameter>2.85</diameter>
     </properties>
     <settings>
@@ -28,12 +28,12 @@ Generic CPE+ profile. Serves as an example file, data in this file is not correc
             <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
             <setting key="hardware compatible">yes</setting>
 
-            <hotend id="0.25 mm">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
+            <hotend id="0.25 mm" />
             <hotend id="0.4 mm" />
             <hotend id="0.6 mm" />
-            <hotend id="0.8 mm" />
+            <hotend id="0.8 mm">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
         </machine>
     </settings>
 </fdmmaterial>

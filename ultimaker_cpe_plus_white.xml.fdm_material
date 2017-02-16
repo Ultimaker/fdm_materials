@@ -5,7 +5,7 @@ Generic CPE+ profile. Serves as an example file, data in this file is not correc
 <fdmmaterial xmlns="http://www.ultimaker.com/material">
     <metadata>
         <name>
-            <brand>Generic</brand>
+            <brand>Ultimaker</brand>
             <material>CPE+</material>
             <color>White</color>
         </name>
