@@ -53,6 +53,5 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
            <hotend id="0.4 mm" />
            <hotend id="0.8 mm" />
        </machine>
-        
     </settings>
 </fdmmaterial>
