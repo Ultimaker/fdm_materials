@@ -35,11 +35,13 @@ Generic PVA profile. The data in this file may not be correct for your specific 
                 
         <machine>
            <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
+           <setting key="hardware compatible">yes</setting>
            <setting key="print temperature">205</setting>
            <setting key="heated bed temperature">50</setting>
            <setting key="standby temperature">160</setting>
            <setting key="print cooling">0.0</setting>
-           <setting key="hardware compatible">yes</setting>
+           <setting key="retraction prime speed">8</setting>
+           <setting key="nozzle switch prime speed">8</setting>
            <hotend id="0.25 mm" />
            <hotend id="0.4 mm" />
            <hotend id="0.8 mm" />
