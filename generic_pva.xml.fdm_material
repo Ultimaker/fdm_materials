@@ -40,8 +40,11 @@ Generic PVA profile. The data in this file may not be correct for your specific 
            <setting key="standby temperature">160</setting>
            <setting key="print cooling">0.0</setting>
            <hotend id="0.25 mm" />
+               <setting key="hardware compatible">yes</setting>
            <hotend id="0.4 mm" />
+               <setting key="hardware compatible">yes</setting>
            <hotend id="0.8 mm" />
+               <setting key="hardware compatible">yes</setting>
        </machine>
     </settings>
 </fdmmaterial>
