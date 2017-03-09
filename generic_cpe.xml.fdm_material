@@ -11,7 +11,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
         </name>
         <GUID>12f41353-1a33-415e-8b4f-a775a6c70cc6</GUID>
         <version>1</version>
-        <color_code>#159499</color_code>
+        <color_code>#ff00ff</color_code>
     </metadata>
     <properties>
         <density>1.27</density>
