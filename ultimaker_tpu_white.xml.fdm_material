@@ -35,5 +35,17 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
                 <setting key="hardware compatible">no</setting>
             </hotend>
         </machine>
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <hotend id="BB 0.4" />
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="BB 0.8" />
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
     </settings>
 </fdmmaterial>

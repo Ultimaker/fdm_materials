@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Generic PC profile. The data in this file may not be correct for your specific machine.
+Generic TPU 95A profile. The data in this file may not be correct for your specific machine.
 -->
 <fdmmaterial xmlns="http://www.ultimaker.com/material">
     <metadata>
         <name>
-            <brand>Generic</brand>
-            <material>PC</material>
-            <color>Generic</color>
+            <brand>Ultimaker</brand>
+            <material>TPU 95A</material>
+            <color>Blue</color>
         </name>
-        <GUID>5e786b05-a620-4a87-92d0-f02becc1ff98</GUID>
+        <GUID>5f4a826c-7bfe-460f-8650-a9178b180d34</GUID>
         <version>1</version>
-        <color_code>#ecece7</color_code>
-        <description>Generic PC profile. The data in this file may not be correct for your specific machine.</description>
-        <adhesion_info>Set your print speed to a low value (10mm/sec) to get better layer bonding</adhesion_info>
+        <color_code>#00387b</color_code>
     </metadata>
     <properties>
-        <density>1.19</density>
+        <density>1.22</density>
         <diameter>2.85</diameter>
     </properties>
     <settings>
@@ -29,12 +27,14 @@ Generic PC profile. The data in this file may not be correct for your specific m
             <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
             <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
             <setting key="hardware compatible">yes</setting>
+
             <hotend id="0.25 mm" />
             <hotend id="0.4 mm" />
             <hotend id="0.6 mm" />
-            <hotend id="0.8 mm" />
+            <hotend id="0.8 mm">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
         </machine>
-
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
@@ -47,18 +47,5 @@ Generic PC profile. The data in this file may not be correct for your specific m
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
-
-        <machine>
-           <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
-           <setting key="hardware compatible">yes</setting>
-           <setting key="print temperature">245</setting>
-           <setting key="heated bed temperature">135</setting>
-           <setting key="standby temperature">160</setting>
-           <setting key="print cooling">0.0</setting>
-           <hotend id="0.25 mm" />
-           <hotend id="0.4 mm" />
-           <hotend id="0.8 mm" />
-       </machine>
-        
     </settings>
 </fdmmaterial>
