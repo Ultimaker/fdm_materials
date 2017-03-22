@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Generic TPU 95A profile. The data in this file may not be correct for your specific machine.
+-->
+<fdmmaterial xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Ultimaker</brand>
+            <material>TPU 95A</material>
+            <color>White</color>
+        </name>
+        <GUID>6a2573e6-c8ee-4c66-8029-3ebb3d5adc5b</GUID>
+        <version>1</version>
+        <color_code>#f1ece1</color_code>
+    </metadata>
+    <properties>
+        <density>1.22</density>
+        <diameter>2.85</diameter>
+    </properties>
+    <settings>
+        <setting key="hardware compatible">no</setting><!-- This material is not supported on most printers due to high temperatures -->
+        <setting key="print temperature">260</setting>
+        <setting key="heated bed temperature">110</setting>
+        <setting key="standby temperature">175</setting>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
+            <setting key="hardware compatible">yes</setting>
+
+            <hotend id="0.25 mm" />
+            <hotend id="0.4 mm" />
+            <hotend id="0.6 mm" />
+            <hotend id="0.8 mm">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+        </machine>
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <hotend id="BB 0.4" />
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="BB 0.8" />
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
+    </settings>
+</fdmmaterial>
