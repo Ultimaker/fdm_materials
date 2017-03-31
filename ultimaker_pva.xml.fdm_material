@@ -55,10 +55,19 @@ Ultimaker PVA profile. Initial version, actual printing information in this file
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">no</setting>
             </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="BB 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="BB 0.8">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>

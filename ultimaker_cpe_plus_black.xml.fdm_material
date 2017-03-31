@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Generic Nylon profile. Serves as an example file, data in this file is not correct.
+Generic CPE+ profile. Serves as an example file, data in this file is not correct.
 -->
 <fdmmaterial xmlns="http://www.ultimaker.com/material">
     <metadata>
         <name>
             <brand>Ultimaker</brand>
-            <material>Nylon</material>
+            <material>CPE+</material>
             <color>Black</color>
         </name>
-        <GUID>c64c2dbe-5691-4363-a7d9-66b2dc12837f</GUID>
+        <GUID>1aca047a-42df-497c-abfb-0e9cb85ead52</GUID>
         <version>1</version>
-        <color_code>#27292b</color_code>
+        <color_code>#0e0e10</color_code>
     </metadata>
     <properties>
-        <density>1.14</density>
+        <density>1.18</density>
         <diameter>2.85</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">245</setting>
-        <setting key="heated bed temperature">60</setting>
+        <setting key="hardware compatible">no</setting><!-- This material is not supported on most printers due to high temperatures -->
+        <setting key="print temperature">260</setting>
+        <setting key="heated bed temperature">110</setting>
         <setting key="standby temperature">175</setting>
-        <setting key="retraction amount">8</setting>
-        <setting key="retraction speed">25</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
             <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
+            <setting key="hardware compatible">yes</setting>
 
-            <hotend id="0.25 mm" />
+            <hotend id="0.25 mm">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="0.4 mm" />
             <hotend id="0.6 mm" />
             <hotend id="0.8 mm" />
@@ -36,7 +38,6 @@ Generic Nylon profile. Serves as an example file, data in this file is not corre
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
-            <setting key="print cooling">40</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
@@ -51,4 +52,3 @@ Generic Nylon profile. Serves as an example file, data in this file is not corre
         </machine>
     </settings>
 </fdmmaterial>
-
