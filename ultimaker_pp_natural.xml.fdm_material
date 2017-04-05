@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Natural PP profile. The data in this file may not be correct for your specific machine.
+-->
+<fdmmaterial xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Ultimaker</brand>
+            <material>PP</material>
+            <color>Natural</color>
+        </name>
+        <GUID>c7005925-2a41-4280-8cdd-4029e3fe5253</GUID>
+        <version>1</version>
+        <color_code>#000000</color_code> <!--TODO EM-1559 -->
+        <description>To be filled</description> <!--TODO EM-1559 -->
+        <adhesion_info>100C +adhesive stickers +brim</adhesion_info> <!--TODO EM-1559 -->
+    </metadata>
+    <properties>
+        <density>0.89</density>
+        <diameter>2.85</diameter>
+    </properties>
+    <settings>
+        <setting key="hardware compatible">no</setting> <!--Not yet determined TODO EM-1559 -->
+        <setting key="print temperature">210</setting> <!--Not yet determined TODO EM-1559 -->
+        <setting key="heated bed temperature">110</setting> <!--Not yet determined TODO EM-1559 -->
+        <setting key="standby temperature">175</setting> <!--Not yet determined TODO EM-1559 -->
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
+            <setting key="hardware compatible">yes</setting>
+            <hotend id="0.25 mm" />
+            <hotend id="0.4 mm" />
+            <hotend id="0.6 mm" />
+            <hotend id="0.8 mm" />
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <hotend id="BB 0.4" />
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="BB 0.8" />
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>        
+    </settings>
+</fdmmaterial>
