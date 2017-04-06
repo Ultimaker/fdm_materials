@@ -50,14 +50,23 @@ Generic PC profile. The data in this file may not be correct for your specific m
 
         <machine>
            <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
-           <setting key="hardware compatible">yes</setting>
-           <setting key="print temperature">245</setting>
-           <setting key="heated bed temperature">135</setting>
-           <setting key="standby temperature">160</setting>
            <setting key="print cooling">0.0</setting>
-           <hotend id="0.25 mm" />
-           <hotend id="0.4 mm" />
-           <hotend id="0.8 mm" />
-        </machine>
+           <setting key="standby temperature">160</setting>
+           <setting key="retraction speed">40</setting>
+           <setting key="heated bed temperature">135</setting>
+           <setting key="print temperature">245</setting>
+           <hotend id="0.25 mm">
+                <setting key="hardware compatible">yes</setting>
+		        <setting key="retraction amount">2.0</setting>
+	       </hotend>
+           <hotend id="0.4 mm">
+                <setting key="hardware compatible">yes</setting>
+		        <setting key="retraction amount">2.0</setting>
+	       </hotend>
+           <hotend id="0.8 mm">
+                <setting key="hardware compatible">yes</setting>
+		        <setting key="retraction amount">2.0</setting>
+	       </hotend>
+       </machine>
     </settings>
 </fdmmaterial>
