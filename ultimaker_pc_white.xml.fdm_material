@@ -5,7 +5,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
 <fdmmaterial xmlns="http://www.ultimaker.com/material">
     <metadata>
         <name>
-            <brand>Generic</brand>
+            <brand>Ultimaker</brand>
             <material>PC</material>
             <color>Generic</color>
         </name>
