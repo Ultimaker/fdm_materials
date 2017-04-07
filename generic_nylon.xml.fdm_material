@@ -58,17 +58,17 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
            <setting key="heated bed temperature">60</setting>
            <setting key="print temperature">230</setting>
            <hotend id="0.25 mm">
-                <setting key="hardware compatible">yes</setting>
-	        	<setting key="retraction amount">2.0</setting>
-	       </hotend>
+	       <setting key="hardware compatible">yes</setting>
+	       <setting key="retraction amount">2.0</setting>
+	   </hotend>
            <hotend id="0.4 mm">
-                <setting key="hardware compatible">yes</setting>
-		        <setting key="retraction amount">2.0</setting>
-	       </hotend>
+	       <setting key="hardware compatible">yes</setting>
+	       <setting key="retraction amount">2.0</setting>
+	   </hotend>
            <hotend id="0.8 mm">
-                <setting key="hardware compatible">yes</setting>
-		        <setting key="retraction amount">2.0</setting>
-	       </hotend>
+	       <setting key="hardware compatible">yes</setting>
+	       <setting key="retraction amount">2.0</setting>
+	   </hotend>
        </machine>
     </settings>
 </fdmmaterial>
