@@ -46,7 +46,8 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
             <hotend id="BB 0.8" />
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-            </hotend>			
+                <setting key="retraction speed">45</setting>
+            </hotend>
         </machine>		
     </settings>
 </fdmmaterial>
