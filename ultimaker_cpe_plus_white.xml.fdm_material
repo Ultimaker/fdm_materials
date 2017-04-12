@@ -45,6 +45,8 @@ Generic CPE+ profile. Serves as an example file, data in this file is not correc
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">7</setting>
+                <setting key="print cooling">1</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
