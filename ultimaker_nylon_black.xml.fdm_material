@@ -33,6 +33,7 @@ Generic Nylon profile. Serves as an example file, data in this file is not corre
             <hotend id="0.6 mm" />
             <hotend id="0.8 mm" />
         </machine>
+
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
@@ -47,6 +48,7 @@ Generic Nylon profile. Serves as an example file, data in this file is not corre
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction speed">45</setting>
             </hotend>
         </machine>
     </settings>
