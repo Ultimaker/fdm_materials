@@ -29,6 +29,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
             <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
             <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
             <setting key="hardware compatible">yes</setting>
+
             <hotend id="0.25 mm" />
             <hotend id="0.4 mm" />
             <hotend id="0.6 mm" />
@@ -41,6 +42,9 @@ Generic PC profile. The data in this file may not be correct for your specific m
             <hotend id="BB 0.4" />
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="print cooling">0</setting>
+                <setting key="retraction amount">8</setting>
+                <setting key="retraction speed">35</setting>
             </hotend>
             <hotend id="BB 0.8" />
             <hotend id="AA 0.8">

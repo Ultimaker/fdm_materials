@@ -6,6 +6,8 @@
             <material>PLA</material>
             <color>Generic</color>
         </name>
+        <GUID>4cf5cf01-76b2-43d9-93f0-3b713d5730a8</GUID>
+        <version>1</version>
     </metadata>
     <properties>
         <density>1.24</density>

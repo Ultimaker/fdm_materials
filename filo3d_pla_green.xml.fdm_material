@@ -6,6 +6,8 @@
             <material>PLA</material>
             <color>Green</color>
         </name>
+        <GUID>6a738af3-55ce-4467-b7e2-231a2db58bce</GUID>
+        <version>1</version>
     </metadata>
     <properties>
         <density>1.24</density>

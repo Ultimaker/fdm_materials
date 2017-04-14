@@ -49,7 +49,7 @@ Ultimaker PVA profile. Initial version, actual printing information in this file
     </properties>
     <settings>
         <setting key="hardware compatible">no</setting>
-        <setting key="print temperature">215</setting>
+        <setting key="print temperature">217</setting>
         <setting key="standby temperature">175</setting>
 
         <machine>
