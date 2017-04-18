@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Generic ABS 1.75mm profile. The data in this file may not be correct for your specific machine.
+-->
+<fdmmaterial xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Generic</brand>
+            <material>ABS</material>
+            <color>Generic</color>
+        </name>
+        <GUID>2780b345-577b-4a24-a2c5-12e6aad3e690</GUID>
+        <version>1</version>
+        <color_code>#8cb219</color_code>
+    </metadata>
+    <properties>
+        <density>1.10</density>
+        <diameter>1.75</diameter>
+    </properties>
+    <settings>
+        <setting key="print temperature">230</setting>
+        <setting key="heated bed temperature">80</setting>
+        <setting key="standby temperature">200</setting>
+    </settings>
+</fdmmaterial>
