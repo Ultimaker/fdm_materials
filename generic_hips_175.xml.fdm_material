@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Generic HIPS 1.75mm profile. The data in this file may not be correct for your specific machine.
+-->
+<fdmmaterial xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Generic</brand>
+            <material>HIPS</material>
+            <color>Generic</color>
+        </name>
+        <GUID>283d439a-3490-4481-920c-c51d8cdecf9c</GUID>
+        <version>1</version>
+        <color_code>#12f3e0</color_code>
+    </metadata>
+    <properties>
+        <density>1.24</density>
+        <diameter>1.75</diameter>
+    </properties>
+    <settings>
+        <setting key="print temperature">215</setting>
+        <setting key="heated bed temperature">60</setting>
+        <setting key="standby temperature">160</setting>
+    </settings>
+</fdmmaterial>
