@@ -10,7 +10,7 @@ Generic ABS profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
             <label>Arnitel2045</label>
         </name>
-        <GUID></GUID>
+        <GUID>fc67dfa2-7f71-4ca8-8ba5-dfe802fda22c</GUID>
         <version>1</version>
         <color_code>#ee51f8</color_code>
     </metadata>
