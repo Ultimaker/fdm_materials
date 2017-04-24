@@ -9,7 +9,7 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <material>PVA</material>
             <color>Generic</color>
         </name>
-        <GUID></GUID>
+        <GUID>a4255da2-cb2a-4042-be49-4a83957a2f9a</GUID>
         <version>1</version>
         <color_code>#a32bcc</color_code>
     </metadata>
