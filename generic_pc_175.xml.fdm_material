@@ -9,7 +9,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
             <material>PC</material>
             <color>Generic</color>
         </name>
-        <GUID></GUID>
+        <GUID>62414577-94d1-490d-b1e4-7ef3ec40db02</GUID>
         <version>1</version>
         <color_code>#F29030</color_code>
         <adhesion_info>Set your print speed to a low value (10mm/sec) to get better layer bonding</adhesion_info>
