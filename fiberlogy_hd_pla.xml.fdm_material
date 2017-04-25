@@ -8,6 +8,7 @@
         </name>
         <GUID>78f8b7d3-e129-4ba3-bdb1-1c9eed8a923f</GUID>
         <version>1</version>
+        <color_code>#dba500</color_code>
     </metadata>
     <properties>
         <density>1.24</density>
