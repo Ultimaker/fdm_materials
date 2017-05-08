@@ -1,46 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Generic HIPS 1.75mm profile. The data in this file may not be correct for your specific machine.
+The data in this file may not be correct for your specific machine.
 -->
 <fdmmaterial xmlns="http://www.ultimaker.com/material">
     <metadata>
         <name>
-            <brand>Generic</brand>
-            <material>HIPS</material>
+            <brand>DSM</brand>
+            <material>TPC</material>
             <color>Generic</color>
+            <label>Arnitel2045</label>
         </name>
-        <GUID>283d439a-3490-4481-920c-c51d8cdecf9c</GUID>
+        <GUID>fc67dfa2-7f71-4ca8-8ba5-dfe802fda22c</GUID>
         <version>1</version>
-        <color_code>#12f3e0</color_code>
+        <color_code>#ee51f8</color_code>
     </metadata>
     <properties>
-        <density>1.24</density>
+        <density>1.10</density>
         <diameter>1.75</diameter>
     </properties>
     <settings>
         <setting key="print temperature">215</setting>
-        <setting key="heated bed temperature">60</setting>
+        <setting key="heated bed temperature">50</setting>
         <setting key="standby temperature">160</setting>
-        
-        <machine>
+
+       <machine>
            <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
-           <setting key="print cooling">0.0</setting>
+           <setting key="print cooling">40.0</setting>
            <setting key="standby temperature">160</setting>
-           <setting key="retraction speed">40</setting>
-           <setting key="heated bed temperature">85</setting>
-           <setting key="print temperature">225</setting>
+           <setting key="retraction speed">20</setting>
+           <setting key="heated bed temperature">50</setting>
+           <setting key="print temperature">215</setting>
            <hotend id="0.25 mm">
 	       <setting key="hardware compatible">yes</setting>
-	       <setting key="retraction amount">1.0</setting>
-	   </hotend>
+               <setting key="retraction amount">1.0</setting>
+    	   </hotend>
            <hotend id="0.4 mm">
 	       <setting key="hardware compatible">yes</setting>
-	       <setting key="retraction amount">1.0</setting>
-    	   </hotend>
+               <setting key="retraction amount">1.0</setting>
+	   </hotend>
            <hotend id="0.8 mm">
 	       <setting key="hardware compatible">yes</setting>
-	       <setting key="retraction amount">1.5</setting>
-    	   </hotend>
+               <setting key="retraction amount">1.5</setting>
+	   </hotend>
        </machine>
     </settings>
 </fdmmaterial>

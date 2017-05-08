@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Generic Nylon 1.75mm profile. The data in this file may not be correct for your specific machine.
+Generic PVA profile. The data in this file may not be correct for your specific machine.
 -->
 <fdmmaterial xmlns="http://www.ultimaker.com/material">
     <metadata>
         <name>
             <brand>Generic</brand>
-            <material>Nylon</material>
+            <material>PVA</material>
             <color>Generic</color>
         </name>
-        <GUID>283d439a-3490-4481-920c-c51d8cdecf9c</GUID>
+        <GUID>a4255da2-cb2a-4042-be49-4a83957a2f9a</GUID>
         <version>1</version>
-        <color_code>#3DF266</color_code>
+        <color_code>#a32bcc</color_code>
     </metadata>
     <properties>
-        <density>1.14</density>
+        <density>1.23</density>
         <diameter>1.75</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">245</setting>
-        <setting key="heated bed temperature">60</setting>
+        <setting key="hardware compatible">no</setting>
+        <setting key="print temperature">215</setting>
         <setting key="standby temperature">175</setting>
-        <setting key="retraction amount">8</setting>
-        <setting key="retraction speed">25</setting>
-        
+
         <machine>
            <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
            <setting key="print cooling">0.0</setting>
            <setting key="standby temperature">160</setting>
            <setting key="retraction speed">40</setting>
-           <setting key="heated bed temperature">60</setting>
-           <setting key="print temperature">230</setting>
+           <setting key="heated bed temperature">50</setting>
+           <setting key="print temperature">205</setting>
            <hotend id="0.25 mm">
 	       <setting key="hardware compatible">yes</setting>
 	       <setting key="retraction amount">1.0</setting>
