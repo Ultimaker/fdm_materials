@@ -2,7 +2,8 @@
 <fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
     <metadata>
         <name>
-            <brand>PolyMax</brand>
+            <brand>Polymaker</brand>
+            <label>PolyMax</label>
             <material>PLA</material>
             <color>Generic</color>
         </name>
