@@ -39,6 +39,8 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <setting key="print temperature">223</setting>
+
             <hotend id="BB 0.4" />
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -50,7 +52,6 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction speed">45</setting>
                 <setting key="print cooling">50</setting>
-                <setting key="print temperature">223</setting>
             </hotend>
         </machine>
     </settings>
