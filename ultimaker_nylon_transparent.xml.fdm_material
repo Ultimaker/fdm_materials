@@ -25,8 +25,8 @@ Generic Nylon profile. Serves as an example file, data in this file is not corre
         <setting key="retraction speed">25</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
 
             <hotend id="0.25 mm" />
             <hotend id="0.4 mm" />

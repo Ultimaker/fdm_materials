@@ -26,8 +26,8 @@ Generic PC profile. The data in this file may not be correct for your specific m
         <setting key="standby temperature">175</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
             <setting key="hardware compatible">yes</setting>
 
             <hotend id="0.25 mm" />
