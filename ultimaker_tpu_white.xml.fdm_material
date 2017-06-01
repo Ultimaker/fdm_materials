@@ -2,7 +2,7 @@
 <!--
 Generic TPU 95A profile. The data in this file may not be correct for your specific machine.
 -->
-<fdmmaterial xmlns="http://www.ultimaker.com/material">
+<fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
     <metadata>
         <name>
             <brand>Ultimaker</brand>
@@ -19,13 +19,13 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
     </properties>
     <settings>
         <setting key="hardware compatible">no</setting><!-- This material is not supported on most printers due to high temperatures -->
-        <setting key="print temperature">260</setting>
-        <setting key="heated bed temperature">110</setting>
+        <setting key="print temperature">228</setting>
+        <setting key="heated bed temperature">0</setting>
         <setting key="standby temperature">175</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
             <setting key="hardware compatible">yes</setting>
 
             <hotend id="0.25 mm" />
@@ -35,16 +35,23 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
                 <setting key="hardware compatible">no</setting>
             </hotend>
         </machine>
+
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <setting key="print temperature">223</setting>
+
             <hotend id="BB 0.4" />
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="print cooling">20</setting>
+                <setting key="retraction speed">35</setting>
             </hotend>
             <hotend id="BB 0.8" />
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction speed">45</setting>
+                <setting key="print cooling">50</setting>
             </hotend>
         </machine>
     </settings>

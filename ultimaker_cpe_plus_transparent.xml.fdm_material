@@ -2,7 +2,7 @@
 <!--
 Generic CPE+ profile. Serves as an example file, data in this file is not correct.
 -->
-<fdmmaterial xmlns="http://www.ultimaker.com/material">
+<fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
     <metadata>
         <name>
             <brand>Ultimaker</brand>
@@ -20,12 +20,12 @@ Generic CPE+ profile. Serves as an example file, data in this file is not correc
     <settings>
         <setting key="hardware compatible">no</setting><!-- This material is not supported on most printers due to high temperatures -->
         <setting key="print temperature">260</setting>
-        <setting key="heated bed temperature">110</setting>
+        <setting key="heated bed temperature">107</setting>
         <setting key="standby temperature">175</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
             <setting key="hardware compatible">yes</setting>
 
             <hotend id="0.25 mm">
@@ -45,6 +45,8 @@ Generic CPE+ profile. Serves as an example file, data in this file is not correc
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">7</setting>
+                <setting key="print cooling">1</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>

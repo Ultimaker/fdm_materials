@@ -2,7 +2,7 @@
 <!--
 Generic Nylon profile. Serves as an example file, data in this file is not correct.
 -->
-<fdmmaterial xmlns="http://www.ultimaker.com/material">
+<fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
     <metadata>
         <name>
             <brand>Ultimaker</brand>
@@ -25,21 +25,30 @@ Generic Nylon profile. Serves as an example file, data in this file is not corre
         <setting key="retraction speed">25</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
 
             <hotend id="0.25 mm" />
             <hotend id="0.4 mm" />
             <hotend id="0.6 mm" />
             <hotend id="0.8 mm" />
         </machine>
+
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print cooling">40</setting>
             <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction speed">45</setting>
             </hotend>
         </machine>
     </settings>

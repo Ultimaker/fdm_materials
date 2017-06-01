@@ -9,38 +9,18 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <material>PVA</material>
             <color>Generic</color>
         </name>
-        <GUID>86a89ceb-4159-47f6-ab97-e9953803d70f</GUID>
+        <GUID>a4255da2-cb2a-4042-be49-4a83957a2f9a</GUID>
         <version>1</version>
         <color_code>#a32bcc</color_code>
     </metadata>
     <properties>
         <density>1.23</density>
-        <diameter>2.85</diameter>
+        <diameter>1.75</diameter>
     </properties>
     <settings>
         <setting key="hardware compatible">no</setting>
         <setting key="print temperature">215</setting>
         <setting key="standby temperature">175</setting>
-
-        <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
-            <hotend id="AA 0.25">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="AA 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="AA 0.8">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-        </machine>
 
         <machine>
            <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
