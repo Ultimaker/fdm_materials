@@ -39,6 +39,7 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 XL"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
 
             <hotend id="BB 0.4" />
