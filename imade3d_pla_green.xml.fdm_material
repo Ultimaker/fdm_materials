@@ -13,6 +13,8 @@
     <properties>
         <density>1.24</density>
         <diameter>1.75</diameter>
+        <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
+        <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
     </properties>
     <settings>
         <setting key="print temperature">210</setting>
