@@ -41,9 +41,15 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
 
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
+
+                <setting key="print cooling">10</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+
+                <setting key="print cooling">20</setting>
+                <setting key="retraction amount">7</setting>
+                <setting key="retraction speed">35</setting>
             </hotend>
         </machine>
     </settings>
