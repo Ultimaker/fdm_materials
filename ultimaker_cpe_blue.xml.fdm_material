@@ -9,6 +9,8 @@
         <GUID>4d816290-ce2e-40e0-8dc8-3f702243131e</GUID>
         <version>0</version>
         <color_code>#00a3e0</color_code>
+        <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
+        <adhesion_info>Use glue.</adhesion_info>
     </metadata>
     <properties>
         <density>1.27</density>
