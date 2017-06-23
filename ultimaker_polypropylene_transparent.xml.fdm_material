@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-Generic Polypropylene profile. Serves as an example file, data in this file is not correct.
--->
 <fdmmaterial xmlns="http://www.ultimaker.com/material">
     <metadata>
         <name>
