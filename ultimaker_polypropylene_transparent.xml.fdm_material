@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Generic Polypropylene profile. Serves as an example file, data in this file is not correct.
+-->
+<fdmmaterial xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Ultimaker</brand>
+            <material>Polypropylene</material>
+            <color>Transparent</color>
+        </name>
+        <GUID>c7005925-2a41-4280-8cdd-4029e3fe5253</GUID>
+        <version>0</version>
+        <description />
+        <adhesion_info />
+        <color_code>#d0d0d0</color_code>
+    </metadata>
+    <properties>
+        <diameter>2.85</diameter>
+        <density>0.89</density>
+    </properties>
+    <settings>
+          <setting key="print temperature">220</setting>
+          <setting key="heated bed temperature">100</setting>
+          <setting key="standby temperature">175</setting>
+          <setting key="print cooling">20</setting>
+          <setting key="retraction speed">35</setting>
+
+          <machine>
+              <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
+              <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
+
+              <setting key="retraction amount">8</setting>
+
+              <hotend id="0.25 mm">
+                  <setting key="hardware compatible">no</setting>
+              </hotend>
+              <hotend id="0.4 mm" />
+              <hotend id="0.6 mm" />
+              <hotend id="0.8 mm" />
+          </machine>
+
+          <machine>
+              <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
+
+              <hotend id="AA 0.4">
+                  <setting key="hardware compatible">yes</setting>
+                  <setting key="print cooling">10</setting>
+              </hotend>
+              <hotend id="AA 0.8">
+                  <setting key="hardware compatible">yes</setting>
+                  <setting key="retraction amount">7</setting>
+              </hotend>
+          </machine>
+    </settings>
+</fdmmaterial>
