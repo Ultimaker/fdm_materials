@@ -38,8 +38,11 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
-            <hotend id="BB 0.4" />
+
             <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
