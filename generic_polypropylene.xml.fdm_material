@@ -20,37 +20,38 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
         <density>0.89</density>
     </properties>
     <settings>
-          <setting key="print temperature">220</setting>
-          <setting key="heated bed temperature">100</setting>
-          <setting key="standby temperature">175</setting>
-          <setting key="print cooling">20</setting>
-          <setting key="retraction speed">35</setting>
+        <setting key="print temperature">220</setting>
+        <setting key="heated bed temperature">100</setting>
+        <setting key="standby temperature">175</setting>
+        <setting key="print cooling">20</setting>
+        <setting key="retraction speed">35</setting>
 
-          <machine>
-              <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
-              <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
+        <machine>
+            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+"/>
 
-              <setting key="retraction amount">8</setting>
+            <setting key="retraction amount">8</setting>
 
-              <hotend id="0.25 mm">
-                  <setting key="hardware compatible">no</setting>
-              </hotend>
-              <hotend id="0.4 mm" />
-              <hotend id="0.6 mm" />
-              <hotend id="0.8 mm" />
-          </machine>
+            <hotend id="0.25 mm">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="0.4 mm" />
+            <hotend id="0.6 mm" />
+            <hotend id="0.8 mm" />
+        </machine>
 
-          <machine>
-              <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
 
-              <hotend id="AA 0.4">
-                  <setting key="hardware compatible">yes</setting>
-              </hotend>
-              <hotend id="AA 0.8">
-                  <setting key="hardware compatible">yes</setting>
-                  <setting key="retraction amount">7</setting>
-                  <setting key="print cooling">10</setting>
-              </hotend>
-          </machine>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">85</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">7</setting>
+                <setting key="print cooling">10</setting>
+            </hotend>
+        </machine>
     </settings>
 </fdmmaterial>
