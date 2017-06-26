@@ -6,7 +6,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
     <metadata>
         <name>
             <brand>Generic</brand>
-            <material>Polypropylene</material>
+            <material>PP</material>
             <color>Generic</color>
         </name>
         <GUID>aa22e9c7-421f-4745-afc2-81851694394a</GUID>
