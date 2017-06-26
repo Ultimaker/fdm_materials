@@ -19,7 +19,7 @@
     <settings>
         <setting key="print temperature">220</setting>
         <setting key="heated bed temperature">100</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="standby temperature">185</setting>
         <setting key="print cooling">20</setting>
         <setting key="retraction speed">35</setting>
 
