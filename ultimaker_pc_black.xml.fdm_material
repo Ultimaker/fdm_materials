@@ -46,6 +46,7 @@
             <hotend id="BB 0.8" />
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="print cooling">5</setting>
             </hotend>
         </machine>
 

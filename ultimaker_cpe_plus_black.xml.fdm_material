@@ -49,6 +49,7 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="print cooling">7</setting>
             </hotend>
         </machine>
     </settings>
