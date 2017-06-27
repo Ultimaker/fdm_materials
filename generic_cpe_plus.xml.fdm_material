@@ -50,7 +50,7 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             <hotend id="BB 0.8" />
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print cooling">7</setting>
+                <setting key="print cooling">8</setting>
             </hotend>
         </machine>
     </settings>
