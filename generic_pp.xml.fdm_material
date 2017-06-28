@@ -51,6 +51,8 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
                 <setting key="retraction amount">7</setting>
                 <setting key="print cooling">10</setting>
             </hotend>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
         </machine>
     </settings>
 </fdmmaterial>
