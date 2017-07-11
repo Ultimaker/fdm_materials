@@ -20,7 +20,6 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
         <diameter>2.85</diameter>
     </properties>
     <settings>
-        <setting key="hardware compatible">no</setting><!-- This material is not supported on most printers due to high temperatures -->
         <setting key="print temperature">228</setting>
         <setting key="heated bed temperature">0</setting>
         <setting key="standby temperature">175</setting>
