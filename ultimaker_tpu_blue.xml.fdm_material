@@ -17,6 +17,7 @@
         <diameter>2.85</diameter>
     </properties>
     <settings>
+        <setting key="hardware compatible">no</setting> <!-- This material is not supported on most printers due to hight temperatures -->
         <setting key="print temperature">228</setting>
         <setting key="heated bed temperature">0</setting>
         <setting key="standby temperature">175</setting>
@@ -38,6 +39,7 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print temperature">223</setting>
+            <setting key="hardware compatible">unknown</setting>
 
             <hotend id="BB 0.4" />
             <hotend id="AA 0.4">

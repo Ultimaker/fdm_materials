@@ -20,6 +20,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
         <diameter>2.85</diameter>
     </properties>
     <settings>
+        <setting key="hardware compatible">no</setting> <!-- This material is not supported on most printers due to hight temperatures -->
         <setting key="print temperature">270</setting>
         <setting key="heated bed temperature">107</setting>
         <setting key="standby temperature">175</setting>
@@ -38,6 +39,8 @@ Generic PC profile. The data in this file may not be correct for your specific m
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <setting key="hardware compatible">unknown</setting>
+
             <hotend id="BB 0.4" />
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
