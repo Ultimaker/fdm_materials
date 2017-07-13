@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>5f4a826c-7bfe-460f-8650-a9178b180d34</GUID>
-        <version>1</version>
+        <version>2</version>
         <color_code>#00387b</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -39,6 +39,7 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print temperature">223</setting>
+            <setting key="hardware compatible">unknown</setting>
 
             <hotend id="BB 0.4" />
             <hotend id="AA 0.4">
