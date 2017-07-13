@@ -1,6 +1,10 @@
 #IDEs
 .idea
 
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
 cura_build/*
 jedi_build/*
 
