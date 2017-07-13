@@ -32,10 +32,14 @@ class MaterialsOutputFormatter:
     __table = "<table>\r\n{0}</table>"
     __table_row = "\t<tr>\r\n{0}\t</tr>\r\n"
     __table_data = "\t\t<td class='{1}'>{0}</td>\r\n"
-    __table_title_data = "\t\t<td class='{1}'><a href=\"https://github.com/Ultimaker/fdm_materials/blob/master/{3}\" target=\"_new\"><abbr title=\"{2}\">{0}</abbr></a></td>\r\n"
+    __table_data_header = "\t\t<td colspan=\"{0}\" class=\"hdr\">[&nbsp;{1}&nbsp;]</td>\r\n"
+    __table_title_data = "\t\t<td class='{0}'>" \
+                         "<a href=\"https://github.com/Ultimaker/fdm_materials/blob/master/{1}\" target=\"_new\">" \
+                         "<abbr title=\"{2}\">{3}&nbsp;({4},&nbsp;&#8960;{5})</abbr></a></td>\r\n"
+
     __table_data_color = "\t\t<td class='{1}' style=\"background-color:{2}\">{0}</td>\r\n"
 
-    def to_html(self, materials, all_devices, all_nozzles, nozzle_lookup) -> str:
+    def toHtml(self, materials, all_devices, all_nozzles, nozzle_lookup) -> str:
         sorted_materials = sorted(materials, key=lambda m: m.brand+m.material+m.color+m.diameter, reverse=True)
         sorted_dev = sorted(all_devices)
         sorted_nozzles = sorted(all_nozzles)
@@ -58,35 +62,47 @@ class MaterialsOutputFormatter:
             # Insert Material brand header
             if current_brand != material.brand:
                 current_brand = material.brand
-                dev_td = "<td colspan=\"{0}\" class=\"hdr\">[&nbsp;{1}&nbsp;]</td>".format(len(sorted_materials), material.brand)
+                dev_td = self.__table_data_header.format(len(sorted_materials), material.brand)
                 device_table += self.__table_row.format(dev_td)
 
             dev_td = self.__table_title_data.format(
-                "{0}&nbsp;({1},&nbsp;&#8960;{2})".format(
-                    material.material.replace(" ", "&nbsp;"),
-                    material.color,
-                    material.diameter), "lbl", material.guid, material.filename)
+                "lbl",
+                material.filename,
+                material.guid,
+                material.material.replace(" ", "&nbsp;"),
+                material.color,
+                material.diameter
+            )
 
-            # Insert color & version blocks
             dev_td += self.__table_data.format(material.version, "lbl sep")
             dev_td += self.__table_data_color.format("", "unknown sep", material.color_code)
 
-            # Loop through devices, build HTML for supported devices.
-            for dev in sorted_dev:
-                class_td = "unknown"
-                nozzle_table = ""
-
-                if dev in material.profiles:
-                    nozzle_table = self.build_nozzle_table(material.profiles[dev].nozzles, sorted_nozzles, nozzle_lookup.get(dev))
-                    class_td = material.profiles[dev].device.is_supported
-
-                dev_td += self.__table_data.format(nozzle_table, "{0} sep".format(class_td))
+            dev_td += self.buildDeviceTable(material, sorted_dev, sorted_nozzles, nozzle_lookup)
 
             device_table += self.__table_row.format(dev_td)
 
         return self.__html.format(self.__table.format(device_table))
 
-    def build_nozzle_table(self, nozzles, all_nozzles, nozzle_lookup):
+    def buildDeviceTable(self, material, sorted_dev, sorted_nozzles, nozzle_lookup) -> str:
+        dev_td = ""
+
+        for dev in sorted_dev:
+            class_td = "unknown"
+            nozzle_table = ""
+
+            if dev in material.profiles:
+                nozzle_table = self.buildNozzleTable(
+                    material.profiles[dev].nozzles,
+                    sorted_nozzles,
+                    nozzle_lookup.get(dev)
+                )
+                class_td = material.profiles[dev].device.is_supported
+
+            dev_td += self.__table_data.format(nozzle_table, "{0} sep".format(class_td))
+
+        return dev_td
+
+    def buildNozzleTable(self, nozzles, all_nozzles, nozzle_lookup):
         nozzle_td = ""
         nozzle_ref = nozzle_lookup if nozzle_lookup is not None else all_nozzles
 

@@ -20,24 +20,19 @@ def main():
         "Ultimaker 3 Extended": ["AA 0.25", "AA 0.4", "AA 0.8", "BB 0.4", "BB 0.8"]
     }
 
-    # prepare environment
     try:
         os.mkdir(working_fld)
     except OSError:
         pass
 
-    # update GIT
     github_connector = GitHubConnector(working_fld, github_url)
-    github_connector.get()
+    github_connector.getSourceFiles()
 
-    # Read material files
     material_reader = MaterialFileReader(working_fld)
     materials = material_reader.read()
 
-    # Build HTML from material files
     materials_output_formatter = MaterialsOutputFormatter()
 
-    # Filter desired devices
     filtered_devices = material_reader.all_devices
     filtered_devices.remove("IMADE3D JellyBOX")
     filtered_devices.remove("cartesio")
@@ -46,8 +41,7 @@ def main():
     filtered_devices.remove("Ultimaker 2 Go")
     filtered_devices.remove("Ultimaker Original")
 
-    # Generate HTML
-    html = materials_output_formatter.to_html(
+    html = materials_output_formatter.toHtml(
         materials,
         filtered_devices | additional_devices,
         material_reader.all_nozzles,

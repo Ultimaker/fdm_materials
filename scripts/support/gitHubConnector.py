@@ -7,7 +7,7 @@ class GitHubConnector:
         self.__working_fld = working_fld
         self.__github_url = github_url
 
-    def get(self):
+    def getSourceFiles(self):
         # Try to load the existing repository. If that fails, clone the repo instead.
         try:
             repo = Repo(self.__working_fld)
