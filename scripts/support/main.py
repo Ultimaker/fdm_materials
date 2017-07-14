@@ -38,13 +38,11 @@ def main():
 
     materials_output_formatter = MaterialsOutputFormatter()
 
-    filtered_devices = material_reader.all_devices
-    filtered_devices.remove("IMADE3D JellyBOX")
-    filtered_devices.remove("cartesio")
-    filtered_devices.remove("Ultimaker 2")
-    filtered_devices.remove("Ultimaker 2 Extended")
-    filtered_devices.remove("Ultimaker 2 Go")
-    filtered_devices.remove("Ultimaker Original")
+    excluded_devices = {
+        "cartesio", "IMADE3D JellyBOX", "Ultimaker 2", "Ultimaker 2 Extended","Ultimaker 2 Go","Ultimaker Original"
+    }
+
+    filtered_devices = {dev for dev in material_reader.all_devices if dev not in excluded_devices}
 
     html = materials_output_formatter.toHtml(
         materials,
