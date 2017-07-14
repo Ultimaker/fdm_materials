@@ -1,12 +1,10 @@
 from enum import Enum, unique
 
-
+"""
+Defines different kinds of support.
+"""
 @unique
 class Support(Enum):
-    """
-    Defines different kinds of support.
-    """
-
     UNKNOWN = "unknown"
     NO = "no"
     YES = "yes"

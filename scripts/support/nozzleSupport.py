@@ -1,10 +1,10 @@
 from supportEnum import Support
 
-
+"""
+Combines support type with nozzle id.
+"""
 class NozzleSupport:
-    """
-    Combines support type with nozzle id.
-    """
+
 
     def __init__(self):
         self.id = ""

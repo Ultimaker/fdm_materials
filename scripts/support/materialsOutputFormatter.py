@@ -1,10 +1,9 @@
 import datetime
 
-
+"""
+Supports building a static HTML file based on a list of Material objects.
+"""
 class MaterialsOutputFormatter:
-    """
-    Supports building a static HTML file based on a list of Material objects.
-    """
 
     __html = "<html><head><title>Material support overview</title></head>\r\n<style TYPE=\"text/css\">" \
              "<!--\r\n" \
@@ -42,16 +41,17 @@ class MaterialsOutputFormatter:
 
     __table_data_color = "\t\t<td class='{1}' style=\"background-color:{2}\">{0}</td>\r\n"
 
-    def toHtml(self, materials, all_devices, all_nozzles, nozzle_lookup) -> str:
-        """
-        Builds a static HTML page based on a list of Material objects.
+    """
+    Builds a static HTML page based on a list of Material objects.
 
-        :param materials: list of Material objects
-        :param all_devices: list of available devices.
-        :param all_nozzles: list of _all_ available nozzles.
-        :param nozzle_lookup: list of available nozzles per device
-        :return: String holding a full HTML page.
-        """
+    :param materials: list of Material objects
+    :param all_devices: list of available devices.
+    :param all_nozzles: list of _all_ available nozzles.
+    :param nozzle_lookup: list of available nozzles per device
+    :return: String holding a full HTML page.
+    """
+    def toHtml(self, materials, all_devices, all_nozzles, nozzle_lookup) -> str:
+
 
         sorted_materials = sorted(materials, key=lambda m: m.brand+m.material+m.color+m.diameter, reverse=True)
         sorted_dev = sorted(all_devices)
@@ -96,17 +96,16 @@ class MaterialsOutputFormatter:
 
         return self.__html.format(self.__table.format(device_table))
 
+    """
+    Builds a table data element containing a HTML table containing device specific support information.
+
+    :param material: Single material object.
+    :param sorted_dev: list of available devices.
+    :param sorted_nozzles: list of all available nozzles.
+    :param nozzle_lookup: list of available nozzles per device.
+    :return: String holding table data.
+    """
     def buildDeviceTable(self, material, sorted_dev, sorted_nozzles, nozzle_lookup) -> str:
-        """
-        Builds a table data element containing a HTML table containing device specific support information.
-
-        :param material: Single material object.
-        :param sorted_dev: list of available devices.
-        :param sorted_nozzles: list of all available nozzles.
-        :param nozzle_lookup: list of available nozzles per device.
-        :return: String holding table data.
-        """
-
         dev_td = ""
 
         for dev in sorted_dev:
@@ -125,15 +124,16 @@ class MaterialsOutputFormatter:
 
         return dev_td
 
-    def buildNozzleTable(self, nozzles, sorted_nozzles, nozzle_lookup) -> str:
-        """
-        Builds a HTML table containing device specific nozzlsupport information.
+    """
+    Builds a HTML table containing device specific nozzlsupport information.
 
-        :param nozzles: List of nozzles for a single device.
-        :param sorted_nozzles: list of all available nozzles.
-        :param nozzle_lookup: list of available nozzles per device.
-        :return: String holding table data.
-        """
+    :param nozzles: List of nozzles for a single device.
+    :param sorted_nozzles: list of all available nozzles.
+    :param nozzle_lookup: list of available nozzles per device.
+    :return: String holding table data.
+    """
+    def buildNozzleTable(self, nozzles, sorted_nozzles, nozzle_lookup) -> str:
+
 
         nozzle_td = ""
         nozzle_ref = nozzle_lookup if nozzle_lookup is not None else sorted_nozzles
