@@ -10,6 +10,9 @@ from nozzleSupport import NozzleSupport
 
 
 class MaterialFileReader:
+    """
+    Reads and parses material definition files.
+    """
 
     all_devices = set()
     all_nozzles = set()
@@ -21,6 +24,13 @@ class MaterialFileReader:
         self.__working_dir = folder
 
     def read(self) -> []:
+        """
+        Reads material definitions from a directory. Parses either XML or JSON (currently not supported).
+        Please not: not every bit of information in the XML is used.
+
+        :return: List of material objects.
+        """
+
         materials = []
         fld = os.path.join(self.__working_dir, self.__file_ext)
         for filename in glob.glob(fld):
@@ -34,9 +44,16 @@ class MaterialFileReader:
                 self.jsonToMaterial(mat)
         return materials
 
-    def xmlToMaterial(self, dat, filename) -> Material:
+    def xmlToMaterial(self, data, filename) -> Material:
+        """
+        Converts the raw XML data from a material file to a material object.
+
+        :param data: Raw XML data
+        :param filename: Material data file name
+        :return: Material data object
+        """
         material = Material()
-        root = EltTree.fromstring(dat)
+        root = EltTree.fromstring(data)
 
         # Set basic properties
         name_data = root.find("./m:metadata/m:name", self.__ns)
@@ -76,6 +93,14 @@ class MaterialFileReader:
         return material
 
     def collectNozzles(self, machine, device_supported) -> {}:
+        """
+        Parses the nozzle specific XML data from the XML data.
+
+        :param machine: raw machine XML material data.
+        :param device_supported: List of devices supported by the material.
+        :return:  dictionary containing 'nozzle id' - 'NozzleSupport' pairs.
+        """
+
         nozzles = {}
 
         for hotend in machine.findall("./m:hotend", self.__ns):
@@ -95,6 +120,15 @@ class MaterialFileReader:
         return nozzles
 
     def collectProfiles(self, material, machine, nozzles, device_supported):
+        """
+        Parses nozzle and device support data by matching device with available nozzles and
+        registers their support type.
+
+        :param material: material object to add results to.
+        :param machine: raw machine XML material data.
+        :param nozzles: list of available nozzels for device.
+        :param device_supported: list of supported devices.
+        """
 
         for identifier in machine.findall("./m:machine_identifier", self.__ns):
             product = identifier.get("product")
@@ -110,5 +144,14 @@ class MaterialFileReader:
 
             material.profiles[product] = profile
 
-    def jsonToMaterial(self, dat):
+    def jsonToMaterial(self, data):
+        """
+        I was under the impression that JSON material files existed, but there does not seems to be one.
+        This is a placeholder for parsing JSON material should they appear in the future.
+
+        Currently throws an NotImplementedError exception.
+
+        :param data: raw JSON material data.
+        :return: Nothing yet.
+        """
         raise NotImplementedError("Not expecting JSON yet")

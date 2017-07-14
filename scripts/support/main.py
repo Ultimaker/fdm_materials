@@ -6,7 +6,13 @@ from materialFileReader import MaterialFileReader
 from materialsOutputFormatter import MaterialsOutputFormatter
 
 def main():
+    """
+    Retrieves contents from GitHub for the Ultimaker/fdm_materials project.
+    Reads the files and translates the data to an (static) HTML which shows what material is
+    supported (or not) for which device and nozzle.
 
+    :return: 0 if successful
+    """
     working_dir = "/var/tmp/fdm_material_overview"
     github_url = "git@github.com:Ultimaker/fdm_materials.git"
     generated_file = "mat_overview.html"

@@ -1,5 +1,8 @@
 
 class Material:
+    """
+    Defines basic material details.
+    """
 
     def __init__(self):
         self.profiles = {}
