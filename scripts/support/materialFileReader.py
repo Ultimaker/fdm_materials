@@ -18,11 +18,11 @@ class MaterialFileReader:
     __file_ext = '*.fdm_material'
 
     def __init__(self, folder):
-        self.__working_fld = folder
+        self.__working_dir = folder
 
     def read(self) -> []:
         materials = []
-        fld = os.path.join(self.__working_fld, self.__file_ext)
+        fld = os.path.join(self.__working_dir, self.__file_ext)
         for filename in glob.glob(fld):
             file = open(filename, "r")
 
@@ -86,9 +86,9 @@ class MaterialFileReader:
             nozzle_support_elt = hotend.find("./m:setting[@key='hardware compatible']", self.__ns)
 
             if nozzle_support_elt is not None:
-                nozzle_support.is_supported = nozzle_support_elt.text
+                nozzle_support.support = nozzle_support_elt.text
             else:
-                nozzle_support.is_supported = device_supported
+                nozzle_support.support = device_supported
 
             nozzles[nozzle_support.id] = nozzle_support
 
@@ -102,7 +102,7 @@ class MaterialFileReader:
 
             device_support = DeviceSupport()
             device_support.name = product
-            device_support.is_supported = device_supported
+            device_support.support = device_supported
 
             profile = Profile()
             profile.nozzles = copy.deepcopy(nozzles)

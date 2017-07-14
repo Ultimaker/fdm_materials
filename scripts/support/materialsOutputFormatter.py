@@ -96,7 +96,7 @@ class MaterialsOutputFormatter:
                     sorted_nozzles,
                     nozzle_lookup.get(dev)
                 )
-                class_td = material.profiles[dev].device.is_supported
+                class_td = material.profiles[dev].device.support
 
             dev_td += self.__table_data.format(nozzle_table, "{0} sep".format(class_td))
 
@@ -112,7 +112,7 @@ class MaterialsOutputFormatter:
             class_td = "unknown"
 
             if nozzle in nozzles:
-                class_td = nozzles[nozzle].is_supported
+                class_td = nozzles[nozzle].support
 
             nozzle_td += self.__table_data.format(nozzle_name, class_td)
 

@@ -5,10 +5,9 @@ from gitHubConnector import GitHubConnector
 from materialFileReader import MaterialFileReader
 from materialsOutputFormatter import MaterialsOutputFormatter
 
-# derp
 def main():
 
-    working_fld = "/var/tmp/fdm_material_overview"
+    working_dir = "/var/tmp/fdm_material_overview"
     github_url = "git@github.com:Ultimaker/fdm_materials.git"
     generated_file = "mat_overview.html"
     additional_devices = set(sys.argv[1:])
@@ -21,14 +20,14 @@ def main():
     }
 
     try:
-        os.mkdir(working_fld)
+        os.mkdir(working_dir)
     except OSError:
         pass
 
-    github_connector = GitHubConnector(working_fld, github_url)
+    github_connector = GitHubConnector(working_dir, github_url)
     github_connector.getSourceFiles()
 
-    material_reader = MaterialFileReader(working_fld)
+    material_reader = MaterialFileReader(working_dir)
     materials = material_reader.read()
 
     materials_output_formatter = MaterialsOutputFormatter()
@@ -48,7 +47,7 @@ def main():
         nozzle_lookup
     )
 
-    file = open(os.path.join(working_fld, generated_file), "w")
+    file = open(os.path.join(working_dir, generated_file), "w")
     file.write(html)
     sys.exit(0)
 
