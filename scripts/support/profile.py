@@ -1,6 +1,4 @@
-"""
-Combines devices with nozzles.
-"""
+## @brief Combines devices with nozzles.
 class Profile:
     def __init__(self):
         self.device = None

@@ -1,6 +1,4 @@
-"""
-Defines basic material details.
-"""
+# @brief Defines basic material details.
 class Material:
 
     def __init__(self):

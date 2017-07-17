@@ -1,8 +1,6 @@
 from enum import Enum, unique
 
-"""
-Defines different kinds of support.
-"""
+## @brief Defines different kinds of support.
 @unique
 class Support(Enum):
     UNKNOWN = "unknown"

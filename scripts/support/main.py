@@ -5,13 +5,10 @@ from gitHubConnector import GitHubConnector
 from materialFileReader import MaterialFileReader
 from materialsOutputFormatter import MaterialsOutputFormatter
 
-"""
-Retrieves contents from GitHub for the Ultimaker/fdm_materials project.
-Reads the files and translates the data to an (static) HTML which shows what material is
-supported (or not) for which device and nozzle.
-
-:return: 0 if successful
-"""
+## @brief Retrieves contents from GitHub for the Ultimaker/fdm_materials project.
+# Reads the files and translates the data to an (static) HTML which shows what material is
+# supported (or not) for which device and nozzle.
+# @return: 0 if successful
 def main():
 
     working_dir = "/var/tmp/fdm_material_overview"
