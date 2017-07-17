@@ -8,7 +8,7 @@ from materialsOutputFormatter import MaterialsOutputFormatter
 ## @brief Retrieves contents from GitHub for the Ultimaker/fdm_materials project.
 # Reads the files and translates the data to an (static) HTML which shows what material is
 # supported (or not) for which device and nozzle.
-# @return: 0 if successful
+# @return 0 if successful
 def main():
 
     working_dir = "/var/tmp/fdm_material_overview"

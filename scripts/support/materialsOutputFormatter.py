@@ -40,11 +40,11 @@ class MaterialsOutputFormatter:
     __table_data_color = "\t\t<td class='{1}' style=\"background-color:{2}\">{0}</td>\r\n"
 
     ## @brief Builds a static HTML page based on a list of Material objects.
-    # @param materials: list of Material objects
-    # @param all_devices: list of available devices.
-    # @param all_nozzles: list of _all_ available nozzles.
-    # @param nozzle_lookup: list of available nozzles per device
-    # @return string: full HTML page.
+    # @param materials list of Material objects
+    # @param all_devices list of available devices.
+    # @param all_nozzles list of _all_ available nozzles.
+    # @param nozzle_lookup list of available nozzles per device
+    # @return string full HTML page.
     def toHtml(self, materials, all_devices, all_nozzles, nozzle_lookup) -> str:
 
 
@@ -92,11 +92,11 @@ class MaterialsOutputFormatter:
         return self.__html.format(self.__table.format(device_table))
 
     # @brief Builds a table data element containing a HTML table containing device specific support information.
-    # @param material: Single material object.
-    # @param sorted_dev: list of available devices.
-    # @param sorted_nozzles: list of all available nozzles.
-    # @param nozzle_lookup: list of available nozzles per device.
-    # @return str: HTML table data.
+    # @param material Single material object.
+    # @param sorted_dev list of available devices.
+    # @param sorted_nozzles list of all available nozzles.
+    # @param nozzle_lookup list of available nozzles per device.
+    # @return str HTML table data.
     def buildDeviceTable(self, material, sorted_dev, sorted_nozzles, nozzle_lookup) -> str:
         dev_td = ""
 
@@ -117,10 +117,10 @@ class MaterialsOutputFormatter:
         return dev_td
 
     ## @brief Builds a HTML table containing device specific nozzlsupport information.
-    # @param nozzles: List of nozzles for a single device.
-    # @param sorted_nozzles: list of all available nozzles.
-    # @param nozzle_lookup: list of available nozzles per device.
-    # @return str: HTML table data.
+    # @param nozzles List of nozzles for a single device.
+    # @param sorted_nozzles list of all available nozzles.
+    # @param nozzle_lookup list of available nozzles per device.
+    # @return str HTML table data.
     def buildNozzleTable(self, nozzles, sorted_nozzles, nozzle_lookup) -> str:
 
 
