@@ -49,8 +49,9 @@ def main():
         nozzle_lookup
     )
 
-    file = open(os.path.join(working_dir, generated_file), "w")
-    file.write(html)
+    with open(os.path.join(working_dir, generated_file), "w") as file:
+        file.write(html)
+
     sys.exit(0)
 
 if __name__ == "__main__":
