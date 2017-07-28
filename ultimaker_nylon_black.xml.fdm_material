@@ -36,6 +36,7 @@ Generic Nylon profile. Serves as an example file, data in this file is not corre
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Ulticast Proto"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print cooling">40</setting>
             <hotend id="BB 0.4" />
