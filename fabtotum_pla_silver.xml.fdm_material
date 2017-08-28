@@ -6,6 +6,8 @@
             <material>PLA</material>
             <color>Silver</color>
         </name>
+        <GUID>d934c5e2-5178-4882-8462-7a3e442c311d</GUID>
+        <version>1</version>		
         <color_code>#c0c0c0</color_code>
 	    <description>FABtotum PLA silver profile.</description>
         <adhesion_info>Recommended nozzle temperature: 190...200C, bed temperature: 40...50C, layer fan: on, adhesion type: skirt.</adhesion_info>

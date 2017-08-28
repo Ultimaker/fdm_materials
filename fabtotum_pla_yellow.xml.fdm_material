@@ -6,6 +6,8 @@
             <material>PLA</material>
             <color>Sun Yellow</color>
         </name>
+        <GUID>7d79935f-f3e0-4b77-a420-81d157304583</GUID>
+        <version>1</version>		
         <color_code>#ffff00</color_code>
 	    <description>FABtotum PLA yellow profile.</description>
         <adhesion_info>Recommended nozzle temperature: 190...200C, bed temperature: 40...50C, layer fan: on, adhesion type: skirt.</adhesion_info>

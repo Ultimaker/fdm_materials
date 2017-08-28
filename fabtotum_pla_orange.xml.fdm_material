@@ -6,6 +6,8 @@
             <material>PLA</material>
             <color>Solid Orange</color>
         </name>
+        <GUID>e75f8a26-2f8d-4ad8-8b0a-a43c7688308a</GUID>
+        <version>1</version>
         <color_code>#ff5500</color_code>
 	    <description>FABtotum PLA orange profile.</description>
         <adhesion_info>Recommended nozzle temperature: 190...200C, bed temperature: 40...50C, layer fan: on, adhesion type: skirt.</adhesion_info>

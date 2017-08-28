@@ -6,6 +6,8 @@
             <material>PLA</material>
             <color>Carbon Black</color>
         </name>
+        <GUID>146bd1e3-bd96-4002-97df-28f8fd9772ec</GUID>
+        <version>1</version>		
         <color_code>#000000</color_code>
 	    <description>FABtotum PLA black profile.</description>
         <adhesion_info>Recommended nozzle temperature: 190...200C, bed temperature: 40...50C, layer fan: on, adhesion type: skirt.</adhesion_info>

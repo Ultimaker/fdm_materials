@@ -6,6 +6,8 @@
             <material>PLA</material>
             <color>Electric Blue</color>
         </name>
+        <GUID>8dc9bbb9-c4a3-417f-96df-bae2fabf169c</GUID>
+        <version>1</version>		
         <color_code>#0000ff</color_code>
 	    <description>FABtotum PLA blue profile.</description>
         <adhesion_info>Recommended nozzle temperature: 190...200C, bed temperature: 40...50C, layer fan: on, adhesion type: skirt.</adhesion_info>

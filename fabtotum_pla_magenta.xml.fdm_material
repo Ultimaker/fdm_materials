@@ -6,6 +6,8 @@
             <material>PLA</material>
             <color>Magenta</color>
         </name>
+        <GUID>62304b72-6959-4f8b-ab59-c1be2006ef9e</GUID>
+        <version>1</version>		
         <color_code>#E600E6</color_code>
 	    <description>FABtotum PLA magenta profile.</description>
         <adhesion_info>Recommended nozzle temperature: 190...200C, bed temperature: 40...50C, layer fan: on, adhesion type: skirt.</adhesion_info>

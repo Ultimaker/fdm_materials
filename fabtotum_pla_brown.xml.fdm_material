@@ -6,6 +6,8 @@
             <material>PLA</material>
             <color>Chocolate Brown</color>
         </name>
+        <GUID>dfb0e134-0a81-4323-b3f3-b3b8f250c0ea</GUID>
+        <version>1</version>
         <color_code>#381b00</color_code>
 	    <description>FABtotum PLA brown profile.</description>
         <adhesion_info>Recommended nozzle temperature: 190...200C, bed temperature: 40...50C, layer fan: on, adhesion type: skirt.</adhesion_info>

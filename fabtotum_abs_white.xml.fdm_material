@@ -6,6 +6,8 @@
             <material>ABS</material>
             <color>White</color>
         </name>
+        <GUID>95ead9bf-7fbd-44a8-b8c2-6022c1204555</GUID>
+        <version>1</version>
         <color_code>#ffffff</color_code>
 	    <description>FABtotum ABS white profile.</description>
         <adhesion_info>Recommended nozzle temperature: 250...260C, bed temperature: 90...100C, layer fan: off...50%, adhesion type: raft.</adhesion_info>

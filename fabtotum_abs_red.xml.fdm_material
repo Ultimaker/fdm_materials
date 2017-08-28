@@ -6,6 +6,8 @@
             <material>ABS</material>
             <color>Red</color>
         </name>
+        <GUID>3555e2bd-a89c-4b24-80db-1660ae529dd2</GUID>
+        <version>1</version>
         <color_code>#ff0000</color_code>
 	    <description>FABtotum ABS red profile.</description>
         <adhesion_info>Recommended nozzle temperature: 240...250C, bed temperature: 90...100C, layer fan: off...50%, adhesion type: raft.</adhesion_info>

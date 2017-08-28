@@ -6,6 +6,8 @@
             <material>PLA</material>
             <color>Snow White</color>
         </name>
+        <GUID>b27b4a08-7fc9-47ac-a7c1-753a632e51b0</GUID>
+        <version>1</version>		
         <color_code>#ffffff</color_code>
 	    <description>FABtotum PLA white profile.</description>
         <adhesion_info>Recommended nozzle temperature: 190...200C, bed temperature: 40...50C, layer fan: on, adhesion type: skirt.</adhesion_info>

@@ -6,6 +6,8 @@
           <material>ABS</material>
           <color>Carbon Black</color>
         </name>
+		<GUID>abe29692-329f-4a5a-919e-24560f3436ad</GUID>
+        <version>1</version>
         <color_code>#000000</color_code>
 	    <description>FABtotum ABS black profile.</description>
         <adhesion_info>Recommended nozzle temperature: 250...260C, bed temperature: 90...100C, layer fan: off...50%, adhesion type: raft.</adhesion_info>

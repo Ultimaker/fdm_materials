@@ -6,6 +6,8 @@
           <material>PLA</material>
           <color>Lime Green</color>
         </name>
+        <GUID>b2dd498c-d607-4944-b127-3cacf9770af7</GUID>
+        <version>1</version>		
         <color_code>#00ad00</color_code>
 	    <description>FABtotum PLA green profile.</description>
         <adhesion_info>Recommended nozzle temperature: 190...200C, bed temperature: 40...50C, layer fan: on, adhesion type: skirt.</adhesion_info>
