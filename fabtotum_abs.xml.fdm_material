@@ -2,13 +2,13 @@
 <fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
     <metadata>
         <name>
-          <brand>FABtotum</brand>
-          <material>ABS</material>
-		  <color>Generic</color>
+            <brand>FABtotum</brand>
+            <material>ABS</material>
+            <color>Generic</color>
         </name>
-		<GUID>956b9054-e5e8-4852-8f5b-1332b73fcd07</GUID>
+        <GUID>956b9054-e5e8-4852-8f5b-1332b73fcd07</GUID>
         <version>1</version>
-	    <description>FABtotum generic ABS profile.</description>
+        <description>FABtotum generic ABS profile.</description>
         <adhesion_info>Recommended nozzle temperature: 250...260C, bed temperature: 90...100C, layer fan: off...50%, adhesion type: raft.</adhesion_info>
     </metadata>
     <properties>
