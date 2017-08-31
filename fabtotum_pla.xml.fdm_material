@@ -4,12 +4,11 @@
         <name>
             <brand>FABtotum</brand>
             <material>PLA</material>
-            <color>Silver</color>
+            <color>Generic</color>
         </name>
-        <GUID>d934c5e2-5178-4882-8462-7a3e442c311d</GUID>
+        <GUID>2adcb50b-94b5-4393-bcc8-e6d4e45d8a87</GUID>
         <version>1</version>		
-        <color_code>#c0c0c0</color_code>
-	    <description>FABtotum PLA silver profile.</description>
+	    <description>FABtotum generic PLA profile.</description>
         <adhesion_info>Recommended nozzle temperature: 190...200C, bed temperature: 40...50C, layer fan: on, adhesion type: skirt.</adhesion_info>
     </metadata>
     <properties>

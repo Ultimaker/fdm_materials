@@ -4,13 +4,13 @@
         <name>
           <brand>FABtotum</brand>
           <material>Nylon</material>
-          <color>Natural</color>
+          <color>Generic</color>
         </name>
-        <GUID>749b38e7-52f8-4a5c-917e-ef7a7215cb90</GUID>
+        <GUID>68c674d6-1289-4a44-8d69-e8a2b1a49855</GUID>
         <version>1</version>		
         <color_code>#d0d0d0</color_code>
-	    <description>FABtotum Nylon transparent profile.</description>
-        <adhesion_info>Recommended nozzle temperature: 250...260C, bed temperature: 80...90C, layer fan: off, adhesion type: raft.</adhesion_info>
+	    <description>FABtotum geneic Nylon profile.</description>
+        <adhesion_info>Recommended nozzle temperature: 230...240C, bed temperature: 80...90C, layer fan: off, adhesion type: raft.</adhesion_info>
     </metadata>
     <properties>
         <density>1.14</density>
