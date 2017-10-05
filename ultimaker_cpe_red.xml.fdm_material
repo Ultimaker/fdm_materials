@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-Automatically generated CPE profile. Data in this file may not be not correct.
--->
 <fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
     <metadata>
         <name>
@@ -12,6 +9,8 @@ Automatically generated CPE profile. Data in this file may not be not correct.
         <GUID>00181d6c-7024-479a-8eb7-8a2e38a2619a</GUID>
         <version>0</version>
         <color_code>#c8102e</color_code>
+        <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
+        <adhesion_info>Use glue.</adhesion_info>
     </metadata>
     <properties>
         <density>1.27</density>

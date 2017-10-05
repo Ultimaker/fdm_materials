@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-Generic PC profile. The data in this file may not be correct for your specific machine.
--->
 <fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
     <metadata>
         <name>
@@ -12,8 +9,8 @@ Generic PC profile. The data in this file may not be correct for your specific m
         <GUID>e92b1f0b-a069-4969-86b4-30127cfb6f7b</GUID>
         <version>1</version>
         <color_code>#0e0e10</color_code>
-        <description>Generic PC profile. The data in this file may not be correct for your specific machine.</description>
-        <adhesion_info>Set your print speed to a low value (10mm/sec) to get better layer bonding</adhesion_info>
+        <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
+        <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
     </metadata>
     <properties>
         <density>1.19</density>
@@ -49,6 +46,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
             <hotend id="BB 0.8" />
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="print cooling">5</setting>
             </hotend>
         </machine>
 

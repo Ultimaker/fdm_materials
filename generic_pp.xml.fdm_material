@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Generic Polypropylene profile. Serves as an example file, data in this file is not correct.
+-->
+<fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
+    <metadata>
+        <name>
+            <brand>Generic</brand>
+            <material>PP</material>
+            <color>Generic</color>
+        </name>
+        <GUID>aa22e9c7-421f-4745-afc2-81851694394a</GUID>
+        <version>3</version>
+        <color_code>#85f9de</color_code>
+        <description>Fatigue and chemical resistant. Polypropylene offers excellent temperature, chemical and fatigue resistance. Its toughness and low friction make it a perfect choice for prototyping and creating durable end-use models.</description>
+        <adhesion_info>Adhesion sheets are required.</adhesion_info>
+    </metadata>
+    <properties>
+        <diameter>2.85</diameter>
+        <density>0.89</density>
+    </properties>
+    <settings>
+        <setting key="print temperature">220</setting>
+        <setting key="heated bed temperature">100</setting>
+        <setting key="standby temperature">185</setting>
+        <setting key="print cooling">20</setting>
+        <setting key="retraction speed">35</setting>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+
+            <setting key="retraction amount">8</setting>
+
+            <hotend id="0.25 mm" />
+            <hotend id="0.4 mm" />
+            <hotend id="0.6 mm" />
+            <hotend id="0.8 mm" />
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">85</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">7</setting>
+                <setting key="print cooling">10</setting>
+            </hotend>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+        </machine>
+    </settings>
+</fdmmaterial>

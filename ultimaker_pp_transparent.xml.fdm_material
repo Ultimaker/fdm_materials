@@ -3,29 +3,31 @@
     <metadata>
         <name>
             <brand>Ultimaker</brand>
-            <material>PC</material>
+            <material>PP</material>
             <color>Transparent</color>
         </name>
-        <GUID>8a38a3e9-ecf7-4a7d-a6a9-e7ac35102968</GUID>
-        <version>1</version>
+        <GUID>c7005925-2a41-4280-8cdd-4029e3fe5253</GUID>
+        <version>3</version>
         <color_code>#d0d0d0</color_code>
-        <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
-        <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
+        <description>Fatigue and chemical resistant. Polypropylene offers excellent temperature, chemical and fatigue resistance. Its toughness and low friction make it a perfect choice for prototyping and creating durable end-use models.</description>
+        <adhesion_info>Adhesion sheets are required.</adhesion_info>
     </metadata>
     <properties>
-        <density>1.19</density>
         <diameter>2.85</diameter>
+        <density>0.89</density>
     </properties>
     <settings>
-        <setting key="hardware compatible">no</setting><!-- This material is not supported on most printers due to high temperatures -->
-        <setting key="print temperature">270</setting>
-        <setting key="heated bed temperature">107</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="print temperature">220</setting>
+        <setting key="heated bed temperature">100</setting>
+        <setting key="standby temperature">185</setting>
+        <setting key="print cooling">20</setting>
+        <setting key="retraction speed">35</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
-            <setting key="hardware compatible">yes</setting>
+
+            <setting key="retraction amount">8</setting>
 
             <hotend id="0.25 mm" />
             <hotend id="0.4 mm" />
@@ -36,19 +38,18 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
-            <hotend id="BB 0.4" />
+
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print cooling">0</setting>
-                <setting key="retraction amount">8</setting>
-                <setting key="retraction speed">35</setting>
+                <setting key="heated bed temperature">85</setting>
             </hotend>
-            <hotend id="BB 0.8" />
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print cooling">5</setting>
+                <setting key="retraction amount">7</setting>
+                <setting key="print cooling">10</setting>
             </hotend>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
         </machine>
-
     </settings>
 </fdmmaterial>
