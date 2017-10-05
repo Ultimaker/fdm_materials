@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-Generic Nylon profile. Serves as an example file, data in this file is not correct.
--->
 <fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
     <metadata>
         <name>
@@ -12,6 +9,8 @@ Generic Nylon profile. Serves as an example file, data in this file is not corre
         <GUID>e256615d-a04e-4f53-b311-114b90560af9</GUID>
         <version>1</version>
         <color_code>#d0d0d0</color_code>
+        <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
+        <adhesion_info>Use glue.</adhesion_info>
     </metadata>
     <properties>
         <density>1.14</density>

@@ -12,6 +12,8 @@ Generic ABS 1.75mm profile. The data in this file may not be correct for your sp
         <GUID>2780b345-577b-4a24-a2c5-12e6aad3e690</GUID>
         <version>1</version>
         <color_code>#8cb219</color_code>
+        <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
+        <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
     </metadata>
     <properties>
         <density>1.10</density>
@@ -23,25 +25,24 @@ Generic ABS 1.75mm profile. The data in this file may not be correct for your sp
         <setting key="standby temperature">200</setting>
 
         <machine>
-           <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
-           <setting key="print cooling">0.0</setting>
-           <setting key="standby temperature">160</setting>
-           <setting key="retraction speed">40</setting>
-           <setting key="heated bed temperature">90</setting>
-           <setting key="print temperature">230</setting>
-           <hotend id="0.25 mm">
-	       <setting key="hardware compatible">yes</setting>
-	       <setting key="retraction amount">1.0</setting>
-    	   </hotend>
-           <hotend id="0.4 mm">
-	       <setting key="hardware compatible">yes</setting>
-	       <setting key="retraction amount">1.0</setting>
-	   </hotend>
-           <hotend id="0.8 mm">
-	       <setting key="hardware compatible">yes</setting>
-	       <setting key="retraction amount">1.5</setting>
-	   </hotend>
-       </machine>
-       
+            <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
+            <setting key="print cooling">0.0</setting>
+            <setting key="standby temperature">160</setting>
+            <setting key="retraction speed">40</setting>
+            <setting key="heated bed temperature">90</setting>
+            <setting key="print temperature">230</setting>
+            <hotend id="0.25 mm">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">1.0</setting>
+            </hotend>
+            <hotend id="0.4 mm">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">1.0</setting>
+            </hotend>
+            <hotend id="0.8 mm">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">1.5</setting>
+            </hotend>
+        </machine>
    </settings>
 </fdmmaterial>

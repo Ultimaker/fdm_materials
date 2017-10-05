@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-Generic CPE+ profile. Serves as an example file, data in this file is not correct.
--->
 <fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
     <metadata>
         <name>
@@ -12,6 +9,8 @@ Generic CPE+ profile. Serves as an example file, data in this file is not correc
         <GUID>a9c340fe-255f-4914-87f5-ec4fcb0c11ef</GUID>
         <version>1</version>
         <color_code>#d0d0d0</color_code>
+        <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
+        <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
     </metadata>
     <properties>
         <density>1.18</density>
@@ -50,6 +49,7 @@ Generic CPE+ profile. Serves as an example file, data in this file is not correc
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="print cooling">8</setting>
             </hotend>
         </machine>
     </settings>
