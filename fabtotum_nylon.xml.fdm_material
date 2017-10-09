@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
+    <metadata>
+        <name>
+            <brand>FABtotum</brand>
+            <material>Nylon</material>
+            <color>Generic</color>
+        </name>
+        <GUID>68c674d6-1289-4a44-8d69-e8a2b1a49855</GUID>
+        <version>1</version>
+        <description>FABtotum geneic Nylon profile.</description>
+        <adhesion_info>Recommended nozzle temperature: 230...240C, bed temperature: 80...90C, layer fan: off, adhesion type: raft.</adhesion_info>
+    </metadata>
+    <properties>
+        <density>1.14</density>
+        <diameter>1.75</diameter>
+    </properties>
+    <settings>
+        <setting key="print temperature">230.0</setting>
+        <setting key="heated bed temperature">90.0</setting>
+    </settings>
+</fdmmaterial>
