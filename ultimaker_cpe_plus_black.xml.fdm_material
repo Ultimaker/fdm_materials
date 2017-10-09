@@ -37,6 +37,7 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 XL"/>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">

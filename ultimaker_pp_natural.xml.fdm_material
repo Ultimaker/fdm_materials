@@ -38,6 +38,7 @@ Natural PP profile. The data in this file may not be correct for your specific m
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 XL"/>
             <hotend id="BB 0.4" />
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -46,6 +47,6 @@ Natural PP profile. The data in this file may not be correct for your specific m
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
-        </machine>        
+        </machine>
     </settings>
 </fdmmaterial>
