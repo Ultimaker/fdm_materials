@@ -6,8 +6,8 @@ Generic break away support material profile. The data in this file may not be co
     <metadata>
         <name>
             <brand>Generic</brand>
-            <material>Breakaway</material>
-            <color>White</color>
+            <material>BAM</material>
+            <color>Generic</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d6a0</GUID>
         <version>1</version>
