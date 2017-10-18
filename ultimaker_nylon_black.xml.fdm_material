@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>c64c2dbe-5691-4363-a7d9-66b2dc12837f</GUID>
-        <version>1</version>
+        <version>2</version>
         <color_code>#27292b</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -22,6 +22,8 @@
         <setting key="standby temperature">175</setting>
         <setting key="retraction amount">8</setting>
         <setting key="retraction speed">25</setting>
+        <setting key="adhesion tendency">2</setting>
+        <setting key="surface energy">100</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
