@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
+    <metadata>
+        <name>
+            <brand>Verbatim</brand>
+            <material>BVOH</material>
+            <color>Generic</color>
+        </name>
+        <GUID>c860a504-f47c-4c57-a251-1e2ecd79600a</GUID>
+        <version>2</version>
+        <color_code>#a32bcc</color_code>
+        <description>Water soluble support material. BVOH is a matching support material for PLA, CPE and PET.</description>
+        <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
+    </metadata>
+    <properties>
+        <density>1.23</density>
+        <diameter>1.75</diameter>
+    </properties>
+    <settings>
+        <setting key="print temperature">210</setting>
+    </settings>
+</fdmmaterial>
