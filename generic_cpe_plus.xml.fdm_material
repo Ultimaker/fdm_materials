@@ -46,7 +46,9 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
-            <hotend id="AA 0.25" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">7</setting>
