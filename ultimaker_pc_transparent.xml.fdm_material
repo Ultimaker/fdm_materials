@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>8a38a3e9-ecf7-4a7d-a6a9-e7ac35102968</GUID>
-        <version>4</version>
+        <version>5</version>
         <color_code>#d0d0d0</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
@@ -42,6 +42,7 @@
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
