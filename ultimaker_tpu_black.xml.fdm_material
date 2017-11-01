@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>eff40bcf-588d-420d-a3bc-a5ffd8c7f4b3</GUID>
-        <version>3</version>
+        <version>4</version>
         <color_code>#0e0e10</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -43,12 +43,15 @@
             <setting key="print temperature">223</setting>
 
             <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">20</setting>
                 <setting key="retraction speed">35</setting>
             </hotend>
-            <hotend id="BB 0.8" />
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction speed">45</setting>

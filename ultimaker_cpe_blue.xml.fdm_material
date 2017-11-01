@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>4d816290-ce2e-40e0-8dc8-3f702243131e</GUID>
-        <version>1</version>
+        <version>3</version>
         <color_code>#00a3e0</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -41,6 +41,9 @@
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">230</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
