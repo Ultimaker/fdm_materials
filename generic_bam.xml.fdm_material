@@ -22,7 +22,7 @@ Generic break away support material profile. The data in this file may not be co
     <settings>
         <setting key="print temperature">225</setting>
         <setting key="heated bed temperature">60</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="standby temperature">100</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
