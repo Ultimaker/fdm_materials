@@ -73,6 +73,7 @@ Generic ABS profile. The data in this file may not be correct for your specific 
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">2</setting>
                 <setting key="heated bed temperature">100</setting>
+                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">8</setting>
             </hotend>
             <hotend id="AA 0.8">

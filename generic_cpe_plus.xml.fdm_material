@@ -70,7 +70,9 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">120</setting>
+                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">10</setting>
+                <setting key="retraction speed">40</setting>
                 <setting key="print cooling">1</setting>
             </hotend>
             <hotend id="AA 0.8">
