@@ -87,7 +87,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
                 <setting key="hardware compatible">yes</setting>
                 <setting key="hardware recommended">no</setting>
             </buildplate>
-            <buildplate id="Aluminum">
+            <buildplate id="Aluminium">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="hardware recommended">yes</setting>
             </buildplate>

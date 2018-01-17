@@ -55,7 +55,7 @@ Generic break away support material profile. The data in this file may not be co
                 <setting key="hardware compatible">yes</setting>
                 <setting key="hardware recommended">no</setting>
             </buildplate>
-            <buildplate id="Aluminum">
+            <buildplate id="Aluminium">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="hardware recommended">no</setting>
             </buildplate>
