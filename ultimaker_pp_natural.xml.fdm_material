@@ -10,7 +10,7 @@ Natural PP profile. The data in this file may not be correct for your specific m
             <color>Natural</color>
         </name>
         <GUID>c7005925-2a41-4280-8cdd-4029e3fe5253</GUID>
-        <version>3</version>
+        <version>4</version>
         <color_code>#000000</color_code> <!--TODO EM-1559 -->
         <description>To be filled</description> <!--TODO EM-1559 -->
         <adhesion_info>100C +adhesive stickers +brim</adhesion_info> <!--TODO EM-1559 -->
@@ -38,7 +38,7 @@ Natural PP profile. The data in this file may not be correct for your specific m
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 XL"/>
+
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
@@ -50,10 +50,44 @@ Natural PP profile. The data in this file may not be correct for your specific m
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">85</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">7</setting>
+                <setting key="print cooling">10</setting>
             </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 XL"/>
+
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">85</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">6.5</setting>
+                <setting key="retraction speed">25</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">85</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">7</setting>
+                <setting key="print cooling">10</setting>
+            </hotend>
+            <buildplate id="Glass">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="hardware recommended">no</setting>
+            </buildplate>
+            <buildplate id="Aluminium">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="hardware recommended">yes</setting>
+            </buildplate>
         </machine>
     </settings>
 </fdmmaterial>

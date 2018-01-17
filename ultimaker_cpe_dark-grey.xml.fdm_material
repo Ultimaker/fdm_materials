@@ -7,7 +7,7 @@
             <color>Dark Grey</color>
         </name>
         <GUID>10961c00-3caf-48e9-a598-fa805ada1e8d</GUID>
-        <version>5</version>
+        <version>6</version>
         <color_code>#4f5250</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -75,6 +75,14 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">80</setting>
             </hotend>
+            <buildplate id="Glass">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="hardware recommended">no</setting>
+            </buildplate>
+            <buildplate id="Aluminium">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="hardware recommended">yes</setting>
+            </buildplate>
         </machine>
     </settings>
 </fdmmaterial>
