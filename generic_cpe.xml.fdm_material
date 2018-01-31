@@ -10,7 +10,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>12f41353-1a33-415e-8b4f-a775a6c70cc6</GUID>
-        <version>6</version>
+        <version>7</version>
         <color_code>#159499</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -68,15 +68,17 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">80</setting>
+                <setting key="heated bed temperature">70</setting>
                 <setting key="standby temperature">100</setting>
-                <setting key="retraction amount">10</setting>
+                <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
                 <setting key="print cooling">20</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">80</setting>
+                <setting key="heated bed temperature">70</setting>
+                <setting key="retraction amount">8</setting>
+                <setting key="retraction speed">40</setting>
             </hotend>
             <buildplate id="Glass">
                 <setting key="hardware compatible">yes</setting>
