@@ -56,7 +56,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 XL"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <setting key="heated bed temperature">85</setting>
 
             <hotend id="BB 0.4" />
