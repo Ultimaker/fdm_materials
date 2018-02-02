@@ -7,7 +7,7 @@
             <color>Light Grey</color>
         </name>
         <GUID>173a7bae-5e14-470e-817e-08609c61e12b</GUID>
-        <version>6</version>
+        <version>7</version>
         <color_code>#c5c7c4</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -54,7 +54,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 XL"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
@@ -65,15 +65,17 @@
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">80</setting>
+                <setting key="heated bed temperature">70</setting>
                 <setting key="standby temperature">100</setting>
-                <setting key="retraction amount">10</setting>
+                <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
                 <setting key="print cooling">20</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">80</setting>
+                <setting key="heated bed temperature">70</setting>
+                <setting key="retraction amount">8</setting>
+                <setting key="retraction speed">40</setting>
             </hotend>
             <buildplate id="Glass">
                 <setting key="hardware compatible">yes</setting>

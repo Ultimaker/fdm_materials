@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>c64c2dbe-5691-4363-a7d9-66b2dc12837f</GUID>
-        <version>5</version>
+        <version>6</version>
         <color_code>#27292b</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -57,8 +57,9 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 XL"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <setting key="print cooling">40</setting>
+
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
@@ -69,9 +70,13 @@
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">70</setting>
+                <setting key="retraction amount">8</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">70</setting>
+                <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
             <buildplate id="Glass">
