@@ -10,7 +10,7 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>86a89ceb-4159-47f6-ab97-e9953803d70f</GUID>
-        <version>3</version>
+        <version>4</version>
         <color_code>#a32bcc</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -42,6 +42,9 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
         </machine>
 
         <machine>
@@ -60,6 +63,9 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">no</setting>
             </hotend>
             <buildplate id="Glass">
                 <setting key="hardware compatible">yes</setting>
