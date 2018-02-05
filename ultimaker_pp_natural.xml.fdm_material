@@ -10,7 +10,7 @@ Natural PP profile. The data in this file may not be correct for your specific m
             <color>Natural</color>
         </name>
         <GUID>c7005925-2a41-4280-8cdd-4029e3fe5253</GUID>
-        <version>5</version>
+        <version>6</version>
         <color_code>#000000</color_code> <!--TODO EM-1559 -->
         <description>To be filled</description> <!--TODO EM-1559 -->
         <adhesion_info>100C +adhesive stickers +brim</adhesion_info> <!--TODO EM-1559 -->
@@ -41,6 +41,7 @@ Natural PP profile. The data in this file may not be correct for your specific m
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
@@ -65,6 +66,7 @@ Natural PP profile. The data in this file may not be correct for your specific m
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>

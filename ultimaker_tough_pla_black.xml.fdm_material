@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>03f24266-0291-43c2-a6da-5211892a2699</GUID>
-        <version>0</version>
+        <version>1</version>
         <color_code>#2a292a</color_code>
         <description></description>
         <adhesion_info></adhesion_info>
@@ -55,6 +55,7 @@
             <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
@@ -73,6 +74,7 @@
             <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
