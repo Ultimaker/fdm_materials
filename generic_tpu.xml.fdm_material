@@ -88,7 +88,7 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
                 <setting key="hardware compatible">yes</setting>
                 <setting key="hardware recommended">yes</setting>
             </buildplate>
-            <buildplate id="Aluminium">
+            <buildplate id="Aluminum">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="hardware recommended">no</setting>
             </buildplate>
