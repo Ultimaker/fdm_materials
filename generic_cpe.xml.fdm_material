@@ -64,13 +64,14 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
+		<setting key="heated bed temperature">75</setting>
                 <setting key="print temperature">230</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">70</setting>
+                <setting key="heated bed temperature">75</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
@@ -78,7 +79,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">70</setting>
+                <setting key="heated bed temperature">80</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
             </hotend>
