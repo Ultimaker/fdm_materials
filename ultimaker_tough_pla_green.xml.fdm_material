@@ -7,7 +7,7 @@
             <color>Green</color>
         </name>
         <GUID>6d71f4ad-29ab-4b50-8f65-22d99af294dd</GUID>
-        <version>1</version>
+        <version>2</version>
         <color_code>#00a95c</color_code>
         <description></description>
         <adhesion_info></adhesion_info>
@@ -17,7 +17,7 @@
         <diameter>2.85</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">200</setting>
+        <setting key="print temperature">225</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
@@ -55,7 +55,6 @@
             <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
@@ -74,7 +73,6 @@
             <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
