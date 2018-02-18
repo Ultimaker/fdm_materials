@@ -64,23 +64,6 @@
             </hotend>
         </machine>
         <machine>
-            <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
-            <setting key="print temperature">185</setting>
-            <setting key="print cooling">40.0</setting>
-            <setting key="retraction speed">3.0</setting>
-            <setting key="standby temperature">160</setting>
-            <setting key="heated bed temperature">50</setting>
-            <hotend id="0.8 mm">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="0.25 mm">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="0.4 mm">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-        </machine>
-        <machine>
             <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+" />
             <setting key="print temperature">200.0</setting>
             <setting key="print cooling">40.0</setting>
