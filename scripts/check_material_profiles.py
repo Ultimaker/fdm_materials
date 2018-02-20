@@ -74,6 +74,7 @@ class MaterialProfilesValidator:
                 print("-> The following files DO NOT contain any GUID:")
             for file_item in file_item_list:
                 print("    -- [%s]" % file_item["file_name"])
+            print("-> PLEASE make sure to generate unique GUIDs for each material.")
 
         return not has_invalid_files
 
