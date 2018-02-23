@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>bd0d9eb3-a920-4632-84e8-dcd6086746c5</GUID>
-        <version>8</version>
+        <version>9</version>
         <color_code>#d0d0d0</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -61,13 +61,14 @@
             <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">75</setting>
                 <setting key="print temperature">230</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">70</setting>
+                <setting key="heated bed temperature">75</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
@@ -75,7 +76,7 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">70</setting>
+                <setting key="heated bed temperature">80</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
             </hotend>
@@ -83,7 +84,7 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="hardware recommended">no</setting>
             </buildplate>
-            <buildplate id="Aluminium">
+            <buildplate id="Aluminum">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="hardware recommended">yes</setting>
             </buildplate>

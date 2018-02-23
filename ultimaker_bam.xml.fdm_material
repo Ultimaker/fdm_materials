@@ -54,7 +54,7 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="hardware recommended">no</setting>
             </buildplate>
-            <buildplate id="Aluminium">
+            <buildplate id="Aluminum">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="hardware recommended">no</setting>
             </buildplate>
