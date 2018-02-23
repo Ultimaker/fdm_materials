@@ -9,8 +9,8 @@ Natural PP profile. The data in this file may not be correct for your specific m
             <material>PP</material>
             <color>Natural</color>
         </name>
-        <GUID>c7005925-2a41-4280-8cdd-4029e3fe5253</GUID>
-        <version>6</version>
+        <GUID>8122610f-bd86-4b5b-95bc-2ff5695c50f4</GUID>
+        <version>7</version>
         <color_code>#000000</color_code> <!--TODO EM-1559 -->
         <description>To be filled</description> <!--TODO EM-1559 -->
         <adhesion_info>100C +adhesive stickers +brim</adhesion_info> <!--TODO EM-1559 -->
