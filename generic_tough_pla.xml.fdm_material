@@ -9,9 +9,9 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             <material>Tough PLA</material>
             <color>Generic</color>
         </name>
-        <GUID>506c9f0d-e3aa-4bd4-b2d2-23e2425b1aa9</GUID>
-        <version>2</version>
-        <color_code>#ffc924</color_code>
+        <GUID>9d5d2d7c-4e77-441c-85a0-e9eefd4aa68c</GUID>
+        <version>3</version>
+        <color_code>#ffc9f0</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
     </metadata>
@@ -71,16 +71,6 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
                 <setting key="hardware compatible">yes</setting>
                 <setting key="hardware recommended">no</setting>
             </buildplate>
-        </machine>
-
-        <machine>
-            <machine_identifier manufacturer="IMADE3D" product="IMADE3D JellyBOX"/>
-
-            <setting key="print temperature">210</setting>
-            <setting key="heated bed temperature">55</setting>
-
-            <hotend id="0.4 mm" />
-            <hotend id="0.4 mm 2-fans" />
         </machine>
     </settings>
 </fdmmaterial>
