@@ -86,7 +86,7 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
-                <setting key="retraction amount">8</setting>
+                <setting key="retraction amount">5</setting>
             </hotend>
             <buildplate id="Glass">
                 <setting key="hardware compatible">yes</setting>
