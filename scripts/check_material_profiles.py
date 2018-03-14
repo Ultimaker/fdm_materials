@@ -7,10 +7,9 @@ import re
 
 class MaterialProfilesValidator:
 
-    def __init__(self, cura_dir: str):
-        self._cura_dir = os.path.abspath(cura_dir)
-        self._resource_dir = os.path.join(self._cura_dir, "resources")
-        self._materials_dir = os.path.join(self._resource_dir, "materials")
+    def __init__(self, root_dir: str):
+        self._repo_dir = os.path.abspath(root_dir)
+        self._materials_dir = self._repo_dir
 
         self._guid_pattern = re.compile(r"<GUID>.*</GUID>")
 
@@ -43,9 +42,9 @@ class MaterialProfilesValidator:
         materials_dir = self.get_materials_dir(self._materials_dir)
 
         # go through all the preset settings files
-        for root_dir, _, filenames in os.walk(materials_dir):
+        for _, _, filenames in os.walk(materials_dir):
             for filename in filenames:
-                file_path = os.path.join(root_dir, filename)
+                file_path = os.path.join(materials_dir, filename)
                 if not filename.endswith(".xml.fdm_material"):
                     print("Skipping \"%s\"" % filename)
                     continue
@@ -81,9 +80,9 @@ class MaterialProfilesValidator:
 
 if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.realpath(__file__))
-    cura_dir = os.path.abspath(os.path.join(script_dir, ".."))
+    root_dir = os.path.abspath(os.path.join(script_dir, ".."))
 
-    validator = MaterialProfilesValidator(cura_dir)
+    validator = MaterialProfilesValidator(root_dir)
     is_everything_validate = validator.validate()
 
     ret_code = 0 if is_everything_validate else 1
