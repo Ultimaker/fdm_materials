@@ -25,6 +25,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
+        <setting key="shrinkage ratio percentage">0.7</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
