@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>2f9d2279-9b0e-4765-bf9b-d1e1e13f3c49</GUID>
-        <version>8</version>
+        <version>9</version>
         <color_code>#2a292a</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -74,11 +74,11 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">2</setting>
                 <setting key="standby temperature">85</setting>
-                <setting key="retraction amount">8</setting>
+                <setting key="retraction amount">5</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="retraction amount">8</setting>
+                <setting key="retraction amount">5</setting>
             </hotend>
             <buildplate id="Glass">
                 <setting key="hardware compatible">no</setting>

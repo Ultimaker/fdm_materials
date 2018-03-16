@@ -7,7 +7,7 @@
             <color>Green</color>
         </name>
         <GUID>6d71f4ad-29ab-4b50-8f65-22d99af294dd</GUID>
-        <version>3</version>
+        <version>4</version>
         <color_code>#00a95c</color_code>
         <description></description>
         <adhesion_info></adhesion_info>
@@ -58,7 +58,7 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
-                <setting key="retraction amount">8</setting>
+                <setting key="retraction amount">5</setting>
             </hotend>
             <buildplate id="Glass">
                 <setting key="hardware compatible">yes</setting>
