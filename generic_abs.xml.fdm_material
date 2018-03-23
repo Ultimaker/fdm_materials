@@ -58,6 +58,5 @@ Generic ABS profile. The data in this file may not be correct for your specific 
                 <setting key="heated bed temperature">90</setting>
             </hotend>
         </machine>
-
     </settings>
 </fdmmaterial>

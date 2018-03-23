@@ -7,7 +7,7 @@
             <color>Green</color>
         </name>
         <GUID>2433b8fb-dcd6-4e36-9cd5-9f4ee551c04c</GUID>
-        <version>3</version>
+        <version>4</version>
         <color_code>#61993b</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -48,6 +48,7 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
             <setting key="standby temperature">150</setting>
         </machine>
+
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
@@ -66,6 +67,16 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">5</setting>
             </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="IMADE3D" product="IMADE3D JellyBOX"/>
+
+            <setting key="print temperature">210</setting>
+            <setting key="heated bed temperature">55</setting>
+
+            <hotend id="0.4 mm" />
+            <hotend id="0.4 mm 2-fans" />
         </machine>
     </settings>
 </fdmmaterial>
