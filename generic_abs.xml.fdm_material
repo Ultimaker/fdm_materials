@@ -60,7 +60,6 @@ Generic ABS profile. The data in this file may not be correct for your specific 
             </hotend>
         </machine>
 
-<<<<<<< HEAD
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <setting key="heated bed temperature">85</setting>
@@ -95,7 +94,5 @@ Generic ABS profile. The data in this file may not be correct for your specific 
             </buildplate>
         </machine>
 
-=======
->>>>>>> 1e6b9440e12fa0bc2d10d49dfea7fa619f2d9bce
     </settings>
 </fdmmaterial>
