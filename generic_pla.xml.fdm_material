@@ -59,6 +59,9 @@ Generic PLA profile. The data in this file may not be correct for your specific 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="CC 0.6" />
+                <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">6.5</setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
