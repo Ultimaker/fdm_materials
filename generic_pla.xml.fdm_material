@@ -58,6 +58,7 @@ Generic PLA profile. The data in this file may not be correct for your specific 
             <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
+            <!-- These CC 0.6 settings don't need to be copied to Ultimaker-brand PLA since they are intended only for creating new profiles with. -->
             <hotend id="CC 0.6" />
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
