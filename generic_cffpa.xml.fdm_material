@@ -12,7 +12,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
         <GUID>bd66b243-9d50-4e12-bfc3-51c874fca16a</GUID>
         <version>1</version>
         <color_code>#212F3D</color_code>
-        <description>Information required.</description>
+        <description>This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Profile Assistant.</description>
         <adhesion_info>Use glue.</adhesion_info>
     </metadata>
     <properties>
