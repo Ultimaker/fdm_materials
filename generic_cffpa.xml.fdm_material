@@ -46,7 +46,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">1</setting>
                 <setting key="retraction amount">6.5</setting>
-            </hotend>			
+            </hotend>
         </machine>
 
         <machine>
@@ -70,7 +70,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">1</setting>
                 <setting key="retraction amount">6.5</setting>
-            </hotend>			
+            </hotend>
             <buildplate id="Glass">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="hardware recommended">no</setting>
