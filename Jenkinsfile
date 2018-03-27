@@ -14,7 +14,7 @@ node('linux && cura') {
             // Perform sanity checks
             stage('Sanity Checks') {
                 if (fileExists("scripts/check_material_profiles.py")) {
-                    sh "${env.CURA_ENVIRONMENT_PATH}/master/bin/python3 scripts/check_material_profiles.py"
+                    sh "python scripts/check_material_profiles.py"
                 }
             }
         }
