@@ -22,7 +22,9 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
     <settings>
         <setting key="print temperature">265</setting>
         <setting key="heated bed temperature">70</setting>
-        <setting key="standby temperature">175</setting>>
+        <setting key="standby temperature">175</setting>
+        <setting key="adhesion tendency">2</setting>
+        <setting key="surface energy">100</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
