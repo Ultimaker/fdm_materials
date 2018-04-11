@@ -42,7 +42,6 @@
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
@@ -67,7 +66,6 @@
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>

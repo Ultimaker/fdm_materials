@@ -31,7 +31,6 @@
             <setting key="print cooling">40</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
@@ -53,7 +52,6 @@
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>

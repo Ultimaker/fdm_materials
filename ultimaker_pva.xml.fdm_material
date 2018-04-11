@@ -69,9 +69,6 @@
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
-            <hotend id="CC 0.6">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
         </machine>
 
         <machine>
@@ -90,9 +87,6 @@
             </hotend>
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="CC 0.6">
-                <setting key="hardware compatible">no</setting>
             </hotend>
             <buildplate id="Glass">
                 <setting key="hardware compatible">yes</setting>
