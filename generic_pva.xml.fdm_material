@@ -42,8 +42,6 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
-                <setting key="hardware compatible">no</setting>
-            </hotend>
         </machine>
 
         <machine>
@@ -62,8 +60,6 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">yes</setting>
-            </hotend>
-                <setting key="hardware compatible">no</setting>
             </hotend>
             <buildplate id="Glass">
                 <setting key="hardware compatible">yes</setting>
