@@ -10,7 +10,7 @@ Generic break away support material profile. The data in this file may not be co
             <color>Generic</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d6a0</GUID>
-        <version>7</version>
+        <version>8</version>
         <color_code>#f1ece1</color_code> <!--TODO EM-1863 -->
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>same temperature/method as build material</adhesion_info> <!--TODO EM-1863 -->
