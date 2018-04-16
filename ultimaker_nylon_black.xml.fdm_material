@@ -26,16 +26,6 @@
         <setting key="surface energy">100</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
-
-            <hotend id="0.25 mm" />
-            <hotend id="0.4 mm" />
-            <hotend id="0.6 mm" />
-            <hotend id="0.8 mm" />
-        </machine>
-
-        <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print cooling">40</setting>
@@ -54,6 +44,15 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
+        </machine>
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+
+            <hotend id="0.25 mm" />
+            <hotend id="0.4 mm" />
+            <hotend id="0.6 mm" />
+            <hotend id="0.8 mm" />
         </machine>
     </settings>
 </fdmmaterial>

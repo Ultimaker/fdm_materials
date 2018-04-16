@@ -7,7 +7,7 @@
             <color>Grey</color>
         </name>
         <GUID>8b75b775-d3f2-4d0f-8fb2-2a3dd53cf673</GUID>
-        <version>3</version>
+        <version>5</version>
         <color_code>#52595d</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -22,6 +22,7 @@
         <setting key="standby temperature">200</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
+        <setting key="shrinkage percentage">0.9</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>

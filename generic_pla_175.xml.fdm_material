@@ -54,6 +54,18 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.5</setting>
             </hotend>
+            <hotend id="0.25mm thermoplastic extruder">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">1.0</setting>
+            </hotend>
+            <hotend id="0.4mm thermoplastic extruder">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">1.0</setting>
+            </hotend>
+            <hotend id="0.8mm thermoplastic extruder">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">1.5</setting>
+            </hotend>
         </machine>
     </settings>
 </fdmmaterial>
