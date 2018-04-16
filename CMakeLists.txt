@@ -24,7 +24,7 @@ else()
     endif()
 endif()
 
-file(GLOB _files *.fdm_material)
+file(GLOB _files *.fdm_material *.sig)
 
 install(FILES ${_files} DESTINATION ${INSTALL_PATH})
 
