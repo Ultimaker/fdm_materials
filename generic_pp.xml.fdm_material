@@ -86,8 +86,8 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
                 <setting key="print cooling">10</setting>
             </hotend>
             <buildplate id="Glass">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">no</setting>
+                <setting key="hardware compatible">no</setting>
+                <setting key="hardware recommended">yes</setting>
             </buildplate>
             <buildplate id="Aluminum">
                 <setting key="hardware compatible">yes</setting>

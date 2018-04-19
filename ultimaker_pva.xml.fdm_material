@@ -96,7 +96,7 @@
             </hotend>
             <buildplate id="Glass">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">no</setting>
+                <setting key="hardware recommended">yes</setting>
             </buildplate>
             <buildplate id="Aluminum">
                 <setting key="hardware compatible">no</setting>
