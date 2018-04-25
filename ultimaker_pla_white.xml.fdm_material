@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>e509f649-9fe6-4b14-ac45-d441438cb4ef</GUID>
-        <version>3</version>
+        <version>8</version>
         <color_code>#f1ece1</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -48,6 +48,7 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
             <setting key="standby temperature">150</setting>
         </machine>
+
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
@@ -64,7 +65,45 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">5</setting>
             </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <setting key="print cooling">100</setting>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">6.5</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">5</setting>
+            </hotend>
+            <buildplate id="Glass">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="hardware recommended">yes</setting>
+            </buildplate>
+            <buildplate id="Aluminum">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="hardware recommended">no</setting>
+            </buildplate>
+        </machine>
+        <machine>
+            <machine_identifier manufacturer="IMADE3D" product="IMADE3D JellyBOX"/>
+
+            <setting key="print temperature">210</setting>
+            <setting key="heated bed temperature">55</setting>
+
+            <hotend id="0.4 mm" />
+            <hotend id="0.4 mm 2-fans" />
         </machine>
     </settings>
 </fdmmaterial>

@@ -8,7 +8,7 @@
         </name>
         <GUID>68c674d6-1289-4a44-8d69-e8a2b1a49855</GUID>
         <version>1</version>
-        <description>FABtotum geneic Nylon profile.</description>
+        <description>FABtotum generic Nylon profile.</description>
         <adhesion_info>Recommended nozzle temperature: 230...240C, bed temperature: 80...90C, layer fan: off, adhesion type: raft.</adhesion_info>
     </metadata>
     <properties>
@@ -16,7 +16,7 @@
         <diameter>1.75</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">230.0</setting>
+        <setting key="print temperature">240.0</setting>
         <setting key="heated bed temperature">90.0</setting>
     </settings>
 </fdmmaterial>
