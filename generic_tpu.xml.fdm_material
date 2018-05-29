@@ -43,9 +43,12 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print temperature">223</setting>
-
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
+            <hotend id="BB 0.4">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -53,20 +56,25 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">20</setting>
                 <setting key="retraction speed">35</setting>
+                <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction speed">45</setting>
                 <setting key="print cooling">50</setting>
+                <setting key="retraction amount">6.5</setting>
             </hotend>
         </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <setting key="print temperature">223</setting>
-
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
+            <hotend id="BB 0.4">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
