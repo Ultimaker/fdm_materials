@@ -76,7 +76,7 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">110</setting>
                 <setting key="standby temperature">100</setting>
-                <setting key="retraction amount">10</setting>
+                <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
                 <setting key="print cooling">1</setting>
             </hotend>
