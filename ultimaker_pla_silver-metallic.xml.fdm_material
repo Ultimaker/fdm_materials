@@ -7,7 +7,7 @@
             <color>Silver Metallic</color>
         </name>
         <GUID>0e01be8c-e425-4fb1-b4a3-b79f255f1db9</GUID>
-        <version>8</version>
+        <version>9</version>
         <color_code>#a1a1a0</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -53,8 +53,12 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print cooling">100</setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
+            <hotend id="BB 0.4">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
@@ -62,17 +66,23 @@
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">5</setting>
             </hotend>
         </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <setting key="print cooling">100</setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
+            <hotend id="BB 0.4">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
@@ -80,6 +90,7 @@
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>

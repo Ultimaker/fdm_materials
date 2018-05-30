@@ -10,7 +10,7 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             <color>Generic</color>
         </name>
         <GUID>9d5d2d7c-4e77-441c-85a0-e9eefd4aa68c</GUID>
-        <version>4</version>
+        <version>5</version>
         <color_code>#ffc9f0</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -30,8 +30,12 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print cooling">100</setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
+            <hotend id="BB 0.4">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
@@ -39,6 +43,7 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -49,8 +54,12 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <setting key="print cooling">100</setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
+            <hotend id="BB 0.4">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
@@ -58,6 +67,7 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
