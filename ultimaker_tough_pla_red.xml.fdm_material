@@ -7,7 +7,7 @@
             <color>Red</color>
         </name>
         <GUID>2db25566-9a91-4145-84a5-46c90ed22bdf</GUID>
-        <version>4</version>
+        <version>5</version>
         <color_code>#de4343</color_code>
         <description></description>
         <adhesion_info></adhesion_info>
@@ -27,8 +27,12 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print cooling">100</setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
+            <hotend id="BB 0.4">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
@@ -36,18 +40,23 @@
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-				<setting key="retraction amount">5</setting>
+                <setting key="retraction amount">5</setting>
             </hotend>
         </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <setting key="print cooling">100</setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
+            <hotend id="BB 0.4">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="retraction amount">4.5</setting>
+            </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
@@ -55,6 +64,7 @@
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
