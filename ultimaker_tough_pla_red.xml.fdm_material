@@ -7,9 +7,9 @@
             <color>Red</color>
         </name>
         <GUID>2db25566-9a91-4145-84a5-46c90ed22bdf</GUID>
-        <version>5</version>
+        <version>6</version>
         <color_code>#de4343</color_code>
-        <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
+        <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
     </metadata>
     <properties>
