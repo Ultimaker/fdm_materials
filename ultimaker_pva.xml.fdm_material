@@ -47,23 +47,16 @@
         <diameter>2.85</diameter>
     </properties>
     <settings>
-        <setting key="hardware compatible">yes</setting>
         <setting key="print temperature">215</setting>
         <setting key="standby temperature">175</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
-            <setting key="hardware compatible">no</setting>
-        </machine>
-
-        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original Dual Extrusion"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
             <setting key="hardware compatible">no</setting>
-            <hotend id="0.25 mm" />
-            <hotend id="0.4 mm" />
-            <hotend id="0.6 mm" />
-            <hotend id="0.8 mm" />
         </machine>
 
         <machine>
