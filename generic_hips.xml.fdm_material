@@ -10,7 +10,7 @@ Generic HIPS profile. The data in this file may not be correct for your specific
             <color>Generic</color>
         </name>
         <GUID>b6f76172-bb0f-4326-bdbc-ee8f0e84b283</GUID>
-        <version>1</version>
+        <version>2</version>
         <color_code>#12f3e0</color_code>
     </metadata>
     <properties>
@@ -21,5 +21,21 @@ Generic HIPS profile. The data in this file may not be correct for your specific
         <setting key="print temperature">225</setting>
         <setting key="heated bed temperature">85</setting>
         <setting key="standby temperature">160</setting>
-  </settings>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original Dual Extrusion"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Go"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
+            <setting key="hardware compatible">no</setting>
+        </machine>
+    </settings>
 </fdmmaterial>

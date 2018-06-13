@@ -7,7 +7,7 @@
             <color>Green</color>
         </name>
         <GUID>6d71f4ad-29ab-4b50-8f65-22d99af294dd</GUID>
-        <version>6</version>
+        <version>7</version>
         <color_code>#00a95c</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -22,6 +22,19 @@
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original Dual Extrusion"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Go"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+
+            <setting key="hardware compatible">no</setting>
+        </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
@@ -72,4 +85,3 @@
         </machine>
     </settings>
 </fdmmaterial>
-

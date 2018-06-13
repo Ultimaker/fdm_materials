@@ -10,7 +10,7 @@ Generic break away support material profile. The data in this file may not be co
             <color>Generic</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d6a0</GUID>
-        <version>9</version>
+        <version>10</version>
         <color_code>#f1ece1</color_code> <!--TODO EM-1863 -->
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>same temperature/method as build material</adhesion_info> <!--TODO EM-1863 -->
@@ -23,6 +23,19 @@ Generic break away support material profile. The data in this file may not be co
         <setting key="print temperature">225</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">100</setting>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original Dual Extrusion"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Go"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+
+            <setting key="hardware compatible">no</setting>
+        </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
