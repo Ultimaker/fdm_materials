@@ -7,7 +7,7 @@
             <color>Yellow</color>
         </name>
         <GUID>e873341d-d9b8-45f9-9a6f-5609e1bcff68</GUID>
-        <version>10</version>
+        <version>11</version>
         <color_code>#f7b500</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -15,6 +15,7 @@
     <properties>
         <density>1.10</density>
         <diameter>2.85</diameter>
+        <weight>750</weight>
     </properties>
     <settings>
         <setting key="print temperature">230</setting>
