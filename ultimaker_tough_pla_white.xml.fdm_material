@@ -24,6 +24,11 @@
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
 
+        <!-- For material flow sensor -->
+        <setting key="relative extrusion">1.0</setting>
+        <setting key="flow sensor detection margin">0.8</setting>
+        <setting key="retract compensation">0</setting>
+
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>

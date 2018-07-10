@@ -25,6 +25,11 @@
         <setting key="retraction speed">35</setting>
         <setting key="shrinkage percentage">2.5</setting>
 
+        <!-- For material flow sensor -->
+        <setting key="relative extrusion">1.0</setting>
+        <setting key="flow sensor detection margin">0.8</setting>
+        <setting key="retract compensation">0</setting>
+
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
