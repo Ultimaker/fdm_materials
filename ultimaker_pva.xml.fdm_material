@@ -7,7 +7,7 @@
             <color>Natural</color>
         </name>
         <GUID>fe15ed8a-33c3-4f57-a2a7-b4b78a38c3cb</GUID>
-        <version>8</version>
+        <version>9</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -45,6 +45,7 @@
     <properties>
         <density>1.23</density><!-- Unknown if this is correct -->
         <diameter>2.85</diameter>
+        <weight>750</weight>
     </properties>
     <settings>
         <setting key="print temperature">215</setting>
