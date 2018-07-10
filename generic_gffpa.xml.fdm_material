@@ -10,7 +10,7 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
             <color>Generic</color>
         </name>
         <GUID>837cf11b-6b1e-48dc-94dc-4a2b4888648e</GUID>
-        <version>1</version>
+        <version>2</version>
         <color_code>#D5D8DC</color_code>
         <description>This is the baseline profile for Glass Fiber Filled Polyamides for the Print Profile Assistant.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -25,6 +25,11 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">2</setting>
         <setting key="surface energy">100</setting>
+
+        <!-- For material flow sensor -->
+        <setting key="relative extrusion">1.0</setting>
+        <setting key="flow sensor detection margin">0.8</setting>
+        <setting key="retract compensation">0</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
