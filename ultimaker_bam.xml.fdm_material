@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d5f9</GUID>
-        <version>10</version>
+        <version>11</version>
         <color_code>#f1ece1</color_code> <!--TODO EM-1863 -->
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>same temperature/method as build material</adhesion_info> <!--TODO EM-1863 -->
