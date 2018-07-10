@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>e256615d-a04e-4f53-b311-114b90560af9</GUID>
-        <version>9</version>
+        <version>10</version>
         <color_code>#d0d0d0</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -24,6 +24,11 @@
         <setting key="retraction speed">25</setting>
         <setting key="adhesion tendency">2</setting>
         <setting key="surface energy">100</setting>
+
+        <!-- For material flow sensor -->
+        <setting key="relative extrusion">1.0</setting>
+        <setting key="flow sensor detection margin">0.8</setting>
+        <setting key="retract compensation">0</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
