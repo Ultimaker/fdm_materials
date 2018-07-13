@@ -10,7 +10,7 @@ Natural PP profile. The data in this file may not be correct for your specific m
             <color>Natural</color>
         </name>
         <GUID>8122610f-bd86-4b5b-95bc-2ff5695c50f4</GUID>
-        <version>11</version>
+        <version>12</version>
         <color_code>#000000</color_code> <!--TODO EM-1559 -->
         <description>To be filled</description> <!--TODO EM-1559 -->
         <adhesion_info>100C +adhesive stickers +brim</adhesion_info> <!--TODO EM-1559 -->
@@ -18,6 +18,7 @@ Natural PP profile. The data in this file may not be correct for your specific m
     <properties>
         <density>0.89</density>
         <diameter>2.85</diameter>
+        <weight>750</weight>
     </properties>
     <settings>
         <setting key="hardware compatible">no</setting> <!--Not yet determined TODO EM-1559 -->
