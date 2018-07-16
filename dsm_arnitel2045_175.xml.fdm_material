@@ -8,7 +8,7 @@
             <label>Arnitel2045</label>
         </name>
         <GUID>fc67dfa2-7f71-4ca8-8ba5-dfe802fda22c</GUID>
-        <version>1</version>
+        <version>2</version>
         <color_code>#ee51f8</color_code>
     </metadata>
     <properties>
@@ -27,18 +27,6 @@
             <setting key="retraction speed">20</setting>
             <setting key="heated bed temperature">50</setting>
             <setting key="print temperature">215</setting>
-            <hotend id="0.25 mm">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="retraction amount">1.0</setting>
-            </hotend>
-            <hotend id="0.4 mm">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="retraction amount">1.0</setting>
-            </hotend>
-            <hotend id="0.8 mm">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="retraction amount">1.5</setting>
-            </hotend>
             <hotend id="0.25mm thermoplastic extruder">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.0</setting>
