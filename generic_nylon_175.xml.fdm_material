@@ -10,7 +10,7 @@ Generic Nylon 1.75mm profile. The data in this file may not be correct for your 
             <color>Generic</color>
         </name>
         <GUID>283d439a-3490-4481-920c-c51d8cdecf9c</GUID>
-        <version>3</version>
+        <version>4</version>
         <color_code>#3DF266</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -35,15 +35,15 @@ Generic Nylon 1.75mm profile. The data in this file may not be correct for your 
             <setting key="retraction speed">40</setting>
             <setting key="heated bed temperature">60</setting>
             <setting key="print temperature">230</setting>
-            <hotend id="0.25mm thermoplastic extruder">
+            <hotend id="0.25mm thermoplastic extruder" alternative_ids="0.25 mm">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.0</setting>
             </hotend>
-            <hotend id="0.4mm thermoplastic extruder">
+            <hotend id="0.4mm thermoplastic extruder" alternative_ids="0.4 mm">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.0</setting>
             </hotend>
-            <hotend id="0.8mm thermoplastic extruder">
+            <hotend id="0.8mm thermoplastic extruder" alternative_ids="0.8 mm">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.5</setting>
             </hotend>

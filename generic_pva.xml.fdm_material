@@ -10,7 +10,7 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>86a89ceb-4159-47f6-ab97-e9953803d70f</GUID>
-        <version>9</version>
+        <version>10</version>
         <color_code>#a32bcc</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -91,15 +91,15 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <setting key="retraction speed">40</setting>
             <setting key="heated bed temperature">50</setting>
             <setting key="print temperature">205</setting>
-            <hotend id="0.25mm thermoplastic extruder">
+            <hotend id="0.25mm thermoplastic extruder" alternative_ids="0.25 mm">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.0</setting>
             </hotend>
-            <hotend id="0.4mm thermoplastic extruder">
+            <hotend id="0.4mm thermoplastic extruder" alternative_ids="0.4 mm">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.0</setting>
             </hotend>
-            <hotend id="0.8mm thermoplastic extruder">
+            <hotend id="0.8mm thermoplastic extruder" alternative_ids="0.8 mm">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.5</setting>
             </hotend>
