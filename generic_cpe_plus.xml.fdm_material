@@ -10,7 +10,7 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             <color>Generic</color>
         </name>
         <GUID>e2409626-b5a0-4025-b73e-b58070219259</GUID>
-        <version>11</version>
+        <version>12</version>
         <color_code>#3633F2</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -26,11 +26,6 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
         <setting key="shrinkage percentage">0.9</setting>
-
-        <!-- For material flow sensor -->
-        <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
-        <setting key="retract compensation">0</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
@@ -67,6 +62,11 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <!-- For material flow sensor -->
+            <setting key="relative extrusion">1.0</setting>
+            <setting key="flow sensor detection margin">0.8</setting>
+            <setting key="retract compensation">0</setting>
+
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />

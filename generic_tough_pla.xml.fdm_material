@@ -10,7 +10,7 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             <color>Generic</color>
         </name>
         <GUID>9d5d2d7c-4e77-441c-85a0-e9eefd4aa68c</GUID>
-        <version>7</version>
+        <version>8</version>
         <color_code>#ffc9f0</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -25,11 +25,6 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
-
-        <!-- For material flow sensor -->
-        <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
-        <setting key="retract compensation">0</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
@@ -53,6 +48,11 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <!-- For material flow sensor -->
+            <setting key="relative extrusion">1.0</setting>
+            <setting key="flow sensor detection margin">0.8</setting>
+            <setting key="retract compensation">0</setting>
+
             <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />

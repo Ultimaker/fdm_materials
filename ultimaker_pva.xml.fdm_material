@@ -7,7 +7,7 @@
             <color>Natural</color>
         </name>
         <GUID>fe15ed8a-33c3-4f57-a2a7-b4b78a38c3cb</GUID>
-        <version>10</version>
+        <version>11</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -51,11 +51,6 @@
         <setting key="print temperature">215</setting>
         <setting key="standby temperature">175</setting>
 
-        <!-- For material flow sensor -->
-        <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
-        <setting key="retract compensation">0</setting>
-
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original+"/>
@@ -87,6 +82,11 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <!-- For material flow sensor -->
+            <setting key="relative extrusion">1.0</setting>
+            <setting key="flow sensor detection margin">0.8</setting>
+            <setting key="retract compensation">0</setting>
+
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
