@@ -20,9 +20,9 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
         <diameter>2.85</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">260</setting>
-        <setting key="heated bed temperature">107</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="print temperature">30</setting>
+        <setting key="heated bed temperature">30</setting>
+        <setting key="standby temperature">30</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
         <setting key="shrinkage percentage">0.9</setting>
@@ -75,15 +75,15 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">110</setting>
-                <setting key="standby temperature">100</setting>
+                <setting key="heated bed temperature">30</setting>
+                <setting key="standby temperature">30</setting>
                 <setting key="retraction amount">10</setting>
                 <setting key="retraction speed">40</setting>
                 <setting key="print cooling">1</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">110</setting>
+                <setting key="heated bed temperature">30</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
                 <setting key="print cooling">8</setting>

@@ -18,9 +18,9 @@
         <weight>750</weight>
     </properties>
     <settings>
-        <setting key="print temperature">220</setting>
-        <setting key="heated bed temperature">100</setting>
-        <setting key="standby temperature">185</setting>
+        <setting key="print temperature">30</setting>
+        <setting key="heated bed temperature">30</setting>
+        <setting key="standby temperature">30</setting>
         <setting key="print cooling">20</setting>
         <setting key="retraction speed">35</setting>
         <setting key="shrinkage percentage">2.5</setting>
@@ -52,14 +52,14 @@
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">85</setting>
-                <setting key="standby temperature">100</setting>
+                <setting key="heated bed temperature">30</setting>
+                <setting key="standby temperature">30</setting>
                 <setting key="retraction amount">6.5</setting>
                 <setting key="retraction speed">25</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">85</setting>
+                <setting key="heated bed temperature">30</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -70,13 +70,13 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
-            <setting key="heated bed temperature">85</setting>
+            <setting key="heated bed temperature">30</setting>
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
+                <setting key="standby temperature">30</setting>
                 <setting key="retraction amount">6.5</setting>
                 <setting key="retraction speed">25</setting>
             </hotend>

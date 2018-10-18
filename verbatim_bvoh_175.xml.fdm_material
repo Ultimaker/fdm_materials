@@ -17,6 +17,6 @@
         <diameter>1.75</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">210</setting>
+        <setting key="print temperature">30</setting>
     </settings>
 </fdmmaterial>

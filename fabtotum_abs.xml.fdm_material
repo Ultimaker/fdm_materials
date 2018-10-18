@@ -16,7 +16,7 @@
         <diameter>1.75</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">250.0</setting>
-        <setting key="heated bed temperature">95.0</setting>
+        <setting key="print temperature">30.0</setting>
+        <setting key="heated bed temperature">30.0</setting>
     </settings>
 </fdmmaterial>

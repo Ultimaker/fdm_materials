@@ -20,17 +20,17 @@ Generic PC profile. The data in this file may not be correct for your specific m
         <diameter>1.75</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">270</setting>
-        <setting key="heated bed temperature">107</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="print temperature">30</setting>
+        <setting key="heated bed temperature">30</setting>
+        <setting key="standby temperature">30</setting>
 
         <machine>
             <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
             <setting key="print cooling">0.0</setting>
-            <setting key="standby temperature">160</setting>
+            <setting key="standby temperature">30</setting>
             <setting key="retraction speed">40</setting>
-            <setting key="heated bed temperature">135</setting>
-            <setting key="print temperature">245</setting>
+            <setting key="heated bed temperature">30</setting>
+            <setting key="print temperature">30</setting>
             <hotend id="0.25mm thermoplastic extruder">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.0</setting>

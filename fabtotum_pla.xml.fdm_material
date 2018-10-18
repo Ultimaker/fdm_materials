@@ -16,7 +16,7 @@
         <density>1.24</density>
     </properties>
     <settings>
-        <setting key="print temperature">200.0</setting>
-        <setting key="heated bed temperature">40.0</setting>
+        <setting key="print temperature">30.0</setting>
+        <setting key="heated bed temperature">30.0</setting>
     </settings>
 </fdmmaterial>

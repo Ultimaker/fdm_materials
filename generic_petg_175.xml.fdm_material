@@ -20,15 +20,15 @@ Generic PETG 1.75mm profile. The data in this file may not be correct for your s
         <diameter>1.75</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">215</setting>
-        <setting key="heated bed temperature">70</setting>
-        <setting key="standby temperature">120</setting>
+        <setting key="print temperature">30</setting>
+        <setting key="heated bed temperature">30</setting>
+        <setting key="standby temperature">30</setting>
 
         <machine>
             <machine_identifier manufacturer="IMADE3D" product="IMADE3D JellyBOX"/>
 
-            <setting key="print temperature">235</setting>
-            <setting key="heated bed temperature">55</setting>
+            <setting key="print temperature">30</setting>
+            <setting key="heated bed temperature">30</setting>
 
             <hotend id="0.4 mm" />
             <hotend id="0.4 mm 2-fans" />
@@ -37,10 +37,10 @@ Generic PETG 1.75mm profile. The data in this file may not be correct for your s
         <machine>
             <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
             <setting key="print cooling">0.0</setting>
-            <setting key="standby temperature">120</setting>
+            <setting key="standby temperature">30</setting>
             <setting key="retraction speed">40</setting>
-            <setting key="heated bed temperature">85</setting>
-            <setting key="print temperature">215</setting>
+            <setting key="heated bed temperature">30</setting>
+            <setting key="print temperature">30</setting>
             <hotend id="0.25mm thermoplastic extruder">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.0</setting>

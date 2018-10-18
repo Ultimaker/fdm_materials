@@ -20,9 +20,9 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
         <diameter>2.85</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">228</setting>
-        <setting key="heated bed temperature">0</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="print temperature">30</setting>
+        <setting key="heated bed temperature">30</setting>
+        <setting key="standby temperature">30</setting>
         <setting key="adhesion tendency">3</setting>
         <setting key="surface energy">100</setting>
 
@@ -47,7 +47,7 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
-            <setting key="print temperature">223</setting>
+            <setting key="print temperature">30</setting>
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
@@ -68,7 +68,7 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
-            <setting key="print temperature">223</setting>
+            <setting key="print temperature">30</setting>
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />

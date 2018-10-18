@@ -17,8 +17,8 @@
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
     </properties>
     <settings>
-        <setting key="print temperature">210</setting>
-        <setting key="heated bed temperature">50</setting>
+        <setting key="print temperature">30</setting>
+        <setting key="heated bed temperature">30</setting>
 
         <machine>
             <machine_identifier manufacturer="IMADE3D" product="IMADE3D JellyBOX"/>

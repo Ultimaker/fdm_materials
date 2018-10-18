@@ -20,9 +20,9 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
         <diameter>2.85</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">245</setting>
-        <setting key="heated bed temperature">60</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="print temperature">30</setting>
+        <setting key="heated bed temperature">30</setting>
+        <setting key="standby temperature">30</setting>
         <setting key="retraction amount">8</setting>
         <setting key="retraction speed">25</setting>
         <setting key="adhesion tendency">2</setting>
@@ -51,8 +51,8 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">230</setting>
-                <setting key="standby temperature">100</setting>
+                <setting key="print temperature">30</setting>
+                <setting key="standby temperature">30</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -72,18 +72,18 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">230</setting>
-                <setting key="standby temperature">100</setting>
+                <setting key="print temperature">30</setting>
+                <setting key="standby temperature">30</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">70</setting>
+                <setting key="heated bed temperature">30</setting>
                 <setting key="retraction amount">8</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">70</setting>
+                <setting key="heated bed temperature">30</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>

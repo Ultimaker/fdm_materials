@@ -19,16 +19,16 @@
     <density>1.10</density>
   </properties>
   <settings>
-    <setting key="print temperature">235.0</setting>
-    <setting key="standby temperature">200</setting>
+    <setting key="print temperature">30.0</setting>
+    <setting key="standby temperature">30</setting>
     <setting key="print cooling">10.0</setting>
-    <setting key="heated bed temperature">95.0</setting>
+    <setting key="heated bed temperature">30.0</setting>
     <setting key="retraction amount">2.5</setting>
     <machine>
       <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
-      <setting key="heated bed temperature">90</setting>
-      <setting key="print temperature">230</setting>
-      <setting key="standby temperature">160</setting>
+      <setting key="heated bed temperature">30</setting>
+      <setting key="print temperature">30</setting>
+      <setting key="standby temperature">30</setting>
       <setting key="print cooling">0.0</setting>
       <setting key="retraction speed">40</setting>
       <setting key="retraction amount">4.0</setting>

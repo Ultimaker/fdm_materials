@@ -20,17 +20,17 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
         <diameter>1.75</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">200</setting>
-        <setting key="heated bed temperature">60</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="print temperature">30</setting>
+        <setting key="heated bed temperature">30</setting>
+        <setting key="standby temperature">30</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
 
         <machine>
             <machine_identifier manufacturer="IMADE3D" product="IMADE3D JellyBOX"/>
 
-            <setting key="print temperature">210</setting>
-            <setting key="heated bed temperature">55</setting>
+            <setting key="print temperature">30</setting>
+            <setting key="heated bed temperature">30</setting>
 
             <hotend id="0.4 mm" />
             <hotend id="0.4 mm 2-fans" />
@@ -39,10 +39,10 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
         <machine>
             <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
             <setting key="print cooling">40.0</setting>
-            <setting key="standby temperature">160</setting>
+            <setting key="standby temperature">30</setting>
             <setting key="retraction speed">40</setting>
-            <setting key="heated bed temperature">50</setting>
-            <setting key="print temperature">185</setting>
+            <setting key="heated bed temperature">30</setting>
+            <setting key="print temperature">30</setting>
             <hotend id="0.25mm thermoplastic extruder">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.0</setting>

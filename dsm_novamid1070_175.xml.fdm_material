@@ -16,17 +16,17 @@
         <diameter>1.75</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">255</setting>
-        <setting key="heated bed temperature">75</setting>
-        <setting key="standby temperature">220</setting>
+        <setting key="print temperature">30</setting>
+        <setting key="heated bed temperature">30</setting>
+        <setting key="standby temperature">30</setting>
 
         <machine>
             <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
             <setting key="print cooling">0.0</setting>
-            <setting key="standby temperature">220</setting>
+            <setting key="standby temperature">30</setting>
             <setting key="retraction speed">20</setting>
-            <setting key="heated bed temperature">75</setting>
-            <setting key="print temperature">255</setting>
+            <setting key="heated bed temperature">30</setting>
+            <setting key="print temperature">30</setting>
             <hotend id="0.25mm thermoplastic extruder">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.0</setting>
