@@ -7,7 +7,7 @@
             <color>Yellow</color>
         </name>
         <GUID>e873341d-d9b8-45f9-9a6f-5609e1bcff68</GUID>
-        <version>12</version>
+        <version>13</version>
         <color_code>#f7b500</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -45,6 +45,7 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">225</setting>
@@ -68,6 +69,7 @@
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">225</setting>

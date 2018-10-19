@@ -7,7 +7,7 @@
             <color>Pearl-White</color>
         </name>
         <GUID>d9fc79db-82c3-41b5-8c99-33b3747b8fb3</GUID>
-        <version>10</version>
+        <version>11</version>
         <color_code>#e3d9c6</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -61,6 +61,7 @@
             <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
@@ -80,6 +81,7 @@
             <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
