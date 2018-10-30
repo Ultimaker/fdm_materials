@@ -37,7 +37,6 @@ Generic break away support material profile. The data in this file may not be co
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -56,7 +55,7 @@ Generic break away support material profile. The data in this file may not be co
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <hotend id="CC 0.6" />
+            <hotend id="CC Red 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>

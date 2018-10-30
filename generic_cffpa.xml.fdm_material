@@ -49,11 +49,6 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <hotend id="CC 0.6">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="print cooling">1</setting>
-                <setting key="retraction amount">6.5</setting>
-            </hotend>
         </machine>
 
         <machine>
@@ -73,7 +68,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <hotend id="CC 0.6">
+            <hotend id="CC Red 0.6">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">1</setting>
                 <setting key="retraction amount">6.5</setting>

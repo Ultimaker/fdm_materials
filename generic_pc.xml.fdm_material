@@ -49,7 +49,6 @@ Generic PC profile. The data in this file may not be correct for your specific m
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
@@ -73,7 +72,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
+            <hotend id="CC Red 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
