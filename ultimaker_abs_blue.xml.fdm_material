@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>7c9575a6-c8d6-40ec-b3dd-18d7956bfaae</GUID>
-        <version>13</version>
+        <version>14</version>
         <color_code>#00387b</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -68,7 +68,7 @@
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
-            <hotend id="CC Red 0.6" />
+            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">225</setting>
