@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>bd0d9eb3-a920-4632-84e8-dcd6086746c5</GUID>
-        <version>14</version>
+        <version>15</version>
         <color_code>#d0d0d0</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -63,7 +63,7 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
-            <hotend id="CC Red 0.6" />
+            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">75</setting>
