@@ -24,7 +24,7 @@
 	                            </xsd:simpleType>
 	                        </xsd:element>
 
-				 			<xsd:element name="version" type="xsd:int"/>
+				 			<xsd:element name="version" type="xsd:positiveInteger"/>
 				 			<xsd:element name="color_code">
 				 				<xsd:simpleType>
 	                                <xsd:restriction base="xsd:string">
