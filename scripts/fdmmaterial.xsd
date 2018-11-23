@@ -46,10 +46,11 @@
 				 </xsd:element>
 				 <xsd:element name="properties">
 	 				<xsd:complexType>
-				 		<xsd:sequence>
-				 			<xsd:element name="density" type="xsd:decimal"/>
+				 		<xsd:all>
+				 			<xsd:element name="density" type="xsd:decimal" minOccurs="0"/>
 				 			<xsd:element name="diameter" type="xsd:decimal"/>
-				 		</xsd:sequence>
+				 			<xsd:element name="weight" type="xsd:decimal" minOccurs="0"/>
+				 		</xsd:all>
 				 	</xsd:complexType>
 				</xsd:element>
 				<xsd:element name="settings">
@@ -129,6 +130,7 @@
                 <xsd:enumeration value="relative extrusion"/>
                 <xsd:enumeration value="flow sensor detection margin"/>
                 <xsd:enumeration value="retract compensation"/>
+                <xsd:enumeration value="shrinkage percentage"/>
             </xsd:restriction>
         </xsd:simpleType>
     </xsd:attribute>

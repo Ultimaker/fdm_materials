@@ -1,10 +1,9 @@
 #!/usr/bin/env python
-from collections import OrderedDict
 import os
 import sys
 import re
 from typing import Dict, Optional, List
-
+from lxml import etree
 
 class MaterialProfilesValidator:
     def __init__(self) -> None:
@@ -51,9 +50,12 @@ class MaterialProfilesValidator:
         materials_dir = self._getMaterialsDir(os.path.abspath(directory))
 
         material_content_dict = self._getAllMaterialsContentsInDir(materials_dir)
-
+    
         # Store all the guid's linked with their filename. This is later used to find out if there are duplicate guids.
         guid_dict = {}  # type: Dict[str, List[str]]
+        xmlschema_doc = etree.parse("fdmmaterial.xsd")
+        xmlschema = etree.XMLSchema(xmlschema_doc)
+        has_invalid_files = False
 
         for file_name, material_content in material_content_dict.items():
             guid = self._getGuid(material_content)
@@ -61,7 +63,12 @@ class MaterialProfilesValidator:
                 guid_dict[guid] = []
             guid_dict[guid].append(file_name)
 
-        has_invalid_files = False
+            xml_doc = etree.fromstring(material_content.encode())
+            is_valid = xmlschema.validate(xml_doc)
+            if not is_valid:
+                print("{file_name} is not a valid fdm material".format(file_name = file_name))
+            has_invalid_files |= not is_valid
+
         for guid, file_item_list in guid_dict.items():
             if len(file_item_list) <= 1:
                 continue
