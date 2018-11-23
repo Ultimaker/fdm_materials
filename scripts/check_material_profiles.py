@@ -83,7 +83,7 @@ if __name__ == "__main__":
     root_dir = os.path.abspath(os.path.join(script_dir, ".."))
 
     validator = MaterialProfilesValidator(root_dir)
-    is_everything_validate = validator.validate()
+    is_everything_validated = validator.validate()
 
-    ret_code = 0 if is_everything_validate else 1
+    ret_code = 0 if is_everything_validated else 1
     sys.exit(ret_code)
