@@ -96,7 +96,7 @@
 				 	</xsd:complexType>
 				</xsd:element>
 			</xsd:sequence>
-			<xsd:attribute name="version" type="xsd:string" use="required"/> 	
+			<xsd:attribute name="version" type="xsd:string" use="required" fixed="1.3"/> 	
 		 </xsd:complexType>	
 	</xsd:element>
 
