@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>c7005925-2a41-4280-8cdd-4029e3fe5253</GUID>
-        <version>13</version>
+        <version>15</version>
         <color_code>#d0d0d0</color_code>
         <description>Fatigue and chemical resistant. Polypropylene offers excellent temperature, chemical and fatigue resistance. Its toughness and low friction make it a perfect choice for prototyping and creating durable end-use models.</description>
         <adhesion_info>Adhesion sheets are required.</adhesion_info>
@@ -74,6 +74,7 @@
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
