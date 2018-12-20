@@ -22,7 +22,7 @@
         <setting key="standby temperature">215.0</setting>
         <setting key="print cooling">10.0</setting>
         <setting key="retraction amount">3.0</setting>
-        <setting key="print temperature">250.0</setting>
+        <setting key="print temperature">255.0</setting>
         <setting key="heated bed temperature">0.0</setting>
         <setting key="retraction speed">150.0</setting>
     </settings>
