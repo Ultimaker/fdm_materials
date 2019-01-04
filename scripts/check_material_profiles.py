@@ -64,10 +64,12 @@ class MaterialProfilesValidator:
             guid_dict[guid].append(file_name)
 
             xml_doc = etree.fromstring(material_content.encode())
-            is_valid = xmlschema.validate(xml_doc)
-            if not is_valid:
+            try:
+                xmlschema.assertValid(xml_doc)
+            except etree.DocumentInvalid as e:
+                has_invalid_files = True
                 print("{file_name} is not a valid fdm material".format(file_name = file_name))
-            has_invalid_files |= not is_valid
+                print(e)
 
         for guid, file_item_list in guid_dict.items():
             if len(file_item_list) <= 1:
