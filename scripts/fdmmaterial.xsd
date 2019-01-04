@@ -58,7 +58,8 @@
                         <xsd:sequence>
                             <!--  Permit any of these tags in any order in any number     -->
                             <xsd:choice minOccurs="0" maxOccurs="unbounded">
-                                <xsd:element name="setting" maxOccurs="unbounded" minOccurs="0" type = "setting"/>
+                                <xsd:element name="setting" minOccurs="0" maxOccurs="unbounded" type="setting"/>
+                                <xsd:any namespace="http://www.ultimaker.com/cura" processContents="lax"/>
                                 <xsd:element name="machine" maxOccurs="unbounded">
                                     <xsd:complexType>
                                         <xsd:sequence>
@@ -73,7 +74,10 @@
                                                 <xsd:element name="hotend" maxOccurs="unbounded" minOccurs="0">
                                                     <xsd:complexType>
                                                         <xsd:sequence>
-                                                            <xsd:element name="setting" maxOccurs="unbounded" minOccurs="0" type="setting"/>
+                                                            <xsd:choice minOccurs="0" maxOccurs="unbounded">
+                                                                <xsd:element name="setting" type="setting"/>
+                                                                <xsd:any namespace="http://www.ultimaker.com/cura" processContents="lax"/>
+                                                            </xsd:choice>
                                                         </xsd:sequence>
                                                         <xsd:attribute name="id" type="xsd:string" use="required"/>
                                                     </xsd:complexType>
@@ -81,12 +85,16 @@
                                                 <xsd:element name="buildplate" maxOccurs="unbounded" minOccurs="0">
                                                     <xsd:complexType>
                                                         <xsd:sequence>
-                                                            <xsd:element name="setting" maxOccurs="unbounded" minOccurs="0"/>
+                                                            <xsd:choice minOccurs="0" maxOccurs="unbounded">
+                                                                <xsd:element name="setting" minOccurs="0" maxOccurs="unbounded"/>
+                                                                <xsd:any namespace="http://www.ultimaker.com/cura" processContents="lax"/>
+                                                            </xsd:choice>
                                                         </xsd:sequence>
                                                         <xsd:attribute name="id" type="xsd:string" use="required"/>
                                                     </xsd:complexType>
                                                 </xsd:element>
-                                                <xsd:element name="setting" maxOccurs="unbounded" minOccurs="0" type="setting"/>
+                                                <xsd:element name="setting" minOccurs="0" maxOccurs="unbounded" type="setting"/>
+                                                <xsd:any namespace="http://www.ultimaker.com/cura" processContents="lax"/>
                                             </xsd:choice>
                                         </xsd:sequence>
                                     </xsd:complexType>
