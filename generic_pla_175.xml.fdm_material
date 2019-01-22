@@ -56,5 +56,32 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
                 <setting key="retraction amount">1.5</setting>
             </hotend>
         </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Kati Hal ARGE" product="alya3dp" />
+            <setting key="print cooling">100</setting>
+            <setting key="standby temperature">180</setting>
+            <setting key="retraction speed">40</setting>
+            <setting key="retraction amount">1.5</setting>
+            <setting key="print temperature">200</setting>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Kati Hal ARGE" product="alyanx3dp" />
+            <setting key="print cooling">100</setting>
+            <setting key="standby temperature">180</setting>
+            <setting key="retraction speed">40</setting>
+            <setting key="retraction amount">1.5</setting>
+            <setting key="print temperature">200</setting>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Kati Hal ARGE" product="kupido" />
+            <setting key="print cooling">100</setting>
+            <setting key="standby temperature">180</setting>
+            <setting key="retraction speed">40</setting>
+            <setting key="retraction amount">0.8</setting>
+            <setting key="print temperature">200</setting>
+        </machine>        
     </settings>
 </fdmmaterial>
