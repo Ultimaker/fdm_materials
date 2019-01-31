@@ -5,6 +5,11 @@ import re
 from typing import Dict, Optional, List
 from lxml import etree
 
+##  This is a material profile validator that works with the lxml library.
+#
+#   This version is currently unused on our CI server because it was difficult
+#   to install lxml on that server. We store it here only as a back-up for when
+#   we migrate to a different CI system.
 class MaterialProfilesValidator:
     def __init__(self) -> None:
         self._guid_pattern = re.compile(r"<GUID>.*</GUID>")
