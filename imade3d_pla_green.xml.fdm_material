@@ -7,14 +7,14 @@
             <color>Green</color>
         </name>
         <GUID>d5572db9-0f37-47c0-aac5-84541b9ee8c2</GUID>
-        <version>1</version>
-        <color_code>#a5da00</color_code>
+        <version>2</version>
+        <color_code>#A5DA00</color_code>
+        <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
+        <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
     </metadata>
     <properties>
         <density>1.24</density>
         <diameter>1.75</diameter>
-        <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
-        <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
     </properties>
     <settings>
         <setting key="print temperature">210</setting>

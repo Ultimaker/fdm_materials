@@ -8,10 +8,9 @@
             <label>Vertex Delta PLA</label>
         </name>
         <color_code>#ffc924</color_code>
-        <compatible>True</compatible>
         <GUID>8d2731c8-b209-4202-b5d0-0d2d57070736</GUID>
         <adhesion_info />
-        <version>2</version>
+        <version>3</version>
         <description />
     </metadata>
     <properties>

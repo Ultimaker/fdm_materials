@@ -8,10 +8,9 @@
             <label>Vertex Delta PET</label>
         </name>
         <color_code>#ffc924</color_code>
-        <compatible>True</compatible>
         <GUID>0e20a24a-3248-4b9f-96f9-69ee388abd0c</GUID>
         <adhesion_info />
-        <version>2</version>
+        <version>3</version>
         <description />
     </metadata>
     <properties>

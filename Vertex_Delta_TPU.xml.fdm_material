@@ -8,10 +8,9 @@
             <label>Vertex Delta TPU</label>
         </name>
         <color_code>#ffc924</color_code>
-        <compatible>True</compatible>
         <GUID>a5ab90e5-9f5d-445b-b0c5-5312dafa2e27</GUID>
         <adhesion_info />
-        <version>2</version>
+        <version>3</version>
         <description />
     </metadata>
     <properties>
