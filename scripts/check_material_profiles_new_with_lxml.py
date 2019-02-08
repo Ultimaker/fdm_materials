@@ -3,7 +3,9 @@ import os
 import sys
 import re
 from typing import Dict, Optional, List
+
 from lxml import etree
+
 
 ##  This is a material profile validator that works with the lxml library.
 #
@@ -92,7 +94,7 @@ class MaterialProfilesValidator:
         return not has_invalid_files
 
 
-if __name__ == "__main__":
+def main():
     script_dir = os.path.dirname(os.path.realpath(__file__))
     root_dir = os.path.abspath(os.path.join(script_dir, ".."))
 
@@ -101,3 +103,7 @@ if __name__ == "__main__":
 
     ret_code = 0 if is_everything_validated else 1
     sys.exit(ret_code)
+
+
+if __name__ == "__main__":
+    main()
