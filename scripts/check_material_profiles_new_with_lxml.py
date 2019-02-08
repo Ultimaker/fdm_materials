@@ -53,14 +53,15 @@ class MaterialProfilesValidator:
             break
         return result
 
-    def validateAll(self, directory: str) -> bool:
-        materials_dir = self._getMaterialsDir(os.path.abspath(directory))
+    def validateAll(self, repo_root_dir: str) -> bool:
+        materials_dir = self._getMaterialsDir(repo_root_dir)
+        fdmmaterial_xsd_file_path = os.path.join(repo_root_dir, "scripts", "fdmmaterial.xsd")
 
         material_content_dict = self._getAllMaterialsContentsInDir(materials_dir)
     
         # Store all the guid's linked with their filename. This is later used to find out if there are duplicate guids.
         guid_dict = {}  # type: Dict[str, List[str]]
-        xmlschema_doc = etree.parse("fdmmaterial.xsd")
+        xmlschema_doc = etree.parse(fdmmaterial_xsd_file_path)
         xmlschema = etree.XMLSchema(xmlschema_doc)
         has_invalid_files = False
 
