@@ -7,11 +7,10 @@
             <color>Natural</color>
         </name>
         <GUID>fe15ed8a-33c3-4f57-a2a7-b4b78a38c3cb</GUID>
-        <version>10</version>
+        <version>13</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
-        <instructions>http://ultimaker.com/we/have/no/instruction/link/yet</instructions>
         <author>
             <organization>Ultimaker B.V.</organization>
             <contact>Ultimaker Support</contact>
@@ -39,8 +38,6 @@
             </address>
         </supplier>
         <EAN>87 10400 31118 0</EAN>
-        <MSDS>http://...</MSDS>
-        <TDS>http://...</TDS>
     </metadata>
     <properties>
         <density>1.23</density><!-- Unknown if this is correct -->
@@ -101,6 +98,9 @@
             </hotend>
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">no</setting>
             </hotend>
             <buildplate id="Glass">
                 <setting key="hardware compatible">yes</setting>

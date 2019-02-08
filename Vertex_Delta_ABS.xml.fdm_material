@@ -8,10 +8,9 @@
             <label>Vertex Delta ABS</label>
         </name>
         <color_code>#ffc924</color_code>
-        <compatible>True</compatible>
         <GUID>4edd8fce-0851-43e5-808a-970b4bfe8b10</GUID>
         <adhesion_info />
-        <version>2</version>
+        <version>3</version>
         <description />
     </metadata>
     <properties>

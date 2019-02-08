@@ -7,9 +7,8 @@
       <color>Generic</color>
       <label>ABS TiZYX</label>
     </name>
-    <version>2</version>
+    <version>3</version>
     <color_code>#0097e8</color_code>
-    <compatible>True</compatible>
     <GUID>ae03b4fd-2aa6-4957-aaea-b7ca0bbf0370</GUID>
     <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
     <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
