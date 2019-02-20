@@ -21,7 +21,7 @@
         <setting key="anti ooze retract position">-8</setting>
         <setting key="anti ooze retract speed">40</setting>
         <setting key="break preparation position">-8</setting>
-        <setting key="break preparation speed">17?</setting>
+        <setting key="break preparation speed">17<!--?--></setting>
         <setting key="break preparation temperature">220</setting>
         <setting key="break position">-20</setting>
         <setting key="break speed">17</setting>
