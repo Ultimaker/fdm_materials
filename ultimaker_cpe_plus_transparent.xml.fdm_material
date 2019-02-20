@@ -18,6 +18,20 @@
         <weight>750</weight>
     </properties>
     <settings>
+        <setting key="anti ooze retract position">-4</setting>
+        <setting key="anti ooze retract speed">5</setting>
+        <setting key="break preparation position">-16</setting>
+        <setting key="break preparation speed">2</setting>
+        <setting key="break preparation temperature">260</setting>
+        <setting key="break position">-50</setting>
+        <setting key="break speed">25</setting>
+        <setting key="break temperature">100</setting>
+        <setting key="maximum park duration">300</setting>
+        <setting key="no load move factor">0.98245614</setting>
+        <setting key="flush purge speed">10</setting>
+        <setting key="end of filament purge speed">10</setting>
+        <setting key="flush purge length">60</setting>
+        <setting key="end of filament purge length">20</setting>
         <setting key="print temperature">260</setting>
         <setting key="heated bed temperature">107</setting>
         <setting key="standby temperature">175</setting>
