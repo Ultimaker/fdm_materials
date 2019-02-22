@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 from collections import OrderedDict
-import codecs
 import os
 import sys
 import re
@@ -8,13 +7,13 @@ import re
 
 class MaterialProfilesValidator:
 
-    def __init__(self, root_dir):
+    def __init__(self, root_dir: str):
         self._repo_dir = os.path.abspath(root_dir)
         self._materials_dir = self._repo_dir
 
         self._guid_pattern = re.compile(r"<GUID>.*</GUID>")
 
-    def _get_guid(self, content):
+    def _get_guid(self, content: str) -> str:
         guid = None
         for line in content.splitlines():
             line = line.strip()
@@ -23,7 +22,7 @@ class MaterialProfilesValidator:
                 break
         return guid
 
-    def get_materials_dir(self, dirpath):
+    def get_materials_dir(self, dirpath: str):
         for root_dir, dirnames, filenames in os.walk(dirpath):
             has_materials_file = any(fn.endswith(".xml.fdm_material") for fn in filenames)
             if not has_materials_file:
@@ -33,7 +32,7 @@ class MaterialProfilesValidator:
 
             return dirpath
 
-    def validate(self):
+    def validate(self) -> bool:
         """
         Validates the preset settings files and returns True or False indicating whether there are invalid files.
         """
@@ -50,7 +49,7 @@ class MaterialProfilesValidator:
                     print("Skipping \"%s\"" % filename)
                     continue
 
-                with codecs.open(file_path, "r", encoding = "utf-8") as f:
+                with open(file_path, "r", encoding = "utf-8") as f:
                     content = f.read()
 
                 guid = self._get_guid(content)
