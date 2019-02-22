@@ -10,7 +10,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
             <color>Generic</color>
         </name>
         <GUID>98c05714-bf4e-4455-ba27-57d74fe331e4</GUID>
-        <version>14</version>
+        <version>15</version>
         <color_code>#F29030</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
@@ -20,6 +20,20 @@ Generic PC profile. The data in this file may not be correct for your specific m
         <diameter>2.85</diameter>
     </properties>
     <settings>
+        <setting key="anti ooze retract position">-4</setting>
+        <setting key="anti ooze retract speed">5</setting>
+        <setting key="break preparation position">-16</setting>
+        <setting key="break preparation speed">2</setting>
+        <setting key="break preparation temperature">270</setting>
+        <setting key="break position">-50</setting>
+        <setting key="break speed">25</setting>
+        <setting key="break temperature">100</setting>
+        <setting key="maximum park duration">300</setting>
+        <setting key="no load move factor">1.0</setting>
+        <setting key="flush purge speed">10<!--?--></setting>
+        <setting key="end of filament purge speed">10<!--?--></setting>
+        <setting key="flush purge length">60<!--?--></setting>
+        <setting key="end of filament purge length">20<!--?--></setting>
         <setting key="print temperature">270</setting>
         <setting key="heated bed temperature">107</setting>
         <setting key="standby temperature">175</setting>
