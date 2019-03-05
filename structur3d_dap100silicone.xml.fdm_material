@@ -27,11 +27,10 @@
     <setting key="standby temperature">0.0</setting>
     <setting key="heated bed temperature">0.0</setting>
     <setting key="print cooling">0.0</setting>
+    <setting key="hardware compatible">no</setting>
     <machine>
-      <machine_identifier manufacturer="Structur3d.io" product="Discov3ry Complete (Ultimaker 2+)" />
-      <setting key="standby temperature">0</setting>
-      <setting key="print temperature">0</setting>
-      <setting key="heated bed temperature">0</setting>
+      <machine_identifier manufacturer="Structur3d.io" product="structur3d_discov3ry1_complete_um2plus" />
+      <setting key="hardware compatible">yes</setting>
       <hotend id="0.20mm (Clear)">
         <setting key="hardware compatible">yes</setting>
       </hotend>
@@ -52,24 +51,6 @@
       </hotend>
       <hotend id="1.60mm (Olive)">
         <setting key="hardware compatible">yes</setting>
-      </hotend>
-    </machine>
-    <machine>
-      <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+" />
-      <setting key="standby temperature">0</setting>
-      <setting key="print temperature">0</setting>
-      <setting key="heated bed temperature">0</setting>
-      <hotend id="0.4 mm">
-        <setting key="hardware compatible">no</setting>
-      </hotend>
-      <hotend id="0.6 mm">
-        <setting key="hardware compatible">no</setting>
-      </hotend>
-      <hotend id="0.25 mm">
-        <setting key="hardware compatible">no</setting>
-      </hotend>
-      <hotend id="0.8 mm">
-        <setting key="hardware compatible">no</setting>
       </hotend>
     </machine>
   </settings>
