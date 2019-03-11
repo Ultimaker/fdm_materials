@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+# This script is dedicated to the public domain under the terms of the CC0 license.
+
 import os
 import sys
 import re
@@ -41,7 +42,6 @@ class MaterialProfilesValidator:
             for filename in filenames:
                 file_path = os.path.join(directory, filename)
                 if not filename.endswith(".xml.fdm_material"):
-                    print("Skipping \"%s\"" % filename)
                     continue
                 try:
                     with open(file_path, "r", encoding = "utf-8") as f:
