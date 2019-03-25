@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
             <color>Generic</color>
         </name>
         <GUID>bd66b243-9d50-4e12-bfc3-51c874fca16a</GUID>
-        <version>3</version>
+        <version>4</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Profile Assistant.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -30,26 +30,6 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
         <setting key="relative extrusion">1.0</setting>
         <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
-
-        <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
-            <hotend id="AA 0.25">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="AA 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="AA 0.8">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-        </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
