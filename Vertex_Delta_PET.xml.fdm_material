@@ -8,10 +8,9 @@
             <label>Vertex Delta PET</label>
         </name>
         <color_code>#ffc924</color_code>
-        <compatible>True</compatible>
         <GUID>0e20a24a-3248-4b9f-96f9-69ee388abd0c</GUID>
         <adhesion_info />
-        <version>2</version>
+        <version>4</version>
         <description />
     </metadata>
     <properties>
@@ -22,139 +21,8 @@
         <setting key="standby temperature">215.0</setting>
         <setting key="print cooling">10.0</setting>
         <setting key="retraction amount">3.0</setting>
-        <setting key="print temperature">240.0</setting>
+        <setting key="print temperature">255.0</setting>
         <setting key="heated bed temperature">0.0</setting>
         <setting key="retraction speed">150.0</setting>
-        <machine>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 3 Extended" />
-            <setting key="print temperature">200.0</setting>
-            <setting key="print cooling">100</setting>
-            <setting key="retraction speed">3.0</setting>
-            <setting key="heated bed temperature">60</setting>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="AA 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="AA 0.8">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-        </machine>
-        <machine>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2+" />
-            <setting key="print temperature">200.0</setting>
-            <setting key="print cooling">40.0</setting>
-            <setting key="retraction speed">3.0</setting>
-            <setting key="heated bed temperature">60</setting>
-            <hotend id="0.6 mm">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="0.8 mm">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="0.25 mm">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="0.4 mm">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-        </machine>
-        <machine>
-            <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
-            <setting key="print temperature">185</setting>
-            <setting key="print cooling">40.0</setting>
-            <setting key="retraction speed">3.0</setting>
-            <setting key="standby temperature">160</setting>
-            <setting key="heated bed temperature">50</setting>
-            <hotend id="0.8 mm">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="0.25 mm">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="0.4 mm">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-        </machine>
-        <machine>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended+" />
-            <setting key="print temperature">200.0</setting>
-            <setting key="print cooling">40.0</setting>
-            <setting key="retraction speed">3.0</setting>
-            <setting key="heated bed temperature">60</setting>
-            <hotend id="0.4 mm">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="0.6 mm">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="0.25 mm">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="0.8 mm">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-        </machine>
-        <machine>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 3" />
-            <setting key="print temperature">200.0</setting>
-            <setting key="print cooling">100</setting>
-            <setting key="retraction speed">3.0</setting>
-            <setting key="heated bed temperature">60</setting>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="AA 0.8">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="AA 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-        </machine>
-        <machine>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Extended" />
-            <setting key="processing temperature graph">
-                                </setting>
-            <setting key="print cooling">40.0</setting>
-            <setting key="print temperature">200.0</setting>
-            <setting key="retraction speed">3.0</setting>
-            <setting key="heated bed temperature">60</setting>
-            <setting key="standby temperature">150</setting>
-        </machine>
-        <machine>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker Original" />
-            <setting key="print temperature">200.0</setting>
-            <setting key="print cooling">40.0</setting>
-            <setting key="retraction speed">3.0</setting>
-            <setting key="standby temperature">150</setting>
-            <setting key="heated bed temperature">60</setting>
-        </machine>
-        <machine>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2" />
-            <setting key="processing temperature graph">
-                                </setting>
-            <setting key="print cooling">40.0</setting>
-            <setting key="print temperature">200.0</setting>
-            <setting key="retraction speed">3.0</setting>
-            <setting key="heated bed temperature">60</setting>
-            <setting key="standby temperature">150</setting>
-        </machine>
-        <machine>
-            <machine_identifier manufacturer="Ultimaker" product="Ultimaker 2 Go" />
-            <setting key="processing temperature graph">
-                                </setting>
-            <setting key="print cooling">40.0</setting>
-            <setting key="print temperature">200.0</setting>
-            <setting key="retraction speed">3.0</setting>
-            <setting key="heated bed temperature">60</setting>
-            <setting key="standby temperature">150</setting>
-        </machine>
     </settings>
 </fdmmaterial>

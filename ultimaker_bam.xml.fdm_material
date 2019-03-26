@@ -7,33 +7,84 @@
             <color>White</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d5f9</GUID>
-        <version>4</version>
-        <color_code>#f1ece1</color_code> <!--TODO EM-1863 -->
+        <version>15</version>
+        <color_code>#F1ECE1</color_code>
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
-        <adhesion_info>same temperature/method as build material</adhesion_info> <!--TODO EM-1863 -->
+        <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
     </metadata>
     <properties>
         <density>1.22</density>
         <diameter>2.85</diameter>
+        <weight>750</weight>
     </properties>
     <settings>
+        <setting key="anti ooze retract position">-4</setting>
+        <setting key="anti ooze retract speed">25</setting>
+        <setting key="break preparation position">-12</setting>
+        <setting key="break preparation speed">25</setting>
+        <setting key="break preparation temperature">225</setting>
+        <setting key="break position">-50</setting>
+        <setting key="break speed">85</setting>
+        <setting key="break temperature">90</setting>
+        <setting key="maximum park duration">300</setting>
+        <setting key="no load move factor">1.0</setting>
+        <setting key="flush purge speed">10</setting>
+        <setting key="end of filament purge speed">10</setting>
+        <setting key="flush purge length">240</setting>
+        <setting key="end of filament purge length">80</setting>
         <setting key="print temperature">225</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">100</setting>
+
+        <!-- For material flow sensor -->
+        <setting key="relative extrusion">1.0</setting>
+        <setting key="flow sensor detection margin">0.8</setting>
+        <setting key="retract compensation">0</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
-            <hotend id="AA 0.8" />
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <setting key="print cooling">100</setting>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC 0.6" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <buildplate id="Glass">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="hardware recommended">no</setting>
+            </buildplate>
+            <buildplate id="Aluminum">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="hardware recommended">no</setting>
+            </buildplate>
         </machine>
     </settings>
 </fdmmaterial>

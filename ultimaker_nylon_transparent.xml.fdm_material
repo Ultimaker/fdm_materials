@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>e256615d-a04e-4f53-b311-114b90560af9</GUID>
-        <version>4</version>
+        <version>13</version>
         <color_code>#d0d0d0</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -15,8 +15,23 @@
     <properties>
         <density>1.14</density>
         <diameter>2.85</diameter>
+        <weight>750</weight>
     </properties>
     <settings>
+        <setting key="anti ooze retract position">-8</setting>
+        <setting key="anti ooze retract speed">25</setting>
+        <setting key="break preparation position">0</setting>
+        <setting key="break preparation speed">2</setting>
+        <setting key="break preparation temperature">245</setting>
+        <setting key="break position">-20</setting>
+        <setting key="break speed">10</setting>
+        <setting key="break temperature">140</setting>
+        <setting key="maximum park duration">300</setting>
+        <setting key="no load move factor">1.0</setting>
+        <setting key="flush purge speed">10<!--?--></setting>
+        <setting key="end of filament purge speed">10<!--?--></setting>
+        <setting key="flush purge length">60<!--?--></setting>
+        <setting key="end of filament purge length">20<!--?--></setting>
         <setting key="print temperature">245</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">175</setting>
@@ -25,15 +40,10 @@
         <setting key="adhesion tendency">2</setting>
         <setting key="surface energy">100</setting>
 
-        <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
-
-            <hotend id="0.25 mm" />
-            <hotend id="0.4 mm" />
-            <hotend id="0.6 mm" />
-            <hotend id="0.8 mm" />
-        </machine>
+        <!-- For material flow sensor -->
+        <setting key="relative extrusion">1.0</setting>
+        <setting key="flow sensor detection margin">0.8</setting>
+        <setting key="retract compensation">0</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
@@ -54,6 +64,49 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <setting key="print cooling">40</setting>
+
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">230</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">6.5</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">70</setting>
+                <setting key="retraction amount">8</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">70</setting>
+                <setting key="retraction amount">8</setting>
+                <setting key="retraction speed">45</setting>
+            </hotend>
+            <buildplate id="Glass">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="hardware recommended">yes</setting>
+            </buildplate>
+            <buildplate id="Aluminum">
+                <setting key="hardware compatible">no</setting>
+                <setting key="hardware recommended">no</setting>
+            </buildplate>
+        </machine>
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+
+            <hotend id="0.25 mm" />
+            <hotend id="0.4 mm" />
+            <hotend id="0.6 mm" />
+            <hotend id="0.8 mm" />
         </machine>
     </settings>
 </fdmmaterial>

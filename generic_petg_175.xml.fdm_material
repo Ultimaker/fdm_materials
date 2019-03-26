@@ -10,7 +10,7 @@ Generic PETG 1.75mm profile. The data in this file may not be correct for your s
             <color>Generic</color>
         </name>
         <GUID>69386c85-5b6c-421a-bec5-aeb1fb33f060</GUID>
-        <version>1</version>
+        <version>2</version>
         <color_code>#f3a112</color_code>
         <description>Generic PETG profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Set your prime speed to a low value (8mm/sec)</adhesion_info>
@@ -41,18 +41,6 @@ Generic PETG 1.75mm profile. The data in this file may not be correct for your s
             <setting key="retraction speed">40</setting>
             <setting key="heated bed temperature">85</setting>
             <setting key="print temperature">215</setting>
-            <hotend id="0.25 mm">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="retraction amount">1.0</setting>
-            </hotend>
-            <hotend id="0.4 mm">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="retraction amount">1.0</setting>
-            </hotend>
-            <hotend id="0.8 mm">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="retraction amount">1.5</setting>
-            </hotend>
             <hotend id="0.25mm thermoplastic extruder">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.0</setting>

@@ -7,7 +7,7 @@
             <color>Orange</color>
         </name>
         <GUID>d9549dba-b9df-45b9-80a5-f7140a9a2f34</GUID>
-        <version>3</version>
+        <version>13</version>
         <color_code>#ed6b21</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -15,13 +15,33 @@
     <properties>
         <density>1.24</density>
         <diameter>2.85</diameter>
+        <weight>750</weight>
     </properties>
     <settings>
+        <setting key="anti ooze retract position">-4</setting>
+        <setting key="anti ooze retract speed">5</setting>
+        <setting key="break preparation position">-16</setting>
+        <setting key="break preparation speed">2</setting>
+        <setting key="break preparation temperature">200</setting>
+        <setting key="break position">-50</setting>
+        <setting key="break speed">25</setting>
+        <setting key="break temperature">50</setting>
+        <setting key="maximum park duration">300</setting>
+        <setting key="no load move factor">0.940860215</setting>
+        <setting key="flush purge speed">10</setting>
+        <setting key="end of filament purge speed">10</setting>
+        <setting key="flush purge length">60</setting>
+        <setting key="end of filament purge length">20</setting>
         <setting key="print temperature">200</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
+
+        <!-- For material flow sensor -->
+        <setting key="relative extrusion">1.0</setting>
+        <setting key="flow sensor detection margin">0.8</setting>
+        <setting key="retract compensation">0</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
@@ -48,6 +68,7 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
             <setting key="standby temperature">150</setting>
         </machine>
+
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
@@ -64,7 +85,47 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">5</setting>
             </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <setting key="print cooling">100</setting>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">6.5</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">5</setting>
+            </hotend>
+            <buildplate id="Glass">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="hardware recommended">yes</setting>
+            </buildplate>
+            <buildplate id="Aluminum">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="hardware recommended">no</setting>
+            </buildplate>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="IMADE3D" product="IMADE3D JellyBOX"/>
+
+            <setting key="print temperature">210</setting>
+            <setting key="heated bed temperature">55</setting>
+
+            <hotend id="0.4 mm" />
+            <hotend id="0.4 mm 2-fans" />
         </machine>
     </settings>
 </fdmmaterial>

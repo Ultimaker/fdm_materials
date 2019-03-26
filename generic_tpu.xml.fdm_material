@@ -10,7 +10,7 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
             <color>Generic</color>
         </name>
         <GUID>1d52b2be-a3a2-41de-a8b1-3bcdb5618695</GUID>
-        <version>4</version>
+        <version>12</version>
         <color_code>#B22744</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -20,11 +20,30 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
         <diameter>2.85</diameter>
     </properties>
     <settings>
+        <setting key="anti ooze retract position">-6.5</setting>
+        <setting key="anti ooze retract speed">25</setting>
+        <setting key="break preparation position">0</setting>
+        <setting key="break preparation speed">2</setting>
+        <setting key="break preparation temperature">220</setting>
+        <setting key="break position">-50</setting>
+        <setting key="break speed">25</setting>
+        <setting key="break temperature">190</setting>
+        <setting key="maximum park duration">300</setting>
+        <setting key="no load move factor">1.049475262</setting>
+        <setting key="flush purge speed">5</setting>
+        <setting key="end of filament purge speed">5</setting>
+        <setting key="flush purge length">30</setting>
+        <setting key="end of filament purge length">10</setting>
         <setting key="print temperature">228</setting>
         <setting key="heated bed temperature">0</setting>
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">3</setting>
         <setting key="surface energy">100</setting>
+
+        <!-- For material flow sensor -->
+        <setting key="relative extrusion">1.0</setting>
+        <setting key="flow sensor detection margin">0.8</setting>
+        <setting key="retract compensation">0</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
@@ -59,6 +78,38 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
                 <setting key="retraction speed">45</setting>
                 <setting key="print cooling">50</setting>
             </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <setting key="print temperature">223</setting>
+
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print cooling">20</setting>
+                <setting key="retraction amount">8</setting>
+                <setting key="retraction speed">35</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">8</setting>
+                <setting key="retraction speed">45</setting>
+                <setting key="print cooling">50</setting>
+            </hotend>
+            <buildplate id="Glass">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="hardware recommended">yes</setting>
+            </buildplate>
+            <buildplate id="Aluminum">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="hardware recommended">no</setting>
+            </buildplate>
         </machine>
     </settings>
 </fdmmaterial>
