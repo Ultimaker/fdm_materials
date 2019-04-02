@@ -28,11 +28,12 @@ Generic ABS 1.75mm profile. The data in this file may not be correct for your sp
 
         <machine>
             <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
+            <machine_identifier manufacturer="MaukCC" product="hms434" />
             <setting key="print cooling">0.0</setting>
             <setting key="standby temperature">160</setting>
             <setting key="retraction speed">40</setting>
-            <setting key="heated bed temperature">90</setting>
-            <setting key="print temperature">230</setting>
+            <setting key="heated bed temperature">115</setting>
+            <setting key="print temperature">255</setting>
             <hotend id="0.25mm thermoplastic extruder">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.0</setting>
@@ -56,5 +57,6 @@ Generic ABS 1.75mm profile. The data in this file may not be correct for your sp
             <setting key="heated bed temperature">70</setting>
             <setting key="print temperature">250</setting>
         </machine>
+
    </settings>
 </fdmmaterial>
