@@ -7,10 +7,11 @@
             <color>White</color>
         </name>
         <GUID>6a2573e6-c8ee-4c66-8029-3ebb3d5adc5b</GUID>
-        <version>13</version>
+        <version>14</version>
         <color_code>#f1ece1</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
+        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-tpu-95a/printing-guidelines</instruction_link>
     </metadata>
     <properties>
         <density>1.22</density>
