@@ -7,10 +7,11 @@
             <color>Black</color>
         </name>
         <GUID>c64c2dbe-5691-4363-a7d9-66b2dc12837f</GUID>
-        <version>13</version>
+        <version>14</version>
         <color_code>#27292b</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
+        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-nylon/printing-guidelines</instruction_link>
     </metadata>
     <properties>
         <density>1.14</density>
