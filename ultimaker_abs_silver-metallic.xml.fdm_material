@@ -7,10 +7,11 @@
             <color>Silver Metallic</color>
         </name>
         <GUID>763c926e-a5f7-4ba0-927d-b4e038ea2735</GUID>
-        <version>14</version>
+        <version>15</version>
         <color_code>#a1a1a0</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
+        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-abs/printing-guidelines</instruction_link>
     </metadata>
     <properties>
         <density>1.10</density>
