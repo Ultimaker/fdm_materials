@@ -10,7 +10,7 @@ This is the baseline profile for Glass Fiber Filled Copolyesters for the Print P
             <color>Generic</color>
         </name>
         <GUID>d4b786bb-e5d2-481b-b3ab-0be976d36af8</GUID>
-        <version>4</version>
+        <version>5</version>
         <color_code>#D5D8DC</color_code>
         <description>This is the baseline profile for Glass Fiber Filled Copolyesters for the Print Profile Assistant. This profile can also be used for other base materials (ABS, PP, etc)</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -22,6 +22,7 @@ This is the baseline profile for Glass Fiber Filled Copolyesters for the Print P
     <settings>
         <setting key="print temperature">265</setting>
         <setting key="heated bed temperature">60</setting>
+        <setting key="build volume temperature">45</setting>
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>

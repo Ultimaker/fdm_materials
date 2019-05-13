@@ -10,7 +10,7 @@
         <color_code>#ffc924</color_code>
         <GUID>4edd8fce-0851-43e5-808a-970b4bfe8b10</GUID>
         <adhesion_info />
-        <version>3</version>
+        <version>4</version>
         <description />
     </metadata>
     <properties>
@@ -23,6 +23,7 @@
         <setting key="retraction amount">3.0</setting>
         <setting key="print temperature">250.0</setting>
         <setting key="heated bed temperature">0.0</setting>
+        <setting key="build volume temperature">45</setting>
         <setting key="retraction speed">150.0</setting>
     </settings>
 </fdmmaterial>

@@ -10,7 +10,7 @@ Generic CPE 1.75mm profile. The data in this file may not be correct for your sp
             <color>Generic</color>
         </name>
         <GUID>da1872c1-b991-4795-80ad-bdac0f131726</GUID>
-        <version>2</version>
+        <version>3</version>
         <color_code>#159499</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -22,6 +22,7 @@ Generic CPE 1.75mm profile. The data in this file may not be correct for your sp
     <settings>
         <setting key="print temperature">240</setting>
         <setting key="heated bed temperature">70</setting>
+        <setting key="build volume temperature">45</setting>
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
