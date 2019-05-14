@@ -10,7 +10,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
             <color>Generic</color>
         </name>
         <GUID>aa22e9c7-421f-4745-afc2-81851694394a</GUID>
-        <version>15</version>
+        <version>16</version>
         <color_code>#85f9de</color_code>
         <description>Fatigue and chemical resistant. Polypropylene offers excellent temperature, chemical and fatigue resistance. Its toughness and low friction make it a perfect choice for prototyping and creating durable end-use models.</description>
         <adhesion_info>Adhesion sheets are required.</adhesion_info>
@@ -36,6 +36,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
         <setting key="end of filament purge length">10</setting>
         <setting key="print temperature">220</setting>
         <setting key="heated bed temperature">100</setting>
+        <setting key="build volume temperature">41</setting>
         <setting key="standby temperature">185</setting>
         <setting key="print cooling">20</setting>
         <setting key="retraction speed">35</setting>

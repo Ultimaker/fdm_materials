@@ -7,7 +7,7 @@
             <color>Generic</color>
         </name>
         <GUID>78f8b7d3-e129-4ba3-bdb1-1c9eed8a923f</GUID>
-        <version>1</version>
+        <version>2</version>
         <color_code>#dba500</color_code>
     </metadata>
     <properties>
@@ -16,5 +16,6 @@
     </properties>
     <settings>
         <setting key="print temperature">210</setting>
+        <setting key="build volume temperature">33</setting>
     </settings>
 </fdmmaterial>

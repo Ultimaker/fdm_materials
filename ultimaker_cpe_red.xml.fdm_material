@@ -7,7 +7,7 @@
             <color>Red</color>
         </name>
         <GUID>00181d6c-7024-479a-8eb7-8a2e38a2619a</GUID>
-        <version>17</version>
+        <version>18</version>
         <color_code>#c8102e</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -35,6 +35,7 @@
         <setting key="end of filament purge length">20</setting>
         <setting key="print temperature">240</setting>
         <setting key="heated bed temperature">70</setting>
+        <setting key="build volume temperature">45</setting>
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
