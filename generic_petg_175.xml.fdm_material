@@ -10,7 +10,7 @@ Generic PETG 1.75mm profile. The data in this file may not be correct for your s
             <color>Generic</color>
         </name>
         <GUID>69386c85-5b6c-421a-bec5-aeb1fb33f060</GUID>
-        <version>2</version>
+        <version>3</version>
         <color_code>#f3a112</color_code>
         <description>Generic PETG profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Set your prime speed to a low value (8mm/sec)</adhesion_info>
@@ -53,6 +53,136 @@ Generic PETG 1.75mm profile. The data in this file may not be correct for your s
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.5</setting>
             </hotend>
+        </machine>
+        
+        <machine>
+            <machine_identifier manufacturer="CreawsomeMod" product="creawsome_base" />
+            <setting key="print cooling">50</setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">240</setting>
+            <setting key="heated bed temperature">80</setting>
+        </machine>
+        
+        <machine>
+            <machine_identifier manufacturer="Creality3D" product="creawsome_cr10" />
+            <setting key="print cooling">50</setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">240</setting>
+            <setting key="heated bed temperature">80</setting>
+        </machine>
+        
+        <machine>
+            <machine_identifier manufacturer="Creality3D" product="creawsome_cr10s" />
+            <setting key="print cooling">50</setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">240</setting>
+            <setting key="heated bed temperature">80</setting>
+        </machine>
+        
+        <machine>
+            <machine_identifier manufacturer="Creality3D" product="creawsome_cr10spro" />
+            <setting key="print cooling">50</setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">240</setting>
+            <setting key="heated bed temperature">80</setting>
+        </machine>
+        
+        <machine>
+            <machine_identifier manufacturer="Creality3D" product="creawsome_cr10s4" />
+            <setting key="print cooling">50</setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">240</setting>
+            <setting key="heated bed temperature">80</setting>
+        </machine>
+        
+        <machine>
+            <machine_identifier manufacturer="Creality3D" product="creawsome_cr10s5" />
+            <setting key="print cooling">50</setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">240</setting>
+            <setting key="heated bed temperature">80</setting>
+        </machine>
+        
+        <machine>
+            <machine_identifier manufacturer="Creality3D" product="creawsome_cr10mini" />
+            <setting key="print cooling">50</setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">240</setting>
+            <setting key="heated bed temperature">80</setting>
+        </machine>
+        
+        <machine>
+            <machine_identifier manufacturer="Creality3D" product="creawsome_cr20" />
+            <setting key="print cooling">50</setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">240</setting>
+            <setting key="heated bed temperature">80</setting>
+        </machine>
+        
+        <machine>
+            <machine_identifier manufacturer="Creality3D" product="creawsome_cr20pro" />
+            <setting key="print cooling">50</setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">240</setting>
+            <setting key="heated bed temperature">80</setting>
+        </machine>
+        
+        <machine>
+            <machine_identifier manufacturer="Creality3D" product="creawsome_ender2" />
+            <setting key="print cooling">50</setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">240</setting>
+            <setting key="heated bed temperature">80</setting>
+        </machine>
+        
+        <machine>
+            <machine_identifier manufacturer="Creality3D" product="creawsome_ender3" />
+            <setting key="print cooling">50</setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">240</setting>
+            <setting key="heated bed temperature">80</setting>
+        </machine>
+        
+        <machine>
+            <machine_identifier manufacturer="Creality3D" product="creawsome_ender4" />
+            <setting key="print cooling">50</setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">240</setting>
+            <setting key="heated bed temperature">80</setting>
+        </machine>
+        
+        <machine>
+            <machine_identifier manufacturer="Creality3D" product="creawsome_ender5" />
+            <setting key="print cooling">50</setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">240</setting>
+            <setting key="heated bed temperature">80</setting>
         </machine>
     </settings>
 </fdmmaterial>
