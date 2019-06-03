@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+# This script is dedicated to the public domain under the terms of the CC0 license.
+
 from collections import OrderedDict
 import os
 import sys
@@ -32,10 +33,9 @@ class MaterialProfilesValidator:
 
             return dirpath
 
+    ##  Validates the preset settings files and returns ``True`` or ``False``
+    #   indicating whether there are invalid files.
     def validate(self) -> bool:
-        """
-        Validates the preset settings files and returns True or False indicating whether there are invalid files.
-        """
         # parse the definition file
         guid_dict = OrderedDict()
 
@@ -46,7 +46,6 @@ class MaterialProfilesValidator:
             for filename in filenames:
                 file_path = os.path.join(materials_dir, filename)
                 if not filename.endswith(".xml.fdm_material"):
-                    print("Skipping \"%s\"" % filename)
                     continue
 
                 with open(file_path, "r", encoding = "utf-8") as f:
