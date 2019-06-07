@@ -25,7 +25,7 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
-        <setting key="cura:material_crystallinity">true</setting>
+        <cura:setting key="material_crystallinity">true</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>

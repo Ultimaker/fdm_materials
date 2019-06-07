@@ -25,7 +25,7 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">2</setting>
         <setting key="surface energy">100</setting>
-        <setting key="cura:material_crystallinity">true</setting>
+        <cura:setting key="material_crystallinity">true</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>

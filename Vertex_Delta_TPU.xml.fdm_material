@@ -24,6 +24,6 @@
         <setting key="print temperature">220.0</setting>
         <setting key="heated bed temperature">0.0</setting>
         <setting key="retraction speed">150.0</setting>
-        <setting key="cura:material_crystallinity">true</setting>
+        <cura:setting key="material_crystallinity">true</setting>
     </settings>
 </fdmmaterial>
