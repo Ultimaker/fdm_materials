@@ -40,7 +40,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
         <setting key="print cooling">20</setting>
         <setting key="retraction speed">35</setting>
         <setting key="shrinkage percentage">2.5</setting>
-        <cura:setting key="material_crystallinity">true</setting>
+        <cura:setting key="material_crystallinity">true</cura:setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>

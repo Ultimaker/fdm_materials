@@ -62,7 +62,7 @@
         <setting key="end of filament purge length">20<!--?--></setting>
         <setting key="print temperature">215</setting>
         <setting key="standby temperature">175</setting>
-        <cura:setting key="material_crystallinity">true</setting>
+        <cura:setting key="material_crystallinity">true</cura:setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>

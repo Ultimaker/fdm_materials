@@ -22,6 +22,6 @@
         <setting key="heated bed temperature">0</setting>
         <setting key="standby temperature">200</setting>
         <setting key="print cooling">100</setting>
-        <cura:setting key="material_crystallinity">true</setting>
+        <cura:setting key="material_crystallinity">true</cura:setting>
     </settings>
 </fdmmaterial>

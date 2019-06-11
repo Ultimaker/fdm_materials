@@ -17,6 +17,6 @@
     </properties>
     <settings>
         <setting key="print temperature">220</setting>
-        <cura:setting key="material_crystallinity">true</setting>
+        <cura:setting key="material_crystallinity">true</cura:setting>
     </settings>
 </fdmmaterial>

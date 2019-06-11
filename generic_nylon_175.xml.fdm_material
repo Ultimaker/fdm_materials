@@ -27,7 +27,7 @@ Generic Nylon 1.75mm profile. The data in this file may not be correct for your 
         <setting key="retraction speed">25</setting>
         <setting key="adhesion tendency">2</setting>
         <setting key="surface energy">100</setting>
-        <cura:setting key="material_crystallinity">true</setting>
+        <cura:setting key="material_crystallinity">true</cura:setting>
 
         <machine>
             <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
