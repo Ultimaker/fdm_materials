@@ -100,6 +100,7 @@ Generic PLA profile. The data in this file may not be correct for your specific 
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
+                <cura:setting key="material_crystallinity">true</cura:setting>
             </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
