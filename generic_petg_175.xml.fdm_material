@@ -25,16 +25,6 @@ Generic PETG 1.75mm profile. The data in this file may not be correct for your s
         <setting key="standby temperature">120</setting>
 
         <machine>
-            <machine_identifier manufacturer="IMADE3D" product="IMADE3D JellyBOX"/>
-
-            <setting key="print temperature">235</setting>
-            <setting key="heated bed temperature">55</setting>
-
-            <hotend id="0.4 mm" />
-            <hotend id="0.4 mm 2-fans" />
-        </machine>
-        
-        <machine>
             <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
             <setting key="print cooling">0.0</setting>
             <setting key="standby temperature">120</setting>
