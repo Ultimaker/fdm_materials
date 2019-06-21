@@ -46,12 +46,12 @@
         <weight>750</weight>
     </properties>
     <settings>
-        <setting key="anti ooze retract position">-8</setting>
+        <setting key="anti ooze retracted position">8</setting>
         <setting key="anti ooze retract speed">25</setting>
-        <setting key="break preparation position">0</setting>
+        <setting key="break preparation retracted position">0</setting>
         <setting key="break preparation speed">2</setting>
         <setting key="break preparation temperature">215</setting>
-        <setting key="break position">-20</setting>
+        <setting key="break retracted position">20</setting>
         <setting key="break speed">10</setting>
         <setting key="break temperature">130</setting>
         <setting key="maximum park duration">60<!--?--></setting>
