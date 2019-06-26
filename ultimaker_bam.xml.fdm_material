@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d5f9</GUID>
-        <version>16</version>
+        <version>17</version>
         <color_code>#F1ECE1</color_code>
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -19,12 +19,12 @@
         <weight>750</weight>
     </properties>
     <settings>
-        <setting key="anti ooze retract position">-4</setting>
+        <setting key="anti ooze retracted position">4</setting>
         <setting key="anti ooze retract speed">25</setting>
-        <setting key="break preparation position">-12</setting>
+        <setting key="break preparation retracted position">12</setting>
         <setting key="break preparation speed">25</setting>
         <setting key="break preparation temperature">225</setting>
-        <setting key="break position">-50</setting>
+        <setting key="break retracted position">50</setting>
         <setting key="break speed">85</setting>
         <setting key="break temperature">90</setting>
         <setting key="maximum park duration">300</setting>
