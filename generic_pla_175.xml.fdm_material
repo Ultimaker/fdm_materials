@@ -10,7 +10,7 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
             <color>Generic</color>
         </name>
         <GUID>0ff92885-617b-4144-a03c-9989872454bc</GUID>
-        <version>5</version>
+        <version>6</version>
         <color_code>#ffc924</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -105,5 +105,26 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
             <setting key="print temperature">200</setting>
         </machine>
 
+        <machine>
+            <machine_identifier manufacturer="CreawsomeMod" product="creality_base" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10s" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10spro" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10s4" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10s5" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10mini" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr20" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr20pro" />
+            <machine_identifier manufacturer="Creality3D" product="creality_ender2" />
+            <machine_identifier manufacturer="Creality3D" product="creality_ender3" />
+            <machine_identifier manufacturer="Creality3D" product="creality_ender4" />
+            <machine_identifier manufacturer="Creality3D" product="creality_ender5" />
+            <setting key="print cooling">100</setting>
+            <setting key="standby temperature">180</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">200</setting>
+            <setting key="heated bed temperature">50</setting>
+        </machine>
     </settings>
 </fdmmaterial>
