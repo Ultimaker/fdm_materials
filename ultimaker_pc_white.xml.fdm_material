@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>5e786b05-a620-4a87-92d0-f02becc1ff98</GUID>
-        <version>18</version>
+        <version>19</version>
         <color_code>#ecece7</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
@@ -39,6 +39,7 @@
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
         <setting key="shrinkage percentage">0.7</setting>
+        <setting key="build_volume_temperature">41</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
