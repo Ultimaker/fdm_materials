@@ -26,6 +26,6 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
         <setting key="adhesion tendency">3</setting>
         <setting key="surface energy">100</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
-		<setting key="build volume temperature">27</setting>		
+        <setting key="build volume temperature">27</setting>
      </settings>
 </fdmmaterial>

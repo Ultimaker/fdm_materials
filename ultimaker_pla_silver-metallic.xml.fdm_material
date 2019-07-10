@@ -38,8 +38,8 @@
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
-		<setting key="build volume temperature">28</setting>
-		
+        <setting key="build volume temperature">28</setting>
+
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
