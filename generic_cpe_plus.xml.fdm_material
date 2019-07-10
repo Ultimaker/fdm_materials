@@ -10,7 +10,7 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             <color>Generic</color>
         </name>
         <GUID>e2409626-b5a0-4025-b73e-b58070219259</GUID>
-        <version>15</version>
+        <version>17</version>
         <color_code>#3633F2</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -20,12 +20,12 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
         <diameter>2.85</diameter>
     </properties>
     <settings>
-        <setting key="anti ooze retract position">-4</setting>
+        <setting key="anti ooze retracted position">4</setting>
         <setting key="anti ooze retract speed">5</setting>
-        <setting key="break preparation position">-16</setting>
+        <setting key="break preparation retracted position">16</setting>
         <setting key="break preparation speed">2</setting>
         <setting key="break preparation temperature">260</setting>
-        <setting key="break position">-50</setting>
+        <setting key="break retracted position">50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">100</setting>
         <setting key="maximum park duration">300</setting>
@@ -40,6 +40,7 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
         <setting key="shrinkage percentage">0.9</setting>
+        <setting key="build_volume_temperature">41</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>

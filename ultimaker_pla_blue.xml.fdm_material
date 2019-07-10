@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>44a029e6-e31b-4c9e-a12f-9282e29a92ff</GUID>
-        <version>14</version>
+        <version>16</version>
         <color_code>#00387b</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -19,12 +19,12 @@
         <weight>750</weight>
     </properties>
     <settings>
-        <setting key="anti ooze retract position">-4</setting>
+        <setting key="anti ooze retracted position">4</setting>
         <setting key="anti ooze retract speed">5</setting>
-        <setting key="break preparation position">-16</setting>
+        <setting key="break preparation retracted position">16</setting>
         <setting key="break preparation speed">2</setting>
         <setting key="break preparation temperature">200</setting>
-        <setting key="break position">-50</setting>
+        <setting key="break retracted position">50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">50</setting>
         <setting key="maximum park duration">300</setting>
@@ -38,6 +38,8 @@
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
+        <setting key="build volume temperature">28</setting>
+
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>

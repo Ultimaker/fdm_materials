@@ -7,7 +7,7 @@
             <color>Yellow</color>
         </name>
         <GUID>b9176a2a-7a0f-4821-9f29-76d882a88682</GUID>
-        <version>17</version>
+        <version>19</version>
         <color_code>#f6b600</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -19,12 +19,12 @@
         <weight>750</weight>
     </properties>
     <settings>
-        <setting key="anti ooze retract position">-4</setting>
+        <setting key="anti ooze retracted position">4</setting>
         <setting key="anti ooze retract speed">5</setting>
-        <setting key="break preparation position">-16</setting>
+        <setting key="break preparation retracted position">16</setting>
         <setting key="break preparation speed">2</setting>
         <setting key="break preparation temperature">240</setting>
-        <setting key="break position">-50</setting>
+        <setting key="break retracted position">50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">70</setting>
         <setting key="maximum park duration">300</setting>
@@ -38,6 +38,7 @@
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
+        <setting key="build_volume_temperature">33</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>

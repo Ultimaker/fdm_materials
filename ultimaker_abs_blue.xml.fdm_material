@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>7c9575a6-c8d6-40ec-b3dd-18d7956bfaae</GUID>
-        <version>15</version>
+        <version>16</version>
         <color_code>#00387b</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -25,6 +25,7 @@
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
         <setting key="shrinkage percentage">0.9</setting>
+        <setting key="build_volume_temperature">36</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
