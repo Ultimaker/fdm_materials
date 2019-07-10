@@ -7,7 +7,7 @@
             <color>Green</color>
         </name>
         <GUID>7ff6d2c8-d626-48cd-8012-7725fa537cc9</GUID>
-        <version>18</version>
+        <version>19</version>
         <color_code>#78be20</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -38,6 +38,7 @@
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
+        <setting key="build_volume_temperature">33</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
