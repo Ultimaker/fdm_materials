@@ -39,7 +39,7 @@
         <setting key="adhesion tendency">3</setting>
         <setting key="surface energy">100</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
-		<setting key="build volume temperature">27</setting>		
+        <setting key="build volume temperature">27</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
