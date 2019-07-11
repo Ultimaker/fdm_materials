@@ -3,14 +3,14 @@
     <metadata>
         <name>
             <brand>Velleman</brand>
-            <material>PLA</material>
+            <material>PLA-Satin</material>
             <color>Generic</color>
-            <label>Vertex Delta PLA</label>
+            <label>Vertex PLA-Satin</label>
         </name>
         <color_code>#ffc924</color_code>
         <GUID>8d2731c8-b209-4202-b5d0-0d2d57070736</GUID>
         <adhesion_info />
-        <version>4</version>
+        <version>1</version>
         <description />
     </metadata>
     <properties>
@@ -18,10 +18,10 @@
         <density>1.24</density>
     </properties>
     <settings>
-        <setting key="standby temperature">190.0</setting>
+        <setting key="standby temperature">195.0</setting>
         <setting key="print cooling">100.0</setting>
         <setting key="retraction amount">3.0</setting>
-        <setting key="print temperature">200.0</setting>
+        <setting key="print temperature">220.0</setting>
         <setting key="heated bed temperature">0.0</setting>
         <setting key="retraction speed">30.0</setting>
     </settings>
