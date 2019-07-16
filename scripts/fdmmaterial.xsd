@@ -3,12 +3,14 @@
             xmlns="http://www.ultimaker.com/material" elementFormDefault="qualified">
     <!-- This XSD document is currently unused by CI, because lxml doesn't run on that server.
          If you plan to use it, make sure that it is still up-to-date. -->
+
+
     <xsd:element name="fdmmaterial">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="metadata">
                     <xsd:complexType>
-                        <xsd:all>
+                        <xsd:choice maxOccurs="unbounded">
                             <xsd:element name="name">
                                 <xsd:complexType>
                                     <xsd:all>
@@ -45,7 +47,9 @@
                             <xsd:element name="MSDS" type="url" minOccurs="0"/>
                             <xsd:element name="supplier" type="contact_info" minOccurs="0"/>
                             <xsd:element name="author" type="contact_info" minOccurs="0"/>
-                        </xsd:all>
+                            <!-- Specifically allow any settings from the Cura Namespace to be added here -->
+                            <xsd:any minOccurs="0" namespace="http://www.ultimaker.com/cura" processContents ="lax"/>
+                        </xsd:choice>
                     </xsd:complexType>
                 </xsd:element>
                 <xsd:element name="properties">
