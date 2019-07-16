@@ -41,7 +41,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
         <setting key="retraction speed">35</setting>
         <setting key="shrinkage percentage">2.5</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
-        <setting key="build_volume_temperature">41</setting>
+        <setting key="build volume temperature">41</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>

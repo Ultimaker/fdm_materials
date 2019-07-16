@@ -39,7 +39,7 @@
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
         <setting key="shrinkage percentage">0.7</setting>
-        <setting key="build_volume_temperature">41</setting>
+        <setting key="build volume temperature">41</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>

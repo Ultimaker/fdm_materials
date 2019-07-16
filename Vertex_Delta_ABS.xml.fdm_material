@@ -24,6 +24,6 @@
         <setting key="print temperature">250.0</setting>
         <setting key="heated bed temperature">0.0</setting>
         <setting key="retraction speed">150.0</setting>
-        <setting key="build_volume_temperature">36</setting>
+        <setting key="build volume temperature">36</setting>
     </settings>
 </fdmmaterial>
