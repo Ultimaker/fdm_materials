@@ -141,6 +141,21 @@
                     <xsd:enumeration value="flow sensor detection margin"/>
                     <xsd:enumeration value="retract compensation"/>
                     <xsd:enumeration value="shrinkage percentage"/>
+                    <xsd:enumeration value = "anti ooze retracted position"/>
+                    <xsd:enumeration value = "anti ooze retract speed"/>
+                    <xsd:enumeration value = "break preparation retracted position"/>
+                    <xsd:enumeration value = "break preparation speed"/>
+                    <xsd:enumeration value = "build volume temperature"/>
+                    <xsd:enumeration value = "break preparation temperature"/>
+                    <xsd:enumeration value = "break retracted position"/>
+                    <xsd:enumeration value = "break speed"/>
+                    <xsd:enumeration value = "break temperature"/>
+                    <xsd:enumeration value = "maximum park duration"/>
+                    <xsd:enumeration value = "no load move factor"/>
+                    <xsd:enumeration value = "flush purge speed"/>
+                    <xsd:enumeration value = "end of filament purge speed"/>
+                    <xsd:enumeration value = "flush purge length"/>
+                    <xsd:enumeration value = "end of filament purge length"/>
                 </xsd:restriction>
             </xsd:simpleType>
         </xsd:attribute>
