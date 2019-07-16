@@ -1,51 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ultimaker.com/material" xmlns="http://www.ultimaker.com/material" elementFormDefault="qualified">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ultimaker.com/material"
+            xmlns="http://www.ultimaker.com/material" elementFormDefault="qualified">
     <!-- This XSD document is currently unused by CI, because lxml doesn't run on that server.
          If you plan to use it, make sure that it is still up-to-date. -->
     <xsd:element name="fdmmaterial">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="metadata">
-                     <xsd:complexType>
-                         <xsd:all>
-                             <xsd:element name="name">
-                                 <xsd:complexType>
-                                     <xsd:all>
-                                         <xsd:element name="brand" type="xsd:string"/>
-                                         <xsd:element name="material" type="xsd:string"/>
-                                          <xsd:element name="color" type="xsd:string"/>
-                                          <xsd:element name="label" type="xsd:string" minOccurs="0"/>
-                                     </xsd:all>
-                                 </xsd:complexType>
-                             </xsd:element>
-                             <xsd:element name="GUID">
-                                 <xsd:simpleType>
+                    <xsd:complexType>
+                        <xsd:all>
+                            <xsd:element name="name">
+                                <xsd:complexType>
+                                    <xsd:all>
+                                        <xsd:element name="brand" type="xsd:string"/>
+                                        <xsd:element name="material" type="xsd:string"/>
+                                        <xsd:element name="color" type="xsd:string"/>
+                                        <xsd:element name="label" type="xsd:string" minOccurs="0"/>
+                                    </xsd:all>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="GUID">
+                                <xsd:simpleType>
                                     <xsd:restriction base="xsd:string">
-                                        <xsd:pattern value="[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}"/>
+                                        <xsd:pattern
+                                                value="[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}"/>
                                     </xsd:restriction>
                                 </xsd:simpleType>
                             </xsd:element>
 
-                             <xsd:element name="version" type="xsd:positiveInteger"/>
-                             <xsd:element name="color_code">
-                                 <xsd:simpleType>
+                            <xsd:element name="version" type="xsd:positiveInteger"/>
+                            <xsd:element name="color_code">
+                                <xsd:simpleType>
                                     <xsd:restriction base="xsd:string">
                                         <xsd:pattern value="(#[a-zA-F0-9]{6})|(RAL [0-9]{4})"/>
                                     </xsd:restriction>
                                 </xsd:simpleType>
                             </xsd:element>
 
-                             <xsd:element name="description" type="xsd:string" minOccurs="0"/>
-                             <xsd:element name="adhesion_info" type="xsd:string" minOccurs="0"/>
-                             <xsd:element name="instruction_link" type="url" minOccurs="0"/>
-                             <xsd:element name="EAN" type="xsd:string" minOccurs="0"/>
-                             <xsd:element name="TDS" type="url" minOccurs="0"/>
-                             <xsd:element name="MSDS" type="url" minOccurs="0"/>
-                             <xsd:element name="supplier" type="contact_info" minOccurs="0"/>
-                             <xsd:element name="author" type="contact_info" minOccurs="0"/>
+                            <xsd:element name="description" type="xsd:string" minOccurs="0"/>
+                            <xsd:element name="adhesion_info" type="xsd:string" minOccurs="0"/>
+                            <xsd:element name="instruction_link" type="url" minOccurs="0"/>
+                            <xsd:element name="EAN" type="xsd:string" minOccurs="0"/>
+                            <xsd:element name="TDS" type="url" minOccurs="0"/>
+                            <xsd:element name="MSDS" type="url" minOccurs="0"/>
+                            <xsd:element name="supplier" type="contact_info" minOccurs="0"/>
+                            <xsd:element name="author" type="contact_info" minOccurs="0"/>
                         </xsd:all>
-                     </xsd:complexType>
-                 </xsd:element>
+                    </xsd:complexType>
+                </xsd:element>
                 <xsd:element name="properties">
                     <xsd:complexType>
                         <xsd:all>
@@ -69,7 +71,8 @@
                                             <xsd:choice minOccurs="0" maxOccurs="unbounded">
                                                 <xsd:element name="machine_identifier" maxOccurs="unbounded">
                                                     <xsd:complexType>
-                                                        <xsd:attribute name="manufacturer" type="xsd:string" use="required"/>
+                                                        <xsd:attribute name="manufacturer" type="xsd:string"
+                                                                       use="required"/>
                                                         <xsd:attribute name="product" type="xsd:string" use="required"/>
                                                     </xsd:complexType>
                                                 </xsd:element>
@@ -78,7 +81,8 @@
                                                         <xsd:sequence>
                                                             <xsd:choice minOccurs="0" maxOccurs="unbounded">
                                                                 <xsd:element name="setting" type="setting"/>
-                                                                <xsd:any namespace="http://www.ultimaker.com/cura" processContents="lax"/>
+                                                                <xsd:any namespace="http://www.ultimaker.com/cura"
+                                                                         processContents="lax"/>
                                                             </xsd:choice>
                                                         </xsd:sequence>
                                                         <xsd:attribute name="id" type="xsd:string" use="required"/>
@@ -88,15 +92,19 @@
                                                     <xsd:complexType>
                                                         <xsd:sequence>
                                                             <xsd:choice minOccurs="0" maxOccurs="unbounded">
-                                                                <xsd:element name="setting" minOccurs="0" maxOccurs="unbounded"/>
-                                                                <xsd:any namespace="http://www.ultimaker.com/cura" processContents="lax"/>
+                                                                <xsd:element name="setting" minOccurs="0"
+                                                                             maxOccurs="unbounded"/>
+                                                                <xsd:any namespace="http://www.ultimaker.com/cura"
+                                                                         processContents="lax"/>
                                                             </xsd:choice>
                                                         </xsd:sequence>
                                                         <xsd:attribute name="id" type="xsd:string" use="required"/>
                                                     </xsd:complexType>
                                                 </xsd:element>
-                                                <xsd:element name="setting" minOccurs="0" maxOccurs="unbounded" type="setting"/>
-                                                <xsd:any namespace="http://www.ultimaker.com/cura" processContents="lax"/>
+                                                <xsd:element name="setting" minOccurs="0" maxOccurs="unbounded"
+                                                             type="setting"/>
+                                                <xsd:any namespace="http://www.ultimaker.com/cura"
+                                                         processContents="lax"/>
                                             </xsd:choice>
                                         </xsd:sequence>
                                     </xsd:complexType>
@@ -141,21 +149,21 @@
                     <xsd:enumeration value="flow sensor detection margin"/>
                     <xsd:enumeration value="retract compensation"/>
                     <xsd:enumeration value="shrinkage percentage"/>
-                    <xsd:enumeration value = "anti ooze retracted position"/>
-                    <xsd:enumeration value = "anti ooze retract speed"/>
-                    <xsd:enumeration value = "break preparation retracted position"/>
-                    <xsd:enumeration value = "break preparation speed"/>
-                    <xsd:enumeration value = "build volume temperature"/>
-                    <xsd:enumeration value = "break preparation temperature"/>
-                    <xsd:enumeration value = "break retracted position"/>
-                    <xsd:enumeration value = "break speed"/>
-                    <xsd:enumeration value = "break temperature"/>
-                    <xsd:enumeration value = "maximum park duration"/>
-                    <xsd:enumeration value = "no load move factor"/>
-                    <xsd:enumeration value = "flush purge speed"/>
-                    <xsd:enumeration value = "end of filament purge speed"/>
-                    <xsd:enumeration value = "flush purge length"/>
-                    <xsd:enumeration value = "end of filament purge length"/>
+                    <xsd:enumeration value="anti ooze retracted position"/>
+                    <xsd:enumeration value="anti ooze retract speed"/>
+                    <xsd:enumeration value="break preparation retracted position"/>
+                    <xsd:enumeration value="break preparation speed"/>
+                    <xsd:enumeration value="build volume temperature"/>
+                    <xsd:enumeration value="break preparation temperature"/>
+                    <xsd:enumeration value="break retracted position"/>
+                    <xsd:enumeration value="break speed"/>
+                    <xsd:enumeration value="break temperature"/>
+                    <xsd:enumeration value="maximum park duration"/>
+                    <xsd:enumeration value="no load move factor"/>
+                    <xsd:enumeration value="flush purge speed"/>
+                    <xsd:enumeration value="end of filament purge speed"/>
+                    <xsd:enumeration value="flush purge length"/>
+                    <xsd:enumeration value="end of filament purge length"/>
                 </xsd:restriction>
             </xsd:simpleType>
         </xsd:attribute>
@@ -190,7 +198,8 @@
 
     <xsd:simpleType name="url">
         <xsd:restriction base="xsd:string">
-            <xsd:pattern value="https?://(([a-z]+|[A-Z]+|[0-9]+|-+|_+)+\.)?([a-z]+|[A-Z]+|[0-9]+|-+|_+)+\.([a-z]+|[A-Z]+|[0-9]+|-+|_+)+(\.([a-z]+|[A-Z]+|[0-9]+|-+|_+)+)?((/([a-z]+|[A-Z]+|[0-9]+|-+|_+)+(/([a-z]+|[A-Z]+|[0-9]+|-+|_+)+)?)+)?" />
+            <xsd:pattern
+                    value="https?://(([a-z]+|[A-Z]+|[0-9]+|-+|_+)+\.)?([a-z]+|[A-Z]+|[0-9]+|-+|_+)+\.([a-z]+|[A-Z]+|[0-9]+|-+|_+)+(\.([a-z]+|[A-Z]+|[0-9]+|-+|_+)+)?((/([a-z]+|[A-Z]+|[0-9]+|-+|_+)+(/([a-z]+|[A-Z]+|[0-9]+|-+|_+)+)?)+)?"/>
         </xsd:restriction>
     </xsd:simpleType>
 
