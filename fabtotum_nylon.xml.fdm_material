@@ -20,6 +20,6 @@
         <setting key="print temperature">240.0</setting>
         <setting key="heated bed temperature">90.0</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
-        <setting key="build_volume_temperature">35</setting>
+        <setting key="build volume temperature">35</setting>
     </settings>
 </fdmmaterial>
