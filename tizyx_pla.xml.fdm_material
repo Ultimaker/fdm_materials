@@ -50,9 +50,6 @@
             <setting key="standby temperature">175</setting>
             <setting key="retraction speed">10.0</setting>
             <setting key="retraction amount">1.0</setting>
-            <hotend id="0.4 mm 2-fans">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
             <hotend id="0.4 mm">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
