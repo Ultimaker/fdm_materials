@@ -50,9 +50,6 @@
       <hotend id="0.4 mm">
         <setting key="hardware compatible">yes</setting>
       </hotend>
-      <hotend id="0.4 mm 2-fans">
-        <setting key="hardware compatible">yes</setting>
-      </hotend>
     </machine>
   </settings>
 </fdmmaterial>
