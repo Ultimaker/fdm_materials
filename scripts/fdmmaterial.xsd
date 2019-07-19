@@ -153,7 +153,7 @@
                     <xsd:enumeration value="flow sensor detection margin"/>
                     <xsd:enumeration value="retract compensation"/>
                     <xsd:enumeration value="shrinkage percentage"/>
-                    <xsd:enumeration value="anti ooze retracted position"/>
+                    <xsd:enumeration value="anti ooze retract position"/>
                     <xsd:enumeration value="anti ooze retract speed"/>
                     <xsd:enumeration value="break preparation retracted position"/>
                     <xsd:enumeration value="break preparation speed"/>
@@ -168,6 +168,8 @@
                     <xsd:enumeration value="end of filament purge speed"/>
                     <xsd:enumeration value="flush purge length"/>
                     <xsd:enumeration value="end of filament purge length"/>
+                    <xsd:enumeration value="break preparation position"/>
+                    <xsd:enumeration value="break position"/>
                 </xsd:restriction>
             </xsd:simpleType>
         </xsd:attribute>
