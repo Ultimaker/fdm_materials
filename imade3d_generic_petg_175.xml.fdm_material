@@ -9,7 +9,7 @@ Generic PETG 1.75mm profile. The data in this file may not be correct for your s
             <material>PETG</material>
             <color>Generic</color>
         </name>
-        <GUID>51edd34-81ad-4a52-8b3e-b8a6fe59b4ca</GUID>
+        <GUID>255d0c5b-25c8-46ff-ad71-6d389790f50a</GUID>
         <version>2</version>
         <color_code>#eb006a</color_code>
         <description>PETG is strong and chemically resistant. A great material for mechanical applications. It's more sticky, oozy, and moderately hydrophilic. You must keep it dry!</description>
