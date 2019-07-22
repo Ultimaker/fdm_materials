@@ -120,15 +120,6 @@
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
-        <machine>
-            <machine_identifier manufacturer="IMADE3D" product="IMADE3D JellyBOX"/>
-
-            <setting key="print temperature">210</setting>
-            <setting key="heated bed temperature">55</setting>
-
-            <hotend id="0.4 mm" />
-
-        </machine>
     </settings>
 </fdmmaterial>
 
