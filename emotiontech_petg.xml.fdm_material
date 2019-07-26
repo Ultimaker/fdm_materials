@@ -22,7 +22,7 @@
         <setting key="heated bed temperature">70</setting>
         <setting key="standby temperature">150</setting>
         <setting key="retraction amount">1.7</setting>
-		<setting key="build volume temperature">30</setting>
+        <setting key="build volume temperature">30</setting>
         <machine>
             <machine_identifier manufacturer="eMotionTech" product="Strateo3D"/>
             <hotend id="Standard 0.4" >
