@@ -27,7 +27,7 @@ Generic PLA profile. The data in this file may not be correct for your specific 
         <setting key="break preparation temperature">200</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
-        <setting key="break temperature">65</setting>
+        <setting key="break temperature">55</setting>
         <setting key="maximum park duration">300</setting>
         <setting key="no load move factor">0.940860215</setting>
         <setting key="flush purge speed">10</setting>
