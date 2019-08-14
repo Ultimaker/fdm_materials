@@ -6,6 +6,7 @@ import re
 from typing import Dict, Optional, List
 from lxml import etree
 
+
 ##  This is a material profile validator that works with the lxml library.
 #
 #   This version is currently unused on our CI server because it was difficult
@@ -24,7 +25,7 @@ class MaterialProfilesValidator:
                 break
         return guid
 
-    def _getMaterialsDir(self, dirpath: str):
+    def _getMaterialsDir(self, dirpath: str) -> str:
         for root_dir, dirnames, filenames in os.walk(dirpath):
             has_materials_file = any(fn.endswith(".xml.fdm_material") for fn in filenames)
             if not has_materials_file:
@@ -36,18 +37,22 @@ class MaterialProfilesValidator:
 
     #   Find all material files in a given directory.
     #   This returns a dictionary with filename as keys and it's loaded content as value.
-    def _getAllMaterialsContentsInDir(self, directory: str) -> Dict[str, Optional[str]]:
-        result = {}
+    def _getAllMaterialsContentsInDir(self, directory: str) -> Dict[str, Dict[str, str]]:
+        result = {}  # type: Dict[str, Dict[str, str]]
         for _, _, filenames in os.walk(directory):
             for filename in filenames:
                 file_path = os.path.join(directory, filename)
                 if not filename.endswith(".xml.fdm_material"):
                     continue
+
+                result[filename] = {"content": "",
+                                    "error": ""}
                 try:
                     with open(file_path, "r", encoding = "utf-8") as f:
-                        result[filename] = f.read()
-                except:
-                    result[filename] = None
+                        result[filename]["content"] = f.read()
+                except Exception as e:
+                    print("Failed to read file [%s] : %s", filename, e)
+                    result[filename]["error"] = str(e)
             break
         return result
 
@@ -62,7 +67,16 @@ class MaterialProfilesValidator:
         xmlschema = etree.XMLSchema(xmlschema_doc)
         has_invalid_files = False
 
-        for file_name, material_content in material_content_dict.items():
+        for file_name, file_info_dict in material_content_dict.items():
+            # Show error message if the file failed to load
+            if len(file_info_dict["error"]) > 0:
+                print("{file_name} failed to load, error: {error}".format(file_name = file_name,
+                                                                          error = file_info_dict["error"]))
+                has_invalid_files = True
+                continue
+
+            # Validate the file content with the XSD file.
+            material_content = file_info_dict["content"]
             guid = self._getGuid(material_content)
             if guid not in guid_dict:
                 guid_dict[guid] = []
@@ -76,6 +90,7 @@ class MaterialProfilesValidator:
                 print("{file_name} is not a valid fdm material".format(file_name = file_name))
                 print(e)
 
+        # Check for duplicate GUIDs
         for guid, file_item_list in guid_dict.items():
             if len(file_item_list) <= 1:
                 continue
