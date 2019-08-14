@@ -13,6 +13,12 @@ from lxml import etree
 #   to install lxml on that server. We store it here only as a back-up for when
 #   we migrate to a different CI system.
 class MaterialProfilesValidator:
+
+    __namespaces = {
+        "um": "http://www.ultimaker.com/material",
+        "cura": "http://www.ultimaker.com/cura",
+    }
+
     def __init__(self) -> None:
         self._guid_pattern = re.compile(r"<GUID>.*</GUID>")
 
@@ -56,6 +62,15 @@ class MaterialProfilesValidator:
             break
         return result
 
+    # Gets the material brand name from the given lxml.etree root node. Return None if the brand cannot be found,
+    # otherwise the brand text.
+    def _getMaterialBrandName(self, root_node: "etree.Element") -> Optional[str]:
+        node = root_node.xpath("./um:metadata/um:name/um:brand", namespaces = self.__namespaces)
+        if not node:
+            return None
+
+        return node[0].text
+
     def validateAll(self, directory: str) -> bool:
         materials_dir = self._getMaterialsDir(os.path.abspath(directory))
 
@@ -63,7 +78,7 @@ class MaterialProfilesValidator:
     
         # Store all the guid's linked with their filename. This is later used to find out if there are duplicate guids.
         guid_dict = {}  # type: Dict[str, List[str]]
-        xmlschema_doc = etree.parse("fdmmaterial.xsd")
+        xmlschema_doc = etree.parse(os.path.join(materials_dir, "scripts", "fdmmaterial.xsd"))
         xmlschema = etree.XMLSchema(xmlschema_doc)
         has_invalid_files = False
 
@@ -89,6 +104,23 @@ class MaterialProfilesValidator:
                 has_invalid_files = True
                 print("{file_name} is not a valid fdm material".format(file_name = file_name))
                 print(e)
+                continue
+
+            # Make sure that only the material files such as "generic_<bla>" can have branch "Generic".
+            brand = self._getMaterialBrandName(xml_doc)
+            if brand is None:
+                has_invalid_files = True
+                print("{file_name} Could not find <brand>".format(file_name = file_name))
+                continue
+            if len(brand) == 0:
+                has_invalid_files = True
+                print("{file_name} contains an empty string for <brand>".format(file_name = file_name))
+                continue
+            if brand.lower() == "generic" and not file_name.lower().startswith("generic_"):
+                has_invalid_files = True
+                print("{file_name} has brand [{brand}] but only material files named as [generic*] can have brand [Generic]".format(
+                      file_name = file_name, brand = brand))
+                continue
 
         # Check for duplicate GUIDs
         for guid, file_item_list in guid_dict.items():
