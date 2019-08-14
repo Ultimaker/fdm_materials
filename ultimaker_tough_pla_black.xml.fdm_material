@@ -7,10 +7,11 @@
             <color>Black</color>
         </name>
         <GUID>03f24266-0291-43c2-a6da-5211892a2699</GUID>
-        <version>8</version>
+        <version>12</version>
         <color_code>#2a292a</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
+        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-tough-pla/printing-guidelines</instruction_link>
     </metadata>
     <properties>
         <density>1.22</density>
@@ -18,11 +19,26 @@
         <weight>750</weight>
     </properties>
     <settings>
+        <setting key="anti ooze retract position">-4</setting>
+        <setting key="anti ooze retract speed">5</setting>
+        <setting key="break preparation position">-16</setting>
+        <setting key="break preparation speed">2</setting>
+        <setting key="break preparation temperature">200</setting>
+        <setting key="break position">-50</setting>
+        <setting key="break speed">25</setting>
+        <setting key="break temperature">50</setting>
+        <setting key="maximum park duration">300</setting>
+        <setting key="no load move factor">0.940860215</setting>
+        <setting key="flush purge speed">10</setting>
+        <setting key="end of filament purge speed">10</setting>
+        <setting key="flush purge length">60</setting>
+        <setting key="end of filament purge length">20</setting>
         <setting key="print temperature">225</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
+        <setting key="build volume temperature">24</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -45,7 +61,7 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-				<setting key="retraction amount">5</setting>
+                <setting key="retraction amount">5</setting>
             </hotend>
         </machine>
 

@@ -7,10 +7,11 @@
             <color>Yellow</color>
         </name>
         <GUID>9c1959d0-f597-46ec-9131-34020c7a54fc</GUID>
-        <version>12</version>
+        <version>16</version>
         <color_code>#f9a800</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
+        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-pla/printing-guidelines</instruction_link>
     </metadata>
     <properties>
         <density>1.24</density>
@@ -18,11 +19,27 @@
         <weight>750</weight>
     </properties>
     <settings>
+        <setting key="anti ooze retract position">-4</setting>
+        <setting key="anti ooze retract speed">5</setting>
+        <setting key="break preparation position">-16</setting>
+        <setting key="break preparation speed">2</setting>
+        <setting key="break preparation temperature">200</setting>
+        <setting key="break position">-50</setting>
+        <setting key="break speed">25</setting>
+        <setting key="break temperature">50</setting>
+        <setting key="maximum park duration">300</setting>
+        <setting key="no load move factor">0.940860215</setting>
+        <setting key="flush purge speed">10</setting>
+        <setting key="end of filament purge speed">10</setting>
+        <setting key="flush purge length">60</setting>
+        <setting key="end of filament purge length">20</setting>
         <setting key="print temperature">200</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
+        <setting key="build volume temperature">28</setting>
+
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -102,15 +119,6 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="hardware recommended">no</setting>
             </buildplate>
-        </machine>
-        <machine>
-            <machine_identifier manufacturer="IMADE3D" product="IMADE3D JellyBOX"/>
-
-            <setting key="print temperature">210</setting>
-            <setting key="heated bed temperature">55</setting>
-
-            <hotend id="0.4 mm" />
-            <hotend id="0.4 mm 2-fans" />
         </machine>
     </settings>
 </fdmmaterial>
