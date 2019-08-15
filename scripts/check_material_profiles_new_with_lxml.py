@@ -55,6 +55,8 @@ class MaterialProfilesValidator:
         return result
 
     def validateAll(self, repo_root_dir: str) -> bool:
+        repo_root_dir = os.path.abspath(repo_root_dir)
+
         materials_dir = self._getMaterialsDir(repo_root_dir)
         fdmmaterial_xsd_file_path = os.path.join(repo_root_dir, "scripts", "fdmmaterial.xsd")
 
