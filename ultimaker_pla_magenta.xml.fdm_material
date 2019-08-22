@@ -7,7 +7,7 @@
             <color>Magenta</color>
         </name>
         <GUID>fe3982c8-58f4-4d86-9ac0-9ff7a3ab9cbc</GUID>
-        <version>16</version>
+        <version>17</version>
         <color_code>#bc4077</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -26,7 +26,7 @@
         <setting key="break preparation temperature">200</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
-        <setting key="break temperature">50</setting>
+        <setting key="break temperature">55</setting>
         <setting key="maximum park duration">300</setting>
         <setting key="no load move factor">0.940860215</setting>
         <setting key="flush purge speed">10</setting>
