@@ -11,6 +11,7 @@ variables:
 
 stages:
   - validate
+  - test
   - build
   - release
 
