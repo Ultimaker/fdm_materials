@@ -1,7 +1,18 @@
-image: python:3.7.2-slim
+include:
+  - project: ultimaker/stardust/print-cluster-jedi-scripts
+    file: /gitlab/gitlab-ci-template.yml
+
+variables:
+  GIT_AUTHOR_NAME: embedded
+  GIT_AUTHOR_EMAIL: embedded@ultimaker.com
+  GIT_COMMITTER_NAME: embedded
+  GIT_COMMITTER_EMAIL: embedded@ultimaker.com
+  EMAIL: embedded@ultimaker.com
 
 stages:
   - validate
+  - build
+  - release
 
 validate:
   stage: validate
