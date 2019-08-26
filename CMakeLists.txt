@@ -26,6 +26,36 @@ endif()
 
 file(GLOB _files *.fdm_material *.sig)
 
+# Determine version number
+find_package(Git)
+
+set(GIT_VERSION "Unknown")
+if(GIT_FOUND)
+    execute_process(
+        WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+        COMMAND ${GIT_EXECUTABLE} describe --tags --exact-match --dirty
+        OUTPUT_VARIABLE GIT_VERSION
+        ERROR_QUIET
+        OUTPUT_STRIP_TRAILING_WHITESPACE)
+
+    if(GIT_VERSION)
+        set(CPACK_PACKAGE_VERSION "${GIT_VERSION}")
+    else()
+        execute_process(
+            WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+            COMMAND ${GIT_EXECUTABLE} describe --tags --dirty
+            OUTPUT_VARIABLE GIT_VERSION
+            OUTPUT_STRIP_TRAILING_WHITESPACE)
+    endif()
+    message("Package version derived from git: ${GIT_VERSION}")
+    set(CPACK_PACKAGE_VERSION "${GIT_VERSION}")
+endif()
+
+if (DEFINED ENV{CI})
+    set(CPACK_PACKAGE_VERSION "${GIT_VERSION}+$ENV{CI_COMMIT_SHORT_SHA}.$ENV{CI_PIPELINE_ID}")
+endif()
+#
+
 install(FILES ${_files} DESTINATION ${INSTALL_PATH})
 
 include(CPackConfig.cmake)
