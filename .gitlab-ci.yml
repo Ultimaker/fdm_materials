@@ -2,7 +2,9 @@ include:
   - project: ultimaker/stardust/print-cluster-jedi-scripts
     file: /gitlab/gitlab-ci-template.yml
 
-image: python:3.7.2-slim
+image: docker:19.03.1
+services:
+  - docker:19.03.1-dind
 
 .common:
   tags:
@@ -23,6 +25,7 @@ stages:
 
 validate:
   stage: validate
+  image: python:3.7.2-slim
   script:
     - python -m pip install lxml==4.3.0
     - python scripts/check_material_profiles_new_with_lxml.py
