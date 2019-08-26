@@ -2,6 +2,8 @@ include:
   - project: ultimaker/stardust/print-cluster-jedi-scripts
     file: /gitlab/gitlab-ci-template.yml
 
+image: python:3.7.2-slim
+
 .common:
   tags:
     - docker
@@ -12,7 +14,6 @@ variables:
   GIT_COMMITTER_NAME: embedded
   GIT_COMMITTER_EMAIL: embedded@ultimaker.com
   EMAIL: embedded@ultimaker.com
-  CI_DEBUG_TRACE: "true"
 
 stages:
   - validate
@@ -22,7 +23,6 @@ stages:
 
 validate:
   stage: validate
-  image: python:3.7.2-slim
   script:
     - python -m pip install lxml==4.3.0
     - python scripts/check_material_profiles_new_with_lxml.py
