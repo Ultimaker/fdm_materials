@@ -11,6 +11,7 @@ services:
     - docker
 
 variables:
+  DOCKER_HOST: tcp://docker:2375
   GIT_AUTHOR_NAME: embedded
   GIT_AUTHOR_EMAIL: embedded@ultimaker.com
   GIT_COMMITTER_NAME: embedded
