@@ -2,6 +2,9 @@ include:
   - project: ultimaker/stardust/print-cluster-jedi-scripts
     file: /gitlab/gitlab-ci-template.yml
 
+tags:
+  - docker
+
 variables:
   GIT_AUTHOR_NAME: embedded
   GIT_AUTHOR_EMAIL: embedded@ultimaker.com
