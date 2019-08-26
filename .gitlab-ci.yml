@@ -12,6 +12,7 @@ variables:
   GIT_COMMITTER_NAME: embedded
   GIT_COMMITTER_EMAIL: embedded@ultimaker.com
   EMAIL: embedded@ultimaker.com
+  CI_DEBUG_TRACE: "true"
 
 stages:
   - validate
