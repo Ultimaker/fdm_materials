@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
             <color>Generic</color>
         </name>
         <GUID>bd66b243-9d50-4e12-bfc3-51c874fca16a</GUID>
-        <version>7</version>
+        <version>8</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Profile Assistant.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -40,12 +40,36 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
         <setting key="adhesion tendency">2</setting>
         <setting key="surface energy">100</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
-        <setting key="build volume temperature">35</setting>			
+        <setting key="build volume temperature">35</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
         <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print cooling">50</setting>
+                <setting key="retraction amount">6.5</setting>
+            </hotend>
+        </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>

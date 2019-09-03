@@ -10,7 +10,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <color>Generic</color>
         </name>
         <GUID>28fb4162-db74-49e1-9008-d05f1e8bef5c</GUID>
-        <version>14</version>
+        <version>15</version>
         <color_code>#3DF266</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -76,6 +76,30 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction speed">45</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <setting key="print cooling">40</setting>
+
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">230</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">6.5</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">70</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">70</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
         </machine>
