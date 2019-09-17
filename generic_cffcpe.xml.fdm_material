@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
             <color>Generic</color>
         </name>
         <GUID>f8e496d6-7599-4015-9fac-c7ce53f6633c</GUID>
-        <version>9</version>
+        <version>10</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print Profile Assistant. This profile can also be used for other base materials (ABS, PP, etc)</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -26,7 +26,7 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
         <setting key="break preparation speed">2</setting>
         <setting key="break preparation temperature">245</setting>
         <setting key="break position">-20</setting>
-        <setting key="break speed">10</setting>
+        <setting key="break speed">25</setting>
         <setting key="break temperature">140</setting>
         <setting key="maximum park duration">300</setting>
         <setting key="no load move factor">1.0</setting>

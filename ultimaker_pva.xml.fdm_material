@@ -7,7 +7,7 @@
             <color>Natural</color>
         </name>
         <GUID>fe15ed8a-33c3-4f57-a2a7-b4b78a38c3cb</GUID>
-        <version>18</version>
+        <version>19</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -52,7 +52,7 @@
         <setting key="break preparation speed">2</setting>
         <setting key="break preparation temperature">215</setting>
         <setting key="break position">-20</setting>
-        <setting key="break speed">10</setting>
+        <setting key="break speed">25</setting>
         <setting key="break temperature">130</setting>
         <setting key="maximum park duration">60<!--?--></setting>
         <setting key="no load move factor">1.0</setting>
