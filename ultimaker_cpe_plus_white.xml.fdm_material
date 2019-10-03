@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>6df69b13-2d96-4a69-a297-aedba667e710</GUID>
-        <version>16</version>
+        <version>19</version>
         <color_code>#f1ece1</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -39,6 +39,7 @@
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
         <setting key="shrinkage percentage">0.9</setting>
+        <setting key="build volume temperature">41</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -74,6 +75,30 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="print cooling">8</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">110</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">7</setting>
+                <setting key="retraction speed">40</setting>
+                <setting key="print cooling">1</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">110</setting>
                 <setting key="print cooling">8</setting>
             </hotend>
         </machine>

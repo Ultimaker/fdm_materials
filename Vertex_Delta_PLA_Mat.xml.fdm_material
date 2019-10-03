@@ -3,14 +3,14 @@
     <metadata>
         <name>
             <brand>Velleman</brand>
-            <material>ABS</material>
+            <material>PLA-Mat</material>
             <color>Generic</color>
-            <label>Vertex Delta ABS</label>
+            <label>Vertex PLA-Mat</label>
         </name>
         <color_code>#ffc924</color_code>
-        <GUID>4edd8fce-0851-43e5-808a-970b4bfe8b10</GUID>
+        <GUID>13256f8c-b72d-401d-afad-89a5b59eaac3</GUID>
         <adhesion_info />
-        <version>4</version>
+        <version>1</version>
         <description />
     </metadata>
     <properties>
@@ -18,12 +18,11 @@
         <density>1.24</density>
     </properties>
     <settings>
-        <setting key="standby temperature">225.0</setting>
-        <setting key="print cooling">0.0</setting>
-        <setting key="retraction amount">3.0</setting>
-        <setting key="print temperature">250.0</setting>
+        <setting key="standby temperature">195.0</setting>
+        <setting key="print cooling">100.0</setting>
+        <setting key="retraction amount">3.5</setting>
+        <setting key="print temperature">210.0</setting>
         <setting key="heated bed temperature">0.0</setting>
-        <setting key="retraction speed">150.0</setting>
-        <setting key="build volume temperature">36</setting>
+        <setting key="retraction speed">30.0</setting>
     </settings>
 </fdmmaterial>

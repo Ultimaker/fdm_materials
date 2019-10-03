@@ -7,7 +7,7 @@
             <color>Red</color>
         </name>
         <GUID>2db25566-9a91-4145-84a5-46c90ed22bdf</GUID>
-        <version>10</version>
+        <version>13</version>
         <color_code>#de4343</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -38,6 +38,7 @@
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
+        <setting key="build volume temperature">24</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -60,6 +61,27 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">5</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <setting key="print cooling">100</setting>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">6.5</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">5</setting>
             </hotend>
         </machine>

@@ -1,0 +1,12 @@
+image: python:3.7.2-slim
+
+stages:
+  - validate
+
+validate:
+  stage: validate
+  script:
+    - python -m pip install lxml==4.3.0
+    - python scripts/check_material_profiles_new_with_lxml.py
+  tags:
+    - docker
