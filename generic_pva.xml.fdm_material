@@ -35,6 +35,7 @@ Generic PVA profile. The data in this file may not be correct for your specific 
         <setting key="flush purge length">60<!--?--></setting>
         <setting key="end of filament purge length">20<!--?--></setting>
         <setting key="print temperature">215</setting>
+        <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">175</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
         <setting key="build volume temperature">35</setting>	
