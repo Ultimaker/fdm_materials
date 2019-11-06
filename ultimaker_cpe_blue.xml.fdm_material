@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>4d816290-ce2e-40e0-8dc8-3f702243131e</GUID>
-        <version>21</version>
+        <version>22</version>
         <color_code>#00a3e0</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -23,10 +23,10 @@
         <setting key="anti ooze retract speed">5</setting>
         <setting key="break preparation position">-16</setting>
         <setting key="break preparation speed">2</setting>
-        <setting key="break preparation temperature">240</setting>
+        <setting key="break preparation temperature">245</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
-        <setting key="break temperature">70</setting>
+        <setting key="break temperature">75</setting>
         <setting key="maximum park duration">300</setting>
         <setting key="no load move factor">1.0</setting>
         <setting key="flush purge speed">10</setting>

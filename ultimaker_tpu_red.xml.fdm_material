@@ -7,7 +7,7 @@
             <color>Red</color>
         </name>
         <GUID>07a4547f-d21f-41a0-8eee-bc92125221b3</GUID>
-        <version>17</version>
+        <version>18</version>
         <color_code>#a63437</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -23,10 +23,10 @@
         <setting key="anti ooze retract speed">25</setting>
         <setting key="break preparation position">0</setting>
         <setting key="break preparation speed">2</setting>
-        <setting key="break preparation temperature">220</setting>
+        <setting key="break preparation temperature">225</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
-        <setting key="break temperature">190</setting>
+        <setting key="break temperature">195</setting>
         <setting key="maximum park duration">300</setting>
         <setting key="no load move factor">1.049475262</setting>
         <setting key="flush purge speed">5</setting>
