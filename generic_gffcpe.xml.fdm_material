@@ -10,7 +10,7 @@ This is the baseline profile for Glass Fiber Filled Copolyesters for the Print P
             <color>Generic</color>
         </name>
         <GUID>d4b786bb-e5d2-481b-b3ab-0be976d36af8</GUID>
-        <version>9</version>
+        <version>10</version>
         <color_code>#D5D8DC</color_code>
         <description>This is the baseline profile for Glass Fiber Filled Copolyesters for the Print Profile Assistant. This profile can also be used for other base materials (ABS, PP, etc)</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -24,10 +24,10 @@ This is the baseline profile for Glass Fiber Filled Copolyesters for the Print P
         <setting key="anti ooze retract speed">25</setting>
         <setting key="break preparation position">0</setting>
         <setting key="break preparation speed">2</setting>
-        <setting key="break preparation temperature">245</setting>
+        <setting key="break preparation temperature">250</setting>
         <setting key="break position">-20</setting>
         <setting key="break speed">25</setting>
-        <setting key="break temperature">140</setting>
+        <setting key="break temperature">145</setting>
         <setting key="maximum park duration">300</setting>
         <setting key="no load move factor">1.0</setting>
         <setting key="flush purge speed">10<!--?--></setting>

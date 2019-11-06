@@ -7,7 +7,7 @@
             <color>Pearl Gold</color>
         </name>
         <GUID>7cbdb9ca-081a-456f-a6ba-f73e4e9cb856</GUID>
-        <version>18</version>
+        <version>19</version>
         <color_code>#80643f</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -23,10 +23,10 @@
         <setting key="anti ooze retract speed">5</setting>
         <setting key="break preparation position">-16</setting>
         <setting key="break preparation speed">10</setting>
-        <setting key="break preparation temperature">200</setting>
+        <setting key="break preparation temperature">205</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
-        <setting key="break temperature">80</setting>
+        <setting key="break temperature">85</setting>
         <setting key="maximum park duration">300</setting>
         <setting key="no load move factor">0.947225981</setting>
         <setting key="flush purge speed">10</setting>
