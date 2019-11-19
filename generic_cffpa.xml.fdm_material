@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
             <color>Generic</color>
         </name>
         <GUID>bd66b243-9d50-4e12-bfc3-51c874fca16a</GUID>
-        <version>10</version>
+        <version>11</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Profile Assistant.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -29,7 +29,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
         <setting key="break speed">25</setting>
         <setting key="break temperature">145</setting>
         <setting key="maximum park duration">300</setting>
-        <setting key="no load move factor">1.0</setting>
+        <setting key="no load move factor">0.94</setting>
         <setting key="flush purge speed">10<!--?--></setting>
         <setting key="end of filament purge speed">10<!--?--></setting>
         <setting key="flush purge length">60<!--?--></setting>
