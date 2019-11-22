@@ -7,11 +7,9 @@
       <color>Clear</color>
       <label>DAP 100% Silicone</label>
     </name>
-    <definition>fdmprinter</definition>
     <adhesion_info>Print on wax paper. Use tape to affix wax paper to bed.</adhesion_info>
     <color_code>#057ec7</color_code>
-    <version>12</version>
-    <compatible>True</compatible>
+    <version>13</version>
     <GUID>9bce7bd3-53fd-467a-8b92-0d70720683d9</GUID>
     <description>Safe and reliable silicone printing. DAP 100% Silicone is ideal for the printing of parts and prototypes with flexibility, compressibility, as well as chemical and temperature resistance. Cure time is several minutes to hours.</description>
   </metadata>

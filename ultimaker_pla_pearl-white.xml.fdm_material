@@ -7,10 +7,11 @@
             <color>Pearl-White</color>
         </name>
         <GUID>d9fc79db-82c3-41b5-8c99-33b3747b8fb3</GUID>
-        <version>13</version>
+        <version>20</version>
         <color_code>#e3d9c6</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
+        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-pla/printing-guidelines</instruction_link>
     </metadata>
     <properties>
         <density>1.24</density>
@@ -22,10 +23,10 @@
         <setting key="anti ooze retract speed">5</setting>
         <setting key="break preparation position">-16</setting>
         <setting key="break preparation speed">2</setting>
-        <setting key="break preparation temperature">200</setting>
+        <setting key="break preparation temperature">210</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
-        <setting key="break temperature">50</setting>
+        <setting key="break temperature">60</setting>
         <setting key="maximum park duration">300</setting>
         <setting key="no load move factor">0.940860215</setting>
         <setting key="flush purge speed">10</setting>
@@ -37,6 +38,8 @@
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
+        <setting key="build volume temperature">28</setting>
+
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -90,6 +93,31 @@
         </machine>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <setting key="print cooling">100</setting>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">6.5</setting>
+            </hotend>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">6.5</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">5</setting>
+            </hotend>
+        </machine>
+
+        <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />
@@ -116,16 +144,6 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="hardware recommended">no</setting>
             </buildplate>
-        </machine>
-
-        <machine>
-            <machine_identifier manufacturer="IMADE3D" product="IMADE3D JellyBOX"/>
-
-            <setting key="print temperature">210</setting>
-            <setting key="heated bed temperature">55</setting>
-
-            <hotend id="0.4 mm" />
-            <hotend id="0.4 mm 2-fans" />
         </machine>
     </settings>
 </fdmmaterial>

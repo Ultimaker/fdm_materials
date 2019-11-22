@@ -7,10 +7,11 @@
             <color>Green</color>
         </name>
         <GUID>7ff6d2c8-d626-48cd-8012-7725fa537cc9</GUID>
-        <version>16</version>
+        <version>24</version>
         <color_code>#78be20</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
+        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-cpe/printing-guidelines</instruction_link>
     </metadata>
     <properties>
         <density>1.27</density>
@@ -22,12 +23,12 @@
         <setting key="anti ooze retract speed">5</setting>
         <setting key="break preparation position">-16</setting>
         <setting key="break preparation speed">2</setting>
-        <setting key="break preparation temperature">240</setting>
+        <setting key="break preparation temperature">250</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
-        <setting key="break temperature">70</setting>
+        <setting key="break temperature">75</setting>
         <setting key="maximum park duration">300</setting>
-        <setting key="no load move factor">1.0</setting>
+        <setting key="no load move factor">0.95</setting>
         <setting key="flush purge speed">10</setting>
         <setting key="end of filament purge speed">10</setting>
         <setting key="flush purge length">60</setting>
@@ -37,6 +38,7 @@
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
+        <setting key="build volume temperature">37</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -66,6 +68,30 @@
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">80</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">75</setting>
+                <setting key="print temperature">230</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">6.5</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">75</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="print cooling">20</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>

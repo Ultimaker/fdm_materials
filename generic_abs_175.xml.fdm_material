@@ -10,7 +10,7 @@ Generic ABS 1.75mm profile. The data in this file may not be correct for your sp
             <color>Generic</color>
         </name>
         <GUID>2780b345-577b-4a24-a2c5-12e6aad3e690</GUID>
-        <version>3</version>
+        <version>7</version>
         <color_code>#8cb219</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -25,10 +25,10 @@ Generic ABS 1.75mm profile. The data in this file may not be correct for your sp
         <setting key="standby temperature">200</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
+        <setting key="build volume temperature">36</setting>
 
         <machine>
             <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
-            <machine_identifier manufacturer="MaukCC" product="hms434" />
             <setting key="print cooling">0.0</setting>
             <setting key="standby temperature">160</setting>
             <setting key="retraction speed">40</setting>
@@ -49,6 +49,27 @@ Generic ABS 1.75mm profile. The data in this file may not be correct for your sp
         </machine>
 
         <machine>
+            <machine_identifier manufacturer="MaukCC" product="hms434" />
+            <setting key="print cooling">0.0</setting>
+            <setting key="standby temperature">160</setting>
+            <setting key="retraction speed">40</setting>
+            <setting key="heated bed temperature">115</setting>
+            <setting key="print temperature">255</setting>
+            <hotend id="0.25mm TP extruder">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">1.0</setting>
+            </hotend>
+            <hotend id="0.4mm TP extruder">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">1.0</setting>
+            </hotend>
+            <hotend id="0.8mm TP extruder">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">1.5</setting>
+            </hotend>
+        </machine>
+
+        <machine>
             <machine_identifier manufacturer="Kati Hal ARGE" product="kupido" />
             <setting key="print cooling">0.0</setting>
             <setting key="standby temperature">160</setting>
@@ -58,5 +79,26 @@ Generic ABS 1.75mm profile. The data in this file may not be correct for your sp
             <setting key="print temperature">250</setting>
         </machine>
 
+        <machine>
+            <machine_identifier manufacturer="CreawsomeMod" product="creality_base" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10s" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10spro" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10s4" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10s5" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10mini" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr20" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr20pro" />
+            <machine_identifier manufacturer="Creality3D" product="creality_ender2" />
+            <machine_identifier manufacturer="Creality3D" product="creality_ender3" />
+            <machine_identifier manufacturer="Creality3D" product="creality_ender4" />
+            <machine_identifier manufacturer="Creality3D" product="creality_ender5" />
+            <setting key="print cooling">0</setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">240</setting>
+            <setting key="heated bed temperature">80</setting>
+        </machine>
    </settings>
 </fdmmaterial>
