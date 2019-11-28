@@ -1,0 +1,21 @@
+hey everyone,
+
+So I use this to search replace in the fdm materials files with regexes and evals, it's all based on perl which does have the best regular expression engine ever, even if the language looks like "line noise" according to some people...
+
+No warranty or any assurances are given nor should any be expected!!!
+
+Install this scrip in your local path such as your /home/$USER/bin and chmod it to be executable. optionally install perl?
+
+usage: substitute.pl  y/n 's(upstitute)/pattern/replacement/options [file list | directory] [if directory you can give a file-mask, warning will recurse into deep directory structures not following symlinks I think]
+
+then in your fdm materials you can do things like:
+
+decrease a specific temperature by some number:
+substitute.pl y 's/"break preparation temperature"\s*>(\d+)/"\"break preparation temperature\" >". ($1 -50)/gsme' *.fdm_material
+setting a temperature for a specific set of materials:
+substitute.pl y 's/"(break preparation temperature)"\s*>\d+/"$1">240/gsm' *pla*.fdm_material
+and finally increase the version numbers of modified files:
+substitute.pl y 's/<version>(\d+)/"<version>". ($1 + 1)/gsme' `git status --porcelain | awk 'match($1, "M"){print $2}'`
+I suggest a git diff and a commit between each operation.
+
+for details look up the perl code for regexes 
