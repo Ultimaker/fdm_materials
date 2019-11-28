@@ -7,7 +7,7 @@
             <color>Yellow</color>
         </name>
         <GUID>e873341d-d9b8-45f9-9a6f-5609e1bcff68</GUID>
-        <version>20</version>
+        <version>21</version>
         <color_code>#f7b500</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -23,7 +23,7 @@
         <setting key="anti ooze retract speed">5</setting>
         <setting key="break preparation position">-16</setting>
         <setting key="break preparation speed">10</setting>
-        <setting key="break preparation temperature">250</setting>
+        <setting key="break preparation temperature">230</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">85</setting>
