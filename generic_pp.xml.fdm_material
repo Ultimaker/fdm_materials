@@ -30,10 +30,10 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
         <setting key="break temperature">105</setting>
         <setting key="maximum park duration">300</setting>
         <setting key="no load move factor">1.016702977</setting>
-        <setting key="flush purge speed">5</setting>
-        <setting key="end of filament purge speed">5</setting>
-        <setting key="flush purge length">30</setting>
-        <setting key="end of filament purge length">10</setting>
+        <setting key="flush purge speed">0.5</setting>
+        <setting key="end of filament purge speed">0.5</setting>
+        <setting key="flush purge length">60</setting>
+        <setting key="end of filament purge length">20</setting>
         <setting key="print temperature">220</setting>
         <setting key="heated bed temperature">100</setting>
         <setting key="standby temperature">185</setting>
