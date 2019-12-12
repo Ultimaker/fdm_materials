@@ -7,7 +7,7 @@
             <color>Red</color>
         </name>
         <GUID>00181d6c-7024-479a-8eb7-8a2e38a2619a</GUID>
-        <version>24</version>
+        <version>25</version>
         <color_code>#c8102e</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -29,8 +29,8 @@
         <setting key="break temperature">75</setting>
         <setting key="maximum park duration">300</setting>
         <setting key="no load move factor">0.95</setting>
-        <setting key="flush purge speed">10</setting>
-        <setting key="end of filament purge speed">10</setting>
+        <setting key="flush purge speed">0.5</setting>
+        <setting key="end of filament purge speed">0.5</setting>
         <setting key="flush purge length">60</setting>
         <setting key="end of filament purge length">20</setting>
         <setting key="print temperature">240</setting>
