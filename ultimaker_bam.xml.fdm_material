@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d5f9</GUID>
-        <version>24</version>
+        <version>25</version>
         <color_code>#F1ECE1</color_code>
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -29,10 +29,10 @@
         <setting key="break temperature">95</setting>
         <setting key="maximum park duration">300</setting>
         <setting key="no load move factor">0.97</setting>
-        <setting key="flush purge speed">10</setting>
-        <setting key="end of filament purge speed">10</setting>
-        <setting key="flush purge length">240</setting>
-        <setting key="end of filament purge length">80</setting>
+        <setting key="flush purge speed">0.5</setting>
+        <setting key="end of filament purge speed">0.5</setting>
+        <setting key="flush purge length">60</setting>
+        <setting key="end of filament purge length">20</setting>
         <setting key="print temperature">225</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">100</setting>
