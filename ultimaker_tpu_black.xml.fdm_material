@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>eff40bcf-588d-420d-a3bc-a5ffd8c7f4b3</GUID>
-        <version>19</version>
+        <version>21</version>
         <color_code>#0e0e10</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -23,16 +23,16 @@
         <setting key="anti ooze retract speed">25</setting>
         <setting key="break preparation position">0</setting>
         <setting key="break preparation speed">2</setting>
-        <setting key="break preparation temperature">228</setting>
+        <setting key="break preparation temperature">223</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">195</setting>
         <setting key="maximum park duration">300</setting>
         <setting key="no load move factor">1.049475262</setting>
-        <setting key="flush purge speed">5</setting>
-        <setting key="end of filament purge speed">5</setting>
-        <setting key="flush purge length">30</setting>
-        <setting key="end of filament purge length">10</setting>
+        <setting key="flush purge speed">0.5</setting>
+        <setting key="end of filament purge speed">0.5</setting>
+        <setting key="flush purge length">60</setting>
+        <setting key="end of filament purge length">20</setting>
         <setting key="print temperature">228</setting>
         <setting key="heated bed temperature">0</setting>
         <setting key="standby temperature">175</setting>
