@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     tags:
-    - "**"
+    - "**jedi**"
 
 env:
   IMAGE_BASE: docker.pkg.github.com/${{ github.repository }}
