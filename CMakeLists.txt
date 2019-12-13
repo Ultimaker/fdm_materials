@@ -26,6 +26,30 @@ endif()
 
 file(GLOB _files *.fdm_material *.sig)
 
+# Determine version number
+find_package(Git)
+
+set(GIT_VERSION "unknown")
+if(GIT_FOUND)
+    execute_process(
+        WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+        COMMAND ${GIT_EXECUTABLE} describe --tags --dirty
+        OUTPUT_VARIABLE GIT_VERSION
+        RESULT_VARIABLE GIT_RETURN_VALUE
+        ERROR_QUIET
+        OUTPUT_STRIP_TRAILING_WHITESPACE)
+
+    if(NOT GIT_RETURN_VALUE AND GIT_VERSION)
+        set(CPACK_PACKAGE_VERSION "${GIT_VERSION}")
+    endif()
+    message("Package version derived from git: ${GIT_VERSION}")
+endif()
+
+if (DEFINED ENV{GITHUB_ACTIONS})
+    set(CPACK_PACKAGE_VERSION "${GIT_VERSION}+$ENV{GITHUB_SHA}")
+endif()
+string(REPLACE "/" "_" CPACK_PACKAGE_VERSION ${CPACK_PACKAGE_VERSION})
+
 install(FILES ${_files} DESTINATION ${INSTALL_PATH})
 
 include(CPackConfig.cmake)
