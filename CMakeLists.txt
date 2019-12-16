@@ -40,6 +40,7 @@ if(GIT_FOUND)
         OUTPUT_STRIP_TRAILING_WHITESPACE)
 
     if(NOT GIT_RETURN_VALUE AND GIT_VERSION)
+        string(REPLACE "/" "_" GIT_VERSION ${GIT_VERSION})
         set(CPACK_PACKAGE_VERSION "${GIT_VERSION}")
     endif()
     message("Package version derived from git: ${GIT_VERSION}")
@@ -48,7 +49,6 @@ endif()
 if (DEFINED ENV{GITHUB_ACTIONS})
     set(CPACK_PACKAGE_VERSION "${GIT_VERSION}+$ENV{GITHUB_SHA}")
 endif()
-string(REPLACE "/" "_" CPACK_PACKAGE_VERSION ${CPACK_PACKAGE_VERSION})
 
 install(FILES ${_files} DESTINATION ${INSTALL_PATH})
 
