@@ -33,7 +33,7 @@
             <hotend id="Standard 0.6" >
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">245</setting>
-                <setting key="retraction amount">1.5</setting>
+                <setting key="retraction amount">1.4</setting>
             </hotend>
             <hotend id="Standard 0.8">
                 <setting key="hardware compatible">yes</setting>
