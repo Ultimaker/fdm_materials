@@ -95,14 +95,21 @@ class MaterialProfilesValidator:
                 has_invalid_files = True
                 continue
 
-            # Validate the file content with the XSD file.
             material_content = file_info_dict["content"]
+
+            try:
+                xml_doc = etree.fromstring(material_content.encode())
+            except etree.XMLSyntaxError as e:
+                print("{file_name} contains XML syntax error".format(file_name = file_name))
+                print(e)
+                has_invalid_files = True
+                continue
+
+            # Validate the file content with the XSD file.
             guid = self._getGuid(material_content)
             if guid not in guid_dict:
                 guid_dict[guid] = []
             guid_dict[guid].append(file_name)
-
-            xml_doc = etree.fromstring(material_content.encode())
             try:
                 xmlschema.assertValid(xml_doc)
             except etree.DocumentInvalid as e:
