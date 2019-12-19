@@ -19,7 +19,7 @@
     </properties>
     <settings>
         <setting key="print temperature">245</setting>
-        <setting key="heated bed temperature">110</setting>
+        <setting key="heated bed temperature">100</setting>
         <setting key="standby temperature">175</setting>
         <setting key="retraction amount">1.4</setting>
         <setting key="build volume temperature">45</setting>
@@ -33,14 +33,14 @@
             <hotend id="Standard 0.6" >
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">245</setting>
-                <setting key="retraction amount">1.5</setting>
+                <setting key="retraction amount">1.4</setting>
             </hotend>
-            <!-- Commented out until eMotionTech adds their hotend profiles to Cura.
             <hotend id="Standard 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">250</setting>
                 <setting key="retraction amount">1.5</setting>
             </hotend>
+            <!-- Commented out until eMotionTech adds their hotend profiles to Cura.
             <hotend id="Standard 1.0">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">255</setting>
