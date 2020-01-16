@@ -3,14 +3,14 @@
     <metadata>
         <name>
             <brand>eMotionTech</brand>
-            <material>PVA</material>
+            <material>Soluble</material>
             <color>Generic</color>
             <label>PVA-S</label>
         </name>
         <GUID>bc356ea0-1791-479a-9272-40d228d0269a</GUID>
         <version>14</version>
         <color_code>#D5D8DC</color_code>
-        <description>Good bonding styrene based materials</description>
+        <description>Water Soluble; Good bonding styrene based materials</description>
         <adhesion_info> </adhesion_info>
     </metadata>
     <properties>
