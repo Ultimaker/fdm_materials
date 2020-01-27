@@ -30,8 +30,8 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
         <setting key="break temperature">195</setting>
         <setting key="maximum park duration">300</setting>
         <setting key="no load move factor">1.049475262</setting>
-        <setting key="flush purge speed">0.5</setting>
-        <setting key="end of filament purge speed">0.5</setting>
+        <setting key="flush purge speed">1.25</setting>
+        <setting key="end of filament purge speed">1.25</setting>
         <setting key="flush purge length">60</setting>
         <setting key="end of filament purge length">20</setting>
         <setting key="print temperature">228</setting>
@@ -116,6 +116,8 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
                 <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="AA 0.4">
+                <setting key="flush purge speed">3.2</setting>
+                <setting key="end of filament purge speed">3.2</setting>
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">20</setting>
                 <setting key="retraction amount">8</setting>
