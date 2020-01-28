@@ -123,12 +123,16 @@ Generic PLA profile. The data in this file may not be correct for your specific 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="CC 0.6">
+                <setting key="flush purge speed">7.2</setting>
+                <setting key="end of filament purge speed">7.2</setting>
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
                 <cura:setting key="material_crystallinity">true</cura:setting>
             </hotend>
             <hotend id="AA 0.25">
+                <setting key="flush purge speed">1.25</setting>
+                <setting key="end of filament purge speed">1.25</setting>
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
@@ -139,6 +143,8 @@ Generic PLA profile. The data in this file may not be correct for your specific 
                 <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="AA 0.8">
+                <setting key="flush purge speed">12.8</setting>
+                <setting key="end of filament purge speed">12.8</setting>
                 <setting key="hardware compatible">yes</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">5</setting>

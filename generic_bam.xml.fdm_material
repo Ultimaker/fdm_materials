@@ -87,10 +87,14 @@ Generic break away support material profile. The data in this file may not be co
             <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8">
+                <setting key="flush purge speed">12.8</setting>
+                <setting key="end of filament purge speed">12.8</setting>
                 <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
+                <setting key="flush purge speed">1.25</setting>
+                <setting key="end of filament purge speed">1.25</setting>
                 <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -99,6 +103,8 @@ Generic break away support material profile. The data in this file may not be co
                 <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="AA 0.8">
+                <setting key="flush purge speed">12.8</setting>
+                <setting key="end of filament purge speed">12.8</setting>
                 <setting key="hardware compatible">no</setting>
             </hotend>
             <buildplate id="Glass">

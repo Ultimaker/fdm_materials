@@ -125,6 +125,8 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <hotend id="AA 0.25">
+                <setting key="flush purge speed">1.25</setting>
+                <setting key="end of filament purge speed">1.25</setting>
                 <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -133,15 +135,23 @@
                 <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="AA 0.8">
+                <setting key="flush purge speed">12.8</setting>
+                <setting key="end of filament purge speed">12.8</setting>
                 <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="BB 0.4">
+                <setting key="flush purge speed">3.2</setting>
+                <setting key="end of filament purge speed">3.2</setting>
                 <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="BB 0.8">
+                <setting key="flush purge speed">12.8</setting>
+                <setting key="end of filament purge speed">12.8</setting>
                 <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="CC 0.6">
+                <setting key="flush purge speed">7.2</setting>
+                <setting key="end of filament purge speed">7.2</setting>
                 <setting key="hardware compatible">no</setting>
             </hotend>
             <buildplate id="Glass">
