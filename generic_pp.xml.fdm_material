@@ -127,8 +127,6 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
             <hotend id="AA 0.4">
                 <setting key="flush purge speed">3.2</setting>
                 <setting key="end of filament purge speed">3.2</setting>
-                <setting key="flush purge speed">3.2</setting>
-                <setting key="end of filament purge speed">3.2</setting>
                 <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="AA 0.8">
