@@ -1,4 +1,4 @@
-project(fdm_materials NONE)
+project(fdm-materials NONE)
 
 cmake_minimum_required(VERSION 2.8.12)
 
@@ -16,7 +16,7 @@ else()
     set(INSTALL_PATH "share/fdm_materials"
         CACHE STRING
         "Destination to install the materials to. Should be relative to CMAKE_INSTALL_PREFIX")
-    
+
     if(IS_ABSOLUTE ${INSTALL_PATH})
         set(INSTALL_PATH ${INSTALL_PATH})
     else()
