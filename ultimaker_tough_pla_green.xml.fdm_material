@@ -7,7 +7,7 @@
             <color>Green</color>
         </name>
         <GUID>6d71f4ad-29ab-4b50-8f65-22d99af294dd</GUID>
-        <version>16</version>
+        <version>17</version>
         <color_code>#00a95c</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -26,7 +26,7 @@
         <setting key="break preparation temperature">230</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
-        <setting key="break temperature">55</setting>
+        <setting key="break temperature">60</setting>
         <setting key="maximum park duration">300</setting>
         <setting key="no load move factor">0.940860215</setting>
         <setting key="flush purge speed">0.5</setting>
