@@ -10,7 +10,7 @@ Generic HIPS profile. The data in this file may not be correct for your specific
             <color>Generic</color>
         </name>
         <GUID>b6f76172-bb0f-4326-bdbc-ee8f0e84b283</GUID>
-        <version>7</version>
+        <version>8</version>
         <color_code>#12f3e0</color_code>
     </metadata>
     <properties>
@@ -26,7 +26,7 @@ Generic HIPS profile. The data in this file may not be correct for your specific
         <setting key="break position">-20</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">145</setting>
-        <setting key="maximum park duration">300</setting>
+        <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">0.95</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>

@@ -10,7 +10,7 @@ Generic PETG profile. The data in this file may not be correct for your specific
             <color>Generic</color>
         </name>
         <GUID>1cbfaeb3-1906-4b26-b2e7-6f777a8c197a</GUID>
-        <version>6</version>
+        <version>7</version>
         <color_code>#ff5086</color_code>
         <description>Generic PETG profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Set your prime speed to a low value (8mm/sec)</adhesion_info>
@@ -28,7 +28,7 @@ Generic PETG profile. The data in this file may not be correct for your specific
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">75</setting>
-        <setting key="maximum park duration">300</setting>
+        <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">0.95</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>

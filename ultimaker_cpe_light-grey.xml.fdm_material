@@ -7,7 +7,7 @@
             <color>Light Grey</color>
         </name>
         <GUID>173a7bae-5e14-470e-817e-08609c61e12b</GUID>
-        <version>25</version>
+        <version>26</version>
         <color_code>#c5c7c4</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -27,7 +27,7 @@
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">75</setting>
-        <setting key="maximum park duration">300</setting>
+        <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">0.95</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>
@@ -136,4 +136,3 @@
         </machine>
     </settings>
 </fdmmaterial>
-

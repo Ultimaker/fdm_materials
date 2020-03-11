@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>5253a75a-27dc-4043-910f-753ae11bc417</GUID>
-        <version>22</version>
+        <version>23</version>
         <color_code>#ecece7</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -27,7 +27,7 @@
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">85</setting>
-        <setting key="maximum park duration">300</setting>
+        <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">0.947225981</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>
@@ -138,4 +138,3 @@
         </machine>
     </settings>
 </fdmmaterial>
-

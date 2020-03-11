@@ -10,7 +10,7 @@ Generic PLA profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>506c9f0d-e3aa-4bd4-b2d2-23e2425b1aa9</GUID>
-        <version>20</version>
+        <version>21</version>
         <color_code>#ffc924</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -28,7 +28,7 @@ Generic PLA profile. The data in this file may not be correct for your specific 
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">60</setting>
-        <setting key="maximum park duration">300</setting>
+        <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">0.940860215</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>
