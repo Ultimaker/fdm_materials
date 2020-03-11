@@ -54,7 +54,7 @@
         <setting key="break position">-50</setting>
         <setting key="break speed">50</setting>
         <setting key="break temperature">170</setting>
-        <setting key="maximum park duration">60<!--?--></setting>
+        <setting key="maximum park duration">216000</setting>
         <setting key="no load move factor">0.94</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>
@@ -64,7 +64,7 @@
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">175</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
-        <setting key="build volume temperature">35</setting>	
+        <setting key="build volume temperature">35</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>

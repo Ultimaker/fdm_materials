@@ -28,7 +28,7 @@ This is the baseline profile for Glass Fiber Filled Copolyesters for the Print P
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">145</setting>
-        <setting key="maximum park duration">300</setting>
+        <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">0.94</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>

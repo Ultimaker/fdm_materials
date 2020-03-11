@@ -27,7 +27,7 @@
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">60</setting>
-        <setting key="maximum park duration">300</setting>
+        <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">0.940860215</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>
@@ -146,4 +146,3 @@
         </machine>
     </settings>
 </fdmmaterial>
-
