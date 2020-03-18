@@ -10,7 +10,7 @@ Generic ABS profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>60636bb4-518f-42e7-8237-fe77b194ebe0</GUID>
-        <version>20</version>
+        <version>21</version>
         <color_code>#8cb219</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -28,7 +28,7 @@ Generic ABS profile. The data in this file may not be correct for your specific 
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">85</setting>
-        <setting key="maximum park duration">300</setting>
+        <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">0.947225981</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>

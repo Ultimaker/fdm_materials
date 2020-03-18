@@ -10,7 +10,7 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
             <color>Generic</color>
         </name>
         <GUID>837cf11b-6b1e-48dc-94dc-4a2b4888648e</GUID>
-        <version>13</version>
+        <version>14</version>
         <color_code>#D5D8DC</color_code>
         <description>This is the baseline profile for Glass Fiber Filled Polyamides for the Print Profile Assistant.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -28,7 +28,7 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">145</setting>
-        <setting key="maximum park duration">300</setting>
+        <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">0.94</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>

@@ -10,7 +10,7 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             <color>Generic</color>
         </name>
         <GUID>9d5d2d7c-4e77-441c-85a0-e9eefd4aa68c</GUID>
-        <version>14</version>
+        <version>16</version>
         <color_code>#ffc9f0</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -27,8 +27,8 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
         <setting key="break preparation temperature">230</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
-        <setting key="break temperature">55</setting>
-        <setting key="maximum park duration">300</setting>
+        <setting key="break temperature">60</setting>
+        <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">0.940860215</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>

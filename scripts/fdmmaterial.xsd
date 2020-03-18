@@ -14,9 +14,30 @@
                             <xsd:element name="name">
                                 <xsd:complexType>
                                     <xsd:all>
-                                        <xsd:element name="brand" type="xsd:string"/>
-                                        <xsd:element name="material" type="xsd:string"/>
-                                        <xsd:element name="color" type="xsd:string"/>
+                                        <xsd:element name="brand">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:minLength value="2"/>
+                                                    <xsd:maxLength value="100"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="material">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:minLength value="2"/>
+                                                    <xsd:maxLength value="100"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="color">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:minLength value="2"/>
+                                                    <xsd:maxLength value="100"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
                                         <xsd:element name="label" type="xsd:string" minOccurs="0"/>
                                     </xsd:all>
                                 </xsd:complexType>
