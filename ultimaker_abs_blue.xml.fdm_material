@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>7c9575a6-c8d6-40ec-b3dd-18d7956bfaae</GUID>
-        <version>16</version>
+        <version>23</version>
         <color_code>#00387b</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -19,6 +19,20 @@
         <weight>750</weight>
     </properties>
     <settings>
+        <setting key="anti ooze retract position">-4</setting>
+        <setting key="anti ooze retract speed">5</setting>
+        <setting key="break preparation position">-16</setting>
+        <setting key="break preparation speed">10</setting>
+        <setting key="break preparation temperature">230</setting>
+        <setting key="break position">-50</setting>
+        <setting key="break speed">25</setting>
+        <setting key="break temperature">85</setting>
+        <setting key="maximum park duration">7200</setting>
+        <setting key="no load move factor">0.947225981</setting>
+        <setting key="flush purge speed">0.5</setting>
+        <setting key="end of filament purge speed">0.5</setting>
+        <setting key="flush purge length">60</setting>
+        <setting key="end of filament purge length">20</setting>
         <setting key="print temperature">230</setting>
         <setting key="heated bed temperature">80</setting>
         <setting key="standby temperature">200</setting>
@@ -61,6 +75,31 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">90</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <setting key="heated bed temperature">85</setting>
+
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">225</setting>
+                <setting key="standby temperature">85</setting>
+                <setting key="print cooling">40</setting>
+                <setting key="retraction amount">6.5</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print cooling">2</setting>
+                <setting key="standby temperature">85</setting>
+                <setting key="retraction amount">5</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
 

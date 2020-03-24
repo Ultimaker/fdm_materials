@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>851427a0-0c9a-4d7c-a9a8-5cc92f84af1f</GUID>
-        <version>12</version>
+        <version>18</version>
         <color_code>#ecece7</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -23,14 +23,14 @@
         <setting key="anti ooze retract speed">5</setting>
         <setting key="break preparation position">-16</setting>
         <setting key="break preparation speed">2</setting>
-        <setting key="break preparation temperature">200</setting>
+        <setting key="break preparation temperature">230</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
-        <setting key="break temperature">50</setting>
-        <setting key="maximum park duration">300</setting>
+        <setting key="break temperature">60</setting>
+        <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">0.940860215</setting>
-        <setting key="flush purge speed">10</setting>
-        <setting key="end of filament purge speed">10</setting>
+        <setting key="flush purge speed">0.5</setting>
+        <setting key="end of filament purge speed">0.5</setting>
         <setting key="flush purge length">60</setting>
         <setting key="end of filament purge length">20</setting>
         <setting key="print temperature">225</setting>
@@ -66,6 +66,27 @@
         </machine>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <setting key="print cooling">100</setting>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">6.5</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">5</setting>
+            </hotend>
+        </machine>
+
+        <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />
@@ -94,4 +115,3 @@
         </machine>
     </settings>
 </fdmmaterial>
-

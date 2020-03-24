@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d5f9</GUID>
-        <version>20</version>
+        <version>26</version>
         <color_code>#F1ECE1</color_code>
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -19,20 +19,20 @@
         <weight>750</weight>
     </properties>
     <settings>
-        <setting key="anti ooze retract position">-4</setting>
-        <setting key="anti ooze retract speed">25</setting>
-        <setting key="break preparation position">-12</setting>
-        <setting key="break preparation speed">25</setting>
-        <setting key="break preparation temperature">225</setting>
+        <setting key="anti ooze retract position">-20</setting>
+        <setting key="anti ooze retract speed">10</setting>
+        <setting key="break preparation position">-10</setting>
+        <setting key="break preparation speed">1</setting>
+        <setting key="break preparation temperature">230</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
-        <setting key="break temperature">90</setting>
-        <setting key="maximum park duration">300</setting>
-        <setting key="no load move factor">1.0</setting>
-        <setting key="flush purge speed">10</setting>
-        <setting key="end of filament purge speed">10</setting>
-        <setting key="flush purge length">240</setting>
-        <setting key="end of filament purge length">80</setting>
+        <setting key="break temperature">95</setting>
+        <setting key="maximum park duration">7200</setting>
+        <setting key="no load move factor">0.97</setting>
+        <setting key="flush purge speed">0.5</setting>
+        <setting key="end of filament purge speed">0.5</setting>
+        <setting key="flush purge length">60</setting>
+        <setting key="end of filament purge length">20</setting>
         <setting key="print temperature">225</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">100</setting>
@@ -48,6 +48,25 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <setting key="print cooling">100</setting>
+            <hotend id="BB 0.4" />
+            <hotend id="CC 0.6" />
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>

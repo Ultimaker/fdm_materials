@@ -10,7 +10,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
             <color>Generic</color>
         </name>
         <GUID>aa22e9c7-421f-4745-afc2-81851694394a</GUID>
-        <version>17</version>
+        <version>23</version>
         <color_code>#85f9de</color_code>
         <description>Fatigue and chemical resistant. Polypropylene offers excellent temperature, chemical and fatigue resistance. Its toughness and low friction make it a perfect choice for prototyping and creating durable end-use models.</description>
         <adhesion_info>Adhesion sheets are required.</adhesion_info>
@@ -25,15 +25,15 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
         <setting key="break preparation position">-8</setting>
         <setting key="break preparation speed">17<!--?--></setting>
         <setting key="break preparation temperature">220</setting>
-        <setting key="break position">-20</setting>
-        <setting key="break speed">17</setting>
-        <setting key="break temperature">100</setting>
-        <setting key="maximum park duration">300</setting>
+        <setting key="break position">-50</setting>
+        <setting key="break speed">25</setting>
+        <setting key="break temperature">105</setting>
+        <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">1.016702977</setting>
-        <setting key="flush purge speed">5</setting>
-        <setting key="end of filament purge speed">5</setting>
-        <setting key="flush purge length">30</setting>
-        <setting key="end of filament purge length">10</setting>
+        <setting key="flush purge speed">0.5</setting>
+        <setting key="end of filament purge speed">0.5</setting>
+        <setting key="flush purge length">60</setting>
+        <setting key="end of filament purge length">20</setting>
         <setting key="print temperature">220</setting>
         <setting key="heated bed temperature">100</setting>
         <setting key="standby temperature">185</setting>
@@ -78,6 +78,29 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">7</setting>
+                <setting key="print cooling">10</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <setting key="heated bed temperature">85</setting>
+
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="CC 0.6" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">6.5</setting>
+                <setting key="retraction speed">25</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
