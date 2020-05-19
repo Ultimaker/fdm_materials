@@ -10,7 +10,7 @@
     </name>
 	 
 	 <version>1</version>
-	 <GUID>c3c6ed4e-15df-475f-9753-248fb514915c</GUID>
+	 <GUID>80b4b88f-85ee-4f2a-a48b-fd7a5dccb604</GUID>
 	 <color_code>#000000</color_code><!-- Unknown if this is correct -->
     <description>Simple, fast and reliable option for day to day printing. Not very heat resistant (40°C), medium strength and low toughness but good surface finish.</description>
 	 <adhesion_info>Use heated bed or blue tape to increase adheasion.</adhesion_info>
@@ -24,7 +24,7 @@
  
   <properties>
     <diameter>1.75</diameter>
-    <density>1.124</density><!-- Unknown if this is correct -->
+    <density>1.18</density>
 	 <weight>1000</weight>
   </properties>
   
