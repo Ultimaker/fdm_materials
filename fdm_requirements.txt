@@ -1,0 +1,8 @@
+pycodestyle
+mypy
+pytest
+pytest-cov
+pydbus
+vulture
+lizard
+lxml

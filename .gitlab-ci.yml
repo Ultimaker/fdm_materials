@@ -1,0 +1,57 @@
+# yamllint disable rule:line-length
+# SPDX-License-Identifier: AGPL-3.0+
+#
+# Copyright (C) 2019 Ultimaker B.V.
+
+include:
+  - project: ultimaker/embedded/prime-jedi
+    ref: master
+    file: /gitlab_ci_templates/jedi-gitlab-ci-template.yml
+
+# Prepare stage, prepares a Docker image based on the Docker file in /docker_env subfolder of the repository.
+# To have early feedback when setting up your Docker image, make sure you implement a buildenv_check.sh script,
+# see the exeample in this repository.
+# ==================================================================================
+prepare_environment:
+  extends:
+    - .jobs_common
+    - .environment_common
+  stage: prepare
+  variables:
+    GIT_STRATEGY: clone
+  script:
+    - ./make_docker.sh "${BUILD_PIPELINE_IMAGE}"
+
+complexity:
+  extends:
+    - .jobs_common
+    - .build_test_common
+  stage: test
+  script:
+    - ./ci/complexity_analysis.sh
+
+dead_code:
+  extends:
+    - .jobs_common
+    - .build_test_common
+  stage: test
+  script:
+    - ./ci/dead_code_analysis.sh
+
+style:
+  extends:
+    - .jobs_common
+    - .build_test_common
+  stage: test
+  script:
+    - git fetch origin master:master
+    - ./ci/style_analysis.sh
+
+mypy:
+  extends:
+    - .jobs_common
+    - .build_test_common
+  stage: test
+  script:
+    - git fetch origin master:master
+    - ./ci/mypy.sh
