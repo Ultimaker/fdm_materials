@@ -44,10 +44,6 @@ run_tests()
 {
     echo "Testing!"
     # These tests should never fail! See .gitlab-ci.yml
-    ./run_complexity_analysis.sh || echo "Code Complexity Analysis Failed!"
-    ./run_dead_code_analysis.sh || echo "Dead Code Analysis Failed!"
-    ./run_style_analysis.sh || echo "Style Analysis Failed!"
-    ./run_mypy.sh || echo "MYPY Analysis Failed!"
     ./run_check_material_profiles.sh || echo "Material Profile Check Failed!"
     ./run_check_material_profiles_new_with_lxml.sh || echo "Material Profile Check with lxml Failed!"
 }
