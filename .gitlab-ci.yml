@@ -21,3 +21,12 @@ prepare_environment:
     GIT_STRATEGY: clone
   script:
     - ./make_docker.sh "${BUILD_PIPELINE_IMAGE}"
+
+XSD_test:
+  extends:
+    - .jobs_common
+    - .build_test_common
+  stage: test
+  script:
+    - git fetch origin master:master
+    - ./run_check_material_profiles_new_with_lxml.sh
