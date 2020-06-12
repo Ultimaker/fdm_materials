@@ -44,7 +44,6 @@ run_tests()
 {
     echo "Testing!"
     # These tests should never fail! See .gitlab-ci.yml
-    ./run_check_material_profiles.sh || echo "Material Profile Check Failed!"
     ./run_check_material_profiles_new_with_lxml.sh || echo "Material Profile Check with lxml Failed!"
 }
 
