@@ -10,7 +10,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>12f41353-1a33-415e-8b4f-a775a6c70cc6</GUID>
-        <version>23</version>
+        <version>24</version>
         <color_code>#159499</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -28,7 +28,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">75</setting>
-        <setting key="maximum park duration">300</setting>
+        <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">0.95</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>

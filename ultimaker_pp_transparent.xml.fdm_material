@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>c7005925-2a41-4280-8cdd-4029e3fe5253</GUID>
-        <version>24</version>
+        <version>25</version>
         <color_code>#d0d0d0</color_code>
         <description>Fatigue and chemical resistant. Polypropylene offers excellent temperature, chemical and fatigue resistance. Its toughness and low friction make it a perfect choice for prototyping and creating durable end-use models.</description>
         <adhesion_info>Adhesion sheets are required.</adhesion_info>
@@ -27,7 +27,7 @@
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">105</setting>
-        <setting key="maximum park duration">300</setting>
+        <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">1.016702977</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>

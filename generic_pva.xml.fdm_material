@@ -10,7 +10,7 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>86a89ceb-4159-47f6-ab97-e9953803d70f</GUID>
-        <version>22</version>
+        <version>24</version>
         <color_code>#a32bcc</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -28,8 +28,8 @@ Generic PVA profile. The data in this file may not be correct for your specific 
         <setting key="break position">-50</setting>
         <setting key="break speed">50</setting>
         <setting key="break temperature">170</setting>
-        <setting key="maximum park duration">60<!--?--></setting>
-        <setting key="no load move factor">0.95</setting>
+        <setting key="maximum park duration">216000</setting>
+        <setting key="no load move factor">0.94</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>
         <setting key="flush purge length">60</setting>
@@ -38,7 +38,7 @@ Generic PVA profile. The data in this file may not be correct for your specific 
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">175</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
-        <setting key="build volume temperature">35</setting>	
+        <setting key="build volume temperature">35</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
