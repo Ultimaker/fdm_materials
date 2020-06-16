@@ -5,16 +5,16 @@
             <brand>eMotionTech</brand>
             <material>ABS</material>
             <color>Generic</color>
-            <label>ABS</label>
+            <label>ABS-X</label>
         </name>
-        <GUID>6039cd0c-dff1-4c51-9849-1cce0161430b</GUID>
+        <GUID>533effc5-31f9-4c02-9af7-a9cf268615cd</GUID>
         <version>14</version>
         <color_code>#8cb219</color_code>
-        <description> </description>
+        <description>Zero warp technology</description>
         <adhesion_info>We recommend the use of DimaFix, preferablt "pen" style, don't forget applying it on COOL glass surface</adhesion_info>
     </metadata>
     <properties>
-        <density>1.03</density>
+        <density>1.1</density>
         <diameter>1.75</diameter>
         <weight>2300</weight>
     </properties>
@@ -41,7 +41,6 @@
                 <setting key="print temperature">250</setting>
                 <setting key="retraction amount">1.5</setting>
             </hotend>
-            <!-- Commented out until eMotionTech adds their hotend profiles to Cura.
             <hotend id="Standard 1.0">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">255</setting>
@@ -52,7 +51,6 @@
                 <setting key="print temperature">260</setting>
                 <setting key="retraction amount">1.7</setting>
             </hotend>
-            -->
         </machine>
     </settings>
 </fdmmaterial>
