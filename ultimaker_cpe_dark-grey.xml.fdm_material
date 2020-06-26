@@ -58,6 +58,8 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+			<cura:setting key="retraction_combing_max_distance">40</cura:setting>
+			<cura:setting key="retraction_combing">all</cura:setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
