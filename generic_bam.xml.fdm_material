@@ -29,7 +29,7 @@ Generic break away support material profile. The data in this file may not be co
         <setting key="break speed">25</setting>
         <setting key="break temperature">95</setting>
         <setting key="maximum park duration">7200</setting>
-        <setting key="no load move factor">0.97</setting>
+        <setting key="no load move factor">0.945</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>
         <setting key="flush purge length">60</setting>
