@@ -4,17 +4,18 @@ from collections import OrderedDict
 import os
 import sys
 import re
+from typing import Optional
 
 
 class MaterialProfilesValidator:
 
-    def __init__(self, root_dir: str):
+    def __init__(self, root_dir: str) -> None:
         self._repo_dir = os.path.abspath(root_dir)
         self._materials_dir = self._repo_dir
 
         self._guid_pattern = re.compile(r"<GUID>.*</GUID>")
 
-    def _get_guid(self, content: str) -> str:
+    def _get_guid(self, content: str) -> Optional[str]:
         guid = None
         for line in content.splitlines():
             line = line.strip()
@@ -23,7 +24,7 @@ class MaterialProfilesValidator:
                 break
         return guid
 
-    def get_materials_dir(self, dirpath: str):
+    def get_materials_dir(self, dirpath: str) -> str:
         for root_dir, dirnames, filenames in os.walk(dirpath):
             has_materials_file = any(fn.endswith(".xml.fdm_material") for fn in filenames)
             if not has_materials_file:
