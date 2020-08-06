@@ -26,7 +26,7 @@
         <machine>
             <machine_identifier manufacturer="eMotionTech" product="Strateo3D"/>
             <hotend id="Standard 0.4" >
-                <setting key="hardware compatible">no</setting>
+                <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">225</setting>
                 <setting key="retraction amount">2</setting>
             </hotend>
