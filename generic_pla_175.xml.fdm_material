@@ -28,6 +28,13 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
         <setting key="build volume temperature">28</setting>
 
         <machine>
+            <machine_identifier manufacturer="BIQU" product="biqu_b1" />
+            <setting key="print cooling">100</setting>
+            <setting key="standby temperature">180</setting>
+            <setting key="print temperature">180</setting>
+        </machine>
+
+        <machine>
             <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
             <setting key="print cooling">40.0</setting>
             <setting key="standby temperature">160</setting>
@@ -96,7 +103,7 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
             <setting key="print temperature">200</setting>
             <setting key="heated bed temperature">50</setting>
         </machine>
-        
+
         <machine>
             <machine_identifier manufacturer="Tronxy" product="tronxy_x" />
             <machine_identifier manufacturer="Tronxy" product="tronxy_x5sa" />
@@ -115,7 +122,7 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
             <setting key="print temperature">200</setting>
             <setting key="heated bed temperature">55</setting>
         </machine>
-      
+
         <machine>
             <machine_identifier manufacturer="Lotmaxx" product="lotmaxx_sc60"/>
             <setting key="print temperature">200</setting>
