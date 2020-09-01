@@ -10,7 +10,7 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
             <color>Generic</color>
         </name>
         <GUID>0ff92885-617b-4144-a03c-9989872454bc</GUID>
-        <version>7</version>
+        <version>8</version>
         <color_code>#ffc924</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
