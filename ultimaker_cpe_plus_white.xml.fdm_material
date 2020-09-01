@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>6df69b13-2d96-4a69-a297-aedba667e710</GUID>
-        <version>24</version>
+        <version>25</version>
         <color_code>#f1ece1</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -38,7 +38,7 @@
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
-        <setting key="shrinkage percentage">0.9</setting>
+        <setting key="shrinkage percentage">100.9</setting>
         <setting key="build volume temperature">41</setting>
 
         <!-- For material flow sensor -->
