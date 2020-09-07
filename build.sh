@@ -17,7 +17,7 @@ build()
     mkdir -p "${BUILD_DIR}"
     cd "${BUILD_DIR}" || return
     echo "Building with cmake"
-    cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCPACK_PACKAGE_VERSION="${RELEASE_VERSION}" -DCPACK_PACKAGE_NAME="${PACKAGE_NAME}" -DCPACK_PACKAGE_ARCH="${ARCH}"
+    cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCPACK_PACKAGE_VERSION="${RELEASE_VERSION}" -DCPACK_PACKAGE_NAME="${PACKAGE_NAME}" -DCPACK_PACKAGE_ARCH="${ARCH}" -DEMBEDDED=ON
 }
 
 create_debian_package()
