@@ -39,7 +39,7 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
-        <setting key="shrinkage percentage">0.9</setting>
+        <setting key="shrinkage percentage">100.9</setting>
         <setting key="build volume temperature">41</setting>
 
         <!-- For material flow sensor -->
