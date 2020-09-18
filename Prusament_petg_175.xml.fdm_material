@@ -11,13 +11,13 @@ Prusament 1.75mm PLA Galaxy Black profile. The data in this file may not be corr
         </name>
         <GUID>0ff92885-617b-4144-a03c-9989872454bc</GUID>
         <version>1</version>
-        <color_code>#bdc1c7</color_code>
-        <description>Prusament PLA is our own in-house made filament. The whole manufacturing process is closely monitored and tested - we guarantee ±0.02mm precision and highly-consistent colors.</description>
+        <color_code>#000000</color_code>
+        <description>Prusament PETG is our own in-house made filament. The whole manufacturing process is closely monitored and tested - we guarantee ±0.02mm precision and highly-consistent colors.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
     </metadata>
     
     <properties>
-        <density>1.24</density>
+        <density>1.38</density>
         <diameter>1.75</diameter>
     </properties>
     
