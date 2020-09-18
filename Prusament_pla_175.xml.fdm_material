@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Prusament 1.75mm PLA Galaxy Black profile. The data in this file may not be correct for your specific machine.
+Prusament 1.75mm PLA profile. The data in this file may not be correct for your specific machine.
 -->
 <fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
     <metadata>
@@ -17,7 +17,7 @@ Prusament 1.75mm PLA Galaxy Black profile. The data in this file may not be corr
     </metadata>
     
     <properties>
-        <density>1.24</density>
+        <density>1.29</density>
         <diameter>1.75</diameter>
     </properties>
     
