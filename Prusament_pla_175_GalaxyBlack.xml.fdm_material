@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Prusament 1.75mm PLA Galaxy Black profile. The data in this file may not be correct for your specific machine.
+-->
+<fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
+    <metadata>
+        <name>
+            <brand>Prusament</brand>
+            <material>PLA</material>
+            <color>Galaxy Black</color>
+        </name>
+        <GUID>0ff92885-617b-4144-a03c-9989872454bc</GUID>
+        <version>1</version>
+        <color_code>#000000</color_code>
+        <description>Prusament PLA is our own in-house made filament. The whole manufacturing process is closely monitored and tested - we guarantee ±0.02mm precision and highly-consistent colors.</description>
+        <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
+    </metadata>
+    
+    <properties>
+        <density>1.24</density>
+        <diameter>1.75</diameter>
+    </properties>
+    
+    <settings>
+        <setting key="print temperature">215</setting>
+        <setting key="heated bed temperature">50</setting>
+        <setting key="standby temperature">175</setting>
+        <setting key="adhesion tendency">0</setting>
+        <setting key="surface energy">100</setting>
+        <setting key="build volume temperature">28</setting>
+
+        <machine>
+            <machine_identifier manufacturer="CreawsomeMod" product="creality_base" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr6se" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10s" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10spro" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10s4" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10s5" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr10mini" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr20" />
+            <machine_identifier manufacturer="Creality3D" product="creality_cr20pro" />
+            <machine_identifier manufacturer="Creality3D" product="creality_ender2" />
+            <machine_identifier manufacturer="Creality3D" product="creality_ender3" />
+            <machine_identifier manufacturer="Creality3D" product="creality_ender4" />
+            <machine_identifier manufacturer="Creality3D" product="creality_ender5" />
+            <setting key="print cooling">100</setting>
+            <setting key="standby temperature">180</setting>
+            <setting key="retraction speed">45</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">215</setting>
+            <setting key="heated bed temperature">50</setting>
+        </machine>
+        
+        <machine>
+            <machine_identifier manufacturer="Tronxy" product="tronxy_x" />
+            <machine_identifier manufacturer="Tronxy" product="tronxy_x5sa" />
+            <machine_identifier manufacturer="Tronxy" product="tronxy_x5sa_pro" />
+            <machine_identifier manufacturer="Tronxy" product="tronxy_x5sa_400" />
+            <machine_identifier manufacturer="Tronxy" product="tronxy_x5sa_500" />
+            <machine_identifier manufacturer="Tronxy" product="tronxy_d01" />
+            <machine_identifier manufacturer="Tronxy" product="tronxy_xy2" />
+            <machine_identifier manufacturer="Tronxy" product="tronxy_xy2pro" />
+            <machine_identifier manufacturer="Tronxy" product="tronxy_xy3" />
+
+            <setting key="print cooling">75</setting>
+            <setting key="standby temperature">180</setting>
+            <setting key="retraction speed">40</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="print temperature">200</setting>
+            <setting key="heated bed temperature">55</setting>
+        </machine>
+      
+        <machine>
+            <machine_identifier manufacturer="Lotmaxx" product="lotmaxx_sc60"/>
+            <setting key="print temperature">200</setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="heated bed temperature">50</setting>
+        </machine>
+
+	      <machine>
+            <machine_identifier manufacturer="IMADE3D" product="IMADE3D JellyBOX"/>
+            <setting key="print temperature">210</setting>
+            <setting key="heated bed temperature">55</setting>
+            <hotend id="0.4 mm" />
+        </machine>
+
+    </settings>
+</fdmmaterial>
