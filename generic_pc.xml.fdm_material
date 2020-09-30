@@ -2,7 +2,7 @@
 <!--
 Generic PC profile. The data in this file may not be correct for your specific machine.
 -->
-<fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
+<fdmmaterial xmlns="http://www.ultimaker.com/material" xmlns:cura="http://www.ultimaker.com/cura" version="1.3">
     <metadata>
         <name>
             <brand>Generic</brand>
@@ -10,7 +10,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
             <color>Generic</color>
         </name>
         <GUID>98c05714-bf4e-4455-ba27-57d74fe331e4</GUID>
-        <version>22</version>
+        <version>24</version>
         <color_code>#F29030</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
@@ -39,7 +39,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
-        <setting key="shrinkage percentage">0.7</setting>
+        <cura:setting key="material_shrinkage_percentage">100.7</cura:setting>
         <setting key="build volume temperature">41</setting>
 
         <!-- For material flow sensor -->
