@@ -29,6 +29,7 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
 
         <machine>
             <machine_identifier manufacturer="BIQU" product="biqu_b1" />
+            <machine_identifier manufacturer="BIQU" product="biqu_b1_abl" />
             <setting key="print cooling">100</setting>
             <setting key="standby temperature">180</setting>
             <setting key="print temperature">180</setting>
