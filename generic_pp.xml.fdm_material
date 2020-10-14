@@ -39,7 +39,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
         <setting key="standby temperature">185</setting>
         <setting key="print cooling">20</setting>
         <setting key="retraction speed">35</setting>
-        <cura:setting key="material_shrinkage_percentage">102.5</cura:setting>
+        <cura:setting key="material_shrinkage_percentage">100</cura:setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
         <setting key="build volume temperature">41</setting>
 
