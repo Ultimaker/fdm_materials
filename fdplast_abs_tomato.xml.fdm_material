@@ -7,9 +7,9 @@
       <color>Tomato</color>
       <label>FD ABS Tomato</label>
     </name>
-    <adhesion_info>Обязательно использовать клей и желательно закрытый принтер.</adhesion_info>
+    <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
     <GUID>faca2421-e10c-4dbf-a1dc-9f3b620fd969</GUID>
-    <description>ABS хорош для механических деталей. Он ударопрочный, стабильный по размерам и выдерживает температуру до 85C.</description>
+    <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85C.</description>
     <color_code>#ff6347</color_code>
     <version>5</version>
   </metadata>
