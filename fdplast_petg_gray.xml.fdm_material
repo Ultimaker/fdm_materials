@@ -7,9 +7,9 @@
       <color>Gray</color>
       <label>FD PETG Gray</label>
     </name>
-    <adhesion_info>Прочный материал, исключительно крепкий и без запаха при печати.</adhesion_info>
+    <adhesion_info>Hot bed is more or less a necessity! Expect slight warping on cold bed. Use blue tape with cold bed and a bare PEI sheet with hot bed.</adhesion_info>
     <GUID>fdff3c20-1d38-4de5-89ee-81789ad8d682</GUID>
-    <description>ПЭТГ прочен и химически устойчив. Отличный материал для механических применений. Он более липкий, вязкий и умеренно гидрофильный. Вы должны держать его сухим!</description>
+    <description>PETG is strong and chemically resistant. A great material for mechanical applications. It's more sticky, oozy, and moderately hydrophilic. You must keep it dry!</description>
     <color_code>#808080</color_code>
     <version>5</version>
   </metadata>
