@@ -7,9 +7,9 @@
       <color>Olive</color>
       <label>FD PLA Olive</label>
     </name>
-    <adhesion_info>Печатать на стекле. Лучше использовать клей.</adhesion_info>
+    <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
     <GUID>b9865b5d-e8fe-41e6-a0ab-e34c58aa66a2</GUID>
-    <description>Быстрая, безопасная и надежная печать. PLA идеально подходит для быстрой и надежной печати деталей и прототипов с отличным качеством поверхности.</description>
+    <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
     <color_code>#808000</color_code>
     <version>5</version>
   </metadata>
