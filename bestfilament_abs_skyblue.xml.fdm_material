@@ -7,9 +7,9 @@
       <color>SkyBlue</color>
       <label>BF ABS SkyBlue</label>
     </name>
-    <adhesion_info>Обязательно использовать клей и желательно закрытый принтер.</adhesion_info>
+    <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
     <GUID>17668dfb-eb1c-46a5-a513-bdb7c06959ff</GUID>
-    <description>ABS хорош для механических деталей. Он ударопрочный, стабильный по размерам и выдерживает температуру до 85C.</description>
+    <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85C</description>
     <color_code>#87CEEB</color_code>
     <version>5</version>
   </metadata>
