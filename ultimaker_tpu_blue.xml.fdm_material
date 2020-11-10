@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>5f4a826c-7bfe-460f-8650-a9178b180d34</GUID>
-        <version>24</version>
+        <version>25</version>
         <color_code>#00387b</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -78,6 +78,21 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction speed">45</setting>
                 <setting key="print cooling">50</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <setting key="hardware compatible">yes</setting>
+            <setting key="print temperature">235</setting>
+            <setting key="retraction amount">10</setting>
+            <setting key="heated bed temperature">60</setting>
+
+            <hotend id="0.25 mm" />
+            <hotend id="0.4 mm" />
+            <hotend id="0.6 mm" />
+            <hotend id="0.8 mm">
+                <setting key="hardware compatible">no</setting>
             </hotend>
         </machine>
 
