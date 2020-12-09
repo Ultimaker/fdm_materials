@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>a9c340fe-255f-4914-87f5-ec4fcb0c11ef</GUID>
-        <version>26</version>
+        <version>27</version>
         <color_code>#d0d0d0</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -38,7 +38,7 @@
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
-        <cura:setting key="material_shrinkage_percentage">100.9</cura:setting>
+        <cura:setting key="material_shrinkage_percentage">100</cura:setting>
         <setting key="build volume temperature">41</setting>
 
         <!-- For material flow sensor -->
@@ -81,6 +81,19 @@
                 <setting key="heated bed temperature">110</setting>
                 <setting key="print cooling">8</setting>
             </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" />
+            <setting key="print temperature">260</setting>
+            <setting key="hardware compatible">yes</setting>
+
+            <hotend id="0.25 mm">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="0.4 mm" />
+            <hotend id="0.6 mm" />
+            <hotend id="0.8 mm" />
         </machine>
 
         <machine>

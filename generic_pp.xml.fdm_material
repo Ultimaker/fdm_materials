@@ -10,7 +10,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
             <color>Generic</color>
         </name>
         <GUID>aa22e9c7-421f-4745-afc2-81851694394a</GUID>
-        <version>25</version>
+        <version>26</version>
         <color_code>#85f9de</color_code>
         <description>Fatigue and chemical resistant. Polypropylene offers excellent temperature, chemical and fatigue resistance. Its toughness and low friction make it a perfect choice for prototyping and creating durable end-use models.</description>
         <adhesion_info>Adhesion sheets are required.</adhesion_info>
@@ -39,7 +39,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
         <setting key="standby temperature">185</setting>
         <setting key="print cooling">20</setting>
         <setting key="retraction speed">35</setting>
-        <cura:setting key="material_shrinkage_percentage">102.5</cura:setting>
+        <cura:setting key="material_shrinkage_percentage">100</cura:setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
         <setting key="build volume temperature">41</setting>
 
@@ -83,6 +83,25 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">7</setting>
                 <setting key="print cooling">10</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <setting key="hardware compatible">yes</setting>
+            <setting key="retraction amount">8</setting>
+            <setting key="retraction speed">25</setting>
+            <hotend id="0.25 mm">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="0.4 mm">
+                <setting key="print temperature">220</setting>
+            </hotend>
+            <hotend id="0.6 mm">
+                <setting key="print temperature">230</setting>
+            </hotend>
+            <hotend id="0.8 mm">
+                <setting key="print temperature">240</setting>
             </hotend>
         </machine>
 
