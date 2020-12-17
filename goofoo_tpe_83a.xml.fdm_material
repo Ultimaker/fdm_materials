@@ -20,7 +20,6 @@
         <setting key="heated bed temperature">0</setting>
         <setting key="standby temperature">220</setting>
         <setting key="retraction amount">1</setting>
-        <setting key="adhesion type">raft</setting>
         <setting key="retraction speed">10</setting>
         <machine>
             <machine_identifier manufacturer="GOOFOO" product="goofoo" />
@@ -30,7 +29,6 @@
             <setting key="heated bed temperature">0</setting>
             <setting key="print temperature">220</setting>
             <setting key="retraction amount">1</setting>
-            <setting key="adhesion type">raft</setting>
             <hotend id="0.25mm thermoplastic extruder">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1</setting>
