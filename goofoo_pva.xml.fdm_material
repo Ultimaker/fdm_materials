@@ -20,7 +20,6 @@
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">200</setting>
         <setting key="retraction amount">4.5</setting>
-        <setting key="adhesion type">none</setting>
         <setting key="retraction speed">60</setting>
         <machine>
             <machine_identifier manufacturer="GOOFOO" product="goofoo" />
