@@ -41,12 +41,12 @@
                 <setting key="print temperature">260</setting>
                 <setting key="retraction amount">2.3</setting>
             </hotend>
-            <hotend id="Standard 1.0 BETA!">
+            <hotend id="Standard 1.0 Experimental">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">265</setting>
                 <setting key="retraction amount">2.7</setting>
             </hotend>
-            <hotend id="Standard 1.2 BETA!">
+            <hotend id="Standard 1.2 Experimental">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">270</setting>
                 <setting key="retraction amount">2.7</setting>
