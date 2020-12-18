@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
+<fdmmaterial xmlns="http://www.ultimaker.com/material" xmlns:cura="http://www.ultimaker.com/cura" version="1.3">
     <metadata>
         <name>
             <brand>Ultimaker</brand>
@@ -7,7 +7,7 @@
             <color>Red</color>
         </name>
         <GUID>5df7afa6-48bd-4c19-b314-839fe9f08f1f</GUID>
-        <version>23</version>
+        <version>26</version>
         <color_code>#bb1e10</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -28,7 +28,7 @@
         <setting key="break speed">25</setting>
         <setting key="break temperature">85</setting>
         <setting key="maximum park duration">7200</setting>
-        <setting key="no load move factor">0.947225981</setting>
+        <setting key="no load move factor">0.95</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>
         <setting key="flush purge length">60</setting>
@@ -38,7 +38,7 @@
         <setting key="standby temperature">200</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
-        <setting key="shrinkage percentage">0.9</setting>
+        <cura:setting key="material_shrinkage_percentage">100</cura:setting>
         <setting key="build volume temperature">36</setting>
 
         <!-- For material flow sensor -->
@@ -75,6 +75,24 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">90</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <setting key="heated bed temperature">85</setting>
+            <setting key="hardware compatible">yes</setting>
+            <hotend id="0.25 mm">
+                <setting key="print temperature">245</setting>
+            </hotend>
+            <hotend id="0.4 mm">
+                <setting key="print temperature">250</setting>
+            </hotend>
+            <hotend id="0.6 mm">
+                <setting key="print temperature">260</setting>
+            </hotend>
+            <hotend id="0.8 mm">
+                <setting key="print temperature">260</setting>
             </hotend>
         </machine>
 

@@ -10,7 +10,7 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
             <color>Generic</color>
         </name>
         <GUID>1d52b2be-a3a2-41de-a8b1-3bcdb5618695</GUID>
-        <version>20</version>
+        <version>23</version>
         <color_code>#B22744</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -25,11 +25,11 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
         <setting key="break preparation position">0</setting>
         <setting key="break preparation speed">2</setting>
         <setting key="break preparation temperature">223</setting>
-        <setting key="break position">-50</setting>
+        <setting key="break position">-100</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">195</setting>
         <setting key="maximum park duration">7200</setting>
-        <setting key="no load move factor">1.049475262</setting>
+        <setting key="no load move factor">1.03</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>
         <setting key="flush purge length">60</setting>
@@ -80,6 +80,21 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction speed">45</setting>
                 <setting key="print cooling">50</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <setting key="hardware compatible">yes</setting>
+            <setting key="print temperature">235</setting>
+            <setting key="retraction amount">10</setting>
+            <setting key="heated bed temperature">60</setting>
+
+            <hotend id="0.25 mm" />
+            <hotend id="0.4 mm" />
+            <hotend id="0.6 mm" />
+            <hotend id="0.8 mm">
+                <setting key="hardware compatible">no</setting>
             </hotend>
         </machine>
 

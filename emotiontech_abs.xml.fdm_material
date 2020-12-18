@@ -5,12 +5,13 @@
             <brand>eMotionTech</brand>
             <material>ABS</material>
             <color>Generic</color>
+            <label>ABS</label>
         </name>
         <GUID>6039cd0c-dff1-4c51-9849-1cce0161430b</GUID>
         <version>14</version>
         <color_code>#8cb219</color_code>
         <description> </description>
-        <adhesion_info> </adhesion_info>
+        <adhesion_info>We recommend the use of DimaFix, preferably "pen" style, don't forget applying it on COOL glass surface</adhesion_info>
     </metadata>
     <properties>
         <density>1.03</density>
@@ -22,7 +23,7 @@
         <setting key="heated bed temperature">100</setting>
         <setting key="standby temperature">175</setting>
         <setting key="retraction amount">1.4</setting>
-        <setting key="build volume temperature">45</setting>
+        <setting key="build volume temperature">60</setting>
         <machine>
             <machine_identifier manufacturer="eMotionTech" product="Strateo3D"/>
             <hotend id="Standard 0.4" >

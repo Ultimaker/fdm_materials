@@ -7,7 +7,7 @@
             <color>Silver Metallic</color>
         </name>
         <GUID>0e01be8c-e425-4fb1-b4a3-b79f255f1db9</GUID>
-        <version>22</version>
+        <version>24</version>
         <color_code>#a1a1a0</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -28,7 +28,7 @@
         <setting key="break speed">25</setting>
         <setting key="break temperature">60</setting>
         <setting key="maximum park duration">7200</setting>
-        <setting key="no load move factor">0.940860215</setting>
+        <setting key="no load move factor">0.94</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>
         <setting key="flush purge length">60</setting>
@@ -88,6 +88,23 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <setting key="hardware compatible">yes</setting>
+            <hotend id="0.25 mm">
+                <setting key="print temperature">195</setting>
+            </hotend>
+            <hotend id="0.4 mm">
+                <setting key="print temperature">210</setting>
+            </hotend>
+            <hotend id="0.6 mm">
+                <setting key="print temperature">230</setting>
+            </hotend>
+            <hotend id="0.8 mm">
+                <setting key="print temperature">240</setting>
             </hotend>
         </machine>
 
