@@ -17,7 +17,7 @@
     </properties>
     <settings>
         <setting key="print temperature">260</setting>
-        <setting key="heated bed temperature">100</setting>
+        <setting key="heated bed temperature">120</setting>
         <setting key="standby temperature">260</setting>
         <setting key="retraction amount">4.5</setting>
         <setting key="retraction speed">60</setting>
@@ -26,7 +26,7 @@
             <setting key="print cooling">100</setting>
             <setting key="standby temperature">260</setting>
             <setting key="retraction speed">60</setting>
-            <setting key="heated bed temperature">100</setting>
+            <setting key="heated bed temperature">120</setting>
             <setting key="print temperature">260</setting>
             <setting key="retraction amount">4.5</setting>
             <hotend id="0.25mm thermoplastic extruder">
