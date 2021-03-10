@@ -11,7 +11,7 @@
 
      <version>1</version>
      <GUID>f509bb68-ee78-4947-a3db-9d097522089c</GUID>
-     <color_code>#969696</color_code><!-- Unknown if this is correct -->
+     <color_code>#969696</color_code>
     <description>Simple, fast and reliable option for day to day printing. Not very heat resistant (40°C), medium strength and low toughness but good surface finish.</description>
      <adhesion_info>Use heated bed or blue tape to increase adheasion.</adhesion_info>
      <instruction_link>https://atom3dp.squarespace.com/filament-en</instruction_link>
