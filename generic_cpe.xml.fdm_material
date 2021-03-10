@@ -10,7 +10,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>12f41353-1a33-415e-8b4f-a775a6c70cc6</GUID>
-        <version>26</version>
+        <version>27</version>
         <color_code>#159499</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -35,7 +35,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
         <setting key="flush purge length">60</setting>
         <setting key="end of filament purge length">20</setting>
         <setting key="print temperature">240</setting>
-        <setting key="heated bed temperature">70</setting>
+        <setting key="heated bed temperature">85</setting>
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
@@ -59,6 +59,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <setting key="heated bed temperature">85</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <cura:setting key="retraction_combing_max_distance">40</cura:setting>
@@ -74,7 +75,6 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">80</setting>
             </hotend>
         </machine>
 
@@ -98,43 +98,40 @@ Generic CPE profile. The data in this file may not be correct for your specific 
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <setting key="heated bed temperature">85</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">75</setting>
                 <setting key="print temperature">230</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">75</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="print cooling">20</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">80</setting>
             </hotend>
         </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <setting key="heated bed temperature">85</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">75</setting>
                 <setting key="print temperature">230</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">75</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
@@ -142,7 +139,6 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">80</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
             </hotend>
