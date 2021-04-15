@@ -1,5 +1,7 @@
 #!/bin/bash
 #
+# SPDX-License-Identifier: LGPL-3.0+
+#
 # Copyright (C) 2019 Ultimaker B.V.
 #
 
