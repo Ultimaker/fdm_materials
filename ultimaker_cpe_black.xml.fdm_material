@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>a8955dc3-9d7e-404d-8c03-0fd6fee7f22d</GUID>
-        <version>29</version>
+        <version>30</version>
         <color_code>#2a292a</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -19,20 +19,25 @@
         <weight>750</weight>
     </properties>
     <settings>
-        <setting key="anti ooze retract position">-4</setting>
-        <setting key="anti ooze retract speed">5</setting>
-        <setting key="break preparation position">-16</setting>
+        <!-- Deprime settings -->
+        <setting key="anti ooze retract position">-20</setting>
+        <setting key="anti ooze retract speed">50</setting>
+        <setting key="break preparation position">-20</setting>
         <setting key="break preparation speed">2</setting>
         <setting key="break preparation temperature">250</setting>
         <setting key="break position">-50</setting>
-        <setting key="break speed">25</setting>
+        <setting key="break speed">50</setting>
         <setting key="break temperature">75</setting>
+        <setting key="pressure release dwell time">25</setting>
+        <setting key="dwell time before break preparation move">0</setting>
+        <setting key="end of print purge volume">0</setting>
+        <setting key="end of filament purge volume">0</setting>
+
+        <!-- material station (un)loading settings -->
         <setting key="maximum park duration">7200</setting>
-        <setting key="no load move factor">0.95</setting>
-        <setting key="flush purge speed">0.5</setting>
-        <setting key="end of filament purge speed">0.5</setting>
-        <setting key="flush purge length">60</setting>
-        <setting key="end of filament purge length">20</setting>
+        <setting key="no load move factor">0.92</setting>
+
+        <!-- print settings -->
         <setting key="print temperature">240</setting>
         <setting key="heated bed temperature">85</setting>
         <setting key="standby temperature">175</setting>
