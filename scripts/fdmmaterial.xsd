@@ -191,6 +191,10 @@
                     <xsd:enumeration value="end of filament purge length"/>
                     <xsd:enumeration value="break preparation position"/>
                     <xsd:enumeration value="break position"/>
+                    <xsd:enumeration value="end of filament purge volume"/>
+                    <xsd:enumeration value="end of print purge volume"/>
+                    <xsd:enumeration value="pressure release dwell time"/>
+                    <xsd:enumeration value="dwell time before break preparation move"/>
                 </xsd:restriction>
             </xsd:simpleType>
         </xsd:attribute>
