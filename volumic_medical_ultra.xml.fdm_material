@@ -8,9 +8,8 @@
       <label>MEDICAL Ultra</label>
     </name>
     <version>2</version>
-    <description>Le médical ULTRA a une certification USP Classe VI / ISO 10993-1</description>
-    <adhesion_info>Plateau laqué</adhesion_info>
-    <compatible>True</compatible>
+    <description>The medical ULTRA have a USP Classe VI / ISO 10993-1 certification for medical use.</description>
+    <adhesion_info>3DLac or Dimafix</adhesion_info>
     <color_code>#00ff00</color_code>
     <GUID>397bdd04-a387-4cb8-84c5-f9ee2d792782</GUID>
   </metadata>

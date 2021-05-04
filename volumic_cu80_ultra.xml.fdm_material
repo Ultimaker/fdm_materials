@@ -8,10 +8,9 @@
       <label>CUIVRE80 Ultra</label>
     </name>
     <GUID>b0dc1bca-2a22-43bc-bd06-4f9588aa2c6c</GUID>
-    <description>Le PLA Ultra chargé à 80% de cuivre.</description>
+    <description>PLA Ultra with 80% pure copper.</description>
     <version>2</version>
-    <adhesion_info>Plateau laqué</adhesion_info>
-    <compatible>True</compatible>
+    <adhesion_info>3DLac or Dimafix</adhesion_info>
     <color_code>#00ff00</color_code>
   </metadata>
   <properties>

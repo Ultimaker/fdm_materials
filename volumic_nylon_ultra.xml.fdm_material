@@ -8,9 +8,8 @@
       <label>NYLON Ultra</label>
     </name>
     <version>2</version>
-    <description>Le must des nylons, facile à imprimer, avec une adhérence très correcte et un faible warping. Matière de très haute qualité (grade industriel) et d'une très belle finition.</description>
-    <adhesion_info>Plateau laqué</adhesion_info>
-    <compatible>True</compatible>
+    <description>The must of nylons, easy to print, with very good adhesion and low warping. Very high quality material (industrial grade) and a very nice finish.</description>
+    <adhesion_info>3DLac or Dimafix</adhesion_info>
     <color_code>#00ff00</color_code>
     <GUID>432b8465-48e2-4ef2-a02c-803250300a6e</GUID>
   </metadata>

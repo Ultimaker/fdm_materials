@@ -9,9 +9,8 @@
     </name>
     <version>2</version>
     <GUID>3f84ad4e-5fc8-4b1a-83d1-1c2636053e07</GUID>
-    <description>Le PLA professionnel. Très facile à imprimer, une excellente adhérence à basse température, une flexibilité digne d'un ABS, une matière de très haute qualité (grade industriel) et d'une finition parfaite.</description>
-    <adhesion_info>Plateau laqué</adhesion_info>
-    <compatible>True</compatible>
+    <description>The professional PLA. Very easy to print, excellent adhesion at low temperature, flexibility worthy of ABS, a very high quality material (industrial grade) and a perfect finish.</description>
+    <adhesion_info>3DLac or Dimafix</adhesion_info>
     <color_code>#00ff00</color_code>
   </metadata>
   <properties>

@@ -8,9 +8,8 @@
       <label>BUMPER Ultra</label>
     </name>
     <version>2</version>
-    <description>Le Bumper ULTRA, un semi-flexible (Shore 60D) haute performance pour des objets anti-chocs.</description>
-    <adhesion_info>Plateau laqué</adhesion_info>
-    <compatible>True</compatible>
+    <description>The Bumper ULTRA, high performance semi-flexible (Shore 60D) for impact-resistant objects.</description>
+    <adhesion_info>3DLac or Dimafix</adhesion_info>
     <color_code>#00ff00</color_code>
     <GUID>7bebd9d6-d485-4c23-b644-34d535e97494</GUID>
   </metadata>

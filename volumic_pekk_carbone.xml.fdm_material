@@ -8,11 +8,9 @@
       <label>PEKK Carbone</label>
     </name>
     <version>2</version>
-    <description>Le PEKK, plus facile a imprimer que le PEEK, et ayant de meilleurs caractéristiques !
- Non compatible avec les STREAM PRO, seulement avec les STREAM ULTRA (température d'impression de 360/365° et lit à 130°). Attention, ce matériau requiert une bonne connaissance de l'impression 3D.</description>
+    <description>PEKK, easier to print than PEEK, and having similar characteristics. Please note, this material requires a good knowledge of 3D printing.</description>
     <GUID>78b50ccb-12de-4119-8fb2-7b90a4c0fa46</GUID>
-    <compatible>True</compatible>
-    <adhesion_info>Adhésif lit en PEI/ULTEM et buse acier trempé obligatoire pour imprimer ce matériau. Seulement sur STREAM ULTRA</adhesion_info>
+    <adhesion_info>PEI/ULTEM bed sticker and Hardened steel nozzle</adhesion_info>
     <color_code>#00ff00</color_code>
   </metadata>
   <properties>

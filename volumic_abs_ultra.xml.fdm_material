@@ -8,10 +8,9 @@
       <label>ABS Ultra</label>
     </name>
     <GUID>6cc2db78-1538-43c8-964a-24a4f33119ce</GUID>
-    <description>L'ABS professionnel qui ne warp pas ! Bien plus facile à imprimer que l'ABS standard, peut de warping, une matière de très haute qualité et un excellent rendu.</description>
+    <description>Professional ABS that doesn't warp! Much easier to print than standard ABS, low warping, very high quality material and excellent rendering.</description>
     <version>2</version>
-    <adhesion_info>Plateau laqué</adhesion_info>
-    <compatible>True</compatible>
+    <adhesion_info>3DLac or Dimafix</adhesion_info>
     <color_code>#00ff00</color_code>
   </metadata>
   <properties>

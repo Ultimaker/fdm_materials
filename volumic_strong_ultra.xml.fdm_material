@@ -8,12 +8,9 @@
       <label>STRONG Ultra</label>
     </name>
     <GUID>e266efca-37e9-4af8-bb04-a4c43877073a</GUID>
-    <description>Le Strong Ultra v2, successeur du Strong Ultra, est une version revue et corrigé avec une technologie unique anti-abrasive qui diminue drastiquement l'abrasion ce qui permet de l'imprimer bien plus facilement avec une usure buse/entrainement faible, tout ça pour un cout bien inférieur à la première version.
-Le Strong Ultra est un Nylon chargé à la fibre de verre, lui conférant une résistance hors pair.
-Buse INOX/ACIER et entrainement INOX vivement conseillé.</description>
+    <description>Strong Ultra is a nylon filled with fiberglass, giving it unparalleled resistance. Made with a unique anti-abrasive technology that drastically decreases abrasion making it much easier to print with reasonable nozzle / drag wear. Hardened steel nozzle and stainless steel drive compulsory.</description>
     <version>2</version>
-    <adhesion_info>Plateau laqué</adhesion_info>
-    <compatible>True</compatible>
+    <adhesion_info>3DLac or Dimafix</adhesion_info>
     <color_code>#00ff00</color_code>
   </metadata>
   <properties>

@@ -7,11 +7,10 @@
       <color>Generic</color>
       <label>SUPPORT Ultra</label>
     </name>
-    <description>Le support Ultra est une base de PVA modifié pour augmenter son adhérence plateau et sur les autres matières, bien plus facile qu'un PVA standard.</description>
+    <description>The Support Ultra is a modified PVA to increase bed adhesion and to other materials, much easier than a standard PVA.</description>
     <GUID>a14eeb2d-3faa-4892-ade6-c56bb34d38eb</GUID>
     <version>2</version>
-    <adhesion_info>Plateau laqué</adhesion_info>
-    <compatible>True</compatible>
+    <adhesion_info>3DLac or Dimafix</adhesion_info>
     <color_code>#00ff00</color_code>
   </metadata>
   <properties>

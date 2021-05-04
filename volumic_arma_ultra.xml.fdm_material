@@ -8,11 +8,9 @@
       <label>ARMADILLO Ultra</label>
     </name>
     <version>2</version>
-    <description>L'Armadillo Ultra est un Nylon chargé au Kevlar (Aramid), lui conférant une résistance aux gros impacts hors pair. Confectionnez-vous votre armure pare balle sur mesure !
-Buse INOX/ACIER et entrainement INOX vivement conseillé.</description>
+    <description>The Armadillo Ultra is a Nylon-Kevlar (Aramid) filament, giving it unparalleled resistance to large impacts. Make your own custom bulletproof armor! Hardened steel nozzle and training compulsory.</description>
     <GUID>a0cf166b-0c06-4873-a2be-b46190edc25c</GUID>
-    <compatible>True</compatible>
-    <adhesion_info>Plateau laqué</adhesion_info>
+    <adhesion_info>3DLac or Dimafix</adhesion_info>
     <color_code>#00ff00</color_code>
   </metadata>
   <properties>

@@ -8,9 +8,8 @@
       <label>PETG CARBONE Ultra</label>
     </name>
     <version>2</version>
-    <description>Le PETG professionnel chargé en carbone, très facile à imprimer, une resistance et une Tg accrue avec un gain de poids significatif, le Must des PETG techniques.</description>
-    <adhesion_info>Plateau laqué</adhesion_info>
-    <compatible>True</compatible>
+    <description>Professional PETG loaded with carbon, very easy to print, increased strength and Tg with significant weight gain, the best technical PETG.</description>
+    <adhesion_info>3DLac or Dimafix</adhesion_info>
     <color_code>#00ff00</color_code>
     <GUID>64569342-86c5-4bc2-90a7-e85af1acbb58</GUID>
   </metadata>

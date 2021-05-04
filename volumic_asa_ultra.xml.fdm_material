@@ -8,10 +8,9 @@
       <label>ASA Ultra</label>
     </name>
     <version>2</version>
-    <description>ASA (Acrylonitirle Styrene Acrylate) de très haute qualité.</description>
+    <description>Professional grade ASA (Acrylonitirle Styrene Acrylate)</description>
     <GUID>831a6fdd-80a7-4f1b-936c-cf77b469a3d4</GUID>
-    <compatible>True</compatible>
-    <adhesion_info>Plateau laqué</adhesion_info>
+    <adhesion_info>3DLac or Dimafix</adhesion_info>
     <color_code>#00ff00</color_code>
   </metadata>
   <properties>

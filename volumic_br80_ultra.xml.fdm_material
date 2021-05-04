@@ -8,9 +8,8 @@
       <label>BRONZE80 Ultra</label>
     </name>
     <version>2</version>
-    <description>Le PLA Ultra chargé à 80% de bronze pur (pas d'additif).</description>
-    <adhesion_info>Plateau laqué</adhesion_info>
-    <compatible>True</compatible>
+    <description>PLA Ultra with 80% pure bronze (no additive).</description>
+    <adhesion_info>3DLac or Dimafix</adhesion_info>
     <color_code>#00ff00</color_code>
     <GUID>948865b1-27bb-45ec-b8de-d56a1ff1bdd0</GUID>
   </metadata>

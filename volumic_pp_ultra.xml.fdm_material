@@ -8,10 +8,9 @@
       <label>POLYPRO Ultra</label>
     </name>
     <version>2</version>
-    <description>Le polypropylène, avec ses propriétés exceptionnelles, en fait une matière très polyvalente pour le prototypage comme pour la pièce fonctionnelle.</description>
+    <description>Polypropylene ULTRA, with its exceptional properties, makes it a very versatile material for prototyping as well as for the functional part.</description>
     <GUID>e9b053a4-bb38-4ad5-be20-3fa8198c08be</GUID>
-    <compatible>True</compatible>
-    <adhesion_info>Plateau avec adhésif PP ou laque PP</adhesion_info>
+    <adhesion_info>Best with PP adhesive or PP juice, or 3DLac/Dimafix</adhesion_info>
     <color_code>#00ff00</color_code>
   </metadata>
   <properties>

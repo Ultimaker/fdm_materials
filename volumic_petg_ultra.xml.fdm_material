@@ -9,9 +9,8 @@
     </name>
     <version>2</version>
     <GUID>12bd6afe-0741-472f-970e-33ac4c3a6b15</GUID>
-    <description>Le PETG professionnel, très facile à imprimer, une très bonne adhérence à basse température, matière de très haute qualité (grade industriel) et d'une très belle finition. Très peu de "cheveux d'anges".</description>
-    <adhesion_info>Plateau laqué</adhesion_info>
-    <compatible>True</compatible>
+    <description>Professional PETG, very easy to print, very good adhesion at low temperature, very high quality material (industrial grade) and a very nice finish.</description>
+    <adhesion_info>3DLac or Dimafix</adhesion_info>
     <color_code>#00ff00</color_code>
   </metadata>
   <properties>
