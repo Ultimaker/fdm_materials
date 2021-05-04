@@ -9,7 +9,7 @@
         <GUID>7418eca4-e2c4-45b1-a022-37180861fd39</GUID>
         <version>29</version>
         <color_code>#d0d0d0</color_code>
-        <description> Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
+        <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
         <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-petg/printing-guidelines</instruction_link>
     </metadata>
@@ -29,7 +29,7 @@
         <setting key="break speed">50</setting>
         <setting key="break temperature">215</setting>
         <setting key="pressure release dwell time">25</setting>
-        <setting key="dwell time before break preparation move">0</setting> 
+        <setting key="dwell time before break preparation move">0</setting>
         <setting key="end of print purge volume">0</setting>
         <setting key="end of filament purge volume">0</setting>
 
