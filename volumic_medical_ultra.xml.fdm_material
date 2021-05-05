@@ -25,6 +25,5 @@
     <setting key="retraction speed">30.0</setting>
     <setting key="heated bed temperature">100.0</setting>
     <setting key="print temperature">235.0</setting>
-    <setting key="flow">96</setting>
   </settings>
 </fdmmaterial>
