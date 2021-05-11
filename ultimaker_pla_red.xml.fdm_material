@@ -7,7 +7,7 @@
             <color>Red</color>
         </name>
         <GUID>9cfe5bf1-bdc5-4beb-871a-52c70777842d</GUID>
-        <version>25</version>
+        <version>26</version>
         <color_code>#bb1e10</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -32,6 +32,7 @@
         <setting key="dwell time before break preparation move">4</setting>
         <setting key="end of print purge volume">0</setting>
         <setting key="end of filament purge volume">0</setting>
+        <setting key="flush purge length">60</setting>
 
         <!-- material station (un)loading settings -->
         <setting key="maximum park duration">7200</setting>

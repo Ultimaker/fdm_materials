@@ -7,7 +7,7 @@
             <color>Green</color>
         </name>
         <GUID>7ff6d2c8-d626-48cd-8012-7725fa537cc9</GUID>
-        <version>30</version>
+        <version>31</version>
         <color_code>#78be20</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -32,6 +32,7 @@
         <setting key="dwell time before break preparation move">0</setting>
         <setting key="end of print purge volume">0</setting>
         <setting key="end of filament purge volume">0</setting>
+        <setting key="flush purge length">60</setting>
 
         <!-- material station (un)loading settings -->
         <setting key="maximum park duration">7200</setting>
