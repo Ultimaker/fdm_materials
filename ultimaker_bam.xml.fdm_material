@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d5f9</GUID>
-        <version>27</version>
+        <version>29</version>
         <color_code>#F1ECE1</color_code>
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -19,20 +19,26 @@
         <weight>750</weight>
     </properties>
     <settings>
-        <setting key="anti ooze retract position">-20</setting>
-        <setting key="anti ooze retract speed">10</setting>
-        <setting key="break preparation position">-10</setting>
-        <setting key="break preparation speed">1</setting>
+        <!-- Deprime settings -->
+        <setting key="anti ooze retract position">-12</setting>
+        <setting key="anti ooze retract speed">50</setting>
+        <setting key="break preparation position">-12</setting>
+        <setting key="break preparation speed">50</setting>
         <setting key="break preparation temperature">230</setting>
         <setting key="break position">-50</setting>
-        <setting key="break speed">25</setting>
+        <setting key="break speed">50</setting>
         <setting key="break temperature">95</setting>
-        <setting key="maximum park duration">7200</setting>
-        <setting key="no load move factor">0.945</setting>
-        <setting key="flush purge speed">0.5</setting>
-        <setting key="end of filament purge speed">0.5</setting>
+        <setting key="pressure release dwell time">25</setting>
+        <setting key="dwell time before break preparation move">0</setting>
+        <setting key="end of print purge volume">0</setting>
+        <setting key="end of filament purge volume">0</setting>
         <setting key="flush purge length">60</setting>
-        <setting key="end of filament purge length">20</setting>
+
+        <!-- material station (un)loading settings -->
+        <setting key="maximum park duration">7200</setting>
+        <setting key="no load move factor">0.92</setting>
+
+        <!-- print settings -->
         <setting key="print temperature">225</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">100</setting>
