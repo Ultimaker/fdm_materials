@@ -21,29 +21,5 @@
         <setting key="standby temperature">190</setting>
         <setting key="retraction amount">4.5</setting>
         <setting key="retraction speed">60</setting>
-        <machine>
-            <machine_identifier manufacturer="GOOFOO" product="goofoo" />
-            <setting key="print cooling">40.0</setting>
-            <setting key="standby temperature">190</setting>
-            <setting key="retraction speed">60</setting>
-            <setting key="heated bed temperature">50</setting>
-            <setting key="print temperature">190</setting>
-            <setting key="retraction amount">4.5</setting>
-            <hotend id="0.25mm thermoplastic extruder">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="retraction amount">4.5</setting>
-                <setting key="retraction speed">60</setting>
-            </hotend>
-            <hotend id="0.4mm thermoplastic extruder">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="retraction amount">4.5</setting>
-                <setting key="retraction speed">60</setting>
-            </hotend>
-            <hotend id="0.8mm thermoplastic extruder">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="retraction amount">4.5</setting>
-            <setting key="retraction speed">60</setting>
-            </hotend>
-        </machine>
     </settings>
 </fdmmaterial>
