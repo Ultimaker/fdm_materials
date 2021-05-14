@@ -19,13 +19,11 @@
     <weight>1000</weight>
   </properties>
   <settings>
-    <setting key="retraction speed">45.0</setting>
-    <setting key="build volume temperature">28</setting>
-    <setting key="adhesion tendency">0</setting>
     <setting key="heated bed temperature">80.0</setting>
     <setting key="print cooling">50.0</setting>
-    <setting key="surface energy">100</setting>
-    <setting key="standby temperature">175</setting>
     <setting key="print temperature">230.0</setting>
+    <setting key="retraction amount">4.5</setting>
+    <setting key="retraction speed">45.0</setting>
+    <setting key="standby temperature">175</setting>
   </settings>
 </fdmmaterial>

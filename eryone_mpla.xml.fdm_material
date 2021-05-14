@@ -7,7 +7,7 @@
       <color>Generic</color>
       <label>PLA Matte</label>
     </name>
-    <version>8</version>
+    <version>1</version>
     <GUID>03e828a2-7e43-4e83-8de0-2cd7ed9f2f7c</GUID>
     <color_code>#bfbfa7</color_code>
     <description>Eryone Matte PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
@@ -19,12 +19,11 @@
     <weight>1000</weight>
   </properties>
   <settings>
-    <setting key="standby temperature">175.0</setting>
-    <setting key="adhesion tendency">0</setting>
+    <setting key="heated bed temperature">60.0</setting>
+    <setting key="print cooling">100.0</setting>
+    <setting key="print temperature">205.0</setting>
     <setting key="retraction amount">3.5</setting>
     <setting key="retraction speed">45.0</setting>
-    <setting key="surface energy">100</setting>
-    <setting key="heated bed temperature">60.0</setting>
-    <setting key="print temperature">205.0</setting>
+    <setting key="standby temperature">175.0</setting>
   </settings>
 </fdmmaterial>
