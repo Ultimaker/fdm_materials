@@ -7,7 +7,7 @@
             <color>Silver</color>
         </name>
         <GUID>40a273c6-0e15-4db5-a278-8eb0b4a9e293</GUID>
-        <version>29</version>
+        <version>30</version>
         <color_code>#a1a1a0</color_code>
         <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -69,6 +69,28 @@
             </hotend>
         </machine>
 
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <setting key="heated bed temperature">85</setting>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">230</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="retraction amount">6.5</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">100</setting>
+                <setting key="print cooling">20</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
+		
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
             <hotend id="BB 0.4" />
