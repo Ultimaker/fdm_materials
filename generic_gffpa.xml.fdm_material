@@ -69,7 +69,7 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
                 <setting key="print cooling">50</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
-			<hotend id="CC 0.4">
+            <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">50</setting>
                 <setting key="retraction amount">6.5</setting>
@@ -98,7 +98,7 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
                 <setting key="print cooling">1</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
-			<hotend id="CC 0.4">
+            <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">1</setting>
                 <setting key="retraction amount">6.5</setting>
