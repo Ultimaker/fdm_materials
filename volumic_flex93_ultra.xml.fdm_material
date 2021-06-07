@@ -3,12 +3,12 @@
   <metadata>
     <name>
       <brand>Volumic</brand>
-      <material>TPE</material>
+      <material>TPU</material>
       <color>Generic</color>
       <label>FLEX93 Ultra</label>
     </name>
     <version>2</version>
-    <description>The Flex93 ULTRA, finally a flexible (Shore 93A) that prints quickly! print flex quickly with exceptional rendering.</description>
+	<description>The Flex93 ULTRA, finally a flexible (Shore 93A) that prints quickly! Print flex quickly with exceptional rendering.</description>
     <adhesion_info>Clean bed, no need of lac</adhesion_info>
     <color_code>#00ff00</color_code>
     <GUID>4fa79814-709b-45f5-b6af-1b61dd4ded15</GUID>
