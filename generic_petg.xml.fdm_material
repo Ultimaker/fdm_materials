@@ -10,7 +10,7 @@ Generic PETG profile. The data in this file may not be correct for your specific
             <color>Generic</color>
         </name>
         <GUID>1cbfaeb3-1906-4b26-b2e7-6f777a8c197a</GUID>
-        <version>12</version>
+        <version>13</version>
         <color_code>#ff5086</color_code>
         <description>Generic PETG profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -20,20 +20,26 @@ Generic PETG profile. The data in this file may not be correct for your specific
         <diameter>2.85</diameter>
     </properties>
     <settings>
-        <setting key="anti ooze retract position">-4</setting>
+        <!-- Deprime settings -->
+        <setting key="anti ooze retract position">0</setting>
         <setting key="anti ooze retract speed">5</setting>
-        <setting key="break preparation position">-16</setting>
-        <setting key="break preparation speed">50</setting>
+        <setting key="break preparation position">0</setting>
+        <setting key="break preparation speed">2</setting>
         <setting key="break preparation temperature">245</setting>
         <setting key="break position">-50</setting>
-        <setting key="break speed">25</setting>
-        <setting key="break temperature">75</setting>
-        <setting key="maximum park duration">7200</setting>
-        <setting key="no load move factor">0.95</setting>
-        <setting key="flush purge speed">0.5</setting>
-        <setting key="end of filament purge speed">0.5</setting>
+        <setting key="break speed">50</setting>
+        <setting key="break temperature">215</setting>
+        <setting key="pressure release dwell time">25</setting>
+        <setting key="dwell time before break preparation move">0</setting>
+        <setting key="end of print purge volume">0</setting>
+        <setting key="end of filament purge volume">0</setting>
         <setting key="flush purge length">60</setting>
-        <setting key="end of filament purge length">20</setting>
+
+        <!-- material station (un)loading settings -->
+        <setting key="maximum park duration">7200</setting>
+        <setting key="no load move factor">0.93</setting>
+
+        <!-- print settings -->
         <setting key="print temperature">240</setting>
         <setting key="heated bed temperature">85</setting>
         <setting key="standby temperature">175</setting>

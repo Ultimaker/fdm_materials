@@ -10,7 +10,7 @@ Generic ABS profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>60636bb4-518f-42e7-8237-fe77b194ebe0</GUID>
-        <version>24</version>
+        <version>25</version>
         <color_code>#8cb219</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -20,20 +20,26 @@ Generic ABS profile. The data in this file may not be correct for your specific 
         <diameter>2.85</diameter>
     </properties>
     <settings>
+        <!-- Deprime settings -->
         <setting key="anti ooze retract position">-4</setting>
-        <setting key="anti ooze retract speed">5</setting>
-        <setting key="break preparation position">-16</setting>
-        <setting key="break preparation speed">10</setting>
+        <setting key="anti ooze retract speed">3</setting>
+        <setting key="break preparation position">-12</setting>
+        <setting key="break preparation speed">50</setting>
         <setting key="break preparation temperature">230</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">85</setting>
-        <setting key="maximum park duration">7200</setting>
-        <setting key="no load move factor">0.95</setting>
-        <setting key="flush purge speed">0.5</setting>
-        <setting key="end of filament purge speed">0.5</setting>
+        <setting key="pressure release dwell time">25</setting>
+        <setting key="dwell time before break preparation move">4</setting>
+        <setting key="end of print purge volume">0</setting>
+        <setting key="end of filament purge volume">0</setting>
         <setting key="flush purge length">60</setting>
-        <setting key="end of filament purge length">20</setting>
+
+        <!-- material station (un)loading settings -->
+        <setting key="maximum park duration">7200</setting>
+        <setting key="no load move factor">0.92</setting>
+
+        <!-- print settings -->
         <setting key="print temperature">230</setting>
         <setting key="heated bed temperature">80</setting>
         <setting key="standby temperature">200</setting>
