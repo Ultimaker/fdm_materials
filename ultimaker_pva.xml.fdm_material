@@ -117,6 +117,9 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
+            <hotend id="CC 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="CC 0.6">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -144,6 +147,9 @@
             </hotend>
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC 0.4">
+                <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="CC 0.6">
                 <setting key="hardware compatible">no</setting>
