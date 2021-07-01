@@ -40,18 +40,16 @@
                 <setting key="print temperature">245</setting>
                 <setting key="retraction amount">2.0</setting>
             </hotend>
-            <!-- Commented out until eMotionTech adds their hotend profiles to Cura.
-            <hotend id="Standard 1.0">
+            <hotend id="Standard 1.0 Experimental">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">255</setting>
                 <setting key="retraction amount">2.0</setting>
             </hotend>
-            <hotend id="Standard 1.2">
+            <hotend id="Standard 1.2 Experimental">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">260</setting>
                 <setting key="retraction amount">2.3</setting>
             </hotend>
-            -->
         </machine>
     </settings>
 </fdmmaterial>
