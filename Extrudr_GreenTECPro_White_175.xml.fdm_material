@@ -7,10 +7,11 @@
       <color>White RAL 9003</color>
       <label>White GreenTEC Pro</label>
     </name>
-    <version>7</version>
+    <version>1</version>
     <GUID>3fe941d9-1ef9-4a3f-bd87-7e0f16fc1bdd</GUID>
     <color_code>#f8f9fb</color_code>
-    <description>Nozzel 210-230°C, Bed 20-90°C, Speed 40-60mm/s, Cooling 30-80%, Max 50% Layer hight.</description>
+    <description>GreenTEC Pro from the BIO-Performance series by Extrudr was specially developed for high-performance applications. The material is characterized by good flexural strength and low warping as well as the high-quality surface. In addition, it remains dimensionally stable at temperatures of up to 160 ° C.
+Manufacturer recommendation: Nozzel 210-230°C, Bed 20-90°C, Speed 40-60mm/s, Cooling 30-80%, Max 50% Layer hight.</description>
     <adhesion_info></adhesion_info>
   </metadata>
   <properties>
