@@ -29,5 +29,12 @@ Manufacturer recommendation: Nozzel 210-230°C, Bed 20-90°C, Speed 40-60mm/s, C
     <setting key="build volume temperature">28</setting>
     <setting key="retraction speed">45</setting>
     <setting key="retraction amount">5</setting>
+    <!-- Special printer parameters -->
+    <machine>
+       <machine_identifier manufacturer="WEEDO" product="Weedo X40"/>
+       <setting key="print temperature">210.0</setting>
+       <setting key="retraction speed">40</setting>
+       <setting key="retraction amount">5.5</setting>
+    </machine>
   </settings>
 </fdmmaterial>
