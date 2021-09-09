@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fdmmaterial xmlns="http://www.ultimaker.com/material" xmlns:cura="http://www.ultimaker.com/cura" version="1.3">
+  <metadata>
+    <name>
+      <brand>Verbatim</brand>
+      <material>PET-G</material>
+      <color>Blue RAL 5002</color>
+      <label>Blue PET-G</label>
+    </name>
+    <version>1</version>
+    <GUID>d7f0d3d9-e08a-48aa-b0af-1fa3478ea064</GUID>
+    <color_code>#162e7b</color_code>
+    <description>High impact strength, Excellent flexibility, Almost no warping or shrinkage, Hydrophobic (does not absorb water), Food packaging grade pellets used
+Odour neutral, Main applications: concept modelling for mechanics, medical, food containers, transparent objects.</description>
+    <adhesion_info></adhesion_info>
+  </metadata>
+  <properties>
+    <diameter>1.75</diameter>
+    <density>1.27</density>
+    <weight>1000</weight>
+  </properties>
+  <settings>
+        <setting key="print temperature">235.0</setting>
+        <setting key="heated bed temperature">90.0</setting>
+        <setting key="standby temperature">150.0</setting>
+        <setting key="print cooling">10.0</setting>
+        <setting key="adhesion tendency">0</setting>
+        <setting key="surface energy">100</setting>
+        <setting key="build volume temperature">28</setting>
+        <setting key="retraction speed">28.0</setting>
+        <setting key="retraction amount">4.5</setting>
+        <machine>
+           <machine_identifier manufacturer="WEEDO" product="Weedo X40"/>
+           <setting key="print temperature">225.0</setting>
+           <setting key="heated bed temperature">80.0</setting>
+           <setting key="retraction speed">30</setting>
+           <setting key="retraction amount">5</setting>
+       </machine>
+  </settings>
+</fdmmaterial>
