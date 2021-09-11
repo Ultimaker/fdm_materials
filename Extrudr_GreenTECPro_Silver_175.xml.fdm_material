@@ -31,7 +31,7 @@ Manufacturer recommendation: Nozzle 210-230°C, bed 20-90°C, speed 40-60mm/s, c
     <setting key="retraction amount">5</setting>
     <!-- Special printer parameters -->
     <machine>
-       <machine_identifier manufacturer="WEEDO" product="Weedo X40"/>
+       <machine_identifier manufacturer="Weedo" product="Weedo X40"/>
        <setting key="print temperature">210.0</setting>
        <setting key="retraction speed">40</setting>
        <setting key="retraction amount">5.5</setting>

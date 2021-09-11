@@ -30,7 +30,7 @@ Odour neutral, Main applications: concept modelling for mechanics, medical, food
         <setting key="retraction speed">28.0</setting>
         <setting key="retraction amount">4.5</setting>
         <machine>
-           <machine_identifier manufacturer="WEEDO" product="Weedo X40"/>
+           <machine_identifier manufacturer="Weedo" product="Weedo X40"/>
            <setting key="print temperature">225.0</setting>
            <setting key="heated bed temperature">80.0</setting>
            <setting key="retraction speed">30</setting>

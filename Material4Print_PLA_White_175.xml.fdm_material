@@ -29,7 +29,7 @@
         <setting key="retraction speed">28.0</setting>
         <setting key="retraction amount">4.5</setting>
         <machine>
-           <machine_identifier manufacturer="WEEDO" product="Weedo X40"/>
+           <machine_identifier manufacturer="Weedo" product="Weedo X40"/>
            <setting key="print temperature">200.0</setting>
            <setting key="retraction speed">40</setting>
            <setting key="retraction amount">5.5</setting>

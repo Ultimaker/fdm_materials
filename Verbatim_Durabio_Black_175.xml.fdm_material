@@ -29,7 +29,7 @@
         <setting key="retraction speed">30.0</setting>
         <setting key="retraction amount">5</setting>   
         <machine>
-           <machine_identifier manufacturer="WEEDO" product="Weedo X40"/>
+           <machine_identifier manufacturer="Weedo" product="Weedo X40"/>
            <setting key="heated bed temperature">80.0</setting>
            <setting key="retraction speed">30</setting>
            <setting key="retraction amount">5</setting>

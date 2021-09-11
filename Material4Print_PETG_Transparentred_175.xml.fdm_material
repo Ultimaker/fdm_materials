@@ -29,7 +29,7 @@
         <setting key="build volume temperature">28</setting>
         <setting key="retraction speed">28.0</setting>
         <machine>
-           <machine_identifier manufacturer="WEEDO" product="Weedo X40"/>
+           <machine_identifier manufacturer="Weedo" product="Weedo X40"/>
            <setting key="heated bed temperature">60.0</setting>
            <setting key="retraction speed">40</setting>
            <setting key="retraction amount">5.5</setting>
