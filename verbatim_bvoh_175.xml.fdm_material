@@ -20,9 +20,8 @@
     </properties>
     <settings>
         <setting key="print temperature">210</setting>
-        <!-- Special printer parameters -->
         <machine>
-           <machine_identifier manufacturer="WEEDO" product="Weedo X40"/>
+           <machine_identifier manufacturer="Weedo" product="Weedo X40"/>
            <setting key="standby temperature">175</setting>
            <setting key="heated bed temperature">60</setting>
            <setting key="retraction speed">45</setting>
