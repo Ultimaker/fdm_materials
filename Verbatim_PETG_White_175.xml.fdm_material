@@ -3,9 +3,9 @@
   <metadata>
     <name>
       <brand>Verbatim</brand>
-      <material>PET-G</material>
+      <material>PETG</material>
       <color>White RAL 9003</color>
-      <label>White PET-G</label>
+      <label>White PETG</label>
     </name>
     <version>1</version>
     <GUID>d94d1ae6-4578-476c-8461-79215505589d</GUID>
