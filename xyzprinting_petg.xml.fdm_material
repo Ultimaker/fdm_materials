@@ -3,31 +3,39 @@
   <metadata>
     <name>
       <brand>XYZprinting</brand>
-      <material>PLA</material>
+      <material>PETG</material>
       <color>Generic</color>
-      <label>Anti-Bact PLA</label>
+      <label>PETG</label>
     </name>
     <adhesion_info />
-    <GUID>17668dfb-eb1c-46a5-a513-bdb7c06959w3</GUID>
+    <GUID>17668dfb-eb1c-46a5-a513-bdb7c06959p3</GUID>
     <description></description>
     <color_code>#ffffff</color_code>
     <version>5</version>
   </metadata>
   <properties>
-    <density>1.25</density>
+    <density>1.28</density>
     <diameter>1.75</diameter>
     <weight>600</weight>
   </properties>
   <settings>
     <setting key="print cooling">100.0</setting>
-    <setting key="print temperature">210.0</setting>
+    <setting key="print temperature">220.0</setting>
     <setting key="heated bed temperature">45</setting>
-    <setting key="standby temperature">210</setting>
+    <setting key="standby temperature">220</setting>
+	<machine>
+            <machine_identifier manufacturer="XYZprinting" product="xyzprinting_da_vinci_jr_pro_xplus"/>
+			<setting key="hardware compatible">yes</setting>
+			<hotend id="Copper 0.4mm Nozzle" >
+				<setting key="print temperature">220.0</setting>
+				<setting key="heated bed temperature">60</setting>
+			</hotend>
+	</machine>
 	<machine>
             <machine_identifier manufacturer="XYZprinting" product="xyzprinting_da_vinci_1p0_pro"/>
 			<setting key="hardware compatible">yes</setting>
 			<hotend id="Copper 0.4mm Nozzle" >
-				<setting key="print temperature">190</setting>
+				<setting key="print temperature">235</setting>
 				<setting key="heated bed temperature">45</setting>
 			</hotend>
 	</machine>

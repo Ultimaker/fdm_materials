@@ -3,14 +3,14 @@
   <metadata>
     <name>
       <brand>XYZprinting</brand>
-      <material>PLA</material>
+      <material>TPU</material>
       <color>Generic</color>
-      <label>Anti-Bact PLA</label>
+      <label>TPU</label>
     </name>
     <adhesion_info />
-    <GUID>17668dfb-eb1c-46a5-a513-bdb7c06959w3</GUID>
+    <GUID>17668dfb-eb1c-46a5-a513-bdb7c06959fw</GUID>
     <description></description>
-    <color_code>#ffffff</color_code>
+    <color_code>#ff0000</color_code>
     <version>5</version>
   </metadata>
   <properties>
@@ -23,13 +23,5 @@
     <setting key="print temperature">210.0</setting>
     <setting key="heated bed temperature">45</setting>
     <setting key="standby temperature">210</setting>
-	<machine>
-            <machine_identifier manufacturer="XYZprinting" product="xyzprinting_da_vinci_1p0_pro"/>
-			<setting key="hardware compatible">yes</setting>
-			<hotend id="Copper 0.4mm Nozzle" >
-				<setting key="print temperature">190</setting>
-				<setting key="heated bed temperature">45</setting>
-			</hotend>
-	</machine>
   </settings>
 </fdmmaterial>

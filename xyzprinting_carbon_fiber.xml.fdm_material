@@ -8,13 +8,13 @@
       <label>Carbon Fiber</label>
     </name>
     <adhesion_info />
-    <GUID>17668dfb-eb1c-46a5-a513-bdb7c06959fd</GUID>
+    <GUID>17668dfb-eb1c-46a5-a513-bdb7c06953fc</GUID>
     <description></description>
     <color_code>#000000</color_code>
     <version>5</version>
   </metadata>
   <properties>
-    <density>1</density>
+    <density>1.20</density>
     <diameter>1.75</diameter>
     <weight>600</weight>
   </properties>
@@ -23,5 +23,13 @@
     <setting key="print temperature">215.0</setting>
     <setting key="heated bed temperature">45</setting>
     <setting key="standby temperature">215</setting>
+	<machine>
+            <machine_identifier manufacturer="XYZprinting" product="xyzprinting_da_vinci_jr_w_pro"/>
+			<setting key="hardware compatible">yes</setting>
+			<hotend id="Stainless Steel 0.4mm Nozzle" >
+				<setting key="print temperature">205</setting>
+				<setting key="heated bed temperature">45</setting>
+			</hotend>
+	</machine>
   </settings>
 </fdmmaterial>

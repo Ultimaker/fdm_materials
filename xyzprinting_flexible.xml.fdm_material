@@ -14,14 +14,14 @@
     <version>5</version>
   </metadata>
   <properties>
-    <density>1</density>
+    <density>1.11</density>
     <diameter>1.75</diameter>
     <weight>600</weight>
   </properties>
   <settings>
     <setting key="print cooling">100.0</setting>
-    <setting key="print temperature">235.0</setting>
+    <setting key="print temperature">220.0</setting>
     <setting key="heated bed temperature">70</setting>
-    <setting key="standby temperature">235</setting>
+    <setting key="standby temperature">220</setting>
   </settings>
 </fdmmaterial>

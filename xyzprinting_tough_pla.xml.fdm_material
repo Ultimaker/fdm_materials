@@ -14,7 +14,7 @@
     <version>5</version>
   </metadata>
   <properties>
-    <density>1</density>
+    <density>1.25</density>
     <diameter>1.75</diameter>
     <weight>600</weight>
   </properties>
@@ -23,5 +23,13 @@
     <setting key="print temperature">210.0</setting>
     <setting key="heated bed temperature">45</setting>
     <setting key="standby temperature">210</setting>
+	<machine>
+            <machine_identifier manufacturer="XYZprinting" product="xyzprinting_da_vinci_1p0_pro"/>
+			<setting key="hardware compatible">yes</setting>
+			<hotend id="Copper 0.4mm Nozzle" >
+				<setting key="print temperature">190</setting>
+				<setting key="heated bed temperature">45</setting>
+			</hotend>
+	</machine>
   </settings>
 </fdmmaterial>
