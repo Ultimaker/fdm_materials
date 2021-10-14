@@ -4,12 +4,12 @@
     <name>
       <brand>XYZprinting</brand>
       <material>TPE</material>
-      <color>Generic</color>
+      <color>White</color>
       <label>Flexible</label>
     </name>
     <adhesion_info />
     <GUID>17668dfb-eb1c-46a5-a513-bdb7c06959sc</GUID>
-    <description></description>
+    <description>XYZprinting’s Thermoplastic Elastomer is a specially formulated filament that has elastic properties that provide flexible and durable prints. It is non-toxic and completely waterproof, making this a safe and resilient filament for all of your innovative projects.</description>
     <color_code>#ffffff</color_code>
     <version>5</version>
   </metadata>

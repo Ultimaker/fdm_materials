@@ -4,12 +4,12 @@
     <name>
       <brand>XYZprinting</brand>
       <material>PLA</material>
-      <color>Generic</color>
+      <color>Transparent</color>
       <label>Color Inkjet PLA</label>
     </name>
     <adhesion_info />
     <GUID>17668dfb-eb1c-46a5-a513-bdb7c06959wy</GUID>
-    <description></description>
+    <description>3D Color-inkjet PLA is the filament designed for da Vinci Color to bring full color to your 3D-printed models.</description>
     <color_code>#ffffff</color_code>
     <version>5</version>
   </metadata>
