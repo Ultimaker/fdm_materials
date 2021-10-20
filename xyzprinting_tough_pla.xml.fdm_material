@@ -4,11 +4,11 @@
     <name>
       <brand>XYZprinting</brand>
       <material>Tough PLA</material>
-      <color>Black White</color>
+      <color>Nature White</color>
       <label>Tough PLA</label>
     </name>
     <adhesion_info />
-    <GUID>17668dfb-eb1c-46a5-a513-bdb7c06959fw</GUID>
+    <GUID>E1D50B96-E918-499F-A585-1E370977AF4D</GUID>
     <description>XYZprinting Tough PLA is a biocompostible consumable that has better toughness than ABS and has stronger impact resistance than PLA. This allows you to create durable, impact resistant tools, accessories, and parts that make your finished product more reliable.</description>
     <color_code>#ffffff</color_code>
     <version>5</version>

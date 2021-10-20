@@ -4,13 +4,13 @@
     <name>
       <brand>XYZprinting</brand>
       <material>ABS</material>
-      <color>Generic</color>
+      <color>White</color>
       <label>ABS</label>
     </name>
     <adhesion_info />
-    <GUID>17668dfb-eb1c-46a5-a513-bdb7c06559fd</GUID>
+    <GUID>E5ED1730-80CF-4117-AE59-4C4DA7E2CDB0</GUID>
     <description>XYZprinting produces high quality, long lasting, ABS filaments that offer better impact resistance making it suitable for external components or model parts. Additionally, you can easily use common modeling tools to decorate, assemble or connect different parts to create your next big project.</description>
-    <color_code>#000000</color_code>
+    <color_code>#ffffff</color_code>
     <version>5</version>
   </metadata>
   <properties>

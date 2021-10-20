@@ -4,13 +4,13 @@
     <name>
       <brand>XYZprinting</brand>
       <material>TPU</material>
-      <color>Generic</color>
+      <color>Nature White</color>
       <label>TPU</label>
     </name>
     <adhesion_info />
-    <GUID>17668dfb-eb1c-46a5-a513-bdb7c06959fw</GUID>
+    <GUID>FE227776-1907-455D-9363-BF17450C0763</GUID>
     <description>TPU (thermoplastic polyurethane) filaments are tough, strong and durable, and shaped products are soft and elastic.</description>
-    <color_code>#ff0000</color_code>
+    <color_code>#ffffff</color_code>
     <version>5</version>
   </metadata>
   <properties>

@@ -4,7 +4,7 @@
     <name>
       <brand>XYZprinting</brand>
       <material>PETG</material>
-      <color>Generic</color>
+      <color>Nature White</color>
       <label>PETG</label>
     </name>
     <adhesion_info />
@@ -12,7 +12,7 @@
     <description>XYZprinting's PETG filament is a versatile material with high transparency and high impact resistance. It's easy to print with, tough, warp resistant, and recyclable.
 
 * PETG cannot be used with 0.3 mm nozzles on Jr. Series printers.</description>
-    <color_code>#ffffff</color_code>
+    <color_code>#FFFFFF</color_code>
     <version>5</version>
   </metadata>
   <properties>

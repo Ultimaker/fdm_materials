@@ -4,11 +4,11 @@
     <name>
       <brand>XYZprinting</brand>
       <material>Carbon Fiber</material>
-      <color>Generic</color>
+      <color>Black</color>
       <label>Carbon Fiber</label>
     </name>
     <adhesion_info />
-    <GUID>17668dfb-eb1c-46a5-a513-bdb7c06953fc</GUID>
+    <GUID>0F4A6897-4AA5-41DD-A1D1-86B1297CF1A6</GUID>
     <description>Made from a mixture of PLA (polylactic acid) and carbon fiber, our XYZ Carbon Fiber filament lets you print 3D models with better impact resistance and an exotic finish.</description>
     <color_code>#000000</color_code>
     <version>5</version>

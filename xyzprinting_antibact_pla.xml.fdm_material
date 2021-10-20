@@ -4,13 +4,13 @@
     <name>
       <brand>XYZprinting</brand>
       <material>PLA</material>
-      <color>Red Yellow Green White</color>
+      <color>White</color>
       <label>Anti-Bact PLA</label>
     </name>
     <adhesion_info />
-    <GUID>17668dfb-eb1c-46a5-a513-bdb7c06959w3</GUID>
+    <GUID>46697AB6-3AFC-4270-AA45-3DC06F15B4F7</GUID>
     <description>Designed with antibacterial properties, our Antibacterial PLA (polylactic acid) greatly reduces the spread of germs and infections. It’s a material ideal for bringing 3D printing into daily lives, households, and schools.</description>
-    <color_code>#ffffff</color_code>
+    <color_code>#FFFFFF</color_code>
     <version>5</version>
   </metadata>
   <properties>
