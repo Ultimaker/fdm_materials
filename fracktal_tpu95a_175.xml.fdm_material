@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
+    <metadata>
+        <name>
+            <brand>Fracktal Works</brand>
+            <material>TPU 95A</material>
+            <color>Generic</color>
+        </name>
+        <GUID>641e2133-2813-422a-a877-04864d191b36</GUID>
+        <version>7</version>
+        <color_code>#B22744</color_code>
+        <description>Flexible Material</description>
+        <adhesion_info>Apply gluestick on bed to improve adhearsion.</adhesion_info>
+    </metadata>
+    <properties>
+        <density>1.23</density>
+        <diameter>1.75</diameter>
+    </properties>
+    <settings>
+        <setting key="print temperature">230</setting>
+        <setting key="heated bed temperature">60</setting>
+        <setting key="standby temperature">175</setting>
+        <setting key="adhesion tendency">0</setting>
+        <setting key="surface energy">70</setting>
+        <setting key="print cooling">100</setting>
+        <setting key="retraction speed">15</setting>
+        <setting key="retraction amount">0.2</setting>
+    </settings>
+</fdmmaterial>
