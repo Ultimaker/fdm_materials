@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>a8955dc3-9d7e-404d-8c03-0fd6fee7f22d</GUID>
-        <version>27</version>
+        <version>31</version>
         <color_code>#2a292a</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -19,22 +19,28 @@
         <weight>750</weight>
     </properties>
     <settings>
-        <setting key="anti ooze retract position">-4</setting>
-        <setting key="anti ooze retract speed">5</setting>
-        <setting key="break preparation position">-16</setting>
+        <!-- Deprime settings -->
+        <setting key="anti ooze retract position">-20</setting>
+        <setting key="anti ooze retract speed">50</setting>
+        <setting key="break preparation position">-20</setting>
         <setting key="break preparation speed">2</setting>
         <setting key="break preparation temperature">250</setting>
         <setting key="break position">-50</setting>
-        <setting key="break speed">25</setting>
+        <setting key="break speed">50</setting>
         <setting key="break temperature">75</setting>
-        <setting key="maximum park duration">7200</setting>
-        <setting key="no load move factor">0.95</setting>
-        <setting key="flush purge speed">0.5</setting>
-        <setting key="end of filament purge speed">0.5</setting>
+        <setting key="pressure release dwell time">25</setting>
+        <setting key="dwell time before break preparation move">0</setting>
+        <setting key="end of print purge volume">0</setting>
+        <setting key="end of filament purge volume">0</setting>
         <setting key="flush purge length">60</setting>
-        <setting key="end of filament purge length">20</setting>
+
+        <!-- material station (un)loading settings -->
+        <setting key="maximum park duration">7200</setting>
+        <setting key="no load move factor">0.92</setting>
+
+        <!-- print settings -->
         <setting key="print temperature">240</setting>
-        <setting key="heated bed temperature">70</setting>
+        <setting key="heated bed temperature">85</setting>
         <setting key="standby temperature">175</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
@@ -58,6 +64,7 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <setting key="heated bed temperature">85</setting>
             <cura:setting key="retraction_combing_max_distance">40</cura:setting>
             <cura:setting key="retraction_combing">all</cura:setting>
             <hotend id="BB 0.4" />
@@ -73,49 +80,63 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">80</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <setting key="heated bed temperature">85</setting>
+            <setting key="hardware compatible">yes</setting>
+            <hotend id="0.25 mm">
+                <setting key="print temperature">245</setting>
+            </hotend>
+            <hotend id="0.4 mm">
+                <setting key="print temperature">250</setting>
+            </hotend>
+            <hotend id="0.6 mm">
+                <setting key="print temperature">260</setting>
+            </hotend>
+            <hotend id="0.8 mm">
+                <setting key="print temperature">260</setting>
             </hotend>
         </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <setting key="heated bed temperature">85</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">75</setting>
                 <setting key="print temperature">230</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">75</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="print cooling">20</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">80</setting>
             </hotend>
         </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <setting key="heated bed temperature">85</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">75</setting>
                 <setting key="print temperature">230</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">75</setting>
                 <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
@@ -123,7 +144,6 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">80</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
             </hotend>

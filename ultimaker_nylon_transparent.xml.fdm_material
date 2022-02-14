@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>e256615d-a04e-4f53-b311-114b90560af9</GUID>
-        <version>24</version>
+        <version>27</version>
         <color_code>#d0d0d0</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -19,6 +19,7 @@
         <weight>750</weight>
     </properties>
     <settings>
+        <!-- Deprime settings -->
         <setting key="anti ooze retract position">-8</setting>
         <setting key="anti ooze retract speed">25</setting>
         <setting key="break preparation position">0</setting>
@@ -27,12 +28,17 @@
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">145</setting>
-        <setting key="maximum park duration">7200</setting>
-        <setting key="no load move factor">0.935</setting>
-        <setting key="flush purge speed">0.5</setting>
-        <setting key="end of filament purge speed">0.5</setting>
+        <setting key="pressure release dwell time">25</setting>
+        <setting key="dwell time before break preparation move">0</setting>
+        <setting key="end of print purge volume">0</setting>
+        <setting key="end of filament purge volume">0</setting>
         <setting key="flush purge length">60</setting>
-        <setting key="end of filament purge length">20</setting>
+
+        <!-- material station (un)loading settings -->
+        <setting key="maximum park duration">7200</setting>
+        <setting key="no load move factor">0.91</setting>
+
+        <!-- print settings -->
         <setting key="print temperature">245</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">175</setting>
@@ -47,6 +53,16 @@
         <setting key="relative extrusion">1.0</setting>
         <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+
+            <hotend id="0.25 mm" />
+            <hotend id="0.4 mm" />
+            <hotend id="0.6 mm" />
+            <hotend id="0.8 mm" />
+        </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
@@ -66,6 +82,23 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction speed">45</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <setting key="hardware compatible">yes</setting>
+            <hotend id="0.25 mm">
+                <setting key="print temperature">240</setting>
+            </hotend>
+            <hotend id="0.4 mm">
+                <setting key="print temperature">250</setting>
+            </hotend>
+            <hotend id="0.6 mm">
+                <setting key="print temperature">255</setting>
+            </hotend>
+            <hotend id="0.8 mm">
+                <setting key="print temperature">260</setting>
             </hotend>
         </machine>
 
@@ -125,15 +158,6 @@
                 <setting key="hardware compatible">no</setting>
                 <setting key="hardware recommended">no</setting>
             </buildplate>
-        </machine>
-        <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
-
-            <hotend id="0.25 mm" />
-            <hotend id="0.4 mm" />
-            <hotend id="0.6 mm" />
-            <hotend id="0.8 mm" />
         </machine>
     </settings>
 </fdmmaterial>

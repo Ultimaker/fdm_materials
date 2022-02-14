@@ -10,7 +10,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
             <color>Generic</color>
         </name>
         <GUID>aa22e9c7-421f-4745-afc2-81851694394a</GUID>
-        <version>25</version>
+        <version>27</version>
         <color_code>#85f9de</color_code>
         <description>Fatigue and chemical resistant. Polypropylene offers excellent temperature, chemical and fatigue resistance. Its toughness and low friction make it a perfect choice for prototyping and creating durable end-use models.</description>
         <adhesion_info>Adhesion sheets are required.</adhesion_info>
@@ -20,20 +20,26 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
         <density>0.89</density>
     </properties>
     <settings>
-        <setting key="anti ooze retract position">-8</setting>
-        <setting key="anti ooze retract speed">40</setting>
-        <setting key="break preparation position">-8</setting>
-        <setting key="break preparation speed">17<!--?--></setting>
+        <!-- Deprime settings -->
+        <setting key="anti ooze retract position">-16</setting>
+        <setting key="anti ooze retract speed">50</setting>
+        <setting key="break preparation position">-16</setting>
+        <setting key="break preparation speed">50</setting>
         <setting key="break preparation temperature">220</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">105</setting>
-        <setting key="maximum park duration">7200</setting>
-        <setting key="no load move factor">1.01</setting>
-        <setting key="flush purge speed">0.5</setting>
-        <setting key="end of filament purge speed">0.5</setting>
+        <setting key="pressure release dwell time">25</setting>
+        <setting key="dwell time before break preparation move">0</setting>
+        <setting key="end of print purge volume">0</setting>
+        <setting key="end of filament purge volume">0</setting>
         <setting key="flush purge length">60</setting>
-        <setting key="end of filament purge length">20</setting>
+
+        <!-- material station (un)loading settings -->
+        <setting key="maximum park duration">7200</setting>
+        <setting key="no load move factor">1.00</setting>
+
+        <!-- print settings -->
         <setting key="print temperature">220</setting>
         <setting key="heated bed temperature">100</setting>
         <setting key="standby temperature">185</setting>
@@ -83,6 +89,25 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">7</setting>
                 <setting key="print cooling">10</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <setting key="hardware compatible">yes</setting>
+            <setting key="retraction amount">8</setting>
+            <setting key="retraction speed">25</setting>
+            <hotend id="0.25 mm">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="0.4 mm">
+                <setting key="print temperature">220</setting>
+            </hotend>
+            <hotend id="0.6 mm">
+                <setting key="print temperature">230</setting>
+            </hotend>
+            <hotend id="0.8 mm">
+                <setting key="print temperature">240</setting>
             </hotend>
         </machine>
 

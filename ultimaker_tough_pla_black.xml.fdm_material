@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>03f24266-0291-43c2-a6da-5211892a2699</GUID>
-        <version>19</version>
+        <version>22</version>
         <color_code>#2a292a</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -19,20 +19,26 @@
         <weight>750</weight>
     </properties>
     <settings>
+        <!-- Deprime settings -->
         <setting key="anti ooze retract position">-4</setting>
-        <setting key="anti ooze retract speed">5</setting>
-        <setting key="break preparation position">-16</setting>
-        <setting key="break preparation speed">2</setting>
+        <setting key="anti ooze retract speed">50</setting>
+        <setting key="break preparation position">-14</setting>
+        <setting key="break preparation speed">50</setting>
         <setting key="break preparation temperature">230</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">60</setting>
-        <setting key="maximum park duration">7200</setting>
-        <setting key="no load move factor">0.935</setting>
-        <setting key="flush purge speed">0.5</setting>
-        <setting key="end of filament purge speed">0.5</setting>
+        <setting key="pressure release dwell time">25</setting>
+        <setting key="dwell time before break preparation move">4</setting>
+        <setting key="end of print purge volume">0</setting>
+        <setting key="end of filament purge volume">0</setting>
         <setting key="flush purge length">60</setting>
-        <setting key="end of filament purge length">20</setting>
+
+        <!-- material station (un)loading settings -->
+        <setting key="maximum park duration">7200</setting>
+        <setting key="no load move factor">0.93</setting>
+
+        <!-- print settings -->
         <setting key="print temperature">225</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">175</setting>
@@ -62,6 +68,23 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">5</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+
+            <hotend id="0.25 mm">
+                <setting key="print temperature">210</setting>
+            </hotend>
+            <hotend id="0.4 mm">
+                <setting key="print temperature">225</setting>
+            </hotend>
+            <hotend id="0.6 mm">
+                <setting key="print temperature">245</setting>
+            </hotend>
+            <hotend id="0.8 mm">
+                <setting key="print temperature">255</setting>
             </hotend>
         </machine>
 

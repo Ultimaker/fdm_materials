@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>8a38a3e9-ecf7-4a7d-a6a9-e7ac35102968</GUID>
-        <version>26</version>
+        <version>29</version>
         <color_code>#d0d0d0</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
@@ -19,20 +19,26 @@
         <weight>750</weight>
     </properties>
     <settings>
-        <setting key="anti ooze retract position">-4</setting>
-        <setting key="anti ooze retract speed">5</setting>
+        <!-- Deprime settings -->
+        <setting key="anti ooze retract position">-7</setting>
+        <setting key="anti ooze retract speed">50</setting>
         <setting key="break preparation position">-16</setting>
-        <setting key="break preparation speed">2</setting>
+        <setting key="break preparation speed">50</setting>
         <setting key="break preparation temperature">275</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
-        <setting key="break temperature">105</setting>
-        <setting key="maximum park duration">7200</setting>
-        <setting key="no load move factor">0.94</setting>
-        <setting key="flush purge speed">0.5</setting>
-        <setting key="end of filament purge speed">0.5</setting>
+        <setting key="break temperature">95</setting>
+        <setting key="pressure release dwell time">25</setting>
+        <setting key="dwell time before break preparation move">2</setting>
+        <setting key="end of print purge volume">0</setting>
+        <setting key="end of filament purge volume">0</setting>
         <setting key="flush purge length">60</setting>
-        <setting key="end of filament purge length">20</setting>
+
+        <!-- material station (un)loading settings -->
+        <setting key="maximum park duration">7200</setting>
+        <setting key="no load move factor">0.92</setting>
+
+        <!-- print settings -->
         <setting key="print temperature">270</setting>
         <setting key="heated bed temperature">107</setting>
         <setting key="standby temperature">175</setting>
@@ -78,6 +84,16 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">5</setting>
             </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <setting key="print temperature">260</setting>
+            <setting key="hardware compatible">yes</setting>
+            <hotend id="0.25 mm" />
+            <hotend id="0.4 mm" />
+            <hotend id="0.6 mm" />
+            <hotend id="0.8 mm" />
         </machine>
 
         <machine>
@@ -136,26 +152,5 @@
                 <setting key="hardware recommended">yes</setting>
             </buildplate>
         </machine>
-
-        <machine>
-           <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
-           <setting key="print cooling">0.0</setting>
-           <setting key="standby temperature">160</setting>
-           <setting key="retraction speed">40</setting>
-           <setting key="heated bed temperature">135</setting>
-           <setting key="print temperature">245</setting>
-           <hotend id="0.25mm thermoplastic extruder">
-               <setting key="hardware compatible">yes</setting>
-               <setting key="retraction amount">1.0</setting>
-           </hotend>
-           <hotend id="0.4mm thermoplastic extruder">
-               <setting key="hardware compatible">yes</setting>
-               <setting key="retraction amount">1.0</setting>
-           </hotend>
-           <hotend id="0.8mm thermoplastic extruder">
-               <setting key="hardware compatible">yes</setting>
-               <setting key="retraction amount">1.5</setting>
-           </hotend>
-       </machine>
     </settings>
 </fdmmaterial>
