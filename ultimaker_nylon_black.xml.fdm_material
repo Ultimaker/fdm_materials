@@ -90,12 +90,15 @@
             <setting key="hardware compatible">yes</setting>
             <hotend id="0.25 mm">
                 <setting key="print temperature">240</setting>
+                <setting key="retraction speed">45</setting>
             </hotend>
             <hotend id="0.4 mm">
                 <setting key="print temperature">250</setting>
+                <setting key="retraction speed">45</setting>
             </hotend>
             <hotend id="0.6 mm">
                 <setting key="print temperature">255</setting>
+                <setting key="retraction speed">45</setting>
             </hotend>
             <hotend id="0.8 mm">
                 <setting key="print temperature">260</setting>
