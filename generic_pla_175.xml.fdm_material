@@ -85,18 +85,18 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
 
         <machine>
             <machine_identifier manufacturer="CreawsomeMod" product="creality_base" />
-            <machine_identifier manufacturer="Creality3D" product="creality_cr10" />
-            <machine_identifier manufacturer="Creality3D" product="creality_cr10s" />
-            <machine_identifier manufacturer="Creality3D" product="creality_cr10spro" />
-            <machine_identifier manufacturer="Creality3D" product="creality_cr10s4" />
-            <machine_identifier manufacturer="Creality3D" product="creality_cr10s5" />
-            <machine_identifier manufacturer="Creality3D" product="creality_cr10mini" />
-            <machine_identifier manufacturer="Creality3D" product="creality_cr20" />
-            <machine_identifier manufacturer="Creality3D" product="creality_cr20pro" />
-            <machine_identifier manufacturer="Creality3D" product="creality_ender2" />
-            <machine_identifier manufacturer="Creality3D" product="creality_ender3" />
-            <machine_identifier manufacturer="Creality3D" product="creality_ender4" />
-            <machine_identifier manufacturer="Creality3D" product="creality_ender5" />
+            <machine_identifier manufacturer="Blocks" product="creality_cr10" />
+            <machine_identifier manufacturer="Blocks" product="creality_cr10s" />
+            <machine_identifier manufacturer="Blocks" product="creality_cr10spro" />
+            <machine_identifier manufacturer="Blocks" product="creality_cr10s4" />
+            <machine_identifier manufacturer="Blocks" product="creality_cr10s5" />
+            <machine_identifier manufacturer="Blocks" product="creality_cr10mini" />
+            <machine_identifier manufacturer="Blocks" product="creality_cr20" />
+            <machine_identifier manufacturer="Blocks" product="creality_cr20pro" />
+            <machine_identifier manufacturer="Blocks" product="creality_ender2" />
+            <machine_identifier manufacturer="Blocks" product="creality_ender3" />
+            <machine_identifier manufacturer="Blocks" product="creality_ender4" />
+            <machine_identifier manufacturer="Blocks" product="creality_ender5" />
             <setting key="print cooling">100</setting>
             <setting key="standby temperature">180</setting>
             <setting key="retraction speed">45</setting>
@@ -108,15 +108,18 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
         <machine>
             <machine_identifier manufacturer="Tronxy" product="tronxy_x" />
             <machine_identifier manufacturer="Tronxy" product="tronxy_x5sa" />
+            <machine_identifier manufacturer="Tronxy" product="tronxy_x5sa_pro" />
             <machine_identifier manufacturer="Tronxy" product="tronxy_x5sa_400" />
             <machine_identifier manufacturer="Tronxy" product="tronxy_x5sa_500" />
             <machine_identifier manufacturer="Tronxy" product="tronxy_d01" />
             <machine_identifier manufacturer="Tronxy" product="tronxy_xy2" />
             <machine_identifier manufacturer="Tronxy" product="tronxy_xy2pro" />
             <machine_identifier manufacturer="Tronxy" product="tronxy_xy3" />
-            <machine_identifier manufacturer="Tronxy" product="tronxy_xy3proV2" />
-            <setting key="print cooling">100</setting>
+
+            <setting key="print cooling">75</setting>
             <setting key="standby temperature">180</setting>
+            <setting key="retraction speed">40</setting>
+            <setting key="retraction amount">5</setting>
             <setting key="print temperature">200</setting>
             <setting key="heated bed temperature">55</setting>
         </machine>
@@ -128,12 +131,34 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
             <setting key="heated bed temperature">50</setting>
         </machine>
 
-	<machine>
+	    <machine>
             <machine_identifier manufacturer="IMADE3D" product="IMADE3D JellyBOX"/>
             <setting key="print temperature">210</setting>
             <setting key="heated bed temperature">55</setting>
             <hotend id="0.4 mm" />
         </machine>
+       
+         <machine>
+            <machine_identifier manufacturer="Blocks" product="blocks_mkii" />
+            <machine_identifier manufacturer="Blocks" product="blocks_pros30" />
+            <machine_identifier manufacturer="Blocks" product="blocks_zero" />
+            <setting key="print cooling">100</setting>
+            <setting key="retraction amount">6.5</setting>
+            <setting key="print temperature">210</setting>
+            <setting key="heated bed temperature">50</setting>
+            <setting key="retraction speed">40</setting>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Blocks" product="blocks_r21" />
+            <machine_identifier manufacturer="Blocks" product="blocks_pros100" />
+            <setting key="print cooling">100</setting>
+            <setting key="retraction amount">1</setting>
+            <setting key="print temperature">210</setting>
+            <setting key="heated bed temperature">50</setting>
+            <setting key="retraction speed">50</setting>
+        </machine>
+
 
     </settings>
 </fdmmaterial>
