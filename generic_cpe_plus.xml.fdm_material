@@ -6,8 +6,9 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
     <metadata>
         <name>
             <brand>Generic</brand>
-            <material>CPE+</material>
+            <material>CPE</material>
             <color>Generic</color>
+            <label>CPE+</label>
         </name>
         <GUID>e2409626-b5a0-4025-b73e-b58070219259</GUID>
         <version>27</version>

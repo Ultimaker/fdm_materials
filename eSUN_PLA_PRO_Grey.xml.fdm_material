@@ -3,8 +3,9 @@
     <metadata>
         <name>
             <brand>eSUN</brand>
-            <material>PLA+</material>
+            <material>PLA</material>
             <color>Grey</color>
+            <label>Gray PLA+</label>
         </name>
         <color_code>#999999</color_code>
         <GUID>061cc7c6-77b1-4d76-996f-d049546b41d2</GUID>
