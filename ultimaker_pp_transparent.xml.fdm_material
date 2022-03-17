@@ -46,6 +46,7 @@
         <setting key="retraction speed">35</setting>
         <cura:setting key="material_shrinkage_percentage">100</cura:setting>
         <setting key="build volume temperature">41</setting>
+        <cura:setting key="skirt_brim_extruder_nr">-1</cura:setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
