@@ -3,31 +3,31 @@
   <metadata>
     <name>
       <brand>Eryone</brand>
-      <material>PLA</material>
+      <material>TPU</material>
       <color>Generic</color>
-      <label>PLA</label>
+      <label>TPU DD</label>
     </name>
     <version>8</version>
-    <GUID>4cb53666-594b-452f-aba4-0e5a12b185d9</GUID>
-    <color_code>#ff0000</color_code>
-    <description>Eryone PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
+    <GUID>ff52b30e-5740-4f70-a7b5-8c436fc9954f</GUID>
+    <color_code>#0055ff</color_code>
+    <description>Wear and tear resistant. Eryone TPU features a Shore hardness of 95A. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
     <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
   </metadata>
   <properties>
     <diameter>1.75</diameter>
-    <density>1.24</density>
-    <weight>1000</weight>
+    <density>1.22</density>
+    <weight>500</weight>
   </properties>
   <settings>
-    <setting key="heated bed temperature">60.0</setting>
+    <setting key="heated bed temperature">50.0</setting>
     <setting key="print cooling">100.0</setting>
-    <setting key="print temperature">195.0</setting>
-    <setting key="retraction amount">6.5</setting>
-    <setting key="retraction speed">45.0</setting>
+    <setting key="print temperature">235</setting>
+    <setting key="retraction amount">6.0</setting>
+    <setting key="retraction speed">40.0</setting>
     <setting key="standby temperature">175.0</setting>
     <machine>
       <machine_identifier manufacturer="Eryone" product="eryone_thinker_direct" />
-      <setting key="retraction amount">0.3</setting>
+      <setting key="retraction amount">0.35</setting>
       <setting key="retraction speed">35.0</setting>
     </machine>
   </settings>
