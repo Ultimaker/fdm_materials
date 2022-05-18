@@ -23,7 +23,7 @@ Generic PVA profile. The data in this file may not be correct for your specific 
         <setting key="print temperature">215</setting>
         <setting key="standby temperature">175</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
-
+        <cura:setting key="travel_avoid_supports">False</cura:setting>
         <machine>
             <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
             <setting key="print cooling">0.0</setting>

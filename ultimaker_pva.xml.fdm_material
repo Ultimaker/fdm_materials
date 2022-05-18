@@ -70,6 +70,7 @@
         <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">175</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
+        <cura:setting key="travel_avoid_supports">False</cura:setting>
         <setting key="build volume temperature">35</setting>
 
         <!-- For material flow sensor -->
