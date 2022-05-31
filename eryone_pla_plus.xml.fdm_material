@@ -5,29 +5,29 @@
       <brand>Eryone</brand>
       <material>PLA</material>
       <color>Generic</color>
-      <label>PLA Matte</label>
+      <label>PLA Plus</label>
     </name>
     <version>8</version>
-    <GUID>03e828a2-7e43-4e83-8de0-2cd7ed9f2f7c</GUID>
-    <color_code>#bfbfa7</color_code>
-    <description>Eryone Matte PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
+    <GUID>be7d9580-f02c-4137-a7e0-2a2797a056d9</GUID>
+    <color_code>#4d6280</color_code>
+    <description>Eryone PLA Plus is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
     <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
   </metadata>
   <properties>
-    <density>1.45</density>
     <diameter>1.75</diameter>
+    <density>1.24</density>
     <weight>1000</weight>
   </properties>
   <settings>
     <setting key="heated bed temperature">60.0</setting>
     <setting key="print cooling">100.0</setting>
-    <setting key="print temperature">205.0</setting>
-    <setting key="retraction amount">3.5</setting>
+    <setting key="print temperature">215.0</setting>
+    <setting key="retraction amount">6.5</setting>
     <setting key="retraction speed">45.0</setting>
     <setting key="standby temperature">175.0</setting>
     <machine>
       <machine_identifier manufacturer="Eryone" product="eryone_thinker_direct" />
-      <setting key="retraction amount">0.2</setting>
+      <setting key="retraction amount">0.3</setting>
       <setting key="retraction speed">35.0</setting>
     </machine>
   </settings>
