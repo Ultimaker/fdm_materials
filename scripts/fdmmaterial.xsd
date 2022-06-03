@@ -195,6 +195,8 @@
                     <xsd:enumeration value="end of print purge volume"/>
                     <xsd:enumeration value="pressure release dwell time"/>
                     <xsd:enumeration value="dwell time before break preparation move"/>
+                    <xsd:enumeration value="tainted print core max temperature"/>
+                    <xsd:enumeration value="recommend cleaning after n prints"/>
                 </xsd:restriction>
             </xsd:simpleType>
         </xsd:attribute>
