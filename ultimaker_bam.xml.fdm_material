@@ -85,6 +85,9 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
         </machine>
 
         <machine>
@@ -104,6 +107,9 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <buildplate id="Glass">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="hardware recommended">no</setting>
@@ -113,5 +119,6 @@
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
+
     </settings>
 </fdmmaterial>
