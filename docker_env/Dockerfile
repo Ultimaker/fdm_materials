@@ -1,4 +1,4 @@
-FROM registry.hub.docker.com/library/debian:buster-slim
+FROM --platform=linux/amd64 registry.hub.docker.com/library/debian:buster
 
 LABEL Maintainer="software-embedded-platform@ultimaker.com" \
       Comment="Ultimaker update-tools filesystem"
