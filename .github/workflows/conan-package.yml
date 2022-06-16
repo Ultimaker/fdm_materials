@@ -18,26 +18,22 @@ name: conan-package
 on:
     push:
         paths:
-        - 'src/**'
-        - 'cmake/**'
-        - 'tests/**'
-        - 'conanfile.py'
-        - 'CMakeLists.txt'
-        - '.github/workflows/conan-package.yml'
+            - '*.material'
+            - '*.sig'
+            - 'conanfile.py'
+            - '.github/workflows/conan-package.yml'
         branches:
-        - main
-        - 'CURA-*'
+            - main
+            - 'CURA-*'
 
     pull_request:
         paths:
-        - 'src/**'
-        - 'cmake/**'
-        - 'tests/**'
-        - 'conanfile.py'
-        - 'CMakeLists.txt'
-        - '.github/workflows/conan-package.yml'
+            - '*.material'
+            - '*.sig'
+            - 'conanfile.py'
+            - '.github/workflows/conan-package.yml'
         branches:
-        - main
+            - main
 
 jobs:
     conan-recipe-version:
