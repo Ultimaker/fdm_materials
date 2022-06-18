@@ -25,11 +25,6 @@ class FDM_MaterialsConan(ConanFile):
         "revision": "auto"
     }
 
-    def layout(self):
-        self.folders.source = "."
-        self.folders.build = "."
-        self.folders.generators = os.path.join(self.folders.build, "conan")
-
     def validate(self):
         if tools.Version(self.version) <= tools.Version("4"):
             raise ConanInvalidConfiguration("Only versions 5+ are support")

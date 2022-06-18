@@ -51,6 +51,7 @@ jobs:
             python_version: '3.10.4'
             conan_config_branch: 'CURA-9177_Fix_CI_CD'
             conan_logging_level: 'info'
+            conan_export_binaries: true
         secrets: inherit
 
     conan-package-create-macos:
