@@ -28,8 +28,6 @@ jobs:
             project_name: fdm_materials
 
     conan-package-export-macos:
-        # FIXME: For release branches: maybe rename the branch to release/**
-        if: ${{ (github.event_name == 'push' && (github.ref_name == 'main' || github.ref_name == '5.1')) || (github.event_name == 'workflow_dispatch' && inputs.create_binaries_macos) }}
         needs: [ conan-recipe-version ]
 
         uses: ultimaker/cura/.github/workflows/conan-recipe-export.yml@CURA-9365_fix_building_cura_main
@@ -45,8 +43,6 @@ jobs:
         secrets: inherit
 
     conan-package-export-windows:
-        # FIXME: For release branches: maybe rename the branch to release/**
-        if: ${{ (github.event_name == 'push' && (github.ref_name == 'main' || github.ref_name == '5.1')) || (github.event_name == 'workflow_dispatch' && inputs.create_binaries_windows) }}
         needs: [ conan-recipe-version ]
 
         uses: ultimaker/cura/.github/workflows/conan-recipe-export.yml@CURA-9365_fix_building_cura_main
@@ -62,8 +58,6 @@ jobs:
         secrets: inherit
 
     conan-package-export-linux:
-        # FIXME: For release branches: maybe rename the branch to release/**
-        if: ${{ (github.event_name == 'push' && (github.ref_name == 'main' || github.ref_name == '5.1')) || (github.event_name == 'workflow_dispatch' && inputs.create_binaries_linux) }}
         needs: [ conan-recipe-version ]
 
         uses: ultimaker/cura/.github/workflows/conan-recipe-export.yml@CURA-9365_fix_building_cura_main
