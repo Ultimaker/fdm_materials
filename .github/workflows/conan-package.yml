@@ -27,39 +27,8 @@ jobs:
         with:
             project_name: fdm_materials
 
-    conan-package-export-macos:
-        needs: [ conan-recipe-version ]
-
-        uses: ultimaker/cura/.github/workflows/conan-recipe-export.yml@CURA-9365_fix_building_cura_main
-        with:
-            recipe_id_full: ${{ needs.conan-recipe-version.outputs.recipe_id_full }}
-            recipe_id_latest: ${{ needs.conan-recipe-version.outputs.recipe_id_latest }}
-            recipe_id_pr: ${{ needs.conan-recipe-version.outputs.recipe_id_pr }}
-            runs_on: 'macos-10.15'
-            python_version: '3.10.4'
-            conan_config_branch: 'CURA-9177_Fix_CI_CD'
-            conan_logging_level: 'info'
-            conan_export_binaries: true
-        secrets: inherit
-
-    conan-package-export-windows:
-        needs: [ conan-recipe-version ]
-
-        uses: ultimaker/cura/.github/workflows/conan-recipe-export.yml@CURA-9365_fix_building_cura_main
-        with:
-            recipe_id_full: ${{ needs.conan-recipe-version.outputs.recipe_id_full }}
-            recipe_id_latest: ${{ needs.conan-recipe-version.outputs.recipe_id_latest }}
-            recipe_id_pr: ${{ needs.conan-recipe-version.outputs.recipe_id_pr }}
-            runs_on: 'windows-2022'
-            python_version: '3.10.4'
-            conan_config_branch: 'CURA-9177_Fix_CI_CD'
-            conan_logging_level: 'info'
-            conan_export_binaries: true
-        secrets: inherit
-
     conan-package-export-linux:
         needs: [ conan-recipe-version ]
-
         uses: ultimaker/cura/.github/workflows/conan-recipe-export.yml@CURA-9365_fix_building_cura_main
         with:
             recipe_id_full: ${{ needs.conan-recipe-version.outputs.recipe_id_full }}
@@ -74,7 +43,7 @@ jobs:
 
     notify-export:
         if: ${{ always() }}
-        needs: [ conan-package-export-macos, conan-package-export-windows, conan-package-export-linux ]
+        needs: [ conan-package-export-linux ]
 
         uses: ultimaker/cura/.github/workflows/notify.yml@CURA-9365_fix_building_cura_main
         with:
