@@ -29,9 +29,12 @@ class FDM_MaterialsConan(ConanFile):
         if tools.Version(self.version) <= tools.Version("4"):
             raise ConanInvalidConfiguration("Only versions 5+ are support")
 
+    def layout(self):
+        self.cpp.package.resdirs = ["materials"]
+
     def package(self):
-        self.copy("*.fdm_material", src = ".", dst = os.path.join(self.cpp.package.resdirs[0], "materials"))
-        self.copy("*.sig", src = ".", dst = os.path.join(self.cpp.package.resdirs[0], "materials"))
+        self.copy("*.fdm_material", src = ".", dst = self.cpp.package.resdirs[0])
+        self.copy("*.sig", src = ".", dst = self.cpp.package.resdirs[0])
 
     def package_id(self):
         del self.info.settings.os
