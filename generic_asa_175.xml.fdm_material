@@ -28,8 +28,8 @@ Generic ASA 1.75mm profile. The data in this file may not be correct for your sp
         <setting key="build volume temperature">36</setting>
         <setting key="print cooling">0.0</setting>
         <setting key="hardware compatible">yes</setting>
-   </settings>
-   <machine>
+
+        <machine>
             <machine_identifier manufacturer="ELEGOO" product="elegoo_base" />
             <machine_identifier manufacturer="ELEGOO" product="elegoo_neptune_2" />
             <machine_identifier manufacturer="ELEGOO" product="elegoo_neptune_2d" />
@@ -41,4 +41,5 @@ Generic ASA 1.75mm profile. The data in this file may not be correct for your sp
             <setting key="heated bed temperature">85</setting>
             <setting key="retraction speed">45</setting>
         </machine>
+   </settings>
 </fdmmaterial>
