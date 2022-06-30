@@ -128,13 +128,13 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
             <setting key="heated bed temperature">50</setting>
         </machine>
 
-	    <machine>
+        <machine>
             <machine_identifier manufacturer="IMADE3D" product="IMADE3D JellyBOX"/>
             <setting key="print temperature">210</setting>
             <setting key="heated bed temperature">55</setting>
             <hotend id="0.4 mm" />
         </machine>
-
+        
         <machine>
             <machine_identifier manufacturer="ELEGOO" product="elegoo_base" />
             <machine_identifier manufacturer="ELEGOO" product="elegoo_neptune_2" />
@@ -143,7 +143,7 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
             <machine_identifier manufacturer="ELEGOO" product="elegoo_neptune_x" />
             <machine_identifier manufacturer="ELEGOO" product="elegoo_neptune_3" />
             <setting key="print temperature">200</setting>
-			<setting key="print cooling">100</setting>
+            <setting key="print cooling">100</setting>
             <setting key="heated bed temperature">50</setting>
             <setting key="retraction speed">45</setting>
             <setting key="cool min layer time">10</setting>

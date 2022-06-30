@@ -88,7 +88,7 @@ Generic PETG 1.75mm profile. The data in this file may not be correct for your s
             <machine_identifier manufacturer="ELEGOO" product="elegoo_neptune_x" />
             <machine_identifier manufacturer="ELEGOO" product="elegoo_neptune_3" />
             <setting key="print temperature">235</setting>
-			<setting key="print cooling">100</setting>
+            <setting key="print cooling">100</setting>
             <setting key="heated bed temperature">70</setting>
             <setting key="retraction speed">25</setting>
         </machine>

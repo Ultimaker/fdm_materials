@@ -28,7 +28,7 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
         <cura:setting key="material_crystallinity">true</cura:setting>
         <setting key="build volume temperature">27</setting>
      </settings>
-     <machine>
+        <machine>
             <machine_identifier manufacturer="ELEGOO" product="elegoo_base" />
             <machine_identifier manufacturer="ELEGOO" product="elegoo_neptune_2" />
             <machine_identifier manufacturer="ELEGOO" product="elegoo_neptune_2d" />
@@ -36,7 +36,7 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
             <machine_identifier manufacturer="ELEGOO" product="elegoo_neptune_x" />
             <machine_identifier manufacturer="ELEGOO" product="elegoo_neptune_3" />
             <setting key="print temperature">230</setting>
-			<setting key="print cooling">100</setting>
+            <setting key="print cooling">100</setting>
             <setting key="heated bed temperature">55</setting>
             <setting key="retraction speed">25</setting>
             <setting key="retraction prime speed">25</setting>
