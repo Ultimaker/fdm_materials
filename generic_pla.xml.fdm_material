@@ -117,6 +117,8 @@ Generic PLA profile. The data in this file may not be correct for your specific 
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <cura:setting key="material_shrinkage_percentage_xy">100.2</cura:setting>
+            <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
             <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
@@ -148,6 +150,8 @@ Generic PLA profile. The data in this file may not be correct for your specific 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <setting key="print cooling">100</setting>
+            <cura:setting key="material_shrinkage_percentage_xy">100.2</cura:setting>
+            <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="CC 0.6">
