@@ -61,7 +61,7 @@ conan remote remove cura
 To create a new fdm_materials Conan package such that it can be used in Cura, run the following command:
 
 ```shell
-conan export-pkg . uranium/<version>@<username>/<channel> --build=missing --update
+conan export-pkg . uranium/<version>@<username>/<channel>
 ```
 
 This package will be stored in the local Conan cache (`~/.conan/data` or `C:\Users\username\.conan\data` ) and can be used in downstream
