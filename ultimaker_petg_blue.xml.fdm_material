@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>2257ab94-fb27-42e6-865c-05aa6717504b</GUID>
-        <version>31</version>
+        <version>32</version>
         <color_code>#005387</color_code>
         <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -90,9 +90,11 @@
                 <setting key="standby temperature">100</setting>
             </hotend>
         </machine>
-		
+
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <cura:setting key="material_shrinkage_percentage_xy">100.5</cura:setting>
+            <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="CC 0.6" />
@@ -117,6 +119,8 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <cura:setting key="material_shrinkage_percentage_xy">100.5</cura:setting>
+            <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="CC 0.6" />
