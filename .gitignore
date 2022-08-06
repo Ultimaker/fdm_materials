@@ -11,3 +11,5 @@ _build_armhf/*
 !cura_build/CMakeList.txt
 !jedi_build/CMakeList.txt
 !jedi_build/CPackConfig.cmake
+/conanbuildinfo.txt
+/graph_info.json
