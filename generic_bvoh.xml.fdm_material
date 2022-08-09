@@ -45,7 +45,6 @@ Generic BVOH profile. The data in this file may not be correct for your specific
         </machine>
         <machine>
             <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dw50" />
-            <setting key="support offset">0</setting>
             <setting key="heated bed temperature">45</setting>
             <hotend id="0.4mm" />
             <hotend id="Hotend M (0.4mm)">
@@ -60,7 +59,6 @@ Generic BVOH profile. The data in this file may not be correct for your specific
         </machine>
         <machine>
             <machine_identifier manufacturer="BCN3D Technologies" product="bcn3dw27" />
-            <setting key="support offset">0</setting>
             <setting key="heated bed temperature">45</setting>
             <hotend id="0.4mm" />
             <hotend id="Hotend M (0.4mm)">
