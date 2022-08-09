@@ -133,6 +133,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <setting key="print cooling">40</setting>
 
             <hotend id="BB 0.4" />
@@ -166,5 +167,6 @@
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
+
     </settings>
 </fdmmaterial>

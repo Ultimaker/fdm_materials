@@ -121,6 +121,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <setting key="heated bed temperature">110</setting>
 
             <hotend id="BB 0.4" />
@@ -150,5 +151,7 @@
                 <setting key="hardware recommended">yes</setting>
             </buildplate>
         </machine>
+
+
     </settings>
 </fdmmaterial>

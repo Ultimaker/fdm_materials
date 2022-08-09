@@ -110,6 +110,7 @@ Generic PVA profile. The data in this file may not be correct for your specific 
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -143,7 +144,6 @@ Generic PVA profile. The data in this file may not be correct for your specific 
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
-
         <machine>
             <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
             <setting key="print cooling">0.0</setting>
@@ -164,6 +164,6 @@ Generic PVA profile. The data in this file may not be correct for your specific 
                 <setting key="retraction amount">1.5</setting>
             </hotend>
         </machine>
-        
+
     </settings>
 </fdmmaterial>

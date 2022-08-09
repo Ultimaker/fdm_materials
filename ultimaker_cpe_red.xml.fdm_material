@@ -65,10 +65,10 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="heated bed temperature">85</setting>
-            <cura:setting key="retraction_combing_max_distance">40</cura:setting>
-            <cura:setting key="retraction_combing">all</cura:setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
+            <cura:setting key="retraction_combing_max_distance">40</cura:setting>
+            <cura:setting key="retraction_combing">all</cura:setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
@@ -125,6 +125,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <setting key="heated bed temperature">85</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
@@ -155,5 +156,7 @@
                 <setting key="hardware recommended">yes</setting>
             </buildplate>
         </machine>
+
+
     </settings>
 </fdmmaterial>

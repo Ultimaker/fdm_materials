@@ -122,6 +122,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <setting key="heated bed temperature">110</setting>
 
             <hotend id="BB 0.4" />
@@ -172,5 +173,6 @@ Generic PC profile. The data in this file may not be correct for your specific m
                <setting key="retraction amount">1.5</setting>
            </hotend>
        </machine>
+
     </settings>
 </fdmmaterial>

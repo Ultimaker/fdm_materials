@@ -45,6 +45,7 @@
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
         <setting key="build volume temperature">37</setting>
+
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
         <setting key="flow sensor detection margin">0.8</setting>
@@ -118,6 +119,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <cura:setting key="material_shrinkage_percentage_xy">100.5</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
             <hotend id="BB 0.4" />
@@ -151,5 +153,6 @@
                 <setting key="hardware recommended">yes</setting>
             </buildplate>
         </machine>
+
     </settings>
 </fdmmaterial>

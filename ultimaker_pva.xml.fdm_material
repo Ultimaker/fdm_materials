@@ -41,7 +41,7 @@
         <EAN>87 10400 31118 0</EAN>
     </metadata>
     <properties>
-        <density>1.23</density><!-- Unknown if this is correct -->
+        <density>1.23</density>
         <diameter>2.85</diameter>
         <weight>750</weight>
     </properties>
@@ -136,6 +136,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -169,7 +170,6 @@
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
-
 
     </settings>
 </fdmmaterial>

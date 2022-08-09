@@ -119,6 +119,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <cura:setting key="material_shrinkage_percentage_xy">100.5</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
             <hotend id="BB 0.4" />
@@ -152,5 +153,6 @@
                 <setting key="hardware recommended">yes</setting>
             </buildplate>
         </machine>
+
     </settings>
 </fdmmaterial>

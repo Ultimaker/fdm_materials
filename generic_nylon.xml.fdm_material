@@ -134,6 +134,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <setting key="print cooling">40</setting>
 
             <hotend id="BB 0.4" />
@@ -167,5 +168,6 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
+
     </settings>
 </fdmmaterial>

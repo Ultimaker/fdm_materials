@@ -122,7 +122,7 @@
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">70</setting>
-               <setting key="retraction speed">45</setting>
+                <setting key="retraction speed">45</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -133,6 +133,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <setting key="print cooling">40</setting>
 
             <hotend id="BB 0.4" />
@@ -166,5 +167,6 @@
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
+
     </settings>
 </fdmmaterial>

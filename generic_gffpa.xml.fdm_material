@@ -78,6 +78,7 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -112,5 +113,7 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
                 <setting key="hardware recommended">yes</setting>
             </buildplate>
         </machine>
+
+
     </settings>
 </fdmmaterial>
