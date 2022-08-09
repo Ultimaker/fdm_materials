@@ -7,9 +7,10 @@ name: conan-package
 # It should run on pushes against main or CURA-* branches, but it will only create the binaries for main and release branches
 
 on:
+    workflow_dispatch:
     push:
         paths:
-            - '*.material'
+            - '*.xml.*'
             - '*.sig'
             - 'conanfile.py'
             - '.github/workflows/conan-package.yml'
