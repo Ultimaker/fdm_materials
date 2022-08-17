@@ -7,7 +7,7 @@
             <color>Red</color>
         </name>
         <GUID>9cfe5bf1-bdc5-4beb-871a-52c70777842d</GUID>
-        <version>27</version>
+        <version>28</version>
         <color_code>#bb1e10</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -117,6 +117,8 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
             <setting key="print cooling">100</setting>
+            <cura:setting key="material_shrinkage_percentage_xy">100.2</cura:setting>
+            <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="CC 0.6">
@@ -147,6 +149,8 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <setting key="print cooling">100</setting>
+            <cura:setting key="material_shrinkage_percentage_xy">100.2</cura:setting>
+            <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="CC 0.6">
