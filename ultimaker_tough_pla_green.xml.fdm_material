@@ -14,7 +14,7 @@
         <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-tough-pla/printing-guidelines</instruction_link>
     </metadata>
     <properties>
-        <density>1.22</density>
+        <density>1.24</density>
         <diameter>2.85</diameter>
         <weight>750</weight>
     </properties>
@@ -113,6 +113,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <setting key="print cooling">100</setting>
             <cura:setting key="material_shrinkage_percentage_xy">100.3</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
@@ -140,5 +141,6 @@
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
+
     </settings>
 </fdmmaterial>

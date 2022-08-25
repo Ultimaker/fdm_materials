@@ -30,7 +30,7 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
         <setting key="break speed">25</setting>
         <setting key="break temperature">195</setting>
         <setting key="pressure release dwell time">25</setting>
-        <setting key="dwell time before break preparation move">0</setting> 
+        <setting key="dwell time before break preparation move">0</setting>
         <setting key="end of print purge volume">0</setting>
         <setting key="end of filament purge volume">0</setting>
         <setting key="flush purge length">60</setting>
@@ -127,6 +127,7 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <setting key="print temperature">223</setting>
 
             <hotend id="BB 0.4" />
@@ -155,5 +156,6 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
+
     </settings>
 </fdmmaterial>

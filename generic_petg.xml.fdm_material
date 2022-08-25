@@ -15,7 +15,7 @@ Generic PETG profile. The data in this file may not be correct for your specific
         <description>Generic PETG profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Use glue.</adhesion_info>
     </metadata>
-<properties>
+    <properties>
         <density>1.27</density>
         <diameter>2.85</diameter>
     </properties>
@@ -91,7 +91,7 @@ Generic PETG profile. The data in this file may not be correct for your specific
                 <setting key="standby temperature">100</setting>
             </hotend>
         </machine>
-		
+
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
             <cura:setting key="material_shrinkage_percentage_xy">100.5</cura:setting>
@@ -120,6 +120,7 @@ Generic PETG profile. The data in this file may not be correct for your specific
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <cura:setting key="material_shrinkage_percentage_xy">100.5</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
             <hotend id="BB 0.4" />
@@ -153,5 +154,6 @@ Generic PETG profile. The data in this file may not be correct for your specific
                 <setting key="hardware recommended">yes</setting>
             </buildplate>
         </machine>
+
     </settings>
 </fdmmaterial>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--
 Generic ABS profile. The data in this file may not be correct for your specific machine.
 -->
@@ -87,8 +88,8 @@ Generic ABS profile. The data in this file may not be correct for your specific 
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
-            <setting key="hardware compatible">yes</setting>
             <setting key="heated bed temperature">85</setting>
+            <setting key="hardware compatible">yes</setting>
             <hotend id="0.25 mm">
                 <setting key="print temperature">245</setting>
             </hotend>
@@ -156,5 +157,6 @@ Generic ABS profile. The data in this file may not be correct for your specific 
                 <setting key="hardware recommended">yes</setting>
             </buildplate>
         </machine>
+
     </settings>
 </fdmmaterial>
