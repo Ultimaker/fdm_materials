@@ -10,7 +10,7 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             <color>Generic</color>
         </name>
         <GUID>9d5d2d7c-4e77-441c-85a0-e9eefd4aa68c</GUID>
-        <version>20</version>
+        <version>21</version>
         <color_code>#ffc9f0</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -42,7 +42,7 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
         <!-- print settings -->
         <setting key="print temperature">225</setting>
         <setting key="heated bed temperature">60</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="standby temperature">125</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
         <setting key="build volume temperature">24</setting>
@@ -60,7 +60,6 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -99,7 +98,6 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -107,7 +105,6 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">5</setting>
             </hotend>
         </machine>
@@ -122,7 +119,6 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -130,7 +126,6 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">5</setting>
             </hotend>
             <buildplate id="Glass">

@@ -10,7 +10,7 @@ Generic PETG profile. The data in this file may not be correct for your specific
             <color>Generic</color>
         </name>
         <GUID>1cbfaeb3-1906-4b26-b2e7-6f777a8c197a</GUID>
-        <version>15</version>
+        <version>16</version>
         <color_code>#ff5086</color_code>
         <description>Generic PETG profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -42,7 +42,7 @@ Generic PETG profile. The data in this file may not be correct for your specific
         <!-- print settings -->
         <setting key="print temperature">240</setting>
         <setting key="heated bed temperature">85</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="standby temperature">140</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
         <setting key="build volume temperature">37</setting>
@@ -79,16 +79,13 @@ Generic PETG profile. The data in this file may not be correct for your specific
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
-                <setting key="standby temperature">100</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="print cooling">20</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
             </hotend>
         </machine>
 
@@ -103,13 +100,11 @@ Generic PETG profile. The data in this file may not be correct for your specific
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
                 <setting key="print temperature">230</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="print cooling">20</setting>
             </hotend>
             <hotend id="AA 0.8">
@@ -130,13 +125,11 @@ Generic PETG profile. The data in this file may not be correct for your specific
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
                 <setting key="print temperature">230</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">20</setting>
             </hotend>
