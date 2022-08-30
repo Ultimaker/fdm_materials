@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>c7005925-2a41-4280-8cdd-4029e3fe5253</GUID>
-        <version>36</version>
+        <version>37</version>
         <color_code>#d0d0d0</color_code>
         <description>Fatigue and chemical resistant. Polypropylene offers excellent temperature, chemical and fatigue resistance. Its toughness and low friction make it a perfect choice for prototyping and creating durable end-use models.</description>
         <adhesion_info>Adhesion sheets are required.</adhesion_info>
@@ -41,7 +41,7 @@
         <!-- print settings -->
         <setting key="print temperature">220</setting>
         <setting key="heated bed temperature">100</setting>
-        <setting key="standby temperature">185</setting>
+        <setting key="standby temperature">120</setting>
         <setting key="print cooling">20</setting>
         <setting key="retraction speed">35</setting>
         <cura:setting key="material_shrinkage_percentage">100</cura:setting>
@@ -76,7 +76,6 @@
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
                 <setting key="retraction speed">25</setting>
             </hotend>
@@ -119,7 +118,6 @@
             <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
@@ -143,7 +141,6 @@
             <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
