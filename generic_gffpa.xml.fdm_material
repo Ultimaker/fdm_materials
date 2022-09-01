@@ -10,7 +10,7 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
             <color>Generic</color>
         </name>
         <GUID>837cf11b-6b1e-48dc-94dc-4a2b4888648e</GUID>
-        <version>17</version>
+        <version>18</version>
         <color_code>#D5D8DC</color_code>
         <description>This is the baseline profile for Glass Fiber Filled Polyamides for the Print Profile Assistant.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -20,6 +20,7 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
         <diameter>2.85</diameter>
     </properties>
     <settings>
+        <!-- Deprime settings -->
         <setting key="anti ooze retract position">-8</setting>
         <setting key="anti ooze retract speed">25</setting>
         <setting key="break preparation position">0</setting>
@@ -28,12 +29,16 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">145</setting>
-        <setting key="maximum park duration">7200</setting>
-        <setting key="no load move factor">0.935</setting>
         <setting key="flush purge speed">0.5</setting>
         <setting key="end of filament purge speed">0.5</setting>
         <setting key="flush purge length">60</setting>
         <setting key="end of filament purge length">20</setting>
+
+        <!-- material station (un)loading settings -->
+        <setting key="maximum park duration">7200</setting>
+        <setting key="no load move factor">0.935</setting>
+
+        <!-- print settings -->
         <setting key="print temperature">265</setting>
         <setting key="heated bed temperature">70</setting>
         <setting key="standby temperature">165</setting>
@@ -41,6 +46,7 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
         <setting key="surface energy">100</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
         <setting key="build volume temperature">35</setting>
+        <cura:setting key="adhesion_type">skirt</cura:setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
