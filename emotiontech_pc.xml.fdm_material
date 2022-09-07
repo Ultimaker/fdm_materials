@@ -53,6 +53,37 @@
                 <setting key="retraction amount">1.9</setting>
             </hotend>
             -->
+			<hotend id="High temp 0.4" >
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">270</setting>
+                <setting key="retraction amount">3</setting>
+            </hotend>
+        </machine>
+		
+		<machine>
+            <machine_identifier manufacturer="eMotionTech" product="IDEX420"/>
+			<machine_identifier manufacturer="eMotionTech" product="IDEX420 Duplicate"/>
+			<machine_identifier manufacturer="eMotionTech" product="IDEX420 Mirror"/>
+            <hotend id="IDEX420 Standard 0.4" >
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">270</setting>
+                <setting key="retraction amount">3</setting>
+            </hotend>
+            <hotend id="IDEX420 Standard 0.6" >
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">270</setting>
+                <setting key="retraction amount">2</setting>
+            </hotend>
+            <hotend id="IDEX420 Standard 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">280</setting>
+                <setting key="retraction amount">2</setting>
+            </hotend>
+            <hotend id="IDEX420 HT0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">270</setting>
+                <setting key="retraction amount">3</setting>
+            </hotend>
         </machine>
     </settings>
 </fdmmaterial>
