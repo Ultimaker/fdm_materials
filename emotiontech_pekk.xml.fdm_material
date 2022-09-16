@@ -58,21 +58,58 @@
             </hotend>
         </machine>
         <machine>
-            <machine_identifier manufacturer="eMotionTech" product="IDEX420"/>
-			<machine_identifier manufacturer="eMotionTech" product="IDEX420 Duplicate"/>
-			<machine_identifier manufacturer="eMotionTech" product="IDEX420 Mirror"/>
-            <hotend id="IDEX420 HT0.4">
-                <setting key="hardware compatible">yes</setting>
+            <machine_identifier manufacturer="eMotionTech" product="Strateo3D_IDEX420"/>
+            <hotend id="IDEX420 Standard 0.4" >
+                <setting key="hardware compatible">no</setting>
                 <setting key="print temperature">360</setting>
                 <setting key="retraction amount">1.5</setting>
             </hotend>
-            <!-- Commented out until eMotionTech adds their hotend profiles to Cura.
-			<hotend id="IDEX420 HT0.6">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">365</setting>
+            <hotend id="IDEX420 Standard 0.6" >
+                <setting key="hardware compatible">no</setting>
+                <setting key="print temperature">360</setting>
                 <setting key="retraction amount">1.5</setting>
             </hotend>
-            -->
+            <hotend id="IDEX420 Standard 0.8">
+                <setting key="hardware compatible">no</setting>
+                <setting key="print temperature">360</setting>
+                <setting key="retraction amount">1.5</setting>
+            </hotend>
+        </machine>
+        <machine>
+			<machine_identifier manufacturer="eMotionTech" product="strateo3d_IDEX420_duplicate"/>
+            <hotend id="IDEX420 Duplicate Standard 0.4" >
+                <setting key="hardware compatible">no</setting>
+                <setting key="print temperature">360</setting>
+                <setting key="retraction amount">1.5</setting>
+            </hotend>
+            <hotend id="IDEX420 Duplicate Standard 0.6" >
+                <setting key="hardware compatible">no</setting>
+                <setting key="print temperature">360</setting>
+                <setting key="retraction amount">1.5</setting>
+            </hotend>
+            <hotend id="IDEX420 Duplicate Standard 0.8">
+                <setting key="hardware compatible">no</setting>
+                <setting key="print temperature">360</setting>
+                <setting key="retraction amount">1.5</setting>
+            </hotend>
+        </machine>
+        <machine>
+			<machine_identifier manufacturer="eMotionTech" product="strateo3d_IDEX420_mirror"/>
+            <hotend id="IDEX420 Mirror Standard 0.4" >
+                <setting key="hardware compatible">no</setting>
+                <setting key="print temperature">360</setting>
+                <setting key="retraction amount">1.5</setting>
+            </hotend>
+            <hotend id="IDEX420 Mirror Standard 0.6" >
+                <setting key="hardware compatible">no</setting>
+                <setting key="print temperature">360</setting>
+                <setting key="retraction amount">1.5</setting>
+            </hotend>
+            <hotend id="IDEX420 Mirror Standard 0.8">
+                <setting key="hardware compatible">no</setting>
+                <setting key="print temperature">360</setting>
+                <setting key="retraction amount">1.5</setting>
+            </hotend>
         </machine>
     </settings>
 </fdmmaterial>
