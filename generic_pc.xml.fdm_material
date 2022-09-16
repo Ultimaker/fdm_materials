@@ -10,7 +10,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
             <color>Generic</color>
         </name>
         <GUID>98c05714-bf4e-4455-ba27-57d74fe331e4</GUID>
-        <version>27</version>
+        <version>28</version>
         <color_code>#F29030</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
@@ -42,7 +42,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
         <!-- print settings -->
         <setting key="print temperature">270</setting>
         <setting key="heated bed temperature">107</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="standby temperature">170</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
         <cura:setting key="material_shrinkage_percentage">100</cura:setting>
@@ -72,7 +72,6 @@ Generic PC profile. The data in this file may not be correct for your specific m
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -106,7 +105,6 @@ Generic PC profile. The data in this file may not be correct for your specific m
             <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -122,6 +120,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <setting key="heated bed temperature">110</setting>
 
             <hotend id="BB 0.4" />
@@ -129,7 +128,6 @@ Generic PC profile. The data in this file may not be correct for your specific m
             <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -172,5 +170,6 @@ Generic PC profile. The data in this file may not be correct for your specific m
                <setting key="retraction amount">1.5</setting>
            </hotend>
        </machine>
+
     </settings>
 </fdmmaterial>

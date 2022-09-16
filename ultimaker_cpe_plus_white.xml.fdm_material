@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>6df69b13-2d96-4a69-a297-aedba667e710</GUID>
-        <version>30</version>
+        <version>34</version>
         <color_code>#f1ece1</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -41,7 +41,7 @@
         <!-- print settings -->
         <setting key="print temperature">260</setting>
         <setting key="heated bed temperature">107</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="standby temperature">160</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
         <cura:setting key="material_shrinkage_percentage">100</cura:setting>
@@ -70,7 +70,6 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <cura:setting key="retraction_combing_max_distance">40</cura:setting>
             <cura:setting key="retraction_combing">all</cura:setting>
-
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
@@ -112,7 +111,6 @@
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">110</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">7</setting>
                 <setting key="print cooling">1</setting>
             </hotend>
@@ -135,7 +133,6 @@
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">110</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">1</setting>
             </hotend>
@@ -143,7 +140,6 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">110</setting>
                 <setting key="retraction amount">8</setting>
-                <setting key="retraction speed">40</setting>
                 <setting key="print cooling">8</setting>
             </hotend>
             <buildplate id="Glass">
@@ -155,5 +151,7 @@
                 <setting key="hardware recommended">yes</setting>
             </buildplate>
         </machine>
+
+
     </settings>
 </fdmmaterial>

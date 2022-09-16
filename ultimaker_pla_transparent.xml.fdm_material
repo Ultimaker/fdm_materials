@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>532e8b3d-5fd4-4149-b936-53ada9bd6b85</GUID>
-        <version>28</version>
+        <version>32</version>
         <color_code>#d0d0d0</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -41,7 +41,7 @@
         <!-- print settings -->
         <setting key="print temperature">200</setting>
         <setting key="heated bed temperature">60</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="standby temperature">100</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
         <setting key="build volume temperature">28</setting>
@@ -65,7 +65,6 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Go"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended"/>
-            <setting key="standby temperature">150</setting>
             <setting key="processing temperature graph">
                 <point flow="2" temperature="180"/>
                 <point flow="10" temperature="230"/>
@@ -74,7 +73,6 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
-            <setting key="standby temperature">150</setting>
         </machine>
 
         <machine>
@@ -85,7 +83,6 @@
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -123,17 +120,14 @@
             <hotend id="BB 0.8" />
             <hotend id="CC 0.6">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id ="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -141,13 +135,13 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">5</setting>
             </hotend>
         </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <setting key="print cooling">100</setting>
             <cura:setting key="material_shrinkage_percentage_xy">100.2</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
@@ -155,19 +149,16 @@
             <hotend id="BB 0.8" />
             <hotend id="CC 0.6">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
                 <cura:setting key="material_crystallinity">true</cura:setting>
             </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
                 <cura:setting key="material_crystallinity">true</cura:setting>
             </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -175,7 +166,6 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">5</setting>
             </hotend>
             <buildplate id="Glass">
@@ -187,5 +177,6 @@
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
+
     </settings>
 </fdmmaterial>

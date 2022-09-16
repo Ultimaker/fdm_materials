@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>4d816290-ce2e-40e0-8dc8-3f702243131e</GUID>
-        <version>32</version>
+        <version>33</version>
         <color_code>#00a3e0</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -41,7 +41,7 @@
         <!-- print settings -->
         <setting key="print temperature">240</setting>
         <setting key="heated bed temperature">85</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="standby temperature">140</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
         <setting key="build volume temperature">37</setting>
@@ -65,14 +65,13 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="heated bed temperature">85</setting>
-            <cura:setting key="retraction_combing_max_distance">40</cura:setting>
-            <cura:setting key="retraction_combing">all</cura:setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
+            <cura:setting key="retraction_combing_max_distance">40</cura:setting>
+            <cura:setting key="retraction_combing">all</cura:setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -110,12 +109,10 @@
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="print cooling">20</setting>
             </hotend>
             <hotend id="AA 0.8">
@@ -125,6 +122,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <setting key="heated bed temperature">85</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
@@ -132,12 +130,10 @@
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">20</setting>
             </hotend>
@@ -155,5 +151,7 @@
                 <setting key="hardware recommended">yes</setting>
             </buildplate>
         </machine>
+
+
     </settings>
 </fdmmaterial>

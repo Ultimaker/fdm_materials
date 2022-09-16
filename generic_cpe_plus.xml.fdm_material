@@ -10,7 +10,7 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             <color>Generic</color>
         </name>
         <GUID>e2409626-b5a0-4025-b73e-b58070219259</GUID>
-        <version>28</version>
+        <version>29</version>
         <color_code>#3633F2</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -42,7 +42,7 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
         <!-- print settings -->
         <setting key="print temperature">260</setting>
         <setting key="heated bed temperature">107</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="standby temperature">160</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
         <cura:setting key="material_shrinkage_percentage">100</cura:setting>
@@ -112,7 +112,6 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">110</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">7</setting>
                 <setting key="print cooling">1</setting>
             </hotend>
@@ -135,7 +134,6 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">110</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">1</setting>
             </hotend>
@@ -154,5 +152,7 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
                 <setting key="hardware recommended">yes</setting>
             </buildplate>
         </machine>
+
+
     </settings>
 </fdmmaterial>

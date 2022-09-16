@@ -7,7 +7,7 @@
             <color>Natural</color>
         </name>
         <GUID>fe15ed8a-33c3-4f57-a2a7-b4b78a38c3cb</GUID>
-        <version>31</version>
+        <version>32</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -41,7 +41,7 @@
         <EAN>87 10400 31118 0</EAN>
     </metadata>
     <properties>
-        <density>1.23</density><!-- Unknown if this is correct -->
+        <density>1.23</density>
         <diameter>2.85</diameter>
         <weight>750</weight>
     </properties>
@@ -68,7 +68,7 @@
         <!-- print settings -->
         <setting key="print temperature">215</setting>
         <setting key="heated bed temperature">60</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="standby temperature">115</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
         <setting key="build volume temperature">35</setting>
 
@@ -136,6 +136,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -169,7 +170,6 @@
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
-
 
     </settings>
 </fdmmaterial>

@@ -10,7 +10,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <color>Generic</color>
         </name>
         <GUID>28fb4162-db74-49e1-9008-d05f1e8bef5c</GUID>
-        <version>25</version>
+        <version>26</version>
         <color_code>#3DF266</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -42,7 +42,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
         <!-- print settings -->
         <setting key="print temperature">245</setting>
         <setting key="heated bed temperature">60</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="standby temperature">145</setting>
         <setting key="retraction amount">8</setting>
         <setting key="retraction speed">25</setting>
         <setting key="adhesion tendency">2</setting>
@@ -74,7 +74,6 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -116,7 +115,6 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
@@ -134,6 +132,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <setting key="print cooling">40</setting>
 
             <hotend id="BB 0.4" />
@@ -142,7 +141,6 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
@@ -167,5 +165,6 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
+
     </settings>
 </fdmmaterial>

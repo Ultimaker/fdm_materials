@@ -7,14 +7,14 @@
             <color>Yellow</color>
         </name>
         <GUID>bfdb0787-032d-4cf5-9975-964132bd641c</GUID>
-        <version>2</version>
+        <version>3</version>
         <color_code>#F8F32B</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
         <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-tough-pla/printing-guidelines</instruction_link>
     </metadata>
     <properties>
-        <density>1.22</density>
+        <density>1.24</density>
         <diameter>2.85</diameter>
         <weight>750</weight>
     </properties>
@@ -41,7 +41,7 @@
         <!-- print settings -->
         <setting key="print temperature">225</setting>
         <setting key="heated bed temperature">60</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="standby temperature">125</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
         <setting key="build volume temperature">24</setting>
@@ -59,7 +59,6 @@
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -98,7 +97,6 @@
             <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -106,13 +104,13 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">5</setting>
             </hotend>
         </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <setting key="print cooling">100</setting>
             <cura:setting key="material_shrinkage_percentage_xy">100.3</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
@@ -120,7 +118,6 @@
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -128,7 +125,6 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">5</setting>
             </hotend>
             <buildplate id="Glass">
@@ -140,5 +136,6 @@
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
+
     </settings>
 </fdmmaterial>

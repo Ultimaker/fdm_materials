@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>7418eca4-e2c4-45b1-a022-37180861fd39</GUID>
-        <version>32</version>
+        <version>33</version>
         <color_code>#d0d0d0</color_code>
         <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -41,10 +41,11 @@
         <!-- print settings -->
         <setting key="print temperature">240</setting>
         <setting key="heated bed temperature">85</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="standby temperature">140</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
         <setting key="build volume temperature">37</setting>
+
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
         <setting key="flow sensor detection margin">0.8</setting>
@@ -77,16 +78,13 @@
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
-                <setting key="standby temperature">100</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="print cooling">20</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
             </hotend>
         </machine>
 
@@ -101,13 +99,11 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
                 <setting key="print temperature">230</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="print cooling">20</setting>
             </hotend>
             <hotend id="AA 0.8">
@@ -118,6 +114,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+
             <cura:setting key="material_shrinkage_percentage_xy">100.5</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
             <hotend id="BB 0.4" />
@@ -127,13 +124,11 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
                 <setting key="print temperature">230</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">20</setting>
             </hotend>
@@ -151,5 +146,6 @@
                 <setting key="hardware recommended">yes</setting>
             </buildplate>
         </machine>
+
     </settings>
 </fdmmaterial>
