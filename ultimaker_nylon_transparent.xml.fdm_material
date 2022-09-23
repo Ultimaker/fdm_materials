@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>e256615d-a04e-4f53-b311-114b90560af9</GUID>
-        <version>29</version>
+        <version>30</version>
         <color_code>#d0d0d0</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -131,6 +131,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
 
             <setting key="print cooling">40</setting>
 

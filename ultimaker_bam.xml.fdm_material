@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d5f9</GUID>
-        <version>31</version>
+        <version>32</version>
         <color_code>#F1ECE1</color_code>
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -92,6 +92,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
 
             <setting key="print cooling">100</setting>
             <hotend id="BB 0.4" />

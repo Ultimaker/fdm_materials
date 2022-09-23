@@ -8,7 +8,7 @@
             <color>Gray</color>
         </name>
         <GUID>8b75b775-d3f2-4d0f-8fb2-2a3dd53cf673</GUID>
-        <version>31</version>
+        <version>32</version>
         <color_code>#52595d</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -125,6 +125,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
             <setting key="heated bed temperature">85</setting>
 
             <hotend id="BB 0.4" />

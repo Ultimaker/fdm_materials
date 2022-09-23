@@ -7,7 +7,7 @@
             <color>Yellow</color>
         </name>
         <GUID>bfdb0787-032d-4cf5-9975-964132bd641c</GUID>
-        <version>3</version>
+        <version>4</version>
         <color_code>#F8F32B</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -110,6 +110,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
 
             <setting key="print cooling">100</setting>
             <cura:setting key="material_shrinkage_percentage_xy">100.3</cura:setting>
