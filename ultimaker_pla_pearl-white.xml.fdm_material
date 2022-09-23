@@ -7,7 +7,7 @@
             <color>Pearl-White</color>
         </name>
         <GUID>d9fc79db-82c3-41b5-8c99-33b3747b8fb3</GUID>
-        <version>32</version>
+        <version>33</version>
         <color_code>#e3d9c6</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -141,6 +141,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
 
             <setting key="print cooling">100</setting>
             <cura:setting key="material_shrinkage_percentage_xy">100.2</cura:setting>

@@ -7,7 +7,7 @@
             <color>Yellow Fluorescent</color>
         </name>
         <GUID>d67a3ccb-6b51-4013-bdac-4c59e952aaf4</GUID>
-        <version>33</version>
+        <version>34</version>
         <color_code>#B1D600</color_code>
         <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -114,6 +114,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
 
             <cura:setting key="material_shrinkage_percentage_xy">100.5</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
