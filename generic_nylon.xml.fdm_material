@@ -10,7 +10,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <color>Generic</color>
         </name>
         <GUID>28fb4162-db74-49e1-9008-d05f1e8bef5c</GUID>
-        <version>27</version>
+        <version>28</version>
         <color_code>#3DF266</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -41,14 +41,14 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
 
         <!-- print settings -->
         <setting key="print temperature">245</setting>
-        <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">145</setting>
+        <setting key="heated bed temperature">60</setting>
+        <setting key="build volume temperature">35</setting>
         <setting key="retraction amount">8</setting>
         <setting key="retraction speed">25</setting>
         <setting key="adhesion tendency">2</setting>
         <setting key="surface energy">100</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
-        <setting key="build volume temperature">35</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -166,6 +166,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
+
 
     </settings>
 </fdmmaterial>

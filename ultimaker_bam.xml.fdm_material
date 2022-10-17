@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d5f9</GUID>
-        <version>32</version>
+        <version>33</version>
         <color_code>#F1ECE1</color_code>
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -40,9 +40,10 @@
 
         <!-- print settings -->
         <setting key="print temperature">225</setting>
-        <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">125</setting>
+        <setting key="heated bed temperature">60</setting>
         <setting key="build volume temperature">24</setting>
+        <setting key="print cooling">100</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -121,6 +122,7 @@
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
+
 
     </settings>
 </fdmmaterial>

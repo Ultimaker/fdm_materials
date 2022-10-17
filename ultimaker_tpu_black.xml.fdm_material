@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>eff40bcf-588d-420d-a3bc-a5ffd8c7f4b3</GUID>
-        <version>33</version>
+        <version>34</version>
         <color_code>#0e0e10</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -40,12 +40,12 @@
 
         <!-- print settings -->
         <setting key="print temperature">228</setting>
-        <setting key="heated bed temperature">0</setting>
         <setting key="standby temperature">128</setting>
+        <setting key="heated bed temperature">0</setting>
+        <setting key="build volume temperature">27</setting>
         <setting key="adhesion tendency">3</setting>
         <setting key="surface energy">100</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
-        <setting key="build volume temperature">27</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -156,6 +156,7 @@
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
+
 
     </settings>
 </fdmmaterial>
