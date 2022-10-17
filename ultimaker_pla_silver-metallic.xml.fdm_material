@@ -7,7 +7,7 @@
             <color>Silver Metallic</color>
         </name>
         <GUID>0e01be8c-e425-4fb1-b4a3-b79f255f1db9</GUID>
-        <version>33</version>
+        <version>34</version>
         <color_code>#a1a1a0</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -40,11 +40,12 @@
 
         <!-- print settings -->
         <setting key="print temperature">200</setting>
-        <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">100</setting>
+        <setting key="heated bed temperature">60</setting>
+        <setting key="build volume temperature">28</setting>
+        <setting key="print cooling">100</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
-        <setting key="build volume temperature">28</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -178,6 +179,7 @@
                 <setting key="hardware recommended">no</setting>
             </buildplate>
         </machine>
+
 
     </settings>
 </fdmmaterial>
