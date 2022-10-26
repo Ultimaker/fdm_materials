@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>c64c2dbe-5691-4363-a7d9-66b2dc12837f</GUID>
-        <version>31</version>
+        <version>32</version>
         <color_code>#27292b</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -68,6 +68,8 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print cooling">40</setting>
+            <setting key="heated bed temperature">40</setting>
+
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
@@ -107,6 +109,7 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
             <setting key="print cooling">40</setting>
+            <setting key="heated bed temperature">40</setting>
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
@@ -119,12 +122,10 @@
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">70</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">70</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
         </machine>
@@ -134,6 +135,7 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
 
             <setting key="print cooling">40</setting>
+            <setting key="heated bed temperature">40</setting>
 
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
@@ -146,13 +148,11 @@
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">70</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">70</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
