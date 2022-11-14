@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>6df69b13-2d96-4a69-a297-aedba667e710</GUID>
-        <version>36</version>
+        <version>37</version>
         <color_code>#f1ece1</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -68,7 +68,6 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
-            <cura:setting key="retraction_combing_max_distance">40</cura:setting>
             <cura:setting key="retraction_combing">all</cura:setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
