@@ -7,7 +7,7 @@
             <color>Dark Gray</color>
         </name>
         <GUID>10961c00-3caf-48e9-a598-fa805ada1e8d</GUID>
-        <version>36</version>
+        <version>37</version>
         <color_code>#4f5250</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -67,7 +67,6 @@
             <setting key="heated bed temperature">85</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
-            <cura:setting key="retraction_combing_max_distance">40</cura:setting>
             <cura:setting key="retraction_combing">all</cura:setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
