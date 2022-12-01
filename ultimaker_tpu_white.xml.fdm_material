@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>6a2573e6-c8ee-4c66-8029-3ebb3d5adc5b</GUID>
-        <version>34</version>
+        <version>35</version>
         <color_code>#f1ece1</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -30,9 +30,6 @@
         <setting key="break temperature">195</setting>
         <setting key="pressure release dwell time">25</setting>
         <setting key="dwell time before break preparation move">0</setting>
-        <setting key="end of print purge volume">0</setting>
-        <setting key="end of filament purge volume">0</setting>
-        <setting key="flush purge length">60</setting>
 
         <!-- material station (un)loading settings -->
         <setting key="maximum park duration">7200</setting>

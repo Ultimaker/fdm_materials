@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>a9c340fe-255f-4914-87f5-ec4fcb0c11ef</GUID>
-        <version>36</version>
+        <version>38</version>
         <color_code>#d0d0d0</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -30,9 +30,6 @@
         <setting key="break temperature">105</setting>
         <setting key="pressure release dwell time">25</setting>
         <setting key="dwell time before break preparation move">0</setting>
-        <setting key="end of print purge volume">0</setting>
-        <setting key="end of filament purge volume">0</setting>
-        <setting key="flush purge length">60</setting>
 
         <!-- material station (un)loading settings -->
         <setting key="maximum park duration">7200</setting>
@@ -68,7 +65,6 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
-            <cura:setting key="retraction_combing_max_distance">40</cura:setting>
             <cura:setting key="retraction_combing">all</cura:setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />

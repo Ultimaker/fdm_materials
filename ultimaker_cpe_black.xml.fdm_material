@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>a8955dc3-9d7e-404d-8c03-0fd6fee7f22d</GUID>
-        <version>35</version>
+        <version>37</version>
         <color_code>#2a292a</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -30,9 +30,6 @@
         <setting key="break temperature">75</setting>
         <setting key="pressure release dwell time">25</setting>
         <setting key="dwell time before break preparation move">0</setting>
-        <setting key="end of print purge volume">0</setting>
-        <setting key="end of filament purge volume">0</setting>
-        <setting key="flush purge length">60</setting>
 
         <!-- material station (un)loading settings -->
         <setting key="maximum park duration">7200</setting>
@@ -67,7 +64,6 @@
             <setting key="heated bed temperature">85</setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
-            <cura:setting key="retraction_combing_max_distance">40</cura:setting>
             <cura:setting key="retraction_combing">all</cura:setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>

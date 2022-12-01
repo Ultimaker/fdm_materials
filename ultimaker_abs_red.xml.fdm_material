@@ -7,7 +7,7 @@
             <color>Red</color>
         </name>
         <GUID>5df7afa6-48bd-4c19-b314-839fe9f08f1f</GUID>
-        <version>32</version>
+        <version>33</version>
         <color_code>#bb1e10</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -30,9 +30,6 @@
         <setting key="break temperature">85</setting>
         <setting key="pressure release dwell time">25</setting>
         <setting key="dwell time before break preparation move">4</setting>
-        <setting key="end of print purge volume">0</setting>
-        <setting key="end of filament purge volume">0</setting>
-        <setting key="flush purge length">60</setting>
 
         <!-- material station (un)loading settings -->
         <setting key="maximum park duration">7200</setting>

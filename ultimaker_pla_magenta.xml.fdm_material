@@ -7,7 +7,7 @@
             <color>Magenta</color>
         </name>
         <GUID>fe3982c8-58f4-4d86-9ac0-9ff7a3ab9cbc</GUID>
-        <version>34</version>
+        <version>36</version>
         <color_code>#bc4077</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -30,9 +30,6 @@
         <setting key="break temperature">60</setting>
         <setting key="pressure release dwell time">25</setting>
         <setting key="dwell time before break preparation move">4</setting>
-        <setting key="end of print purge volume">0</setting>
-        <setting key="end of filament purge volume">0</setting>
-        <setting key="flush purge length">60</setting>
 
         <!-- material station (un)loading settings -->
         <setting key="maximum park duration">7200</setting>
@@ -115,7 +112,7 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
             <setting key="print cooling">100</setting>
-            <cura:setting key="material_shrinkage_percentage_xy">100.2</cura:setting>
+            <cura:setting key="material_shrinkage_percentage">100.2</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
@@ -145,7 +142,7 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
 
             <setting key="print cooling">100</setting>
-            <cura:setting key="material_shrinkage_percentage_xy">100.2</cura:setting>
+            <cura:setting key="material_shrinkage_percentage">100.2</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />

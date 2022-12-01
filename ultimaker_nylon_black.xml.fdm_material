@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>c64c2dbe-5691-4363-a7d9-66b2dc12837f</GUID>
-        <version>32</version>
+        <version>33</version>
         <color_code>#27292b</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -30,9 +30,6 @@
         <setting key="break temperature">145</setting>
         <setting key="pressure release dwell time">25</setting>
         <setting key="dwell time before break preparation move">0</setting>
-        <setting key="end of print purge volume">0</setting>
-        <setting key="end of filament purge volume">0</setting>
-        <setting key="flush purge length">60</setting>
 
         <!-- material station (un)loading settings -->
         <setting key="maximum park duration">7200</setting>

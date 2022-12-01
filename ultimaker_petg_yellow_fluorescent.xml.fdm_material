@@ -7,7 +7,7 @@
             <color>Yellow Fluorescent</color>
         </name>
         <GUID>d67a3ccb-6b51-4013-bdac-4c59e952aaf4</GUID>
-        <version>35</version>
+        <version>37</version>
         <color_code>#B1D600</color_code>
         <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -30,9 +30,6 @@
         <setting key="break temperature">215</setting>
         <setting key="pressure release dwell time">25</setting>
         <setting key="dwell time before break preparation move">0</setting>
-        <setting key="end of print purge volume">0</setting>
-        <setting key="end of filament purge volume">0</setting>
-        <setting key="flush purge length">60</setting>
 
         <!-- material station (un)loading settings -->
         <setting key="maximum park duration">7200</setting>
@@ -90,7 +87,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
-            <cura:setting key="material_shrinkage_percentage_xy">100.5</cura:setting>
+            <cura:setting key="material_shrinkage_percentage">100.5</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
@@ -116,7 +113,7 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
 
-            <cura:setting key="material_shrinkage_percentage_xy">100.5</cura:setting>
+            <cura:setting key="material_shrinkage_percentage">100.5</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
             <hotend id="BB 0.4" />
             <hotend id="BB 0.8" />
