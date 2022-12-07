@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>bd0d9eb3-a920-4632-84e8-dcd6086746c5</GUID>
-        <version>36</version>
+        <version>37</version>
         <color_code>#d0d0d0</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -65,8 +65,6 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="heated bed temperature">85</setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
             <cura:setting key="retraction_combing">all</cura:setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
@@ -79,6 +77,8 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
         </machine>
 
         <machine>
@@ -102,9 +102,6 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
             <setting key="heated bed temperature">85</setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
@@ -117,6 +114,10 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="CC 0.4" />
+            <hotend id="CC 0.6" />
         </machine>
 
         <machine>
@@ -124,9 +125,7 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
 
             <setting key="heated bed temperature">85</setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
+
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
@@ -142,14 +141,10 @@
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
             </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">no</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
+            <hotend id="CC 0.4" />
+            <hotend id="CC 0.6" />
         </machine>
 
 

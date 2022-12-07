@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>2f9d2279-9b0e-4765-bf9b-d1e1e13f3c49</GUID>
-        <version>32</version>
+        <version>33</version>
         <color_code>#2a292a</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -65,8 +65,6 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">225</setting>
@@ -104,10 +102,6 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
             <setting key="heated bed temperature">85</setting>
-
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">225</setting>
@@ -126,10 +120,6 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
             <setting key="heated bed temperature">85</setting>
-
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">225</setting>
@@ -142,14 +132,6 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">no</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
         </machine>
 
 

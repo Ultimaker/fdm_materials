@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>e256615d-a04e-4f53-b311-114b90560af9</GUID>
-        <version>32</version>
+        <version>33</version>
         <color_code>#d0d0d0</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -70,8 +70,6 @@
             <setting key="print cooling">40</setting>
             <setting key="heated bed temperature">40</setting>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
@@ -111,9 +109,6 @@
             <setting key="print cooling">40</setting>
             <setting key="heated bed temperature">40</setting>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
@@ -137,9 +132,6 @@
             <setting key="print cooling">40</setting>
             <setting key="heated bed temperature">40</setting>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
@@ -156,14 +148,6 @@
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">no</setting>
-                <setting key="hardware recommended">no</setting>
-            </buildplate>
         </machine>
 
 

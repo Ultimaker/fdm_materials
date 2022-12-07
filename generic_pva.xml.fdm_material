@@ -10,7 +10,7 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>86a89ceb-4159-47f6-ab97-e9953803d70f</GUID>
-        <version>31</version>
+        <version>32</version>
         <color_code>#a32bcc</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -92,17 +92,17 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <hotend id="CC 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="CC 0.6">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="BB 0.4">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="DD 0.4">
                 <setting key="hardware compatible">no</setting>
@@ -137,14 +137,6 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <hotend id="DD 0.4">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">no</setting>
-                <setting key="hardware recommended">no</setting>
-            </buildplate>
         </machine>
 
         <machine>

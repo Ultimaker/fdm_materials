@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>1aca047a-42df-497c-abfb-0e9cb85ead52</GUID>
-        <version>37</version>
+        <version>38</version>
         <color_code>#0e0e10</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -69,8 +69,6 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <cura:setting key="retraction_combing">all</cura:setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -83,6 +81,8 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">8</setting>
             </hotend>
+            <hotend id="BB 0.4" />
+            <hotend id="BB 0.8" />
         </machine>
 
         <machine>
@@ -102,12 +102,6 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
             <setting key="heated bed temperature">110</setting>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
-            <hotend id="AA 0.25">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">7</setting>
@@ -124,12 +118,6 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
             <setting key="heated bed temperature">110</setting>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
-            <hotend id="AA 0.25">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">8</setting>
@@ -140,14 +128,6 @@
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">8</setting>
             </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">no</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
         </machine>
 
 

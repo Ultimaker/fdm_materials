@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>03f24266-0291-43c2-a6da-5211892a2699</GUID>
-        <version>27</version>
+        <version>28</version>
         <color_code>#2a292a</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -93,9 +93,6 @@
             <setting key="print cooling">100</setting>
             <cura:setting key="material_shrinkage_percentage">100.3</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">6.5</setting>
@@ -116,8 +113,6 @@
             <setting key="print cooling">100</setting>
             <cura:setting key="material_shrinkage_percentage">100.3</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">6.5</setting>
@@ -129,14 +124,6 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">5</setting>
             </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">no</setting>
-            </buildplate>
         </machine>
 
 
