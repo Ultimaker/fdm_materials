@@ -10,7 +10,7 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             <color>Generic</color>
         </name>
         <GUID>e2409626-b5a0-4025-b73e-b58070219259</GUID>
-        <version>33</version>
+        <version>34</version>
         <color_code>#3633F2</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -58,9 +58,6 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
             <setting key="hardware compatible">yes</setting>
 
-            <hotend id="0.25 mm">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="0.4 mm" />
             <hotend id="0.6 mm" />
             <hotend id="0.8 mm" />
@@ -70,9 +67,7 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <cura:setting key="retraction_combing">all</cura:setting>
-            <hotend id="AA 0.25">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
+
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">7</setting>
@@ -82,8 +77,6 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">8</setting>
             </hotend>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
         </machine>
 
         <machine>
@@ -91,9 +84,6 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             <setting key="print temperature">260</setting>
             <setting key="hardware compatible">yes</setting>
 
-            <hotend id="0.25 mm">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="0.4 mm" />
             <hotend id="0.6 mm" />
             <hotend id="0.8 mm" />
