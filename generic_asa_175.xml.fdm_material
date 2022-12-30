@@ -10,10 +10,9 @@ Generic ASA 1.75mm profile. The data in this file may not be correct for your sp
             <color>Generic</color>
         </name>
         <GUID>416eead4-0d8e-4f0b-8bfc-a91a519befa5</GUID>
-        <version>1</version>
+        <version>2</version>
         <color_code>#ffe92a</color_code>
-        <description>This is the baseline profile for ASA material for the Print Profile Assistant. ASA has been specially developed for industrial applications and is characterised by its high UV and weather resistance.</description>
-        <adhesion_info></adhesion_info>
+        <description>ASA combines the qualities of ABS with the added benefit of UV resistance and additional moisture resistance making it ideal for equipment exposed to sunlight and rain over long periods of time – such as products for the agriculture, transportation, and power and utility industries.</description>
     </metadata>
     <properties>
         <density>1.07</density>
@@ -21,12 +20,14 @@ Generic ASA 1.75mm profile. The data in this file may not be correct for your sp
     </properties>
     <settings>
         <setting key="print temperature">240</setting>
-        <setting key="heated bed temperature">90</setting>
         <setting key="standby temperature">200</setting>
+        <setting key="heated bed temperature">90</setting>
+        <setting key="build volume temperature">36</setting>
+        <setting key="print cooling">0</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
-        <setting key="build volume temperature">36</setting>
-        <setting key="print cooling">0.0</setting>
         <setting key="hardware compatible">yes</setting>
+
+
    </settings>
 </fdmmaterial>

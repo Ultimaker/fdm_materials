@@ -10,7 +10,7 @@ Generic Nylon 1.75mm profile. The data in this file may not be correct for your 
             <color>Generic</color>
         </name>
         <GUID>283d439a-3490-4481-920c-c51d8cdecf9c</GUID>
-        <version>5</version>
+        <version>6</version>
         <color_code>#3DF266</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -21,14 +21,14 @@ Generic Nylon 1.75mm profile. The data in this file may not be correct for your 
     </properties>
     <settings>
         <setting key="print temperature">245</setting>
-        <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">175</setting>
+        <setting key="heated bed temperature">60</setting>
+        <setting key="build volume temperature">35</setting>
         <setting key="retraction amount">8</setting>
         <setting key="retraction speed">25</setting>
         <setting key="adhesion tendency">2</setting>
         <setting key="surface energy">100</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
-        <setting key="build volume temperature">35</setting>
 
         <machine>
             <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
@@ -49,6 +49,8 @@ Generic Nylon 1.75mm profile. The data in this file may not be correct for your 
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">1.5</setting>
             </hotend>
-       </machine>
+        </machine>
+
+
     </settings>
 </fdmmaterial>

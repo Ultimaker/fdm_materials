@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ultimaker.com/material"
             xmlns="http://www.ultimaker.com/material" elementFormDefault="qualified">
-    <!-- This XSD document is currently unused by CI, because lxml doesn't run on that server.
-         If you plan to use it, make sure that it is still up-to-date. -->
-
-
     <xsd:element name="fdmmaterial">
         <xsd:complexType>
             <xsd:sequence>
@@ -195,6 +191,8 @@
                     <xsd:enumeration value="end of print purge volume"/>
                     <xsd:enumeration value="pressure release dwell time"/>
                     <xsd:enumeration value="dwell time before break preparation move"/>
+                    <xsd:enumeration value="tainted print core max temperature"/>
+                    <xsd:enumeration value="recommend cleaning after n prints"/>
                 </xsd:restriction>
             </xsd:simpleType>
         </xsd:attribute>
