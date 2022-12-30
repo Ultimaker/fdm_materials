@@ -10,7 +10,7 @@ Generic PETG 1.75mm profile. The data in this file may not be correct for your s
             <color>Generic</color>
         </name>
         <GUID>69386c85-5b6c-421a-bec5-aeb1fb33f060</GUID>
-        <version>3</version>
+        <version>4</version>
         <color_code>#f3a112</color_code>
         <description>Generic PETG profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Set your prime speed to a low value (8mm/sec)</adhesion_info>
@@ -44,7 +44,7 @@ Generic PETG 1.75mm profile. The data in this file may not be correct for your s
                 <setting key="retraction amount">1.5</setting>
             </hotend>
         </machine>
-        
+
         <machine>
             <machine_identifier manufacturer="CreawsomeMod" product="creality_base" />
             <machine_identifier manufacturer="Creality3D" product="creality_cr10" />
@@ -65,22 +65,22 @@ Generic PETG 1.75mm profile. The data in this file may not be correct for your s
             <setting key="retraction amount">5</setting>
             <setting key="print temperature">240</setting>
         </machine>
-        <machine>
+       <machine>
             <machine_identifier manufacturer="Tronxy" product="tronxy_x" />
             <machine_identifier manufacturer="Tronxy" product="tronxy_x5sa" />
-            <machine_identifier manufacturer="Tronxy" product="tronxy_x5sa_pro" />
             <machine_identifier manufacturer="Tronxy" product="tronxy_x5sa_400" />
             <machine_identifier manufacturer="Tronxy" product="tronxy_x5sa_500" />
             <machine_identifier manufacturer="Tronxy" product="tronxy_d01" />
             <machine_identifier manufacturer="Tronxy" product="tronxy_xy2" />
             <machine_identifier manufacturer="Tronxy" product="tronxy_xy2pro" />
             <machine_identifier manufacturer="Tronxy" product="tronxy_xy3" />
-            <setting key="print cooling">75</setting>
+            <machine_identifier manufacturer="Tronxy" product="tronxy_xy3proV2" />
+            <setting key="print cooling">50</setting>
             <setting key="standby temperature">200</setting>
-            <setting key="retraction speed">35</setting>
-            <setting key="retraction amount">5</setting>
             <setting key="print temperature">230</setting>
             <setting key="heated bed temperature">80</setting>
         </machine>
+
+
     </settings>
 </fdmmaterial>
