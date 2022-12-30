@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d5f9</GUID>
-        <version>29</version>
+        <version>34</version>
         <color_code>#F1ECE1</color_code>
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -40,9 +40,10 @@
 
         <!-- print settings -->
         <setting key="print temperature">225</setting>
+        <setting key="standby temperature">125</setting>
         <setting key="heated bed temperature">60</setting>
-        <setting key="standby temperature">100</setting>
         <setting key="build volume temperature">24</setting>
+        <setting key="print cooling">100</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -53,65 +54,29 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print cooling">100</setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="AA 0.25">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="AA 0.8">
-                <setting key="hardware compatible">no</setting>
             </hotend>
         </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
             <setting key="print cooling">100</setting>
-            <hotend id="BB 0.4" />
-            <hotend id="CC 0.6" />
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="AA 0.25">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="AA 0.8">
-                <setting key="hardware compatible">no</setting>
             </hotend>
         </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+
             <setting key="print cooling">100</setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="CC 0.6" />
-            <hotend id="AA 0.25">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
-            <hotend id="AA 0.8">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">no</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">no</setting>
-            </buildplate>
         </machine>
+
+
     </settings>
 </fdmmaterial>

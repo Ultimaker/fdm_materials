@@ -10,7 +10,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
             <color>Generic</color>
         </name>
         <GUID>98c05714-bf4e-4455-ba27-57d74fe331e4</GUID>
-        <version>26</version>
+        <version>31</version>
         <color_code>#F29030</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
@@ -41,18 +41,17 @@ Generic PC profile. The data in this file may not be correct for your specific m
 
         <!-- print settings -->
         <setting key="print temperature">270</setting>
+        <setting key="standby temperature">170</setting>
         <setting key="heated bed temperature">107</setting>
-        <setting key="standby temperature">175</setting>
+        <setting key="build volume temperature">41</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
         <cura:setting key="material_shrinkage_percentage">100</cura:setting>
-        <setting key="build volume temperature">41</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
         <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
-
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
@@ -68,11 +67,8 @@ Generic PC profile. The data in this file may not be correct for your specific m
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -85,7 +81,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">5</setting>
             </hotend>
-        </machine>
+         </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
@@ -101,19 +97,14 @@ Generic PC profile. The data in this file may not be correct for your specific m
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
             <setting key="heated bed temperature">110</setting>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">0</setting>
                 <setting key="retraction amount">8</setting>
-                <setting key="retraction speed">35</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -123,35 +114,24 @@ Generic PC profile. The data in this file may not be correct for your specific m
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+
             <setting key="heated bed temperature">110</setting>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">0</setting>
                 <setting key="retraction amount">8</setting>
-                <setting key="retraction speed">35</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">5</setting>
             </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">no</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
         </machine>
 
         <machine>
@@ -173,6 +153,8 @@ Generic PC profile. The data in this file may not be correct for your specific m
                <setting key="hardware compatible">yes</setting>
                <setting key="retraction amount">1.5</setting>
            </hotend>
-       </machine>
+        </machine>
+
+
     </settings>
 </fdmmaterial>
