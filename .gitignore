@@ -13,3 +13,6 @@ _build_armhf/*
 !jedi_build/CPackConfig.cmake
 /conanbuildinfo.txt
 /graph_info.json
+
+*.bak
+*~

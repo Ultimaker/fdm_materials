@@ -7,20 +7,22 @@ name: conan-package
 # It should run on pushes against main or CURA-* branches, but it will only create the binaries for main and release branches
 
 on:
+    workflow_dispatch:
     push:
         paths:
-            - '*.material'
+            - '*.xml.*'
             - '*.sig'
             - 'conanfile.py'
             - '.github/workflows/conan-package.yml'
-            - 'GitVersion.yml'
+            - '.github/workflows/requirements*.txt'
         branches:
             - main
             - master
             - 'CURA-*'
             - '[0-9]+.[0-9]+'
         tags:
-            - '[0-9]+.[0-9]+.[0-9]+'
+            - '[1-9]+.[0-9]+.[0-9]*'
+            - '[1-9]+.[0-9]+.[0-9]'
 
 jobs:
     conan-recipe-version:
@@ -34,7 +36,6 @@ jobs:
         with:
             recipe_id_full: ${{ needs.conan-recipe-version.outputs.recipe_id_full }}
             recipe_id_latest: ${{ needs.conan-recipe-version.outputs.recipe_id_latest }}
-            recipe_id_pr: ${{ needs.conan-recipe-version.outputs.recipe_id_pr }}
             runs_on: 'ubuntu-20.04'
             python_version: '3.10.x'
             conan_config_branch: 'master'
