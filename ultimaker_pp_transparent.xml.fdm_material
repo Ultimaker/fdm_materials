@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>c7005925-2a41-4280-8cdd-4029e3fe5253</GUID>
-        <version>31</version>
+        <version>42</version>
         <color_code>#d0d0d0</color_code>
         <description>Fatigue and chemical resistant. Polypropylene offers excellent temperature, chemical and fatigue resistance. Its toughness and low friction make it a perfect choice for prototyping and creating durable end-use models.</description>
         <adhesion_info>Adhesion sheets are required.</adhesion_info>
@@ -40,12 +40,14 @@
 
         <!-- print settings -->
         <setting key="print temperature">220</setting>
+        <setting key="standby temperature">120</setting>
         <setting key="heated bed temperature">100</setting>
-        <setting key="standby temperature">185</setting>
+        <setting key="build volume temperature">41</setting>
         <setting key="print cooling">20</setting>
         <setting key="retraction speed">35</setting>
         <cura:setting key="material_shrinkage_percentage">100</cura:setting>
-        <setting key="build volume temperature">41</setting>
+        <cura:setting key="material_crystallinity">true</cura:setting>
+        <cura:setting key="adhesion_type">brim</cura:setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -58,9 +60,6 @@
 
             <setting key="retraction amount">8</setting>
 
-            <hotend id="0.25 mm">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="0.4 mm" />
             <hotend id="0.6 mm" />
             <hotend id="0.8 mm" />
@@ -70,12 +69,9 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
                 <setting key="retraction speed">25</setting>
             </hotend>
@@ -95,9 +91,7 @@
             <setting key="hardware compatible">yes</setting>
             <setting key="retraction amount">8</setting>
             <setting key="retraction speed">25</setting>
-            <hotend id="0.25 mm">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
+
             <hotend id="0.4 mm">
                 <setting key="print temperature">220</setting>
             </hotend>
@@ -113,12 +107,8 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
             <setting key="heated bed temperature">85</setting>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
@@ -135,14 +125,11 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
             <setting key="heated bed temperature">85</setting>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="standby temperature">100</setting>
                 <setting key="retraction amount">6.5</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
@@ -155,14 +142,8 @@
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">10</setting>
             </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">no</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
         </machine>
+
+
     </settings>
 </fdmmaterial>
