@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>03f24266-0291-43c2-a6da-5211892a2699</GUID>
-        <version>24</version>
+        <version>29</version>
         <color_code>#2a292a</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -40,11 +40,12 @@
 
         <!-- print settings -->
         <setting key="print temperature">225</setting>
-        <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">125</setting>
+        <setting key="heated bed temperature">60</setting>
+        <setting key="build volume temperature">24</setting>
+        <setting key="print cooling">100</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">100</setting>
-        <setting key="build volume temperature">24</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -55,8 +56,7 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print cooling">100</setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
+
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">6.5</setting>
@@ -90,11 +90,8 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
             <setting key="print cooling">100</setting>
-            <cura:setting key="material_shrinkage_percentage_xy">100.3</cura:setting>
+            <cura:setting key="material_shrinkage_percentage">100.3</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">6.5</setting>
@@ -110,12 +107,11 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
 
             <setting key="print cooling">100</setting>
-            <cura:setting key="material_shrinkage_percentage_xy">100.3</cura:setting>
+            <cura:setting key="material_shrinkage_percentage">100.3</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">6.5</setting>
@@ -127,15 +123,8 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">5</setting>
             </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">no</setting>
-            </buildplate>
         </machine>
+
 
     </settings>
 </fdmmaterial>

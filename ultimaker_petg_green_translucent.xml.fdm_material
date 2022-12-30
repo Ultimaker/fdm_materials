@@ -7,7 +7,7 @@
             <color>Green Translucent</color>
         </name>
         <GUID>1f3c3be1-2e60-4343-b35d-cb383958d992</GUID>
-        <version>33</version>
+        <version>37</version>
         <color_code>#006341</color_code>
         <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -40,11 +40,11 @@
 
         <!-- print settings -->
         <setting key="print temperature">240</setting>
-        <setting key="heated bed temperature">85</setting>
         <setting key="standby temperature">140</setting>
+        <setting key="heated bed temperature">85</setting>
+        <setting key="build volume temperature">37</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
-        <setting key="build volume temperature">37</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -73,8 +73,6 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="heated bed temperature">85</setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print temperature">230</setting>
@@ -90,11 +88,8 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
-            <cura:setting key="material_shrinkage_percentage_xy">100.5</cura:setting>
+            <cura:setting key="material_shrinkage_percentage">100.5</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
@@ -114,12 +109,11 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
 
-            <cura:setting key="material_shrinkage_percentage_xy">100.5</cura:setting>
+            <cura:setting key="material_shrinkage_percentage">100.5</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
+
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
@@ -137,15 +131,8 @@
                 <setting key="heated bed temperature">85</setting>
                 <setting key="retraction amount">8</setting>
             </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">no</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
         </machine>
+
 
     </settings>
 </fdmmaterial>
