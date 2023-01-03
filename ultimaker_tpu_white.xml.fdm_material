@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>6a2573e6-c8ee-4c66-8029-3ebb3d5adc5b</GUID>
-        <version>33</version>
+        <version>35</version>
         <color_code>#f1ece1</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -40,12 +40,12 @@
 
         <!-- print settings -->
         <setting key="print temperature">228</setting>
-        <setting key="heated bed temperature">0</setting>
         <setting key="standby temperature">128</setting>
+        <setting key="heated bed temperature">0</setting>
+        <setting key="build volume temperature">27</setting>
         <setting key="adhesion tendency">3</setting>
         <setting key="surface energy">100</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
-        <setting key="build volume temperature">27</setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -70,11 +70,6 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <setting key="print temperature">223</setting>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="AA 0.25">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">20</setting>
@@ -107,12 +102,6 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
             <setting key="print temperature">223</setting>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
-            <hotend id="AA 0.25">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">20</setting>
@@ -130,12 +119,6 @@
 
             <setting key="print temperature">223</setting>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
-            <hotend id="AA 0.25">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">20</setting>
@@ -147,15 +130,8 @@
                 <setting key="retraction speed">45</setting>
                 <setting key="print cooling">50</setting>
             </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">no</setting>
-            </buildplate>
         </machine>
+
 
     </settings>
 </fdmmaterial>

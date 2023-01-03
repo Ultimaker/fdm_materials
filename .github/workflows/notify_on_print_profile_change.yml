@@ -1,0 +1,27 @@
+name: notify_on_print_profile_change
+
+on:
+  push:
+    branches: [ "master" ]
+    paths:
+        - 'generic**'
+        - 'ultimaker**'
+  pull_request:
+    branches: [ "master" ]
+    paths:
+        - 'generic**'
+        - 'ultimaker**'
+jobs:
+    slackNotification:
+        name: Slack Notification
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Cura resources changed
+                uses: rtCamp/action-slack-notify@v2
+                env:
+                    SLACK_CHANNEL: profile-changes
+                    SLACK_USERNAME: ${{ github.repository }}
+                    SLACK_COLOR: '#006400'
+                    SLACK_TITLE: Print profiles changed
+                    MSG_MINIMAL: commit
+                    SLACK_WEBHOOK: ${{ secrets.SLACK_CURA_PPM_HOOK }}

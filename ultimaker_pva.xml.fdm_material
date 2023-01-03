@@ -7,7 +7,7 @@
             <color>Natural</color>
         </name>
         <GUID>fe15ed8a-33c3-4f57-a2a7-b4b78a38c3cb</GUID>
-        <version>34</version>
+        <version>36</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -67,10 +67,10 @@
 
         <!-- print settings -->
         <setting key="print temperature">215</setting>
-        <setting key="heated bed temperature">60</setting>
         <setting key="standby temperature">115</setting>
-        <cura:setting key="material_crystallinity">true</cura:setting>
+        <setting key="heated bed temperature">60</setting>
         <setting key="build volume temperature">35</setting>
+        <cura:setting key="material_crystallinity">true</cura:setting>
         <cura:setting key="raft_airgap">0</cura:setting>
 
         <!-- For material flow sensor -->
@@ -118,17 +118,17 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <hotend id="CC 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="CC 0.6">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="BB 0.4">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="DD 0.4">
                 <setting key="hardware compatible">no</setting>
@@ -163,15 +163,9 @@
             <hotend id="DD 0.4">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">no</setting>
-                <setting key="hardware recommended">no</setting>
-            </buildplate>
         </machine>
+
+
 
     </settings>
 </fdmmaterial>
