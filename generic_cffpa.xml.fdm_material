@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
             <color>Generic</color>
         </name>
         <GUID>bd66b243-9d50-4e12-bfc3-51c874fca16a</GUID>
-        <version>19</version>
+        <version>20</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Profile Assistant.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -66,12 +66,12 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <hotend id="CC 0.6">
+            <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">50</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
-            <hotend id="CC 0.4">
+            <hotend id="CC 0.6">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">50</setting>
                 <setting key="retraction amount">6.5</setting>
@@ -97,24 +97,16 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <hotend id="CC 0.6">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="print cooling">1</setting>
-                <setting key="retraction amount">6.5</setting>
-            </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">1</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
-            <buildplate id="Glass">
+            <hotend id="CC 0.6">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">no</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
+                <setting key="print cooling">1</setting>
+                <setting key="retraction amount">6.5</setting>
+            </hotend>
         </machine>
 
 

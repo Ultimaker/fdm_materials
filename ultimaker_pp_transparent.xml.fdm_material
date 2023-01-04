@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>c7005925-2a41-4280-8cdd-4029e3fe5253</GUID>
-        <version>40</version>
+        <version>42</version>
         <color_code>#d0d0d0</color_code>
         <description>Fatigue and chemical resistant. Polypropylene offers excellent temperature, chemical and fatigue resistance. Its toughness and low friction make it a perfect choice for prototyping and creating durable end-use models.</description>
         <adhesion_info>Adhesion sheets are required.</adhesion_info>
@@ -60,9 +60,6 @@
 
             <setting key="retraction amount">8</setting>
 
-            <hotend id="0.25 mm">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="0.4 mm" />
             <hotend id="0.6 mm" />
             <hotend id="0.8 mm" />
@@ -72,8 +69,6 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
@@ -96,9 +91,7 @@
             <setting key="hardware compatible">yes</setting>
             <setting key="retraction amount">8</setting>
             <setting key="retraction speed">25</setting>
-            <hotend id="0.25 mm">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
+
             <hotend id="0.4 mm">
                 <setting key="print temperature">220</setting>
             </hotend>
@@ -114,9 +107,6 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
             <setting key="heated bed temperature">85</setting>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">6.5</setting>
@@ -138,9 +128,6 @@
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
             <setting key="heated bed temperature">85</setting>
 
-            <hotend id="BB 0.4" />
-            <hotend id="BB 0.8" />
-            <hotend id="CC 0.6" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">6.5</setting>
@@ -155,14 +142,6 @@
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">10</setting>
             </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">no</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
         </machine>
 
 
