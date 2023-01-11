@@ -10,7 +10,7 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>86a89ceb-4159-47f6-ab97-e9953803d70f</GUID>
-        <version>27</version>
+        <version>32</version>
         <color_code>#a32bcc</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -41,10 +41,11 @@ Generic PVA profile. The data in this file may not be correct for your specific 
 
         <!-- print settings -->
         <setting key="print temperature">215</setting>
+        <setting key="standby temperature">115</setting>
         <setting key="heated bed temperature">60</setting>
-        <setting key="standby temperature">175</setting>
-        <cura:setting key="material_crystallinity">true</cura:setting>
         <setting key="build volume temperature">35</setting>
+        <cura:setting key="material_crystallinity">true</cura:setting>
+        <cura:setting key="raft_airgap">0</cura:setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -91,17 +92,17 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <hotend id="CC 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="CC 0.6">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="BB 0.4">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="DD 0.4">
                 <setting key="hardware compatible">no</setting>
@@ -110,6 +111,8 @@ Generic PVA profile. The data in this file may not be correct for your specific 
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -134,14 +137,6 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <hotend id="DD 0.4">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">no</setting>
-                <setting key="hardware recommended">no</setting>
-            </buildplate>
         </machine>
 
         <machine>
@@ -164,6 +159,7 @@ Generic PVA profile. The data in this file may not be correct for your specific 
                 <setting key="retraction amount">1.5</setting>
             </hotend>
         </machine>
-        
+
+
     </settings>
 </fdmmaterial>

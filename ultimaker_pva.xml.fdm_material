@@ -7,7 +7,7 @@
             <color>Natural</color>
         </name>
         <GUID>fe15ed8a-33c3-4f57-a2a7-b4b78a38c3cb</GUID>
-        <version>31</version>
+        <version>36</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -41,7 +41,7 @@
         <EAN>87 10400 31118 0</EAN>
     </metadata>
     <properties>
-        <density>1.23</density><!-- Unknown if this is correct -->
+        <density>1.23</density>
         <diameter>2.85</diameter>
         <weight>750</weight>
     </properties>
@@ -67,10 +67,11 @@
 
         <!-- print settings -->
         <setting key="print temperature">215</setting>
+        <setting key="standby temperature">115</setting>
         <setting key="heated bed temperature">60</setting>
-        <setting key="standby temperature">175</setting>
-        <cura:setting key="material_crystallinity">true</cura:setting>
         <setting key="build volume temperature">35</setting>
+        <cura:setting key="material_crystallinity">true</cura:setting>
+        <cura:setting key="raft_airgap">0</cura:setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -117,17 +118,17 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <hotend id="CC 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="CC 0.6">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="BB 0.4">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="DD 0.4">
                 <setting key="hardware compatible">no</setting>
@@ -136,6 +137,8 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -160,15 +163,8 @@
             <hotend id="DD 0.4">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <buildplate id="Glass">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="hardware recommended">yes</setting>
-            </buildplate>
-            <buildplate id="Aluminum">
-                <setting key="hardware compatible">no</setting>
-                <setting key="hardware recommended">no</setting>
-            </buildplate>
         </machine>
+
 
 
     </settings>
