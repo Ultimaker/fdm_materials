@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>4d816290-ce2e-40e0-8dc8-3f702243131e</GUID>
-        <version>38</version>
+        <version>39</version>
         <color_code>#00a3e0</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -76,6 +76,7 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -94,6 +95,7 @@
             </hotend>
             <hotend id="0.8 mm">
                 <setting key="print temperature">260</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -111,6 +113,7 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -134,6 +137,7 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
