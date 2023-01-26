@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>1aca047a-42df-497c-abfb-0e9cb85ead52</GUID>
-        <version>39</version>
+        <version>40</version>
         <color_code>#0e0e10</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -71,6 +71,8 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">7</setting>
                 <setting key="print cooling">1</setting>
+                <cura:setting key="cool_lift_head">true</cura:setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -83,7 +85,10 @@
             <setting key="print temperature">260</setting>
             <setting key="hardware compatible">yes</setting>
 
-            <hotend id="0.4 mm" />
+            <hotend id="0.4 mm">
+                <cura:setting key="cool_lift_head">true</cura:setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
+            </hotend>
             <hotend id="0.6 mm" />
             <hotend id="0.8 mm" />
         </machine>
@@ -96,6 +101,8 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">7</setting>
                 <setting key="print cooling">1</setting>
+                <cura:setting key="cool_lift_head">true</cura:setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -112,6 +119,8 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">1</setting>
+                <cura:setting key="cool_lift_head">true</cura:setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>

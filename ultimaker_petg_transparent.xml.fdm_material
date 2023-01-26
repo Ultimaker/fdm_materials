@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>7418eca4-e2c4-45b1-a022-37180861fd39</GUID>
-        <version>37</version>
+        <version>38</version>
         <color_code>#d0d0d0</color_code>
         <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -60,6 +60,8 @@
             </hotend>
             <hotend id="0.4 mm">
                 <setting key="print temperature">245</setting>
+                <cura:setting key="cool_lift_head">true</cura:setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="0.6 mm">
                 <setting key="print temperature">250</setting>
@@ -80,6 +82,8 @@
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">20</setting>
+                <cura:setting key="cool_lift_head">true</cura:setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -100,6 +104,8 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
                 <setting key="print cooling">20</setting>
+                <cura:setting key="cool_lift_head">true</cura:setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -125,6 +131,8 @@
                 <setting key="heated bed temperature">85</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">20</setting>
+                <cura:setting key="cool_lift_head">true</cura:setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>

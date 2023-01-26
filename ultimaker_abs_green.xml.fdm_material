@@ -7,7 +7,7 @@
             <color>Green</color>
         </name>
         <GUID>3400c0d1-a4e3-47de-a444-7b704f287171</GUID>
-        <version>33</version>
+        <version>34</version>
         <color_code>#61993b</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -45,6 +45,7 @@
         <setting key="build volume temperature">36</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
+        <cura:setting key="cool_fan_speed_max">15</cura:setting>
         <cura:setting key="material_shrinkage_percentage">100</cura:setting>
 
         <!-- For material flow sensor -->
@@ -74,10 +75,12 @@
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">5</setting>
+                <cura:setting key="cool_lift_head">true</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">90</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -90,12 +93,14 @@
             </hotend>
             <hotend id="0.4 mm">
                 <setting key="print temperature">250</setting>
+                <cura:setting key="cool_lift_head">true</cura:setting>
             </hotend>
             <hotend id="0.6 mm">
                 <setting key="print temperature">260</setting>
             </hotend>
             <hotend id="0.8 mm">
                 <setting key="print temperature">260</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -110,9 +115,11 @@
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">2</setting>
+                <cura:setting key="cool_lift_head">true</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -128,9 +135,11 @@
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">2</setting>
+                <cura:setting key="cool_lift_head">true</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
