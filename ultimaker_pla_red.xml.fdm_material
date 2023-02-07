@@ -7,7 +7,7 @@
             <color>Red</color>
         </name>
         <GUID>9cfe5bf1-bdc5-4beb-871a-52c70777842d</GUID>
-        <version>37</version>
+        <version>38</version>
         <color_code>#bb1e10</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -86,7 +86,6 @@
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <cura:setting key="cool_lift_head">true</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -103,7 +102,6 @@
             </hotend>
             <hotend id="0.4 mm">
                 <setting key="print temperature">210</setting>
-                <cura:setting key="cool_lift_head">true</cura:setting>
             </hotend>
             <hotend id="0.6 mm">
                 <setting key="print temperature">230</setting>
@@ -125,7 +123,6 @@
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <cura:setting key="cool_lift_head">true</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -135,7 +132,6 @@
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">6.5</setting>
-                <cura:setting key="cool_lift_head">true</cura:setting>
             </hotend>
             <hotend id="CC 0.6">
                 <setting key="hardware compatible">yes</setting>
@@ -157,7 +153,6 @@
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
-                <cura:setting key="cool_lift_head">true</cura:setting>
                 <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="AA 0.8">
@@ -168,7 +163,6 @@
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">6.5</setting>
-                <cura:setting key="cool_lift_head">true</cura:setting>
                 <cura:setting key="material_crystallinity">true</cura:setting>
             </hotend>
             <hotend id="CC 0.6">

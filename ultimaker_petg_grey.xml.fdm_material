@@ -7,7 +7,7 @@
             <color>Gray</color>
         </name>
         <GUID>c8394116-30ba-4112-b4d9-8b2394278cb3</GUID>
-        <version>39</version>
+        <version>40</version>
         <color_code>#575d5e</color_code>
         <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -60,7 +60,6 @@
             </hotend>
             <hotend id="0.4 mm">
                 <setting key="print temperature">245</setting>
-                <cura:setting key="cool_lift_head">true</cura:setting>
                 <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="0.6 mm">
@@ -82,7 +81,6 @@
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">20</setting>
-                <cura:setting key="cool_lift_head">true</cura:setting>
                 <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
@@ -104,7 +102,6 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
                 <setting key="print cooling">20</setting>
-                <cura:setting key="cool_lift_head">true</cura:setting>
                 <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
@@ -131,7 +128,6 @@
                 <setting key="heated bed temperature">85</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">20</setting>
-                <cura:setting key="cool_lift_head">true</cura:setting>
                 <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
