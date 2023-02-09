@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>5f4a826c-7bfe-460f-8650-a9178b180d34</GUID>
-        <version>35</version>
+        <version>36</version>
         <color_code>#00387b</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -74,6 +74,7 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">20</setting>
                 <setting key="retraction speed">35</setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -89,7 +90,9 @@
             <setting key="retraction amount">10</setting>
 
             <hotend id="0.25 mm" />
-            <hotend id="0.4 mm" />
+            <hotend id="0.4 mm">
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
+            </hotend>
             <hotend id="0.6 mm">
                 <setting key="print temperature">240</setting>
             </hotend>
@@ -105,6 +108,7 @@
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">20</setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -123,6 +127,7 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">20</setting>
                 <setting key="retraction amount">8</setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
