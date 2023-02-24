@@ -7,7 +7,7 @@
             <color>Orange</color>
         </name>
         <GUID>d9549dba-b9df-45b9-80a5-f7140a9a2f34</GUID>
-        <version>36</version>
+        <version>38</version>
         <color_code>#ed6b21</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -90,6 +90,7 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">5</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -107,6 +108,7 @@
             </hotend>
             <hotend id="0.8 mm">
                 <setting key="print temperature">240</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -125,6 +127,7 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">5</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -133,6 +136,7 @@
             <hotend id="CC 0.6">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">6.5</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
 
         </machine>
@@ -154,6 +158,7 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">5</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -163,6 +168,7 @@
             <hotend id="CC 0.6">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">6.5</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
                 <cura:setting key="material_crystallinity">true</cura:setting>
             </hotend>
         </machine>

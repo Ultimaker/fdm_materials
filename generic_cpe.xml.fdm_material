@@ -10,7 +10,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>12f41353-1a33-415e-8b4f-a775a6c70cc6</GUID>
-        <version>35</version>
+        <version>36</version>
         <color_code>#159499</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -77,6 +77,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -95,6 +96,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="0.8 mm">
                 <setting key="print temperature">260</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -112,6 +114,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -135,6 +138,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
