@@ -5,7 +5,7 @@ from conan.tools.files import copy
 from conan.tools.scm import Version
 from conan.errors import ConanInvalidConfiguration
 
-required_conan_version = "<=1.56.0"
+required_conan_version = ">=1.56.0"
 
 
 class FDM_MaterialsConan(ConanFile):
