@@ -7,7 +7,7 @@
             <color>Red</color>
         </name>
         <GUID>9680dff6-7aa5-400b-982c-40a0de06a718</GUID>
-        <version>37</version>
+        <version>39</version>
         <color_code>#bb1e10</color_code>
         <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -60,6 +60,7 @@
             </hotend>
             <hotend id="0.4 mm">
                 <setting key="print temperature">245</setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="0.6 mm">
                 <setting key="print temperature">250</setting>
@@ -80,6 +81,7 @@
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">20</setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -100,6 +102,7 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
                 <setting key="print cooling">20</setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -125,6 +128,7 @@
                 <setting key="heated bed temperature">85</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">20</setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>

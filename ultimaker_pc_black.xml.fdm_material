@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>e92b1f0b-a069-4969-86b4-30127cfb6f7b</GUID>
-        <version>34</version>
+        <version>36</version>
         <color_code>#0e0e10</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
@@ -45,6 +45,7 @@
         <setting key="build volume temperature">41</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">65</setting>
+        <cura:setting key="cool_fan_speed_max">15</cura:setting>
         <cura:setting key="material_shrinkage_percentage">100</cura:setting>
 
         <!-- For material flow sensor -->
