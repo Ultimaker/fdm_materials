@@ -3,57 +3,60 @@
     <metadata>
         <name>
             <brand>eMotionTech</brand>
-            <material>PETG</material>
+            <material>Nylon</material>
             <color>Generic</color>
+			<label>PA6GF</label>
         </name>
-        <GUID>f4176e46-e0af-4379-9851-3e295b2db713</GUID>
+        <GUID>5b36a712-ac8b-48a0-b2ee-da3f040e580c</GUID>
         <version>14</version>
-        <color_code>#f3a112</color_code>
+        <color_code>#69E2D5</color_code>
         <description> </description>
-        <adhesion_info>We recommend the use of 3DLac on the glass surface</adhesion_info>
+        <adhesion_info>We recommend the use of 3DLAC applied on a cold glass bed before heating</adhesion_info>
     </metadata>
     <properties>
-        <density>1.27</density>
+        <density>1.35</density>
         <diameter>1.75</diameter>
-        <weight>2300</weight>
+        <weight>500</weight>
     </properties>
     <settings>
-        <setting key="print temperature">240</setting>
-        <setting key="heated bed temperature">70</setting>
+        <setting key="print temperature">290</setting>
+        <setting key="heated bed temperature">45</setting>
         <setting key="standby temperature">150</setting>
-        <setting key="retraction amount">1.7</setting>
-        <setting key="build volume temperature">30</setting>
+        <setting key="speed_print">35</setting>
+        <setting key="build volume temperature">45</setting>
         <machine>
-            <machine_identifier manufacturer="eMotionTech" product="DUAL600"/>
+            <machine_identifier manufacturer="eMotionTech" product="DUAL600"/> 
             <hotend id="Standard 0.4" >
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">240</setting>
-                <setting key="retraction amount">1.9</setting>
+                <setting key="print temperature">290</setting>
+                <setting key="retraction amount">2</setting>
             </hotend>
             <hotend id="Standard 0.6" >
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">243</setting>
-                <setting key="retraction amount">1.9</setting>
+                <setting key="print temperature">290</setting>
+                <setting key="retraction amount">3</setting>
             </hotend>
             <hotend id="Standard 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">245</setting>
-                <setting key="retraction amount">2.0</setting>
+                <setting key="print temperature">290</setting>
+                <setting key="retraction amount">3</setting>
             </hotend>
+            <!-- Commented out until eMotionTech adds their hotend profiles to Cura.
             <hotend id="Standard 1.0 Experimental">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">255</setting>
-                <setting key="retraction amount">2.0</setting>
+                <setting key="print temperature">225</setting>
+                <setting key="retraction amount">1.5</setting>
             </hotend>
             <hotend id="Standard 1.2 Experimental">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">260</setting>
-                <setting key="retraction amount">2.3</setting>
+                <setting key="print temperature">245</setting>
+                <setting key="retraction amount">1.9</setting>
             </hotend>
+            -->
 			<hotend id="High temp 0.4" >
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">240</setting>
-                <setting key="retraction amount">1.9</setting>
+                <setting key="print temperature">290</setting>
+                <setting key="retraction amount">2</setting>
             </hotend>
         </machine>
         <machine>
@@ -61,19 +64,17 @@
             <machine_identifier manufacturer="eMotionTech" product="IDEX420 Duplicate"/>
             <machine_identifier manufacturer="eMotionTech" product="IDEX420 Mirror"/>
             <hotend id="IDEX420 Laiton 0.4" >
-                <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">240</setting>
+                <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="IDEX420 Laiton 0.6" >
-                <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">240</setting>
+                <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="IDEX420 Laiton 0.8">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">240</setting>
+                <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="IDEX420 Acier Durci 0.4">
-                <setting key="hardware compatible">no</setting>
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">290</setting>
             </hotend>
         </machine>
     </settings>
