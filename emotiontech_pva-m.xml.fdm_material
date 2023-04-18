@@ -21,7 +21,6 @@
     <settings>
         <setting key="print temperature">215</setting>
         <setting key="standby temperature">75</setting>
-        <setting key="speed_print">30</setting>
         <setting key="retraction amount">1.3</setting>
         <machine>
             <machine_identifier manufacturer="eMotionTech" product="DUAL600"/>

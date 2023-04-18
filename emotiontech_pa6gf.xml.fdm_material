@@ -22,7 +22,6 @@
         <setting key="print temperature">290</setting>
         <setting key="heated bed temperature">45</setting>
         <setting key="standby temperature">150</setting>
-        <setting key="speed_print">35</setting>
         <setting key="build volume temperature">45</setting>
         <machine>
             <machine_identifier manufacturer="eMotionTech" product="DUAL600"/> 
