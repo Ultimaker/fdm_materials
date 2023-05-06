@@ -3,13 +3,14 @@
     <metadata>
         <name>
             <brand>eSUN</brand>
-            <material>PLA+</material>
+            <material>PLA</material>
             <color>Purple</color>
+            <label>PLA+ Purple</label>
         </name>
         <color_code>#9900CC</color_code>
         <GUID>ae0c8895-b4b3-4a12-a5a5-3ae754940ced</GUID>
         <adhesion_info />
-        <version>1</version>
+        <version>2</version>
         <description />
     </metadata>
     <properties>
