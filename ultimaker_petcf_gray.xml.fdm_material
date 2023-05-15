@@ -7,7 +7,7 @@
             <color>Gray</color>
         </name>
         <GUID>98896281-3972-4dc5-8d6d-76ed417b10ea</GUID>
-        <version>17</version>
+        <version>18</version>
         <color_code>#8d948d</color_code>
         <description>Ultimaker PET-CF.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
@@ -46,7 +46,6 @@
         <setting key="retraction amount">10</setting>
         <setting key="adhesion tendency">2</setting>
         <setting key="surface energy">100</setting>
-        <cura:setting key="adhesion_type">skirt</cura:setting>
         <cura:setting key="material_flow">95</cura:setting>
 
         <!-- For material flow sensor -->
