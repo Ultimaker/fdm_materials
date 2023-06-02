@@ -20,9 +20,13 @@ Generic PVA 1.75mm profile. The data in this file may not be correct for your sp
         <diameter>1.75</diameter>
     </properties>
     <settings>
+        <!-- print settings -->
         <setting key="print temperature">215</setting>
         <setting key="standby temperature">175</setting>
         <cura:setting key="material_crystallinity">true</cura:setting>
+
+        <!-- Define as soluble support material -->
+        <cura:setting key="material_is_support_material">true</cura:setting>
 
         <machine>
             <machine_identifier manufacturer="Cartesio bv" product="cartesio" />

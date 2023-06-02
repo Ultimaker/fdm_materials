@@ -51,6 +51,9 @@ Generic break away support material profile. The data in this file may not be co
         <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
+        <!-- Define as unsoluble support material -->
+        <cura:setting key="material_is_support_material">true</cura:setting>
+
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
