@@ -7,14 +7,14 @@
             <color>Orange</color>
         </name>
         <GUID>0b4ca6ef-eac8-4b23-b3ca-5f21af00e54f</GUID>
-        <version>35</version>
+        <version>37</version>
         <color_code>#ed6b21</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
         <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-abs/printing-guidelines</instruction_link>
     </metadata>
     <properties>
-        <density>1.10</density>
+        <density>1.1</density>
         <diameter>2.85</diameter>
         <weight>750</weight>
     </properties>

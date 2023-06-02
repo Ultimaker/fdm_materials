@@ -12,6 +12,8 @@ Generic HIPS 1.75mm profile. The data in this file may not be correct for your s
         <GUID>a468d86a-220c-47eb-99a5-bbb47e514eb0</GUID>
         <version>5</version>
         <color_code>#12f3e0</color_code>
+        <description>Support material.</description>
+        <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
     </metadata>
     <properties>
         <density>1.24</density>
