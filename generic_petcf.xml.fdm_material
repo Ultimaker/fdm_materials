@@ -10,7 +10,7 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <color>Generic</color>
         </name>
         <GUID>64d44410-be10-428c-8891-f0ae47ea1734</GUID>
-        <version>21</version>
+        <version>22</version>
         <color_code>#888888</color_code>
         <description>Generic PET CF profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
@@ -18,7 +18,7 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
         <cura:breakaway_compatible>True</cura:breakaway_compatible>
     </metadata>
     <properties>
-        <density>1.28</density>
+        <density>1.39</density>
         <diameter>2.85</diameter>
     </properties>
     <settings>
@@ -33,6 +33,9 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
         <setting key="break temperature">265</setting>
         <setting key="pressure release dwell time">50</setting>
         <setting key="dwell time before break preparation move">0</setting>
+        <setting key="end of print purge volume">0</setting>
+        <setting key="end of filament purge volume">0</setting>
+        <setting key="flush purge length">60</setting>
 
         <!-- material station (un)loading settings -->
         <setting key="maximum park duration">7200</setting>
@@ -47,7 +50,6 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
         <setting key="retraction amount">10</setting>
         <setting key="adhesion tendency">2</setting>
         <setting key="surface energy">100</setting>
-        <cura:setting key="adhesion_type">skirt</cura:setting>
         <cura:setting key="material_flow">95</cura:setting>
 
         <!-- For material flow sensor -->

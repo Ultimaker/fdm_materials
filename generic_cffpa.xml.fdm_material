@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
             <color>Generic</color>
         </name>
         <GUID>bd66b243-9d50-4e12-bfc3-51c874fca16a</GUID>
-        <version>20</version>
+        <version>21</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Profile Assistant.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -20,6 +20,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
         <diameter>2.85</diameter>
     </properties>
     <settings>
+        <!-- Deprime settings -->
         <setting key="anti ooze retract position">-8</setting>
         <setting key="anti ooze retract speed">25</setting>
         <setting key="break preparation position">0</setting>
@@ -28,6 +29,8 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">145</setting>
+
+        <!-- material station (un)loading settings -->
         <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">0.935</setting>
         <setting key="flush purge speed">0.5</setting>
