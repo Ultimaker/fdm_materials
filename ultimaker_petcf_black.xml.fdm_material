@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>a6f8d4f1-7205-40cc-b9e5-3bad20bc8011</GUID>
-        <version>18</version>
+        <version>19</version>
         <color_code>#1e1e1e</color_code>
         <description>Ultimaker PET-CF.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
@@ -47,7 +47,7 @@
         <setting key="build volume temperature">37</setting>
         <setting key="print cooling">10</setting>
         <setting key="retraction amount">10</setting>
-        <setting key="adhesion tendency">2</setting>
+        <setting key="adhesion tendency">1</setting>
         <setting key="surface energy">100</setting>
         <cura:setting key="material_flow">95</cura:setting>
 
