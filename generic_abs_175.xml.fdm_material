@@ -2,7 +2,7 @@
 <!--
 Generic ABS 1.75mm profile. The data in this file may not be correct for your specific machine.
 -->
-<fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
+<fdmmaterial xmlns="http://www.ultimaker.com/material" xmlns:cura="http://www.ultimaker.com/cura" version="1.3">
     <metadata>
         <name>
             <brand>Generic</brand>
@@ -10,7 +10,7 @@ Generic ABS 1.75mm profile. The data in this file may not be correct for your sp
             <color>Generic</color>
         </name>
         <GUID>2780b345-577b-4a24-a2c5-12e6aad3e690</GUID>
-        <version>10</version>
+        <version>11</version>
         <color_code>#8cb219</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>No glue needed</adhesion_info>
