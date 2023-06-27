@@ -10,7 +10,7 @@ Generic ABS profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>60636bb4-518f-42e7-8237-fe77b194ebe0</GUID>
-        <version>34</version>
+        <version>35</version>
         <color_code>#8cb219</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -40,8 +40,8 @@ Generic ABS profile. The data in this file may not be correct for your specific 
         <setting key="no load move factor">0.92</setting>
 
         <!-- print settings -->
-        <setting key="print temperature">230</setting>
-        <setting key="standby temperature">130</setting>
+        <setting key="print temperature">245</setting>
+        <setting key="standby temperature">145</setting>
         <setting key="heated bed temperature">80</setting>
         <setting key="build volume temperature">36</setting>
         <setting key="adhesion tendency">0</setting>
@@ -55,8 +55,14 @@ Generic ABS profile. The data in this file may not be correct for your specific 
         <setting key="retract compensation">0</setting>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
+            <setting key="print temperature">230</setting>
+        </machine>
+
+        <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+            <setting key="print temperature">230</setting>
 
             <hotend id="0.25 mm" />
             <hotend id="0.4 mm" />
@@ -69,7 +75,6 @@ Generic ABS profile. The data in this file may not be correct for your specific 
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">225</setting>
                 <setting key="print cooling">40</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
@@ -108,7 +113,6 @@ Generic ABS profile. The data in this file may not be correct for your specific 
             <setting key="heated bed temperature">85</setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">225</setting>
                 <setting key="print cooling">40</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -127,7 +131,6 @@ Generic ABS profile. The data in this file may not be correct for your specific 
             <setting key="heated bed temperature">85</setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">225</setting>
                 <setting key="print cooling">40</setting>
             </hotend>
             <hotend id="AA 0.4">
