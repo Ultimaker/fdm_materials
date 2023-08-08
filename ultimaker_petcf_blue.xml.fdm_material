@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>81555f45-354b-42e0-bc0d-e0357cb56dd4</GUID>
-        <version>19</version>
+        <version>20</version>
         <color_code>#025669</color_code>
         <description>Ultimaker PET-CF.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
