@@ -10,7 +10,7 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
             <color>Generic</color>
         </name>
         <GUID>1d52b2be-a3a2-41de-a8b1-3bcdb5618695</GUID>
-        <version>32</version>
+        <version>35</version>
         <color_code>#B22744</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -40,8 +40,8 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
         <setting key="no load move factor">1.03</setting>
 
         <!-- print settings -->
-        <setting key="print temperature">228</setting>
-        <setting key="standby temperature">128</setting>
+        <setting key="print temperature">225</setting>
+        <setting key="standby temperature">125</setting>
         <setting key="heated bed temperature">0</setting>
         <setting key="build volume temperature">27</setting>
         <setting key="adhesion tendency">3</setting>
@@ -54,8 +54,14 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
         <setting key="retract compensation">0</setting>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
+            <setting key="print temperature">228</setting>
+        </machine>
+
+        <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+            <setting key="print temperature">228</setting>
             <setting key="hardware compatible">yes</setting>
 
             <hotend id="0.25 mm" />
@@ -69,12 +75,12 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
-            <setting key="print temperature">223</setting>
 
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">20</setting>
                 <setting key="retraction speed">35</setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -90,7 +96,9 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
             <setting key="retraction amount">10</setting>
 
             <hotend id="0.25 mm" />
-            <hotend id="0.4 mm" />
+            <hotend id="0.4 mm">
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
+            </hotend>
             <hotend id="0.6 mm">
                 <setting key="print temperature">240</setting>
             </hotend>
@@ -101,11 +109,11 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
-            <setting key="print temperature">223</setting>
 
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">20</setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -118,12 +126,11 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
 
-            <setting key="print temperature">223</setting>
-
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">20</setting>
                 <setting key="retraction amount">8</setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>

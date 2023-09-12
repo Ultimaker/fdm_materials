@@ -10,7 +10,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>12f41353-1a33-415e-8b4f-a775a6c70cc6</GUID>
-        <version>35</version>
+        <version>38</version>
         <color_code>#159499</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -40,8 +40,8 @@ Generic CPE profile. The data in this file may not be correct for your specific 
         <setting key="no load move factor">0.92</setting>
 
         <!-- print settings -->
-        <setting key="print temperature">240</setting>
-        <setting key="standby temperature">140</setting>
+        <setting key="print temperature">245</setting>
+        <setting key="standby temperature">145</setting>
         <setting key="heated bed temperature">85</setting>
         <setting key="build volume temperature">37</setting>
         <setting key="adhesion tendency">0</setting>
@@ -53,8 +53,14 @@ Generic CPE profile. The data in this file may not be correct for your specific 
         <setting key="retract compensation">0</setting>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
+            <setting key="print temperature">240</setting>
+        </machine>
+
+        <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+            <setting key="print temperature">240</setting>
 
             <hotend id="0.25 mm" />
             <hotend id="0.4 mm" />
@@ -69,7 +75,6 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             <cura:setting key="retraction_combing">all</cura:setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">230</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -77,6 +82,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -95,6 +101,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="0.8 mm">
                 <setting key="print temperature">260</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -103,7 +110,6 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             <setting key="heated bed temperature">85</setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">230</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -112,6 +118,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -123,7 +130,6 @@ Generic CPE profile. The data in this file may not be correct for your specific 
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">230</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -135,6 +141,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 

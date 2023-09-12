@@ -10,7 +10,7 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             <color>Generic</color>
         </name>
         <GUID>9d5d2d7c-4e77-441c-85a0-e9eefd4aa68c</GUID>
-        <version>26</version>
+        <version>30</version>
         <color_code>#ffc9f0</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -40,8 +40,8 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
         <setting key="no load move factor">0.93</setting>
 
         <!-- print settings -->
-        <setting key="print temperature">225</setting>
-        <setting key="standby temperature">125</setting>
+        <setting key="print temperature">215</setting>
+        <setting key="standby temperature">115</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="build volume temperature">24</setting>
         <setting key="print cooling">100</setting>
@@ -68,6 +68,7 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">5</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -85,6 +86,7 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             </hotend>
             <hotend id="0.8 mm">
                 <setting key="print temperature">255</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -103,6 +105,7 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">5</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
@@ -123,6 +126,7 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">5</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
