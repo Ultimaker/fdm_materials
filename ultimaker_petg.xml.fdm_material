@@ -4,14 +4,16 @@
         <name>
             <brand>Ultimaker</brand>
             <material>PETG</material>
-            <color>Blue Translucent</color>
+            <color>Generic</color>
+            <label>Any color PETG</label>
         </name>
-        <GUID>e0af2080-29fc-4b18-a5c0-42ca112f507f</GUID>
-        <version>41</version>
-        <color_code>#0033A0</color_code>
+        <GUID>91bd2402-1766-4cb0-9b21-6435e5095395</GUID>
+        <version>5</version>
+        <color_code>#ff5086</color_code>
         <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
         <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-petg/printing-guidelines</instruction_link>
+        <abstract_color>true</abstract_color>
     </metadata>
     <properties>
         <density>1.27</density>
@@ -76,6 +78,7 @@
             <setting key="heated bed temperature">85</setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">230</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -94,6 +97,7 @@
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
+                <setting key="print temperature">230</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -118,6 +122,7 @@
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
+                <setting key="print temperature">230</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">

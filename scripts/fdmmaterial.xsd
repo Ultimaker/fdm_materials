@@ -64,6 +64,7 @@
                             <xsd:element name="MSDS" type="url" minOccurs="0"/>
                             <xsd:element name="supplier" type="contact_info" minOccurs="0"/>
                             <xsd:element name="author" type="contact_info" minOccurs="0"/>
+                            <xsd:element name="abstract_color" type="xsd:boolean" minOccurs="0"/>
                             <!-- Specifically allow any settings from the Cura Namespace to be added here -->
                             <xsd:any minOccurs="0" namespace="http://www.ultimaker.com/cura" processContents ="lax"/>
                         </xsd:choice>

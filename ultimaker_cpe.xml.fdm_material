@@ -3,33 +3,35 @@
     <metadata>
         <name>
             <brand>Ultimaker</brand>
-            <material>ABS</material>
-            <color>Gray</color>
+            <material>CPE</material>
+            <color>Generic</color>
+            <label>Any color CPE</label>
         </name>
-        <GUID>8b75b775-d3f2-4d0f-8fb2-2a3dd53cf673</GUID>
-        <version>39</version>
-        <color_code>#52595d</color_code>
-        <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
-        <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
-        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-abs/printing-guidelines</instruction_link>
+        <GUID>3cf87e76-dae0-42cb-ae86-3d39918af2ad</GUID>
+        <version>5</version>
+        <color_code>#159499</color_code>
+        <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
+        <adhesion_info>Use glue.</adhesion_info>
+        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-cpe/printing-guidelines</instruction_link>
+        <abstract_color>true</abstract_color>
     </metadata>
     <properties>
-        <density>1.1</density>
+        <density>1.27</density>
         <diameter>2.85</diameter>
         <weight>750</weight>
     </properties>
     <settings>
         <!-- Deprime settings -->
-        <setting key="anti ooze retract position">-4</setting>
-        <setting key="anti ooze retract speed">3</setting>
-        <setting key="break preparation position">-12</setting>
-        <setting key="break preparation speed">50</setting>
-        <setting key="break preparation temperature">230</setting>
+        <setting key="anti ooze retract position">-20</setting>
+        <setting key="anti ooze retract speed">50</setting>
+        <setting key="break preparation position">-20</setting>
+        <setting key="break preparation speed">2</setting>
+        <setting key="break preparation temperature">250</setting>
         <setting key="break position">-50</setting>
-        <setting key="break speed">25</setting>
-        <setting key="break temperature">85</setting>
+        <setting key="break speed">50</setting>
+        <setting key="break temperature">75</setting>
         <setting key="pressure release dwell time">25</setting>
-        <setting key="dwell time before break preparation move">4</setting>
+        <setting key="dwell time before break preparation move">0</setting>
         <setting key="end of print purge volume">0</setting>
         <setting key="end of filament purge volume">0</setting>
         <setting key="flush purge length">60</setting>
@@ -39,14 +41,12 @@
         <setting key="no load move factor">0.92</setting>
 
         <!-- print settings -->
-        <setting key="print temperature">245</setting>
-        <setting key="standby temperature">145</setting>
-        <setting key="heated bed temperature">80</setting>
-        <setting key="build volume temperature">36</setting>
+        <setting key="print temperature">240</setting>
+        <setting key="standby temperature">140</setting>
+        <setting key="heated bed temperature">85</setting>
+        <setting key="build volume temperature">37</setting>
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
-        <cura:setting key="cool_fan_speed_max">15</cura:setting>
-        <cura:setting key="material_shrinkage_percentage">100</cura:setting>
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
@@ -54,14 +54,8 @@
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
-            <setting key="print temperature">230</setting>
-        </machine>
-
-        <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
-            <setting key="print temperature">230</setting>
 
             <hotend id="0.25 mm" />
             <hotend id="0.4 mm" />
@@ -72,18 +66,18 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <setting key="heated bed temperature">85</setting>
+            <cura:setting key="retraction_combing">all</cura:setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print cooling">40</setting>
+                <setting key="print temperature">230</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print cooling">5</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="heated bed temperature">90</setting>
                 <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
@@ -112,11 +106,12 @@
             <setting key="heated bed temperature">85</setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print cooling">40</setting>
+                <setting key="print temperature">230</setting>
+                <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print cooling">2</setting>
+                <setting key="print cooling">20</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
@@ -127,17 +122,23 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+
             <setting key="heated bed temperature">85</setting>
+
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print cooling">40</setting>
+                <setting key="print temperature">230</setting>
+                <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print cooling">2</setting>
+                <setting key="retraction amount">8</setting>
+                <setting key="print cooling">20</setting>
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">8</setting>
+                <setting key="retraction speed">40</setting>
                 <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
