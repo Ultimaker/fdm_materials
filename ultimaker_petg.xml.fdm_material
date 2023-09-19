@@ -8,7 +8,7 @@
             <label>Any color PETG</label>
         </name>
         <GUID>91bd2402-1766-4cb0-9b21-6435e5095395</GUID>
-        <version>5</version>
+        <version>6</version>
         <color_code>#ff5086</color_code>
         <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -78,7 +78,6 @@
             <setting key="heated bed temperature">85</setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">230</setting>
             </hotend>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -97,7 +96,6 @@
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
-                <setting key="print temperature">230</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -122,7 +120,6 @@
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="heated bed temperature">85</setting>
-                <setting key="print temperature">230</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">

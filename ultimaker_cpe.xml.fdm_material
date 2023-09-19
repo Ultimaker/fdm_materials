@@ -8,7 +8,7 @@
             <label>Any color CPE</label>
         </name>
         <GUID>3cf87e76-dae0-42cb-ae86-3d39918af2ad</GUID>
-        <version>5</version>
+        <version>6</version>
         <color_code>#159499</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -41,8 +41,8 @@
         <setting key="no load move factor">0.92</setting>
 
         <!-- print settings -->
-        <setting key="print temperature">240</setting>
-        <setting key="standby temperature">140</setting>
+        <setting key="print temperature">245</setting>
+        <setting key="standby temperature">145</setting>
         <setting key="heated bed temperature">85</setting>
         <setting key="build volume temperature">37</setting>
         <setting key="adhesion tendency">0</setting>
@@ -54,8 +54,14 @@
         <setting key="retract compensation">0</setting>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
+            <setting key="print temperature">240</setting>
+        </machine>
+
+        <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+            <setting key="print temperature">240</setting>
 
             <hotend id="0.25 mm" />
             <hotend id="0.4 mm" />
@@ -70,7 +76,6 @@
             <cura:setting key="retraction_combing">all</cura:setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">230</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -106,7 +111,6 @@
             <setting key="heated bed temperature">85</setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">230</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -127,7 +131,6 @@
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">230</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
