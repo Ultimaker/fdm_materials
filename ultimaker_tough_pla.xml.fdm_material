@@ -8,7 +8,7 @@
             <label>Any color Tough PLA</label>
         </name>
         <GUID>2c31d5ae-a75c-4be6-83bf-377341fc6d24</GUID>
-        <version>5</version>
+        <version>6</version>
         <color_code>#ffc9f0</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -41,8 +41,8 @@
         <setting key="no load move factor">0.93</setting>
 
         <!-- print settings -->
-        <setting key="print temperature">225</setting>
-        <setting key="standby temperature">125</setting>
+        <setting key="print temperature">215</setting>
+        <setting key="standby temperature">115</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="build volume temperature">24</setting>
         <setting key="print cooling">100</setting>
