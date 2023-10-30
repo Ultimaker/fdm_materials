@@ -19,10 +19,10 @@ class FDM_MaterialsConan(ConanFile):
     exports = "LICENSE*"
     settings = "os", "compiler", "build_type", "arch"
     no_copy_source = True
-    
+
     def set_version(self):
         if not self.version:
-            self.version = "5.4.0-beta.1"
+            self.version = "5.5.0-beta.2"
 
     def export_sources(self):
         copy(self, "*.fdm_material", self.recipe_folder, self.export_sources_folder)
