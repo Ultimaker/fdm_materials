@@ -22,7 +22,7 @@ class FDM_MaterialsConan(ConanFile):
 
     def set_version(self):
         if not self.version:
-            self.version = "5.5.0-beta.2"
+            self.version = "5.6.0-beta.1"
 
     def export_sources(self):
         copy(self, "*.fdm_material", self.recipe_folder, self.export_sources_folder)
