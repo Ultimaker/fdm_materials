@@ -7,7 +7,7 @@
             <color>Generic</color>
         </name>
         <GUID>a140ef8f-4f26-4e73-abe0-cfc29d6d1024</GUID>
-        <version>3</version>
+        <version>5</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material for ABS-R.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -28,12 +28,12 @@
 
         <!-- Define as soluble support material -->
         <cura:setting key="material_is_support_material">True</cura:setting>
-        <cura:setting key="prime_tower_enable">=extruder_nr==support_extruder_nr and support_enable</cura:setting>
+        <cura:setting key="prime_tower_enable">=extruder_nr==support_extruder_nr</cura:setting>
         <cura:setting key="support_conical_enabled">True</cura:setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Makerbot Method X"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Makerbot Method XL"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL"/>
             <hotend id="1A">
                 <setting key="hardware compatible">no</setting>
             </hotend>
