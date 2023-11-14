@@ -7,7 +7,7 @@
             <color>Generic</color>
         </name>
         <GUID>a140ef8f-4f26-4e73-abe0-cfc29d6d1024</GUID>
-        <version>5</version>
+        <version>6</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material for ABS-R.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -49,10 +49,9 @@
             <hotend id="1C">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <hotend id="Lab">
+            <hotend id="LABS">
                 <setting key="hardware compatible">no</setting>
             </hotend>
         </machine>
-
     </settings>
 </fdmmaterial>
