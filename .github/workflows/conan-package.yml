@@ -31,5 +31,4 @@ jobs:
     with:
       recipe_id_full: ${{ needs.conan-recipe-version.outputs.recipe_id_full }}
       recipe_id_latest: ${{ needs.conan-recipe-version.outputs.recipe_id_latest }}
-      conan_export_binaries: false
     secrets: inherit
