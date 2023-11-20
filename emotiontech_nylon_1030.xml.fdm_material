@@ -5,7 +5,7 @@
             <brand>eMotionTech</brand>
             <material>Nylon</material>
             <color>Generic</color>
-            <label>Nylon 1030</label>
+            <label>Nylon 1030 - Deprecated</label>
         </name>
         <GUID>cb7cbe23-bb0b-4d54-95e0-340aaac4541f</GUID>
         <version>14</version>

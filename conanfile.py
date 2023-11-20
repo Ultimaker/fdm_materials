@@ -1,10 +1,11 @@
 import os
 
 from conan import ConanFile
-from conans import tools
+from conan.tools.files import copy
+from conan.tools.scm import Version
 from conan.errors import ConanInvalidConfiguration
 
-required_conan_version = ">=1.47.0"
+required_conan_version = ">=1.56.0"
 
 
 class FDM_MaterialsConan(ConanFile):
@@ -18,26 +19,26 @@ class FDM_MaterialsConan(ConanFile):
     exports = "LICENSE*"
     settings = "os", "compiler", "build_type", "arch"
     no_copy_source = True
-    scm = {
-        "type": "git",
-        "subfolder": ".",
-        "url": "auto",
-        "revision": "auto"
-    }
+
+    def set_version(self):
+        if not self.version:
+            self.version = "5.6.0-beta.1"
+
+    def export_sources(self):
+        copy(self, "*.fdm_material", self.recipe_folder, self.export_sources_folder)
+        copy(self, "*.sig", self.recipe_folder, self.export_sources_folder)
 
     def validate(self):
-        if tools.Version(self.version) <= tools.Version("4"):
+        if Version(self.version) <= Version("4"):
             raise ConanInvalidConfiguration("Only versions 5+ are support")
 
-    def layout(self):
-        self.cpp.package.resdirs = ["materials"]
-
     def package(self):
-        self.copy("*.fdm_material", src = ".", dst = self.cpp.package.resdirs[0])
-        self.copy("*.sig", src = ".", dst = self.cpp.package.resdirs[0])
+        copy(self, "*.fdm_material", self.source_folder, os.path.join(self.package_folder, "res", "resources", "materials"), keep_path = False)
+        copy(self, "*.sig", self.source_folder, os.path.join(self.package_folder, "res", "resources", "materials"), keep_path = False)
+
+    def package_info(self):
+        self.cpp_info.includedirs = []
+        self.cpp_info.resdirs = ["res"]
 
     def package_id(self):
-        del self.info.settings.os
-        del self.info.settings.compiler
-        del self.info.settings.build_type
-        del self.info.settings.arch
+        self.info.clear()
