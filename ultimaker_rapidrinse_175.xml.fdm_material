@@ -28,7 +28,7 @@
 
         <!-- Define as soluble support material -->
         <cura:setting key="material_is_support_material">True</cura:setting>
-        <cura:setting key="prime_tower_enable">=extruder_nr==support_extruder_nr</cura:setting>
+        <cura:setting key="prime_tower_enable">=extruder_nr==support_extruder_nr or extruder_nr==raft_base_extruder_nr or extruder_nr==raft_interface_extruder_nr or extruder_nr==raft_surface_extruder_nr</cura:setting>
         <cura:setting key="support_conical_enabled">True</cura:setting>
 
         <machine>
