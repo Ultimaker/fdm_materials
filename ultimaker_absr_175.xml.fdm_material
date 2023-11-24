@@ -7,6 +7,7 @@
             <color>Generic</color>
         </name>
         <GUID>88c8919c-6a09-471a-b7b6-e801263d862d</GUID>
+        <bot_id>abs-wss1</bot_id>
         <version>4</version>
         <color_code>#8cb219</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
