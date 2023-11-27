@@ -10,7 +10,7 @@ Generic ASA 1.75mm profile. The data in this file may not be correct for your sp
             <color>Generic</color>
         </name>
         <GUID>416eead4-0d8e-4f0b-8bfc-a91a519befa5</GUID>
-        <bot_id>asa</bot_id>
+        <bot_material_id>asa</bot_material_id>
         <version>5</version>
         <color_code>#ffe92a</color_code>
         <description>ASA combines the qualities of ABS with the added benefit of UV resistance and additional moisture resistance making it ideal for equipment exposed to sunlight and rain over long periods of time – such as products for the agriculture, transportation, and power and utility industries.</description>

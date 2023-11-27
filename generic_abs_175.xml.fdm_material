@@ -11,7 +11,7 @@ Generic ABS 1.75mm profile. The data in this file may not be correct for your sp
         </name>
         <GUID>2780b345-577b-4a24-a2c5-12e6aad3e690</GUID>
         <version>11</version>
-        <bot_id>abs</bot_id>
+        <bot_material_id>abs</bot_material_id>
         <color_code>#8cb219</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>No glue needed</adhesion_info>
