@@ -34,6 +34,14 @@
                                                 </xsd:restriction>
                                             </xsd:simpleType>
                                         </xsd:element>
+                                        <xsd:element name="bot_material_id">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:minLength value="2"/>
+                                                    <xsd:maxLength value="100"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
                                         <xsd:element name="label" type="xsd:string" minOccurs="0"/>
                                     </xsd:all>
                                 </xsd:complexType>
