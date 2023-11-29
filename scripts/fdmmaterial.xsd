@@ -34,14 +34,6 @@
                                                 </xsd:restriction>
                                             </xsd:simpleType>
                                         </xsd:element>
-                                        <xsd:element name="reference_material_id">
-                                            <xsd:simpleType>
-                                                <xsd:restriction base="xsd:string">
-                                                    <xsd:minLength value="2"/>
-                                                    <xsd:maxLength value="100"/>
-                                                </xsd:restriction>
-                                            </xsd:simpleType>
-                                        </xsd:element>
                                         <xsd:element name="label" type="xsd:string" minOccurs="0"/>
                                     </xsd:all>
                                 </xsd:complexType>
@@ -64,6 +56,7 @@
                                 </xsd:simpleType>
                             </xsd:element>
 
+                            <xsd:element name="reference_material_id" type="xsd:string" minOccurs="0"/>
                             <xsd:element name="description" type="xsd:string" minOccurs="0"/>
                             <xsd:element name="adhesion_info" type="xsd:string" minOccurs="0"/>
                             <xsd:element name="instruction_link" type="url" minOccurs="0"/>
