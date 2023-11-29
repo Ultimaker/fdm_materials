@@ -7,7 +7,7 @@
             <color>Generic</color>
         </name>
         <GUID>a140ef8f-4f26-4e73-abe0-cfc29d6d1024</GUID>
-        <bot_material_id>wss1</bot_material_id>
+        <reference_material_id>wss1</reference_material_id>
         <version>5</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material for ABS-R.</description>

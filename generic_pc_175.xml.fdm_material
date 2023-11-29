@@ -10,7 +10,7 @@ Generic PC 1.75mm profile. The data in this file may not be correct for your spe
             <color>Generic</color>
         </name>
         <GUID>62414577-94d1-490d-b1e4-7ef3ec40db02</GUID>
-        <bot_material_id>pc</bot_material_id>
+        <reference_material_id>pc</reference_material_id>
         <version>6</version>
         <color_code>#F29030</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>

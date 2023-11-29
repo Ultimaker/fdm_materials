@@ -10,7 +10,7 @@ Generic PETG 1.75mm profile. The data in this file may not be correct for your s
             <color>Generic</color>
         </name>
         <GUID>69386c85-5b6c-421a-bec5-aeb1fb33f060</GUID>
-        <bot_material_id>petg</bot_material_id>
+        <reference_material_id>petg</reference_material_id>
         <version>6</version>
         <color_code>#f3a112</color_code>
         <description>Generic PETG profile. The data in this file may not be correct for your specific machine.</description>
