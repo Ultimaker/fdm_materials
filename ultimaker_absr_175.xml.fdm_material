@@ -7,7 +7,8 @@
             <color>Generic</color>
         </name>
         <GUID>88c8919c-6a09-471a-b7b6-e801263d862d</GUID>
-        <version>4</version>
+        <reference_material_id>abs-wss1</reference_material_id>
+        <version>5</version>
         <color_code>#8cb219</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>No glue needed</adhesion_info>
@@ -24,6 +25,8 @@
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
         <setting key="build volume temperature">107</setting>
+        <cura:setting key="material_shrinkage_percentage">100.57</cura:setting>
+        <cura:setting key="material_shrinkage_percentage_z">100.59</cura:setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X"/>
@@ -42,7 +45,7 @@
             <hotend id="1C">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
-            <hotend id="Lab">
+            <hotend id="LABS">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
@@ -65,7 +68,7 @@
             <hotend id="1C">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
-            <hotend id="Lab">
+            <hotend id="LABS">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
