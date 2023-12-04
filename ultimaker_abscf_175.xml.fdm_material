@@ -7,7 +7,7 @@
             <color>Generic</color>
         </name>
         <GUID>495a0ce5-9daf-4a16-b7b2-06856d82394d</GUID>
-        <version>4</version>
+        <version>5</version>
         <color_code>#0e0e10</color_code>
         <description>The performance of carbon fiber with the reliability of ABS</description>
         <adhesion_info>No glue needed</adhesion_info>
@@ -24,6 +24,8 @@
         <setting key="adhesion tendency">0</setting>
         <setting key="surface energy">70</setting>
         <setting key="build volume temperature">107</setting>
+        <cura:setting key="material_shrinkage_percentage">100.16</cura:setting>
+        <cura:setting key="material_shrinkage_percentage_z">100.68</cura:setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X"/>
@@ -42,10 +44,11 @@
             <hotend id="1C">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
-            <hotend id="Lab">
+            <hotend id="LABS">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
+
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL"/>
             <setting key="build volume temperature">85</setting>
@@ -65,7 +68,7 @@
             <hotend id="1C">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
-            <hotend id="Lab">
+            <hotend id="LABS">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
