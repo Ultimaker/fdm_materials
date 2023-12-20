@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Eolas Prints</brand>
+            <material>PETG</material>
+            <color>Generic</color>
+            <label>Eolas Prints PETG</label>
+        </name>
+        <color_code>#4d9398</color_code>
+        <GUID>f27bcc1e-d896-436f-9654-89cc392f1afb</GUID>
+        <adhesion_info>Adhesive like magigoo recommended<adhesion_info />
+        <version>1</version>
+        <description>PETG Filament is a high strength, impact-resistant material for industrial 3D printing applications. This versatile Polyethylene Terephthalate Glycol-based filament is easy to work with and offers excellent flexural strength and impact resistance. PETG Filament prints with a high-quality finish and displays an excellent layer adhesion.</description>
+    </metadata>
+    <properties>
+        <diameter>1.75</diameter>
+        <density>1.27</density>
+        <weight>1000</weight>
+    </properties>
+    <settings>
+        <setting key="print cooling">50</setting>
+        <setting key="print temperature">240</setting>
+        <setting key="heated bed temperature">90</setting>
+        <setting key="standby temperature">120</setting>
+    </settings>
+</fdmmaterial>

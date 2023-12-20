@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Eolas Prints</brand>
+            <material>TPU</material>
+            <color>Generic</color>
+            <label>Eolas Prints TPU 93A</label>
+        </name>
+        <color_code>#4d9398</color_code>
+        <GUID>20ce7b71-34c7-4801-b93c-177df93598a5</GUID>
+        <adhesion_info>Adhesive like magigoo recommended but not required<adhesion_info />
+        <version>1</version>
+        <description>TPU Filament is a flexible, strong 3D printing filament with a shore 93 rating that makes it perfect for applications requiring strong flexibility and reliability. It offers superior tensile strength compared to other materials and superior abrasion resistance. TPU Filament is a perfect choice for reliable, flexible 3D printing projects.</description>
+    </metadata>
+    <properties>
+        <diameter>1.75</diameter>
+        <density>1.21</density>
+        <weight>1000</weight>
+    </properties>
+    <settings>
+        <setting key="print cooling">20</setting>
+        <setting key="print temperature">225</setting>
+        <setting key="heated bed temperature">35</setting>
+        <setting key="standby temperature">120</setting>
+        <setting key="retraction amount">0</setting>
+    </settings>
+</fdmmaterial>
