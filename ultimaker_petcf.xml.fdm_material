@@ -87,6 +87,7 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
