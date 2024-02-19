@@ -11,7 +11,7 @@
     <adhesion_info>Use with ZYYX standard/multi-material build-plate</adhesion_info>
     <description>ZYYX PETG-CF™ is an excellent material choice for cost-effective iterative design processes.</description>
     <color_code>#ffc924</color_code>
-    <GUID>cece7f55-2ccc-4807-bbb6-4a5df9c9df8A</GUID>
+    <GUID>5555f37a-ec3f-4189-8c43-b7b20e85d85e</GUID>
   </metadata>
   <properties>
     <density>1.24</density>

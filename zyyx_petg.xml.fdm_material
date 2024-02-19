@@ -11,7 +11,7 @@
     <adhesion_info>Use with ZYYX standard/multi-material build-plate</adhesion_info>
     <description>ZYYX PETG can often replace ABS as the primary material for technical applications mainly because of its chemical resistance. Due to its wide flow zone it can be used to make water-tight containers.</description>
     <color_code>#ffc924</color_code>
-    <GUID>cece7f55-2ccc-4807-bbb6-4a5df9c9df89</GUID>
+    <GUID>261ab5d3-528f-402b-a843-b4638a0b5bef</GUID>
   </metadata>
   <properties>
     <density>1.24</density>

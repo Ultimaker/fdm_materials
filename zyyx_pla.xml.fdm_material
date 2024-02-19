@@ -11,7 +11,7 @@
     <adhesion_info>Use with ZYYX standard/multi-material build-plate</adhesion_info>
     <description>Fast, safe, and reliable printing. ZYYX PLA is ideal for printing parts and prototypes with a great surface quality.</description>
     <color_code>#ffc924</color_code>
-    <GUID>cece7f55-2ccc-4807-bbb6-4a5df9c9df81</GUID>
+    <GUID>a2d0add1-aa33-4226-893f-c7701482476a</GUID>
   </metadata>
   <properties>
     <density>1.24</density>

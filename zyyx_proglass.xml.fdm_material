@@ -8,7 +8,7 @@
       <label>Nylon proGlass</label>
     </name>
     <version>1</version>
-    <GUID>97a44232-dd08-4ac1-847b-0275d83af187</GUID>
+    <GUID>012ef05b-5e75-4f93-80cb-7400a6008f72</GUID>
     <description>ZYYX ProGlass™ profile for use with orange build-plate.</description>
     <adhesion_info>Recommended nozzle temperature: 250...260C, Chamber temperature: 50...60 layer fan: off...50%, adhesion type: raft.</adhesion_info>
     <color_code>#ecdbb9</color_code>
