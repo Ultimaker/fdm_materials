@@ -1,7 +1,7 @@
 import os
 
 from conan import ConanFile
-from conan.tools.files import copy
+from conan.tools.files import copy, update_conandata
 from conan.tools.scm import Version
 from conan.errors import ConanInvalidConfiguration
 
@@ -22,7 +22,10 @@ class FDM_MaterialsConan(ConanFile):
 
     def set_version(self):
         if not self.version:
-            self.version = "5.6.0-beta.1"
+            self.version = self.conan_data["version"]
+
+    def export(self):
+        update_conandata(self, {"version": self.version})
 
     def export_sources(self):
         copy(self, "*.fdm_material", self.recipe_folder, self.export_sources_folder)

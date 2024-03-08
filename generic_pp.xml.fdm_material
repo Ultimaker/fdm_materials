@@ -136,6 +136,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+
             <setting key="heated bed temperature">85</setting>
 
             <hotend id="AA 0.25">
