@@ -8,10 +8,11 @@
         </name>
         <GUID>88c8919c-6a09-471a-b7b6-e801263d862d</GUID>
         <reference_material_id>abs-wss1</reference_material_id>
-        <version>5</version>
+        <version>6</version>
         <color_code>#8cb219</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>No glue needed</adhesion_info>
+        <instruction_link>https://support.ultimaker.com/s/article/RapidRinse-and-ABS-R-FAQ</instruction_link>
     </metadata>
     <properties>
         <density>1.05</density>
