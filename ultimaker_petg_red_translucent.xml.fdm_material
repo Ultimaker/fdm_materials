@@ -7,11 +7,11 @@
             <color>Red Translucent</color>
         </name>
         <GUID>c8639119-5cae-4f56-9bcf-3bb00e8225fd</GUID>
-        <version>41</version>
+        <version>42</version>
         <color_code>#93272C</color_code>
         <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
-        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-petg/printing-guidelines</instruction_link>
+        <instruction_link>https://support.ultimaker.com/s/article/1667412428052</instruction_link>
     </metadata>
     <properties>
         <density>1.27</density>

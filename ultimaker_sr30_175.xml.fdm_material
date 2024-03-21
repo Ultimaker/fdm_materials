@@ -8,11 +8,11 @@
         </name>
         <GUID>77873465-83a9-4283-bc44-4e542b8eb3eb</GUID>
         <reference_material_id>sr30</reference_material_id>
-        <version>4</version>
+        <version>5</version>
         <color_code>#f5f2d1</color_code>
         <description>Dissolvable support material works seamlessly with ABS, ASA, and various other high-temp materials.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
-        <instruction_link>https://support.ultimaker.com/s/article/Method-X-Support-Filament-SR-30</instruction_link>
+        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-SR-30</instruction_link>
     </metadata>
     <properties>
         <density>1.23</density>

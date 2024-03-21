@@ -8,11 +8,11 @@
         </name>
         <GUID>a140ef8f-4f26-4e73-abe0-cfc29d6d1024</GUID>
         <reference_material_id>wss1</reference_material_id>
-        <version>7</version>
+        <version>8</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material for ABS-R.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
-        <instruction_link>https://support.ultimaker.com/s/article/RapidRinse-and-ABS-R-FAQ</instruction_link>
+        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-RapidRinse</instruction_link>
     </metadata>
     <properties>
         <density>1.23</density>
