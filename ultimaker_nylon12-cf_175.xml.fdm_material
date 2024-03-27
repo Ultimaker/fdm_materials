@@ -8,10 +8,11 @@
         </name>
         <GUID>3c6f2877-71cc-4760-84e6-4b89ab243e3b</GUID>
         <reference_material_id>nylon12-cf</reference_material_id>
-        <version>2</version>
-        <color_code>#8cb219</color_code>
+        <version>4</version>
+        <color_code>#0e0e10</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
+        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-Nylon12-CF</instruction_link>
     </metadata>
     <properties>
         <density>1.14</density>

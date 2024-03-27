@@ -7,11 +7,11 @@
             <color>Yellow</color>
         </name>
         <GUID>bfdb0787-032d-4cf5-9975-964132bd641c</GUID>
-        <version>12</version>
+        <version>13</version>
         <color_code>#F8F32B</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
-        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-tough-pla/printing-guidelines</instruction_link>
+        <instruction_link>https://support.ultimaker.com/s/article/1667337611405</instruction_link>
     </metadata>
     <properties>
         <density>1.24</density>
