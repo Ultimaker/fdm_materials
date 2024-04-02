@@ -7,11 +7,11 @@
             <color>Natural</color>
         </name>
         <GUID>fe15ed8a-33c3-4f57-a2a7-b4b78a38c3cb</GUID>
-        <version>38</version>
+        <version>39</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
-        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-pva/printing-guidelines</instruction_link>
+        <instruction_link>https://support.ultimaker.com/s/article/1667337600656</instruction_link>
         <author>
             <organization>Ultimaker B.V.</organization>
             <contact>Ultimaker Support</contact>

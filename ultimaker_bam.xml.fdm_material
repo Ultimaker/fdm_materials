@@ -7,11 +7,11 @@
             <color>White</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d5f9</GUID>
-        <version>36</version>
+        <version>37</version>
         <color_code>#F1ECE1</color_code>
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
-        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-breakaway/printing-guidelines</instruction_link>
+        <instruction_link>https://support.ultimaker.com/s/article/1667337600384</instruction_link>
     </metadata>
     <properties>
         <density>1.22</density>

@@ -7,11 +7,11 @@
             <color>Black</color>
         </name>
         <GUID>e92b1f0b-a069-4969-86b4-30127cfb6f7b</GUID>
-        <version>38</version>
+        <version>39</version>
         <color_code>#0e0e10</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
-        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-pc/printing-guidelines</instruction_link>
+        <instruction_link>https://support.ultimaker.com/s/article/1667337602519</instruction_link>
     </metadata>
     <properties>
         <density>1.19</density>
