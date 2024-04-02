@@ -7,11 +7,11 @@
             <color>White</color>
         </name>
         <GUID>881c888e-24fb-4a64-a4ac-d5c95b096cd7</GUID>
-        <version>41</version>
+        <version>42</version>
         <color_code>#f1ece1</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
-        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-cpe/printing-guidelines</instruction_link>
+        <instruction_link>https://support.ultimaker.com/s/article/1667337602543</instruction_link>
     </metadata>
     <properties>
         <density>1.27</density>

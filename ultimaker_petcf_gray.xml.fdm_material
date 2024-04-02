@@ -7,11 +7,11 @@
             <color>Gray</color>
         </name>
         <GUID>98896281-3972-4dc5-8d6d-76ed417b10ea</GUID>
-        <version>19</version>
+        <version>20</version>
         <color_code>#8d948d</color_code>
         <description>Ultimaker PET-CF.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
-        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-pet-cf/printing-guidelines</instruction_link>
+        <instruction_link>https://support.makerbot.com/s/article/pet-cf-instructions</instruction_link>
         <cura:pva_compatible>True</cura:pva_compatible>
         <cura:breakaway_compatible>True</cura:breakaway_compatible>
     </metadata>

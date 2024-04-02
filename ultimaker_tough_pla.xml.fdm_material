@@ -8,11 +8,11 @@
             <label>Any color Tough PLA</label>
         </name>
         <GUID>2c31d5ae-a75c-4be6-83bf-377341fc6d24</GUID>
-        <version>6</version>
+        <version>7</version>
         <color_code>#ffc9f0</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
-        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-tough-pla/printing-guidelines</instruction_link>
+        <instruction_link>https://support.ultimaker.com/s/article/1667337611405</instruction_link>
         <abstract_color>true</abstract_color>
     </metadata>
     <properties>

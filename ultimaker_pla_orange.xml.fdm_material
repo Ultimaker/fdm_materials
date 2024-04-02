@@ -7,11 +7,11 @@
             <color>Orange</color>
         </name>
         <GUID>d9549dba-b9df-45b9-80a5-f7140a9a2f34</GUID>
-        <version>40</version>
+        <version>41</version>
         <color_code>#ed6b21</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
-        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-pla/printing-guidelines</instruction_link>
+        <instruction_link>https://support.ultimaker.com/s/article/1667337611872</instruction_link>
     </metadata>
     <properties>
         <density>1.24</density>
