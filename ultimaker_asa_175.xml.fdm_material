@@ -8,10 +8,11 @@
         </name>
         <GUID>f79bc612-21eb-482e-ad6c-87d75bdde066</GUID>
         <reference_material_id>asa</reference_material_id>
-        <version>2</version>
-        <color_code>#8cb219</color_code>
+        <version>4</version>
+        <color_code>#f1ece1</color_code>
         <description>ASA combines the qualities of ABS with the added benefit of UV resistance and additional moisture resistance making it ideal for equipment exposed to sunlight and rain over long periods of time – such as products for the agriculture, transportation, and power and utility industries.</description>
         <adhesion_info>No glue needed</adhesion_info>
+        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-ASA</instruction_link>
     </metadata>
     <properties>
         <density>1.07</density>
