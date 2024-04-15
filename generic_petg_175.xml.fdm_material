@@ -82,6 +82,5 @@ Generic PETG 1.75mm profile. The data in this file may not be correct for your s
             <setting key="heated bed temperature">80</setting>
         </machine>
 
-
     </settings>
 </fdmmaterial>

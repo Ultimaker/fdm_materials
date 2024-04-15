@@ -56,13 +56,13 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original" />
             <setting key="print temperature">245</setting>
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+" />
             <setting key="print temperature">245</setting>
 
             <hotend id="0.25 mm" />
@@ -72,8 +72,8 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
             <setting key="print cooling">40</setting>
             <setting key="heated bed temperature">40</setting>
 
@@ -91,7 +91,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" />
             <setting key="hardware compatible">yes</setting>
             <hotend id="0.25 mm">
                 <setting key="print temperature">240</setting>
@@ -111,7 +111,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
             <setting key="print cooling">40</setting>
             <setting key="heated bed temperature">40</setting>
 
@@ -131,8 +131,8 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
 
             <setting key="print cooling">40</setting>
             <setting key="heated bed temperature">40</setting>
@@ -153,7 +153,6 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
                 <setting key="retraction speed">45</setting>
             </hotend>
         </machine>
-
 
     </settings>
 </fdmmaterial>

@@ -28,6 +28,5 @@ Generic ASA 1.75mm profile. The data in this file may not be correct for your sp
         <setting key="print cooling">0</setting>
         <setting key="hardware compatible">yes</setting>
 
-
    </settings>
 </fdmmaterial>

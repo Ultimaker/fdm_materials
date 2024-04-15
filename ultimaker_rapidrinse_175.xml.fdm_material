@@ -34,8 +34,8 @@
         <cura:setting key="support_conical_enabled">True</cura:setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
             <hotend id="1A">
                 <setting key="hardware compatible">no</setting>
             </hotend>

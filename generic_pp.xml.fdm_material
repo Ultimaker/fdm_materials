@@ -56,13 +56,13 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original" />
             <setting key="print temperature">220</setting>
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+" />
             <setting key="print temperature">220</setting>
 
             <setting key="retraction amount">8</setting>
@@ -73,8 +73,8 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
@@ -95,7 +95,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" />
             <setting key="hardware compatible">yes</setting>
             <setting key="retraction amount">8</setting>
             <setting key="retraction speed">25</setting>
@@ -113,7 +113,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
             <setting key="heated bed temperature">85</setting>
 
             <hotend id="AA 0.25">
@@ -134,8 +134,8 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
 
             <setting key="heated bed temperature">85</setting>
 
@@ -155,7 +155,6 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
                 <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
-
 
     </settings>
 </fdmmaterial>
