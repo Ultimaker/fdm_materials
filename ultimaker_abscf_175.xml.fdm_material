@@ -30,7 +30,7 @@
         <cura:setting key="material_shrinkage_percentage_z">100.68</cura:setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
             <hotend id="1A">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -52,7 +52,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
             <setting key="build volume temperature">85</setting>
             <setting key="heated bed temperature">95</setting>
             <hotend id="1A">

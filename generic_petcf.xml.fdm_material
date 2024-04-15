@@ -58,7 +58,7 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -84,8 +84,8 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
@@ -110,7 +110,6 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
-
 
     </settings>
 </fdmmaterial>

@@ -53,7 +53,7 @@ Generic PETG profile. The data in this file may not be correct for your specific
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" />
             <setting key="heated bed temperature">85</setting>
             <setting key="hardware compatible">yes</setting>
             <hotend id="0.25 mm">
@@ -72,8 +72,8 @@ Generic PETG profile. The data in this file may not be correct for your specific
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
             <setting key="heated bed temperature">85</setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
@@ -89,7 +89,7 @@ Generic PETG profile. The data in this file may not be correct for your specific
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
             <cura:setting key="material_shrinkage_percentage">100.5</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
             <hotend id="AA 0.25">
@@ -110,8 +110,8 @@ Generic PETG profile. The data in this file may not be correct for your specific
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
 
             <cura:setting key="material_shrinkage_percentage">100.5</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
@@ -134,7 +134,6 @@ Generic PETG profile. The data in this file may not be correct for your specific
                 <setting key="retraction amount">8</setting>
             </hotend>
         </machine>
-
 
     </settings>
 </fdmmaterial>

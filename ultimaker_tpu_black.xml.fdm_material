@@ -53,13 +53,13 @@
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original" />
             <setting key="print temperature">228</setting>
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+" />
             <setting key="print temperature">228</setting>
             <setting key="hardware compatible">yes</setting>
 
@@ -72,8 +72,8 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
 
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -89,7 +89,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" />
             <setting key="hardware compatible">yes</setting>
             <setting key="print temperature">235</setting>
             <setting key="retraction amount">10</setting>
@@ -107,7 +107,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
 
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -122,8 +122,8 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
 
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -138,7 +138,6 @@
                 <setting key="print cooling">50</setting>
             </hotend>
         </machine>
-
 
     </settings>
 </fdmmaterial>
