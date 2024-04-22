@@ -10,7 +10,7 @@ Generic break away support material profile. The data in this file may not be co
             <color>Generic</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d6a0</GUID>
-        <version>32</version>
+        <version>33</version>
         <color_code>#F1ECE1</color_code>
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -55,8 +55,8 @@ Generic break away support material profile. The data in this file may not be co
         <cura:setting key="material_is_support_material">true</cura:setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
             <setting key="print cooling">100</setting>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -65,7 +65,7 @@ Generic break away support material profile. The data in this file may not be co
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
             <setting key="print cooling">100</setting>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -74,8 +74,8 @@ Generic break away support material profile. The data in this file may not be co
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
 
             <setting key="print cooling">100</setting>
             <hotend id="AA 0.4">
@@ -84,6 +84,21 @@ Generic break away support material profile. The data in this file may not be co
             </hotend>
         </machine>
 
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <setting key="build volume temperature">40</setting>
+            <setting key="print cooling">100</setting>
+            <setting key="heated bed temperature">40</setting>
+            <setting key="anti ooze retract position">-10</setting>
+            <setting key="break preparation position">-10</setting>
+            <setting key="no load move factor">1</setting>
+            <setting key="retraction amount">5</setting>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">230</setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
+            </hotend>
+        </machine>
 
     </settings>
 </fdmmaterial>

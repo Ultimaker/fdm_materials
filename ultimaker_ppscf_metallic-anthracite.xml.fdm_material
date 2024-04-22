@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdmmaterial xmlns="http://www.ultimaker.com/material" xmlns:cura="http://www.ultimaker.com/cura" version="1.3">
+    <metadata>
+        <name>
+            <brand>Ultimaker</brand>
+            <material>PPS CF</material>
+            <color>Metallic Anthracite</color>
+        </name>
+        <GUID>d86bf59a-9d10-4a25-99b6-2844e0bc1bfb</GUID>
+        <version>2</version>
+        <color_code>#383E42</color_code>
+        <description>High performance carbon fiber reinforced PPS filament. Flame retardant, high chemical and heat resistance and high strength for functional 3D prints in manufacturing. </description>
+        <adhesion_info>No glue needed</adhesion_info>
+        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-UltiMaker-PPS-CF</instruction_link>
+        <cura:pva_compatible>True</cura:pva_compatible>
+        <cura:breakaway_compatible>False</cura:breakaway_compatible>
+    </metadata>
+    <properties>
+        <density>1.51</density>
+        <diameter>2.85</diameter>
+        <weight>750</weight>
+    </properties>
+    <settings>
+        <setting key="anti ooze retract position">-8</setting>
+        <setting key="anti ooze retract speed">25</setting>
+        <setting key="break preparation position">0</setting>
+        <setting key="break preparation speed">2</setting>
+        <setting key="break preparation temperature">320</setting>
+        <setting key="break position">-50</setting>
+        <setting key="break speed">25</setting>
+        <setting key="break temperature">280</setting>
+        <setting key="pressure release dwell time">25</setting>
+        <setting key="dwell time before break preparation move">4</setting>
+        <setting key="maximum park duration">7200</setting>
+        <setting key="no load move factor">0.94</setting>
+
+        <!-- print settings -->
+        <setting key="print temperature">320</setting>
+        <setting key="standby temperature">220</setting>
+        <setting key="heated bed temperature">80</setting>
+        <setting key="build volume temperature">50</setting>
+        <setting key="print cooling">20</setting>
+        <cura:setting key="cool_fan_speed_max">40</cura:setting>
+        <setting key="adhesion tendency">0</setting>
+        <setting key="surface energy">70</setting>
+        <cura:setting key="material_crystallinity">true</cura:setting>
+
+        <!-- For material flow sensor -->
+        <setting key="relative extrusion">1.0</setting>
+        <setting key="flow sensor detection margin">0.8</setting>
+        <setting key="retract compensation">0</setting>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+
+            <setting key="anti ooze retract position">-6</setting>
+            <setting key="no load move factor">1</setting>
+            <setting key="retraction amount">1.5</setting>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="HT 0.6">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
+
+    </settings>
+</fdmmaterial>

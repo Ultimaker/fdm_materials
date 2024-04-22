@@ -28,7 +28,7 @@
         <setting key="hardware compatible">yes</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
             <setting key="print temperature">255</setting>
             <setting key="standby temperature">190</setting>
             <setting key="build volume temperature">93</setting>
@@ -55,8 +55,9 @@
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
+
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
             <setting key="print temperature">255</setting>
             <setting key="standby temperature">190</setting>
             <setting key="build volume temperature">85</setting>
