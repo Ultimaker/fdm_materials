@@ -8,7 +8,7 @@
             <label>Any color Nylon</label>
         </name>
         <GUID>c6714ed4-9734-4266-b4e1-d90b8b0c2434</GUID>
-        <version>7</version>
+        <version>8</version>
         <color_code>#3DF266</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -152,6 +152,40 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">45</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <setting key="print temperature">245</setting>
+            <setting key="heated bed temperature">40</setting>
+            <setting key="build volume temperature">30</setting>
+            <setting key="print cooling">75</setting>
+            <setting key="retraction amount">1.5</setting>
+            <setting key="anti ooze retract position">-6</setting>
+            <setting key="no load move factor">1</setting>
+            <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">250</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.6">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="HT 0.6">
+                <setting key="hardware compatible">no</setting>
             </hotend>
         </machine>
 
