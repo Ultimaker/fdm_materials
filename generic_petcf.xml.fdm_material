@@ -10,7 +10,7 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <color>Generic</color>
         </name>
         <GUID>64d44410-be10-428c-8891-f0ae47ea1734</GUID>
-        <version>23</version>
+        <version>24</version>
         <color_code>#888888</color_code>
         <description>Generic PET CF profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
@@ -108,6 +108,49 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             </hotend>
             <hotend id="CC 0.6">
                 <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <setting key="build volume temperature">50</setting>
+            <setting key="print cooling">20</setting>
+            <setting key="anti ooze retract position">-14</setting>
+            <setting key="break preparation position">-14</setting>
+            <setting key="break preparation temperature">280</setting>
+            <setting key="no load move factor">1</setting>
+            <setting key="different material purge volume">204.16</setting>
+            <setting key="same material purge volume">51.04</setting>
+            <setting key="purge speed coefficient">40</setting>
+            <cura:setting key="material_flow">100</cura:setting>
+            <setting key="retraction amount">6</setting>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
+                <setting key="print temperature">280</setting>
+            </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">280</setting>
+            </hotend>
+            <hotend id="HT 0.6">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">280</setting>
             </hotend>
         </machine>
 

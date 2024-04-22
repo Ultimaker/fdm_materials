@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>bd0d9eb3-a920-4632-84e8-dcd6086746c5</GUID>
-        <version>42</version>
+        <version>43</version>
         <color_code>#d0d0d0</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -141,6 +141,41 @@
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">40</setting>
                 <cura:setting key="cool_min_layer_time">10</cura:setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <setting key="print temperature">240</setting>
+            <setting key="build volume temperature">50</setting>
+            <setting key="print cooling">50</setting>
+            <setting key="heated bed temperature">85</setting>
+            <setting key="anti ooze retract position">-18</setting>
+            <setting key="break preparation position">-18</setting>
+            <setting key="no load move factor">1</setting>
+            <cura:setting key="material_shrinkage_percentage">100.2</cura:setting>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">250</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.6">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="HT 0.6">
+                <setting key="hardware compatible">no</setting>
             </hotend>
         </machine>
 
