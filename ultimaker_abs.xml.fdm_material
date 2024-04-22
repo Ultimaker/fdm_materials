@@ -8,7 +8,7 @@
             <label>Any color ABS</label>
         </name>
         <GUID>94209c78-8d4d-4866-8a60-5e1f7adb0c36</GUID>
-        <version>8</version>
+        <version>9</version>
         <color_code>#8cb219</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -141,6 +141,43 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">10</cura:setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <setting key="print temperature">240</setting>
+            <setting key="heated bed temperature">85</setting>
+            <setting key="build volume temperature">50</setting>
+            <setting key="print cooling">20</setting>
+            <cura:setting key="cool_fan_speed_max">100</cura:setting>
+            <setting key="anti ooze retract position">-2</setting>
+            <setting key="break preparation position">-10</setting>
+            <setting key="no load move factor">1</setting>
+            <cura:setting key="material_shrinkage_percentage">100.3</cura:setting>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">225</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">250</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.6">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="HT 0.6">
+                <setting key="hardware compatible">no</setting>
             </hotend>
         </machine>
 
