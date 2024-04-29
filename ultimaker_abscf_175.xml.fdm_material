@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdmmaterial xmlns="http://www.ultimaker.com/material" xmlns:cura="http://www.ultimaker.com/cura" version="1.3">
+    <metadata>
+        <name>
+            <brand>Ultimaker</brand>
+            <material>ABS-CF</material>
+            <color>Generic</color>
+        </name>
+        <GUID>495a0ce5-9daf-4a16-b7b2-06856d82394d</GUID>
+        <reference_material_id>abs-cf10</reference_material_id>
+        <version>6</version>
+        <color_code>#0e0e10</color_code>
+        <description>The performance of carbon fiber with the reliability of ABS</description>
+        <adhesion_info>No glue needed</adhesion_info>
+        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-ABS-CF</instruction_link>
+    </metadata>
+    <properties>
+        <density>1.05</density>
+        <diameter>1.75</diameter>
+        <weight>650</weight>
+    </properties>
+    <settings>
+        <setting key="print temperature">260</setting>
+        <setting key="standby temperature">180</setting>
+        <setting key="print cooling">0</setting>
+        <setting key="adhesion tendency">0</setting>
+        <setting key="surface energy">70</setting>
+        <setting key="build volume temperature">107</setting>
+        <cura:setting key="material_shrinkage_percentage">100.16</cura:setting>
+        <cura:setting key="material_shrinkage_percentage_z">100.68</cura:setting>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
+            <hotend id="1A">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="1XA">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="2A">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="2XA">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="1C">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="LABS">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
+            <setting key="build volume temperature">85</setting>
+            <setting key="heated bed temperature">95</setting>
+            <hotend id="1A">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="1XA">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="2A">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="2XA">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="1C">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="LABS">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
+
+   </settings>
+</fdmmaterial>

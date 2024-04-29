@@ -4,18 +4,18 @@
         <name>
             <brand>Ultimaker</brand>
             <material>PP</material>
-            <color>Transparent</color>
+            <color>Natural</color>
         </name>
         <GUID>c7005925-2a41-4280-8cdd-4029e3fe5253</GUID>
-        <version>42</version>
+        <version>48</version>
         <color_code>#d0d0d0</color_code>
         <description>Fatigue and chemical resistant. Polypropylene offers excellent temperature, chemical and fatigue resistance. Its toughness and low friction make it a perfect choice for prototyping and creating durable end-use models.</description>
         <adhesion_info>Adhesion sheets are required.</adhesion_info>
-        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-pp/printing-guidelines</instruction_link>
+        <instruction_link>https://support.ultimaker.com/s/article/1667337602253</instruction_link>
     </metadata>
     <properties>
-        <diameter>2.85</diameter>
         <density>0.89</density>
+        <diameter>2.85</diameter>
         <weight>750</weight>
     </properties>
     <settings>
@@ -39,8 +39,8 @@
         <setting key="no load move factor">1.00</setting>
 
         <!-- print settings -->
-        <setting key="print temperature">220</setting>
-        <setting key="standby temperature">120</setting>
+        <setting key="print temperature">207</setting>
+        <setting key="standby temperature">107</setting>
         <setting key="heated bed temperature">100</setting>
         <setting key="build volume temperature">41</setting>
         <setting key="print cooling">20</setting>
@@ -55,8 +55,14 @@
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original" />
+            <setting key="print temperature">220</setting>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+" />
+            <setting key="print temperature">220</setting>
 
             <setting key="retraction amount">8</setting>
 
@@ -66,8 +72,8 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
@@ -83,11 +89,12 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">7</setting>
                 <setting key="print cooling">10</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" />
             <setting key="hardware compatible">yes</setting>
             <setting key="retraction amount">8</setting>
             <setting key="retraction speed">25</setting>
@@ -100,11 +107,12 @@
             </hotend>
             <hotend id="0.8 mm">
                 <setting key="print temperature">240</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
             <setting key="heated bed temperature">85</setting>
 
             <hotend id="AA 0.25">
@@ -120,12 +128,14 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">7</setting>
                 <setting key="print cooling">10</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
+
             <setting key="heated bed temperature">85</setting>
 
             <hotend id="AA 0.25">
@@ -141,9 +151,46 @@
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">10</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <setting key="print temperature">220</setting>
+            <setting key="build volume temperature">40</setting>
+            <setting key="heated bed temperature">85</setting>
+            <setting key="print cooling">20</setting>
+            <setting key="retraction amount">2</setting>
+            <setting key="anti ooze retract position">-14</setting>
+            <setting key="break preparation position">-14</setting>
+            <setting key="no load move factor">1</setting>
+            <cura:setting key="material_shrinkage_percentage">100.7</cura:setting>
+
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">225</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.6">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="HT 0.6">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+        </machine>
 
     </settings>
 </fdmmaterial>

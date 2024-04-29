@@ -7,11 +7,11 @@
             <color>Transparent</color>
         </name>
         <GUID>532e8b3d-5fd4-4149-b936-53ada9bd6b85</GUID>
-        <version>36</version>
+        <version>42</version>
         <color_code>#d0d0d0</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
-        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-pla/printing-guidelines</instruction_link>
+        <instruction_link>https://support.ultimaker.com/s/article/1667337611872</instruction_link>
     </metadata>
     <properties>
         <density>1.24</density>
@@ -53,8 +53,8 @@
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+" />
 
             <hotend id="0.25 mm" />
             <hotend id="0.4 mm" />
@@ -63,22 +63,22 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Go"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Go" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended" />
             <setting key="processing temperature graph">
-                <point flow="2" temperature="180"/>
-                <point flow="10" temperature="230"/>
+                <point flow="2" temperature="180" />
+                <point flow="10" temperature="230" />
             </setting>
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original" />
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
             <setting key="print cooling">100</setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
@@ -90,11 +90,12 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">5</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" />
             <setting key="hardware compatible">yes</setting>
             <hotend id="0.25 mm">
                 <setting key="print temperature">195</setting>
@@ -107,11 +108,12 @@
             </hotend>
             <hotend id="0.8 mm">
                 <setting key="print temperature">240</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
             <setting key="print cooling">100</setting>
             <cura:setting key="material_shrinkage_percentage">100.2</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
@@ -125,6 +127,7 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">5</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -133,13 +136,14 @@
             <hotend id="CC 0.6">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">6.5</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
 
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
 
             <setting key="print cooling">100</setting>
             <cura:setting key="material_shrinkage_percentage">100.2</cura:setting>
@@ -154,6 +158,7 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">5</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -163,10 +168,45 @@
             <hotend id="CC 0.6">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="retraction amount">6.5</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
                 <cura:setting key="material_crystallinity">true</cura:setting>
             </hotend>
         </machine>
 
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <setting key="heated bed temperature">55</setting>
+            <setting key="build volume temperature">30</setting>
+            <setting key="print cooling">100</setting>
+            <setting key="anti ooze retract position">-2</setting>
+            <setting key="break preparation position">-14</setting>
+            <setting key="no load move factor">1</setting>
+            <cura:setting key="material_shrinkage_percentage">100.16</cura:setting>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">200</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
+            </hotend>
+            <hotend id="CC 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">yes</setting>
+                <cura:setting key="cool_min_layer_time">10</cura:setting>
+            </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="HT 0.6">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+        </machine>
 
     </settings>
 </fdmmaterial>
