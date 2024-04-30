@@ -8,11 +8,13 @@
             <label>Any color PC</label>
         </name>
         <GUID>59675b16-d902-4cb3-a780-a539cae0b04d</GUID>
-        <version>8</version>
+        <version>9</version>
         <color_code>#F29030</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
         <instruction_link>https://support.ultimaker.com/s/article/1667337602519</instruction_link>
+        <cura:pva_compatible>False</cura:pva_compatible>
+        <cura:breakaway_compatible>False</cura:breakaway_compatible>
         <abstract_color>true</abstract_color>
     </metadata>
     <properties>

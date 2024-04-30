@@ -10,10 +10,12 @@ This is the baseline profile for Carbon Fiber Filled PPS for the Print Profile A
             <color>Generic</color>
         </name>
         <GUID>6b0a5f1a-a43c-483c-b02e-9c9915233143</GUID>
-        <version>10</version>
+        <version>11</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled PPS for the Print Profile Assistant. This profile can also be used for other base materials (ABS, PP, etc)</description>
         <adhesion_info>No glue needed</adhesion_info>
+        <cura:pva_compatible>True</cura:pva_compatible>
+        <cura:breakaway_compatible>False</cura:breakaway_compatible>
     </metadata>
     <properties>
         <density>1.51</density>
