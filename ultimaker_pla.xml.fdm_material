@@ -8,11 +8,13 @@
             <label>Any color PLA</label>
         </name>
         <GUID>5b890432-a9f1-45e4-aad7-a73995600276</GUID>
-        <version>7</version>
+        <version>8</version>
         <color_code>#ffc924</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
         <instruction_link>https://support.ultimaker.com/s/article/1667337611872</instruction_link>
+        <cura:pva_compatible>True</cura:pva_compatible>
+        <cura:breakaway_compatible>True</cura:breakaway_compatible>
         <abstract_color>true</abstract_color>
     </metadata>
     <properties>

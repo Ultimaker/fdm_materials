@@ -7,11 +7,13 @@
             <color>Red</color>
         </name>
         <GUID>00181d6c-7024-479a-8eb7-8a2e38a2619a</GUID>
-        <version>43</version>
+        <version>44</version>
         <color_code>#c8102e</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
         <instruction_link>https://support.ultimaker.com/s/article/1667337602543</instruction_link>
+        <cura:pva_compatible>False</cura:pva_compatible>
+        <cura:breakaway_compatible>True</cura:breakaway_compatible>
     </metadata>
     <properties>
         <density>1.27</density>

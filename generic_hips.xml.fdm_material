@@ -10,10 +10,12 @@ Generic HIPS profile. The data in this file may not be correct for your specific
             <color>Generic</color>
         </name>
         <GUID>b6f76172-bb0f-4326-bdbc-ee8f0e84b283</GUID>
-        <version>12</version>
+        <version>13</version>
         <color_code>#12f3e0</color_code>
         <description>Support material.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
+        <cura:pva_compatible>False</cura:pva_compatible>
+        <cura:breakaway_compatible>False</cura:breakaway_compatible>
     </metadata>
     <properties>
         <density>1.24</density>
