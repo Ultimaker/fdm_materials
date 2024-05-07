@@ -42,8 +42,8 @@ class FDM_MaterialsConan(ConanFile):
     def package_info(self):
         self.cpp_info.includedirs = []
         self.cpp_info.resdirs = ["res"]
-        self.runenv_info.append_path("CURA_RESOURCES", os.path.join(self.package_folder, "res"))
-        self.env_info.CURA_RESOURCES.append(os.path.join(self.package_folder, "res"))
+        self.runenv_info.append_path("CURA_RESOURCES", os.path.join(self.package_folder, "res", "resources"))
+        self.env_info.CURA_RESOURCES.append(os.path.join(self.package_folder, "res", "resources"))
 
     def package_id(self):
         self.info.clear()
