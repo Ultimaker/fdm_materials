@@ -7,7 +7,7 @@
             <color>Metallic Anthracite</color>
         </name>
         <GUID>d86bf59a-9d10-4a25-99b6-2844e0bc1bfb</GUID>
-        <version>2</version>
+        <version>3</version>
         <color_code>#383E42</color_code>
         <description>High performance carbon fiber reinforced PPS filament. Flame retardant, high chemical and heat resistance and high strength for functional 3D prints in manufacturing. </description>
         <adhesion_info>No glue needed</adhesion_info>
@@ -47,7 +47,6 @@
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>

@@ -8,7 +8,7 @@
             <label>Any color CPE+</label>
         </name>
         <GUID>4034cfaa-a512-4645-a07d-89a2dd4db91d</GUID>
-        <version>8</version>
+        <version>9</version>
         <color_code>#3633F2</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -53,7 +53,6 @@
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>

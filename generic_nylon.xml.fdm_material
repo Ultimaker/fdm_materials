@@ -10,7 +10,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <color>Generic</color>
         </name>
         <GUID>28fb4162-db74-49e1-9008-d05f1e8bef5c</GUID>
-        <version>34</version>
+        <version>35</version>
         <color_code>#3DF266</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -54,7 +54,6 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>
@@ -166,6 +165,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <setting key="anti ooze retract position">-6</setting>
             <setting key="no load move factor">1</setting>
             <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
+            <setting key="flow sensor detection margin">0.2</setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
             </hotend>

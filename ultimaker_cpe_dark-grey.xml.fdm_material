@@ -7,7 +7,7 @@
             <color>Dark Gray</color>
         </name>
         <GUID>10961c00-3caf-48e9-a598-fa805ada1e8d</GUID>
-        <version>45</version>
+        <version>46</version>
         <color_code>#4f5250</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -50,7 +50,6 @@
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>

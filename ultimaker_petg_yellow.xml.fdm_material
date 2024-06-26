@@ -7,7 +7,7 @@
             <color>Yellow</color>
         </name>
         <GUID>218379df-4a67-4668-b5f8-2a14c92bce96</GUID>
-        <version>44</version>
+        <version>45</version>
         <color_code>#f1dd38</color_code>
         <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -50,7 +50,6 @@
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>

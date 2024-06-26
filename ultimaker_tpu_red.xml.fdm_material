@@ -7,7 +7,7 @@
             <color>Red</color>
         </name>
         <GUID>07a4547f-d21f-41a0-8eee-bc92125221b3</GUID>
-        <version>41</version>
+        <version>42</version>
         <color_code>#a63437</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -51,7 +51,6 @@
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>
@@ -150,7 +149,7 @@
             <setting key="break position">-50</setting>
             <setting key="no load move factor">1</setting>
             <cura:setting key="material_shrinkage_percentage">100.3</cura:setting>
-
+            <setting key="flow sensor detection margin">0.2</setting>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">3</cura:setting>

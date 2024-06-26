@@ -7,7 +7,7 @@
             <color>Natural</color>
         </name>
         <GUID>fe15ed8a-33c3-4f57-a2a7-b4b78a38c3cb</GUID>
-        <version>42</version>
+        <version>43</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -77,7 +77,6 @@
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <!-- Define as soluble support material -->
@@ -178,7 +177,6 @@
             <setting key="heated bed temperature">40</setting>
             <setting key="no load move factor">1</setting>
             <setting key="retraction amount">5</setting>
-            <setting key="flow sensor detection margin">0.5</setting>
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
