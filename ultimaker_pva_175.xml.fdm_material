@@ -4,11 +4,11 @@
         <name>
             <brand>Ultimaker</brand>
             <material>PVA</material>
-            <color>Natural</color>
+            <color>Generic</color>
         </name>
         <GUID>add51ef2-86eb-4c39-afd5-5586564f0715</GUID>
         <reference_material_id>pva</reference_material_id>
-        <version>1</version>
+        <version>2</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
