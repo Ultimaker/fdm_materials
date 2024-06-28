@@ -8,7 +8,7 @@
         </name>
         <GUID>add51ef2-86eb-4c39-afd5-5586564f0715</GUID>
         <reference_material_id>pva</reference_material_id>
-        <version>2</version>
+        <version>3</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -27,6 +27,37 @@
 
         <!-- Define as soluble support material -->
         <cura:setting key="material_is_support_material">True</cura:setting>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
+            <setting key="print temperature">210</setting>
+            <setting key="standby temperature">160</setting>
+            <setting key="build volume temperature">40</setting>
+            <setting key="print cooling">0</setting>
+            <cura:setting key="prime_tower_enable">=extruder_nr==support_extruder_nr or extruder_nr==raft_base_extruder_nr or extruder_nr==raft_interface_extruder_nr or extruder_nr==raft_surface_extruder_nr</cura:setting>
+            <cura:setting key="support_conical_enabled">False</cura:setting>
+
+            <hotend id="1A">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="1XA">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="2A">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="2XA">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="1C">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="LABS">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+        </machine>
 
     </settings>
 </fdmmaterial>
