@@ -8,10 +8,10 @@
         </name>
         <GUID>add51ef2-86eb-4c39-afd5-5586564f0715</GUID>
         <reference_material_id>pva</reference_material_id>
-        <version>3</version>
+        <version>4</version>
         <color_code>#f5f2d1</color_code>
-        <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
-        <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
+        <description>Water soluble support material. PVA is a matching support material for PLA and Nylon 12 CF.</description>
+        <adhesion_info>Do not attempt to print PVA directly on your build surface, PVA needs a layer of model material below to ensure proper adhesion.</adhesion_info>
         <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-PVA</instruction_link>
     </metadata>
     <properties>

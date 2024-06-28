@@ -8,10 +8,10 @@
         </name>
         <GUID>abb9c58e-1f56-48d1-bd8f-055fde3a5b56</GUID>
         <reference_material_id>pla</reference_material_id>
-        <version>25</version>
+        <version>26</version>
         <color_code>#f1ece1</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
-        <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
+        <adhesion_info>"Print directly on a clean build surface, a raft will help with adhesion and dimensional accuracy.</adhesion_info>
         <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-PLA</instruction_link>
     </metadata>
     <properties>
@@ -58,5 +58,31 @@
             </hotend>
         </machine>
 
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
+            <setting key="print temperature">210</setting>
+            <setting key="standby temperature">160</setting>
+            <setting key="build volume temperature">40</setting>
+            <setting key="print cooling">100</setting>
+
+            <hotend id="1A">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="1XA">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="2A">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="2XA">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="1C">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="LABS">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
     </settings>
 </fdmmaterial>
