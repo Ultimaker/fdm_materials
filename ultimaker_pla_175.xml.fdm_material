@@ -11,7 +11,7 @@
         <version>26</version>
         <color_code>#f1ece1</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
-        <adhesion_info>"Print directly on a clean build surface, a raft will help with adhesion and dimensional accuracy.</adhesion_info>
+        <adhesion_info>Print directly on a clean build surface, a raft will help with adhesion and dimensional accuracy.</adhesion_info>
         <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-PLA</instruction_link>
     </metadata>
     <properties>
