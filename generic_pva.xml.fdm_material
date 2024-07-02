@@ -68,6 +68,12 @@ Generic PVA profile. The data in this file may not be correct for your specific 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -76,17 +82,17 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -95,12 +101,6 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">no</setting>
@@ -117,6 +117,12 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
 
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -125,12 +131,6 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">no</setting>
@@ -146,12 +146,17 @@ Generic PVA profile. The data in this file may not be correct for your specific 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
             <setting key="print temperature">220</setting>
-            <setting key="build volume temperature">40</setting>
+            <setting key="build volume temperature">35</setting>
             <setting key="print cooling">50</setting>
-            <setting key="heated bed temperature">40</setting>
             <setting key="no load move factor">1</setting>
             <setting key="retraction amount">5</setting>
 
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -160,12 +165,6 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">no</setting>

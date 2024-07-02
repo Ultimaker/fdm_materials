@@ -87,9 +87,8 @@ Generic break away support material profile. The data in this file may not be co
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
-            <setting key="build volume temperature">40</setting>
+            <setting key="build volume temperature">35</setting>
             <setting key="print cooling">100</setting>
-            <setting key="heated bed temperature">40</setting>
             <setting key="anti ooze retract position">-10</setting>
             <setting key="break preparation position">-10</setting>
             <setting key="no load move factor">1</setting>
