@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>4d816290-ce2e-40e0-8dc8-3f702243131e</GUID>
-        <version>44</version>
+        <version>45</version>
         <color_code>#00a3e0</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -155,6 +155,7 @@
             <setting key="anti ooze retract position">-18</setting>
             <setting key="break preparation position">-18</setting>
             <setting key="no load move factor">1</setting>
+            <setting key="retraction amount">5</setting>
             <cura:setting key="material_shrinkage_percentage">100.2</cura:setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
