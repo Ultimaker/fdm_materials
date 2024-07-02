@@ -8,7 +8,7 @@
             <label>Any color PC</label>
         </name>
         <GUID>59675b16-d902-4cb3-a780-a539cae0b04d</GUID>
-        <version>9</version>
+        <version>10</version>
         <color_code>#F29030</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
@@ -54,7 +54,6 @@
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>

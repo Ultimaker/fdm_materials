@@ -10,7 +10,7 @@ Generic PC profile. The data in this file may not be correct for your specific m
             <color>Generic</color>
         </name>
         <GUID>98c05714-bf4e-4455-ba27-57d74fe331e4</GUID>
-        <version>37</version>
+        <version>38</version>
         <color_code>#F29030</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
@@ -53,7 +53,6 @@ Generic PC profile. The data in this file may not be correct for your specific m
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>

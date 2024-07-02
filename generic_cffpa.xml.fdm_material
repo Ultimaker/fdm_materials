@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
             <color>Generic</color>
         </name>
         <GUID>bd66b243-9d50-4e12-bfc3-51c874fca16a</GUID>
-        <version>24</version>
+        <version>25</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Profile Assistant.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -51,7 +51,6 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>

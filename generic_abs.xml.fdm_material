@@ -10,7 +10,7 @@ Generic ABS profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>60636bb4-518f-42e7-8237-fe77b194ebe0</GUID>
-        <version>38</version>
+        <version>39</version>
         <color_code>#8cb219</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>Use glue, to avoid chipping of the glass.</adhesion_info>
@@ -53,7 +53,6 @@ Generic ABS profile. The data in this file may not be correct for your specific 
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>

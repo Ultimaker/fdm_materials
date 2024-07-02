@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled PPS for the Print Profile A
             <color>Generic</color>
         </name>
         <GUID>6b0a5f1a-a43c-483c-b02e-9c9915233143</GUID>
-        <version>11</version>
+        <version>12</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled PPS for the Print Profile Assistant. This profile can also be used for other base materials (ABS, PP, etc)</description>
         <adhesion_info>No glue needed</adhesion_info>
@@ -48,7 +48,6 @@ This is the baseline profile for Carbon Fiber Filled PPS for the Print Profile A
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>

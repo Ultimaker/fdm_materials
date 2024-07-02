@@ -10,7 +10,7 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <color>Generic</color>
         </name>
         <GUID>64d44410-be10-428c-8891-f0ae47ea1734</GUID>
-        <version>24</version>
+        <version>25</version>
         <color_code>#888888</color_code>
         <description>Generic PET CF profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
@@ -54,7 +54,6 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>

@@ -10,7 +10,7 @@ Generic PLA profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>506c9f0d-e3aa-4bd4-b2d2-23e2425b1aa9</GUID>
-        <version>37</version>
+        <version>38</version>
         <color_code>#ffc924</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -52,7 +52,6 @@ Generic PLA profile. The data in this file may not be correct for your specific 
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>

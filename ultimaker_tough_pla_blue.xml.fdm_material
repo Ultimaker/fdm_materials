@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>4b049931-6ee9-408c-8588-ddd4673467d1</GUID>
-        <version>15</version>
+        <version>16</version>
         <color_code>#1B5583</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -51,7 +51,6 @@
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>
