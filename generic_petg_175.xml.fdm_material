@@ -21,9 +21,9 @@ Generic PETG 1.75mm profile. The data in this file may not be correct for your s
         <diameter>1.75</diameter>
     </properties>
     <settings>
-        <setting key="print temperature">215</setting>
-        <setting key="heated bed temperature">70</setting>
-        <setting key="standby temperature">120</setting>
+        <setting key="print temperature">240</setting>
+        <setting key="heated bed temperature">85</setting>
+        <setting key="standby temperature">140</setting>
 
         <machine>
             <machine_identifier manufacturer="Cartesio bv" product="cartesio" />
