@@ -13,7 +13,7 @@
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
         <cura:pva_compatible>False</cura:pva_compatible>
         <cura:breakaway_compatible>False</cura:breakaway_compatible>
-        <instruction_link>https://support.ultimaker.com/s/article/1667337600656</instruction_link>
+        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-pva/printing-guidelines</instruction_link>
         <author>
             <organization>Ultimaker B.V.</organization>
             <contact>Ultimaker Support</contact>

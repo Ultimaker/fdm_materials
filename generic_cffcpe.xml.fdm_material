@@ -115,7 +115,7 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
-            <setting key="build volume temperature">45</setting>
+            <setting key="build volume temperature">40</setting>
             <setting key="print cooling">1</setting>
             <setting key="anti ooze retract position">-6</setting>
             <setting key="no load move factor">1</setting>
