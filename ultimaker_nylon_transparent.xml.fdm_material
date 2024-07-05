@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>e256615d-a04e-4f53-b311-114b90560af9</GUID>
-        <version>38</version>
+        <version>39</version>
         <color_code>#d0d0d0</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -161,7 +161,7 @@
             <setting key="heated bed temperature">40</setting>
             <setting key="build volume temperature">30</setting>
             <setting key="print cooling">75</setting>
-            <setting key="retraction amount">1.5</setting>
+            <setting key="retraction amount">5</setting>
             <setting key="anti ooze retract position">-6</setting>
             <setting key="no load move factor">1</setting>
             <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
