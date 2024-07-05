@@ -8,8 +8,8 @@
         </name>
         <GUID>abb9c58e-1f56-48d1-bd8f-055fde3a5b56</GUID>
         <reference_material_id>pla</reference_material_id>
-        <version>26</version>
-        <color_code>#f1ece1</color_code>
+        <version>27</version>
+        <color_code>#2E5266</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print directly on a clean build surface, a raft will help with adhesion and dimensional accuracy.</adhesion_info>
         <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-PLA</instruction_link>
