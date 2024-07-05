@@ -166,6 +166,7 @@
             <setting key="anti ooze retract position">-14</setting>
             <setting key="break preparation position">-14</setting>
             <setting key="no load move factor">1</setting>
+            <setting key="retraction amount">5</setting>
             <cura:setting key="material_shrinkage_percentage">100.7</cura:setting>
             <setting key="flow sensor detection margin">0.2</setting>
 

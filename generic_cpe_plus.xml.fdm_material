@@ -143,6 +143,7 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             <setting key="anti ooze retract position">-4</setting>
             <setting key="break preparation position">-12</setting>
             <setting key="no load move factor">1</setting>
+            <setting key="retraction amount">5</setting>
             <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
