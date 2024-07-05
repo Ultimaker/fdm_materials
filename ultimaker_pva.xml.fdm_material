@@ -77,7 +77,6 @@
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <!-- Define as soluble support material -->
@@ -177,7 +176,6 @@
             <setting key="print cooling">50</setting>
             <setting key="no load move factor">1</setting>
             <setting key="retraction amount">5</setting>
-            <setting key="flow sensor detection margin">0.5</setting>
 
             <hotend id="BB 0.4">
                 <setting key="hardware compatible">yes</setting>

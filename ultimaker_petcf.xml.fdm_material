@@ -8,7 +8,7 @@
             <label>Any color PET-CF</label>
         </name>
         <GUID>f0245d40-3657-4615-b9ab-19fc043944ca</GUID>
-        <version>7</version>
+        <version>8</version>
         <color_code>#888888</color_code>
         <description>Ultimaker PET-CF.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
@@ -55,7 +55,6 @@
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>

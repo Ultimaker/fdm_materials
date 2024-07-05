@@ -54,7 +54,6 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>
@@ -170,6 +169,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
             <setting key="no load move factor">1</setting>
             <setting key="retraction amount">5</setting>
             <cura:setting key="material_shrinkage_percentage">100.7</cura:setting>
+            <setting key="flow sensor detection margin">0.2</setting>
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
