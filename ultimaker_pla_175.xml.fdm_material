@@ -8,7 +8,7 @@
         </name>
         <GUID>abb9c58e-1f56-48d1-bd8f-055fde3a5b56</GUID>
         <reference_material_id>pla</reference_material_id>
-        <version>27</version>
+        <version>28</version>
         <color_code>#2E5266</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print directly on a clean build surface, a raft will help with adhesion and dimensional accuracy.</adhesion_info>
@@ -63,6 +63,8 @@
             <setting key="print temperature">210</setting>
             <setting key="standby temperature">160</setting>
             <setting key="build volume temperature">40</setting>
+            <setting key="heated bed temperature">40</setting>
+            <cura:setting key="material_bed_temperature_layer_0">45</cura:setting>
             <setting key="print cooling">100</setting>
 
             <hotend id="1A">
