@@ -8,10 +8,11 @@
         </name>
         <GUID>88c8919c-6a09-471a-b7b6-e801263d862d</GUID>
         <reference_material_id>abs-wss1</reference_material_id>
-        <version>5</version>
+        <version>8</version>
         <color_code>#8cb219</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>No glue needed</adhesion_info>
+        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-ABS-R</instruction_link>
     </metadata>
     <properties>
         <density>1.05</density>
@@ -29,7 +30,7 @@
         <cura:setting key="material_shrinkage_percentage_z">100.59</cura:setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
             <hotend id="1A">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -49,10 +50,12 @@
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
+
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
             <setting key="build volume temperature">85</setting>
             <setting key="heated bed temperature">95</setting>
+            <cura:setting key="material_bed_temperature_layer_0">100</cura:setting>
             <hotend id="1A">
                 <setting key="hardware compatible">no</setting>
             </hotend>

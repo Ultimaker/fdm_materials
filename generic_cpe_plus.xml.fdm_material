@@ -10,10 +10,12 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             <color>Generic</color>
         </name>
         <GUID>e2409626-b5a0-4025-b73e-b58070219259</GUID>
-        <version>38</version>
+        <version>41</version>
         <color_code>#3633F2</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
+        <cura:pva_compatible>False</cura:pva_compatible>
+        <cura:breakaway_compatible>True</cura:breakaway_compatible>
     </metadata>
     <properties>
         <density>1.18</density>
@@ -50,17 +52,16 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original" />
             <setting key="print temperature">260</setting>
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+" />
             <setting key="print temperature">260</setting>
             <setting key="hardware compatible">yes</setting>
 
@@ -70,8 +71,8 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
             <cura:setting key="retraction_combing">all</cura:setting>
 
             <hotend id="AA 0.4">
@@ -87,7 +88,7 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" />
             <setting key="print temperature">260</setting>
             <setting key="hardware compatible">yes</setting>
 
@@ -99,7 +100,7 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
             <setting key="heated bed temperature">110</setting>
 
             <hotend id="AA 0.4">
@@ -115,8 +116,8 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
 
             <setting key="heated bed temperature">110</setting>
 
@@ -133,6 +134,34 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             </hotend>
         </machine>
 
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <setting key="heated bed temperature">110</setting>
+            <setting key="build volume temperature">65</setting>
+            <setting key="print cooling">0</setting>
+            <setting key="retraction amount">1.5</setting>
+            <setting key="anti ooze retract position">-4</setting>
+            <setting key="break preparation position">-12</setting>
+            <setting key="no load move factor">1</setting>
+            <setting key="retraction amount">5</setting>
+            <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.6">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+        </machine>
 
     </settings>
 </fdmmaterial>

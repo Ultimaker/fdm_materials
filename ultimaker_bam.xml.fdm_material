@@ -7,11 +7,13 @@
             <color>White</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d5f9</GUID>
-        <version>36</version>
+        <version>40</version>
         <color_code>#F1ECE1</color_code>
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
-        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-breakaway/printing-guidelines</instruction_link>
+        <instruction_link>https://support.ultimaker.com/s/article/1667337600384</instruction_link>
+        <cura:pva_compatible>False</cura:pva_compatible>
+        <cura:breakaway_compatible>False</cura:breakaway_compatible>
     </metadata>
     <properties>
         <density>1.22</density>
@@ -47,15 +49,14 @@
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <!-- Define as unsoluble support material -->
         <cura:setting key="material_is_support_material">true</cura:setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
             <setting key="print cooling">100</setting>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -64,7 +65,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
             <setting key="print cooling">100</setting>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -73,8 +74,8 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
 
             <setting key="print cooling">100</setting>
             <hotend id="AA 0.4">
@@ -83,6 +84,20 @@
             </hotend>
         </machine>
 
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <setting key="build volume temperature">35</setting>
+            <setting key="print cooling">100</setting>
+            <setting key="anti ooze retract position">-10</setting>
+            <setting key="break preparation position">-10</setting>
+            <setting key="no load move factor">1</setting>
+            <setting key="retraction amount">5</setting>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">230</setting>
+                <cura:setting key="cool_min_layer_time">3</cura:setting>
+            </hotend>
+        </machine>
 
     </settings>
 </fdmmaterial>

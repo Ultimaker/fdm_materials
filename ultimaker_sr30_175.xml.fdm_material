@@ -3,16 +3,16 @@
     <metadata>
         <name>
             <brand>Ultimaker</brand>
-            <material>RapidRinse</material>
+            <material>SR-30</material>
             <color>Generic</color>
         </name>
-        <GUID>a140ef8f-4f26-4e73-abe0-cfc29d6d1024</GUID>
-        <reference_material_id>wss1</reference_material_id>
-        <version>8</version>
+        <GUID>77873465-83a9-4283-bc44-4e542b8eb3eb</GUID>
+        <reference_material_id>sr30</reference_material_id>
+        <version>5</version>
         <color_code>#f5f2d1</color_code>
-        <description>Water soluble support material for ABS-R.</description>
+        <description>Dissolvable support material works seamlessly with ABS, ASA, and various other high-temp materials.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
-        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-RapidRinse</instruction_link>
+        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-SR-30</instruction_link>
     </metadata>
     <properties>
         <density>1.23</density>
@@ -22,8 +22,8 @@
 
     <settings>
         <!-- print settings -->
-        <setting key="print temperature">260</setting>
-        <setting key="standby temperature">180</setting>
+        <setting key="print temperature">255</setting>
+        <setting key="standby temperature">175</setting>
         <setting key="build volume temperature">107</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="print cooling">0</setting>

@@ -3,34 +3,58 @@
     <metadata>
         <name>
             <brand>Ultimaker</brand>
-            <material>ABS-CF</material>
+            <material>Nylon12 Carbon Fiber</material>
             <color>Generic</color>
         </name>
-        <GUID>495a0ce5-9daf-4a16-b7b2-06856d82394d</GUID>
-        <reference_material_id>abs-cf10</reference_material_id>
+        <GUID>3c6f2877-71cc-4760-84e6-4b89ab243e3b</GUID>
+        <reference_material_id>nylon12-cf</reference_material_id>
         <version>6</version>
         <color_code>#0e0e10</color_code>
-        <description>The performance of carbon fiber with the reliability of ABS</description>
-        <adhesion_info>No glue needed</adhesion_info>
-        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-ABS-CF</instruction_link>
+        <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
+        <adhesion_info>Use glue.</adhesion_info>
+        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-Nylon12-CF</instruction_link>
     </metadata>
     <properties>
-        <density>1.05</density>
+        <density>1.14</density>
         <diameter>1.75</diameter>
-        <weight>650</weight>
+        <weight>750</weight>
     </properties>
     <settings>
-        <setting key="print temperature">260</setting>
-        <setting key="standby temperature">180</setting>
+        <setting key="print temperature">270</setting>
+        <setting key="standby temperature">200</setting>
+        <setting key="heated bed temperature">95</setting>
+        <setting key="build volume temperature">85</setting>
         <setting key="print cooling">0</setting>
-        <setting key="adhesion tendency">0</setting>
-        <setting key="surface energy">70</setting>
-        <setting key="build volume temperature">107</setting>
-        <cura:setting key="material_shrinkage_percentage">100.16</cura:setting>
-        <cura:setting key="material_shrinkage_percentage_z">100.68</cura:setting>
+        <setting key="hardware compatible">yes</setting>
+        <cura:setting key="material_shrinkage_percentage">100.44</cura:setting>
+        <cura:setting key="material_shrinkage_percentage_z">100.6</cura:setting>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method" />
+            <setting key="build volume temperature">60</setting>
+            <hotend id="1A">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="1XA">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="2A">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="2XA">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="1C">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="LABS">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
+            <setting key="build volume temperature">93</setting>
             <hotend id="1A">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -53,8 +77,6 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
-            <setting key="build volume temperature">85</setting>
-            <setting key="heated bed temperature">95</setting>
             <hotend id="1A">
                 <setting key="hardware compatible">no</setting>
             </hotend>
