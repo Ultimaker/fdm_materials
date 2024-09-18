@@ -5,7 +5,7 @@ from conan.tools.files import copy, update_conandata
 from conan.tools.scm import Version
 from conan.errors import ConanInvalidConfiguration
 
-required_conan_version = ">=1.56.0"
+required_conan_version = ">=2.7.0"
 
 
 class FDM_MaterialsConan(ConanFile):
@@ -43,7 +43,6 @@ class FDM_MaterialsConan(ConanFile):
         self.cpp_info.includedirs = []
         self.cpp_info.resdirs = ["res"]
         self.runenv_info.append_path("CURA_RESOURCES", os.path.join(self.package_folder, "res", "resources"))
-        self.env_info.CURA_RESOURCES.append(os.path.join(self.package_folder, "res", "resources"))
 
     def package_id(self):
         self.info.clear()
