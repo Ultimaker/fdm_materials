@@ -8,7 +8,7 @@
         </name>
         <GUID>77873465-83a9-4283-bc44-4e542b8eb3eb</GUID>
         <reference_material_id>sr30</reference_material_id>
-        <version>6</version>
+        <version>7</version>
         <color_code>#f5f2d1</color_code>
         <description>Dissolvable support material works seamlessly with ABS, ASA, and various other high-temp materials.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -30,7 +30,8 @@
         <cura:setting key="material_is_support_material">True</cura:setting>
         <cura:setting key="prime_tower_enable">=extruder_nr==support_extruder_nr or extruder_nr==raft_base_extruder_nr or extruder_nr==raft_interface_extruder_nr or extruder_nr==raft_surface_extruder_nr</cura:setting>
         <cura:setting key="support_conical_enabled">True</cura:setting>
-
+        <cura:setting key="material_final_print_temperature">250</cura:setting>
+        <cura:setting key="material_initial_print_temperature">250</cura:setting>
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
             <setting key="build volume temperature">107</setting>

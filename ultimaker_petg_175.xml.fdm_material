@@ -3,42 +3,38 @@
     <metadata>
         <name>
             <brand>Ultimaker</brand>
-            <material>Tough PLA</material>
+            <material>PETG</material>
             <color>Generic</color>
-            <label>Tough</label>
         </name>
-        <GUID>de031137-a8ca-4a72-bd1b-17bb964033ad</GUID>
-        <reference_material_id>im-pla</reference_material_id>
-        <version>2</version>
-        <color_code>#f5f2d1</color_code>
-        <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
-        <adhesion_info>No glue required</adhesion_info>
-        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-Tough-PLA</instruction_link>
+        <GUID>2d004bbd-d1bb-47f8-beac-b066702d5273</GUID>
+        <reference_material_id>pet</reference_material_id>
+        <version>1</version>
+        <color_code>#f3a112</color_code>
+        <description>Generic PETG profile. The data in this file may not be correct for your specific machine.</description>
+        <adhesion_info>Set your prime speed to a low value (8mm/sec)</adhesion_info>
+        <instruction_link>https://support.ultimaker.com/s/article/Method-Filament-PETG</instruction_link>
     </metadata>
     <properties>
-        <density>1.24</density>
+        <density>1.27</density>
         <diameter>1.75</diameter>
         <weight>750</weight>
     </properties>
     <settings>
-        <setting key="print temperature">210</setting>
-        <setting key="standby temperature">160</setting>
-        <setting key="build volume temperature">40</setting>
-        <setting key="print cooling">100</setting>
-        <setting key="adhesion tendency">0</setting>
-        <setting key="surface energy">100</setting>
+        <setting key="print temperature">215</setting>
+        <setting key="heated bed temperature">70</setting>
+        <setting key="standby temperature">120</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method" />
             <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
-            <setting key="print temperature">210</setting>
+            <setting key="print temperature">230</setting>
             <setting key="standby temperature">160</setting>
-            <setting key="build volume temperature">40</setting>
-            <setting key="print cooling">100</setting>
-            <cura:setting key="material_shrinkage_percentage">100.2</cura:setting>
-            <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
-            <cura:setting key="material_final_print_temperature">205</cura:setting>
-            <cura:setting key="material_initial_print_temperature">205</cura:setting>
+            <setting key="build volume temperature">60</setting>
+            <setting key="print cooling">50</setting>
+            <cura:setting key="material_final_print_temperature">225</cura:setting>
+            <cura:setting key="material_initial_print_temperature">225</cura:setting>
+            <cura:setting key="cool_min_temperature">230</cura:setting>
+            <cura:setting key="material_print_temperature_layer_0">235</cura:setting>
             <hotend id="1A">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
@@ -61,14 +57,15 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
-            <setting key="print temperature">210</setting>
+            <setting key="print temperature">230</setting>
             <setting key="standby temperature">160</setting>
-            <setting key="build volume temperature">40</setting>
-            <setting key="heated bed temperature">40</setting>
-            <cura:setting key="material_bed_temperature_layer_0">45</cura:setting>
-            <cura:setting key="material_final_print_temperature">205</cura:setting>
-            <cura:setting key="material_initial_print_temperature">205</cura:setting>
-            <setting key="print cooling">100</setting>
+            <setting key="build volume temperature">60</setting>
+            <setting key="heated bed temperature">60</setting>
+            <setting key="print cooling">50</setting>
+            <cura:setting key="material_final_print_temperature">225</cura:setting>
+            <cura:setting key="material_initial_print_temperature">225</cura:setting>
+            <cura:setting key="cool_min_temperature">230</cura:setting>
+            <cura:setting key="material_print_temperature_layer_0">235</cura:setting>
             <hotend id="1A">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
@@ -88,5 +85,6 @@
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
+
     </settings>
 </fdmmaterial>
