@@ -8,7 +8,7 @@
         </name>
         <GUID>149ae256-a462-40b0-8003-edbab2fde4ef</GUID>
         <reference_material_id>sebs-95a</reference_material_id>
-        <version>1</version>
+        <version>2</version>
         <color_code>#0e0e10</color_code>
         <description>Soft material great for prototyping where rubber-like or elastomeric properties and durability are required.</description>
         <adhesion_info>Print on build tak surface.</adhesion_info>
@@ -31,7 +31,6 @@
         <cura:setting key="cool_fan_speed_max">75</cura:setting>
         <cura:setting key="cool_min_temperature">245</cura:setting>
         <cura:setting key="cool_min_layer_time">5</cura:setting>
-    </settings>
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method" />
             <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
@@ -56,4 +55,5 @@
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
+    </settings>
 </fdmmaterial>
