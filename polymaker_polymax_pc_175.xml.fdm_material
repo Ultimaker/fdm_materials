@@ -6,9 +6,9 @@
             <material>PolyMax PC</material>
             <color>Generic</color>
         </name>
-        <GUID>e65b8a16-28a7-4271-97eb-742f10b8fd7</GUID>
+        <GUID>682d0508-43a7-4e9b-8473-1990842c9428</GUID>
         <reference_material_id>polymax_pc</reference_material_id>
-        <version>1</version>
+        <version>2</version>
         <color_code>#F29030</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
