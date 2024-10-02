@@ -9,7 +9,7 @@
         </name>
         <GUID>de031137-a8ca-4a72-bd1b-17bb964033ad</GUID>
         <reference_material_id>im-pla</reference_material_id>
-        <version>2</version>
+        <version>3</version>
         <color_code>#f5f2d1</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>No glue required</adhesion_info>
@@ -85,6 +85,37 @@
                 <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="LABS">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Sketch" />
+            <setting key="print temperature">220</setting>
+            <setting key="standby temperature">160</setting>
+            <setting key="print cooling">100</setting>
+            <setting key="heated bed temperature">50</setting>
+            <cura:setting key="material_bed_temperature_layer_0">55</cura:setting>
+            <cura:setting key="cool_min_temperature">215</cura:setting>
+            <cura:setting key="material_print_temperature_layer_0">225</cura:setting>
+            <cura:setting key="material_final_print_temperature">215</cura:setting>
+            <cura:setting key="material_initial_print_temperature">215</cura:setting>
+            <hotend id="0.4mm">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Sketch Large" />
+            <setting key="print temperature">210</setting>
+            <setting key="standby temperature">150</setting>
+            <setting key="print cooling">100</setting>
+            <setting key="heated bed temperature">50</setting>
+            <cura:setting key="material_bed_temperature_layer_0">55</cura:setting>
+            <cura:setting key="cool_min_temperature">210</cura:setting>
+            <cura:setting key="material_print_temperature_layer_0">220</cura:setting>
+            <cura:setting key="material_final_print_temperature">210</cura:setting>
+            <cura:setting key="material_initial_print_temperature">210</cura:setting>
+            <hotend id="0.4mm">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
