@@ -10,8 +10,7 @@ Generic Nylon 1.75mm profile. The data in this file may not be correct for your 
             <color>Generic</color>
         </name>
         <GUID>283d439a-3490-4481-920c-c51d8cdecf9c</GUID>
-        <reference_material_id>nylon</reference_material_id>
-        <version>7</version>
+        <version>8</version>
         <color_code>#3DF266</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
