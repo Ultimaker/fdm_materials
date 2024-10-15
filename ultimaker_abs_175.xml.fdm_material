@@ -7,7 +7,7 @@
             <color>Generic</color>
         </name>
         <GUID>e0f1d581-cc6b-4e36-8f3c-3f5601ecba5f</GUID>
-        <version>2</version>
+        <version>3</version>
         <reference_material_id>abs</reference_material_id>
         <color_code>#8cb219</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
@@ -57,7 +57,7 @@
             <setting key="print temperature">235</setting>
             <setting key="standby temperature">180</setting>
             <setting key="build volume temperature">85</setting>
-            <setting key="heated bed temperature">87</setting>
+            <setting key="heated bed temperature">85</setting>
             <setting key="print cooling">0</setting>
             <hotend id="1A">
                 <setting key="hardware compatible">no</setting>
