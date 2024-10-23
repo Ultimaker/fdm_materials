@@ -10,7 +10,8 @@ Generic BVOH 1.75mm profile. The data in this file may not be correct for your s
             <color>Generic</color>
         </name>
         <GUID>923e604c-8432-4b09-96aa-9bbbd42207f4</GUID>
-        <version>2</version>
+        <reference_material_id>bvoh</reference_material_id>
+        <version>3</version>
         <color_code>#ffaaff</color_code>
         <description>This is the baseline profile for the Water soluble support material BVOH. BVOH is a matching support material for PLA, ABS, ASA, PET-G, Nylon, TPU.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>

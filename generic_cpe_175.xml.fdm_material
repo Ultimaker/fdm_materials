@@ -10,7 +10,8 @@ Generic CPE 1.75mm profile. The data in this file may not be correct for your sp
             <color>Generic</color>
         </name>
         <GUID>da1872c1-b991-4795-80ad-bdac0f131726</GUID>
-        <version>6</version>
+        <reference_material_id>cpe</reference_material_id>
+        <version>7</version>
         <color_code>#159499</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
