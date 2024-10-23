@@ -8,7 +8,8 @@
         </name>
         <GUID>87cfe9c8-ea64-49c9-bf08-e4923c85fe7c</GUID>
         <reference_material_id>ultrafuse-316l</reference_material_id>
-        <version>1</version>
+        <reference_material_id>ultrafuse-316l</reference_material_id>
+        <version>2</version>
         <color_code>#78858B</color_code>
         <description>Filament filled with metal powder. Debind and sointer to get final part.</description>
         <adhesion_info>Print directly on the build surface with no raft or brims and support disabled</adhesion_info>
