@@ -10,7 +10,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>12f41353-1a33-415e-8b4f-a775a6c70cc6</GUID>
-        <version>41</version>
+        <version>42</version>
         <color_code>#159499</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -171,7 +171,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             <hotend id="BB 0.4">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <hotend id="BB 0.6">
+            <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="DD 0.4">
