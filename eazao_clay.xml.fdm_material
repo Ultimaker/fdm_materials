@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material">
     <metadata>
         <name>
@@ -7,11 +7,11 @@
             <color>White</color>
             <label>Clay</label>
         </name>
-        <color_code>#EEEEEE</color_code>
         <GUID>e0752072-a685-8721-dfd4-837075eb4f57</GUID>
-        <adhesion_info />
         <version>2</version>
-        <description />
+        <color_code>#eeeeee</color_code>
+        <description></description>
+        <adhesion_info></adhesion_info>
     </metadata>
     <properties>
         <diameter>1.75</diameter>
