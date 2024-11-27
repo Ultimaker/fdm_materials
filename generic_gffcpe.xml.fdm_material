@@ -119,6 +119,7 @@ This is the baseline profile for Glass Fiber Filled Copolyesters for the Print P
             <setting key="print cooling">1</setting>
             <setting key="anti ooze retract position">-6</setting>
             <setting key="no load move factor">1</setting>
+
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>

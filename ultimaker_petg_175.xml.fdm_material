@@ -3,58 +3,40 @@
     <metadata>
         <name>
             <brand>Ultimaker</brand>
-            <material>Nylon12 Carbon Fiber</material>
+            <material>PETG</material>
             <color>Generic</color>
         </name>
-        <GUID>3c6f2877-71cc-4760-84e6-4b89ab243e3b</GUID>
-        <reference_material_id>nylon12-cf</reference_material_id>
-        <version>7</version>
-        <color_code>#0e0e10</color_code>
-        <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
-        <adhesion_info>Use glue.</adhesion_info>
-        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-Nylon12-CF</instruction_link>
+        <GUID>2d004bbd-d1bb-47f8-beac-b066702d5273</GUID>
+        <reference_material_id>pet</reference_material_id>
+        <version>1</version>
+        <color_code>#f3a112</color_code>
+        <description>Generic PETG profile. The data in this file may not be correct for your specific machine.</description>
+        <adhesion_info>Set your prime speed to a low value (8mm/sec)</adhesion_info>
+        <instruction_link>https://support.ultimaker.com/s/article/Method-Filament-PETG</instruction_link>
     </metadata>
     <properties>
-        <density>1.14</density>
+        <density>1.27</density>
         <diameter>1.75</diameter>
         <weight>750</weight>
     </properties>
     <settings>
-        <setting key="print temperature">270</setting>
-        <setting key="standby temperature">200</setting>
-        <setting key="print cooling">0</setting>
-        <setting key="hardware compatible">yes</setting>
-        <cura:setting key="material_shrinkage_percentage">100.44</cura:setting>
-        <cura:setting key="material_shrinkage_percentage_z">100.6</cura:setting>
+        <setting key="print temperature">215</setting>
+        <setting key="heated bed temperature">70</setting>
+        <setting key="standby temperature">120</setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method" />
-            <setting key="build volume temperature">60</setting>
-            <hotend id="1A">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="1XA">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="2A">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="2XA">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="1C">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="LABS">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-        </machine>
-
-        <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
-            <setting key="build volume temperature">93</setting>
+            <setting key="print temperature">230</setting>
+            <setting key="standby temperature">160</setting>
+            <setting key="build volume temperature">60</setting>
+            <setting key="print cooling">50</setting>
+            <cura:setting key="material_final_print_temperature">225</cura:setting>
+            <cura:setting key="material_initial_print_temperature">225</cura:setting>
+            <cura:setting key="cool_min_temperature">230</cura:setting>
+            <cura:setting key="material_print_temperature_layer_0">235</cura:setting>
             <hotend id="1A">
-                <setting key="hardware compatible">no</setting>
+                <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="1XA">
                 <setting key="hardware compatible">no</setting>
@@ -75,10 +57,17 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
-            <setting key="build volume temperature">85</setting>
-            <setting key="heated bed temperature">95</setting>
+            <setting key="print temperature">230</setting>
+            <setting key="standby temperature">160</setting>
+            <setting key="build volume temperature">60</setting>
+            <setting key="heated bed temperature">60</setting>
+            <setting key="print cooling">50</setting>
+            <cura:setting key="material_final_print_temperature">225</cura:setting>
+            <cura:setting key="material_initial_print_temperature">225</cura:setting>
+            <cura:setting key="cool_min_temperature">230</cura:setting>
+            <cura:setting key="material_print_temperature_layer_0">235</cura:setting>
             <hotend id="1A">
-                <setting key="hardware compatible">no</setting>
+                <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="1XA">
                 <setting key="hardware compatible">no</setting>
@@ -97,5 +86,5 @@
             </hotend>
         </machine>
 
-   </settings>
+    </settings>
 </fdmmaterial>

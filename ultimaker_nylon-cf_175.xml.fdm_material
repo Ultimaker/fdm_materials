@@ -3,12 +3,12 @@
     <metadata>
         <name>
             <brand>Ultimaker</brand>
-            <material>Nylon12 Carbon Fiber</material>
+            <material>Nylon Carbon Fiber</material>
             <color>Generic</color>
         </name>
-        <GUID>3c6f2877-71cc-4760-84e6-4b89ab243e3b</GUID>
-        <reference_material_id>nylon12-cf</reference_material_id>
-        <version>7</version>
+        <GUID>17abb865-ca73-4ccd-aeda-38e294c9c60b</GUID>
+        <reference_material_id>nylon-cf</reference_material_id>
+        <version>1</version>
         <color_code>#0e0e10</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -20,12 +20,12 @@
         <weight>750</weight>
     </properties>
     <settings>
-        <setting key="print temperature">270</setting>
-        <setting key="standby temperature">200</setting>
+        <setting key="print temperature">250</setting>
+        <setting key="standby temperature">180</setting>
         <setting key="print cooling">0</setting>
         <setting key="hardware compatible">yes</setting>
-        <cura:setting key="material_shrinkage_percentage">100.44</cura:setting>
-        <cura:setting key="material_shrinkage_percentage_z">100.6</cura:setting>
+        <cura:setting key="material_shrinkage_percentage">100</cura:setting>
+        <cura:setting key="material_shrinkage_percentage_z">100</cura:setting>
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method" />
