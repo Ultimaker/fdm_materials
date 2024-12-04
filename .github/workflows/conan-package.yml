@@ -13,21 +13,17 @@ on:
     branches:
       - main
       - master
-      - 'PP-*'
       - 'CURA-*'
+      - 'PP-*'
       - 'NP-*'
       - '[0-9].[0-9]*'
+      - '[0-9].[0-9][0-9]*'
 
 jobs:
-  conan-recipe-version:
-    uses: ultimaker/cura-workflows/.github/workflows/conan-recipe-version.yml@main
+  conan-package:
+    uses: ultimaker/cura-workflows/.github/workflows/conan-package.yml@main
     with:
-      project_name: fdm_materials
-
-  conan-package-export-linux:
-    needs: [ conan-recipe-version ]
-    uses: ultimaker/cura-workflows/.github/workflows/conan-recipe-export.yml@main
-    with:
-      recipe_id_full: ${{ needs.conan-recipe-version.outputs.recipe_id_full }}
-      recipe_id_latest: ${{ needs.conan-recipe-version.outputs.recipe_id_latest }}
+      platform_windows: false
+      platform_mac: false
+      install_system_dependencies: false
     secrets: inherit
