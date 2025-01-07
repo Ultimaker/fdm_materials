@@ -10,16 +10,19 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
             <color>Generic</color>
         </name>
         <GUID>f8e496d6-7599-4015-9fac-c7ce53f6633c</GUID>
-        <version>20</version>
+        <version>24</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print Profile Assistant. This profile can also be used for other base materials (ABS, PP, etc)</description>
         <adhesion_info>Use glue.</adhesion_info>
+        <cura:pva_compatible>False</cura:pva_compatible>
+        <cura:breakaway_compatible>True</cura:breakaway_compatible>
     </metadata>
     <properties>
         <density>1.35</density>
         <diameter>2.85</diameter>
     </properties>
     <settings>
+        <!-- Deprime settings -->
         <setting key="anti ooze retract position">-8</setting>
         <setting key="anti ooze retract speed">25</setting>
         <setting key="break preparation position">0</setting>
@@ -28,6 +31,8 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
         <setting key="break position">-50</setting>
         <setting key="break speed">25</setting>
         <setting key="break temperature">145</setting>
+
+        <!-- material station (un)loading settings -->
         <setting key="maximum park duration">7200</setting>
         <setting key="no load move factor">0.94</setting>
         <setting key="flush purge speed">0.5</setting>
@@ -46,11 +51,10 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -79,8 +83,8 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
@@ -109,6 +113,35 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
             </hotend>
         </machine>
 
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <setting key="build volume temperature">40</setting>
+            <setting key="print cooling">1</setting>
+            <setting key="anti ooze retract position">-6</setting>
+            <setting key="no load move factor">1</setting>
+            <setting key="retraction amount">1.5</setting>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
 
     </settings>
 </fdmmaterial>

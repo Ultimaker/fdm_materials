@@ -56,6 +56,7 @@
                                 </xsd:simpleType>
                             </xsd:element>
 
+                            <xsd:element name="reference_material_id" type="xsd:string" minOccurs="0"/>
                             <xsd:element name="description" type="xsd:string" minOccurs="0"/>
                             <xsd:element name="adhesion_info" type="xsd:string" minOccurs="0"/>
                             <xsd:element name="instruction_link" type="url" minOccurs="0"/>
@@ -64,6 +65,7 @@
                             <xsd:element name="MSDS" type="url" minOccurs="0"/>
                             <xsd:element name="supplier" type="contact_info" minOccurs="0"/>
                             <xsd:element name="author" type="contact_info" minOccurs="0"/>
+                            <xsd:element name="abstract_color" type="xsd:boolean" minOccurs="0"/>
                             <!-- Specifically allow any settings from the Cura Namespace to be added here -->
                             <xsd:any minOccurs="0" namespace="http://www.ultimaker.com/cura" processContents ="lax"/>
                         </xsd:choice>
@@ -189,6 +191,9 @@
                     <xsd:enumeration value="break position"/>
                     <xsd:enumeration value="end of filament purge volume"/>
                     <xsd:enumeration value="end of print purge volume"/>
+                    <xsd:enumeration value="same material purge volume"/>
+                    <xsd:enumeration value="different material purge volume"/>
+                    <xsd:enumeration value="purge speed coefficient"/>
                     <xsd:enumeration value="pressure release dwell time"/>
                     <xsd:enumeration value="dwell time before break preparation move"/>
                     <xsd:enumeration value="tainted print core max temperature"/>

@@ -10,10 +10,12 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <color>Generic</color>
         </name>
         <GUID>28fb4162-db74-49e1-9008-d05f1e8bef5c</GUID>
-        <version>30</version>
+        <version>36</version>
         <color_code>#3DF266</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
+        <cura:pva_compatible>True</cura:pva_compatible>
+        <cura:breakaway_compatible>True</cura:breakaway_compatible>
     </metadata>
     <properties>
         <density>1.14</density>
@@ -40,8 +42,8 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
         <setting key="no load move factor">0.91</setting>
 
         <!-- print settings -->
-        <setting key="print temperature">245</setting>
-        <setting key="standby temperature">145</setting>
+        <setting key="print temperature">250</setting>
+        <setting key="standby temperature">150</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="build volume temperature">35</setting>
         <setting key="retraction amount">8</setting>
@@ -52,12 +54,17 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
 
         <!-- For material flow sensor -->
         <setting key="relative extrusion">1.0</setting>
-        <setting key="flow sensor detection margin">0.8</setting>
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original" />
+            <setting key="print temperature">245</setting>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+" />
+            <setting key="print temperature">245</setting>
 
             <hotend id="0.25 mm" />
             <hotend id="0.4 mm" />
@@ -66,14 +73,13 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
             <setting key="print cooling">40</setting>
             <setting key="heated bed temperature">40</setting>
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">230</setting>
                 <setting key="retraction amount">6.5</setting>
             </hotend>
             <hotend id="AA 0.4">
@@ -86,7 +92,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" />
             <setting key="hardware compatible">yes</setting>
             <hotend id="0.25 mm">
                 <setting key="print temperature">240</setting>
@@ -106,13 +112,12 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
             <setting key="print cooling">40</setting>
             <setting key="heated bed temperature">40</setting>
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">230</setting>
                 <setting key="retraction amount">6.5</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
@@ -127,15 +132,14 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
 
             <setting key="print cooling">40</setting>
             <setting key="heated bed temperature">40</setting>
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
-                <setting key="print temperature">230</setting>
                 <setting key="retraction amount">6.5</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
@@ -151,6 +155,40 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             </hotend>
         </machine>
 
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <setting key="print temperature">245</setting>
+            <setting key="heated bed temperature">40</setting>
+            <setting key="build volume temperature">30</setting>
+            <setting key="print cooling">75</setting>
+            <setting key="retraction amount">5</setting>
+            <setting key="anti ooze retract position">-6</setting>
+            <setting key="no load move factor">1</setting>
+            <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
+            <setting key="flow sensor detection margin">0.2</setting>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">250</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="HT 0.6">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+        </machine>
 
     </settings>
 </fdmmaterial>
