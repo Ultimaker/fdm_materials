@@ -8,9 +8,9 @@
         </name>
         <GUID>3fac1543-dd0c-462d-9cbc-d94137d43999</GUID>
         <reference_material_id>metallic-pla</reference_material_id>
-        <version>1</version>
+        <version>2</version>
         <color_code>#2E5266</color_code>
-        <description>Fast, safe and reliable printing. Silk PLA is ideal for the fast and reliable printing of parts and prototypes with a shiny surface quality.</description>
+        <description>Fast, safe and reliable printing. Metallic PLA is ideal for the fast and reliable printing of parts and prototypes with a shiny surface quality.</description>
         <adhesion_info>Print directly on a clean build surface.</adhesion_info>
     </metadata>
     <properties>
