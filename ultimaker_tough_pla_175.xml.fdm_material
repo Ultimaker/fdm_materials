@@ -8,6 +8,7 @@
             <label>Tough</label>
         </name>
         <GUID>de031137-a8ca-4a72-bd1b-17bb964033ad</GUID>
+        <alternative_GUID>96fca5d9-0371-4516-9e96-8e8182677f3c</alternative_GUID>
         <reference_material_id>im-pla</reference_material_id>
         <version>4</version>
         <color_code>#f5f2d1</color_code>
