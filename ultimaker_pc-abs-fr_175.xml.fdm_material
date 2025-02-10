@@ -8,11 +8,11 @@
         </name>
         <GUID>bb3c56be-cfeb-4a0a-9316-567200c2d81b</GUID>
         <reference_material_id>pc-abs-fr</reference_material_id>
-        <version>2</version>
+        <version>3</version>
         <color_code>#0e0e10</color_code>
         <description>Tough and durable. PC-ABS-FR is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>No glue needed</adhesion_info>
-        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-ABS-R</instruction_link>
+        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Method-PC-ABS-FR</instruction_link>
     </metadata>
     <properties>
         <density>1.05</density>
