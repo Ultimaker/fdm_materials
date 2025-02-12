@@ -10,7 +10,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <color>Generic</color>
         </name>
         <GUID>28fb4162-db74-49e1-9008-d05f1e8bef5c</GUID>
-        <version>36</version>
+        <version>37</version>
         <color_code>#3DF266</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -175,18 +175,6 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="DD 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="HT 0.6">
-                <setting key="hardware compatible">no</setting>
             </hotend>
         </machine>
 

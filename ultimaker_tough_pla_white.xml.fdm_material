@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>851427a0-0c9a-4d7c-a9a8-5cc92f84af1f</GUID>
-        <version>38</version>
+        <version>39</version>
         <color_code>#ecece7</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -150,19 +150,6 @@
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="DD 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="HT 0.6">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
         </machine>
-
     </settings>
 </fdmmaterial>

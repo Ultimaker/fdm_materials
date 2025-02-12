@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>881c888e-24fb-4a64-a4ac-d5c95b096cd7</GUID>
-        <version>46</version>
+        <version>47</version>
         <color_code>#f1ece1</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -166,18 +166,6 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">10</cura:setting>
-            </hotend>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="DD 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="HT 0.6">
-                <setting key="hardware compatible">no</setting>
             </hotend>
         </machine>
 

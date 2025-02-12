@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>e256615d-a04e-4f53-b311-114b90560af9</GUID>
-        <version>40</version>
+        <version>41</version>
         <color_code>#d0d0d0</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -174,18 +174,6 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="DD 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="HT 0.6">
-                <setting key="hardware compatible">no</setting>
             </hotend>
         </machine>
 

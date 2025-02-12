@@ -8,7 +8,7 @@
             <label>Any color PET-CF</label>
         </name>
         <GUID>f0245d40-3657-4615-b9ab-19fc043944ca</GUID>
-        <version>8</version>
+        <version>9</version>
         <color_code>#888888</color_code>
         <description>Ultimaker PET-CF.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
@@ -75,6 +75,9 @@
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">3</cura:setting>
@@ -101,6 +104,9 @@
                 <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="BB 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="DD 0.4">
                 <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="CC 0.4">
@@ -140,6 +146,9 @@
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">3</cura:setting>
@@ -154,6 +163,5 @@
                 <setting key="print temperature">280</setting>
             </hotend>
         </machine>
-
     </settings>
 </fdmmaterial>
