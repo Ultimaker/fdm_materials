@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdmmaterial xmlns="http://www.ultimaker.com/material" xmlns:cura="http://www.ultimaker.com/cura" version="1.3">
+    <metadata>
+        <name>
+            <brand>Ultimaker</brand>
+            <material>Nylon CF Slide</material>
+            <color>Black</color>
+        </name>
+        <GUID>b31d12a3-ed0e-4fe4-88f2-5ba6416ae8e5</GUID>
+        <version>2</version>
+        <color_code>#1e1e1e</color_code>
+        <description>A POM like material with a very good wear resistance and very low friction coefficient.</description>
+        <adhesion_info />
+        <instruction_link>https://support.ultimaker.com/s/article/How-to-print-with-Nylon-CF-Slide</instruction_link>
+        <cura:pva_compatible>True</cura:pva_compatible>
+        <cura:breakaway_compatible>True</cura:breakaway_compatible>
+    </metadata>
+    <properties>
+        <density>1.04</density>
+        <diameter>2.85</diameter>
+        <weight>500</weight>
+    </properties>
+    <settings>
+        <!-- Deprime settings -->
+        <setting key="anti ooze retract position">-16</setting>
+        <setting key="anti ooze retract speed">50</setting>
+        <setting key="break preparation position">-16</setting>
+        <setting key="break preparation speed">50</setting>
+        <setting key="break preparation temperature">280</setting>
+        <setting key="break position">-50</setting>
+        <setting key="break speed">50</setting>
+        <setting key="break temperature">265</setting>
+        <setting key="pressure release dwell time">25</setting>
+        <setting key="dwell time before break preparation move">0</setting>
+        <setting key="end of print purge volume">0</setting>
+        <setting key="end of filament purge volume">0</setting>
+        <setting key="flush purge length">60</setting>
+
+        <!-- material station (un)loading settings -->
+        <setting key="maximum park duration">7200</setting>
+        <setting key="no load move factor">0.935</setting>
+
+        <!-- print settings -->
+        <setting key="print temperature">280</setting>
+        <setting key="standby temperature">165</setting>
+        <setting key="heated bed temperature">70</setting>
+        <setting key="build volume temperature">35</setting>
+        <setting key="print cooling">0</setting>
+        <setting key="retraction amount">8</setting>
+        <setting key="retraction speed">25</setting>
+        <setting key="adhesion tendency">2</setting>
+        <setting key="surface energy">100</setting>
+        <cura:setting key="material_crystallinity">true</cura:setting>
+
+        <!-- For material flow sensor -->
+        <setting key="relative extrusion">1.0</setting>
+        <setting key="retract compensation">0</setting>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
+            <setting key="print cooling">0</setting>
+            <hotend id="CC 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">6.5</setting>
+            </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">6.5</setting>
+            </hotend>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
+            <setting key="print cooling">0</setting>
+            <setting key="standby temperature">255</setting>
+            <setting key="no load move factor">1.0</setting>
+
+            <hotend id="AA+ 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA+ 0.6">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC+ 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC+ 0.6">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <setting key="anti ooze retract position">-12</setting>
+            <setting key="break preparation position">-10</setting>
+            <setting key="build volume temperature">35</setting>
+            <setting key="no load move factor">1</setting>
+            <setting key="print cooling">0</setting>
+            <setting key="retraction amount">3</setting>
+            <hotend id="CC 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="HT 0.6">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+        </machine>
+    </settings>
+</fdmmaterial>
