@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>6a2573e6-c8ee-4c66-8029-3ebb3d5adc5b</GUID>
-        <version>45</version>
+        <version>46</version>
         <color_code>#f1ece1</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -137,6 +137,21 @@
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">45</setting>
                 <setting key="print cooling">50</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
+            <cura:setting key="material_shrinkage_percentage">100.3</cura:setting>
+            <setting key="standby temperature">200</setting>
+            <setting key="no load move factor">1.067</setting>
+            <setting key="print cooling">65</setting>
+
+            <hotend id="AA+ 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA+ 0.6">
+                <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
 

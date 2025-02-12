@@ -7,7 +7,7 @@
             <color>Magenta</color>
         </name>
         <GUID>fe3982c8-58f4-4d86-9ac0-9ff7a3ab9cbc</GUID>
-        <version>45</version>
+        <version>46</version>
         <color_code>#bc4077</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -171,6 +171,24 @@
                 <setting key="retraction amount">6.5</setting>
                 <cura:setting key="cool_min_layer_time">10</cura:setting>
                 <cura:setting key="material_crystallinity">true</cura:setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
+
+            <setting key="print cooling">100</setting>
+            <setting key="heated bed temperature">55</setting>
+            <cura:setting key="material_shrinkage_percentage">100.2</cura:setting>
+            <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
+            <setting key="standby temperature">175</setting>
+            <setting key="no load move factor">1.0</setting>
+
+            <hotend id="AA+ 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA+ 0.6">
+                <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
 
