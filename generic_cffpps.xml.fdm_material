@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled PPS for the Print Profile A
             <color>Generic</color>
         </name>
         <GUID>6b0a5f1a-a43c-483c-b02e-9c9915233143</GUID>
-        <version>12</version>
+        <version>13</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled PPS for the Print Profile Assistant. This profile can also be used for other base materials (ABS, PP, etc)</description>
         <adhesion_info>No glue needed</adhesion_info>
@@ -77,10 +77,12 @@ This is the baseline profile for Carbon Fiber Filled PPS for the Print Profile A
             <hotend id="CC 0.6">
                 <setting key="hardware compatible">no</setting>
             </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="HT 0.6">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
-
     </settings>
 </fdmmaterial>

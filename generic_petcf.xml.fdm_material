@@ -10,7 +10,7 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <color>Generic</color>
         </name>
         <GUID>64d44410-be10-428c-8891-f0ae47ea1734</GUID>
-        <version>25</version>
+        <version>26</version>
         <color_code>#888888</color_code>
         <description>Generic PET CF profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
@@ -74,6 +74,9 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">3</cura:setting>
@@ -100,6 +103,9 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
                 <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="BB 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="DD 0.4">
                 <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="CC 0.4">
@@ -139,6 +145,9 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">3</cura:setting>
@@ -153,6 +162,5 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
                 <setting key="print temperature">280</setting>
             </hotend>
         </machine>
-
     </settings>
 </fdmmaterial>
