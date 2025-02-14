@@ -10,7 +10,7 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <color>Generic</color>
         </name>
         <GUID>64d44410-be10-428c-8891-f0ae47ea1734</GUID>
-        <version>25</version>
+        <version>27</version>
         <color_code>#888888</color_code>
         <description>Generic PET CF profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
@@ -74,6 +74,9 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">3</cura:setting>
@@ -102,11 +105,42 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="CC 0.6">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
+            <setting key="print temperature">280</setting>
+            <setting key="standby temperature">255</setting>
+            <setting key="no load move factor">1.0</setting>
+            <setting key="print cooling">25</setting>
+            <cura:setting key="material_shrinkage_percentage">100.15</cura:setting>
+
+            <hotend id="AA+ 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA+ 0.6">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC+ 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC+ 0.6">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
@@ -139,6 +173,9 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">3</cura:setting>
@@ -153,6 +190,5 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
                 <setting key="print temperature">280</setting>
             </hotend>
         </machine>
-
     </settings>
 </fdmmaterial>

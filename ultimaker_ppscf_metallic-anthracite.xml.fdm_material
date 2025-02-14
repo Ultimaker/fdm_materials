@@ -7,7 +7,7 @@
             <color>Metallic Anthracite</color>
         </name>
         <GUID>d86bf59a-9d10-4a25-99b6-2844e0bc1bfb</GUID>
-        <version>3</version>
+        <version>4</version>
         <color_code>#383E42</color_code>
         <description>High performance carbon fiber reinforced PPS filament. Flame retardant, high chemical and heat resistance and high strength for functional 3D prints in manufacturing. </description>
         <adhesion_info>No glue needed</adhesion_info>
@@ -76,10 +76,12 @@
             <hotend id="CC 0.6">
                 <setting key="hardware compatible">no</setting>
             </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="HT 0.6">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
-
     </settings>
 </fdmmaterial>
