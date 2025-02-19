@@ -7,7 +7,7 @@
             <color>Silver</color>
         </name>
         <GUID>40a273c6-0e15-4db5-a278-8eb0b4a9e293</GUID>
-        <version>46</version>
+        <version>48</version>
         <color_code>#a1a1a0</color_code>
         <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -136,6 +136,25 @@
         </machine>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
+            <setting key="standby temperature">215</setting>
+            <cura:setting key="material_shrinkage_percentage">100.5</cura:setting>
+            <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
+            <setting key="retraction amount">8</setting>
+            <setting key="no load move factor">1.0</setting>
+            <setting key="print cooling">35</setting>
+            <cura:setting key="adhesion_type">brim</cura:setting>  <!-- PETG is prone to warping, so a brim is recommended -->
+            <cura:setting key="support_structure">normal</cura:setting> <!-- PETG can ooze a lot and has long retracts. Tree support does not work well -->
+
+            <hotend id="AA+ 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA+ 0.6">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
+
+        <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
             <setting key="build volume temperature">50</setting>
             <setting key="print cooling">50</setting>
@@ -154,19 +173,6 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="DD 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="HT 0.6">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
         </machine>
-
     </settings>
 </fdmmaterial>

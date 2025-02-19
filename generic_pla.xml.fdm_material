@@ -10,7 +10,7 @@ Generic PLA profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>506c9f0d-e3aa-4bd4-b2d2-23e2425b1aa9</GUID>
-        <version>38</version>
+        <version>40</version>
         <color_code>#ffc924</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -176,6 +176,24 @@ Generic PLA profile. The data in this file may not be correct for your specific 
         </machine>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
+
+            <setting key="print cooling">100</setting>
+            <setting key="heated bed temperature">55</setting>
+            <cura:setting key="material_shrinkage_percentage">100.2</cura:setting>
+            <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
+            <setting key="standby temperature">175</setting>
+            <setting key="no load move factor">1.0</setting>
+
+            <hotend id="AA+ 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA+ 0.6">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
+
+        <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
             <setting key="heated bed temperature">55</setting>
             <setting key="build volume temperature">30</setting>
@@ -201,12 +219,6 @@ Generic PLA profile. The data in this file may not be correct for your specific 
             <hotend id="CC 0.6">
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">10</cura:setting>
-            </hotend>
-            <hotend id="DD 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="HT 0.6">
-                <setting key="hardware compatible">no</setting>
             </hotend>
         </machine>
 
