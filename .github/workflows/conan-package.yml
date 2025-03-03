@@ -21,9 +21,15 @@ on:
 
 jobs:
   conan-package:
-    uses: ultimaker/cura-workflows/.github/workflows/conan-package.yml@main
-    with:
-      platform_windows: false
-      platform_mac: false
-      install_system_dependencies: false
-    secrets: inherit
+    steps:
+    - name: Conan Package
+      uses: ultimaker/cura-workflows/.github/workflows/conan-package.yml@main
+      with:
+        platform_windows: false
+        platform_mac: false
+        install_system_dependencies: false
+      secrets: inherit
+
+    - name: Signal Curator
+      run: |
+        gh work_flow run --repo Ultimaker/Curator build_deploy_trunk.yml
