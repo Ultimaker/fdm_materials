@@ -35,3 +35,5 @@ jobs:
     - name: Signal Curator
       run: |
         gh workflow run --repo Ultimaker/Curator build_deploy_trunk.yml
+      env:
+          GH_TOKEN: ${{ github.token }}
