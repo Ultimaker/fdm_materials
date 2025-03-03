@@ -24,11 +24,11 @@ FDM material database, used in Cura.
 
 ## License
 
-![License](https://img.shields.io/github/license/ultimaker/fdm_materials?style=flat)  
+![License](https://img.shields.io/github/license/ultimaker/fdm_materials?style=flat)
 fdm_materials is released under terms of the CC0-1.0 License. Terms of the license can be found in the LICENSE file. Or at
 https://creativecommons.org/publicdomain/zero/1.0/
 
-> But in general it boils down to:  
+> But in general it boils down to:
 > **We waive all rights to the extend of the law. You can copy, modify, distribute as you like, even for commercial purposes**
 
 ## System Requirements
@@ -44,7 +44,7 @@ https://creativecommons.org/publicdomain/zero/1.0/
 
 ## How To Build
 
-> **Note:**  
+> **Note:**
 > We are currently in the process of switch our builds and pipelines to an approach which uses [Conan](https://conan.io/)
 > and pip to manage our dependencies, which are stored on our JFrog Artifactory server and in the pypi.org.
 > At the moment not everything is fully ported yet, so bare with us.
@@ -62,7 +62,7 @@ conan config install https://github.com/ultimaker/conan-config.git
 conan profile new default --detect --force
 ```
 
-Community developers would have to remove the Conan cura repository because it requires credentials. 
+Community developers would have to remove the Conan cura repository because it requires credentials.
 
 Ultimaker developers need to request an account for our JFrog Artifactory server at IT
 ```bash
@@ -105,7 +105,7 @@ This means you can test this in a consuming project without creating a new packa
     conan editable add . fdm_materials/<version>@<username>/<channel>
 ```
 
-Then in your downsteam projects (Cura) root directory override the package with your editable mode package.  
+Then in your downsteam projects (Cura) root directory override the package with your editable mode package.
 
 ```shell
 conan install . -build=missing --update --require-override=fdm_materials/<version>@<username>/<channel>
