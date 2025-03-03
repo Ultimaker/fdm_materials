@@ -34,4 +34,4 @@ jobs:
     steps:
     - name: Signal Curator
       run: |
-        gh work_flow run --repo Ultimaker/Curator build_deploy_trunk.yml
+        gh workflow run --repo Ultimaker/Curator build_deploy_trunk.yml
