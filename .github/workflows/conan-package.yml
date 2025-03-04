@@ -32,9 +32,13 @@ jobs:
     needs: conan-package
     runs-on: ubuntu-latest
     steps:
-    - name: Signal Curator
-      run: |
-        gh workflow run --repo ultimaker/curator -r main package.yml
-
-      env:
-          GH_TOKEN: ${{ github.token }}
+    - name: Trigger Curator Workflow
+      uses: actions/github-script@v6
+      with:
+        script: |
+          github.rest.actions.createWorkflowDispatch({
+            owner: context.repo.owner,
+            repo: 'curator',
+            workflow_id: 'package.yml',
+            ref: 'main',
+          })
