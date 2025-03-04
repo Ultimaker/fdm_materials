@@ -34,6 +34,7 @@ jobs:
     steps:
     - name: Signal Curator
       run: |
-        gh workflow run --repo ultimaker/curator build_deploy_trunk.yml
+        gh workflow run --repo ultimaker/curator -r main package.yml
+
       env:
           GH_TOKEN: ${{ github.token }}
