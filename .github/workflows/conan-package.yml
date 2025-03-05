@@ -33,12 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Trigger Curator Workflow
-      uses: actions/github-script@v6
-      with:
-        script: |
-          github.rest.actions.createWorkflowDispatch({
-            owner: context.repo.owner,
-            repo: 'curator',
-            workflow_id: 'package.yml',
-            ref: 'main',
-          })
+      run: |
+        gh workflow run --repo ultimaker/curator -r main package.yml
+      env:
+        GITHUB_TOKEN: ${{ secrets.CURATOR_TRIGGER_PAT_C3PO }}
