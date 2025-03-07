@@ -198,6 +198,8 @@
                     <xsd:enumeration value="dwell time before break preparation move"/>
                     <xsd:enumeration value="tainted print core max temperature"/>
                     <xsd:enumeration value="recommend cleaning after n prints"/>
+                    <xsd:enumeration value="pressure advance linear factor"/>
+                    <xsd:enumeration value="pressure advance quadratic factor"/>
                 </xsd:restriction>
             </xsd:simpleType>
         </xsd:attribute>
