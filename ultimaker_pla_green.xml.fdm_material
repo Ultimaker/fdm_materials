@@ -7,7 +7,7 @@
             <color>Green</color>
         </name>
         <GUID>2433b8fb-dcd6-4e36-9cd5-9f4ee551c04c</GUID>
-        <version>47</version>
+        <version>48</version>
         <color_code>#61993b</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -190,6 +190,12 @@
             </hotend>
             <hotend id="AA+ 0.6">
                 <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC+ 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC+ 0.6">
+                <setting key="hardware compatible">no</setting>
             </hotend>
         </machine>
 
