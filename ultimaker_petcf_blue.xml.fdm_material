@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>81555f45-354b-42e0-bc0d-e0357cb56dd4</GUID>
-        <version>24</version>
+        <version>25</version>
         <color_code>#025669</color_code>
         <description>Ultimaker PET-CF.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
@@ -123,6 +123,7 @@
             <setting key="no load move factor">1.0</setting>
             <setting key="print cooling">25</setting>
             <cura:setting key="material_shrinkage_percentage">100.15</cura:setting>
+            <setting key="retraction amount">8</setting>
 
             <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">no</setting>
