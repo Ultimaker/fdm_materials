@@ -10,7 +10,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <color>Generic</color>
         </name>
         <GUID>000d008b-2f42-4952-ac17-397c354022df</GUID>
-        <version>2</version>
+        <version>3</version>
         <color_code>#1e1e1e</color_code>
         <description>A POM like material with a very good wear resistance and very low friction coefficient.</description>
         <adhesion_info />
@@ -95,6 +95,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <setting key="print cooling">0</setting>
             <setting key="standby temperature">255</setting>
             <setting key="no load move factor">1.0</setting>
+            <setting key="retraction amount">6.5</setting>
 
             <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">no</setting>
