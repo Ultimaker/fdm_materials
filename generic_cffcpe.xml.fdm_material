@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
             <color>Generic</color>
         </name>
         <GUID>f8e496d6-7599-4015-9fac-c7ce53f6633c</GUID>
-        <version>25</version>
+        <version>26</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print Profile Assistant. This profile can also be used for other base materials (ABS, PP, etc)</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -114,6 +114,7 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
         </machine>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
             <setting key="print cooling">50</setting>
             <setting key="retraction amount">6.5</setting>

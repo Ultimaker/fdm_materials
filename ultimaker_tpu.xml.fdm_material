@@ -8,7 +8,7 @@
             <label>Any color TPU</label>
         </name>
         <GUID>bddeb098-9e1f-4d0b-be9f-e99f6f8277d8</GUID>
-        <version>15</version>
+        <version>16</version>
         <color_code>#B22744</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -143,6 +143,7 @@
         </machine>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
             <cura:setting key="material_shrinkage_percentage">100.3</cura:setting>
             <setting key="standby temperature">200</setting>

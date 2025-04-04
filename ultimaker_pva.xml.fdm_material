@@ -7,7 +7,7 @@
             <color>Natural</color>
         </name>
         <GUID>fe15ed8a-33c3-4f57-a2a7-b4b78a38c3cb</GUID>
-        <version>48</version>
+        <version>49</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -152,6 +152,7 @@
         </machine>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
             <setting key="standby temperature">195</setting>
             <setting key="no load move factor">1.0</setting>

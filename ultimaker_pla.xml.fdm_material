@@ -8,7 +8,7 @@
             <label>Any color PLA</label>
         </name>
         <GUID>5b890432-a9f1-45e4-aad7-a73995600276</GUID>
-        <version>13</version>
+        <version>14</version>
         <color_code>#ffc924</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -177,6 +177,7 @@
         </machine>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
 
             <setting key="print temperature">210</setting>
@@ -192,6 +193,7 @@
             </hotend>
             <hotend id="AA+ 0.6">
                 <setting key="hardware compatible">yes</setting>
+                <cura:setting key="material_pressure_advance_factor">0.75</cura:setting>
             </hotend>
             <hotend id="CC+ 0.4">
                 <setting key="hardware compatible">no</setting>

@@ -7,7 +7,7 @@
             <color>Natural</color>
         </name>
         <GUID>c7005925-2a41-4280-8cdd-4029e3fe5253</GUID>
-        <version>53</version>
+        <version>54</version>
         <color_code>#d0d0d0</color_code>
         <description>Fatigue and chemical resistant. Polypropylene offers excellent temperature, chemical and fatigue resistance. Its toughness and low friction make it a perfect choice for prototyping and creating durable end-use models.</description>
         <adhesion_info>Adhesion sheets are required.</adhesion_info>
@@ -157,6 +157,7 @@
         </machine>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
             <setting key="heated bed temperature">85</setting>
             <cura:setting key="material_shrinkage_percentage">100.7</cura:setting>
