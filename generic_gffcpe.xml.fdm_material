@@ -10,7 +10,7 @@ This is the baseline profile for Glass Fiber Filled Copolyesters for the Print P
             <color>Generic</color>
         </name>
         <GUID>d4b786bb-e5d2-481b-b3ab-0be976d36af8</GUID>
-        <version>27</version>
+        <version>29</version>
         <color_code>#D5D8DC</color_code>
         <description>This is the baseline profile for Glass Fiber Filled Copolyesters for the Print Profile Assistant. This profile can also be used for other base materials (ABS, PP, etc)</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -84,6 +84,7 @@ This is the baseline profile for Glass Fiber Filled Copolyesters for the Print P
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
 

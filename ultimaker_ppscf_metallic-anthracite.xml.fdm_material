@@ -7,7 +7,7 @@
             <color>Metallic Anthracite</color>
         </name>
         <GUID>d86bf59a-9d10-4a25-99b6-2844e0bc1bfb</GUID>
-        <version>5</version>
+        <version>7</version>
         <color_code>#383E42</color_code>
         <description>High performance carbon fiber reinforced PPS filament. Flame retardant, high chemical and heat resistance and high strength for functional 3D prints in manufacturing. </description>
         <adhesion_info>No glue needed</adhesion_info>
@@ -52,6 +52,7 @@
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
             <setting key="hardware compatible">no</setting>

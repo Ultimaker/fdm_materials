@@ -10,7 +10,7 @@ Generic PVA profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>86a89ceb-4159-47f6-ab97-e9953803d70f</GUID>
-        <version>43</version>
+        <version>44</version>
         <color_code>#a32bcc</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA, CPE and Nylon.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -126,6 +126,7 @@ Generic PVA profile. The data in this file may not be correct for your specific 
         </machine>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
             <setting key="standby temperature">195</setting>
             <setting key="no load move factor">1.0</setting>

@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>1aca047a-42df-497c-abfb-0e9cb85ead52</GUID>
-        <version>49</version>
+        <version>50</version>
         <color_code>#0e0e10</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -140,6 +140,7 @@
         </machine>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
             <setting key="heated bed temperature">110</setting>
             <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>

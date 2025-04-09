@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>e92b1f0b-a069-4969-86b4-30127cfb6f7b</GUID>
-        <version>44</version>
+        <version>45</version>
         <color_code>#0e0e10</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
@@ -143,6 +143,7 @@
         </machine>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
             <setting key="heated bed temperature">110</setting>
             <setting key="standby temperature">255</setting>
