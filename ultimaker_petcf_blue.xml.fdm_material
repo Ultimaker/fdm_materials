@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>81555f45-354b-42e0-bc0d-e0357cb56dd4</GUID>
-        <version>25</version>
+        <version>26</version>
         <color_code>#025669</color_code>
         <description>Ultimaker PET-CF.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
@@ -117,6 +117,7 @@
         </machine>
 
         <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
             <setting key="print temperature">280</setting>
             <setting key="standby temperature">255</setting>

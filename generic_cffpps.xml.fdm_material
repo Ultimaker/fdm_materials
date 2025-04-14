@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled PPS for the Print Profile A
             <color>Generic</color>
         </name>
         <GUID>6b0a5f1a-a43c-483c-b02e-9c9915233143</GUID>
-        <version>14</version>
+        <version>16</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled PPS for the Print Profile Assistant. This profile can also be used for other base materials (ABS, PP, etc)</description>
         <adhesion_info>No glue needed</adhesion_info>
@@ -53,6 +53,7 @@ This is the baseline profile for Carbon Fiber Filled PPS for the Print Profile A
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
             <setting key="hardware compatible">no</setting>
