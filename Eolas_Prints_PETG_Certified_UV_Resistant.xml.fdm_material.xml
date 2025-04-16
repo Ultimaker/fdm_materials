@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Eolas Prints</brand>
+            <material>PETG</material>
+            <color>Generic</color>
+            <label>Eolas Prints PETG: Certified UV Resistant</label>
+        </name>
+        <color_code>#4d9398</color_code>
+        <GUID>35741ee3-b053-440f-a809-4d21aa2ee47e</GUID>
+        <adhesion_info>Adhesive like magigoo recommended<adhesion_info />
+        <version>1</version>
+        <description>This PETG filament is engineered with certified UV resistance, making it a great choice for long-lasting prints. It is designed to withstand long-term exposure to sunlight, ensuring it will not discolor or degrade in the outdoors. Perfect for outdoor 3D printing.</description>
+    </metadata>
+    <properties>
+        <diameter>1.75</diameter>
+        <density>1.27</density>
+        <weight>1000</weight>
+    </properties>
+    <settings>
+        <setting key="print cooling">50</setting>
+        <setting key="print temperature">242</setting>
+        <setting key="heated bed temperature">90</setting>
+        <setting key="standby temperature">120</setting>
+    </settings>
+</fdmmaterial>
