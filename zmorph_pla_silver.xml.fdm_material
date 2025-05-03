@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
+    <metadata>
+        <name>
+            <brand>Zmorph</brand>
+            <material>PLA</material>
+            <color>Silver</color>
+        </name>
+        <GUID>76991dd0-3eef-4eb3-a928-34792bfa22eb</GUID>
+        <version>1</version>
+        <color_code>#a1a1a0</color_code>
+        <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
+        <adhesion_info>Print on heated buildplate with DIMAFIX adhesion</adhesion_info>
+		<!--
+        <instruction_link>https://ultimaker.com/in/cura/materials/ultimaker-pla/printing-guidelines</instruction_link>
+		-->
+    </metadata>
+    <properties>
+        <density>1.24</density>
+        <diameter>1.75</diameter>
+        <weight>1000</weight>
+    </properties>
+    <settings>
+
+        <!-- print settings -->
+        <setting key="print temperature">200</setting>
+        <setting key="heated bed temperature">55</setting>
+        <setting key="standby temperature">175</setting>
+        <setting key="adhesion tendency">0</setting>
+        <setting key="surface energy">100</setting>
+        <setting key="material flow">95</setting>
+
+        <machine>
+            <machine_identifier manufacturer="Zmorph S.A." product="Zmorph i500"/>
+            <hotend id="Build hotend 0.4" />
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print cooling">100</setting>
+                <setting key="retraction amount">0.7</setting>
+			<hotend id="Support hotend 0.6">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+        </machine>
+
+    </settings>
+</fdmmaterial>
