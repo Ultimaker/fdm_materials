@@ -144,6 +144,9 @@
             <hotend id="Smart Extruder+ Tough">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
+            <hotend id="Smart Extruder+ Experimental">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
         </machine>
     </settings>
 </fdmmaterial>
