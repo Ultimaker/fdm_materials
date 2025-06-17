@@ -141,6 +141,9 @@
             <cura:setting key="material_final_print_temperature">215</cura:setting>
             <cura:setting key="material_initial_print_temperature">215</cura:setting>
             <cura:setting key="cool_min_temperature">215</cura:setting>
+            <hotend id="Smart Extruder+">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="Smart Extruder+ Tough">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
