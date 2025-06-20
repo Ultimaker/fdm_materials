@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>b31d12a3-ed0e-4fe4-88f2-5ba6416ae8e5</GUID>
-        <version>4</version>
+        <version>5</version>
         <color_code>#1e1e1e</color_code>
         <description>A POM like material with a very good wear resistance and very low friction coefficient.</description>
         <adhesion_info />
@@ -29,7 +29,7 @@
         <setting key="break preparation temperature">280</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">50</setting>
-        <setting key="break temperature">265</setting>
+        <setting key="break temperature">275</setting>
         <setting key="pressure release dwell time">25</setting>
         <setting key="dwell time before break preparation move">0</setting>
         <setting key="end of print purge volume">0</setting>
