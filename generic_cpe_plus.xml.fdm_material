@@ -10,7 +10,7 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             <color>Generic</color>
         </name>
         <GUID>e2409626-b5a0-4025-b73e-b58070219259</GUID>
-        <version>47</version>
+        <version>48</version>
         <color_code>#3633F2</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -151,10 +151,10 @@ Generic CPE+ profile. The data in this file may not be correct for your specific
             <setting key="no load move factor">1.0</setting>
             <setting key="print cooling">65</setting>
 
-            <hotend id="CC+ 0.4">
+            <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
-            <hotend id="CC+ 0.6">
+            <hotend id="CC+ 0.4">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>

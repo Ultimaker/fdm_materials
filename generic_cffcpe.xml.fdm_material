@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
             <color>Generic</color>
         </name>
         <GUID>f8e496d6-7599-4015-9fac-c7ce53f6633c</GUID>
-        <version>26</version>
+        <version>27</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print Profile Assistant. This profile can also be used for other base materials (ABS, PP, etc)</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -119,6 +119,9 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
             <setting key="print cooling">50</setting>
             <setting key="retraction amount">6.5</setting>
 
+            <hotend id="AA+ 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -133,6 +136,12 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
             </hotend>
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC+ 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC+ 0.6">
+                <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>

@@ -7,7 +7,7 @@
             <color>Natural</color>
         </name>
         <GUID>c7005925-2a41-4280-8cdd-4029e3fe5253</GUID>
-        <version>54</version>
+        <version>55</version>
         <color_code>#d0d0d0</color_code>
         <description>Fatigue and chemical resistant. Polypropylene offers excellent temperature, chemical and fatigue resistance. Its toughness and low friction make it a perfect choice for prototyping and creating durable end-use models.</description>
         <adhesion_info>Adhesion sheets are required.</adhesion_info>
@@ -165,9 +165,6 @@
             <setting key="no load move factor">1.0</setting>
 
             <hotend id="AA+ 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="AA+ 0.6">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>

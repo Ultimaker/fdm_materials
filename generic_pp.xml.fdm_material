@@ -10,7 +10,7 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
             <color>Generic</color>
         </name>
         <GUID>aa22e9c7-421f-4745-afc2-81851694394a</GUID>
-        <version>49</version>
+        <version>50</version>
         <color_code>#85f9de</color_code>
         <description>Fatigue and chemical resistant. Polypropylene offers excellent temperature, chemical and fatigue resistance. Its toughness and low friction make it a perfect choice for prototyping and creating durable end-use models.</description>
         <adhesion_info>Adhesion sheets are required.</adhesion_info>
@@ -166,9 +166,6 @@ Generic Polypropylene profile. Serves as an example file, data in this file is n
             <setting key="no load move factor">1.0</setting>
 
             <hotend id="AA+ 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="AA+ 0.6">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
