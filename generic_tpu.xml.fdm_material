@@ -10,7 +10,7 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
             <color>Generic</color>
         </name>
         <GUID>1d52b2be-a3a2-41de-a8b1-3bcdb5618695</GUID>
-        <version>44</version>
+        <version>45</version>
         <color_code>#B22744</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -152,9 +152,6 @@ Generic TPU 95A profile. The data in this file may not be correct for your speci
             <cura:setting key="material_pressure_advance_factor">0</cura:setting>
 
             <hotend id="AA+ 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="AA+ 0.6">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
