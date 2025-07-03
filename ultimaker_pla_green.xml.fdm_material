@@ -192,6 +192,9 @@
             <hotend id="CC+ 0.4">
                 <setting key="hardware compatible">no</setting>
             </hotend>
+            <hotend id="CC+ 0.6">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
         </machine>
 
         <machine>
