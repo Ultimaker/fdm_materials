@@ -10,7 +10,7 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <color>Generic</color>
         </name>
         <GUID>64d44410-be10-428c-8891-f0ae47ea1734</GUID>
-        <version>29</version>
+        <version>30</version>
         <color_code>#888888</color_code>
         <description>Generic PET CF profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
@@ -143,6 +143,12 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
                 <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="CC+ 0.6">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC 0.6">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>

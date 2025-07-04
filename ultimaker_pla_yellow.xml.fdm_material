@@ -7,7 +7,7 @@
             <color>Yellow</color>
         </name>
         <GUID>9c1959d0-f597-46ec-9131-34020c7a54fc</GUID>
-        <version>49</version>
+        <version>50</version>
         <color_code>#f9a800</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -188,10 +188,6 @@
 
             <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="AA+ 0.6">
-                <setting key="hardware compatible">yes</setting>
-                <cura:setting key="material_pressure_advance_factor">0.75</cura:setting>
             </hotend>
             <hotend id="CC+ 0.4">
                 <setting key="hardware compatible">no</setting>

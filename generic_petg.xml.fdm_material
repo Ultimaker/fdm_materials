@@ -10,7 +10,7 @@ Generic PETG profile. The data in this file may not be correct for your specific
             <color>Generic</color>
         </name>
         <GUID>1cbfaeb3-1906-4b26-b2e7-6f777a8c197a</GUID>
-        <version>31</version>
+        <version>32</version>
         <color_code>#ff5086</color_code>
         <description>Generic PETG profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -150,10 +150,6 @@ Generic PETG profile. The data in this file may not be correct for your specific
 
             <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="AA+ 0.6">
-                <setting key="hardware compatible">yes</setting>
-                <cura:setting key="material_pressure_advance_factor">0.75</cura:setting>
             </hotend>
         </machine>
 

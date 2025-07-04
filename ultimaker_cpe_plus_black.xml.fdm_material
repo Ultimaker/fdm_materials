@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>1aca047a-42df-497c-abfb-0e9cb85ead52</GUID>
-        <version>52</version>
+        <version>53</version>
         <color_code>#0e0e10</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -150,10 +150,10 @@
             <setting key="no load move factor">1.0</setting>
             <setting key="print cooling">65</setting>
 
-            <hotend id="CC+ 0.4">
+            <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
-            <hotend id="CC+ 0.6">
+            <hotend id="CC+ 0.4">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
