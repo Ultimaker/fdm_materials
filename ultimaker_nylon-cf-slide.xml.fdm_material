@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>b31d12a3-ed0e-4fe4-88f2-5ba6416ae8e5</GUID>
-        <version>5</version>
+        <version>6</version>
         <color_code>#1e1e1e</color_code>
         <description>A POM like material with a very good wear resistance and very low friction coefficient.</description>
         <adhesion_info />
@@ -25,7 +25,7 @@
         <setting key="anti ooze retract position">-16</setting>
         <setting key="anti ooze retract speed">50</setting>
         <setting key="break preparation position">-16</setting>
-        <setting key="break preparation speed">50</setting>
+        <setting key="break preparation speed">20</setting>
         <setting key="break preparation temperature">280</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">50</setting>
