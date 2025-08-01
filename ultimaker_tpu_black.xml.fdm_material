@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>eff40bcf-588d-420d-a3bc-a5ffd8c7f4b3</GUID>
-        <version>48</version>
+        <version>49</version>
         <color_code>#0e0e10</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -151,9 +151,6 @@
             <cura:setting key="material_pressure_advance_factor">0</cura:setting>
 
             <hotend id="AA+ 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="AA+ 0.6">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
