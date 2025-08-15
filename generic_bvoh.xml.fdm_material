@@ -11,7 +11,7 @@ Generic BVOH 1.75mm profile. The data in this file may not be correct for your s
             <label>BVOH</label>
         </name>
         <GUID>9d9527bf-7087-4f67-9fac-c79bb5816795</GUID>
-        <version>1</version>
+        <version>2</version>
         <color_code>#F1ECE1</color_code>
         <description>This is the baseline profile for the Water soluble support material BVOH. BVOH is a matching support material for PLA, ABS, ASA, PET-G, Nylon, TPU.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -44,6 +44,7 @@ Generic BVOH 1.75mm profile. The data in this file may not be correct for your s
 
         <!-- print settings -->
         <setting key="print temperature">210</setting>
+        <setting key="tainted print core max temperature">250</setting>  <!-- prevent overheating BVOH  -->
         <setting key="standby temperature">150</setting>
         <setting key="heated bed temperature">60</setting>
         <setting key="print cooling">88</setting>
