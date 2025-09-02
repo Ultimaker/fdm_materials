@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d5f9</GUID>
-        <version>43</version>
+        <version>44</version>
         <color_code>#F1ECE1</color_code>
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -75,29 +75,20 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
-
-            <setting key="print cooling">100</setting>
-            <hotend id="AA 0.4">
-                <setting key="hardware compatible">yes</setting>
-                <cura:setting key="cool_min_layer_time">3</cura:setting>
-            </hotend>
-        </machine>
-
-        <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
-            <setting key="print cooling">100</setting>
-            <setting key="standby temperature">200</setting>
-            <setting key="no load move factor">1.0</setting>
-            <cura:setting key="support_structure">tree</cura:setting>
 
+            <setting key="print cooling">100</setting>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
             <hotend id="BB 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">200</setting>
+                <setting key="no load move factor">1.0</setting>
+                <cura:setting key="support_structure">tree</cura:setting>
             </hotend>
         </machine>
 

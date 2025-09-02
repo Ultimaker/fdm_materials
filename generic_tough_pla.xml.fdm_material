@@ -10,7 +10,7 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
             <color>Generic</color>
         </name>
         <GUID>9d5d2d7c-4e77-441c-85a0-e9eefd4aa68c</GUID>
-        <version>38</version>
+        <version>39</version>
         <color_code>#ffc9f0</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -112,7 +112,9 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
 
             <setting key="print cooling">100</setting>
             <cura:setting key="material_shrinkage_percentage">100.3</cura:setting>
@@ -129,21 +131,11 @@ Generic Tough PLA profile. The data in this file may not be correct for your spe
                 <setting key="retraction amount">5</setting>
                 <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
-        </machine>
-
-        <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
-
-            <setting key="print cooling">100</setting>
-            <setting key="heated bed temperature">55</setting>
-            <cura:setting key="material_shrinkage_percentage">100.3</cura:setting>
-            <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
-            <setting key="standby temperature">190</setting>
-            <setting key="no load move factor">1.0</setting>
-
             <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="heated bed temperature">55</setting>
+                <setting key="standby temperature">190</setting>
+                <setting key="no load move factor">1.0</setting>
             </hotend>
         </machine>
 

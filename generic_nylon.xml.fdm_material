@@ -10,7 +10,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <color>Generic</color>
         </name>
         <GUID>28fb4162-db74-49e1-9008-d05f1e8bef5c</GUID>
-        <version>40</version>
+        <version>41</version>
         <color_code>#3DF266</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -133,7 +133,9 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
 
             <setting key="print cooling">40</setting>
             <setting key="heated bed temperature">40</setting>
@@ -153,21 +155,14 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
-        </machine>
-
-        <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
-            <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
-            <setting key="standby temperature">225</setting>
-            <setting key="print cooling">55</setting>
-            <setting key="heated bed temperature">40</setting>
-            <setting key="retraction speed">45</setting>
-            <setting key="retraction amount">8</setting>
-            <setting key="no load move factor">1.0</setting>
-
             <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
+                <setting key="standby temperature">225</setting>
+                <setting key="print cooling">55</setting>
+                <setting key="retraction speed">45</setting>
+                <setting key="retraction amount">8</setting>
+                <setting key="no load move factor">1.0</setting>
             </hotend>
         </machine>
 

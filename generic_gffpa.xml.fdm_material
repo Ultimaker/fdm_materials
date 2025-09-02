@@ -10,7 +10,7 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
             <color>Generic</color>
         </name>
         <GUID>837cf11b-6b1e-48dc-94dc-4a2b4888648e</GUID>
-        <version>29</version>
+        <version>30</version>
         <color_code>#D5D8DC</color_code>
         <description>This is the baseline profile for Glass Fiber Filled Polyamides for the Print Profile Assistant.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -84,7 +84,9 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
@@ -101,38 +103,10 @@ This is the baseline profile for Glass Fiber Filled Polyamides for the Print Pro
             <hotend id="BB 0.8">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <hotend id="CC 0.4">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="print cooling">1</setting>
-                <setting key="retraction amount">6.5</setting>
-            </hotend>
-            <hotend id="CC 0.6">
-                <setting key="hardware compatible">yes</setting>
-                <setting key="print cooling">1</setting>
-                <setting key="retraction amount">6.5</setting>
-            </hotend>
-        </machine>
-
-        <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
-
             <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <hotend id="AA 0.25">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="AA 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="AA 0.8">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.8">
+            <hotend id="AA+ 0.6">
                 <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="CC+ 0.4">

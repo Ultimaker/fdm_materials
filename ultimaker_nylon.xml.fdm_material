@@ -8,7 +8,7 @@
             <label>Any color Nylon</label>
         </name>
         <GUID>c6714ed4-9734-4266-b4e1-d90b8b0c2434</GUID>
-        <version>15</version>
+        <version>16</version>
         <color_code>#3DF266</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -134,7 +134,9 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
 
             <setting key="print cooling">40</setting>
             <setting key="heated bed temperature">40</setting>
@@ -154,21 +156,14 @@
                 <setting key="retraction amount">8</setting>
                 <setting key="retraction speed">45</setting>
             </hotend>
-        </machine>
-
-        <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
-            <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
-            <setting key="standby temperature">225</setting>
-            <setting key="print cooling">55</setting>
-            <setting key="heated bed temperature">40</setting>
-            <setting key="retraction speed">45</setting>
-            <setting key="retraction amount">8</setting>
-            <setting key="no load move factor">1.0</setting>
-
             <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
+                <setting key="standby temperature">225</setting>
+                <setting key="print cooling">55</setting>
+                <setting key="retraction speed">45</setting>
+                <setting key="retraction amount">8</setting>
+                <setting key="no load move factor">1.0</setting>
             </hotend>
         </machine>
 

@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>532e8b3d-5fd4-4149-b936-53ada9bd6b85</GUID>
-        <version>50</version>
+        <version>51</version>
         <color_code>#d0d0d0</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -144,7 +144,9 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
 
             <setting key="print cooling">100</setting>
             <cura:setting key="material_shrinkage_percentage">100.2</cura:setting>
@@ -172,28 +174,20 @@
                 <cura:setting key="cool_min_layer_time">10</cura:setting>
                 <cura:setting key="material_crystallinity">true</cura:setting>
             </hotend>
-        </machine>
-
-        <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
-
-            <setting key="print temperature">210</setting>
-            <setting key="print cooling">100</setting>
-            <setting key="heated bed temperature">55</setting>
-            <cura:setting key="material_shrinkage_percentage">100.2</cura:setting>
-            <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
-            <setting key="standby temperature">175</setting>
-            <setting key="no load move factor">1.0</setting>
-
             <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">210</setting>
+                <setting key="heated bed temperature">55</setting>
+                <setting key="standby temperature">175</setting>
+                <setting key="no load move factor">1.0</setting>
             </hotend>
-            <hotend id="CC+ 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="CC+ 0.6">
-                <setting key="hardware compatible">no</setting>
+            <hotend id="AA+ 0.6">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">210</setting>
+                <setting key="heated bed temperature">55</setting>
+                <setting key="standby temperature">175</setting>
+                <setting key="no load move factor">1.0</setting>
+                <cura:setting key="material_pressure_advance_factor">0.75</cura:setting>
             </hotend>
         </machine>
 

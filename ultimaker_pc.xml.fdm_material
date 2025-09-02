@@ -8,7 +8,7 @@
             <label>Any color PC</label>
         </name>
         <GUID>59675b16-d902-4cb3-a780-a539cae0b04d</GUID>
-        <version>15</version>
+        <version>16</version>
         <color_code>#F29030</color_code>
         <description>Strong, tough and temperature resistant. PC offers a great print quality, heat resistance up to 110ºC, mechanical strength and toughness.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
@@ -124,7 +124,9 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
 
             <setting key="heated bed temperature">110</setting>
 
@@ -142,25 +144,27 @@
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">5</setting>
             </hotend>
-        </machine>
-
-        <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
-            <setting key="print temperature">290</setting>
-            <setting key="heated bed temperature">115</setting>
-            <setting key="build volume temperature">50</setting>
-            <setting key="standby temperature">255</setting>
-            <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
-            <setting key="no load move factor">1.0</setting>
-            <setting key="print cooling">0</setting>
-            <cura:setting key="cool_fan_speed_max">30</cura:setting>
-
             <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">290</setting>
+                <setting key="heated bed temperature">115</setting>
+                <setting key="build volume temperature">50</setting>
+                <setting key="standby temperature">255</setting>
+                <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
+                <setting key="no load move factor">1.0</setting>
+                <setting key="print cooling">0</setting>
+                <cura:setting key="cool_fan_speed_max">30</cura:setting>
             </hotend>
             <hotend id="CC+ 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">290</setting>
+                <setting key="heated bed temperature">115</setting>
+                <setting key="build volume temperature">50</setting>
+                <setting key="standby temperature">255</setting>
+                <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
+                <setting key="no load move factor">1.0</setting>
+                <setting key="print cooling">0</setting>
+                <cura:setting key="cool_fan_speed_max">30</cura:setting>
             </hotend>
         </machine>
 

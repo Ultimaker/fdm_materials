@@ -8,7 +8,7 @@
             <label>Any color PETG</label>
         </name>
         <GUID>91bd2402-1766-4cb0-9b21-6435e5095395</GUID>
-        <version>15</version>
+        <version>16</version>
         <color_code>#ff5086</color_code>
         <description>Ultimaker PETG is easily printable and a good all-round material. For anyone needing parts that require more chemical and heat resistance than PLA, this is an excellent material to use.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -113,7 +113,9 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
 
             <cura:setting key="material_shrinkage_percentage">100.5</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
@@ -135,22 +137,14 @@
                 <setting key="heated bed temperature">85</setting>
                 <setting key="retraction amount">8</setting>
             </hotend>
-        </machine>
-
-        <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
-            <setting key="standby temperature">215</setting>
-            <cura:setting key="material_shrinkage_percentage">100.5</cura:setting>
-            <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
-            <setting key="retraction amount">8</setting>
-            <setting key="no load move factor">1.0</setting>
-            <setting key="print cooling">35</setting>
-            <cura:setting key="adhesion_type">brim</cura:setting>  <!-- PETG is prone to warping, so a brim is recommended -->
-            <cura:setting key="support_structure">normal</cura:setting> <!-- PETG can ooze a lot and has long retracts. Tree support does not work well -->
-
             <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="standby temperature">215</setting>
+                <setting key="retraction amount">8</setting>
+                <setting key="no load move factor">1.0</setting>
+                <setting key="print cooling">35</setting>
+                <cura:setting key="adhesion_type">brim</cura:setting>  <!-- PETG is prone to warping, so a brim is recommended -->
+                <cura:setting key="support_structure">normal</cura:setting> <!-- PETG can ooze a lot and has long retracts. Tree support does not work well -->
             </hotend>
         </machine>
 
