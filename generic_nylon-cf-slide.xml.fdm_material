@@ -10,7 +10,7 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <color>Generic</color>
         </name>
         <GUID>000d008b-2f42-4952-ac17-397c354022df</GUID>
-        <version>4</version>
+        <version>7</version>
         <color_code>#1e1e1e</color_code>
         <description>A POM like material with a very good wear resistance and very low friction coefficient.</description>
         <adhesion_info />
@@ -26,11 +26,11 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
         <setting key="anti ooze retract position">-16</setting>
         <setting key="anti ooze retract speed">50</setting>
         <setting key="break preparation position">-16</setting>
-        <setting key="break preparation speed">50</setting>
+        <setting key="break preparation speed">20</setting>
         <setting key="break preparation temperature">280</setting>
         <setting key="break position">-50</setting>
         <setting key="break speed">50</setting>
-        <setting key="break temperature">265</setting>
+        <setting key="break temperature">275</setting>
         <setting key="pressure release dwell time">25</setting>
         <setting key="dwell time before break preparation move">0</setting>
         <setting key="end of print purge volume">0</setting>
@@ -98,18 +98,22 @@ Generic Nylon profile. The data in this file may not be correct for your specifi
             <setting key="no load move factor">1.0</setting>
             <cura:setting key="material_pressure_advance_factor">0.75</cura:setting>
             <setting key="retraction amount">6.5</setting>
+            <setting key="adhesion tendency">4</setting>
 
-            <hotend id="AA+ 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="AA+ 0.6">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="CC+ 0.4">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="CC+ 0.6">
                 <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA+ 0.4">
+                <setting key="hardware compatible">no</setting>
             </hotend>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>

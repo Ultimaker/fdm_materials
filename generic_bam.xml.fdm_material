@@ -10,7 +10,7 @@ Generic break away support material profile. The data in this file may not be co
             <color>Generic</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d6a0</GUID>
-        <version>37</version>
+        <version>38</version>
         <color_code>#F1ECE1</color_code>
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -91,6 +91,7 @@ Generic break away support material profile. The data in this file may not be co
             <setting key="print cooling">100</setting>
             <setting key="standby temperature">200</setting>
             <setting key="no load move factor">1.0</setting>
+            <cura:setting key="support_structure">tree</cura:setting>
 
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>

@@ -8,7 +8,7 @@
             <label>Any color CPE</label>
         </name>
         <GUID>3cf87e76-dae0-42cb-ae86-3d39918af2ad</GUID>
-        <version>14</version>
+        <version>15</version>
         <color_code>#159499</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -157,9 +157,6 @@
             <setting key="print cooling">65</setting>
 
             <hotend id="AA+ 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="AA+ 0.6">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
