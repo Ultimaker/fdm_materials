@@ -10,7 +10,7 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <color>Generic</color>
         </name>
         <GUID>64d44410-be10-428c-8891-f0ae47ea1734</GUID>
-        <version>31</version>
+        <version>32</version>
         <color_code>#888888</color_code>
         <description>Generic PET CF profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
@@ -166,7 +166,7 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <setting key="same material purge volume">51.04</setting>
             <setting key="purge speed coefficient">40</setting>
             <cura:setting key="material_flow">100</cura:setting>
-            <setting key="retraction amount">6</setting>
+            <setting key="retraction amount">4</setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
