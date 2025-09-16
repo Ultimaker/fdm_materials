@@ -8,7 +8,7 @@
         </name>
         <GUID>a140ef8f-4f26-4e73-abe0-cfc29d6d1024</GUID>
         <reference_material_id>wss1</reference_material_id>
-        <version>8</version>
+        <version>9</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material for ABS-R.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -25,7 +25,7 @@
         <setting key="print temperature">260</setting>
         <setting key="standby temperature">180</setting>
         <setting key="build volume temperature">107</setting>
-        <setting key="heated bed temperature">60</setting>
+        <setting key="heated bed temperature">95</setting>
         <setting key="print cooling">0</setting>
 
         <!-- Define as soluble support material -->
