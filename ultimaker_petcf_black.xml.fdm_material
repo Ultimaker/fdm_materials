@@ -153,7 +153,7 @@
             <setting key="same material purge volume">51.04</setting>
             <setting key="purge speed coefficient">40</setting>
             <cura:setting key="material_flow">100</cura:setting>
-            <setting key="retraction amount">6</setting>
+            <setting key="retraction amount">4</setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
