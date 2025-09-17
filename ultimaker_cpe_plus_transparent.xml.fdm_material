@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>a9c340fe-255f-4914-87f5-ec4fcb0c11ef</GUID>
-        <version>53</version>
+        <version>54</version>
         <color_code>#d0d0d0</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -119,7 +119,9 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
 
             <setting key="heated bed temperature">110</setting>
 
@@ -137,24 +139,25 @@
                 <setting key="retraction amount">8</setting>
                 <setting key="print cooling">8</setting>
             </hotend>
-        </machine>
-
-        <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
-            <setting key="build volume temperature">50</setting>
-            <setting key="print temperature">280</setting>
-            <setting key="heated bed temperature">115</setting>
-            <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
-            <setting key="standby temperature">245</setting>
-            <setting key="no load move factor">1.0</setting>
-            <setting key="print cooling">65</setting>
-
             <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="build volume temperature">50</setting>
+                <setting key="print temperature">280</setting>
+                <setting key="heated bed temperature">115</setting>
+                <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
+                <setting key="standby temperature">245</setting>
+                <setting key="no load move factor">1.0</setting>
+                <setting key="print cooling">65</setting>
             </hotend>
             <hotend id="CC+ 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="build volume temperature">50</setting>
+                <setting key="print temperature">280</setting>
+                <setting key="heated bed temperature">115</setting>
+                <cura:setting key="material_shrinkage_percentage">100.4</cura:setting>
+                <setting key="standby temperature">245</setting>
+                <setting key="no load move factor">1.0</setting>
+                <setting key="print cooling">65</setting>
             </hotend>
         </machine>
 

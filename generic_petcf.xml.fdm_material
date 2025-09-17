@@ -88,7 +88,9 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
@@ -108,6 +110,9 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <hotend id="DD 0.4">
                 <setting key="hardware compatible">no</setting>
             </hotend>
+            <hotend id="AA+ 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">3</cura:setting>
@@ -115,42 +120,25 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <hotend id="CC 0.6">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
-        </machine>
-
-        <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
-            <setting key="print temperature">280</setting>
-            <setting key="standby temperature">255</setting>
-            <setting key="no load move factor">1.0</setting>
-            <setting key="print cooling">25</setting>
-            <setting key="adhesion tendency">4</setting>
-            <cura:setting key="material_shrinkage_percentage">100.15</cura:setting>
-            <setting key="retraction amount">8</setting>
-
-            <hotend id="AA+ 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="AA+ 0.6">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.4">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
-            <hotend id="BB 0.8">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="CC+ 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">280</setting>
+                <setting key="standby temperature">255</setting>
+                <setting key="no load move factor">1.0</setting>
+                <setting key="print cooling">25</setting>
+                <setting key="adhesion tendency">4</setting>
+                <cura:setting key="material_shrinkage_percentage">100.15</cura:setting>
+                <setting key="retraction amount">8</setting>
             </hotend>
             <hotend id="CC+ 0.6">
                 <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="CC 0.4">
-                <setting key="hardware compatible">yes</setting>
-            </hotend>
-            <hotend id="CC 0.6">
-                <setting key="hardware compatible">yes</setting>
+                <setting key="print temperature">280</setting>
+                <setting key="standby temperature">255</setting>
+                <setting key="no load move factor">1.0</setting>
+                <setting key="print cooling">25</setting>
+                <setting key="adhesion tendency">4</setting>
+                <cura:setting key="material_shrinkage_percentage">100.15</cura:setting>
+                <setting key="retraction amount">8</setting>
             </hotend>
         </machine>
 

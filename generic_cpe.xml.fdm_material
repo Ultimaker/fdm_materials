@@ -10,7 +10,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>12f41353-1a33-415e-8b4f-a775a6c70cc6</GUID>
-        <version>46</version>
+        <version>47</version>
         <color_code>#159499</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -125,7 +125,9 @@ Generic CPE profile. The data in this file may not be correct for your specific 
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
 
             <setting key="heated bed temperature">85</setting>
 
@@ -144,19 +146,12 @@ Generic CPE profile. The data in this file may not be correct for your specific 
                 <setting key="retraction speed">40</setting>
                 <cura:setting key="cool_min_layer_time">10</cura:setting>
             </hotend>
-        </machine>
-
-        <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
-            <setting key="heated bed temperature">85</setting>
-            <cura:setting key="material_shrinkage_percentage">100.2</cura:setting>
-            <setting key="standby temperature">220</setting>
-            <setting key="no load move factor">1.0</setting>
-            <setting key="print cooling">65</setting>
-
             <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">yes</setting>
+                <cura:setting key="material_shrinkage_percentage">100.2</cura:setting>
+                <setting key="standby temperature">220</setting>
+                <setting key="no load move factor">1.0</setting>
+                <setting key="print cooling">65</setting>
             </hotend>
         </machine>
 
