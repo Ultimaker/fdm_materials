@@ -16,11 +16,8 @@ BUILD_DIR_TEMPLATE="_build_${ARCH}"
 BUILD_DIR="${BUILD_DIR:-${SRC_DIR}/${BUILD_DIR_TEMPLATE}}"
 
 run_env_check="yes"
-run_linters="yes"
-run_tests="yes"
-
-# Make sure to pass an empty argument to make_docker, else any arguments passed to build_for_ultimaker is passed to make_docker instead!
-. ./make_docker.sh ""
+run_verification="yes"
+action="none"
 
 env_check()
 {
@@ -32,23 +29,11 @@ run_build()
     run_in_docker "./build.sh" "${@}"
 }
 
-deliver_pkg()
-{
-    run_in_docker chown -R "$(id -u):$(id -g)" "${DOCKER_WORK_DIR}"
-
-    cp "${BUILD_DIR}/"*".deb" "./"
-}
-
-run_tests()
+run_verification()
 {
     echo "Testing!"
-    # These tests should never fail! See .gitlab-ci.yml
+    # These tests should never fail!
     ./run_check_material_profiles.sh || echo "Material Profile Check Failed!"
-}
-
-run_linters()
-{
-    run_shellcheck
 }
 
 run_shellcheck()
@@ -66,12 +51,14 @@ usage()
     echo "Usage: ${0} [OPTIONS]"
     echo "  -c   Skip build environment checks"
     echo "  -h   Print usage"
-    echo "  -l   Skip code linting"
-    echo "  -t   Skip tests"
+    echo "  -s   Skip code verification"
 }
 
-while getopts ":chlt" options; do
+while getopts ":a:chls" options; do
     case "${options}" in
+    a)
+        action="${OPTARG}"
+        ;;
     c)
         run_env_check="no"
         ;;
@@ -79,11 +66,8 @@ while getopts ":chlt" options; do
         usage
         exit 0
         ;;
-    l)
-        run_linters="no"
-        ;;
-    t)
-        run_tests="no"
+    s)
+        run_verification="no"
         ;;
     :)
         echo "Option -${OPTARG} requires an argument."
@@ -102,20 +86,40 @@ if ! command -V docker; then
     exit 1
 fi
 
+case "${action}" in
+    shellcheck)
+        run_shellcheck
+        exit 0
+        ;;
+    build)
+        source ./docker_env/make_docker.sh ""
+        run_build
+        exit 0
+        ;;
+    build_docker_cache)
+        DOCKER_BUILD_ONLY_CACHE="yes"
+        source ./docker_env/make_docker.sh ""
+        exit 0
+        ;;
+    none)
+        ;;
+    ?)
+        echo "Invalid action: -${OPTARG}"
+        exit 1
+        ;;
+esac
+
+# Make sure to pass an empty argument to make_docker, else any arguments passed to build_for_ultimaker is passed to make_docker instead!
+source ./docker_env/make_docker.sh ""
+
 if [ "${run_env_check}" = "yes" ]; then
     env_check
 fi
 
-if [ "${run_linters}" = "yes" ]; then
-    run_linters
-fi
-
 run_build "${@}"
 
-if [ "${run_tests}" = "yes" ]; then
-    run_tests
+if [ "${run_verification}" = "yes" ]; then
+    run_verification
 fi
-
-deliver_pkg
 
 exit 0

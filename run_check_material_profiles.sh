@@ -2,7 +2,7 @@
 
 set -eu
 
-. ./make_docker.sh
+. ./docker_env/make_docker.sh
 
 run_in_docker python3 scripts/check_material_profiles.py || echo "Failed!"
 
