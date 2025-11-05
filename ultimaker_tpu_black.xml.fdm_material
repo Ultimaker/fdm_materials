@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>eff40bcf-588d-420d-a3bc-a5ffd8c7f4b3</GUID>
-        <version>50</version>
+        <version>51</version>
         <color_code>#0e0e10</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -54,13 +54,13 @@
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original" id="ultimaker_original" />
             <setting key="print temperature">228</setting>
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+" id="ultimaker2_plus" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+" id="ultimaker2_extended_plus" />
             <setting key="print temperature">228</setting>
             <setting key="hardware compatible">yes</setting>
 
@@ -73,8 +73,8 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" id="ultimaker3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" id="ultimaker3_extended" />
 
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -90,7 +90,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" id="ultimaker2_plus_connect" />
             <setting key="hardware compatible">yes</setting>
             <setting key="print temperature">235</setting>
             <setting key="retraction amount">10</setting>
@@ -108,7 +108,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" id="ultimaker_s3" />
 
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -123,10 +123,10 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" id="ultimaker_s5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" id="ultimaker_s6" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" id="ultimaker_s7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" id="ultimaker_s8" />
 
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -152,7 +152,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" id="ultimaker_factor4" />
             <setting key="heated bed temperature">40</setting>
             <setting key="build volume temperature">30</setting>
             <setting key="print cooling">50</setting>

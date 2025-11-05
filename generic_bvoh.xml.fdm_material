@@ -11,7 +11,7 @@ Generic BVOH profile. The data in this file may not be correct for your specific
             <label>BVOH</label>
         </name>
         <GUID>9d9527bf-7087-4f67-9fac-c79bb5816795</GUID>
-        <version>2</version>
+        <version>3</version>
         <color_code>#F1ECE1</color_code>
         <description>This is the baseline profile for the Water soluble support material BVOH. BVOH is a matching support material for PLA, ABS, ASA, PET-G, Nylon, TPU.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -60,13 +60,13 @@ Generic BVOH profile. The data in this file may not be correct for your specific
         <cura:setting key="material_is_support_material">true</cura:setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" id="ultimaker3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" id="ultimaker3_extended" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" id="ultimaker_s3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" id="ultimaker_s5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" id="ultimaker_s7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" id="ultimaker_s6" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" id="ultimaker_s8" />
             <hotend id="BB 0.4">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
@@ -76,7 +76,7 @@ Generic BVOH profile. The data in this file may not be correct for your specific
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" id="ultimaker_factor4" />
             <setting key="retraction amount">2.5</setting>
             <hotend id="BB 0.4">
                 <setting key="hardware compatible">yes</setting>

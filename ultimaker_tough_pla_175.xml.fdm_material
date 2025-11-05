@@ -9,7 +9,7 @@
         </name>
         <GUID>de031137-a8ca-4a72-bd1b-17bb964033ad</GUID>
         <reference_material_id>im-pla</reference_material_id>
-        <version>5</version>
+        <version>6</version>
         <color_code>#f5f2d1</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>No glue required</adhesion_info>
@@ -29,8 +29,8 @@
         <setting key="surface energy">100</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method" id="ultimaker_method" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" id="ultimaker_methodx" />
             <setting key="print temperature">210</setting>
             <setting key="standby temperature">160</setting>
             <setting key="build volume temperature">40</setting>
@@ -60,7 +60,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" id="ultimaker_methodxl" />
             <setting key="print temperature">210</setting>
             <setting key="standby temperature">160</setting>
             <setting key="build volume temperature">40</setting>
@@ -90,7 +90,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Sketch" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Sketch" id="ultimaker_sketch" />
             <setting key="print temperature">220</setting>
             <setting key="standby temperature">160</setting>
             <setting key="print cooling">100</setting>
@@ -105,7 +105,7 @@
             </hotend>
         </machine>
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Sketch Large" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Sketch Large" id="ultimaker_sketch_large" />
             <setting key="print temperature">210</setting>
             <setting key="standby temperature">150</setting>
             <setting key="print cooling">100</setting>
@@ -120,7 +120,7 @@
             </hotend>
         </machine>
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Sketch Sprint" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Sketch Sprint" id="ultimaker_sketch_sprint" />
             <setting key="print temperature">215</setting>
             <setting key="standby temperature">165</setting>
             <setting key="print cooling">100</setting>
@@ -135,7 +135,7 @@
             </hotend>
         </machine>
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Replicator+" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Replicator+" id="ultimaker_replicator_plus" />
             <setting key="print temperature">215</setting>
             <setting key="print cooling">100</setting>
             <cura:setting key="material_final_print_temperature">215</cura:setting>

@@ -8,7 +8,7 @@
         </name>
         <GUID>add51ef2-86eb-4c39-afd5-5586564f0715</GUID>
         <reference_material_id>pva</reference_material_id>
-        <version>5</version>
+        <version>6</version>
         <color_code>#f5f2d1</color_code>
         <description>Water soluble support material. PVA is a matching support material for PLA and Nylon 12 CF.</description>
         <adhesion_info>Do not attempt to print PVA directly on your build surface, PVA needs a layer of model material below to ensure proper adhesion.</adhesion_info>
@@ -29,8 +29,8 @@
         <cura:setting key="material_is_support_material">True</cura:setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method" id="ultimaker_method" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" id="ultimaker_methodx" />
             <setting key="print temperature">210</setting>
             <setting key="standby temperature">160</setting>
             <setting key="build volume temperature">60</setting>
@@ -58,7 +58,7 @@
             </hotend>
         </machine>
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" id="ultimaker_methodxl" />
             <setting key="print temperature">210</setting>
             <setting key="standby temperature">160</setting>
             <setting key="build volume temperature">60</setting>

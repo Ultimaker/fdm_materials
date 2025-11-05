@@ -8,7 +8,7 @@
         </name>
         <GUID>9475b03d-fd19-48a2-b7b5-be1fb46abb02</GUID>
         <reference_material_id>nylon</reference_material_id>
-        <version>1</version>
+        <version>2</version>
         <color_code>#2a292a</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -31,9 +31,9 @@
         <cura:setting key="material_crystallinity">true</cura:setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method" id="ultimaker_method" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" id="ultimaker_methodx" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" id="ultimaker_methodxl" />
             <setting key="print temperature">250</setting>
             <setting key="standby temperature">160</setting>
             <setting key="build volume temperature">0</setting>

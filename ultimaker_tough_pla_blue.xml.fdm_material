@@ -7,7 +7,7 @@
             <color>Blue</color>
         </name>
         <GUID>4b049931-6ee9-408c-8588-ddd4673467d1</GUID>
-        <version>22</version>
+        <version>23</version>
         <color_code>#1B5583</color_code>
         <description>Technical PLA material with toughness similar to ABS. Ideal for reliably printing functional prototypes and tooling at larger sizes, Tough PLA offers the same safe and easy use as regular PLA.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -54,8 +54,8 @@
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" id="ultimaker3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" id="ultimaker3_extended" />
             <setting key="print cooling">100</setting>
 
             <hotend id="AA 0.25">
@@ -73,7 +73,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" id="ultimaker2_plus_connect" />
 
             <hotend id="0.25 mm">
                 <setting key="print temperature">210</setting>
@@ -91,7 +91,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" id="ultimaker_s3" />
             <setting key="print cooling">100</setting>
             <cura:setting key="material_shrinkage_percentage">100.3</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
@@ -110,10 +110,10 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" id="ultimaker_s5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" id="ultimaker_s6" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" id="ultimaker_s7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" id="ultimaker_s8" />
 
             <setting key="print cooling">100</setting>
             <cura:setting key="material_shrinkage_percentage">100.3</cura:setting>
@@ -139,7 +139,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" id="ultimaker_factor4" />
             <setting key="heated bed temperature">55</setting>
             <setting key="build volume temperature">30</setting>
             <setting key="print cooling">100</setting>

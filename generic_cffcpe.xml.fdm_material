@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
             <color>Generic</color>
         </name>
         <GUID>f8e496d6-7599-4015-9fac-c7ce53f6633c</GUID>
-        <version>28</version>
+        <version>29</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print Profile Assistant. This profile can also be used for other base materials (ABS, PP, etc)</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -54,7 +54,7 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" id="ultimaker_s3" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -83,10 +83,10 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" id="ultimaker_s5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" id="ultimaker_s6" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" id="ultimaker_s7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" id="ultimaker_s8" />
             <setting key="print cooling">50</setting>
             <setting key="retraction amount">6.5</setting>
 
@@ -126,7 +126,7 @@ This is the baseline profile for Carbon Fiber Filled Copolyesters for the Print 
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" id="ultimaker_factor4" />
             <setting key="build volume temperature">40</setting>
             <setting key="print cooling">1</setting>
             <setting key="anti ooze retract position">-6</setting>

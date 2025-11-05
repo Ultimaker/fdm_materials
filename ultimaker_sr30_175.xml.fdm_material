@@ -8,7 +8,7 @@
         </name>
         <GUID>77873465-83a9-4283-bc44-4e542b8eb3eb</GUID>
         <reference_material_id>sr30</reference_material_id>
-        <version>7</version>
+        <version>8</version>
         <color_code>#f5f2d1</color_code>
         <description>Dissolvable support material works seamlessly with ABS, ASA, and various other high-temp materials.</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -33,7 +33,7 @@
         <cura:setting key="material_final_print_temperature">250</cura:setting>
         <cura:setting key="material_initial_print_temperature">250</cura:setting>
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" id="ultimaker_methodx" />
             <setting key="build volume temperature">107</setting>
             <hotend id="1A">
                 <setting key="hardware compatible">no</setting>
@@ -55,7 +55,7 @@
             </hotend>
         </machine>
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" id="ultimaker_methodxl" />
             <setting key="build volume temperature">85</setting>
             <setting key="heated bed temperature">95</setting>
             <hotend id="1A">

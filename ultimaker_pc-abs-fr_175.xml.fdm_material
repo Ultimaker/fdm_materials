@@ -8,7 +8,7 @@
         </name>
         <GUID>bb3c56be-cfeb-4a0a-9316-567200c2d81b</GUID>
         <reference_material_id>pc-abs-fr</reference_material_id>
-        <version>3</version>
+        <version>4</version>
         <color_code>#0e0e10</color_code>
         <description>Tough and durable. PC-ABS-FR is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
         <adhesion_info>No glue needed</adhesion_info>
@@ -30,7 +30,7 @@
         <cura:setting key="material_shrinkage_percentage_z">100</cura:setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" id="ultimaker_methodx" />
             <hotend id="1A">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -52,7 +52,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" id="ultimaker_methodxl" />
             <setting key="build volume temperature">85</setting>
             <setting key="heated bed temperature">95</setting>
             <hotend id="1A">

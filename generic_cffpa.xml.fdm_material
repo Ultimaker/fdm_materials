@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
             <color>Generic</color>
         </name>
         <GUID>bd66b243-9d50-4e12-bfc3-51c874fca16a</GUID>
-        <version>29</version>
+        <version>30</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Profile Assistant.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -54,7 +54,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" id="ultimaker_s3" />
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
             </hotend>
@@ -83,10 +83,10 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" id="ultimaker_s5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" id="ultimaker_s6" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" id="ultimaker_s7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" id="ultimaker_s8" />
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
@@ -132,7 +132,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" id="ultimaker_factor4" />
 
             <setting key="build volume temperature">40</setting>
             <setting key="print cooling">1</setting>

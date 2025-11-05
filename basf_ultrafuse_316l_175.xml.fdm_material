@@ -8,7 +8,7 @@
         </name>
         <GUID>87cfe9c8-ea64-49c9-bf08-e4923c85fe7c</GUID>
         <reference_material_id>ultrafuse-316l</reference_material_id>
-        <version>1</version>
+        <version>2</version>
         <color_code>#78858B</color_code>
         <description>Filament filled with metal powder. Debind and sointer to get final part.</description>
         <adhesion_info>Print directly on the build surface with no raft or brims and support disabled</adhesion_info>
@@ -27,8 +27,8 @@
         <cura:setting key="material_shrinkage_percentage_z">126</cura:setting>
         <cura:setting key="material_shrinkage_percentage_xy">120</cura:setting>
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method" id="ultimaker_method" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" id="ultimaker_methodx" />
             <setting key="build volume temperature">67</setting>
             <hotend id="1A">
                 <setting key="hardware compatible">no</setting>
@@ -50,7 +50,7 @@
             </hotend>
         </machine>
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" id="ultimaker_methodxl" />
             <setting key="build volume temperature">60</setting>
             <setting key="heated bed temperature">60</setting>
             <hotend id="1A">

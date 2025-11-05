@@ -10,7 +10,7 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
             <color>Generic</color>
         </name>
         <GUID>0ff92885-617b-4144-a03c-9989872454bc</GUID>
-        <version>13</version>
+        <version>14</version>
         <color_code>#ffc924</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -138,7 +138,7 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Sketch" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Sketch" id="ultimaker_sketch" />
             <setting key="print temperature">220</setting>
             <setting key="standby temperature">160</setting>
             <setting key="print cooling">100</setting>
@@ -153,7 +153,7 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
             </hotend>
         </machine>
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Sketch Large" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Sketch Large" id="ultimaker_sketch_large" />
             <setting key="print temperature">210</setting>
             <setting key="standby temperature">160</setting>
             <setting key="print cooling">100</setting>
@@ -168,7 +168,7 @@ Generic PLA 1.75mm profile. The data in this file may not be correct for your sp
             </hotend>
         </machine>
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Sketch Sprint" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Sketch Sprint" id="ultimaker_sketch_sprint" />
             <setting key="print temperature">215</setting>
             <setting key="standby temperature">165</setting>
             <setting key="print cooling">100</setting>

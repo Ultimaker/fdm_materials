@@ -8,7 +8,7 @@
         </name>
         <GUID>f79bc612-21eb-482e-ad6c-87d75bdde066</GUID>
         <reference_material_id>asa</reference_material_id>
-        <version>6</version>
+        <version>7</version>
         <color_code>#f1ece1</color_code>
         <description>ASA combines the qualities of ABS with the added benefit of UV resistance and additional moisture resistance making it ideal for equipment exposed to sunlight and rain over long periods of time – such as products for the agriculture, transportation, and power and utility industries.</description>
         <adhesion_info>No glue needed</adhesion_info>
@@ -28,7 +28,7 @@
         <setting key="hardware compatible">yes</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" id="ultimaker_methodx" />
             <setting key="print temperature">255</setting>
             <setting key="standby temperature">190</setting>
             <setting key="build volume temperature">107</setting>
@@ -56,7 +56,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" id="ultimaker_methodxl" />
             <setting key="print temperature">255</setting>
             <setting key="standby temperature">190</setting>
             <setting key="build volume temperature">85</setting>

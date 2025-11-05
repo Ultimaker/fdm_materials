@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d5f9</GUID>
-        <version>44</version>
+        <version>45</version>
         <color_code>#F1ECE1</color_code>
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -55,8 +55,8 @@
         <cura:setting key="material_is_support_material">true</cura:setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" id="ultimaker3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" id="ultimaker3_extended" />
             <setting key="print cooling">100</setting>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -65,7 +65,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" id="ultimaker_s3" />
             <setting key="print cooling">100</setting>
             <hotend id="AA 0.4">
                 <setting key="hardware compatible">yes</setting>
@@ -74,10 +74,10 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" id="ultimaker_s5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" id="ultimaker_s6" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" id="ultimaker_s7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" id="ultimaker_s8" />
 
             <setting key="print cooling">100</setting>
             <hotend id="AA 0.4">
@@ -93,7 +93,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" id="ultimaker_factor4" />
             <setting key="build volume temperature">35</setting>
             <setting key="print cooling">100</setting>
             <setting key="anti ooze retract position">-10</setting>

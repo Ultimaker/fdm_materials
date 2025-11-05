@@ -7,7 +7,7 @@
             <color>Generic</color>
         </name>
         <GUID>e0f1d581-cc6b-4e36-8f3c-3f5601ecba5f</GUID>
-        <version>3</version>
+        <version>4</version>
         <reference_material_id>abs</reference_material_id>
         <color_code>#8cb219</color_code>
         <description>Tough and durable. ABS is good for mechanical parts. It is impact resistant, dimensionally stable and handles temperatures up to 85ºC.</description>
@@ -28,7 +28,7 @@
         <setting key="surface energy">70</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method X" id="ultimaker_methodx" />
             <setting key="print temperature">235</setting>
             <setting key="standby temperature">180</setting>
             <setting key="build volume temperature">87</setting>
@@ -53,7 +53,7 @@
             </hotend>
         </machine>
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="UltiMaker Method XL" id="ultimaker_methodxl" />
             <setting key="print temperature">235</setting>
             <setting key="standby temperature">180</setting>
             <setting key="build volume temperature">85</setting>

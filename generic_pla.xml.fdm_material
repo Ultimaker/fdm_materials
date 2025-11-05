@@ -10,7 +10,7 @@ Generic PLA profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>506c9f0d-e3aa-4bd4-b2d2-23e2425b1aa9</GUID>
-        <version>45</version>
+        <version>46</version>
         <color_code>#ffc924</color_code>
         <description>Fast, safe and reliable printing. PLA is ideal for the fast and reliable printing of parts and prototypes with a great surface quality.</description>
         <adhesion_info>Print on bare glass. Use tape for cold build plates.</adhesion_info>
@@ -55,8 +55,8 @@ Generic PLA profile. The data in this file may not be correct for your specific 
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+" id="ultimaker2_plus" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended+" id="ultimaker2_extended_plus" />
 
             <hotend id="0.25 mm" />
             <hotend id="0.4 mm" />
@@ -65,9 +65,9 @@ Generic PLA profile. The data in this file may not be correct for your specific 
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Go" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2" id="ultimaker2" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Go" id="ultimaker2_go" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2 Extended" id="ultimaker2_extended" />
             <setting key="processing temperature graph">
                 <point flow="2" temperature="180" />
                 <point flow="10" temperature="230" />
@@ -75,12 +75,12 @@ Generic PLA profile. The data in this file may not be correct for your specific 
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Original" id="ultimaker_original" />
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3" id="ultimaker3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 3 Extended" id="ultimaker3_extended" />
             <setting key="print cooling">100</setting>
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">yes</setting>
@@ -97,7 +97,7 @@ Generic PLA profile. The data in this file may not be correct for your specific 
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker 2+ Connect" id="ultimaker2_plus_connect" />
             <setting key="hardware compatible">yes</setting>
             <hotend id="0.25 mm">
                 <setting key="print temperature">195</setting>
@@ -115,7 +115,7 @@ Generic PLA profile. The data in this file may not be correct for your specific 
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" id="ultimaker_s3" />
             <setting key="print cooling">100</setting>
             <cura:setting key="material_shrinkage_percentage">100.2</cura:setting>
             <cura:setting key="material_shrinkage_percentage_z">100.1</cura:setting>
@@ -144,10 +144,10 @@ Generic PLA profile. The data in this file may not be correct for your specific 
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" id="ultimaker_s5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" id="ultimaker_s6" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" id="ultimaker_s7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" id="ultimaker_s8" />
 
             <setting key="print cooling">100</setting>
             <cura:setting key="material_shrinkage_percentage">100.2</cura:setting>
@@ -193,7 +193,7 @@ Generic PLA profile. The data in this file may not be correct for your specific 
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" id="ultimaker_factor4" />
             <setting key="heated bed temperature">55</setting>
             <setting key="build volume temperature">30</setting>
             <setting key="print cooling">100</setting>

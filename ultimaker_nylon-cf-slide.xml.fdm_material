@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>b31d12a3-ed0e-4fe4-88f2-5ba6416ae8e5</GUID>
-        <version>8</version>
+        <version>9</version>
         <color_code>#1e1e1e</color_code>
         <description>A POM like material with a very good wear resistance and very low friction coefficient.</description>
         <adhesion_info />
@@ -57,11 +57,11 @@
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" id="ultimaker_s3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" id="ultimaker_s5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" id="ultimaker_s6" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" id="ultimaker_s7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" id="ultimaker_s8" />
             <setting key="print cooling">0</setting>
             <setting key="retraction amount">6.5</setting>
             <hotend id="CC 0.4">
@@ -108,7 +108,7 @@
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" id="ultimaker_factor4" />
             <setting key="anti ooze retract position">-12</setting>
             <setting key="break preparation position">-10</setting>
             <setting key="build volume temperature">35</setting>

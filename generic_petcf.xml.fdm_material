@@ -10,7 +10,7 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
             <color>Generic</color>
         </name>
         <GUID>64d44410-be10-428c-8891-f0ae47ea1734</GUID>
-        <version>32</version>
+        <version>33</version>
         <color_code>#888888</color_code>
         <description>Generic PET CF profile. The data in this file may not be correct for your specific machine.</description>
         <adhesion_info>Print on bare glass.</adhesion_info>
@@ -57,7 +57,7 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
         <setting key="retract compensation">0</setting>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S3" id="ultimaker_s3" />
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
@@ -87,10 +87,10 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" />
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5" id="ultimaker_s5" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S6" id="ultimaker_s6" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7" id="ultimaker_s7" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S8" id="ultimaker_s8" />
 
             <hotend id="AA 0.25">
                 <setting key="hardware compatible">no</setting>
@@ -143,7 +143,7 @@ Generic PET-CF profile. The data in this file may not be correct for your specif
         </machine>
 
         <machine>
-            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" id="ultimaker_factor4" />
             <setting key="build volume temperature">50</setting>
             <setting key="print cooling">20</setting>
             <setting key="anti ooze retract position">-14</setting>
