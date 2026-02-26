@@ -18,7 +18,7 @@
     <properties>
         <density>1.51</density>
         <diameter>2.85</diameter>
-        <weight>750</weight>
+        <weight>500</weight>
     </properties>
     <settings>
         <setting key="anti ooze retract position">-8</setting>
