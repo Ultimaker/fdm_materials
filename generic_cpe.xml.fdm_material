@@ -10,7 +10,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>12f41353-1a33-415e-8b4f-a775a6c70cc6</GUID>
-        <version>47</version>
+        <version>48</version>
         <color_code>#159499</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -157,6 +157,7 @@ Generic CPE profile. The data in this file may not be correct for your specific 
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4+" />
             <setting key="print temperature">240</setting>
             <setting key="build volume temperature">50</setting>
             <setting key="print cooling">50</setting>
@@ -176,6 +177,9 @@ Generic CPE profile. The data in this file may not be correct for your specific 
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">10</cura:setting>
+            </hotend>
+            <hotend id="AA+ 0.4">
+                <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
 

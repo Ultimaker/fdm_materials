@@ -7,7 +7,7 @@
             <color>Black</color>
         </name>
         <GUID>eff40bcf-588d-420d-a3bc-a5ffd8c7f4b3</GUID>
-        <version>50</version>
+        <version>51</version>
         <color_code>#0e0e10</color_code>
         <description>Wear and tear resistant. TPU features a Shore-A hardness of 95 and an elongation of up to 580% at break. Suitable for applications that require slight flexibility, wear and tear, and chemical resistance.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -153,6 +153,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4+" />
             <setting key="heated bed temperature">40</setting>
             <setting key="build volume temperature">30</setting>
             <setting key="print cooling">50</setting>
@@ -168,6 +169,10 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">100</setting>
+            </hotend>
+            <hotend id="AA+ 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">2</setting>
             </hotend>
         </machine>
 

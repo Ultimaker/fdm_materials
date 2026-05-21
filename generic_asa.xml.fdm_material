@@ -10,7 +10,7 @@ Generic ASA profile. The data in this file may not be correct for your specific 
             <color>Generic</color>
         </name>
         <GUID>50361850-7d30-404d-943e-a3166dc11be2</GUID>
-        <version>1</version>
+        <version>2</version>
         <color_code>#FAF4DC</color_code>
         <description>ASA combines the qualities of ABS with the added benefit of UV resistance and additional moisture resistance making it ideal for equipment exposed to sunlight and rain over long periods of time – such as products for the agriculture, transportation, and power and utility industries.</description>
         <adhesion_info>No glue needed</adhesion_info>
@@ -67,6 +67,23 @@ Generic ASA profile. The data in this file may not be correct for your specific 
       <cura:setting key="cool_fan_speed_max">100</cura:setting>
       <cura:setting key="material_shrinkage_percentage">100.3</cura:setting>
       <hotend id="AA 0.4">
+        <setting key="hardware compatible">yes</setting>
+        <setting key="print temperature">255</setting>
+      </hotend>
+    </machine>
+
+    <machine>
+      <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4+" />
+      <setting key="anti ooze retract position">-2</setting>
+      <setting key="break preparation position">-10</setting>
+      <setting key="build volume temperature">50</setting>
+      <setting key="heated bed temperature">95</setting>
+      <setting key="no load move factor">1</setting>
+      <setting key="print cooling">20</setting>
+      <setting key="print temperature">255</setting>
+      <cura:setting key="cool_fan_speed_max">100</cura:setting>
+      <cura:setting key="material_shrinkage_percentage">100.3</cura:setting>
+      <hotend id="AA 0.4+">
         <setting key="hardware compatible">yes</setting>
         <setting key="print temperature">255</setting>
       </hotend>
