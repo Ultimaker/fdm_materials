@@ -7,7 +7,7 @@
             <color>White</color>
         </name>
         <GUID>7e6207c4-22ff-441a-b261-ff89f166d5f9</GUID>
-        <version>44</version>
+        <version>45</version>
         <color_code>#F1ECE1</color_code>
         <description>Breakaway Material. Breakaway is a matching support material for PLA, ABS, CPE, CPE+, and Nylon</description>
         <adhesion_info>Use the same temperatures and adhesion method as your build material(s).</adhesion_info>
@@ -105,7 +105,9 @@
                 <setting key="print temperature">230</setting>
                 <cura:setting key="cool_min_layer_time">3</cura:setting>
             </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
         </machine>
-
     </settings>
 </fdmmaterial>
