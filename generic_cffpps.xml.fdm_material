@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled PPS for the Print Profile A
             <color>Generic</color>
         </name>
         <GUID>6b0a5f1a-a43c-483c-b02e-9c9915233143</GUID>
-        <version>16</version>
+        <version>17</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled PPS for the Print Profile Assistant. This profile can also be used for other base materials (ABS, PP, etc)</description>
         <adhesion_info>No glue needed</adhesion_info>
@@ -88,6 +88,47 @@ This is the baseline profile for Carbon Fiber Filled PPS for the Print Profile A
             </hotend>
             <hotend id="DD 0.4">
                 <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="HT 0.6">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+        </machine>
+
+        <machine>
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4+" />
+            <setting key="anti ooze retract position">-6</setting>
+            <setting key="no load move factor">1</setting>
+            <setting key="retraction amount">1.5</setting>
+            <cura:setting key="material_pressure_advance_factor">0.05</cura:setting>
+            <hotend id="AA 0.25">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="BB 0.8">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC 0.6">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="DD 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="AA+ 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC+ 0.6">
+                <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="HT 0.6">
                 <setting key="hardware compatible">yes</setting>
