@@ -8,7 +8,7 @@
             <label>Any color CPE</label>
         </name>
         <GUID>3cf87e76-dae0-42cb-ae86-3d39918af2ad</GUID>
-        <version>16</version>
+        <version>17</version>
         <color_code>#159499</color_code>
         <description>Chemically resistant and tough. CPE is chemically inert, tough, dimensionally stable and handles temperatures up to 70ºC.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -158,6 +158,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4+" />
             <setting key="print temperature">240</setting>
             <setting key="build volume temperature">50</setting>
             <setting key="print cooling">50</setting>
@@ -177,6 +178,9 @@
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
                 <cura:setting key="cool_min_layer_time">10</cura:setting>
+            </hotend>
+            <hotend id="AA+ 0.4">
+                <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
 

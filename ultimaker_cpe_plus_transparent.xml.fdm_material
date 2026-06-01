@@ -7,7 +7,7 @@
             <color>Transparent</color>
         </name>
         <GUID>a9c340fe-255f-4914-87f5-ec4fcb0c11ef</GUID>
-        <version>54</version>
+        <version>55</version>
         <color_code>#d0d0d0</color_code>
         <description>Chemically resistant and tough. CPE+ is chemically inert, tough, dimensionally stable and handles temperatures up to 100ºC.</description>
         <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints.</adhesion_info>
@@ -163,6 +163,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4+" />
             <setting key="heated bed temperature">110</setting>
             <setting key="build volume temperature">65</setting>
             <setting key="print cooling">0</setting>
@@ -181,6 +182,10 @@
             </hotend>
             <hotend id="AA 0.8">
                 <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA+ 0.4">
+                <setting key="hardware compatible">yes</setting>
+                <setting key="retraction amount">1.5</setting>
             </hotend>
         </machine>
 

@@ -8,7 +8,7 @@
             <label>Any color Nylon</label>
         </name>
         <GUID>c6714ed4-9734-4266-b4e1-d90b8b0c2434</GUID>
-        <version>16</version>
+        <version>17</version>
         <color_code>#3DF266</color_code>
         <description>Nylon is strong, abrasion-resistant, durable and engineered for low moisture sensitivity.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -169,6 +169,7 @@
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4+" />
             <setting key="print temperature">245</setting>
             <setting key="heated bed temperature">40</setting>
             <setting key="build volume temperature">30</setting>
@@ -186,6 +187,9 @@
                 <setting key="print temperature">250</setting>
             </hotend>
             <hotend id="AA 0.8">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>

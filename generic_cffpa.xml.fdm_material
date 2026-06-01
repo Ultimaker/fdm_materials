@@ -10,7 +10,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
             <color>Generic</color>
         </name>
         <GUID>bd66b243-9d50-4e12-bfc3-51c874fca16a</GUID>
-        <version>29</version>
+        <version>31</version>
         <color_code>#212F3D</color_code>
         <description>This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Profile Assistant.</description>
         <adhesion_info>Use glue.</adhesion_info>
@@ -106,9 +106,6 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
             <hotend id="AA+ 0.4">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-            <hotend id="AA+ 0.6">
-                <setting key="hardware compatible">no</setting>
-            </hotend>
             <hotend id="CC 0.4">
                 <setting key="hardware compatible">yes</setting>
                 <setting key="print cooling">1</setting>
@@ -133,6 +130,7 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
 
         <machine>
             <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4" />
+            <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker Factor 4+" />
 
             <setting key="build volume temperature">40</setting>
             <setting key="print cooling">1</setting>
@@ -158,6 +156,15 @@ This is the baseline profile for Carbon Fiber Filled Polyamides for the Print Pr
                 <setting key="hardware compatible">yes</setting>
             </hotend>
             <hotend id="CC 0.6">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="AA+ 0.4">
+                <setting key="hardware compatible">no</setting>
+            </hotend>
+            <hotend id="CC+ 0.6">
+                <setting key="hardware compatible">yes</setting>
+            </hotend>
+            <hotend id="HT 0.6">
                 <setting key="hardware compatible">yes</setting>
             </hotend>
         </machine>
