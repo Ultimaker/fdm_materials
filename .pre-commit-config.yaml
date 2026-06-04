@@ -1,0 +1,73 @@
+# pre-commit configuration for fdm_materials
+default_stages: [commit]
+
+repos:
+  - repo: https://github.com/thoughtworks/talisman
+    rev: v1.32.0
+    hooks:
+      - id: talisman-commit
+
+  - repo: local
+    hooks:
+      - id: check-yaml
+        name: Check YAML Syntax
+        entry: |-
+          bash -c 'if [ "$SKIP_PRE_COMMIT" = "1" ]; then exit 0; fi; exec python3 -c "
+          import sys
+          try:
+              import yaml
+              [yaml.safe_load(open(f)) for f in sys.argv[1:]]
+          except ImportError:
+              print(\"WARNING: PyYAML not found. Skipping YAML syntax check.\")
+          " "$@"' --
+        language: system
+        files: \.(yaml|yml)$
+
+      - id: check-json
+        name: Check JSON Syntax
+        entry: >-
+          bash -c 'if [ "$SKIP_PRE_COMMIT" = "1" ]; then exit 0; fi; exec python3 -c "import json, sys; [json.load(open(f)) for f in sys.argv[1:]]" "$@"' --
+        language: system
+        files: \.json$
+
+      - id: check-agent-artifacts
+        name: Check for Agent Artifacts
+        entry: >-
+          bash -c 'if [ "$SKIP_PRE_COMMIT" = "1" ]; then exit 0; fi; for f in "$@"; do if [[ "$f" =~ (task(_.*)?\.md|task\..*|implementation_plan(_.*)?\.md|implementation_plan\..*|walkthrough(_.*)?\.md|walkthrough\..*|\.playwright-cli|__pycache__|scratch_.*|scratch\..*|temp_.*|temp\..*|test_scratch_.*|test_scratch\..*|test_agent_.*|test_agent\..*|test_temp_.*|test_temp\..*|test_run_.*|test_run\..*|test_debug_.*|test_debug\..*|test_mock_.*|test_mock\..*|test_quick_.*|test_quick\..*|test_sandbox_.*|test_sandbox\..*|test_test_.*|test_test\..*|^test_[^/]+\.(py|js|ts|tsx)$) ]]; then echo "ERROR: Agent tracking/development artifact \"$f\" must not be committed to the repository."; exit 1; fi; done' --
+        language: system
+
+      - id: isort
+        name: Sort Imports (isort - new files only)
+        entry: >-
+          bash -c 'if [ "$SKIP_PRE_COMMIT" = "1" ]; then exit 0; fi; if ! command -v isort &>/dev/null; then echo "WARNING: isort not found. Skipping import sorting."; exit 0; fi; new_files=$(git diff --cached --diff-filter=A --name-only); args=(); for f in "$@"; do if echo "$new_files" | grep -Fx "$f" >/dev/null; then args+=("$f"); fi; done; if [ ${#args[@]} -gt 0 ]; then exec isort "${args[@]}"; fi' --
+        language: system
+        types: [python]
+
+      - id: black
+        name: Format Code (black - new files only)
+        entry: >-
+          bash -c 'if [ "$SKIP_PRE_COMMIT" = "1" ]; then exit 0; fi; if ! command -v black &>/dev/null; then echo "WARNING: black not found. Skipping code formatting."; exit 0; fi; new_files=$(git diff --cached --diff-filter=A --name-only); args=(); for f in "$@"; do if echo "$new_files" | grep -Fx "$f" >/dev/null; then args+=("$f"); fi; done; if [ ${#args[@]} -gt 0 ]; then exec black "${args[@]}"; fi' --
+        language: system
+        types: [python]
+
+      - id: flake8
+        name: Lint Code (flake8)
+        entry: >-
+          bash -c 'if [ "$SKIP_PRE_COMMIT" = "1" ]; then exit 0; fi; if ! command -v flake8 &>/dev/null; then echo "WARNING: flake8 not found. Skipping code linting."; exit 0; fi; exec flake8 "$@"' --
+        language: system
+        types: [python]
+
+      - id: check-local-paths
+        name: Check for Local Path References
+        entry: >-
+          bash -c 'if [ "$SKIP_PRE_COMMIT" = "1" ]; then exit 0; fi; if [ -n "$HOME" ] && grep -FIn "$HOME" "$@" >/dev/stderr; then echo "ERROR: Staged files contain references to your local home directory ($HOME). Please use relative paths instead."; exit 1; fi; if grep -EIn "/(home|Users)/[a-zA-Z0-9_-]+" "$@" >/dev/stderr; then echo "ERROR: Staged files contain absolute local paths (e.g., /home/USER/ or /Users/USER/). Please use relative paths instead."; exit 1; fi' --
+        language: system
+        files: \.(py|sh|bash|md|xml|fdm_material|txt|cmake|yml|yaml)$
+        exclude: ^(\.agents/|\.pre-commit-config\.yaml)
+
+      - id: check-jira-ticket
+        name: Check Jira Ticket in Commit Message
+        entry: >-
+          bash -c 'if [ "$SKIP_PRE_COMMIT" = "1" ]; then exit 0; fi; if ! grep -Ei "(EMB|CES|COL|STYX|UC|NP)-[0-9]+" "$1" >/dev/null; then echo "ERROR: Commit message must reference a valid Jira ticket from authorized projects (e.g., EMB-XXXX, CES-XXXX, COL-XXXX, STYX-XXXX, UC-XXXX, NP-XXXX)."; exit 1; fi' --
+        language: system
+        stages: [commit-msg]
