@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>FilAr</brand>
+            <material>PLA</material>
+            <color>Black</color>
+        <label>PLA Mate Black</label>
+        </name>
+        <color_code>#1A1A1A</color_code>
+        <GUID>8b73443a-2c1e-419f-844e-034c4d003a49</GUID>
+        <adhesion_info />
+        <version>1</version>
+        <description />
+    </metadata>
+    <properties>
+        <diameter>1.75</diameter>
+        <density>1.24</density>
+        <weight>1000</weight>
+    </properties>
+    <settings>
+        <setting key="standby temperature">185.0</setting>
+        <setting key="print cooling">100.0</setting>
+        <setting key="retraction amount">3</setting>
+        <setting key="print temperature">200.0</setting>
+        <setting key="heated bed temperature">60.0</setting>
+        <setting key="retraction speed">40.0</setting>
+    </settings>
+</fdmmaterial>
