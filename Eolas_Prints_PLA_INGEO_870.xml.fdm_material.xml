@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Eolas Prints</brand>
+            <material>PLA</material>
+            <color>Generic</color>
+            <label>Eolas Prints PLA INGEO 870</label>
+        </name>
+        <color_code>#4d9398</color_code>
+        <GUID>fbfd7bbc-fabf-4fa0-946e-e8fd136d33c4</GUID>
+        <adhesion_info>Adhesive like magigoo recommended bbut not required<adhesion_info />
+        <version>1</version>
+        <description>Introducing our PLA Ingeo 870 Filament, a high-performance polymer developed specifically for 3D printing of technical and functional parts. This filament stands out mainly for its ease of printing and high strength, but its key feature is the improvement of its properties after undergoing the crystallization process (120°C and 15-20 min).</description>
+    </metadata>
+    <properties>
+        <diameter>1.75</diameter>
+        <density>1.22</density>
+        <weight>1000</weight>
+    </properties>
+    <settings>
+        <setting key="print cooling">100</setting>
+        <setting key="print temperature">213</setting>
+        <setting key="heated bed temperature">70</setting>
+        <setting key="standby temperature">120</setting>
+    </settings>
+</fdmmaterial>

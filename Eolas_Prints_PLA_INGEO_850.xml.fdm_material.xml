@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Eolas Prints</brand>
+            <material>PLA</material>
+            <color>Generic</color>
+            <label>Eolas Prints PLA INGEO 850</label>
+        </name>
+        <color_code>#4d9398</color_code>
+        <GUID>488a6f1e-9863-40a8-8c8c-b00d351c38cf</GUID>
+        <adhesion_info>Adhesive like magigoo recommended bbut not required<adhesion_info />
+        <version>1</version>
+        <description>PLA Ingeo 850 Filament is the best option in terms of 3D printing materials, as it has the characteristics of a common PLA, its ease of printing and great adhesion, and also mechanical characteristics very close to ABS such as high impact resistance.</description>
+    </metadata>
+    <properties>
+        <diameter>1.75</diameter>
+        <density>1.24</density>
+        <weight>1000</weight>
+    </properties>
+    <settings>
+        <setting key="print cooling">100</setting>
+        <setting key="print temperature">210</setting>
+        <setting key="heated bed temperature">65</setting>
+        <setting key="standby temperature">120</setting>
+    </settings>
+</fdmmaterial>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Eolas Prints</brand>
+            <material>ABS</material>
+            <color>Generic</color>
+            <label>Eolas Prints ABS: Low Warping</label>
+        </name>
+        <color_code>#4d9398</color_code>
+        <GUID>6ea1bebd-7da1-4f24-924e-15e62b0a9280</GUID>
+        <adhesion_info>Adhesive like magigoo Required<adhesion_info />
+        <version>1</version>
+        <description>ABS Filament is a high-quality industrial-grade 3D printing material used for creating robust and durable objects or parts. Its strength, flexibility, and heat-resistance make It produces minimal warping, making it an easy-to-use and dependable option for any project.</description>
+    </metadata>
+    <properties>
+        <diameter>1.75</diameter>
+        <density>1.04</density>
+        <weight>1000</weight>
+    </properties>
+    <settings>
+        <setting key="print cooling">0</setting>
+        <setting key="print temperature">245</setting>
+        <setting key="heated bed temperature">98</setting>
+        <setting key="standby temperature">120</setting>
+    </settings>
+</fdmmaterial>
