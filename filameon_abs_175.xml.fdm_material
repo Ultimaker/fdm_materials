@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdmmaterial xmlns="http://www.ultimaker.com/material" version="1.3">
+    <metadata>
+        <name>
+            <brand>FILAMEON</brand>
+            <material>ABS</material>
+            <color>Generic</color>
+        </name>
+		<GUID>f549c244-ca67-4b73-bcca-4aa49cd5b2a8</GUID>
+        <version>1</version>
+        <color_code>#8cb219</color_code>
+        <description>FILAMEON ABS profile.</description>
+        <adhesion_info>Use glue. Recommended nozzle temperature: 220 - 260 C, bed temperature: 60 - 80 C.</adhesion_info>
+    </metadata>
+    <properties>
+        <diameter>1.75</diameter>
+        <density>1.04</density>
+		<weight>1000</weight>
+    </properties>
+    <settings>
+        <setting key="print temperature">230.0</setting>
+        <setting key="heated bed temperature">80.0</setting>
+		<setting key="standby temperature">200.0</setting>
+		<setting key="retraction amount">6.5</setting>
+        <setting key="print cooling">100.0</setting>
+        <setting key="retraction speed">25.0</setting>
+    </settings>
+</fdmmaterial>
