@@ -1,0 +1,185 @@
+# Agent Operational & Onboarding Guide (AGENTS.md)
+
+Welcome, AI Agent! This document defines the operational boundaries, design patterns, testing strategies, and collaborative conventions for the `fdm_materials` repository. 
+
+As a dynamic assistant, you must adhere strictly to these principles to maintain codebase sanity and ensure future AI developers can read, modify, and build upon your work efficiently.
+
+---
+
+## 1. Firmware Context & Core Business Value
+
+The **FDM Materials Profiles** is a crucial centralized database repository containing XML Cura profiles for all proprietary and third-party filaments within the UltiMaker 3D printing ecosystem (specifically powering S-Line, Factor 4, and Factor 4+ series of professional/industrial 3D printers). 
+
+### Business Value:
+Calculates physical extrusion behaviors, fan cooling formulas, and temperature limits for professional materials (PLA, Tough PLA, ABS, PETG, Nylon, etc.).
+
+### Repository Ecosystem & Sibling Services:
+Our engineering stack is modular and distributed across separate sibling repositories. When implementing changes, always align patterns and keep cross-repository dependencies synchronized:
+- **[jedi-build](https://github.com/Ultimaker/jedi-build):** Central build orchestrator. Compiles target firmware images, packaging service debians.
+- **[jedi-cookbook](https://github.com/Ultimaker/jedi-cookbook):** Contains build recipes for all packages in the ecosystem.
+- **[python-quality-control](https://github.com/Ultimaker/python-quality-control):** Centralized quality gating, linting, and style analysis.
+- **[stardust-embedded](https://github.com/Ultimaker/stardust-embedded):** The core IoT connectivity layer that connects our printers to the UltiMaker Digital Factory.
+- **[okuda](https://github.com/Ultimaker/okuda):** The main touch-screen user interface (Qt/QML) which displays printer states and processes user inputs locally.
+- **[opinicus](https://github.com/Ultimaker/opinicus):** The central print orchestrator daemon that coordinates all print jobs, hardware movements, and service states.
+
+---
+
+## 2. How the Project is Used & Ecosystem
+
+### System Integration:
+- `fdm_materials` operates as a materials configuration package on the printer's Linux environment.
+- It interfaces with other components via direct file reading by CuraEngine and printer spool readers.
+- It is deployed as part of the system update image (`.swu` update files) compiled by `jedi-build`.
+
+### 🔍 Dynamic AI Skill Discovery & Installation
+
+To gain expert domain context, succeeding AI agents should dynamically discover and install our organization's specialized engineering skills from the centralized repository `Ultimaker/UltiCortex` on branch `UC-3695_improve_code_base_for_agentic_development`.
+
+Install the relevant skills before generating code:
+```bash
+# Search for Ultimaker skills
+gh skill search ultimaker --owner Ultimaker
+
+# Install specialized skills dynamically
+gh skill install Ultimaker/UltiCortex plastics-engineering-calculations
+gh skill install Ultimaker/UltiCortex cura-developer
+```
+
+### Privacy, Compliance & Sovereignty:
+- **Regional Data Sovereignty (GCP):** Strict separation exists between the US and the rest of the world. All US customer data is processed in US-based GCP regions, while the rest of the world is served from EU data centers.
+- **ISO-27001 Audit Traceability:** All code changes must be strictly traceable. Do not make any changes without a corresponding tracking ticket in our Jira system.
+- **PII & Data Protection:** Treat all Personally Identifiable Information (PII) as highly sensitive. Never print, log, or expose PII to debuggers or standard outputs.
+
+---
+
+## 3. Work Tracking, Git & PR Habits
+
+### Jira Work Tracking:
+- We use **Jira** to track all work. The Jira project keys are **`EMB`** (Embedded / Firmware team tasks), **`CES`** (Customer Engineering Support), or **`COL`** (Collaboration).
+- **Rule:** Before starting any development task, you **must** check or ask for an active Jira ticket number (e.g., `EMB-463` or `CES-123`).
+- **Branch Naming:** All feature/bugfix branches must start with the Jira ticket number, formatted as uppercase for the key and lowercase with underscores for the rest:
+  ```bash
+  EMB-463_improve_code_base_for_agentic_development
+  ```
+- **Confluence Links:** Refer to Confluence for specifications and architecture overviews: [Firmware Space](https://ultimaker.atlassian.net/wiki/spaces/SF/overview).
+
+### Git Commit Standards:
+- **Bracketed Ticket Prefix**: Every Git commit title and GitHub Pull Request title **MUST** start with the bracketed Jira key: `[EMB-XXXX] <Descriptive Title>`.
+- **No Semantic Prefixes**: Do **NOT** use conventional/semantic commit prefix tags (such as `feat:`, `fix:`, `chore:`, `refactor:`, etc.) in commit titles or Pull Request titles.
+- **Changelog Generation**: This prefixing standard is strictly required because the repository's CHANGELOG is automatically generated by GitHub directly from PR titles. We do **NOT** use or maintain a local `CHANGELOG.md` file.
+- **Atomic Commits:** Keep commits small, single-topic, and functional.
+- **Commit Message Standard:** Include the *why* (the reason the change was needed), the *how* (implementation details), and other peculiarities.
+
+### Pull Request & Review Flow:
+- **Strict Branch Guardrails:** **Never** work on or merge directly into `main`, `master`, or `staging` branches. All development must occur on separate feature/bugfix branches.
+- **Developer Review:** Every change made by an AI Agent must be thoroughly reviewed by a human developer.
+- **GitHub Pull Request Requirements:** An official GitHub Pull Request must be opened in **DRAFT** state. It can only be considered merge-ready when:
+  1. All automated GitHub Actions status checks show **green checkmarks**.
+  2. All review topics, comments, and threads are completely **resolved**.
+- **Empty Initiator Checklist:** Every pull request description must end with an empty checklist for the human dev who initiated the agent, confirming they reviewed the code.
+- **Visual Evidence:** UI-impacting changes require visual evidence (screenshots/recordings) added to the PR description (uploaded via browser or `gh-image` tool). Do NOT commit media files directly into the repository.
+- **Human Merge Only:** Under no circumstances should an AI agent attempt to merge its own Pull Request. Merging is **strictly restricted to humans**.
+
+### Support Portal Review & Alert Annotations:
+- **Support Documentation Audit Rule:** When introducing a **new feature** or **changing existing behavior**, you **MUST** search the UltiMaker Support page: `https://support.makerbot.com/s/global-search/` and analyze if any relevant public-facing support pages are impacted.
+  - If support page changes are required, add a **warning block** (`> [!WARNING]`) in the PR description advising the developer to contact the support team. Outline exactly **what changed**, **why**, and **how**, citing any existing support page URLs.
+- **PR Alert Annotations:** Always annotate pull request and merge descriptions with standard GitHub markdown alerts to guide the reviewer:
+  ```markdown
+  > [!NOTE]
+  > Useful information that users should know, even when skimming content.
+
+  > [!WARNING]
+  > Urgent info that needs immediate user attention to avoid problems.
+  ```
+
+---
+
+## 4. Directory Organization & Tech-Stack Architecture
+
+### Tech-Stack:
+- **Languages**: XML, Python
+- **Build/Build Tooling**: Standard setup.py packaging
+- **Core Frameworks**: Cura Material XML specification
+
+### Core Directory Layout:
+- `/materials/`: XML file definitions for all spools.
+- `/scripts/`: Python linting and schema validation scripts.
+
+---
+
+## 5. Designing for Future AI Generated Code
+
+- **Decomposed File Footprints:** Keep individual modules and files as small as possible. Individual files (Python modules, C++ sources, headers, or QML) should ideally remain **around 300 lines (max 400 lines is acceptable)** to minimize token overhead and keep context-windows clean.
+- **Leverage Third-Party Libraries:** Favor mature, well-maintained third-party frameworks and libraries instead of building custom code from scratch. Search NPM, PyPI, or Conan registries before implementing custom helpers.
+
+---
+
+## 6. Local Development Environment & Setup
+
+### Requirements & Prerequisites:
+Run python lint checks: `python3 scripts/validate_schemas.py`
+
+---
+
+## 7. Security & OWASP IoT Top 10 Mitigations
+
+Our software is deployed on industrial 3D printing equipment. We must actively mitigate the **OWASP IoT Top 10** vulnerabilities:
+
+1. **Weak, Guessable, or Hardcoded Credentials:** NEVER hardcode passwords, private keys, or API tokens. Our signing keys are backed in GCP Secret Manager and retrieved securely at runtime.
+2. **Insecure Network Services:** Minimize listening ports. All local/network service interfaces must authenticate requests and utilize TLS/SSL where applicable.
+3. **Insecure Ecosystem Interfaces:** Secure all API endpoints, DBus, and MQTT communication paths. Validate and sanitize all incoming payloads.
+4. **Lack of Secure Update Mechanism:** S-Line/Factor 4 firmware updates use the SquashFS SWU format with detached GPG signatures. Never bypass the GPG signature check.
+5. **Use of Insecure or Outdated Components:** Keep our Python packages, Conan packages, and debian dependencies up to date.
+6. **Insufficient Privacy Protection:** Securely handle user profiles, PII, and telemetry. Never write passwords or sensitive tokens to local log files.
+7. **Insecure Data Transfer and Storage:** Encrypt sensitive credentials and configurations. Use RAM-backed filesystems (`/dev/shm`) for temporary decryption targets.
+8. **Lack of Device Management:** Integrate with UltiMaker Digital Factory securely.
+9. **Insecure Default Settings:** Enforce safe defaults out-of-the-box.
+10. **Lack of Physical Hardening:** Secure local terminal and SSH ports. Enforce strict `umssh.sh` password-less or authenticated connections.
+
+---
+
+## 8. Companion Guides
+
+Consult the following guides found within the repository or ecosystem:
+- **README.md**: Standard setup and compilation guidelines.
+- None extra.
+
+---
+
+## 9. Automated Pre-Commit Tooling & Closed-Loop Cycle
+
+To support a robust, automated closed-loop development cycle, this repository enforces automatic static quality checks using `pre-commit` before any git commit is recorded.
+
+### Core Architecture & Checks:
+- **Fast Static Analysis:** Hooks run formatters, linters, and credentials scanning to ensure code quality and safety.
+- **Commit Guardrails:**
+  1. **Jira Ticket Reference:** Commit messages *must* reference a Jira ticket prefix.
+  2. **Agent Artifact & Scratch File Block:** Blocks staging/committing agent-specific tracking files (`task.md`, `implementation_plan.md`, `walkthrough.md`, scratch files, temporary `test_` scripts).
+  3. **Talisman Secret Scanner:** ThoughtWorks Talisman pre-commit scanner blocks committed credentials/secrets.
+  4. **Local Paths Reference Blocker:** Prevents hardcoded local absolute path references (e.g., `/home/<username>/`).
+
+### Setup and Manual Use:
+1. **Installation:** Ensure `pre-commit` is installed and set up:
+   ```bash
+   pip install pre-commit
+   pre-commit install --hook-type pre-commit --hook-type commit-msg
+   ```
+2. **Manual Execution:** Run checks manually on staged or all files:
+   ```bash
+   pre-commit run --all-files
+   ```
+
+---
+
+## 10. Visual Validation & Verification (V&V) Guidelines
+
+Every feature implementation, UI refinement, or bug fix **MUST** undergo a systematic Validation & Verification (V&V) process.
+
+### Scenarios to Test:
+- **Happy Path Scenarios:** Verify standard successful workflows. Ensure that no console exceptions, network errors, or visual regressions occur.
+- **Unhappy Path Scenarios:** Verify edge cases, input limits, and error handling (e.g., failed DBus bindings, offline state, empty profiles).
+- **Physical Verification / Emulation:** Where applicable, use the `ultimaker-printer-ssh` skill to push the generated build output onto a networked test printer:
+  ```bash
+  ./deploy_to_printer.sh <printer-ip>
+  ```
+- **PR Visual Evidence Mandate:** For visual changes (Okuda UI, griffin_html), provide viewport screenshots/recordings of both happy and unhappy paths in your PR description.
