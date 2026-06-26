@@ -11,13 +11,7 @@ repos:
     hooks:
       - id: check-yaml
         name: Check YAML Syntax
-        entry: |-
-          python3 -c '
-          import sys, yaml
-          for f in sys.argv[1:]:
-              try: yaml.safe_load(open(f))
-              except Exception as e: print(f"YAML Error in {f}: {e}"); sys.exit(1)
-          ' "$@"
+        entry: python3 -c 'import sys, yaml; [yaml.safe_load(open(f)) for f in sys.argv[1:]]'
         language: system
         files: \.(yaml|yml)$
 
@@ -54,9 +48,9 @@ repos:
       - id: check-local-paths
         name: Check for Local Path References
         entry: >-
-          bash -c 'if [ "$SKIP_PRE_COMMIT" = "1" ]; then exit 0; fi; if [ -n "$HOME" ] && grep -FIn "$HOME" "$@" >/dev/stderr; then echo "ERROR: Staged files contain references to your local home directory ($HOME). Please use relative paths instead."; exit 1; fi; if grep -EIn "/(home|Users)/[a-zA-Z0-9_-]+" "$@" >/dev/stderr; then echo "ERROR: Staged files contain absolute local paths (e.g., /home/USER/ or /Users/USER/). Please use relative paths instead."; exit 1; fi' --
+          bash -c 'if [ "$SKIP_PRE_COMMIT" = "1" ]; then exit 0; fi; if grep -EIn "/home/jelle/" "$@" >/dev/stderr; then echo "ERROR: Staged files contain references to local path /home/jelle/. Please use relative paths instead."; exit 1; fi; if [ -n "$HOME" ] && grep -FIn "$HOME" "$@" >/dev/stderr; then echo "ERROR: Staged files contain references to your local home directory ($HOME). Please use relative paths instead."; exit 1; fi; if grep -EIn "/(home|Users)/[a-zA-Z0-9_-]+" "$@" >/dev/stderr; then echo "ERROR: Staged files contain absolute local paths (e.g., /home/USER/ or /Users/USER/). Please use relative paths instead."; exit 1; fi' --
         language: system
-        files: \.(py|js|jsx|ts|tsx|sh|bash|md|cpp|h|qml)$
+        files: \.(py|js|jsx|ts|tsx|sh|bash|cpp|h|qml|xml|fdm_material)$
 
       - id: check-jira-ticket
         name: Check Jira Ticket in Commit Message

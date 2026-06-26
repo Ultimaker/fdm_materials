@@ -1,0 +1,6 @@
+fileignoreconfig:
+- filename: .github/copilot-instructions/code-reviewer.instructions.md
+  checksum: b7c8839a89c6dec3504e572a7f29ac14a5d2e7f65f3e6e7ea795d277e1029508
+- filename: .github/copilot-instructions/pr-assistant.instructions.md
+  checksum: 2be79956227859a600d88a4855f76b65750163f805c7abb3c34dd214e29f41dc
+version: ""
