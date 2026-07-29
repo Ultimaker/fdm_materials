@@ -1,18 +1,11 @@
-# .pre-commit-config.yaml
-# fdm_materials pre-commit checks
-
-default_install_hook_types: [pre-commit, commit-msg]
-
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.6.0
     hooks:
       - id: check-yaml
-        files: \.(yaml|yml)$
       - id: check-json
-        files: \.json$
       - id: check-added-large-files
-        args: ['--maxkb=40000']
+        args: ['--maxkb=1024']
       - id: end-of-file-fixer
       - id: trailing-whitespace
 
@@ -20,26 +13,18 @@ repos:
     rev: v1.32.0
     hooks:
       - id: talisman-commit
-        name: Scan for potential secrets (Talisman)
-        exclude: |
-          (?x)^(
-            \.github/.*|
-            docs/.*|
-            .*\.md|
-            \.pre-commit-config\.yaml
-          )$
+        entry: talisman --githook pre-commit
 
   - repo: local
     hooks:
       - id: block-absolute-paths
         name: Block absolute local path references
-        entry: '(/home/[a-zA-Z0-9_\.-]+|/Users/[a-zA-Z0-9_\.-]+)'
-        language: pygrep
-        types: [text]
-        exclude: |
-          (?x)^(
-            AGENTS.md|
-            README.md|
-            docs/.*|
-            \.github/.*
-          )$
+        entry: python3 .agents/hooks/block-absolute-paths.py
+        language: system
+        types_or: [text]
+
+      - id: check-antigravity-api-keys
+        name: Detect hardcoded API keys and credentials
+        entry: python3 .agents/hooks/block-secrets.py
+        language: system
+        types_or: [text]

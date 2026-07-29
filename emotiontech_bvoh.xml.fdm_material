@@ -74,6 +74,6 @@
             <hotend id="IDEX420 Acier Durci 0.4">
                 <setting key="hardware compatible">no</setting>
             </hotend>
-        </machine>        
+        </machine>
     </settings>
 </fdmmaterial>

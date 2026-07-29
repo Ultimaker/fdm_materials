@@ -1,0 +1,28 @@
+{
+  "$schema": "https://opencode.ai/schema/v1/config.json",
+  "instructions": [
+    "AGENTS.md",
+    ".agents/rules/agentic-guidelines.md"
+  ],
+  "rules": [
+    ".agents/rules/*.md"
+  ],
+  "hooks": {
+    "pre-tool-call": [
+      {
+        "command": "python3 ./.agents/hooks/block-absolute-paths.py"
+      },
+      {
+        "command": "python3 ./.agents/hooks/block-secrets.py"
+      },
+      {
+        "command": "python3 ./.agents/hooks/git-branch-guard.py"
+      }
+    ],
+    "post-tool-call": [
+      {
+        "command": "bash ./.agents/hooks/post-edit-linter.sh"
+      }
+    ]
+  }
+}
