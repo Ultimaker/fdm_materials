@@ -10,7 +10,7 @@ def check_staged_files():
     
     failed = False
     for filepath in files:
-        if "block-absolute-paths.py" in filepath or "AGENTS.md" in filepath:
+        if "block-absolute-paths.py" in filepath:
             continue
         try:
             with open(filepath, "r", encoding="utf-8", errors="ignore") as f:

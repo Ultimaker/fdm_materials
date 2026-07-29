@@ -15,12 +15,12 @@ gh skill install Ultimaker/UltiCortex <skill-name>
 
 ## Mandated Skill Triggers
 1. **`ultimaker-printer-ssh`**:
-   - **Trigger**: When deploying packages, checking DBus properties, testing build outputs, or troubleshooting local services on physical or emulated 3D printers over SSH.
+   - Trigger: Deploying packages, checking DBus properties, testing build outputs, or troubleshooting local services over SSH.
 2. **`ultimaker-digital-factory`**:
-   - **Trigger**: When working on cloud state synchronization, WSS WebSocket connections, IoT connectivity, telemetry, or Digital Factory API features.
+   - Trigger: Cloud state sync, WSS WebSocket connections, IoT connectivity, telemetry, or Digital Factory APIs.
 3. **`ultimaker-log-analyzer`**:
-   - **Trigger**: When analyzing log dumps (`/var/log/messages`, systemd journal, `opinicus.log`, `okuda.log`, `stardust.log`).
+   - Trigger: Analyzing log dumps (`/var/log/messages`, systemd journal, `opinicus.log`, `okuda.log`, `stardust.log`).
 4. **`ultimaker-firmware-developer`**:
-   - **Trigger**: When modifying core DBus interfaces, state machine frameworks, or CMake/Conan build tooling.
- 5. **`ultimaker-support-articles`**:
-   - **Trigger**: When introducing user-facing feature changes or behavioral shifts that impact public documentation or support workflows.
+   - Trigger: Modifying DBus interfaces, state machine frameworks, or CMake/Conan build tooling.
+5. **`ultimaker-support-articles`**:
+   - Trigger: User-facing feature changes impacting public support documentation.

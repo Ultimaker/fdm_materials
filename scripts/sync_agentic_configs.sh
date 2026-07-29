@@ -12,4 +12,20 @@ if [ -f AGENTS.md ]; then
   ln -sf AGENTS.md CLAUDE.md
 fi
 
+# Symlink rules from .agents/rules to .claude/rules and .opencode/rules
+if [ -d .agents/rules ]; then
+  for rulefile in .agents/rules/*.md; do
+    if [ -f "$rulefile" ]; then
+      base="$(basename "$rulefile")"
+      ln -sf "../../.agents/rules/$base" ".claude/rules/$base" 2>/dev/null || true
+      ln -sf "../../.agents/rules/$base" ".opencode/rules/$base" 2>/dev/null || true
+    fi
+  done
+fi
+
+# Symlink AGENTS.md for opencode rules
+if [ -f AGENTS.md ]; then
+  ln -sf "../../AGENTS.md" ".opencode/rules/agents.md" 2>/dev/null || true
+fi
+
 echo "Synced Quad-Agent configurations and rule structures successfully."

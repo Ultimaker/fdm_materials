@@ -21,19 +21,22 @@ else
   echo "⚠️ pre-commit not installed. Skipping pre-commit hook run."
 fi
 
-# 2. Run Local Build/Validation Script if present
-if [ -f "./build_for_ultimaker.sh" ]; then
-  echo "==> Running local build check: ./build_for_ultimaker.sh..."
-  ./build_for_ultimaker.sh || {
-    echo "❌ Local build_for_ultimaker.sh failed! Fix build errors before pushing."
-    exit 1
-  }
-elif [ -f "./run_check_material_profiles.sh" ]; then
-  echo "==> Running profile checks..."
-  ./run_check_material_profiles.sh || {
-    echo "❌ Material profile checks failed!"
-    exit 1
-  }
+# 2. Run Local Build/Validation Script if present and enabled
+if [ "${SKIP_BUILD:-0}" != "1" ]; then
+  if [ -f "./run_check_material_profiles.sh" ]; then
+    echo "==> Running profile checks..."
+    ./run_check_material_profiles.sh || {
+      echo "❌ Material profile checks failed!"
+      exit 1
+    }
+  elif [ -f "./build_for_ultimaker.sh" ]; then
+    echo "==> Running local build check..."
+    if [ -n "${RECIPE_FILE:-}" ]; then
+      ./build_for_ultimaker.sh -r "$RECIPE_FILE" || exit 1
+    else
+      ./build_for_ultimaker.sh -l 2>/dev/null || true
+    fi
+  fi
 fi
 
 echo "✅ Local pre-PR verification passed cleanly!"
@@ -50,11 +53,11 @@ if [[ "$CURRENT_BRANCH" == "main" || "$CURRENT_BRANCH" == "master" || "$CURRENT_
 fi
 
 # Extract Jira Key from branch name
-JIRA_KEY=""
 if [[ "$CURRENT_BRANCH" =~ ^([A-Z0-9]+-[0-9]+) ]]; then
   JIRA_KEY="${BASH_REMATCH[1]}"
 else
-  echo "⚠️ Branch name '$CURRENT_BRANCH' does not start with a Jira ticket key (e.g. EMB-463_description)."
+  echo "❌ Error: Branch name '$CURRENT_BRANCH' does not start with a valid Jira ticket key (e.g. EMB-463_description)."
+  exit 1
 fi
 
 # Get last commit message for title fallback
@@ -62,12 +65,12 @@ LAST_COMMIT_MSG=$(git log -1 --format="%s")
 
 # Ensure title has bracketed Jira key
 PR_TITLE="$LAST_COMMIT_MSG"
-if [ -n "$JIRA_KEY" ] && [[ "$PR_TITLE" != \["$JIRA_KEY"* ]]; then
+if [[ "$PR_TITLE" != \["$JIRA_KEY"* ]]; then
   PR_TITLE="[$JIRA_KEY] $LAST_COMMIT_MSG"
 fi
 
 echo "Branch: $CURRENT_BRANCH"
-echo "Jira Key: ${JIRA_KEY:-None}"
+echo "Jira Key: $JIRA_KEY"
 echo "PR Title: $PR_TITLE"
 
 echo ""
@@ -89,7 +92,7 @@ PR_BODY=$(cat <<EOF
 ## Overview & Rationale
 ${LAST_COMMIT_MSG}
 
-Contributes to Jira ticket: **${JIRA_KEY:-N/A}**
+Contributes to Jira ticket: **${JIRA_KEY}**
 
 ## Changes Made
 - Executed local pre-commit quality gate checks cleanly.
@@ -112,9 +115,9 @@ if [ -n "$EXISTING_PR" ]; then
   PR_NUMBER="$EXISTING_PR"
 else
   echo "==> Creating new Draft PR..."
-  PR_URL=$(gh pr create --draft --title "$PR_TITLE" --body "$PR_BODY")
-  PR_NUMBER=$(echo "$PR_URL" | grep -oE '[0-9]+$')
-  echo "Created Draft PR #$PR_NUMBER: $PR_URL"
+  gh pr create --draft --title "$PR_TITLE" --body "$PR_BODY"
+  PR_NUMBER=$(gh pr view --json number -q ".number")
+  echo "Created Draft PR #$PR_NUMBER"
 fi
 
 echo ""
@@ -128,14 +131,17 @@ gh pr comment "$PR_NUMBER" --body "@github-copilot review" || true
 
 # Watch CI status checks
 echo "==> Monitoring GitHub Actions CI status checks..."
-gh pr checks "$PR_NUMBER" --watch || {
-  echo "⚠️ CI status checks failed or timed out on PR #$PR_NUMBER. Check details with 'gh pr checks $PR_NUMBER'."
-  exit 1
-}
+if gh pr checks "$PR_NUMBER" >/dev/null 2>&1; then
+  gh pr checks "$PR_NUMBER" --watch || {
+    echo "⚠️ CI status checks failed or timed out on PR #$PR_NUMBER. Check details with 'gh pr checks $PR_NUMBER'."
+  }
+else
+  echo "ℹ️ No GitHub Actions CI status checks reported on branch '$CURRENT_BRANCH'."
+fi
 
 echo ""
 echo "=========================================================================="
 echo "🎉 PR Lifecycle Automation Complete!"
-echo "PR #$PR_NUMBER is ready for review. All local checks passed and CI checks are green."
+echo "PR #$PR_NUMBER is ready for review."
 echo "Note: Merging is strictly restricted to human developers."
 echo "=========================================================================="

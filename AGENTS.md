@@ -19,9 +19,9 @@ As a dynamic assistant, you must adhere strictly to these principles to maintain
 
 To collaborate on cross-repository features or platform emulation, locate and link with sibling services in this local workspace. Use the following relative paths and consult their corresponding `AGENTS.md` operational guides:
 
-- **[neoprep](../../.gemini/antigravity/worktrees/neoprep/audit-stardust-atlas-submodules/)**: The interactive React 3D prep workspace. The painting pipeline is described in [painting_pipeline.md](../../.gemini/antigravity/worktrees/neoprep/audit-stardust-atlas-submodules/doc/Software%20Architecture/painting_pipeline.md).
-- **[Curator](../../.gemini/antigravity/worktrees/Curator/)**: Slicing profile resolver.
-- **[stardust-atlas](../../.gemini/antigravity/worktrees/stardust-atlas/audit-stardust-atlas-submodules/)**: Meta-repository and orchestration layer compiling the full Digital Factory stack.
+- **[neoprep](../neoprep/)**: The interactive React 3D prep workspace.
+- **[Curator](../Curator/)**: Slicing profile resolver.
+- **[stardust-atlas](../stardust-atlas/)**: Meta-repository and orchestration layer compiling the full Digital Factory stack.
 
 ### 🔍 Dynamic AI Skill Discovery & Installation
 
