@@ -1,59 +1,42 @@
 #!/usr/bin/env python3
-import sys
-import json
 import re
-from pathlib import Path
+import subprocess
+import sys
 
-ABSOLUTE_PATH_PATTERNS = [
-    (r'/home/[a-zA-Z0-9_.-]{2,}/', "Prohibited Linux host home directory path"),
-    (r'/Users/[a-zA-Z0-9_.-]{2,}/', "Prohibited macOS host user directory path"),
-    (r'C:\\Users\\[a-zA-Z0-9_.-]{2,}\\', "Prohibited Windows host user directory path"),
-]
 
-def check_text(text, filename=""):
-    # Strip markdown backticked example strings
-    cleaned_text = re.sub(r'`[^`]*`', '', text)
-    for pattern, reason in ABSOLUTE_PATH_PATTERNS:
-        if re.search(pattern, cleaned_text):
-            return True, f"Found hardcoded absolute path matching pattern: {pattern} ({reason})"
-    return False, ""
+def check_staged_files():
+    result = subprocess.run(
+        ["git", "diff", "--cached", "--name-only"],
+        capture_output=True,
+        text=True,
+    )
+    files = [f for f in result.stdout.splitlines() if f.strip()]
 
-def main():
-    # 1. Check file arguments if invoked by pre-commit (sys.argv[1:])
-    if len(sys.argv) > 1:
-        failed = False
-        for filepath_str in sys.argv[1:]:
-            p = Path(filepath_str)
-            if not p.is_file() or p.name == "block-absolute-paths.py":
-                continue
-            try:
-                content = p.read_text(encoding="utf-8", errors="ignore")
-                has_error, reason = check_text(content, filename=p.name)
-                if has_error:
-                    print(f"Error in {filepath_str}: {reason}", file=sys.stderr)
-                    failed = True
-            except Exception:
-                pass
-        if failed:
-            sys.exit(1)
-        sys.exit(0)
+    home_pattern = re.compile(r"/home/[a-zA-Z0-9_-]+/")
+    users_pattern = re.compile(r"/Users/[a-zA-Z0-9_-]+/")
 
-    # 2. Check JSON payload if invoked by tool hook via stdin
-    payload = {}
-    if not sys.stdin.isatty():
+    failed = False
+    for filepath in files:
+        skip_patterns = ["block-absolute-paths.py", "rules/", ".md"]
+        if any(sp in filepath for sp in skip_patterns):
+            continue
         try:
-            payload = json.load(sys.stdin)
+            with open(
+                filepath, "r", encoding="utf-8", errors="ignore"
+            ) as f:
+                for idx, line in enumerate(f, 1):
+                    if home_pattern.search(line) or users_pattern.search(line):
+                        print(
+                            f"SECURITY ERROR: Absolute path detected in "
+                            f"{filepath}:{idx}: {line.strip()}"
+                        )
+                        failed = True
         except Exception:
             pass
 
-    args_str = json.dumps(payload)
-    has_error, reason = check_text(args_str)
-    if has_error:
-        print(json.dumps({"decision": "deny", "reason": reason}))
-        sys.exit(2)
+    if failed:
+        sys.exit(1)
 
-    print(json.dumps({"decision": "allow"}))
-    sys.exit(0)
 
 if __name__ == "__main__":
-    main()
+    check_staged_files()

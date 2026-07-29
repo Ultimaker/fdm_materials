@@ -1,0 +1,22 @@
+fileignoreconfig:
+- filename: .agents/rules/01-jira-commit-standards.md
+  checksum: d46e3c97ff6422b9b81862a6b91fbb03be00162eab8545a873d8cbf025bd8a83
+- filename: .agents/rules/02-security-and-paths.md
+  checksum: 370df1cf3212aa0c9ac35b05e38891db76ef5fea9264d3537f039e017c2b9889
+- filename: .agents/rules/06-pull-request-lifecycle-rules.md
+  checksum: db5f60f7c3cbb473b4236c211aa08476d357d07e7e51dd282d65989b5995bb11
+- filename: .agents/rules/07-owasp-iot-and-api-security-rules.md
+  checksum: d14b84192b9c65a5ae66fd72716b308afb43b68dcfbc256abb3133ccae846b85
+- filename: .agents/rules/09-atomic-bisect-safe-commits.md
+  checksum: 2f4ef8619aa619ca8ff23022f6ba54556226cdfc158313969b482400740611cb
+- filename: .agents/agents/adversarial_pr_reviewer/agent.md
+  checksum: d7dc74f1971b17bfacec3e565664dc0d35924a1eacb56515f96dc949f71739bd
+- filename: .agents/hooks/run_adversarial_audit.py
+  checksum: c3ce9ff3b688458f9c7515ee96d3c2d9bf452c7562f87beb859b8173c10de922
+- filename: .github/copilot-instructions.md
+  checksum: 20428b6fed8c2841ccf4490d7a86c5fcbbd666c5d2f9e0309b99b5309eb085c2
+- filename: .github/copilot-instructions/accessibility-auditor.instructions.md
+  checksum: 4be22534565776b8d839cc56bd51c1adbbd20c5d403f86f144265590722fded4
+- filename: .github/copilot-instructions/pr-assistant.instructions.md
+  checksum: 8c14187b50f272143a605ff66e7d9b9903ff5f136cada339b0c0d887e17ae955
+version: ""

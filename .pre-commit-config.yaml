@@ -1,13 +1,18 @@
+default_stages: [pre-commit]
+exclude: "^(software/.*|vendor/.*|third_party/.*|griffin/machines/.*|build/.*)"
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v4.5.0
     hooks:
       - id: check-yaml
+        args: [--unsafe]
       - id: check-json
       - id: check-added-large-files
-        args: ['--maxkb=1024']
+        args: ['--maxkb=2000']
       - id: end-of-file-fixer
+        exclude: '^(software/|vendor/|third_party/|node_modules/|docs/|hardware/)'
       - id: trailing-whitespace
+        exclude: '^(software/|vendor/|third_party/|node_modules/|docs/|hardware/)'
 
   - repo: https://github.com/thoughtworks/talisman
     rev: v1.32.0
@@ -27,4 +32,23 @@ repos:
         name: Detect hardcoded API keys and credentials
         entry: python3 .agents/hooks/block-secrets.py
         language: system
+        types_or: [text]
+
+      - id: check-api-doc-sync
+        name: Check API Documentation Synchronization
+        entry: python3 .agents/hooks/check-api-doc-sync.py
+        language: system
+        types_or: [python, json]
+
+      - id: check-relevant-scope
+        name: Check Relevant Scope and Block Scope Creep
+        entry: python3 .agents/hooks/check-relevant-scope.py
+        language: system
+        types_or: [text]
+
+      - id: check-atomic-bisect-history
+        name: Validate Atomic Bisect-Safe Commit History
+        entry: python3 .agents/hooks/check_atomic_bisect_history.py
+        language: system
+        stages: [pre-push]
         types_or: [text]

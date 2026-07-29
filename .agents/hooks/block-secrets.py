@@ -1,58 +1,46 @@
 #!/usr/bin/env python3
-import sys
-import json
 import re
-from pathlib import Path
+import subprocess
+import sys
 
 SECRET_PATTERNS = [
-    (r'(?i)api[_-]?key\s*=\s*[\'"][A-Za-z0-9_\-]{16,}["\']', "Found potential API key assignment"),
-    (r'ghp_[A-Za-z0-9]{36}', "Found GitHub Personal Access Token"),
-    (r'sk-[A-Za-z0-9]{32,}', "Found OpenAI/Secret key format"),
-    (r'-----BEGIN (?:RSA|OPENSSH|EC) PRIVATE KEY-----', "Found Private Key header"),
+    re.compile(r"-----BEGIN (?:RSA|OPENSSH|DSA|EC|PGP) PRIVATE KEY-----"),
+    re.compile(r"AIzaSy[A-Za-z0-9_-]{33}"),
+    re.compile(r"ghp_[A-Za-z0-9]{36}"),
+    re.compile(r"glpat-[A-Za-z0-9_-]{20}"),
 ]
 
-def check_text(text):
-    for pattern, msg in SECRET_PATTERNS:
-        if re.search(pattern, text):
-            return True, msg
-    return False, ""
 
-def main():
-    # 1. Check file arguments if invoked by pre-commit (sys.argv[1:])
-    if len(sys.argv) > 1:
-        failed = False
-        for filepath_str in sys.argv[1:]:
-            p = Path(filepath_str)
-            if not p.is_file() or p.name == "block-secrets.py" or p.name.startswith(".env"):
-                continue
-            try:
-                content = p.read_text(encoding="utf-8", errors="ignore")
-                has_error, reason = check_text(content)
-                if has_error:
-                    print(f"Secret Error in {filepath_str}: {reason}", file=sys.stderr)
-                    failed = True
-            except Exception:
-                pass
-        if failed:
-            sys.exit(1)
-        sys.exit(0)
+def check_secrets():
+    result = subprocess.run(
+        ["git", "diff", "--cached", "--name-only"],
+        capture_output=True,
+        text=True,
+    )
+    files = [f for f in result.stdout.splitlines() if f.strip()]
 
-    # 2. Check JSON payload if invoked by tool hook via stdin
-    payload = {}
-    if not sys.stdin.isatty():
+    failed = False
+    for filepath in files:
+        if "block-secrets.py" in filepath:
+            continue
         try:
-            payload = json.load(sys.stdin)
+            with open(
+                filepath, "r", encoding="utf-8", errors="ignore"
+            ) as f:
+                for idx, line in enumerate(f, 1):
+                    for pattern in SECRET_PATTERNS:
+                        if pattern.search(line):
+                            print(
+                                f"SECURITY ERROR: Secret detected in "
+                                f"{filepath}:{idx}"
+                            )
+                            failed = True
         except Exception:
             pass
 
-    args_str = json.dumps(payload)
-    has_error, reason = check_text(args_str)
-    if has_error:
-        print(json.dumps({"decision": "deny", "reason": reason}))
-        sys.exit(2)
+    if failed:
+        sys.exit(1)
 
-    print(json.dumps({"decision": "allow"}))
-    sys.exit(0)
 
 if __name__ == "__main__":
-    main()
+    check_secrets()

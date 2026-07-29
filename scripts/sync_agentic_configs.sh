@@ -1,46 +1,39 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_ROOT="$(git rev-parse --show-toplevel)"
-cd "$REPO_ROOT"
-
-echo "==> Synchronizing Agentic AI Configurations across Claude, Antigravity/Gemini, Copilot, and OpenCode..."
-
 # Ensure target directories exist
-mkdir -p .claude/rules .claude/commands .opencode/rules .opencode/commands
+mkdir -p .claude/hooks .opencode .agents/hooks .github/hooks   .agents/rules .claude/rules .opencode/rules   .agents/agents .claude/agents .opencode/agents .github/agents
 
-# Cross-platform symlink helper using Python
-create_symlink() {
-  local target_file="$1"
-  local link_dir="$2"
-  local link_name="$3"
+# Copy hook configs across platforms
+cp -f .agents/hooks.json .claude/hooks.json 2>/dev/null || true
 
-  python3 -c "
-import os, sys
-target = os.path.abspath(sys.argv[1])
-link_dir = os.path.abspath(sys.argv[2])
-link_path = os.path.join(link_dir, sys.argv[3])
-rel_target = os.path.relpath(target, link_dir)
-if os.path.islink(link_path) or os.path.exists(link_path):
-    os.remove(link_path)
-os.symlink(rel_target, link_path)
-" "$target_file" "$link_dir" "$link_name"
-}
+# Symlink AGENTS.md for platforms expecting CLAUDE.md
+if [ -f AGENTS.md ]; then
+  ln -sf AGENTS.md CLAUDE.md
+fi
 
-# 1. Symlink Rules (.agents/rules -> .claude/rules & .opencode/rules)
-for rule in .agents/rules/*.md; do
-  [ -e "$rule" ] || continue
-  base="$(basename "$rule")"
-  create_symlink "$rule" ".claude/rules" "$base"
-  create_symlink "$rule" ".opencode/rules" "$base"
-done
+# Symlink rules from .agents/rules to .claude/rules and .opencode/rules
+if [ -d .agents/rules ]; then
+  for rulefile in .agents/rules/*.md; do
+    if [ -f "$rulefile" ]; then
+      base="$(basename "$rulefile")"
+      ln -sf "../../.agents/rules/$base"         ".claude/rules/$base" 2>/dev/null || true
+      ln -sf "../../.agents/rules/$base"         ".opencode/rules/$base" 2>/dev/null || true
+    fi
+  done
+fi
 
-# 2. Symlink Workflows (.agents/workflows -> .claude/commands & .opencode/commands)
-for wf in .agents/workflows/*.md; do
-  [ -e "$wf" ] || continue
-  base="$(basename "$wf")"
-  create_symlink "$wf" ".claude/commands" "$base"
-  create_symlink "$wf" ".opencode/commands" "$base"
-done
+# Symlink subagent definitions across platforms
+if [ -d .agents/agents/adversarial_pr_reviewer ]; then
+  src="../../.agents/agents/adversarial_pr_reviewer/agent.md"
+  ln -sf "$src" ".claude/agents/adversarial_pr_reviewer.md" 2>/dev/null || true
+  ln -sf "$src" ".opencode/agents/adversarial_pr_reviewer.md" 2>/dev/null || true
+  ln -sf "$src" ".github/agents/adversarial_pr_reviewer.md" 2>/dev/null || true
+fi
 
-echo "==> Agentic configuration synchronization complete!"
+# Symlink AGENTS.md for opencode rules
+if [ -f AGENTS.md ]; then
+  ln -sf "../../AGENTS.md" ".opencode/rules/agents.md" 2>/dev/null || true
+fi
+
+echo "Synced Quad-Agent configurations and rule structures successfully."
