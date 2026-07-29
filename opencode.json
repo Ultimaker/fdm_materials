@@ -3,31 +3,5 @@
   "instructions": [
     "AGENTS.md",
     ".opencode/rules/*.md"
-  ],
-  "hooks": {
-    "session-start": [
-      {
-        "command": "bash ./.agents/hooks/init-submodules.sh"
-      },
-      {
-        "command": "bash ./.agents/hooks/check-toolchain.sh"
-      }
-    ],
-    "pre-tool-call": [
-      {
-        "command": "python3 ./.agents/hooks/block-absolute-paths.py"
-      },
-      {
-        "command": "python3 ./.agents/hooks/block-secrets.py"
-      },
-      {
-        "command": "python3 ./.agents/hooks/git-branch-guard.py"
-      }
-    ],
-    "post-tool-call": [
-      {
-        "command": "bash ./.agents/hooks/post-edit-linter.sh"
-      }
-    ]
-  }
+  ]
 }
