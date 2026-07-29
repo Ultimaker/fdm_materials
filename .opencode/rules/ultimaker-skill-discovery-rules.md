@@ -22,5 +22,5 @@ gh skill install Ultimaker/UltiCortex <skill-name>
    - **Trigger**: When analyzing log dumps (`/var/log/messages`, systemd journal, `opinicus.log`, `okuda.log`, `stardust.log`).
 4. **`ultimaker-firmware-developer`**:
    - **Trigger**: When modifying core DBus interfaces, state machine frameworks, or CMake/Conan build tooling.
-5. **`ultimaker-support-articles`**:
+ 5. **`ultimaker-support-articles`**:
    - **Trigger**: When introducing user-facing feature changes or behavioral shifts that impact public documentation or support workflows.
