@@ -1,0 +1,38 @@
+{
+  "safety-and-compliance": {
+    "PreToolUse": [
+      {
+        "matcher": "run_command|write_to_file|replace_file_content|multi_replace_file_content",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .agents/hooks/block-absolute-paths.py",
+            "timeout": 15
+          },
+          {
+            "type": "command",
+            "command": "python3 .agents/hooks/block-secrets.py",
+            "timeout": 15
+          },
+          {
+            "type": "command",
+            "command": "python3 .agents/hooks/git-branch-guard.py",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "write_to_file|replace_file_content|multi_replace_file_content",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .agents/hooks/post-edit-linter.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

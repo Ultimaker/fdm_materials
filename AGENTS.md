@@ -31,6 +31,7 @@ To obtain expert domain knowledge and specific runtime tools, agents **must** dy
 # Discover and install specialized skills
 gh skill install Ultimaker/UltiCortex ultimaker-neoprep-development --branch UC-3695_improve_code_base_for_agentic_development
 gh skill install Ultimaker/UltiCortex ultimaker-material-knowledge --branch UC-3695_improve_code_base_for_agentic_development
+gh skill install Ultimaker/UltiCortex ultimaker-support-articles --branch UC-3695_improve_code_base_for_agentic_development
 ```
 
 ---
