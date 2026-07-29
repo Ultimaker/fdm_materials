@@ -39,7 +39,18 @@ if [ "${SKIP_BUILD:-0}" != "1" ]; then
   fi
 fi
 
-echo "✅ Local pre-PR verification passed cleanly!"
+# 2. Run Adversarial Pre-PR Security & Quality Audit
+if [ -f "./.agents/hooks/run_adversarial_audit.py" ]; then
+  echo "==> Running Adversarial Pre-PR Security & Quality Audit..."
+  python3 ./.agents/hooks/run_adversarial_audit.py || {
+    echo "❌ Adversarial audit failed! Please resolve security and quality findings before submitting PR."
+    exit 1
+  }
+elif [ -f "../UltiCortex/skills/ultimaker/ultimaker-agentic-bootstrap/resources/scripts/run_adversarial_audit.py" ]; then
+  python3 ../UltiCortex/skills/ultimaker/ultimaker-agentic-bootstrap/resources/scripts/run_adversarial_audit.py || exit 1
+fi
+
+echo "✅ Local pre-PR verification and adversarial audit passed cleanly!"
 
 echo ""
 echo "=========================================================================="

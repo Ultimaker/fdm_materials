@@ -20,6 +20,6 @@
         <setting key="heated bed temperature">50</setting>
         <setting key="standby temperature">180</setting>
         <setting key="retraction amount">5</setting>
-        <setting key="retraction speed">80</setting> 
+        <setting key="retraction speed">80</setting>
     </settings>
 </fdmmaterial>

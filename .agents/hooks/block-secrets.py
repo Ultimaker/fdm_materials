@@ -11,7 +11,7 @@ SECRET_PATTERNS = [
 def check_secrets():
     result = subprocess.run(["git", "diff", "--cached", "--name-only"], capture_output=True, text=True)
     files = [f for f in result.stdout.splitlines() if f.strip()]
-    
+
     failed = False
     for filepath in files:
         if "block-secrets.py" in filepath:
@@ -25,7 +25,7 @@ def check_secrets():
                             failed = True
         except Exception:
             pass
-            
+
     if failed:
         sys.exit(1)
 
