@@ -43,5 +43,6 @@ description: OWASP Top 10 IoT Security and OWASP API Security Top 10 guidelines 
    - Validate and sanitize all external URLs provided for package downloads, camera streams, or telemetry sync; restrict to authorized UltiMaker Digital Factory domains.
 7. **Security Misconfiguration**:
    - Suppress verbose stack traces or internal local filesystem paths in HTTP and DBus error responses.
-8. **Improper Inventory Management**:
-   - Keep REST API specification in `docs/api_documentation.json` in sync with active endpoints.
+8. **Improper Inventory Management & Mandatory API Documentation Sync**:
+   - MUST keep REST/HTTP and DBus API specifications in `docs/api_documentation.json` in sync with active endpoints.
+   - Any modification to interface files (`griffin/interface/`, HTTP route handlers, DBus definitions) MUST be accompanied by an update to `docs/api_documentation.json` in the same commit/PR.

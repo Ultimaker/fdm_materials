@@ -28,3 +28,9 @@ repos:
         entry: python3 .agents/hooks/block-secrets.py
         language: system
         types_or: [text]
+
+      - id: check-api-doc-sync
+        name: Check API Documentation Synchronization
+        entry: python3 .agents/hooks/check-api-doc-sync.py
+        language: system
+        types_or: [python, json]

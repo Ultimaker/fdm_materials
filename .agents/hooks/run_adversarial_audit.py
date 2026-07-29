@@ -81,6 +81,12 @@ def audit_diff():
         except Exception as e:
             pass
 
+    # 5. API Documentation Sync Check (e.g. for opinicus or API repositories)
+    interface_files = [f for f in files if "griffin/interface/" in f or "interface/http/" in f or "endpoints/" in f]
+    api_doc_files = [f for f in files if "docs/api_documentation.json" in f or "openapi" in f.lower()]
+    if interface_files and not api_doc_files:
+        errors.append(f"❌ [API DOC DESYNC] Interface/endpoint files modified ({len(interface_files)} files) but docs/api_documentation.json was not updated!")
+
     if errors:
         print("\n==========================================================================")
         print("🚨 ADVERSARIAL AUDIT FINDINGS (Fix these before submitting PR):")
@@ -89,7 +95,7 @@ def audit_diff():
             print(err)
         print("==========================================================================\n")
         # Return non-zero if critical security errors are found
-        critical_errors = [e for e in errors if "ABSOLUTE PATH" in e or "SECRET DETECTED" in e]
+        critical_errors = [e for e in errors if "ABSOLUTE PATH" in e or "SECRET DETECTED" in e or "API DOC DESYNC" in e]
         if critical_errors:
             print("❌ Critical security findings must be resolved before PR creation.")
             return 1
