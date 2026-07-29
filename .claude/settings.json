@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "python3 .agents/hooks/block-absolute-paths.py"
+      },
+      {
+        "type": "command",
+        "command": "python3 .agents/hooks/block-secrets.py"
+      },
+      {
+        "type": "command",
+        "command": "python3 .agents/hooks/git-branch-guard.py"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "bash .agents/hooks/post-edit-linter.sh"
+      }
+    ]
+  }
+}

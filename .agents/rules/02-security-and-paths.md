@@ -4,7 +4,7 @@ description: Security guidelines, secret protection, and path sanitation.
 # Security & Path Protection Guidelines
 
 1. **No Hardcoded Absolute Paths**:
-   - Never commit absolute local filesystem paths (e.g. `/home/username/` or `/Users/username/`).
+   - Never commit absolute local filesystem paths (e.g. `<home>/<username>/` or `<Users>/<username>/`).
 2. **No Secret Leaks**:
    - Never commit private keys, API tokens, or passphrases.
    - Use RAM-backed filesystem mounts (`/dev/shm`) for temporary secret processing.

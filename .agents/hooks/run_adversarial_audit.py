@@ -5,32 +5,119 @@ Automated Adversarial Security & Quality Gate Audit Script.
 Scans current git diff for:
 1. Hardcoded absolute paths (/home/username, /Users/username)
 2. Private keys, API tokens, credentials
-3. Python error swallowing (catch Exception without non-zero exit or logging to stderr)
-4. Raw hex color strings or hardcoded pixel font declarations in QML files
+3. Python error swallowing
+4. Raw hex color strings or hardcoded pixel font declarations in QML
 5. Forbidden branch commits (main, master, staging)
 """
 
-import sys
+from pathlib import Path
 import re
 import subprocess
-from pathlib import Path
+import sys
 
-HOME_PATH_PATTERN = re.compile(r'/home/[a-zA-Z0-9_-]+/')
-USERS_PATH_PATTERN = re.compile(r'/Users/[a-zA-Z0-9_-]+/')
+HOME_PATH_PATTERN = re.compile(r"/home/[a-zA-Z0-9_-]+/")
+USERS_PATH_PATTERN = re.compile(r"/Users/[a-zA-Z0-9_-]+/")
 SECRET_PATTERNS = [
-    re.compile(r'-----BEGIN (?:RSA|OPENSSH|DSA|EC|PGP) PRIVATE KEY-----'),
-    re.compile(r'AIzaSy[A-Za-z0-9_-]{33}'),
-    re.compile(r'ghp_[A-Za-z0-9]{36}'),
-    re.compile(r'glpat-[A-Za-z0-9_-]{20}')
+    re.compile(r"-----BEGIN (?:RSA|OPENSSH|DSA|EC|PGP) PRIVATE KEY-----"),
+    re.compile(r"AIzaSy[A-Za-z0-9_-]{33}"),
+    re.compile(r"ghp_[A-Za-z0-9]{36}"),
+    re.compile(r"glpat-[A-Za-z0-9_-]{20}"),
 ]
-HEX_COLOR_PATTERN = re.compile(r'#(?:[0-9a-fA-F]{3}){1,2}\b')
+HEX_COLOR_PATTERN = re.compile(r"#(?:[0-9a-fA-F]{3}){1,2}\b")
+
 
 def get_git_diff_files():
-    result = subprocess.run(["git", "diff", "--name-only", "HEAD"], capture_output=True, text=True)
+    result = subprocess.run(
+        ["git", "diff", "--name-only", "HEAD"],
+        capture_output=True,
+        text=True,
+    )
     if result.returncode != 0:
-        # Fallback to cached or working tree diff
-        result = subprocess.run(["git", "diff", "--cached", "--name-only"], capture_output=True, text=True)
+        result = subprocess.run(
+            ["git", "diff", "--cached", "--name-only"],
+            capture_output=True,
+            text=True,
+        )
     return [f.strip() for f in result.stdout.splitlines() if f.strip()]
+
+
+def _check_line_patterns(filepath, idx, line, content, errors):
+    m_home = HOME_PATH_PATTERN.search(line)
+    m_user = USERS_PATH_PATTERN.search(line)
+    if (m_home or m_user) and "AGENTS.md" not in filepath:
+        if not filepath.endswith(".md"):
+            errors.append(f"❌ [ABSOLUTE PATH] {filepath}:{idx}: {line.strip()}")
+
+    for pat in SECRET_PATTERNS:
+        if pat.search(line):
+            errors.append(f"❌ [SECRET DETECTED] {filepath}:{idx}")
+
+    if filepath.endswith(".py"):
+        c1 = "except Exception as e:" in line
+        c2 = "except Exception:" in line
+        if c1 or c2:
+            w_start = max(0, idx - 1)
+            w_end = min(len(content), idx + 5)
+            window = "".join(content[w_start:w_end])
+            has_exit = "sys.exit" in window or "file=sys.stderr" in window
+            if not has_exit:
+                errors.append(
+                    f"⚠️ [PYTHON ERROR SWALLOWING] {filepath}:{idx}: "
+                    "Exception caught without sys.exit or stderr output."
+                )
+
+    if filepath.endswith(".qml") and "Theme.qml" not in filepath:
+        if HEX_COLOR_PATTERN.search(line):
+            errors.append(
+                f"⚠️ [QML HARDCODED HEX COLOR] {filepath}:{idx}: "
+                f"{line.strip()} (Use Theme.colors instead)"
+            )
+
+
+def _check_architectural_limits(files, errors):
+    interface_prefixes = ["griffin/interface/", "interface/http/", "endpoints/"]
+    interface_files = [f for f in files if any(p in f for p in interface_prefixes)]
+    api_doc_files = [f for f in files if "docs/api_documentation.json" in f or "openapi" in f.lower()]
+    if interface_files and not api_doc_files:
+        errors.append(
+            f"❌ [API DOC DESYNC] Interface files modified "
+            f"({len(interface_files)} files) but docs/api_documentation.json "
+            "was not updated!"
+        )
+
+    vendor_prefixes = ["software/sdk/", "vendor/", "third_party/"]
+    vendor_files = [f for f in files if any(f.startswith(vp) for vp in vendor_prefixes)]
+    if vendor_files:
+        errors.append(
+            f"❌ [VENDOR SDK MODIFIED] {len(vendor_files)} vendor files "
+            f"modified (e.g. {vendor_files[0]}). Vendor code must remain untouched!"
+        )
+
+    if len(files) > 50:
+        errors.append(
+            f"⚠️ [EXCESSIVE DIFF] Total modified file count ({len(files)}) "
+            "exceeds PR scope threshold (50 files)."
+        )
+
+
+def _audit_single_file(filepath, errors):
+    path = Path(filepath)
+    if not path.exists() or path.is_dir():
+        return
+
+    skip_files = ["block-absolute-paths.py", "run_adversarial_audit.py"]
+    if any(sf in filepath for sf in skip_files):
+        return
+
+    try:
+        with open(path, "r", encoding="utf-8", errors="ignore") as f:
+            content = f.readlines()
+
+        for idx, line in enumerate(content, 1):
+            _check_line_patterns(filepath, idx, line, content, errors)
+    except Exception:
+        pass
+
 
 def audit_diff():
     files = get_git_diff_files()
@@ -42,66 +129,26 @@ def audit_diff():
     print(f"==> Running Adversarial Security & Quality Audit on {len(files)} modified files...")
 
     for filepath in files:
-        path = Path(filepath)
-        if not path.exists() or path.is_dir():
-            continue
+        _audit_single_file(filepath, errors)
 
-        # Skip hook scripts themselves and binary/log files
-        if "block-absolute-paths.py" in filepath or "run_adversarial_audit.py" in filepath:
-            continue
-
-        try:
-            with open(path, "r", encoding="utf-8", errors="ignore") as f:
-                content = f.readlines()
-
-            for idx, line in enumerate(content, 1):
-                # 1. Absolute path check
-                if HOME_PATH_PATTERN.search(line) or USERS_PATH_PATTERN.search(line):
-                    if "AGENTS.md" not in filepath and not filepath.endswith(".md"):
-                        errors.append(f"❌ [ABSOLUTE PATH] {filepath}:{idx}: {line.strip()}")
-
-                # 2. Secret check
-                for pat in SECRET_PATTERNS:
-                    if pat.search(line):
-                        errors.append(f"❌ [SECRET DETECTED] {filepath}:{idx}")
-
-                # 3. Python exception handling check
-                if filepath.endswith(".py"):
-                    if "except Exception as e:" in line or "except Exception:" in line:
-                        # Check surrounding lines for exit/stderr
-                        window = "".join(content[max(0, idx-1):min(len(content), idx+5)])
-                        if "sys.exit" not in window and "file=sys.stderr" not in window:
-                            errors.append(f"⚠️ [PYTHON ERROR SWALLOWING] {filepath}:{idx}: Exception caught without sys.exit or stderr output.")
-
-                # 4. QML Theme Singleton check
-                if filepath.endswith(".qml") and "Theme.qml" not in filepath:
-                    if HEX_COLOR_PATTERN.search(line):
-                        errors.append(f"⚠️ [QML HARDCODED HEX COLOR] {filepath}:{idx}: {line.strip()} (Use Theme.colors instead)")
-
-        except Exception as e:
-            pass
-
-    # 5. API Documentation Sync Check (e.g. for opinicus or API repositories)
-    interface_files = [f for f in files if "griffin/interface/" in f or "interface/http/" in f or "endpoints/" in f]
-    api_doc_files = [f for f in files if "docs/api_documentation.json" in f or "openapi" in f.lower()]
-    if interface_files and not api_doc_files:
-        errors.append(f"❌ [API DOC DESYNC] Interface/endpoint files modified ({len(interface_files)} files) but docs/api_documentation.json was not updated!")
+    _check_architectural_limits(files, errors)
 
     if errors:
-        print("\n==========================================================================")
+        print("\n" + "=" * 74)
         print("🚨 ADVERSARIAL AUDIT FINDINGS (Fix these before submitting PR):")
-        print("==========================================================================")
+        print("=" * 74)
         for err in errors:
             print(err)
-        print("==========================================================================\n")
-        # Return non-zero if critical security errors are found
-        critical_errors = [e for e in errors if "ABSOLUTE PATH" in e or "SECRET DETECTED" in e or "API DOC DESYNC" in e]
+        print("=" * 74 + "\n")
+        crit_keys = ["ABSOLUTE PATH", "SECRET DETECTED", "API DOC DESYNC", "VENDOR SDK MODIFIED"]
+        critical_errors = [e for e in errors if any(ck in e for ck in crit_keys)]
         if critical_errors:
-            print("❌ Critical security findings must be resolved before PR creation.")
+            print("❌ Critical security findings must be resolved.")
             return 1
 
     print("✅ Adversarial Security & Quality Audit Passed Cleanly!")
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(audit_diff())

@@ -16,6 +16,11 @@
         "type": "command",
         "bash": "python3 ./.agents/hooks/git-branch-guard.py",
         "timeoutSec": 15
+      },
+      {
+        "type": "command",
+        "bash": "python3 ./.agents/hooks/check-relevant-scope.py",
+        "timeoutSec": 15
       }
     ],
     "postToolUse": [

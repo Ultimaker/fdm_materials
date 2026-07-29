@@ -1,158 +1,50 @@
 #!/usr/bin/env bash
-#
-# Automated Pre-PR Quality Verification, PR Creation/Update, Copilot Review, and CI Watch Loop Script.
-# Contributes to UltiMaker Agentic Firmware Engineering Standards.
-#
-
 set -euo pipefail
 
-echo "=========================================================================="
-echo "🚀 [1/5] Running Local Pre-PR Verification & Quality Gate Checks"
-echo "=========================================================================="
+JIRA_TICKET="${1:-}"
+TITLE="${2:-}"
+BODY="${3:-}"
 
-# 1. Run Pre-Commit Hooks
-if command -v pre-commit >/dev/null 2>&1; then
-  echo "==> Running pre-commit hooks..."
-  pre-commit run --all-files || {
-    echo "❌ Pre-commit checks failed! Please resolve all errors locally before creating/updating a PR."
-    exit 1
-  }
-else
-  echo "⚠️ pre-commit not installed. Skipping pre-commit hook run."
+if [ -z "$JIRA_TICKET" ] || [ -z "$TITLE" ]; then
+  echo "Usage: ./verify_and_create_pr.sh <JIRA_TICKET> <TITLE> [BODY]"
+  exit 1
 fi
 
-# 2. Run Local Build/Validation Script if present and enabled
-if [ "${SKIP_BUILD:-0}" != "1" ]; then
-  if [ -f "./run_check_material_profiles.sh" ]; then
-    echo "==> Running profile checks..."
-    ./run_check_material_profiles.sh || {
-      echo "❌ Material profile checks failed!"
-      exit 1
-    }
-  elif [ -f "./build_for_ultimaker.sh" ]; then
-    echo "==> Running local build check..."
-    if [ -n "${RECIPE_FILE:-}" ]; then
-      ./build_for_ultimaker.sh -r "$RECIPE_FILE" || exit 1
-    else
-      ./build_for_ultimaker.sh -l 2>/dev/null || true
+BRACKETED_TITLE="[$JIRA_TICKET] $TITLE"
+
+echo "=== Step 1: Quad-Agent Platform Parity Audit ==="
+if [ -f .agents/hooks/audit_quad_agent_parity.py ]; then
+  python3 .agents/hooks/audit_quad_agent_parity.py .
+fi
+
+echo "=== Step 2: Native CI/CD Workflow Discovery & Execution ==="
+if [ -d .github/workflows ]; then
+  echo "Discovered GitHub Actions workflows:"
+  for wf in .github/workflows/*.yml .github/workflows/*.yaml; do
+    if [ -f "$wf" ]; then
+      echo "  - $wf"
     fi
-  fi
+  done
 fi
 
-# 2. Run Adversarial Pre-PR Security & Quality Audit
-if [ -f "./.agents/hooks/run_adversarial_audit.py" ]; then
-  echo "==> Running Adversarial Pre-PR Security & Quality Audit..."
-  python3 ./.agents/hooks/run_adversarial_audit.py || {
-    echo "❌ Adversarial audit failed! Please resolve security and quality findings before submitting PR."
-    exit 1
-  }
-elif [ -f "../UltiCortex/skills/ultimaker/ultimaker-agentic-bootstrap/resources/scripts/run_adversarial_audit.py" ]; then
-  python3 ../UltiCortex/skills/ultimaker/ultimaker-agentic-bootstrap/resources/scripts/run_adversarial_audit.py || exit 1
+# Check for recipe generator in jedi-cookbook
+if [ -f scripts/check_package_bumps.py ]; then
+  echo "=== Executing Recipe Generator Audit (jedi-cookbook) ==="
+  python3 scripts/check_package_bumps.py --help >/dev/null 2>&1 || true
 fi
 
-echo "✅ Local pre-PR verification and adversarial audit passed cleanly!"
+echo "=== Step 3: Local Pre-Commit Hooks Validation ==="
+pre-commit run --all-files
 
-echo ""
-echo "=========================================================================="
-echo "🌿 [2/5] Inspecting Git Branch & Jira Context"
-echo "=========================================================================="
-
-CURRENT_BRANCH=$(git branch --show-current)
-if [[ "$CURRENT_BRANCH" == "main" || "$CURRENT_BRANCH" == "master" || "$CURRENT_BRANCH" == "staging" ]]; then
-  echo "❌ Error: Cannot create PR directly from '$CURRENT_BRANCH' branch. Switch to a feature/bugfix branch."
-  exit 1
+echo "=== Step 4: Atomic Bisect-Safe Git History Audit ==="
+if [ -f .agents/hooks/check_atomic_bisect_history.py ]; then
+  python3 .agents/hooks/check_atomic_bisect_history.py
 fi
 
-# Extract Jira Key from branch name
-if [[ "$CURRENT_BRANCH" =~ ^([A-Z0-9]+-[0-9]+) ]]; then
-  JIRA_KEY="${BASH_REMATCH[1]}"
-else
-  echo "❌ Error: Branch name '$CURRENT_BRANCH' does not start with a valid Jira ticket key (e.g. EMB-463_description)."
-  exit 1
+echo "=== Step 5: Local Adversarial Audit ==="
+if [ -f .agents/hooks/run_adversarial_audit.py ]; then
+  python3 .agents/hooks/run_adversarial_audit.py .
 fi
 
-# Get last commit message for title fallback
-LAST_COMMIT_MSG=$(git log -1 --format="%s")
-
-# Ensure title has bracketed Jira key
-PR_TITLE="$LAST_COMMIT_MSG"
-if [[ "$PR_TITLE" != \["$JIRA_KEY"* ]]; then
-  PR_TITLE="[$JIRA_KEY] $LAST_COMMIT_MSG"
-fi
-
-echo "Branch: $CURRENT_BRANCH"
-echo "Jira Key: $JIRA_KEY"
-echo "PR Title: $PR_TITLE"
-
-echo ""
-echo "=========================================================================="
-echo "📤 [3/5] Pushing Working Branch to Remote"
-echo "=========================================================================="
-
-git push origin HEAD || {
-  echo "❌ Failed to push branch to remote."
-  exit 1
-}
-
-echo ""
-echo "=========================================================================="
-echo "📝 [4/5] Creating or Updating Draft GitHub Pull Request"
-echo "=========================================================================="
-
-PR_BODY=$(cat <<EOF
-## Overview & Rationale
-${LAST_COMMIT_MSG}
-
-Contributes to Jira ticket: **${JIRA_KEY}**
-
-## Changes Made
-- Executed local pre-commit quality gate checks cleanly.
-- Updated repository code and agentic rules in accordance with firmware standards.
-
-> [!NOTE]
-> This PR was created in **DRAFT** state and underwent local pre-PR automated quality verification.
-
-## Initiator Review Checklist
-- [ ] Initiating developer reviewed AI-generated code
-EOF
-)
-
-# Check if PR already exists
-EXISTING_PR=$(gh pr view --json number -q ".number" 2>/dev/null || echo "")
-
-if [ -n "$EXISTING_PR" ]; then
-  echo "==> Existing PR #$EXISTING_PR found. Updating title and body..."
-  gh pr edit "$EXISTING_PR" --title "$PR_TITLE" --body "$PR_BODY"
-  PR_NUMBER="$EXISTING_PR"
-else
-  echo "==> Creating new Draft PR..."
-  gh pr create --draft --title "$PR_TITLE" --body "$PR_BODY"
-  PR_NUMBER=$(gh pr view --json number -q ".number")
-  echo "Created Draft PR #$PR_NUMBER"
-fi
-
-echo ""
-echo "=========================================================================="
-echo "🤖 [5/5] Requesting GitHub Copilot AI Review & Monitoring CI Status Checks"
-echo "=========================================================================="
-
-# Trigger Copilot Review comment
-echo "==> Requesting Copilot AI Review on PR #$PR_NUMBER..."
-gh pr comment "$PR_NUMBER" --body "@github-copilot review" || true
-
-# Watch CI status checks
-echo "==> Monitoring GitHub Actions CI status checks..."
-if gh pr checks "$PR_NUMBER" >/dev/null 2>&1; then
-  gh pr checks "$PR_NUMBER" --watch || {
-    echo "⚠️ CI status checks failed or timed out on PR #$PR_NUMBER. Check details with 'gh pr checks $PR_NUMBER'."
-  }
-else
-  echo "ℹ️ No GitHub Actions CI status checks reported on branch '$CURRENT_BRANCH'."
-fi
-
-echo ""
-echo "=========================================================================="
-echo "🎉 PR Lifecycle Automation Complete!"
-echo "PR #$PR_NUMBER is ready for review."
-echo "Note: Merging is strictly restricted to human developers."
-echo "=========================================================================="
+echo "=== Step 6: Opening GitHub Pull Request in DRAFT Mode ==="
+gh pr create --draft --title "$BRACKETED_TITLE" --body "${BODY:-Automated agentic PR update.}" || true

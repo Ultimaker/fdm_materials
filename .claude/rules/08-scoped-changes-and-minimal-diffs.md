@@ -1,0 +1,1 @@
+../../.agents/rules/08-scoped-changes-and-minimal-diffs.md

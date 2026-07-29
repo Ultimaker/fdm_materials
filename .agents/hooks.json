@@ -18,6 +18,11 @@
             "type": "command",
             "command": "python3 .agents/hooks/git-branch-guard.py",
             "timeout": 15
+          },
+          {
+            "type": "command",
+            "command": "python3 .agents/hooks/check-relevant-scope.py",
+            "timeout": 15
           }
         ]
       }
