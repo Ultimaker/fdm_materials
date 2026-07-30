@@ -1,4 +1,5 @@
 fileignoreconfig:
+<<<<<<< HEAD
 - filename: .agents/rules/01-jira-commit-standards.md
   checksum: 09b6dffcd798f8c6dcd2431b8e7e1e4db48e8a9ee2505a780960df846fa47a69
 - filename: .agents/rules/02-security-and-paths.md
@@ -73,4 +74,14 @@ fileignoreconfig:
   checksum: 3c4e1faadc8cd9778eaf3f73b16d9bbc8d0f04fb4d6fec6da631c31d92fafe28
 - filename: .agents/rules/07-owasp-iot-and-api-security-rules.md
   checksum: d14b84192b9c65a5ae66fd72716b308afb43b68dcfbc256abb3133ccae846b85
+=======
+- filename: .github/copilot-instructions/accessibility-auditor.instructions.md
+  checksum: 4be22534565776b8d839cc56bd51c1adbbd20c5d403f86f144265590722fded4
+- filename: .github/copilot-instructions.md
+  checksum: 20428b6fed8c2841ccf4490d7a86c5fcbbd666c5d2f9e0309b99b5309eb085c2
+- filename: .github/copilot-instructions/pr-assistant.instructions.md
+  checksum: 8c14187b50f272143a605ff66e7d9b9903ff5f136cada339b0c0d887e17ae955
+- filename: AGENTS.md
+  checksum: cd08590737070f4557375e48d8e9769192d4e922e4cc7558f2d416be0a765f9f
+>>>>>>> origin/UC-3697_platform_emulation_and_seeding
 version: ""

@@ -6,12 +6,29 @@
         "hooks": [
           {
             "type": "command",
+<<<<<<< HEAD
             "command": "python3 pretool_guard.py",
+=======
+            "command": "python3 .agents/hooks/block-absolute-paths.py",
+            "timeout": 15
+          },
+          {
+            "type": "command",
+            "command": "python3 .agents/hooks/block-secrets.py",
+            "timeout": 15
+          },
+          {
+            "type": "command",
+            "command": "python3 .agents/hooks/git-branch-guard.py",
+>>>>>>> origin/UC-3697_platform_emulation_and_seeding
             "timeout": 15
           }
         ]
       }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/UC-3697_platform_emulation_and_seeding
     ],
     "PostToolUse": [
       {
@@ -19,12 +36,20 @@
         "hooks": [
           {
             "type": "command",
+<<<<<<< HEAD
             "command": "bash post-edit-linter.sh",
             "timeout": 60
           }
         ]
       }
 
+=======
+            "command": "bash .agents/hooks/post-edit-linter.sh",
+            "timeout": 30
+          }
+        ]
+      }
+>>>>>>> origin/UC-3697_platform_emulation_and_seeding
     ]
   }
 }

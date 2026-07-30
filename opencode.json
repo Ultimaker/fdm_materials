@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "$schema": "https://opencode.ai/config.json",
   "instructions": [
     "AGENTS.md",
@@ -169,4 +170,11 @@
       "**/pii/**": "deny"
     }
   }
+=======
+  "$schema": "https://opencode.ai/schema/v1/config.json",
+  "instructions": [
+    "AGENTS.md",
+    ".opencode/rules/*.md"
+  ]
+>>>>>>> origin/UC-3697_platform_emulation_and_seeding
 }
