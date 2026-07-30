@@ -2,19 +2,14 @@
 set -euo pipefail
 
 # Ensure target directories exist
-<<<<<<< HEAD
 mkdir -p .claude/hooks .opencode .agents/hooks .github/hooks   .agents/rules .claude/rules .opencode/rules   .agents/agents .claude/agents .opencode/agents .github/agents
 
 # Clean up broken symlinks in rules
 find .claude/rules/ .opencode/rules/ -xtype l -delete 2>/dev/null || true
-=======
-mkdir -p .claude/hooks .opencode .agents/hooks .github/hooks .agents/rules .claude/rules .opencode/rules
->>>>>>> origin/UC-3697_platform_emulation_and_seeding
 
 # Copy hook configs across platforms
 cp -f .agents/hooks.json .claude/hooks.json 2>/dev/null || true
 
-<<<<<<< HEAD
 # Symlink AGENTS.md for platforms expecting CLAUDE.md.
 # Never clobber a real CLAUDE.md, and never touch the inverse layout where
 # AGENTS.md is itself a symlink to CLAUDE.md (ln -sf would fail, and under
@@ -56,11 +51,6 @@ fi
 # Recompile AI exclusion targets from .aiignore (no platform reads it directly)
 if [ -f .aiignore ] && [ -f .agents/hooks/compile_aiignore.py ]; then
   python3 .agents/hooks/compile_aiignore.py || true
-=======
-# Symlink AGENTS.md for platforms expecting CLAUDE.md
-if [ -f AGENTS.md ]; then
-  ln -sf AGENTS.md CLAUDE.md
->>>>>>> origin/UC-3697_platform_emulation_and_seeding
 fi
 
 echo "Synced Quad-Agent configurations and rule structures successfully."
