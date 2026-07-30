@@ -28,7 +28,7 @@ deserves to become a rule, and what the rule should actually say.
 
 **Evidence**
 
-- median 1 files per commit, 90th percentile 21
+- median 1 files per commit, 90th percentile 28
 
 **Question to reason about**
 
@@ -36,7 +36,7 @@ Should the scope rule name a concrete file-count expectation derived from this r
 
 **Draft rule (needs review and placeholder resolution)**
 
-> Keep commits tightly scoped: this repository's median commit touches 1 files. A commit touching more than 21 files needs an explicit justification in the message.
+> Keep commits tightly scoped: this repository's median commit touches 1 files. A commit touching more than 28 files needs an explicit justification in the message.
 
 ---
 
@@ -46,8 +46,8 @@ Should the scope rule name a concrete file-count expectation derived from this r
 
 **Evidence**
 
-- 124/300 sampled commits are merges (mostly pull request merges)
-- `Merge pull request`: 84, `Merge branch`: 29
+- 123/300 sampled commits are merges (mostly pull request merges)
+- `Merge pull request`: 83, `Merge branch`: 29
 
 **Question to reason about**
 

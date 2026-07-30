@@ -14,3 +14,6 @@ description: Build, test, and deployment verification commands detected for this
    - (no test runner detected — add one and re-run bootstrap --update)
 3. **Artifact Isolation**:
    - Keep generated build outputs, intermediate binaries, and logs out of git. Ensure `.env` and `.env.local` files remain strictly gitignored.
+4. **Firmware Docker Container Testing Mandate**:
+   - Firmware repositories (`opinicus`, `okuda`, `jedi-build`, `jedi-cookbook`, `stardust-embedded`, `ultimoco`, `fdm_materials`) target ARM embedded Linux devices. Unit and integration tests MUST be executed inside official Docker build containers (`./build_for_ultimaker.sh` or `docker run ...` with container mounts) and NEVER directly on host x86 development environments.
+   - All tests must pass cleanly inside Docker before committing or opening pull requests.

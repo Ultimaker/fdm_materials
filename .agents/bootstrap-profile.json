@@ -12,7 +12,7 @@
   "git": {
     "commits_sampled": 200,
     "jira_keys": {
-      "UC": 9,
+      "UC": 10,
       "PP": 7,
       "EMB": 1,
       "SEM": 1,
@@ -137,10 +137,10 @@
       "category": "commit-style",
       "title": "Commits are small and tightly scoped",
       "evidence": [
-        "median 1 files per commit, 90th percentile 21"
+        "median 1 files per commit, 90th percentile 28"
       ],
       "question": "Should the scope rule name a concrete file-count expectation derived from this repository's own history?",
-      "draft_rule": "Keep commits tightly scoped: this repository's median commit touches 1 files. A commit touching more than 21 files needs an explicit justification in the message.",
+      "draft_rule": "Keep commits tightly scoped: this repository's median commit touches 1 files. A commit touching more than 28 files needs an explicit justification in the message.",
       "confidence": "medium",
       "data": {}
     },
@@ -148,8 +148,8 @@
       "category": "git-workflow",
       "title": "History keeps merge commits",
       "evidence": [
-        "124/300 sampled commits are merges (mostly pull request merges)",
-        "`Merge pull request`: 84, `Merge branch`: 29"
+        "123/300 sampled commits are merges (mostly pull request merges)",
+        "`Merge pull request`: 83, `Merge branch`: 29"
       ],
       "question": "Is the merge commit intentional (preserving branch topology), and should agents therefore NOT rebase published branches?",
       "draft_rule": "This repository preserves merge topology. Do not rewrite or rebase branches that have already been pushed; integrate with merges.",
