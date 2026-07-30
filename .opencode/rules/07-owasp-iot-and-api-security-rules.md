@@ -1,1 +1,0 @@
-../../.agents/rules/07-owasp-iot-and-api-security-rules.md

@@ -1,0 +1,1 @@
+../../.agents/rules/11-skill-cmake.md

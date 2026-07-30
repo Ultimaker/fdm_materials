@@ -1,0 +1,1 @@
+../../.agents/rules/03-python-conventions-rules.md

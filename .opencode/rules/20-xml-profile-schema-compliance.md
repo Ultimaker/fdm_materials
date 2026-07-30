@@ -1,0 +1,1 @@
+../../.agents/rules/20-xml-profile-schema-compliance.md

@@ -4,31 +4,18 @@
     "preToolUse": [
       {
         "type": "command",
-        "bash": "python3 ./.agents/hooks/block-absolute-paths.py",
-        "timeoutSec": 15
-      },
-      {
-        "type": "command",
-        "bash": "python3 ./.agents/hooks/block-secrets.py",
-        "timeoutSec": 15
-      },
-      {
-        "type": "command",
-        "bash": "python3 ./.agents/hooks/git-branch-guard.py",
-        "timeoutSec": 15
-      },
-      {
-        "type": "command",
-        "bash": "python3 ./.agents/hooks/check-relevant-scope.py",
+        "bash": "python3 ./.agents/hooks/pretool_guard.py",
         "timeoutSec": 15
       }
+
     ],
     "postToolUse": [
       {
         "type": "command",
         "bash": "bash ./.agents/hooks/post-edit-linter.sh",
-        "timeoutSec": 30
+        "timeoutSec": 60
       }
+
     ]
   }
 }

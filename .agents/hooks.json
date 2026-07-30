@@ -6,26 +6,12 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 .agents/hooks/block-absolute-paths.py",
-            "timeout": 15
-          },
-          {
-            "type": "command",
-            "command": "python3 .agents/hooks/block-secrets.py",
-            "timeout": 15
-          },
-          {
-            "type": "command",
-            "command": "python3 .agents/hooks/git-branch-guard.py",
-            "timeout": 15
-          },
-          {
-            "type": "command",
-            "command": "python3 .agents/hooks/check-relevant-scope.py",
+            "command": "python3 pretool_guard.py",
             "timeout": 15
           }
         ]
       }
+
     ],
     "PostToolUse": [
       {
@@ -33,11 +19,12 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash .agents/hooks/post-edit-linter.sh",
-            "timeout": 30
+            "command": "bash post-edit-linter.sh",
+            "timeout": 60
           }
         ]
       }
+
     ]
   }
 }

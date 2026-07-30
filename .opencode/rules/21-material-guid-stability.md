@@ -1,0 +1,1 @@
+../../.agents/rules/21-material-guid-stability.md

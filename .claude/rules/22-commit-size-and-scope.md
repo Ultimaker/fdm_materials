@@ -1,0 +1,1 @@
+../../.agents/rules/22-commit-size-and-scope.md

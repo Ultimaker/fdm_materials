@@ -1,0 +1,1 @@
+../../.agents/rules/23-merge-commit-topology.md

@@ -120,6 +120,13 @@ def _audit_single_file(filepath, errors):
 
 
 def audit_diff():
+    # Execute security downgrade check hook if present
+    sec_hook = Path(__file__).parent / "check_security_downgrades.py"
+    if sec_hook.exists():
+        res = subprocess.run([sys.executable, str(sec_hook)])
+        if res.returncode != 0:
+            return 1
+
     files = get_git_diff_files()
     if not files:
         print("==> Adversarial Audit: No modified files detected in git diff.")

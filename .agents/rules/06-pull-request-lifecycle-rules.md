@@ -1,23 +1,23 @@
 ---
-description: Mandatory pre-PR local verification, PR description structure, Copilot review request, and CI status check watch loop.
+description: Pull request lifecycle rules, draft PR policy, PR template enforcement, and review workflows.
 ---
-# Pull Request Lifecycle & Quality Gate Policy
+# Pull Request Lifecycle Rules
 
-1. **Mandatory Local Pre-PR Verification**:
-   - Run local verification checks (`pre-commit run --all-files`, `./build_for_ultimaker.sh`, unit tests) before creating or updating any PR.
-2. **Mandatory Adversarial Pre-PR Self-Audit**:
-   - Before proposing or pushing any PR, the AI agent MUST execute a self-adversarial security and compliance audit on `git diff`:
-     - **Security & Paths**: Verify zero hardcoded absolute user paths (`<home>/<username>/`, `<Users>/<username>/`) and zero committed secrets.
-     - **Error Handling**: Verify Python scripts catch exceptions cleanly, log to `sys.stderr`, and exit with non-zero exit codes (`sys.exit(1)`).
-     - **Design Parity**: Verify QML visual changes strictly reference `Theme.qml` singletons (`Theme.colors`, `Theme.margins`, `Theme.sizes`, `Theme.fonts`) without hardcoded raw hex color strings or magic integers.
-     - **Pre-commit Cleanliness**: Ensure `pre-commit run --all-files` passes 100% cleanly without bypasses or skipped hooks.
-3. **Pull Request Creation & Description Standards**:
-   - All PRs MUST be created in **DRAFT** state (`gh pr create --draft`).
-   - Title MUST start with bracketed Jira ticket key: `[PROJECT-KEY] <Descriptive Title>`.
-   - Description MUST include active Jira issue link, changes overview, support warning block if applicable, and empty human reviewer checklist:
-     `- [ ] Initiating developer reviewed AI-generated code`
-4. **Copilot AI Review & CI Watch Loop**:
-   - Request Copilot AI review on PR (`gh pr comment <PR> --body "@github-copilot review"`).
-   - Monitor CI status checks (`gh pr checks <PR> --watch`).
-5. **Human Merge Policy**:
-   - Merging is strictly restricted to human developers. AI agents MUST NOT merge PRs.
+1. **Pre-PR Verification & Gate**: Run `scripts/verify_and_create_pr.sh` (pre-commit + orientation check + adversarial audit) before creating or updating any PR.
+2. **Draft PR Policy**: Always open PRs in **DRAFT** state (`gh pr create --draft`). Merging is strictly restricted to human developers; AI agents must never auto-merge.
+3. **Mandatory PR Template & Comprehensive Description**:
+   - Every PR description **MUST** strictly follow the repository's PR template (located at `.github/PULL_REQUEST_TEMPLATE.md` or `.github/workflows/PULL_REQUEST_TEMPLATE.md`) and answer the core review questions:
+     - **Why**: The problem, user request, Jira ticket (`[UC-XXXX]`), and business context driving the change.
+     - **What**: High-level overview of introduced changes.
+     - **How**: Architecture decisions, implementation details, and modified modules.
+     - **Verification & Validation (V&V)**: Empirical test results (unit tests, integration tests, E2E checks, and visual screenshots/recordings for UI changes).
+     - **PR Checklist**: Human reviewer checklist (`- [ ] Initiating developer reviewed AI-generated code`).
+   - Vague, brief, or 1-sentence PR descriptions are strictly prohibited.
+4. **Empirical Proof Mandate**: Verification is ONLY valid when concrete empirical proof (a DOM text snapshot, test execution log, or screenshot uploaded via `gh image` attached to the walkthrough and PR body) is delivered. Agents must NEVER claim a UI feature or fix is verified without delivering empirical proof.
+5. **Updating Existing PRs on Follow-up Commits**:
+   - When pushing follow-up commits to an active branch with an existing Pull Request, agents **MUST** inspect the existing PR (`gh pr view` or `gh pr list --head <branch>`).
+   - If the new commits add new scope, alter architecture (**How**), or require updated testing/screenshots (**V&V**), run `gh pr edit <PR_NUMBER> --body-file <updated_template>` to update the PR description so it always reflects the current state of the branch.
+6. **CI Watch Loop**: After creating or updating a PR, actively monitor status checks (`gh pr checks <PR> --watch`) and fix any linter or test failures immediately before handing off to human review.
+7. **Upstream Base Branch Alignment**:
+   - Before staging changes, opening PRs, or pushing follow-up commits, agents **MUST** ensure the local feature branch is completely up-to-date with its base branch (`origin/staging`, `origin/main`, or `origin/master`).
+   - Run `git fetch origin` and `git rebase origin/<base_branch>` (or use `/sync-base` command) to resolve any upstream changes or conflicts before proposing PR updates.

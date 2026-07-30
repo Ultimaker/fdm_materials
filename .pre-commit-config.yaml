@@ -1,5 +1,5 @@
 default_stages: [pre-commit]
-exclude: "^(software/.*|vendor/.*|third_party/.*|griffin/machines/.*|build/.*)"
+exclude: "^(software/.*|vendor/.*|third_party/.*|build/.*|node_modules/)"
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
@@ -20,35 +20,63 @@ repos:
       - id: talisman-commit
         entry: talisman --githook pre-commit
 
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.1.1
+    hooks:
+      - id: flake8
+
   - repo: local
     hooks:
+
       - id: block-absolute-paths
         name: Block absolute local path references
         entry: python3 .agents/hooks/block-absolute-paths.py
         language: system
         types_or: [text]
 
-      - id: check-antigravity-api-keys
+      - id: block-secrets
         name: Detect hardcoded API keys and credentials
         entry: python3 .agents/hooks/block-secrets.py
         language: system
         types_or: [text]
 
-      - id: check-api-doc-sync
-        name: Check API Documentation Synchronization
-        entry: python3 .agents/hooks/check-api-doc-sync.py
+      - id: git-branch-guard
+        name: Refuse commits on protected branches
+        entry: python3 .agents/hooks/git-branch-guard.py
         language: system
-        types_or: [python, json]
+        types_or: [text]
 
       - id: check-relevant-scope
-        name: Check Relevant Scope and Block Scope Creep
+        name: Check relevant scope and block scope creep
         entry: python3 .agents/hooks/check-relevant-scope.py
         language: system
         types_or: [text]
 
+      - id: check-aiignore-sync
+        name: Verify AI exclusion targets match .aiignore
+        entry: python3 .agents/hooks/compile_aiignore.py --check
+        language: system
+        pass_filenames: false
+        types_or: [text]
+
+      - id: check-file-size-budget
+        name: Enforce file size budget and grandfathering ratchet
+        entry: python3 .agents/hooks/check_file_size_budget.py --staged
+        language: system
+        pass_filenames: false
+        types_or: [text]
+
+      - id: check-complexity-budget
+        name: Enforce cyclomatic complexity budget on changed code
+        entry: python3 .agents/hooks/check_complexity.py --staged
+        language: system
+        pass_filenames: false
+        types_or: [text]
+
       - id: check-atomic-bisect-history
-        name: Validate Atomic Bisect-Safe Commit History
+        name: Validate atomic bisect-safe commit history
         entry: python3 .agents/hooks/check_atomic_bisect_history.py
         language: system
+        pass_filenames: false
         stages: [pre-push]
         types_or: [text]
