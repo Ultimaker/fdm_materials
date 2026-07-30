@@ -2,23 +2,87 @@
   "hooks": {
     "PreToolUse": [
       {
-        "type": "command",
-        "command": "python3 .agents/hooks/block-absolute-paths.py"
-      },
-      {
-        "type": "command",
-        "command": "python3 .agents/hooks/block-secrets.py"
-      },
-      {
-        "type": "command",
-        "command": "python3 .agents/hooks/git-branch-guard.py"
+        "matcher": "Bash|Write|Edit|MultiEdit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .agents/hooks/pretool_guard.py"
+          }
+        ]
       }
     ],
     "PostToolUse": [
       {
-        "type": "command",
-        "command": "bash .agents/hooks/post-edit-linter.sh"
+        "matcher": "Write|Edit|MultiEdit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .agents/hooks/post-edit-linter.sh"
+          }
+        ]
       }
+    ]
+  },
+  "enabledPlugins": [
+    "pyright-lsp@claude-plugins-official"
+  ],
+  "claudeMdExcludes": [
+    "**/vendor/**",
+    "**/third_party/**"
+  ],
+  "permissions": {
+    "deny": [
+      "Read(./**/*.pem)",
+      "Read(./**/*.key)",
+      "Read(./**/*.p12)",
+      "Read(./**/*.pfx)",
+      "Read(./**/*.jks)",
+      "Read(./**/*.keystore)",
+      "Read(./**/id_rsa)",
+      "Read(./**/id_ecdsa)",
+      "Read(./**/id_ed25519)",
+      "Read(./**/*.gpg)",
+      "Read(./**/*.asc)",
+      "Read(./**/.env)",
+      "Read(./**/.env.*)",
+      "Read(./**/*.tfvars)",
+      "Read(./**/.netrc)",
+      "Read(./**/.npmrc)",
+      "Read(./**/credentials.json)",
+      "Read(./**/service-account*.json)",
+      "Read(./**/secrets/**)",
+      "Read(./**/vendor/**)",
+      "Read(./**/third_party/**)",
+      "Read(./**/node_modules/**)",
+      "Read(./**/build/**)",
+      "Read(./**/dist/**)",
+      "Read(./**/out/**)",
+      "Read(./**/target/**)",
+      "Read(./**/.venv/**)",
+      "Read(./**/venv/**)",
+      "Read(./**/__pycache__/**)",
+      "Read(./**/*.o)",
+      "Read(./**/*.a)",
+      "Read(./**/*.so)",
+      "Read(./**/*.dylib)",
+      "Read(./**/*.dll)",
+      "Read(./**/*.exe)",
+      "Read(./**/.mypy_cache/**)",
+      "Read(./**/.pytest_cache/**)",
+      "Read(./**/.ruff_cache/**)",
+      "Read(./**/*.stl)",
+      "Read(./**/*.3mf)",
+      "Read(./**/*.gcode)",
+      "Read(./**/*.ufp)",
+      "Read(./**/*.obj)",
+      "Read(./**/*.step)",
+      "Read(./**/*.stp)",
+      "Read(./**/uv.lock)",
+      "Read(./**/poetry.lock)",
+      "Read(./**/*.log)",
+      "Read(./**/logdump*/**)",
+      "Read(./**/customer-data/**)",
+      "Read(./**/pii/**)"
     ]
   }
 }

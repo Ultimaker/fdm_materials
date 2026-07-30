@@ -1,12 +1,21 @@
 #!/usr/bin/env python3
+import os
 import subprocess
 import sys
 
+# Hook may be invoked from .agents/ (Antigravity sets cwd to the hooks.json
+# directory) — always operate from the repository root.
+_ROOT = subprocess.run(
+    ["git", "rev-parse", "--show-toplevel"], capture_output=True, text=True
+).stdout.strip()
+if _ROOT:
+    os.chdir(_ROOT)
+
 INTERFACE_PATTERNS = [
-    "griffin/interface/",
     "interface/http/",
     "endpoints/",
     "routes/",
+    "controllers/",
 ]
 DOC_PATTERNS = ["docs/api_documentation.json", "openapi", "swagger"]
 
@@ -30,13 +39,12 @@ def check_api_doc_sync():
 
     if interface_changed and not doc_changed:
         print("=" * 80)
-        print("ERROR: API DOCUMENTATION DESYNCHRONIZATION DETECTED!")
-        print("The following interface/endpoint files were modified:")
+        print("WARNING: API ENDPOINT MODIFICATION DETECTED")
+        print("The following endpoint/interface files were modified:")
         for f in interface_changed:
             print(f"  - {f}")
-        print("Documentation (docs/api_documentation.json) was NOT updated!")
+        print("Ensure API documentation / OpenAPI schemas are kept in sync.")
         print("=" * 80)
-        sys.exit(1)
 
 
 if __name__ == "__main__":

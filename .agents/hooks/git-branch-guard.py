@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
+import os
 import subprocess
 import sys
+
+# Hook may be invoked from .agents/ (Antigravity sets cwd to the hooks.json
+# directory) — always operate from the repository root.
+_ROOT = subprocess.run(
+    ["git", "rev-parse", "--show-toplevel"], capture_output=True, text=True
+).stdout.strip()
+if _ROOT:
+    os.chdir(_ROOT)
 
 FORBIDDEN_BRANCHES = ["main", "master", "staging"]
 

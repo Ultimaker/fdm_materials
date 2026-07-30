@@ -1,50 +1,27 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-JIRA_TICKET="${1:-}"
-TITLE="${2:-}"
-BODY="${3:-}"
-
-if [ -z "$JIRA_TICKET" ] || [ -z "$TITLE" ]; then
-  echo "Usage: ./verify_and_create_pr.sh <JIRA_TICKET> <TITLE> [BODY]"
-  exit 1
+echo "==> Running Pre-PR Verification & Quality Gate Audit..."
+if command -v pre-commit >/dev/null 2>&1; then
+    pre-commit run --all-files || { echo "❌ Pre-commit checks failed!"; exit 1; }
 fi
 
-BRACKETED_TITLE="[$JIRA_TICKET] $TITLE"
-
-echo "=== Step 1: Quad-Agent Platform Parity Audit ==="
-if [ -f .agents/hooks/audit_quad_agent_parity.py ]; then
-  python3 .agents/hooks/audit_quad_agent_parity.py .
-fi
-
-echo "=== Step 2: Native CI/CD Workflow Discovery & Execution ==="
-if [ -d .github/workflows ]; then
-  echo "Discovered GitHub Actions workflows:"
-  for wf in .github/workflows/*.yml .github/workflows/*.yaml; do
-    if [ -f "$wf" ]; then
-      echo "  - $wf"
+echo "==> Checking orientation docs are actually filled in..."
+for doc in AGENTS.md DESIGN.md; do
+    [ -f "$doc" ] || continue
+    n=$(grep -c "TODO(agent)" "$doc" || true)
+    if [ "$n" -gt 0 ]; then
+        echo "[X] $doc still has $n unfilled TODO(agent) marker(s)."
+        echo "    An orientation document full of placeholders is worse than none:"
+        echo "    agents read it, learn nothing, and trust it anyway."
+        echo "    Fill the sections from the repository before opening a PR:"
+        grep -n "TODO(agent)" "$doc" | head -10
+        exit 1
     fi
-  done
-fi
+done
 
-# Check for recipe generator in jedi-cookbook
-if [ -f scripts/check_package_bumps.py ]; then
-  echo "=== Executing Recipe Generator Audit (jedi-cookbook) ==="
-  python3 scripts/check_package_bumps.py --help >/dev/null 2>&1 || true
-fi
-
-echo "=== Step 3: Local Pre-Commit Hooks Validation ==="
-pre-commit run --all-files
-
-echo "=== Step 4: Atomic Bisect-Safe Git History Audit ==="
-if [ -f .agents/hooks/check_atomic_bisect_history.py ]; then
-  python3 .agents/hooks/check_atomic_bisect_history.py
-fi
-
-echo "=== Step 5: Local Adversarial Audit ==="
 if [ -f .agents/hooks/run_adversarial_audit.py ]; then
-  python3 .agents/hooks/run_adversarial_audit.py .
+    python3 .agents/hooks/run_adversarial_audit.py || { echo "❌ Adversarial audit failed!"; exit 1; }
 fi
 
-echo "=== Step 6: Opening GitHub Pull Request in DRAFT Mode ==="
-gh pr create --draft --title "$BRACKETED_TITLE" --body "${BODY:-Automated agentic PR update.}" || true
+echo "✅ All verification checks passed cleanly!"

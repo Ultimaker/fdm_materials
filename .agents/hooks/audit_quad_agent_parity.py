@@ -1,93 +1,141 @@
 #!/usr/bin/env python3
 """
 audit_quad_agent_parity.py
-Audits a target repository for 100% Quad-Agent platform parity across:
-- Gemini / Antigravity (.agents/hooks.json)
-- Claude Code (.claude/settings.json & .claude/rules/)
-- GitHub Copilot (.github/hooks/copilot-hooks.json
-  & .github/copilot-instructions.md)
-- OpenCode (opencode.json & .opencode/rules/)
+
+Asserts that every hook a repository qualifies for is present in every platform
+rendering that supports hooks.
+
+The required set is derived from the generated configs themselves rather than
+hardcoded. A hardcoded list is how the previous version came to require six
+hooks while the bootstrap installed eleven — and the five it never checked were
+the five added most recently.
+
+Platform support, verified rather than assumed:
+  * Antigravity  .agents/hooks.json
+  * Claude Code  .claude/settings.json
+  * Copilot      .github/hooks/copilot-hooks.json
+  * OpenCode     has no command-hook mechanism, so it is checked for
+                 configuration presence only; its enforcement floor is
+                 pre-commit.
 """
 
-from pathlib import Path
+import json
 import sys
+from pathlib import Path
 
-REQUIRED_HOOK_SCRIPTS = [
-    "block-absolute-paths.py",
-    "block-secrets.py",
-    "git-branch-guard.py",
-    "post-edit-linter.sh",
-    "check-api-doc-sync.py",
-    "run_adversarial_audit.py",
-]
 
-REQUIRED_CONFIG_FILES = [
-    ".agents/hooks.json",
-    "opencode.json",
-    ".github/hooks/copilot-hooks.json",
-]
+def load_json(path: Path):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        print(f"[X] {path}: cannot be read ({exc})")
+        return None
+
+
+def script_name(command: str) -> str:
+    """Reduce a platform-specific command line to the hook script's basename."""
+    if not command:
+        return ""
+    return command.split()[-1].rsplit("/", 1)[-1]
+
+
+def antigravity_hooks(repo: Path):
+    data = load_json(repo / ".agents" / "hooks.json")
+    if data is None:
+        return None
+    names = set()
+    for group in data.values():
+        if not isinstance(group, dict):
+            continue
+        for entries in group.values():
+            for entry in entries:
+                for hook in entry.get("hooks", []):
+                    names.add(script_name(hook.get("command", "")))
+    return names - {""}
+
+
+def claude_hooks(repo: Path):
+    data = load_json(repo / ".claude" / "settings.json")
+    if data is None:
+        return None
+    names = set()
+    for blocks in (data.get("hooks") or {}).values():
+        for block in blocks:
+            for hook in block.get("hooks", []):
+                names.add(script_name(hook.get("command", "")))
+    return names - {""}
+
+
+def copilot_hooks(repo: Path):
+    data = load_json(repo / ".github" / "hooks" / "copilot-hooks.json")
+    if data is None:
+        return None
+    names = set()
+    for entries in (data.get("hooks") or {}).values():
+        for hook in entries:
+            names.add(script_name(hook.get("bash", "")))
+    return names - {""}
 
 
 def audit_parity(repo_path: Path) -> bool:
-    repo_path = repo_path.resolve()
-    print(f"==> Auditing Quad-Agent Parity in: {repo_path.name}")
+    repo = repo_path.resolve()
+    print(f"==> Auditing agent-platform parity in: {repo.name}")
     passed = True
 
-    # 1. Check Hook Scripts
-    hooks_dir = repo_path / ".agents" / "hooks"
-    if not hooks_dir.exists():
-        print("❌ [HOOKS DIR MISSING] .agents/hooks directory does not exist!")
-        passed = False
-    else:
-        for script in REQUIRED_HOOK_SCRIPTS:
-            script_file = hooks_dir / script
-            if not script_file.exists():
-                print(
-                    f"❌ [MISSING HOOK SCRIPT] .agents/hooks/{script} "
-                    f"is missing!"
-                )
-                passed = False
+    platforms = {
+        "Antigravity": antigravity_hooks(repo),
+        "Claude Code": claude_hooks(repo),
+        "Copilot": copilot_hooks(repo),
+    }
 
-    # 2. Check Platform Config Files
-    for cfg in REQUIRED_CONFIG_FILES:
-        cfg_file = repo_path / cfg
-        if not cfg_file.exists():
-            print(f"❌ [MISSING CONFIG] Platform config file {cfg} is missing!")
+    available = [hooks for hooks in platforms.values() if hooks]
+    if not available:
+        print("[X] No platform hook configuration found — run the bootstrap first.")
+        return False
+
+    # The union is what this repository qualifies for; every platform must carry
+    # all of it. This catches a hook added to one config and forgotten in another.
+    expected = set().union(*available)
+    for name, hooks in platforms.items():
+        if hooks is None:
+            print(f"[X] {name}: configuration missing or unreadable")
+            passed = False
+            continue
+        missing = expected - hooks
+        if missing:
+            print(f"[X] {name}: missing {sorted(missing)}")
+            passed = False
+        else:
+            print(f"[ok] {name}: {len(hooks)} hook(s)")
+
+    # Every referenced script must exist, or the config entry is a silent no-op.
+    hooks_dir = repo / ".agents" / "hooks"
+    for script in sorted(expected):
+        if not (hooks_dir / script).exists():
+            print(f"[X] {script} is referenced by a platform config "
+                  "but is not installed")
             passed = False
 
-    # 3. Check Rule Symlink Parity
-    rules_dir = repo_path / ".agents" / "rules"
-    if rules_dir.exists():
-        rule_files = list(rules_dir.glob("*.md"))
-        claude_rules_dir = repo_path / ".claude" / "rules"
-        opencode_rules_dir = repo_path / ".opencode" / "rules"
+    if not (repo / "opencode.json").exists():
+        print("[X] OpenCode: opencode.json missing")
+        passed = False
+    else:
+        print("[ok] OpenCode: configured (no command-hook mechanism; "
+              "its enforcement floor is pre-commit)")
 
-        for rf in rule_files:
-            claude_link = claude_rules_dir / rf.name
-            opencode_link = opencode_rules_dir / rf.name
+    for required in (".pre-commit-config.yaml", ".aiignore", "AGENTS.md"):
+        if not (repo / required).exists():
+            print(f"[X] {required} is missing")
+            passed = False
 
-            if not claude_link.exists():
-                print(
-                    f"⚠️ [RULE SYMLINK MISSING] .claude/rules/{rf.name} "
-                    f"missing symlink!"
-                )
-                passed = False
-            if not opencode_link.exists():
-                print(
-                    f"⚠️ [RULE SYMLINK MISSING] .opencode/rules/{rf.name} "
-                    f"missing symlink!"
-                )
-                passed = False
-
-    if passed:
-        print("✅ Quad-Agent Platform Parity Audit Passed Cleanly!")
+    print("==> Parity audit " + ("PASSED" if passed else "FAILED"))
     return passed
 
 
 def main():
     target = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(".")
-    success = audit_parity(target)
-    sys.exit(0 if success else 1)
+    if not audit_parity(target):
+        sys.exit(1)
 
 
 if __name__ == "__main__":
