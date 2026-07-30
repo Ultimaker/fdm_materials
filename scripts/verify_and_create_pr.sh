@@ -25,3 +25,32 @@ if [ -f .agents/hooks/run_adversarial_audit.py ]; then
 fi
 
 echo "✅ All verification checks passed cleanly!"
+
+# Locate PR template
+PR_TEMPLATE=""
+for cand in .github/PULL_REQUEST_TEMPLATE.md .github/pull_request_template.md .github/workflows/PULL_REQUEST_TEMPLATE.md; do
+    if [ -f "$cand" ]; then
+        PR_TEMPLATE="$cand"
+        break
+    fi
+done
+
+if command -v gh >/dev/null 2>&1; then
+    CURRENT_BRANCH=$(git branch --show-current 2>/dev/null || true)
+    if [ -n "$CURRENT_BRANCH" ]; then
+        EXISTING_PR=$(gh pr list --head "$CURRENT_BRANCH" --json number --jq '.[0].number' 2>/dev/null || true)
+        if [ -n "$EXISTING_PR" ] && [ "$EXISTING_PR" != "null" ]; then
+            echo "==> Active PR #${EXISTING_PR} detected for branch '${CURRENT_BRANCH}'."
+            echo "    Ensure PR description covers: Why, What, How, Verification & Validation (V&V), and PR Checklist."
+            echo "    To update existing PR description: gh pr edit ${EXISTING_PR} --body-file <file>"
+        else
+            echo "==> No active PR found for branch '${CURRENT_BRANCH}'."
+            if [ -n "$PR_TEMPLATE" ]; then
+                echo "    Use template at '${PR_TEMPLATE}' when opening Draft PR:"
+                echo "    gh pr create --draft --template '${PR_TEMPLATE}'"
+            else
+                echo "    Open Draft PR with: gh pr create --draft"
+            fi
+        fi
+    fi
+fi

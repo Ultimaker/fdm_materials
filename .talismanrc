@@ -12,7 +12,7 @@ fileignoreconfig:
 - filename: .agents/rules/05-ultimaker-skill-discovery-rules.md
   checksum: dc1f0d54df39aaa99133a0bbf98e07591cb0da3c1f3572339373ef05e2cf8279
 - filename: .agents/rules/06-pull-request-lifecycle-rules.md
-  checksum: edca187f9537d4858ea2957633268d162f9777a661f4bf23a4e5357203c8bfac
+  checksum: 865c30ae606e06abdf4ae6918af9a9d9da35896f757ab2c7f114e84762c11ba4
 - filename: .agents/rules/07-owasp-security-rules.md
   checksum: 75a0615a4fe300c0fb0dee78fbcdb4a0715c02becc1893bf315fa04ef8f437a3
 - filename: .agents/rules/08-scoped-changes-and-minimal-diffs.md
@@ -35,6 +35,8 @@ fileignoreconfig:
   checksum: f1b6a3f9483850cbf2d0c88171a9125c7a5a9b5e5ba28effb409149b709b07a2
 - filename: .agents/rules/14-complexity-budget-rules.md
   checksum: ed712cffd88c6d62de966a8202b0dafd2148067a2ea773e66c5469cefc7d11c7
+- filename: .agents/rules/20-repository-commit-and-release-conventions.md
+  checksum: bf2bfafc45feab3a7246287f56d2f536029cb6f2fed85968c2b7599005183132
 - filename: .agents/rules/agentic-guidelines.md
   checksum: da350c1fb08a78f83946fbfcad6c3c1c613e8f3d84e77812997850346fc43570
 - filename: .agents/hooks/audit_quad_agent_parity.py

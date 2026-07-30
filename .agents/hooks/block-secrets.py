@@ -34,6 +34,7 @@ USERS_PATH_PATTERN = re.compile(r"/Users/[a-zA-Z0-9_-]+/")
 ABSOLUTE_PATH_PATTERNS = [HOME_PATH_PATTERN, USERS_PATH_PATTERN]
 
 
+
 def check_secrets():
     result = subprocess.run(
         ["git", "diff", "--cached", "--name-only"],

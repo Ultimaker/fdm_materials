@@ -47,7 +47,7 @@ Should agents be required to write a body explaining why/how, not just a subject
 
 **Evidence**
 
-- median 1 files per commit, 90th percentile 37
+- median 1 files per commit, 90th percentile 58
 
 **Question to reason about**
 
@@ -55,7 +55,7 @@ Should the scope rule name a concrete file-count expectation derived from this r
 
 **Draft rule (needs review and placeholder resolution)**
 
-> Keep commits tightly scoped: this repository's median commit touches 1 files. A commit touching more than 37 files needs an explicit justification in the message.
+> Keep commits tightly scoped: this repository's median commit touches 1 files. A commit touching more than 58 files needs an explicit justification in the message.
 
 ---
 
@@ -65,8 +65,8 @@ Should the scope rule name a concrete file-count expectation derived from this r
 
 **Evidence**
 
-- 125/300 sampled commits are merges (mostly pull request merges)
-- `Merge pull request`: 85, `Merge branch`: 28
+- 124/300 sampled commits are merges (mostly pull request merges)
+- `Merge pull request`: 84, `Merge branch`: 28
 
 **Question to reason about**
 

@@ -42,6 +42,7 @@ def check_staged_files():
     )
     files = [f for f in result.stdout.splitlines() if f.strip()]
 
+
     failed = False
     for filepath in files:
         # Only the hook itself and the generated rule files are exempt.
