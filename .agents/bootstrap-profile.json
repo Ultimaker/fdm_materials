@@ -13,7 +13,7 @@
     "commits_sampled": 200,
     "jira_keys": {
       "PP": 7,
-      "UC": 5,
+      "UC": 6,
       "SEM": 1,
       "CES": 1
     },
@@ -81,12 +81,12 @@
     "uses_stardust": false
   },
   "pr_template": {
-    "exists": false,
+    "exists": true,
     "path": ".github/PULL_REQUEST_TEMPLATE.md",
-    "has_why": false,
-    "has_what": false,
-    "has_how": false,
-    "content": "Jira ticket: [{{ jira_key }}-XXXX](https://ultimaker.atlassian.net/browse/{{ jira_key }}-XXXX)\n\n## Why\n<!-- Describe the problem, user request, or business context driving this change -->\n\n## What\n<!-- High-level summary of the changes introduced in this PR -->\n\n## How\n<!-- Technical & architectural implementation details, design decisions, and changed components -->\n\n## Verification & Validation (V&V)\n<!-- Detail how changes were tested: unit tests, integration tests, E2E visual checks, screenshots/recordings -->\n- [ ] Automated unit/integration tests pass\n- [ ] Pre-commit static checks pass cleanly (`pre-commit run --all-files`)\n- [ ] Visual evidence attached for UI changes (if applicable)\n\n## PR Checklist\n- [ ] Initiating developer reviewed AI-generated code\n- [ ] No hardcoded absolute local paths or secrets introduced\n- [ ] Standing file-size and complexity budgets respected\n"
+    "has_why": true,
+    "has_what": true,
+    "has_how": true,
+    "content": "Jira ticket: [UC-XXXX](https://ultimaker.atlassian.net/browse/UC-XXXX)\n\n## Why\n<!-- Describe the problem, user request, or business context driving this change -->\n\n## What\n<!-- High-level summary of the changes introduced in this PR -->\n\n## How\n<!-- Technical & architectural implementation details, design decisions, and changed components -->\n\n## Verification & Validation (V&V)\n<!-- Detail how changes were tested: unit tests, integration tests, E2E visual checks, screenshots/recordings -->\n- [ ] Automated unit/integration tests pass\n- [ ] Pre-commit static checks pass cleanly (`pre-commit run --all-files`)\n- [ ] Visual evidence attached for UI changes (if applicable)\n\n## PR Checklist\n- [ ] Initiating developer reviewed AI-generated code\n- [ ] No hardcoded absolute local paths or secrets introduced\n- [ ] Standing file-size and complexity budgets respected\n"
   },
   "build_commands": [
     "./build_for_ultimaker.sh",
@@ -113,7 +113,7 @@
     "proprietary": false
   },
   "has_package_json": false,
-  "file_count": 306,
+  "file_count": 307,
   "complexity": {
     "functions_sampled": 15,
     "median": 1,
@@ -136,7 +136,7 @@
       "category": "commit-style",
       "title": "Commit messages carry explanatory bodies",
       "evidence": [
-        "51% of sampled commits have a body",
+        "50% of sampled commits have a body",
         "average body length 1.7 lines"
       ],
       "question": "Should agents be required to write a body explaining why/how, not just a subject line?",

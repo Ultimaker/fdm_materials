@@ -13,7 +13,11 @@ description: Pull request lifecycle rules, draft PR policy, PR template enforcem
      - **Verification & Validation (V&V)**: Empirical test results (unit tests, integration tests, E2E checks, and visual screenshots/recordings for UI changes).
      - **PR Checklist**: Human reviewer checklist (`- [ ] Initiating developer reviewed AI-generated code`).
    - Vague, brief, or 1-sentence PR descriptions are strictly prohibited.
-4. **Updating Existing PRs on Follow-up Commits**:
+4. **Empirical Proof Mandate**: Verification is ONLY valid when concrete empirical proof (a DOM text snapshot, test execution log, or screenshot uploaded via `gh image` attached to the walkthrough and PR body) is delivered. Agents must NEVER claim a UI feature or fix is verified without delivering empirical proof.
+5. **Updating Existing PRs on Follow-up Commits**:
    - When pushing follow-up commits to an active branch with an existing Pull Request, agents **MUST** inspect the existing PR (`gh pr view` or `gh pr list --head <branch>`).
    - If the new commits add new scope, alter architecture (**How**), or require updated testing/screenshots (**V&V**), run `gh pr edit <PR_NUMBER> --body-file <updated_template>` to update the PR description so it always reflects the current state of the branch.
-5. **CI Watch Loop**: After creating or updating a PR, actively monitor status checks (`gh pr checks <PR> --watch`) and fix any linter or test failures immediately before handing off to human review.
+6. **CI Watch Loop**: After creating or updating a PR, actively monitor status checks (`gh pr checks <PR> --watch`) and fix any linter or test failures immediately before handing off to human review.
+7. **Upstream Base Branch Alignment**:
+   - Before staging changes, opening PRs, or pushing follow-up commits, agents **MUST** ensure the local feature branch is completely up-to-date with its base branch (`origin/staging`, `origin/main`, or `origin/master`).
+   - Run `git fetch origin` and `git rebase origin/<base_branch>` (or use `/sync-base` command) to resolve any upstream changes or conflicts before proposing PR updates.

@@ -24,6 +24,13 @@ if [ -f .agents/hooks/run_adversarial_audit.py ]; then
     python3 .agents/hooks/run_adversarial_audit.py || { echo "❌ Adversarial audit failed!"; exit 1; }
 fi
 
+echo "==> Verifying credential and environment file isolation..."
+if git status --porcelain | grep -qE '\.env|\.env\.local'; then
+    echo "❌ ERROR: Un-ignored or staged .env/.env.local file detected in git status!"
+    echo "    Credentials must NEVER be staged or committed to git."
+    exit 1
+fi
+
 echo "✅ All verification checks passed cleanly!"
 
 # Locate PR template

@@ -21,7 +21,7 @@ def check_history():
     if res.returncode != 0:
         return
 
-    commits = [l.strip() for l in res.stdout.splitlines() if l.strip()]
+    commits = [line.strip() for line in res.stdout.splitlines() if line.strip()]
     fixup_keywords = ["fixup!", "squash!", "WIP", "work in progress", "temp"]
 
     dirty = []

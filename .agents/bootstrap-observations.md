@@ -28,7 +28,7 @@ deserves to become a rule, and what the rule should actually say.
 
 **Evidence**
 
-- 51% of sampled commits have a body
+- 50% of sampled commits have a body
 - average body length 1.7 lines
 
 **Question to reason about**
