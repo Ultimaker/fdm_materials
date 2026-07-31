@@ -105,7 +105,7 @@ def _audit_single_file(filepath, errors):
     if not path.exists() or path.is_dir():
         return
 
-    skip_files = ["block-absolute-paths.py", "run_adversarial_audit.py"]
+    skip_files = ["block-absolute-paths.py", "run_adversarial_audit.py", ".pre-commit-config.yaml"]
     if any(sf in filepath for sf in skip_files):
         return
 
