@@ -1,0 +1,183 @@
+{
+  "stacks": {
+    "has_frontend": false,
+    "has_cloud": false,
+    "has_cpp": false,
+    "has_infra": false,
+    "has_qml": false,
+    "has_freertos": false,
+    "has_debian": false,
+    "has_materials": true
+  },
+  "git": {
+    "commits_sampled": 200,
+    "jira_keys": {
+      "PP": 7,
+      "UC": 6,
+      "SEM": 1,
+      "CES": 1
+    },
+    "branch_jira_key": "UC",
+    "history_jira_key": "PP",
+    "dominant_jira_key": "UC",
+    "semantic_prefix_ratio": 0.0
+  },
+  "submodules": [],
+  "ci": {
+    "providers": [
+      "github-actions",
+      "gitlab-ci"
+    ],
+    "workflows": [
+      ".github/workflows/build_on_push_pr.yml",
+      ".github/workflows/cicd.yml",
+      ".github/workflows/conan-package.yml",
+      ".github/workflows/process-pull-request.yml"
+    ],
+    "signals": {
+      "tests": false,
+      "lint": false,
+      "build": true
+    }
+  },
+  "tests": {
+    "frameworks": [],
+    "commands": []
+  },
+  "linters": {
+    "ruff": false,
+    "black": false,
+    "flake8": true,
+    "mypy": false,
+    "eslint": false,
+    "prettier": false,
+    "clang_format": false,
+    "clang_tidy": false,
+    "pre_commit_config": false
+  },
+  "cpp": {},
+  "c": {},
+  "python": {
+    "sampled_files": 3,
+    "total_defs": 15,
+    "typed_def_ratio": 0.53,
+    "async_def_ratio": 0.0,
+    "frameworks": [],
+    "logging_over_print": true,
+    "prefers_pathlib": false,
+    "python_requires": null,
+    "string_format_style": "f-strings",
+    "string_format_counts": {
+      "f-strings": 11,
+      ".format()": 0,
+      "%-formatting": 1
+    },
+    "docstring_style": null
+  },
+  "ui": {
+    "has_ui": false,
+    "design_md_exists": true,
+    "token_sources": [],
+    "uses_stardust": false
+  },
+  "pr_template": {
+    "exists": true,
+    "path": ".github/PULL_REQUEST_TEMPLATE.md",
+    "has_why": true,
+    "has_what": true,
+    "has_how": true,
+    "content": "Jira ticket: [UC-XXXX](https://ultimaker.atlassian.net/browse/UC-XXXX)\n\n## Why\n<!-- Describe the problem, user request, or business context driving this change -->\n\n## What\n<!-- High-level summary of the changes introduced in this PR -->\n\n## How\n<!-- Technical & architectural implementation details, design decisions, and changed components -->\n\n## Verification & Validation (V&V)\n<!-- Detail how changes were tested: unit tests, integration tests, E2E visual checks, screenshots/recordings -->\n- [ ] Automated unit/integration tests pass\n- [ ] Pre-commit static checks pass cleanly (`pre-commit run --all-files`)\n- [ ] Visual evidence attached for UI changes (if applicable)\n\n## PR Checklist\n- [ ] Initiating developer reviewed AI-generated code\n- [ ] No hardcoded absolute local paths or secrets introduced\n- [ ] Standing file-size and complexity budgets respected\n"
+  },
+  "build_commands": [
+    "./build_for_ultimaker.sh",
+    "cmake --build build",
+    "conan build ."
+  ],
+  "directory_map": [
+    {
+      "name": "docker_env",
+      "count": 3,
+      "extensions": ".sh"
+    },
+    {
+      "name": "scripts",
+      "count": 3,
+      "extensions": ".py, .xsd"
+    }
+  ],
+  "artifact_dirs": [],
+  "has_api_surface": false,
+  "license": {
+    "declared": "LGPL-3.0",
+    "source": "conanfile.py",
+    "proprietary": false
+  },
+  "has_package_json": false,
+  "file_count": 307,
+  "complexity": {
+    "functions_sampled": 15,
+    "median": 1,
+    "p90": 5,
+    "max": 9
+  },
+  "skills": {
+    "catalog_root": "/home/jelle/dev/um/UltiCortex",
+    "catalog_size": 23,
+    "matched": [
+      "conan-2",
+      "cmake",
+      "python-pro",
+      "software-architect",
+      "ultimaker-material-knowledge"
+    ]
+  },
+  "observations": [
+    {
+      "category": "commit-style",
+      "title": "Commit messages carry explanatory bodies",
+      "evidence": [
+        "50% of sampled commits have a body",
+        "average body length 1.7 lines"
+      ],
+      "question": "Should agents be required to write a body explaining why/how, not just a subject line?",
+      "draft_rule": "Every commit message MUST include a body explaining why the change was needed and how it works \u2014 a subject line alone is not enough.",
+      "confidence": "medium",
+      "data": {}
+    },
+    {
+      "category": "commit-style",
+      "title": "Commits are small and tightly scoped",
+      "evidence": [
+        "median 1 files per commit, 90th percentile 58"
+      ],
+      "question": "Should the scope rule name a concrete file-count expectation derived from this repository's own history?",
+      "draft_rule": "Keep commits tightly scoped: this repository's median commit touches 1 files. A commit touching more than 58 files needs an explicit justification in the message.",
+      "confidence": "medium",
+      "data": {}
+    },
+    {
+      "category": "git-workflow",
+      "title": "History keeps merge commits",
+      "evidence": [
+        "124/300 sampled commits are merges (mostly pull request merges)",
+        "`Merge pull request`: 84, `Merge branch`: 28"
+      ],
+      "question": "Is the merge commit intentional (preserving branch topology), and should agents therefore NOT rebase published branches?",
+      "draft_rule": "This repository preserves merge topology. Do not rewrite or rebase branches that have already been pushed; integrate with merges.",
+      "confidence": "medium",
+      "data": {}
+    },
+    {
+      "category": "release",
+      "title": "Releases are tagged with bare semantic versions",
+      "evidence": [
+        "40/40 recent tags are semantic versions",
+        "most recent tags: 5.13.0, 5.13.0-RC1, 5.13.0-RC2, 5.13.0-RC3, 5.13.0-RC4"
+      ],
+      "question": "Do version bumps have a required home (packaging metadata, recipe file, CMake project version) that must move together with the tag?",
+      "draft_rule": "Release tags follow bare semantic versions. When bumping a version, update every location that carries it (<list them>) in the same commit.",
+      "confidence": "low",
+      "data": {}
+    }
+  ]
+}

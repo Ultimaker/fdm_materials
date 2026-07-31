@@ -1,0 +1,1 @@
+../../.agents/rules/04-build-test-and-deployment-rules.md

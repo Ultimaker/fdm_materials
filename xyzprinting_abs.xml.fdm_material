@@ -22,8 +22,8 @@
     <setting key="print cooling">100</setting>
     <setting key="print temperature">240</setting>
     <setting key="heated bed temperature">90</setting>
-    <setting key="standby temperature">240</setting>	
-		
+    <setting key="standby temperature">240</setting>
+
 	<machine>
             <machine_identifier manufacturer="XYZprinting" product="xyzprinting_da_vinci_jr_pro_xplus"/>
 			<setting key="hardware compatible">yes</setting>
