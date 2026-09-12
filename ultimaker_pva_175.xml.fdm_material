@@ -18,6 +18,8 @@
         <density>1.23</density>
         <diameter>1.75</diameter>
         <weight>750</weight>
+            <glass_transition>58.4</glass_transition>
+        <melting_temperature>175.4</melting_temperature>
     </properties>
     <settings>
         <!-- print settings -->

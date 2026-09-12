@@ -77,6 +77,20 @@
                             <xsd:element name="density" type="xsd:decimal" minOccurs="0"/>
                             <xsd:element name="diameter" type="xsd:decimal"/>
                             <xsd:element name="weight" type="xsd:decimal" minOccurs="0"/>
+                            <xsd:element name="tensile_modulus" type="xsd:decimal" minOccurs="0"/>
+                            <xsd:element name="tensile_stress_at_yield" type="xsd:decimal" minOccurs="0"/>
+                            <xsd:element name="tensile_stress_at_break" type="xsd:decimal" minOccurs="0"/>
+                            <xsd:element name="elongation_at_yield" type="xsd:decimal" minOccurs="0"/>
+                            <xsd:element name="elongation_at_break" type="xsd:decimal" minOccurs="0"/>
+                            <xsd:element name="flexural_modulus" type="xsd:decimal" minOccurs="0"/>
+                            <xsd:element name="flexural_strength" type="xsd:decimal" minOccurs="0"/>
+                            <xsd:element name="charpy_impact_strength" type="xsd:decimal" minOccurs="0"/>
+                            <xsd:element name="hardness" type="xsd:string" minOccurs="0"/>
+                            <xsd:element name="melt_mass_flow_rate" type="xsd:decimal" minOccurs="0"/>
+                            <xsd:element name="heat_deflection_temperature" type="xsd:decimal" minOccurs="0"/>
+                            <xsd:element name="vicat_softening_temperature" type="xsd:decimal" minOccurs="0"/>
+                            <xsd:element name="glass_transition_temperature" type="xsd:decimal" minOccurs="0"/>
+                            <xsd:element name="melting_temperature" type="xsd:decimal" minOccurs="0"/>
                         </xsd:all>
                     </xsd:complexType>
                 </xsd:element>

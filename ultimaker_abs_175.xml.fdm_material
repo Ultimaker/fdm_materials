@@ -18,6 +18,18 @@
         <density>1.1</density>
         <diameter>1.75</diameter>
         <weight>750</weight>
+            <tensile_modulus>1962.0</tensile_modulus>
+        <tensile_stress_at_yield>38.1</tensile_stress_at_yield>
+        <tensile_stress_at_break>33.9</tensile_stress_at_break>
+        <elongation_at_yield>4.1</elongation_at_yield>
+        <elongation_at_break>4.6</elongation_at_break>
+        <flexural_modulus>1430.0</flexural_modulus>
+        <flexural_strength>61.1</flexural_strength>
+        <charpy_impact_strength>14.2</charpy_impact_strength>
+        <melt_mass_flow_rate>41.0</melt_mass_flow_rate>
+        <heat_deflection_temperature>86.6</heat_deflection_temperature>
+        <glass_transition>100.5</glass_transition>
+        <hardness>76.0</hardness>
     </properties>
     <settings>
         <setting key="print temperature">230</setting>

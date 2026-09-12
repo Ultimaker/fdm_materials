@@ -19,6 +19,17 @@
         <density>1.51</density>
         <diameter>2.85</diameter>
         <weight>500</weight>
+            <tensile_modulus>4376.0</tensile_modulus>
+        <tensile_stress_at_yield>47.5</tensile_stress_at_yield>
+        <tensile_stress_at_break>47.3</tensile_stress_at_break>
+        <elongation_at_yield>1.9</elongation_at_yield>
+        <elongation_at_break>2.0</elongation_at_break>
+        <flexural_modulus>5106.0</flexural_modulus>
+        <flexural_strength>87.0</flexural_strength>
+        <charpy_impact_strength>4.8</charpy_impact_strength>
+        <melt_mass_flow_rate>22.1</melt_mass_flow_rate>
+        <glass_transition>102.0</glass_transition>
+        <melting_temperature>282.0</melting_temperature>
     </properties>
     <settings>
         <setting key="anti ooze retract position">-8</setting>

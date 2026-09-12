@@ -21,6 +21,17 @@
         <density>1.19</density>
         <diameter>2.85</diameter>
         <weight>750</weight>
+            <tensile_modulus>2394.0</tensile_modulus>
+        <tensile_stress_at_yield>53.3</tensile_stress_at_yield>
+        <tensile_stress_at_break>43.2</tensile_stress_at_break>
+        <elongation_at_yield>6.1</elongation_at_yield>
+        <elongation_at_break>9.2</elongation_at_break>
+        <flexural_modulus>1619.0</flexural_modulus>
+        <flexural_strength>89.4</flexural_strength>
+        <charpy_impact_strength>11.6</charpy_impact_strength>
+        <heat_deflection_temperature>104.5</heat_deflection_temperature>
+        <glass_transition>107.7</glass_transition>
+        <hardness>81.0</hardness>
     </properties>
     <settings>
         <!-- Deprime settings -->

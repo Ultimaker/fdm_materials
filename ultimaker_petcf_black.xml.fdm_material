@@ -19,6 +19,14 @@
         <density>1.33</density>
         <diameter>2.85</diameter>
         <weight>750</weight>
+            <tensile_modulus>4342.0</tensile_modulus>
+        <tensile_stress_at_yield>50.6</tensile_stress_at_yield>
+        <tensile_stress_at_break>49.3</tensile_stress_at_break>
+        <elongation_at_yield>3.9</elongation_at_yield>
+        <elongation_at_break>5.5</elongation_at_break>
+        <flexural_modulus>5743.0</flexural_modulus>
+        <flexural_strength>102.8</flexural_strength>
+        <heat_deflection_temperature>76.0</heat_deflection_temperature>
     </properties>
     <settings>
         <!-- Deprime settings -->
