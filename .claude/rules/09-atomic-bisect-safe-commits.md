@@ -1,0 +1,1 @@
+../../.agents/rules/09-atomic-bisect-safe-commits.md

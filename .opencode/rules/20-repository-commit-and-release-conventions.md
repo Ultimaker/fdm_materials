@@ -1,0 +1,1 @@
+../../.agents/rules/20-repository-commit-and-release-conventions.md

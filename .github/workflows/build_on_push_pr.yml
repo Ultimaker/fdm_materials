@@ -2,7 +2,7 @@ name: Build package on Push or Pull Request
 
 on:
   push
-  
+
 jobs:
   Prepare:
     name: 'Prepare'
