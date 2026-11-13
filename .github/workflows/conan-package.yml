@@ -26,6 +26,16 @@ jobs:
       platform_windows: false
       platform_mac: false
       install_system_dependencies: false
+      private_data: true
+    secrets: inherit
+
+  export-internal-testing:
+    uses: ultimaker/cura-workflows/.github/workflows/conan-recipe-export.yml@main
+    with:
+      version: "5.15.0-alpha.22+unimotion"
+      user: "internal"
+      channel: "testing"
+      private_data: true
     secrets: inherit
 
   signal-curator:
@@ -34,6 +44,6 @@ jobs:
     steps:
     - name: Trigger Curator Workflow
       run: |
-        gh workflow run --repo ultimaker/curator -r main package.yml
+        gh workflow run --repo ultimaker/curator -r CURA-13401-unimotion package.yml
       env:
         GITHUB_TOKEN: ${{ secrets.CURATOR_TRIGGER_PAT_C3PO }}
