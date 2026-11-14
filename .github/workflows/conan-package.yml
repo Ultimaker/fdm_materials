@@ -32,7 +32,7 @@ jobs:
   export-internal-testing:
     uses: ultimaker/cura-workflows/.github/workflows/conan-recipe-export.yml@main
     with:
-      version: "5.15.0-alpha.22+unimotion"
+      version: "5.15.0-alpha.26+unimotion"
       user: "internal"
       channel: "testing"
       private_data: true
