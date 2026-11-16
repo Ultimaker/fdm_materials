@@ -29,11 +29,11 @@ jobs:
       private_data: true
     secrets: inherit
 
-  export-internal-testing:
+  export-unimotion-testing:
     uses: ultimaker/cura-workflows/.github/workflows/conan-recipe-export.yml@main
     with:
-      version: "5.15.0-alpha.26+unimotion"
-      user: "internal"
+      version: "5.15.0-alpha.33+unimotion"
+      user: "unimotion"
       channel: "testing"
       private_data: true
     secrets: inherit
