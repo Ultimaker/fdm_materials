@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material">
+    <metadata>
+        <name>
+            <brand>Eolas Prints</brand>
+            <material>PLA</material>
+            <color>Generic</color>
+            <label>Eolas Prints PLA Plus</label>
+        </name>
+        <color_code>#4d9398</color_code>
+        <GUID>492e8f62-02f4-414e-9755-de1acbe9fed3</GUID>
+        <adhesion_info>Adhesive like magigoo recommended bbut not required<adhesion_info />
+        <version>1</version>
+        <description>Discover superior precision from our 1.75mm PLA Filament. Select from a rainbow of 20+ colours, including black, gold, blue, and classic white. Not just visually pleasing; the PLA features food contact safety, its quality and security unquestioned. Each strand is created to deliver exact and precise results for each 3D printing endeavour; from intricate designs to bulkier projects.</description>
+    </metadata>
+    <properties>
+        <diameter>1.75</diameter>
+        <density>1.24</density>
+        <weight>1000</weight>
+    </properties>
+    <settings>
+        <setting key="print cooling">100</setting>
+        <setting key="print temperature">208</setting>
+        <setting key="heated bed temperature">65</setting>
+        <setting key="standby temperature">120</setting>
+    </settings>
+</fdmmaterial>
