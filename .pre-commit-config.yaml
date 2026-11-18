@@ -1,0 +1,73 @@
+default_stages:
+- commit
+repos:
+- repo: local
+  hooks:
+  - id: talisman-commit
+    name: Talisman Secret Scanner
+    entry: bash -c 'talisman --githook pre-commit "$@" || { echo -e "\n==========================================================================\nHandling
+      Talisman False Positives:\nIf Talisman flags a file that is not a secret, do
+      NOT skip the hook.\nInstead, add the file and checksum to .talismanrc (see comments
+      in that file for format details).\n==========================================================================\n";
+      exit 1; }' --
+    language: system
+    pass_filenames: false
+  - id: check-yaml
+    name: Check YAML Syntax
+    entry: python3 -c 'import sys, yaml; [yaml.safe_load(open(f)) for f in sys.argv[1:]]'
+    language: system
+    files: \.(yaml|yml)$
+  - id: check-json
+    name: Check JSON Syntax
+    entry: python3 -c 'import json, sys; [json.load(open(f)) for f in sys.argv[1:]]'
+    language: system
+    files: \.json$
+  - id: check-agent-artifacts
+    name: Check for Agent Artifacts
+    entry: 'bash -c ''if [ "$SKIP_PRE_COMMIT" = "1" ]; then exit 0; fi; for f in "$@";
+      do if [[ "$f" =~ (task(_.*)?\.md|task\..*|implementation_plan(_.*)?\.md|implementation_plan\..*|walkthrough(_.*)?\.md|walkthrough\..*|\.playwright-cli|__pycache__|scratch_.*|scratch\..*|temp_.*|temp\..*|test_scratch_.*|test_scratch\..*|test_agent_.*|test_agent\..*|test_temp_.*|test_temp\..*|test_run_.*|test_run\..*|test_debug_.*|test_debug\..*|test_mock_.*|test_mock\..*|test_quick_.*|test_quick\..*|test_sandbox_.*|test_sandbox\..*|test_test_.*|test_test\..*|^test_[^/]+\.(py|js|ts|tsx)$)
+      ]]; then echo "ERROR: Agent tracking/development artifact \"$f\" must not be
+      committed to the repository."; exit 1; fi; done'' --'
+    language: system
+  - id: check-local-paths
+    name: Check for Local Path References
+    entry: 'bash -c ''if [ "$SKIP_PRE_COMMIT" = "1" ]; then exit 0; fi; if grep -EIn
+      "/home/jelle/" "$@" >/dev/stderr; then echo "ERROR: Staged files contain references
+      to local path /home/jelle/. Please use relative paths instead."; exit 1; fi;
+      if [ -n "$HOME" ] && grep -FIn "$HOME" "$@" >/dev/stderr; then echo "ERROR:
+      Staged files contain references to your local home directory ($HOME). Please
+      use relative paths instead."; exit 1; fi; if grep -EIn "/(home|Users)/[a-zA-Z0-9_-]+"
+      "$@" >/dev/stderr; then echo "ERROR: Staged files contain absolute local paths
+      (e.g., /home/USER/ or /Users/USER/). Please use relative paths instead."; exit
+      1; fi'' --'
+    language: system
+    files: \.(py|js|jsx|ts|tsx|sh|bash|cpp|h|qml|xml|fdm_material)$
+  - id: check-jira-ticket
+    name: Check Jira Ticket in Commit Message
+    entry: 'bash -c ''if [ "$SKIP_PRE_COMMIT" = "1" ]; then exit 0; fi; if ! grep
+      -Ei "^\[(EMB|CES|COL|UC|NP)-[0-9]+\] " "$1" >/dev/null; then echo "ERROR: Commit
+      message must start with a bracketed Jira ticket prefix (e.g., [EMB-463] Description).";
+      exit 1; fi'' --'
+    language: system
+    stages:
+    - commit-msg
+  - id: run-flake8
+    name: CI Flake8
+    entry: bash -c 'git submodule update --init && ONLY_CHECK_STAGED=1 ci/run_flake8.sh'
+    language: system
+    pass_filenames: false
+  - id: run-pycodestyle
+    name: CI PyCodeStyle
+    entry: bash -c 'git submodule update --init && ONLY_CHECK_STAGED=1 ci/run_pycodestyle.sh'
+    language: system
+    pass_filenames: false
+  - id: run-mypy
+    name: CI MyPy
+    entry: bash -c 'git submodule update --init && ONLY_CHECK_STAGED=1 ci/run_mypy.sh'
+    language: system
+    pass_filenames: false
+  - id: run-pylint
+    name: CI PyLint
+    entry: bash -c 'git submodule update --init && ONLY_CHECK_STAGED=1 ci/run_pylint.sh'
+    language: system
+    pass_filenames: false

@@ -1,0 +1,4 @@
+[submodule "ci"]
+	path = ci
+	url = ../python-quality-control
+	branch = master
