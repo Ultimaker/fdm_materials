@@ -1,0 +1,30 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-yaml
+      - id: check-json
+      - id: check-added-large-files
+        args: ['--maxkb=1024']
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/thoughtworks/talisman
+    rev: v1.32.0
+    hooks:
+      - id: talisman-commit
+        entry: talisman --githook pre-commit
+
+  - repo: local
+    hooks:
+      - id: block-absolute-paths
+        name: Block absolute local path references
+        entry: python3 .agents/hooks/block-absolute-paths.py
+        language: system
+        types_or: [text]
+
+      - id: check-antigravity-api-keys
+        name: Detect hardcoded API keys and credentials
+        entry: python3 .agents/hooks/block-secrets.py
+        language: system
+        types_or: [text]
