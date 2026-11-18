@@ -1,0 +1,8 @@
+{
+  "budget": 400,
+  "comment": "Files recorded here were already over budget when the ratchet was introduced. They may shrink, never grow. Entries are removed automatically once a file falls within budget. Do not add entries by hand to excuse a new violation.",
+  "exclude": [],
+  "exclude_comment": "Path fragments excluded from the budget entirely \u2014 use for vendored or generated trees this project does not own. After editing, re-run with --init to reseed.",
+  "files": {},
+  "policy": "ratchet"
+}

@@ -1,0 +1,1 @@
+../../.agents/rules/03-fdm-material-rules.md

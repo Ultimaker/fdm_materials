@@ -1,0 +1,1 @@
+../../.agents/rules/12-ai-context-exclusion-rules.md

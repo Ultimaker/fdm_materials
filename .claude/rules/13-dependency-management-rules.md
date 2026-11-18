@@ -1,0 +1,1 @@
+../../.agents/rules/13-dependency-management-rules.md

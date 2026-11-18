@@ -1,0 +1,1 @@
+../../.agents/rules/05-ultimaker-skill-discovery-rules.md

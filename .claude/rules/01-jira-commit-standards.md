@@ -1,0 +1,1 @@
+../../.agents/rules/01-jira-commit-standards.md

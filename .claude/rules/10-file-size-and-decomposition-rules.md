@@ -1,0 +1,1 @@
+../../.agents/rules/10-file-size-and-decomposition-rules.md

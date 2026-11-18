@@ -1,0 +1,1 @@
+../../.agents/rules/agentic-guidelines.md
